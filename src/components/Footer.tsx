@@ -1,0 +1,73 @@
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
+
+const Footer = () => {
+  return (
+    <footer className="gradient-hero text-primary-foreground">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <img src={logo} alt="Buzz Connect" className="h-9 w-9" />
+              <span className="font-heading text-xl font-bold">
+                Buzz<span className="text-accent">Connect</span>
+              </span>
+            </Link>
+            <p className="text-primary-foreground/70 text-sm leading-relaxed">
+              Sri Lanka's No.1 Email, WhatsApp & SMS marketing company providing cost-effective digital marketing solutions since 2014.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-heading font-semibold text-accent mb-4">Services</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/email-marketing" className="hover:text-accent transition-colors">Email Marketing</Link></li>
+              <li><Link to="/sms-marketing" className="hover:text-accent transition-colors">SMS Marketing</Link></li>
+              <li><Link to="/whatsapp-marketing" className="hover:text-accent transition-colors">WhatsApp Marketing</Link></li>
+              <li><Link to="/online-advertising-sri-lanka" className="hover:text-accent transition-colors">Online Advertising</Link></li>
+              <li><Link to="/seo-sri-lanka" className="hover:text-accent transition-colors">SEO Services</Link></li>
+              <li><Link to="/website-design-sri-lanka" className="hover:text-accent transition-colors">Website Design</Link></li>
+              <li><Link to="/graphic-designing-in-sri-lanka" className="hover:text-accent transition-colors">Graphic Design</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading font-semibold text-accent mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/#aboutus" className="hover:text-accent transition-colors">About Us</Link></li>
+              <li><Link to="/#whyus" className="hover:text-accent transition-colors">Why Us</Link></li>
+              <li><Link to="/special-advertising-packages" className="hover:text-accent transition-colors">Special Packages</Link></li>
+              <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
+              <li><Link to="/#contactus" className="hover:text-accent transition-colors">Contact Us</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading font-semibold text-accent mb-4">Contact</h4>
+            <ul className="space-y-3 text-sm text-primary-foreground/70">
+              <li className="flex items-start gap-2">
+                <Mail className="w-4 h-4 mt-0.5 text-accent" />
+                <span>info@buzzconnect.lk</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 text-accent" />
+                <span>+94 11 234 5678</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 text-accent" />
+                <span>Colombo, Sri Lanka</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/50">
+          <p>&copy; {new Date().getFullYear()} Buzz Connect. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
