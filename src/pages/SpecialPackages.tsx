@@ -52,7 +52,7 @@ const waPackages = [
   },
 ];
 
-const PackageCard = ({ pkg, index }: { pkg: typeof smsPackages[0]; index: number }) => (
+const PackageCard = ({ pkg, index }: { pkg: { name: string; reach: string; color?: string; items: string[] }; index: number }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
