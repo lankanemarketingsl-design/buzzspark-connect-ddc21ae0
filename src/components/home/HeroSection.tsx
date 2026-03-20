@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, MessageSquare, Smartphone } from "lucide-react";
+import { ArrowRight, Mail, MessageSquare, Smartphone, PhoneCall } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -44,53 +44,44 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/15 text-accent border border-accent/30 mb-6">
-              No.1 Email, WhatsApp and SMS Marketing in Sri Lanka
+              No.1 Email, WhatsApp &amp; SMS Marketing in Sri Lanka
             </span>
           </motion.div>
-
-          <motion.p
-            className="text-lg text-primary-foreground/70 mb-4 max-w-xl"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-          >
-            Buzz connect is the No 1 Email, WhatsApp and SMS marketing company in Sri Lanka provide best digital and direct marketing solutions
-          </motion.p>
 
           <motion.h1
             className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           >
-            We can turn your{" "}
-            <span className="text-gradient-hero">imagination</span>{" "}
-            into reality!
+            Email Marketing Sri Lanka |{" "}
+            <span className="text-gradient-hero">SMS &amp; WhatsApp</span>{" "}
+            Marketing Company
           </motion.h1>
 
           <motion.p
             className="text-lg text-primary-foreground/70 mb-8 max-w-xl leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.25 }}
           >
-            Most cost effective online advertising network in Sri Lanka
+            Buzz Connect is the No.1 email marketing, SMS marketing, and WhatsApp marketing company in Sri Lanka, delivering cost-effective digital and direct marketing solutions for businesses of all sizes.
           </motion.p>
 
           <motion.div
             className="flex flex-wrap gap-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.45 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
           >
             <Link to="/#contactus">
               <Button variant="hero" size="lg" className="text-base">
-                Get Started <ArrowRight className="ml-1" />
+                Start Your Campaign Today <ArrowRight className="ml-1" />
               </Button>
             </Link>
-            <Link to="/email-marketing">
+            <Link to="/#contactus">
               <Button variant="hero-outline" size="lg" className="text-base">
-                View Services
+                <PhoneCall className="mr-1 w-4 h-4" /> Get Free Consultation
               </Button>
             </Link>
           </motion.div>
@@ -100,13 +91,13 @@ const HeroSection = () => {
             className="flex flex-wrap gap-8 mt-14"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.6 }}
+            transition={{ duration: 0.7, delay: 0.55 }}
           >
             {[
               { num: "350K+", label: "Email Database" },
               { num: "20K+", label: "Campaigns Completed" },
               { num: "1,500+", label: "Happy Clients" },
-              { num: "8+", label: "Years Experience" },
+              { num: "10+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
                 <div className="text-2xl font-heading font-bold text-accent">{stat.num}</div>

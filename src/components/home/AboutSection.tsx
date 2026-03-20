@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
+import { Globe, TrendingUp, Users, Zap } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -11,30 +11,39 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-sm font-semibold text-accent uppercase tracking-wider">About Us</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mt-2 mb-2">
-              Your digital morale in business
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">Unique Advantage</span>
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mt-2 mb-5">
+              Integrated Marketing with Findit.lk
             </h2>
-            <h3 className="font-heading text-xl text-accent font-semibold mb-5">
-              The No.1 Lead generation company in Sri Lanka
-            </h3>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Today's marketers of the world need to do more or less connectivity to their audience through a highly personalized way is the way more important to them.while staying on a budgetary plan .Marketers will achieve this goal by way of connecting to their prospects and with their customers in a highly targeted way. They will be success in delivering ROI and revenue back to the organization.
-              </p>
-              <p>
-                Tell a mass audience all about it within minutes. Your updates and offers, delivered directly to your target market's inbox through E-mail marketing, WhatsApp marketing and SMS marketing as well.
-              </p>
-              <p>
-                Buzz connect is one of the leading online advertising provider which operates from 2014 in Sri Lanka.We have total solution packages for generate leads for the needs of the customers Therefore, we use E-mail campaign and WhatsApp campaign platforms as direct marketing. For the mass audience we use Findit.lk. At the same time we work with Buyit.lk which is a classified online market place in Sri Lanka that gives more visibility to our customers.
-              </p>
-              <p>
-                Not only through E-mail marketing campaigns, Whatsapp marketing campaigns and Bulk SMS marketing campaigns, we are getting publicity through Findit.lk for a period of one month. To tell a mass audience all about it within minutes, your updates and offers delivered directly to your target markets. And also can get the highest reach from the lowest budget.
-              </p>
-              <p>
-                We Generate leads for provides online advertising solutions like E-mail marketing, WhatsApp marketing and SMS marketing in Sri Lanka from largest organization to SME's also We have provide our service over 1500 customers to generate direct marketing and brand awareness to improve their ventures with the trust and confidence
-              </p>
-            </div>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Buzz Connect integrates campaigns with Findit.lk, one of Sri Lanka's leading online promotion platforms, to provide extended reach and visibility.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">This ensures:</p>
+            <ul className="space-y-3 mb-8">
+              {[
+                { icon: Globe, text: "Wider audience reach" },
+                { icon: TrendingUp, text: "Increased engagement" },
+                { icon: Zap, text: "Better campaign performance" },
+                { icon: Users, text: "Maximum results at minimum cost" },
+              ].map((item) => (
+                <li key={item.text} className="flex items-center gap-3 text-muted-foreground">
+                  <div className="w-8 h-8 rounded-lg gradient-accent flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-heading text-xl font-bold text-foreground mb-3">Results-Driven Approach</h3>
+            <p className="text-muted-foreground leading-relaxed mb-3">Our marketing solutions help businesses:</p>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>• Reach thousands of customers within minutes</li>
+              <li>• Generate high-quality leads</li>
+              <li>• Improve brand awareness</li>
+              <li>• Increase conversions and ROI</li>
+              <li>• Build long-term customer relationships</li>
+            </ul>
           </motion.div>
 
           <motion.div
@@ -43,12 +52,12 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 mb-8">
               {[
+                { num: "10+", label: "Years Experience", color: "bg-primary text-primary-foreground" },
+                { num: "20K+", label: "Successful Campaigns", color: "bg-secondary text-secondary-foreground" },
+                { num: "1,500+", label: "Satisfied Clients", color: "gradient-accent text-primary" },
                 { num: "350K+", label: "Email Subscribers", color: "bg-primary text-primary-foreground" },
-                { num: "600K+", label: "SMS Reach", color: "bg-secondary text-secondary-foreground" },
-                { num: "50K+", label: "VIP Contacts", color: "gradient-accent text-primary" },
-                { num: "200K+", label: "Monthly Web Hits", color: "bg-primary text-primary-foreground" },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -58,6 +67,26 @@ const AboutSection = () => {
                   <div className="text-sm mt-1 opacity-80">{item.label}</div>
                 </div>
               ))}
+            </div>
+
+            {/* How it works */}
+            <div className="bg-card rounded-xl p-6 border border-border shadow-card">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-4">How It Works</h3>
+              <div className="space-y-4">
+                {[
+                  { step: "1", text: "Select your target audience" },
+                  { step: "2", text: "Choose your marketing channel (Email, SMS, or WhatsApp)" },
+                  { step: "3", text: "Launch your campaign" },
+                  { step: "4", text: "Track performance and results" },
+                ].map((item) => (
+                  <div key={item.step} className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full gradient-accent flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-primary">{item.step}</span>
+                    </div>
+                    <span className="text-muted-foreground">{item.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

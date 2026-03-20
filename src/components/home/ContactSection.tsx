@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Send, Mail, Phone, MapPin } from "lucide-react";
+import { Send, Mail, Phone, MapPin, Rocket } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -22,16 +22,34 @@ const ContactSection = () => {
   return (
     <section id="contactus" className="py-20 gradient-hero text-primary-foreground">
       <div className="container mx-auto px-4">
+        {/* Final CTA */}
+        <motion.div
+          className="text-center mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <div className="inline-flex items-center gap-2 mb-4">
+            <Rocket className="w-6 h-6 text-accent" />
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">Get Started</span>
+          </div>
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">
+            Start Your Email, SMS &amp; WhatsApp Marketing Campaign Today
+          </h2>
+          <p className="text-primary-foreground/70 max-w-2xl mx-auto">
+            Reach thousands of customers across Sri Lanka with one powerful platform. Contact Buzz Connect today and launch your campaign instantly.
+          </p>
+        </motion.div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-sm font-semibold text-accent uppercase tracking-wider">Contact Us</span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-5">
+            <h3 className="font-heading text-2xl font-bold mb-5">
               Want to get more information?
-            </h2>
+            </h3>
             <p className="text-primary-foreground/70 mb-4 leading-relaxed">
               Great, we've got you covered! Need to increase your online revenue? That's our bread and butter! Or maybe you simply want to ensure your brand is getting the most visibility as possible online. You guessed it… we can help out there too!
             </p>

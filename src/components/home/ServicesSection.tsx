@@ -5,50 +5,99 @@ import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Packa
 const services = [
   {
     icon: Mail,
-    title: "E-Mail Marketing",
-    bullets: ["Over 350,000+ database", "50,000 + VIP Reach", "10,000+ highly targeted Customized Database"],
+    title: "Email Marketing Sri Lanka",
+    bullets: [
+      "350,000+ active email database",
+      "50,000+ VIP audience reach",
+      "10,000+ highly targeted custom databases",
+      "Bulk email campaigns",
+      "Personalized email marketing",
+      "Campaign tracking and analytics",
+    ],
+    description: "Ideal for promotions, education intakes, product launches, and brand awareness campaigns.",
     path: "/email-marketing",
   },
   {
-    icon: Package,
-    title: "Special Advertising Packages",
-    bullets: ["Reach 450,000", "Reach 550,000", "Reach 575,000", "Reach 625,000"],
-    path: "/special-advertising-packages",
-  },
-  {
     icon: Smartphone,
-    title: "SMS Marketing",
-    bullets: ["Corporate – 300,000", "Top marketers – 200,000", "All Island - 600,000", "HR database – 25,000", "VIP database – 25,000"],
+    title: "SMS Marketing Sri Lanka",
+    bullets: [
+      "Corporate database – 300,000",
+      "Top marketers – 200,000",
+      "All Island reach – 600,000",
+      "HR database – 25,000",
+      "VIP database – 25,000",
+      "Promotional and transactional SMS",
+    ],
+    description: "Best option for urgent promotions, alerts, and time-sensitive campaigns.",
     path: "/sms-marketing",
   },
   {
     icon: MessageSquare,
-    title: "WhatsApp Marketing",
-    bullets: ["Corporate – 300,000", "Top marketers – 200,000", "All Island - 600,000", "HR database – 25,000", "VIP database – 25,000"],
+    title: "WhatsApp Marketing Sri Lanka",
+    bullets: [
+      "Bulk WhatsApp campaigns",
+      "Targeted audience segmentation",
+      "Rich media campaigns (images, videos, flyers)",
+      "Direct customer engagement",
+      "High conversion rates",
+    ],
+    description: "Perfect for personalized communication and lead generation.",
     path: "/whatsapp-marketing",
   },
   {
+    icon: Package,
+    title: "Special Advertising Packages",
+    bullets: [
+      "Reach 450,000 audience",
+      "Reach 550,000 audience",
+      "Reach 575,000 audience",
+      "Reach 625,000 audience",
+    ],
+    description: "Ideal for both SMEs and large-scale businesses.",
+    path: "/special-advertising-packages",
+  },
+  {
     icon: Globe,
-    title: "Web Ads, Discount coupons and Banner Packages",
-    bullets: ["Your Brand is, your true story", "Build your brand online with US!"],
+    title: "Web Advertising & Banner Campaigns",
+    bullets: [
+      "Banner placements",
+      "Discount coupons",
+      "Web advertising placements",
+    ],
+    description: "Promote your brand through banners, discount coupons, and web advertising placements.",
     path: "/online-advertising-sri-lanka",
   },
   {
     icon: PenTool,
     title: "Graphic Designing",
-    bullets: ["Artwork/E-flyer designing", "Social media post designing", "Short Animated video creation"],
+    bullets: [
+      "E-flyers & artwork",
+      "Social media creatives",
+      "Animated videos",
+    ],
+    description: "Professional design services including e-flyers, social media creatives, and animated videos.",
     path: "/graphic-designing-in-sri-lanka",
   },
   {
     icon: Search,
     title: "Search Engine Optimization (SEO)",
-    bullets: ["Increase Online visibility", "Increase Business Revenue", "SEO Will Drive More Customers"],
+    bullets: [
+      "Improve Google rankings",
+      "Increase website traffic",
+      "Generate more leads",
+    ],
+    description: "Improve your Google rankings, increase website traffic, and generate more leads.",
     path: "/seo-sri-lanka",
   },
   {
     icon: Monitor,
     title: "Website Designing",
-    bullets: ["Increase Online visibility", "Increase Business Revenue", "Increase Company Reputation"],
+    bullets: [
+      "Professional websites",
+      "Enhanced online presence",
+      "Increased credibility",
+    ],
+    description: "Build professional websites that enhance your online presence and credibility.",
     path: "/website-design-sri-lanka",
   },
 ];
@@ -89,12 +138,13 @@ const ServicesSection = () => {
                   <s.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-heading font-semibold text-foreground mb-3">{s.title}</h3>
-                <ul className="space-y-1">
-                  {s.bullets.map((b) => (
-                    <li key={b} className="text-sm text-muted-foreground leading-relaxed">{b}</li>
+                <ul className="space-y-1 mb-3">
+                  {s.bullets.slice(0, 4).map((b) => (
+                    <li key={b} className="text-sm text-muted-foreground leading-relaxed">• {b}</li>
                   ))}
                 </ul>
-                <span className="inline-block mt-4 text-sm font-semibold text-accent">More Info →</span>
+                <p className="text-xs text-muted-foreground/70 italic">{s.description}</p>
+                <span className="inline-block mt-4 text-sm font-semibold text-accent">Learn More →</span>
               </Link>
             </motion.div>
           ))}

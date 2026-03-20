@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: Award,
     title: "Experts in the industry",
-    desc: "Buzz Connect has been providing E-mail Marketing services since 2014 and has successfully completed over 20,000 E- campaigns & provided effective results to all our customers.",
+    desc: "Buzz Connect has been providing E-mail Marketing services since 2014 and has successfully completed over 20,000 E-campaigns & provided effective results to all our customers.",
   },
   {
     icon: Globe,
@@ -15,12 +15,12 @@ const reasons = [
   {
     icon: Share2,
     title: "Social media sharing",
-    desc: "All campaigns which conducted by Buzz connect will be publish on Facebook & Instagram as stores. The flyers of the customers who using our special packages, will be posted in Facebook as a post.",
+    desc: "All campaigns conducted by Buzz Connect will be published on Facebook & Instagram as stories. The flyers of the customers who use our special packages will be posted on Facebook as a post.",
   },
   {
     icon: LinkIcon,
     title: "Landing pages linked with flyers",
-    desc: "Landing page URL can be added to E-flyer in order to generate traffic to website, blog, facebook page, youtube video etc. or to get online leads.",
+    desc: "Landing page URL can be added to E-flyer in order to generate traffic to website, blog, Facebook page, YouTube video etc. or to get online leads.",
   },
 ];
 
@@ -59,25 +59,41 @@ const WhyUsSection = () => {
           ))}
         </div>
 
-        {/* General Advice Section */}
+        {/* FAQ Section */}
         <motion.div
-          className="mt-16 text-center"
+          className="mt-20 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="font-heading text-2xl font-bold text-foreground mb-4">
-            Be on the Top & Get More Traffic to Your Website
+          <h3 className="font-heading text-2xl font-bold text-foreground text-center mb-8">
+            Frequently Asked Questions
           </h3>
-          <p className="text-muted-foreground max-w-3xl mx-auto mb-2">
-            The following services explain how we approach DIGITAL MARKETING for a range of common purposes:
-          </p>
-          <p className="text-muted-foreground max-w-3xl mx-auto mb-2">
-            For businesses which sell products online and improve their product listings in the search results.
-          </p>
-          <p className="text-muted-foreground max-w-3xl mx-auto">
-            If you're investing in a new business it's important to ensure it's known to your customer base.
-          </p>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What is email marketing in Sri Lanka?",
+                a: "Email marketing is a strategy used by businesses to send targeted messages directly to customer inboxes.",
+              },
+              {
+                q: "Is SMS marketing effective in Sri Lanka?",
+                a: "Yes, SMS marketing has one of the highest open rates and is highly effective for promotions and alerts.",
+              },
+              {
+                q: "How does WhatsApp marketing help businesses?",
+                a: "WhatsApp marketing allows real-time communication with customers, improving engagement and conversions.",
+              },
+              {
+                q: "Why choose Buzz Connect?",
+                a: "Buzz Connect offers one of the largest marketing databases and cost-effective solutions in Sri Lanka.",
+              },
+            ].map((faq) => (
+              <div key={faq.q} className="bg-card rounded-xl p-6 border border-border">
+                <h4 className="font-heading font-semibold text-foreground mb-2">{faq.q}</h4>
+                <p className="text-sm text-muted-foreground">{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

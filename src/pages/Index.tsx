@@ -1,4 +1,5 @@
 import HeroSection from "@/components/home/HeroSection";
+import IntroductionSection from "@/components/home/IntroductionSection";
 import ServicesSection from "@/components/home/ServicesSection";
 import AboutSection from "@/components/home/AboutSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
@@ -8,6 +9,7 @@ const Index = () => {
   return (
     <div className="pt-16">
       <HeroSection />
+      <IntroductionSection />
       <ServicesSection />
       <AboutSection />
       <WhyUsSection />
