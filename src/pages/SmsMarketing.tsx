@@ -110,6 +110,7 @@ const SmsMarketing = () => {
         title="SMS Marketing Sri Lanka | Bulk SMS Advertising | Buzz Connect"
         description="Best SMS marketing Sri Lanka with 600,000+ reach. Targeted bulk SMS campaigns from LKR 2 per message. District-wise databases across all Sri Lanka."
         canonical="/sms-marketing"
+        keywords="sms marketing sri lanka, bulk sms sri lanka, sms advertising colombo, sms campaign sri lanka, targeted sms marketing, bulk sms service sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SMS Marketing", url: "/sms-marketing" },
