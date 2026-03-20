@@ -20,6 +20,12 @@ const testimonials = [
     author: "Valued Client",
     role: "Marketing Professional",
   },
+  {
+    quote:
+      "Buzz Connect completely changed the way we approach marketing. Their multi-channel strategy using email, SMS, WhatsApp, and Findit.lk delivered results far beyond what we experienced with other agencies. Within a short period, we saw a massive increase in inquiries and customer engagement. What makes Buzz Connect different is their ability to combine multiple platforms into one powerful campaign. It created a real impact on our business and helped us reach the right audience faster than ever before.",
+    author: "Valued Client",
+    role: "Business Owner",
+  },
 ];
 
 const TestimonialsSection = () => {
