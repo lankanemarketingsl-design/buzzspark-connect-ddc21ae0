@@ -62,15 +62,20 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Mail, text: "info@buzzconnect.lk" },
-                { icon: Phone, text: "+94 11 234 5678" },
-                { icon: MapPin, text: "Colombo, Sri Lanka" },
+                { icon: Mail, text: "info@buzzconnect.lk", href: "mailto:info@buzzconnect.lk" },
+                { icon: Phone, text: "+94 77 143 7707", href: "tel:+94771437707" },
+                { icon: Phone, text: "+94 77 197 6351", href: "tel:+94771976351" },
+                { icon: MapPin, text: "Colombo, Sri Lanka", href: undefined },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-accent/15 flex items-center justify-center">
                     <item.icon className="w-5 h-5 text-accent" />
                   </div>
-                  <span className="text-primary-foreground/80">{item.text}</span>
+                  {item.href ? (
+                    <a href={item.href} className="text-primary-foreground/80 hover:text-accent transition-colors">{item.text}</a>
+                  ) : (
+                    <span className="text-primary-foreground/80">{item.text}</span>
+                  )}
                 </div>
               ))}
             </div>

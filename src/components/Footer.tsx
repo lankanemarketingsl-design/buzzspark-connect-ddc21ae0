@@ -45,11 +45,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-accent" />
-                <span>info@buzzconnect.lk</span>
+                <a href="mailto:info@buzzconnect.lk" className="hover:text-accent transition-colors">info@buzzconnect.lk</a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 text-accent" />
-                <span>+94 11 234 5678</span>
+                <a href="tel:+94771437707" className="hover:text-accent transition-colors">+94 77 143 7707</a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 text-accent" />
+                <a href="tel:+94771976351" className="hover:text-accent transition-colors">+94 77 197 6351</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-accent" />
