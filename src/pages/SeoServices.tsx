@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Eye, TrendingUp, DollarSign, Search, Settings, FileText, MapPin, Target, Zap, BarChart3, Rocket, GraduationCap, ShoppingCart, Building2, Home, Briefcase, Globe, HelpCircle } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const packages = [
   {
