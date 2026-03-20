@@ -7,6 +7,11 @@ import chinesedragonLogo from "@/assets/logos/chinesedragon.jpg";
 import swarnamahalLogo from "@/assets/logos/swarnamahal.jpg";
 import burgerkingLogo from "@/assets/logos/burgerking.jpg";
 import mimosaLogo from "@/assets/logos/mimosa.png";
+import abansLogo from "@/assets/logos/abans.jpg";
+import odelLogo from "@/assets/logos/odel.jpg";
+import glomarkLogo from "@/assets/logos/glomark.jpg";
+import combankLogo from "@/assets/logos/combank.png";
+import allianceLogo from "@/assets/logos/alliance.png";
 import { motion } from "framer-motion";
 
 const logos = [
