@@ -72,6 +72,16 @@ const EmailMarketing = () => {
       title="Email Marketing Sri Lanka – Bulk Email Campaigns with High ROI"
       subtitle="Buzz Connect provides industry-leading email marketing services in Sri Lanka, helping businesses reach thousands of targeted customers instantly."
     >
+      <SEOHead
+        title="Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect"
+        description="Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns. Affordable packages starting from LKR 6,000. Buzz Connect."
+        canonical="/email-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Email Marketing", url: "/email-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
