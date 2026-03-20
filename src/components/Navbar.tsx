@@ -9,6 +9,7 @@ const navItems = [
   { label: "Email Marketing", path: "/email-marketing" },
   { label: "SMS Marketing", path: "/sms-marketing" },
   { label: "WhatsApp Marketing", path: "/whatsapp-marketing" },
+  { label: "Lead Generation", path: "/lead-generation-sri-lanka" },
   { label: "Online Advertising", path: "/online-advertising-sri-lanka" },
   { label: "SEO", path: "/seo-sri-lanka" },
   { label: "Web Design", path: "/website-design-sri-lanka" },

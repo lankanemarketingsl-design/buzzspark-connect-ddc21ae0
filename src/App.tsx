@@ -16,6 +16,7 @@ import OnlineAdvertising from "./pages/OnlineAdvertising.tsx";
 import GraphicDesign from "./pages/GraphicDesign.tsx";
 import SeoServices from "./pages/SeoServices.tsx";
 import WebsiteDesign from "./pages/WebsiteDesign.tsx";
+import LeadGeneration from "./pages/LeadGeneration.tsx";
 import Resources from "./pages/Resources.tsx";
 import WhyEmailMarketingIsImportant from "./pages/articles/WhyEmailMarketingIsImportant.tsx";
 import WhyYouNeedEmailMarketing from "./pages/articles/WhyYouNeedEmailMarketing.tsx";
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
           <Route path="/seo-sri-lanka" element={<SeoServices />} />
           <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
+          <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
           <Route path="/resources" element={<Resources />} />
           {/* Resource article pages */}
           <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />

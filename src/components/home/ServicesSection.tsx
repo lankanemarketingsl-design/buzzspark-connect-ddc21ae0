@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Package, ArrowRight } from "lucide-react";
+import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Package, ArrowRight, Target } from "lucide-react";
 
 const services = [
   {
@@ -53,6 +53,19 @@ const services = [
     ],
     description: "Ideal for both SMEs and large-scale businesses.",
     path: "/multi-channel-marketing-sri-lanka",
+  },
+  {
+    icon: Target,
+    title: "Lead Generation Sri Lanka",
+    bullets: [
+      "Multi-channel lead campaigns",
+      "Database targeting & segmentation",
+      "Landing page creation",
+      "High-quality business leads",
+    ],
+    description: "Generate high-quality leads and grow your customer base across Sri Lanka.",
+    path: "/lead-generation-sri-lanka",
+    highlight: true,
   },
   {
     icon: Globe,
