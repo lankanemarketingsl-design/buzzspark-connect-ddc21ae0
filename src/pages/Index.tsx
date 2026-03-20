@@ -63,6 +63,7 @@ const Index = () => {
         buttonText="Chat on WhatsApp"
         variant="navy"
       />
+      <LogoCarousel />
       <WhyUsSection />
       <ContactSection />
     </div>
