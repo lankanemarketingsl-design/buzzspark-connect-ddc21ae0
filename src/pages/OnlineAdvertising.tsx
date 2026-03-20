@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Globe, ShoppingBag, Building, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
+import { CheckCircle, Globe, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
 import { useEffect } from "react";
 
 const finditPackages = [
