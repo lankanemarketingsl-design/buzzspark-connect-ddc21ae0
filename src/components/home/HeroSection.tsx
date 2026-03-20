@@ -6,7 +6,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[75vh] flex items-center overflow-hidden pb-16">
+    <section className="relative min-h-[60vh] sm:min-h-[75vh] flex items-center overflow-hidden pb-10 sm:pb-16">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBg})` }}
