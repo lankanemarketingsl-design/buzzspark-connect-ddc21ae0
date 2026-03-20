@@ -33,7 +33,7 @@ const ContactSection = () => {
             <Rocket className="w-6 h-6 text-accent" />
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">Get Started</span>
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold mt-2 mb-4">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-bold mt-2 mb-4">
             Start Your Email, SMS &amp; WhatsApp Marketing Campaign Today
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto">
