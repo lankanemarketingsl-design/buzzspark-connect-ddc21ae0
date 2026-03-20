@@ -83,6 +83,7 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
       sameAs: [
         "https://www.facebook.com/buzzconnect/",
         "https://www.instagram.com/buzzconnect/",
+        "https://www.linkedin.com/in/buzz-connect-93330ba1/",
       ],
       priceRange: "LKR",
     };
