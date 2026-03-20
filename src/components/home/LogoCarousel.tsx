@@ -47,8 +47,34 @@ const logos = [
   { name: "Ninewells Hospital", src: ninewellsLogo },
 ];
 
+const row1 = logos.slice(0, Math.ceil(logos.length / 2));
+const row2 = logos.slice(Math.ceil(logos.length / 2));
+
 const LogoCarousel = () => {
-  const doubled = [...logos, ...logos];
+  const doubledRow1 = [...row1, ...row1];
+  const doubledRow2 = [...row2, ...row2];
+
+  const renderRow = (items: typeof logos, animationClass: string) => (
+    <div className="relative mb-4 last:mb-0">
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
+      <div className={`flex ${animationClass} w-max hover:[animation-play-state:paused]`}>
+        {items.map((logo, i) => (
+          <div
+            key={`${logo.name}-${i}`}
+            className="flex-shrink-0 mx-6 flex items-center justify-center h-20 w-40 rounded-lg bg-white p-3"
+          >
+            <img
+              src={logo.src}
+              alt={logo.name}
+              className="max-h-full max-w-full object-contain"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <section className="py-12 bg-background overflow-hidden">
@@ -62,25 +88,8 @@ const LogoCarousel = () => {
           Trusted by Leading Brands in Sri Lanka
         </motion.h2>
       </div>
-      <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
-        <div className="flex animate-scroll w-max hover:[animation-play-state:paused]">
-          {doubled.map((logo, i) => (
-            <div
-              key={`${logo.name}-${i}`}
-              className="flex-shrink-0 mx-6 flex items-center justify-center h-20 w-40 rounded-lg bg-white p-3"
-            >
-              <img
-                src={logo.src}
-                alt={logo.name}
-                className="max-h-full max-w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      {renderRow(doubledRow1, "animate-scroll")}
+      {renderRow(doubledRow2, "animate-scroll-reverse")}
     </section>
   );
 };
