@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Globe, ShoppingBag, Building, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
+import { CheckCircle, Globe, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
 import { useEffect } from "react";
 
 const finditPackages = [
@@ -11,41 +11,34 @@ const finditPackages = [
   { item: "Push Notification", impressions: "250,000+", price: "—", duration: "4 Weeks" },
 ];
 
-const buyitPackages = [
-  { item: "Popup banner", price: "LKR 25,000", duration: "1 Week" },
-  { item: "Top banner", price: "LKR 15,000", duration: "2 Weeks" },
-  { item: "Side banner in the listing page", price: "LKR 15,000", duration: "2 Weeks" },
-  { item: "Side banner in the app view", price: "LKR 5,000", duration: "1 Week" },
-];
-
 const comboPackages = [
   {
     name: "Package 1",
     impressions: "500,000",
     period: "2 Days",
     desc: "If you are a small business and you are interested in small rebranding then this is a perfect plan for you. Get results generating outcomes for a reasonable price. Increase your brand exposure by tapping all social media platforms.",
-    features: ["Findit Popup", "Buyit Popup", "Buyit Side Banner", "Buyit Top Banner", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story"],
+    features: ["Findit Popup", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story"],
   },
   {
     name: "Package 2",
     impressions: "750,000",
     period: "4 Days",
     desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective email campaigns for 250,000 subscribers.",
-    features: ["Findit Popup", "Buyit Popup", "Buyit Side Banner", "Buyit Top Banner", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story", "Sharing Social Media Promotions"],
+    features: ["Findit Popup", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story", "Sharing Social Media Promotions"],
   },
   {
     name: "Package 3",
     impressions: "1,000,000",
     period: "5 Days",
     desc: "For large enterprise who are interested in increasing brand awareness and brand recognition. Increase your brand visibility with a Featured Ad, a pop-up banner and the main banner for your business with a winning SMS marketing strategy. Get an effective email campaign and powerful results driven lead generation campaign.",
-    features: ["Findit Popup", "Buyit Popup", "Buyit Side Banner", "Buyit Top Banner", "Findit Featured", "2 Email Campaigns", "Push Notification", "SMS Campaign - 25,000", "Facebook Story / Post", "Instagram Story"],
+    features: ["Findit Popup", "Findit Featured", "2 Email Campaigns", "Push Notification", "SMS Campaign - 25,000", "Facebook Story / Post", "Instagram Story"],
   },
   {
     name: "Package 4",
     impressions: "1,200,000",
     period: "7 Days",
     desc: "Large enterprise can archive a winning enterprise marketing plan for large consumer markets as effectively as possible. We offer powerful SMS marketing strategy for a large audience of 75,000 subscribers and effective email campaigns. Guaranteeing quality lead generation campaigns.",
-    features: ["Findit Popup", "Buyit Popup", "Buyit Side Banner", "Buyit Top Banner", "Findit Featured", "3 Email Campaigns", "Push Notification", "SMS Campaign - 75,000", "Facebook Story / Post", "Instagram Story"],
+    features: ["Findit Popup", "Findit Featured", "3 Email Campaigns", "Push Notification", "SMS Campaign - 75,000", "Facebook Story / Post", "Instagram Story"],
   },
 ];
 
@@ -232,65 +225,6 @@ const OnlineAdvertising = () => {
               ))}
             </ul>
           </div>
-        </div>
-      </motion.div>
-
-      {/* Buyit.lk */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <div className="flex items-center gap-3 mb-6">
-          <ShoppingBag className="w-8 h-8 text-secondary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Buyit.lk - Classified Advertisement Site in Sri Lanka</h2>
-        </div>
-        <p className="text-muted-foreground mb-2 max-w-4xl">Effective way of communicating your message to the island wide audience.</p>
-        <p className="text-muted-foreground mb-6 max-w-4xl">
-          Buyit.lk is a website that has sell products and services in minutes, such as Vehicles, Electronic items, Mobile phones, Properties & pets. If you are a business owner or a seller, you can create your own online shop with us for free and sell things effortlessly and earn profits. If your a consumer looking to buy things at a good value, then buyit.lk is the best Online Marketplace in Sri Lanka where you can buy these products for a great deal.
-        </p>
-        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Buyit.lk Packages</h3>
-        <div className="overflow-x-auto">
-          <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden">
-            <thead>
-              <tr className="gradient-hero text-primary-foreground">
-                <th className="text-left p-4 font-heading">Item</th>
-                <th className="text-center p-4 font-heading">Price</th>
-                <th className="text-center p-4 font-heading">Duration</th>
-              </tr>
-            </thead>
-            <tbody>
-              {buyitPackages.map((p, i) => (
-                <tr key={p.item} className={i % 2 === 0 ? "bg-muted/30" : ""}>
-                  <td className="p-4 text-sm text-foreground font-medium">{p.item}</td>
-                  <td className="p-4 text-center text-sm font-semibold text-accent">{p.price}</td>
-                  <td className="p-4 text-center text-sm text-muted-foreground">{p.duration}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </motion.div>
-
-      {/* PlaceBook.lk */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <div className="flex items-center gap-3 mb-6">
-          <Building className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">PlaceBook.lk - Make Your Business Reach the Right Audience</h2>
-        </div>
-        <p className="text-muted-foreground mb-6 max-w-4xl">
-          PlaceBook.lk is a Business listing site which allows people to list their business and generate leads and increase brand awareness. Visitors can find products or any service such as restaurants near to them or doctors near to them with placebook.lk.
-        </p>
-        <div className="flex flex-wrap gap-3 mb-8">
-          {["Top Ads", "Side ads", "Featured ads", "Pop up banner"].map((ad) => (
-            <span key={ad} className="px-4 py-2 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{ad}</span>
-          ))}
         </div>
       </motion.div>
 
