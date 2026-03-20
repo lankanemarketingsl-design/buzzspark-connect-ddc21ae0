@@ -44,7 +44,7 @@ const services = [
   },
   {
     icon: Package,
-    title: "Special Advertising Packages",
+    title: "Multi Channel Marketing Campaigns",
     bullets: [
       "Reach 450,000 audience",
       "Reach 550,000 audience",
