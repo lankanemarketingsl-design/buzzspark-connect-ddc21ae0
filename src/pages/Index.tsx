@@ -45,7 +45,7 @@ const Index = () => {
   ], []);
 
   return (
-    <div className="pt-16">
+    <div className="pt-14 sm:pt-16">
       <SEOHead
         title="Email Marketing Sri Lanka | SMS & WhatsApp Marketing | Buzz Connect"
         description="Buzz Connect is the No.1 email marketing, SMS marketing, and WhatsApp marketing company in Sri Lanka. Reach 350,000+ subscribers with cost-effective digital marketing solutions. SEO, graphic design & website design services."

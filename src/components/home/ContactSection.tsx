@@ -86,7 +86,7 @@ const ContactSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-card/10 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10"
+            className="bg-card/10 backdrop-blur-sm rounded-2xl p-5 sm:p-8 border border-primary-foreground/10"
           >
             <h3 className="font-heading text-xl font-semibold mb-6">Request more information</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">

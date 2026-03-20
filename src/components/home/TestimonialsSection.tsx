@@ -104,7 +104,7 @@ const TestimonialsSection = () => {
                     <Star key={s} className="h-5 w-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <blockquote className="text-muted-foreground leading-relaxed text-center italic mb-6">
+                <blockquote className="text-sm sm:text-base text-muted-foreground leading-relaxed text-center italic mb-6">
                   "{t.quote}"
                 </blockquote>
                 <div className="text-center">

@@ -15,7 +15,7 @@ interface ServicePageLayoutProps {
 
 const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayoutProps) => {
   return (
-    <div className="pt-16">
+    <div className="pt-14 sm:pt-16">
       {/* Page Hero */}
       <section className="gradient-hero text-primary-foreground py-12 sm:py-20">
         <div className="container mx-auto px-4">

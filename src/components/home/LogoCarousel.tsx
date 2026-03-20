@@ -62,7 +62,7 @@ const LogoCarousel = () => {
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex-shrink-0 mx-6 flex items-center justify-center h-20 w-40 rounded-lg bg-white p-3"
+            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-14 w-28 sm:h-20 sm:w-40 rounded-lg bg-white p-2 sm:p-3"
           >
             <img
               src={logo.src}
