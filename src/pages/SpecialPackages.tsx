@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const smsPackages = [
   {
