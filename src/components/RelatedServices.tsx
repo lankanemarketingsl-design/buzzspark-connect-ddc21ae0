@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Smartphone, MessageSquare, Package, Globe, PenTool, Search, Monitor, Target } from "lucide-react";
+import { ArrowRight, Mail, Smartphone, MessageSquare, Package, Globe, PenTool, Search, Monitor, Target, Share2 } from "lucide-react";
 
 const allServices = [
   { title: "Email Marketing", path: "/email-marketing", icon: Mail, keyword: "Email Marketing Sri Lanka" },
   { title: "SMS Marketing", path: "/sms-marketing", icon: Smartphone, keyword: "SMS Marketing Sri Lanka" },
   { title: "WhatsApp Marketing", path: "/whatsapp-marketing", icon: MessageSquare, keyword: "WhatsApp Marketing Sri Lanka" },
   { title: "Lead Generation", path: "/lead-generation-sri-lanka", icon: Target, keyword: "Lead Generation Sri Lanka" },
+  { title: "Social Media Marketing", path: "/social-media-marketing-sri-lanka", icon: Share2, keyword: "Social Media Marketing Sri Lanka" },
   { title: "Multi-Channel Marketing", path: "/multi-channel-marketing-sri-lanka", icon: Package, keyword: "Multi-Channel Campaigns" },
   { title: "Online Advertising", path: "/online-advertising-sri-lanka", icon: Globe, keyword: "Web Advertising Sri Lanka" },
   { title: "Graphic Design", path: "/graphic-designing-in-sri-lanka", icon: PenTool, keyword: "Graphic Design Sri Lanka" },

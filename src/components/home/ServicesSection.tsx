@@ -68,6 +68,19 @@ const services = [
     highlight: true,
   },
   {
+    icon: Share2,
+    title: "Social Media Marketing Sri Lanka",
+    bullets: [
+      "Facebook & Instagram advertising",
+      "Content creation & post design",
+      "TikTok & LinkedIn campaigns",
+      "Campaign management & reporting",
+    ],
+    description: "Grow your brand with targeted social media campaigns across all major platforms.",
+    path: "/social-media-marketing-sri-lanka",
+    highlight: true,
+  },
+  {
     icon: Globe,
     title: "Web Advertising & Banner Campaigns",
     bullets: [
