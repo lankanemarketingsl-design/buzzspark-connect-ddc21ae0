@@ -24,6 +24,11 @@ const logos = [
   { name: "Swarnamahal", src: swarnamahalLogo },
   { name: "Burger King", src: burgerkingLogo },
   { name: "Mimosa", src: mimosaLogo },
+  { name: "Abans", src: abansLogo },
+  { name: "Odel", src: odelLogo },
+  { name: "Glomark", src: glomarkLogo },
+  { name: "Commercial Bank", src: combankLogo },
+  { name: "Alliance Finance", src: allianceLogo },
 ];
 
 const LogoCarousel = () => {
