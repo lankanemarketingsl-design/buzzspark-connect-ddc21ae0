@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const WhyYouNeedEmailMarketing = () => {
-  useEffect(() => {
-    document.title = "Why You Need Email Marketing | Buzz Connect Sri Lanka";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn why email marketing is the most cost-effective digital strategy for converting prospects into customers. Choose Buzz Connect as your email marketing partner in Sri Lanka.");
-  }, []);
 
   return (
     <ServicePageLayout
