@@ -302,6 +302,9 @@ const MultiChannelMarketingSriLanka = () => {
           </a>
         </section>
       </article>
+      <div className="container mx-auto px-4">
+        <RelatedArticles currentPath="/multi-channel-marketing-in-sri-lanka" />
+      </div>
     </ServicePageLayout>
   );
 };

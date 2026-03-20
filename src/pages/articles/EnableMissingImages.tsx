@@ -121,6 +121,7 @@ const EnableMissingImages = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/enable-missing-images-to-display" />
       </div>
     </ServicePageLayout>
   );

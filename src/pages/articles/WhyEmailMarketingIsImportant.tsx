@@ -86,6 +86,7 @@ const WhyEmailMarketingIsImportant = () => {
             </div>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/why-email-marketing-is-important" />
       </div>
     </ServicePageLayout>
   );

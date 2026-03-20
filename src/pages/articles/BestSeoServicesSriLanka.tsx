@@ -79,6 +79,7 @@ const BestSeoServicesSriLanka = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/best-seo-services-sri-lanka" />
       </div>
     </ServicePageLayout>
   );

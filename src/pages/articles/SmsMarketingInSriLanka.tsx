@@ -84,6 +84,7 @@ const SmsMarketingInSriLanka = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/sms-marketing-in-sri-lanka" />
       </div>
     </ServicePageLayout>
   );

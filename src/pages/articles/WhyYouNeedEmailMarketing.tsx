@@ -69,6 +69,7 @@ const WhyYouNeedEmailMarketing = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/why-you-need-email-marketing" />
       </div>
     </ServicePageLayout>
   );
