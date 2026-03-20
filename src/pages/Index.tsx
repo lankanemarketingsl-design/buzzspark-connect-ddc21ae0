@@ -50,6 +50,7 @@ const Index = () => {
         title="Email Marketing Sri Lanka | SMS & WhatsApp Marketing | Buzz Connect"
         description="Buzz Connect is the No.1 email marketing, SMS marketing, and WhatsApp marketing company in Sri Lanka. Reach 350,000+ subscribers with cost-effective digital marketing solutions. SEO, graphic design & website design services."
         canonical="/"
+        keywords="email marketing sri lanka, sms marketing sri lanka, whatsapp marketing sri lanka, digital marketing colombo, bulk email sri lanka, bulk sms sri lanka, online advertising sri lanka, seo services sri lanka, website design sri lanka, graphic design sri lanka"
         breadcrumbs={[{ name: "Home", url: "/" }]}
         jsonLd={jsonLd}
       />
