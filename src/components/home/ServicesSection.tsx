@@ -54,7 +54,7 @@ const services = [
       "Reach 625,000 audience",
     ],
     description: "Ideal for both SMEs and large-scale businesses.",
-    path: "/special-advertising-packages",
+    path: "/multi-channel-marketing-sri-lanka",
   },
   {
     icon: Globe,
