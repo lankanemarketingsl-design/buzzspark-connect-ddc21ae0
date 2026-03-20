@@ -11,7 +11,7 @@ const navItems = [
   { label: "WhatsApp Marketing", path: "/whatsapp-marketing" },
   { label: "Lead Generation", path: "/lead-generation-sri-lanka" },
   { label: "Social Media", path: "/social-media-marketing-sri-lanka" },
-  { label: "Online Advertising", path: "/online-advertising-sri-lanka" },
+  { label: "Multi Channel", path: "/multi-channel-marketing-sri-lanka" },
   { label: "SEO", path: "/seo-sri-lanka" },
   { label: "Graphic Design", path: "/graphic-designing-in-sri-lanka" },
 ];
