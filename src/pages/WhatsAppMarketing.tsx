@@ -80,14 +80,8 @@ const faqs = [
 ];
 
 const WhatsAppMarketing = () => {
-  useEffect(() => {
-    document.title = "WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -95,10 +89,16 @@ const WhatsAppMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "WhatsApp Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best WhatsApp marketing services in Sri Lanka with targeted databases.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
