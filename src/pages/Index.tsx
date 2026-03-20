@@ -6,6 +6,7 @@ import WhyUsSection from "@/components/home/WhyUsSection";
 import ContactSection from "@/components/home/ContactSection";
 import CTABanner from "@/components/home/CTABanner";
 import TrustStrip from "@/components/home/TrustStrip";
+import LogoCarousel from "@/components/home/LogoCarousel";
 import SEOHead from "@/components/SEOHead";
 import { useMemo } from "react";
 
