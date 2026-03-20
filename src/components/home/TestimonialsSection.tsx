@@ -26,6 +26,12 @@ const testimonials = [
     author: "Valued Client",
     role: "Business Owner",
   },
+  {
+    quote:
+      "We have worked with several marketing companies before, but Buzz Connect stands out as the most effective. Their multi-channel marketing campaigns gave us unmatched reach across Sri Lanka. The combination of direct marketing tools and Findit.lk promotions created strong visibility and consistent leads. We noticed a significant boost in our brand awareness and sales within weeks. Buzz Connect truly delivers results and is far ahead of other marketing providers.",
+    author: "Valued Client",
+    role: "Senior Marketing Executive",
+  },
 ];
 
 const TestimonialsSection = () => {
