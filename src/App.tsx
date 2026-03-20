@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/email-marketing" element={<EmailMarketing />} />
           <Route path="/sms-marketing" element={<SmsMarketing />} />
           <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
+          <Route path="/multi-channel-marketing-sri-lanka" element={<SpecialPackages />} />
           <Route path="/special-advertising-packages" element={<SpecialPackages />} />
           <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
           <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
