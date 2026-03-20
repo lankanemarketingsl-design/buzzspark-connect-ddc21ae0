@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Buzz Connect" className="h-8 w-auto brightness-0 invert" />
+              <img src={logo} alt="Buzz Connect" className="h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Sri Lanka's No.1 Email, WhatsApp & SMS marketing company providing cost-effective digital marketing solutions since 2014.
