@@ -91,14 +91,8 @@ const faqs = [
 ];
 
 const OnlineAdvertising = () => {
-  useEffect(() => {
-    document.title = "Online Advertising Sri Lanka | Banner Ads Sri Lanka | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best online advertising Sri Lanka with banner campaigns on Findit.lk. Reach thousands and boost visibility with Buzz Connect.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -106,10 +100,16 @@ const OnlineAdvertising = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Online Advertising Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Online advertising and banner campaigns on Findit.lk in Sri Lanka.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
