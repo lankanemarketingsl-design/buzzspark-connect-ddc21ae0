@@ -50,8 +50,8 @@ const Index = () => {
         jsonLd={jsonLd}
       />
       <HeroSection />
-      <IntroductionSection />
       <ServicesSection />
+      <IntroductionSection />
       <AboutSection />
       <WhyUsSection />
       <ContactSection />
