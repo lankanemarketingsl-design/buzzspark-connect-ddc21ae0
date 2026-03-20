@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-dark.png";
 
 const Footer = () => {
   return (
@@ -9,10 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Buzz Connect" className="h-9 w-9" />
-              <span className="font-heading text-xl font-bold">
-                Buzz<span className="text-accent">Connect</span>
-              </span>
+              <img src={logo} alt="Buzz Connect" className="h-8 w-auto brightness-0 invert" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Sri Lanka's No.1 Email, WhatsApp & SMS marketing company providing cost-effective digital marketing solutions since 2014.
