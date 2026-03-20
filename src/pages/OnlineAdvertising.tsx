@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Globe, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
