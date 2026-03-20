@@ -318,6 +318,7 @@ const EmailMarketing = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <RelatedArticles currentPath="/email-marketing" />
     </ServicePageLayout>
   );
 };

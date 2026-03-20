@@ -332,6 +332,7 @@ const WhatsAppMarketing = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <RelatedArticles currentPath="/whatsapp-marketing" />
     </ServicePageLayout>
   );
 };

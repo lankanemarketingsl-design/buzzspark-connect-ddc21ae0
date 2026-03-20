@@ -374,6 +374,7 @@ const SeoServices = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <RelatedArticles currentPath="/seo-sri-lanka" />
     </ServicePageLayout>
   );
 };
