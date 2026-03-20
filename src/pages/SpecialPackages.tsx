@@ -110,14 +110,8 @@ const PackageCard = ({ pkg, index }: { pkg: { name: string; reach: string; items
 );
 
 const SpecialPackages = () => {
-  useEffect(() => {
-    document.title = "Multi Channel Marketing Sri Lanka | Integrated Advertising Solutions";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best multi channel marketing Sri Lanka combining email, SMS, WhatsApp & Findit.lk. Reach thousands with one campaign.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -125,10 +119,8 @@ const SpecialPackages = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+  ], []);
 
   return (
     <ServicePageLayout
