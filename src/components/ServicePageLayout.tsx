@@ -27,8 +27,8 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/15 text-accent border border-accent/30 mb-4">
               {badge}
             </span>
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">{title}</h1>
-            <p className="text-primary-foreground/70 text-lg leading-relaxed mb-8">{subtitle}</p>
+            <h1 className="font-heading text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">{title}</h1>
+            <p className="text-primary-foreground/70 text-sm sm:text-lg leading-relaxed mb-6 sm:mb-8">{subtitle}</p>
             <div className="flex flex-wrap gap-4">
               <Link to="/#contactus">
                 <Button variant="hero" size="lg" className="text-base">
