@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Package, ArrowRight, Target } from "lucide-react";
+import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Package, ArrowRight, Target, Share2 } from "lucide-react";
 
 const services = [
   {
@@ -65,6 +65,19 @@ const services = [
     ],
     description: "Generate high-quality leads and grow your customer base across Sri Lanka.",
     path: "/lead-generation-sri-lanka",
+    highlight: true,
+  },
+  {
+    icon: Share2,
+    title: "Social Media Marketing Sri Lanka",
+    bullets: [
+      "Facebook & Instagram advertising",
+      "Content creation & post design",
+      "TikTok & LinkedIn campaigns",
+      "Campaign management & reporting",
+    ],
+    description: "Grow your brand with targeted social media campaigns across all major platforms.",
+    path: "/social-media-marketing-sri-lanka",
     highlight: true,
   },
   {
