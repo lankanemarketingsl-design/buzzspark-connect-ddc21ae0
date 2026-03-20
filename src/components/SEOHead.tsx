@@ -6,19 +6,18 @@ interface SEOHeadProps {
   canonical: string;
   ogImage?: string;
   ogType?: string;
+  keywords?: string;
   breadcrumbs?: { name: string; url: string }[];
   jsonLd?: object[];
 }
 
 const SITE_URL = "https://buzzconnect.lk";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
+const DEFAULT_OG_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/tmIaoo88z2Xx6RhZlq0u8oH6sQ62/social-images/social-1773993015369-logo-dark.webp";
 
-const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", breadcrumbs, jsonLd = [] }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", keywords, breadcrumbs, jsonLd = [] }: SEOHeadProps) => {
   useEffect(() => {
-    // Title
     document.title = title;
 
-    // Meta tags
     const setMeta = (name: string, content: string, attr = "name") => {
       let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement;
       if (!el) {
@@ -29,8 +28,10 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
       el.setAttribute("content", content);
     };
 
+    // Core meta
     setMeta("description", description);
     setMeta("robots", "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1");
+    if (keywords) setMeta("keywords", keywords);
 
     // Open Graph
     const fullCanonical = canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`;
@@ -39,6 +40,9 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
     setMeta("og:url", fullCanonical, "property");
     setMeta("og:type", ogType, "property");
     setMeta("og:image", ogImage || DEFAULT_OG_IMAGE, "property");
+    setMeta("og:image:width", "1200", "property");
+    setMeta("og:image:height", "630", "property");
+    setMeta("og:image:alt", title, "property");
     setMeta("og:site_name", "Buzz Connect", "property");
     setMeta("og:locale", "en_LK", "property");
 
@@ -47,6 +51,7 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
     setMeta("twitter:image", ogImage || DEFAULT_OG_IMAGE);
+    setMeta("twitter:image:alt", title);
 
     // Canonical
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
@@ -58,23 +63,44 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
     link.setAttribute("href", fullCanonical);
 
     // JSON-LD schemas
+    // Remove previous SEO head scripts
+    document.querySelectorAll('script[data-seo-head="true"]').forEach(s => s.remove());
+
     const scripts: HTMLScriptElement[] = [];
 
-    // Organization schema (always present)
-    const orgSchema = {
+    const addSchema = (schema: object) => {
+      const s = document.createElement("script");
+      s.type = "application/ld+json";
+      s.text = JSON.stringify(schema);
+      s.setAttribute("data-seo-head", "true");
+      document.head.appendChild(s);
+      scripts.push(s);
+    };
+
+    // Organization + LocalBusiness
+    addSchema({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": `${SITE_URL}/#organization`,
       name: "Buzz Connect",
+      alternateName: "Buzz Connect Sri Lanka",
       url: SITE_URL,
-      logo: `${SITE_URL}/og-image.png`,
+      logo: DEFAULT_OG_IMAGE,
+      image: DEFAULT_OG_IMAGE,
       description: "No.1 email marketing, SMS marketing, WhatsApp marketing and digital advertising company in Sri Lanka.",
       telephone: ["+94771437707", "+94771976351"],
       email: "infobuzzconnect@gmail.com",
+      foundingDate: "2014",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Colombo",
+        addressRegion: "Western Province",
         addressCountry: "LK",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "6.9271",
+        longitude: "79.8612",
       },
       areaServed: {
         "@type": "Country",
@@ -85,18 +111,36 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
         "https://www.instagram.com/buzzconnect/",
         "https://www.linkedin.com/in/buzz-connect-93330ba1/",
       ],
-      priceRange: "LKR",
-    };
-    const orgScript = document.createElement("script");
-    orgScript.type = "application/ld+json";
-    orgScript.text = JSON.stringify(orgSchema);
-    orgScript.setAttribute("data-seo-head", "true");
-    document.head.appendChild(orgScript);
-    scripts.push(orgScript);
+      priceRange: "LKR 6,000 - LKR 50,000",
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "150",
+        bestRating: "5",
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Digital Marketing Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Email Marketing Sri Lanka" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SMS Marketing Sri Lanka" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "WhatsApp Marketing Sri Lanka" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Services Sri Lanka" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Design Sri Lanka" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Graphic Design Sri Lanka" } },
+        ],
+      },
+    });
 
     // Breadcrumbs
     if (breadcrumbs && breadcrumbs.length > 0) {
-      const breadcrumbSchema = {
+      addSchema({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: breadcrumbs.map((bc, i) => ({
@@ -105,31 +149,18 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
           name: bc.name,
           item: bc.url.startsWith("http") ? bc.url : `${SITE_URL}${bc.url}`,
         })),
-      };
-      const bcScript = document.createElement("script");
-      bcScript.type = "application/ld+json";
-      bcScript.text = JSON.stringify(breadcrumbSchema);
-      bcScript.setAttribute("data-seo-head", "true");
-      document.head.appendChild(bcScript);
-      scripts.push(bcScript);
+      });
     }
 
-    // Additional JSON-LD (FAQPage, etc.)
-    jsonLd.forEach((schema) => {
-      const s = document.createElement("script");
-      s.type = "application/ld+json";
-      s.text = JSON.stringify(schema);
-      s.setAttribute("data-seo-head", "true");
-      document.head.appendChild(s);
-      scripts.push(s);
-    });
+    // Additional JSON-LD
+    jsonLd.forEach(addSchema);
 
     return () => {
       scripts.forEach((s) => {
         if (s.parentNode) s.parentNode.removeChild(s);
       });
     };
-  }, [title, description, canonical, ogImage, ogType, breadcrumbs, jsonLd]);
+  }, [title, description, canonical, ogImage, ogType, keywords, breadcrumbs, jsonLd]);
 
   return null;
 };
