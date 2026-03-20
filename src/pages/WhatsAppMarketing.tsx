@@ -110,6 +110,7 @@ const WhatsAppMarketing = () => {
         title="WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect"
         description="Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message. Reach 600,000+ users."
         canonical="/whatsapp-marketing"
+        keywords="whatsapp marketing sri lanka, bulk whatsapp sri lanka, whatsapp advertising colombo, whatsapp campaign sri lanka, whatsapp bulk messaging service"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "WhatsApp Marketing", url: "/whatsapp-marketing" },

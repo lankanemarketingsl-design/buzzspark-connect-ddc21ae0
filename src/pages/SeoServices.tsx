@@ -121,6 +121,7 @@ const SeoServices = () => {
         title="SEO Sri Lanka | Best SEO Services Company | Buzz Connect"
         description="Best SEO Sri Lanka services to rank your website on Google. On-page, technical, local SEO. Packages from LKR 30,000. Increase traffic, leads & sales."
         canonical="/seo-sri-lanka"
+        keywords="seo sri lanka, seo services sri lanka, best seo company sri lanka, google ranking sri lanka, search engine optimization colombo, local seo sri lanka, seo agency sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SEO Services", url: "/seo-sri-lanka" },

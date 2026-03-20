@@ -76,6 +76,7 @@ const EmailMarketing = () => {
         title="Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect"
         description="Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns. Affordable packages starting from LKR 6,000. Buzz Connect."
         canonical="/email-marketing"
+        keywords="email marketing sri lanka, bulk email sri lanka, email campaign colombo, email advertising sri lanka, corporate email marketing, email database sri lanka, best email marketing company sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Email Marketing", url: "/email-marketing" },
