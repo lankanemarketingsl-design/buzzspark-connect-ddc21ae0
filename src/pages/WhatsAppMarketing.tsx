@@ -106,6 +106,16 @@ const WhatsAppMarketing = () => {
       title="WhatsApp Marketing Sri Lanka – Bulk WhatsApp Advertising & Business Messaging"
       subtitle="Buzz Connect offers advanced WhatsApp marketing services in Sri Lanka, helping businesses reach thousands of customers instantly through direct and personalized messaging."
     >
+      <SEOHead
+        title="WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect"
+        description="Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message. Reach 600,000+ users."
+        canonical="/whatsapp-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "WhatsApp Marketing", url: "/whatsapp-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

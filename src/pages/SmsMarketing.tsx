@@ -106,6 +106,16 @@ const SmsMarketing = () => {
       title="SMS Marketing Sri Lanka – Bulk SMS Advertising with Targeted Databases"
       subtitle="Buzz Connect provides one of the most powerful SMS marketing services in Sri Lanka, enabling businesses to instantly reach thousands of customers with high-impact messaging."
     >
+      <SEOHead
+        title="SMS Marketing Sri Lanka | Bulk SMS Advertising | Buzz Connect"
+        description="Best SMS marketing Sri Lanka with 600,000+ reach. Targeted bulk SMS campaigns from LKR 2 per message. District-wise databases across all Sri Lanka."
+        canonical="/sms-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "SMS Marketing", url: "/sms-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

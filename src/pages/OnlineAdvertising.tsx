@@ -117,6 +117,16 @@ const OnlineAdvertising = () => {
       title="Online Advertising Sri Lanka – Banner Advertising & Promotions on Findit.lk"
       subtitle="Buzz Connect offers powerful online advertising services in Sri Lanka, specializing in high-visibility banner campaigns and promotions through Findit.lk — one of Sri Lanka's leading online advertising platforms."
     >
+      <SEOHead
+        title="Online Advertising Sri Lanka | Banner Ads & Web Promotions | Buzz Connect"
+        description="Best online advertising Sri Lanka with banner campaigns on Findit.lk. Reach thousands with popup banners, featured ads & combo packages. Buzz Connect."
+        canonical="/online-advertising-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Online Advertising", url: "/online-advertising-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

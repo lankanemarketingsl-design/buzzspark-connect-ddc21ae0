@@ -117,6 +117,16 @@ const SeoServices = () => {
       title="SEO Sri Lanka – Professional Search Engine Optimization Services for Business Growth"
       subtitle="Buzz Connect provides results-driven SEO services in Sri Lanka, helping businesses improve their Google rankings, increase website traffic, and generate high-quality leads."
     >
+      <SEOHead
+        title="SEO Sri Lanka | Best SEO Services Company | Buzz Connect"
+        description="Best SEO Sri Lanka services to rank your website on Google. On-page, technical, local SEO. Packages from LKR 30,000. Increase traffic, leads & sales."
+        canonical="/seo-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "SEO Services", url: "/seo-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

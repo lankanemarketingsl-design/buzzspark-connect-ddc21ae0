@@ -128,6 +128,16 @@ const SpecialPackages = () => {
       title="Multi Channel Marketing Sri Lanka – Integrated Email, SMS, WhatsApp & Web Advertising"
       subtitle="Buzz Connect offers the most advanced multi channel marketing solution in Sri Lanka, combining email marketing, SMS marketing, WhatsApp marketing, and web advertising into one powerful campaign strategy."
     >
+      <SEOHead
+        title="Multi Channel Marketing Sri Lanka | SMS, Email, WhatsApp Packages | Buzz Connect"
+        description="Best multi channel marketing Sri Lanka combining email, SMS, WhatsApp & Findit.lk. Reach 1.2 million+ with integrated advertising. Buzz Connect."
+        canonical="/multi-channel-marketing-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Multi Channel Marketing", url: "/multi-channel-marketing-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
