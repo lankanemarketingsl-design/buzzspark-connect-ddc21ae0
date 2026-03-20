@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import { Quote, Star } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -35,6 +36,23 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % testimonials.length);
+  }, []);
+
+  const prev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(next, 6000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const t = testimonials[current];
+
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -52,34 +70,64 @@ const TestimonialsSection = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
-          {testimonials.map((t, i) => (
-            <motion.div
-              key={i}
-              className="relative bg-card rounded-2xl p-8 md:p-10 shadow-lg border border-border"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <Quote className="absolute top-6 left-6 h-10 w-10 text-primary/15" />
-              <div className="flex gap-1 mb-4 justify-center">
-                {[...Array(5)].map((_, s) => (
-                  <Star
-                    key={s}
-                    className="h-5 w-5 fill-primary text-primary"
-                  />
-                ))}
-              </div>
-              <blockquote className="text-muted-foreground leading-relaxed text-center italic mb-6">
-                "{t.quote}"
-              </blockquote>
-              <div className="text-center">
-                <p className="font-semibold text-foreground">{t.author}</p>
-                <p className="text-sm text-muted-foreground">{t.role}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="relative max-w-3xl mx-auto">
+          {/* Navigation arrows */}
+          <button
+            onClick={prev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-14 z-10 h-10 w-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-14 z-10 h-10 w-10 rounded-full bg-card border border-border shadow-md flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Next testimonial"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
+
+          {/* Testimonial card */}
+          <div className="overflow-hidden min-h-[280px] flex items-center">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                className="relative w-full bg-card rounded-2xl p-8 md:p-10 shadow-lg border border-border"
+                initial={{ opacity: 0, x: 60 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -60 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+              >
+                <Quote className="absolute top-6 left-6 h-10 w-10 text-primary/15" />
+                <div className="flex gap-1 mb-4 justify-center">
+                  {[...Array(5)].map((_, s) => (
+                    <Star key={s} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
+                </div>
+                <blockquote className="text-muted-foreground leading-relaxed text-center italic mb-6">
+                  "{t.quote}"
+                </blockquote>
+                <div className="text-center">
+                  <p className="font-semibold text-foreground">{t.author}</p>
+                  <p className="text-sm text-muted-foreground">{t.role}</p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`h-2.5 rounded-full transition-all duration-300 ${
+                  i === current ? "w-8 bg-primary" : "w-2.5 bg-border hover:bg-muted-foreground/40"
+                }`}
+                aria-label={`Go to testimonial ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
