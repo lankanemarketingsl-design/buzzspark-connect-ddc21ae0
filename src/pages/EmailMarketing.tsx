@@ -46,15 +46,8 @@ const faqs = [
 ];
 
 const EmailMarketing = () => {
-  useEffect(() => {
-    document.title = "Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns with Buzz Connect.");
-
-    // FAQ Schema
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -62,10 +55,16 @@ const EmailMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Email Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best email marketing services in Sri Lanka with 350,000+ corporate database.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
