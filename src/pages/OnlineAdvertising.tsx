@@ -1,6 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Globe, ShoppingBag, Building } from "lucide-react";
+import { CheckCircle, Globe, ShoppingBag, Building, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
+import { useEffect } from "react";
 
 const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
@@ -48,19 +49,109 @@ const comboPackages = [
   },
 ];
 
+const bannerTypes = [
+  "Homepage banner placements",
+  "Category page banners",
+  "Featured promotion banners",
+  "Campaign-specific banners",
+];
+
+const bannerBenefits = [
+  "High visibility across the platform",
+  "Targeted audience reach",
+  "Increased brand awareness",
+  "Click-driven traffic to your business",
+  "Continuous exposure throughout the campaign",
+];
+
+const whyFindit = [
+  "One of Sri Lanka's largest promotion platforms",
+  "High user intent (people actively searching)",
+  "Wide category coverage",
+  "Cost-effective advertising options",
+  "Strong visibility for SMEs and large businesses",
+];
+
+const expectedResults = [
+  "Increased brand visibility",
+  "More website traffic",
+  "Higher engagement rates",
+  "Increased inquiries and leads",
+  "Better return on investment",
+];
+
+const useCases = [
+  { icon: GraduationCap, label: "Education institutes promoting intakes" },
+  { icon: ShoppingCart, label: "E-commerce and retail businesses" },
+  { icon: Building2, label: "Hotels and travel companies" },
+  { icon: Home, label: "Real estate developers" },
+  { icon: Calendar, label: "Event organizers" },
+  { icon: Rocket, label: "SMEs and corporate brands" },
+];
+
+const faqs = [
+  { q: "What is online advertising in Sri Lanka?", a: "Online advertising involves promoting your business through digital platforms like websites, banners, and promotional listings." },
+  { q: "What is Findit.lk?", a: "Findit.lk is a leading online promotion platform in Sri Lanka where businesses can advertise their products and services." },
+  { q: "How effective are banner ads?", a: "Banner ads are highly effective for increasing visibility and driving traffic when placed on high-traffic platforms like Findit.lk." },
+  { q: "Who can advertise on Findit.lk?", a: "Any business, from SMEs to large companies, can use Findit.lk for promotions." },
+];
+
 const OnlineAdvertising = () => {
+  useEffect(() => {
+    document.title = "Online Advertising Sri Lanka | Banner Ads Sri Lanka | Buzz Connect";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Best online advertising Sri Lanka with banner campaigns on Findit.lk. Reach thousands and boost visibility with Buzz Connect.");
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map(f => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+    document.head.appendChild(script);
+    return () => { document.head.removeChild(script); };
+  }, []);
+
   return (
     <ServicePageLayout
-      badge="Online Advertising"
-      title="Online Advertising"
-      subtitle="Your Brand is your true story, Build your brand online with US!"
+      badge="Online Advertising Sri Lanka"
+      title="Online Advertising Sri Lanka – Banner Advertising & Promotions on Findit.lk"
+      subtitle="Buzz Connect offers powerful online advertising services in Sri Lanka, specializing in high-visibility banner campaigns and promotions through Findit.lk — one of Sri Lanka's leading online advertising platforms."
     >
-      {/* Findit.lk */}
-      <div className="mb-16">
+      {/* Power Intro */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Our solutions are designed to help businesses reach a massive audience, increase brand awareness, and generate high-quality leads through cost-effective <strong>digital advertising</strong>.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          With <strong>Findit.lk integration</strong>, your brand gets maximum exposure to users actively searching for products, services, and offers.
+        </p>
+      </motion.div>
+
+      {/* Advertise on Findit.lk */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
         <div className="flex items-center gap-3 mb-6">
           <Globe className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Findit.lk – No 1 promotion directory in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Advertise on Findit.lk – Sri Lanka's Leading Promotion Platform</h2>
         </div>
+        <p className="text-muted-foreground mb-4 max-w-4xl">
+          Findit.lk is one of the most popular online promotion directories in Sri Lanka, attracting thousands of users searching for deals, services, and business listings every day.
+        </p>
         <p className="text-muted-foreground mb-4 max-w-4xl">
           Findit.lk promotions Directory with more than 1000 latest offers and discounts from Travel Agents, Banks, Credit Cards offers, Hotel Offers, Restaurant Promotions, Clothing Offers, Electronics, and Mobile Phones Deals, Food and Drink Promotions, Latest Events, Holiday Deals, and Education opportunities.
         </p>
@@ -82,7 +173,8 @@ const OnlineAdvertising = () => {
             <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Facebook fan page 22,000+
           </li>
         </ul>
-        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Packages</h3>
+
+        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Findit.lk Packages</h3>
         <div className="overflow-x-auto">
           <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden">
             <thead>
@@ -105,22 +197,60 @@ const OnlineAdvertising = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </motion.div>
+
+      {/* Banner Advertising */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="flex items-center gap-3 mb-4">
+          <Layout className="w-7 h-7 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Banner Advertising Campaigns in Sri Lanka</h2>
+        </div>
+        <p className="text-muted-foreground mb-4">Our banner advertising solutions on Findit.lk are designed to give your brand premium visibility.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Types of Banner Ads</h3>
+            <ul className="space-y-2">
+              {bannerTypes.map((t) => (
+                <li key={t} className="flex items-center gap-2 text-sm text-foreground">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Benefits</h3>
+            <ul className="space-y-2">
+              {bannerBenefits.map((b) => (
+                <li key={b} className="flex items-center gap-2 text-sm text-foreground">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {b}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Buyit.lk */}
-      <div className="mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
         <div className="flex items-center gap-3 mb-6">
           <ShoppingBag className="w-8 h-8 text-secondary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Buyit.lk - Classified advertisement site in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Buyit.lk - Classified Advertisement Site in Sri Lanka</h2>
         </div>
-        <p className="text-muted-foreground mb-2 max-w-4xl">
-          Effective way of communicating your message to the island wide audience.
-        </p>
+        <p className="text-muted-foreground mb-2 max-w-4xl">Effective way of communicating your message to the island wide audience.</p>
         <p className="text-muted-foreground mb-6 max-w-4xl">
-          Buyit.lk is a website that has sell products and services in minutes, such as Vehicles, Electronic items, Mobile phones, Properties & pets. If you are a business owner or a seller, you can create your own online shop with us for free and sell things effortlessly and earn profits. If your a consumer looking to buy things at a good value, then buyit.lk is the best Online Marketplace in Sri Lanka where you can buy these products for a great deal. Find the best deals on buyit.lk
+          Buyit.lk is a website that has sell products and services in minutes, such as Vehicles, Electronic items, Mobile phones, Properties & pets. If you are a business owner or a seller, you can create your own online shop with us for free and sell things effortlessly and earn profits. If your a consumer looking to buy things at a good value, then buyit.lk is the best Online Marketplace in Sri Lanka where you can buy these products for a great deal.
         </p>
-        <p className="text-muted-foreground mb-6">You can promote your brand advertisement with buyit.lk</p>
-        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Packages</h3>
+        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Buyit.lk Packages</h3>
         <div className="overflow-x-auto">
           <table className="w-full bg-card rounded-xl shadow-card border border-border overflow-hidden">
             <thead>
@@ -141,27 +271,77 @@ const OnlineAdvertising = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </motion.div>
 
       {/* PlaceBook.lk */}
-      <div className="mb-16">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
         <div className="flex items-center gap-3 mb-6">
           <Building className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">PlaceBook.lk - Make your business to right audience</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">PlaceBook.lk - Make Your Business Reach the Right Audience</h2>
         </div>
         <p className="text-muted-foreground mb-6 max-w-4xl">
-          PlaceBook.lk is a Business listing site which allows people to list their business and generate leads and increase brand awareness. visitors can find product or any service with such as restaurants near to them or doctors near to them with placebook.lk.
+          PlaceBook.lk is a Business listing site which allows people to list their business and generate leads and increase brand awareness. Visitors can find products or any service such as restaurants near to them or doctors near to them with placebook.lk.
         </p>
         <div className="flex flex-wrap gap-3 mb-8">
           {["Top Ads", "Side ads", "Featured ads", "Pop up banner"].map((ad) => (
             <span key={ad} className="px-4 py-2 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{ad}</span>
           ))}
         </div>
-      </div>
+      </motion.div>
+
+      {/* Online Promotions */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="flex items-center gap-3 mb-4">
+          <Megaphone className="w-7 h-7 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Online Promotions & Offers</h2>
+        </div>
+        <p className="text-muted-foreground mb-4">Promote your:</p>
+        <ul className="space-y-2 mb-4">
+          {["Special offers", "Discounts", "Events", "New product launches", "Business services"].map((item) => (
+            <li key={item} className="flex items-center gap-2 text-foreground text-sm">
+              <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
+            </li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground">Your promotions will be displayed to users actively looking for deals, increasing the chances of conversion.</p>
+      </motion.div>
+
+      {/* Why Findit.lk */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Findit.lk for Online Advertising?</h2>
+        <ul className="space-y-3">
+          {whyFindit.map((item) => (
+            <li key={item} className="flex items-center gap-3 text-foreground">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {item}
+            </li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground mt-4">This makes Findit.lk one of the most effective platforms for <strong>online advertising in Sri Lanka</strong>.</p>
+      </motion.div>
 
       {/* Combo Packages */}
-      <div>
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8">Combined Web Ad Packages</h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Combined Web Ad Packages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {comboPackages.map((pkg, i) => (
             <motion.div
@@ -189,7 +369,108 @@ const OnlineAdvertising = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
+
+      {/* Integrated Advertising */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Integrated Advertising with Buzz Connect</h2>
+        <p className="text-muted-foreground mb-4">In addition to Findit.lk banner advertising, Buzz Connect enhances your campaigns with:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { icon: Mail, label: "Email marketing" },
+            { icon: Smartphone, label: "SMS marketing" },
+            { icon: MessageSquare, label: "WhatsApp marketing" },
+            { icon: Share2, label: "Social media exposure" },
+          ].map((ch) => (
+            <div key={ch.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
+              <ch.icon className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{ch.label}</span>
+            </div>
+          ))}
+        </div>
+        <p className="text-muted-foreground mt-4">This multi-channel approach ensures your campaign reaches both targeted and mass audiences.</p>
+      </motion.div>
+
+      {/* Use Cases */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Should Use Online Advertising in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our solutions are ideal for:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {useCases.map((uc) => (
+            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
+              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{uc.label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Results */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Results You Can Expect</h2>
+        <ul className="space-y-3">
+          {expectedResults.map((r) => (
+            <li key={r} className="flex items-center gap-3 text-foreground">
+              <TrendingUp className="w-5 h-5 text-accent flex-shrink-0" /> {r}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+
+      {/* FAQ */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="flex items-center gap-3 mb-8">
+          <HelpCircle className="w-7 h-7 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Online Advertising Sri Lanka</h2>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <details key={faq.q} className="group p-5 rounded-xl bg-card shadow-card border border-border">
+              <summary className="font-heading font-semibold text-foreground cursor-pointer list-none flex items-center justify-between">
+                {faq.q}
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Final CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center p-10 rounded-2xl gradient-hero"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Online Advertising Campaign Today</h2>
+        <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
+          Promote your business with high-visibility banner advertising on Findit.lk. Contact Buzz Connect today and launch your campaign.
+        </p>
+        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          Contact Buzz Connect
+        </a>
+      </motion.div>
     </ServicePageLayout>
   );
 };
