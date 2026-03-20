@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const WhyEmailMarketingIsImportant = () => {
-  useEffect(() => {
-    document.title = "4 Reasons Why Email Marketing Is Important | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Discover 4 key reasons why email marketing is important for your internet marketing strategy. Learn how email converts better than social media.");
-  }, []);
 
   return (
     <ServicePageLayout
@@ -17,6 +12,25 @@ const WhyEmailMarketingIsImportant = () => {
       title="4 Reasons Why Email Marketing Is Important For Your Internet Marketing"
       subtitle=""
     >
+      <SEOHead
+        title="4 Reasons Why Email Marketing Is Important | Buzz Connect Sri Lanka"
+        description="Discover 4 key reasons why email marketing is important for your internet marketing strategy. Learn how email converts better than social media."
+        canonical="/why-email-marketing-is-important"
+        ogType="article"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "Why Email Marketing Is Important", url: "/why-email-marketing-is-important" },
+        ]}
+        jsonLd={[{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "4 Reasons Why Email Marketing Is Important For Your Internet Marketing",
+          datePublished: "2020-08-04",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect", logo: { "@type": "ImageObject", url: "https://buzzconnect.lk/og-image.png" } },
+        }]}
+      />
       <div className="max-w-3xl mx-auto">
         <Link to="/resources" className="inline-flex items-center gap-2 text-sm text-accent hover:underline mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Resources

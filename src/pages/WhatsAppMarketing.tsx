@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Users, Crown, Target, Briefcase, MessageSquare, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Image } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const databases = [
   {
@@ -79,14 +80,8 @@ const faqs = [
 ];
 
 const WhatsAppMarketing = () => {
-  useEffect(() => {
-    document.title = "WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -94,10 +89,16 @@ const WhatsAppMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "WhatsApp Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best WhatsApp marketing services in Sri Lanka with targeted databases.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -105,6 +106,16 @@ const WhatsAppMarketing = () => {
       title="WhatsApp Marketing Sri Lanka – Bulk WhatsApp Advertising & Business Messaging"
       subtitle="Buzz Connect offers advanced WhatsApp marketing services in Sri Lanka, helping businesses reach thousands of customers instantly through direct and personalized messaging."
     >
+      <SEOHead
+        title="WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect"
+        description="Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message. Reach 600,000+ users."
+        canonical="/whatsapp-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "WhatsApp Marketing", url: "/whatsapp-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

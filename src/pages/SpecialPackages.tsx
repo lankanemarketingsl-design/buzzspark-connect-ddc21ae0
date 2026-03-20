@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const smsPackages = [
   {
@@ -109,14 +110,8 @@ const PackageCard = ({ pkg, index }: { pkg: { name: string; reach: string; items
 );
 
 const SpecialPackages = () => {
-  useEffect(() => {
-    document.title = "Multi Channel Marketing Sri Lanka | Integrated Advertising Solutions";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best multi channel marketing Sri Lanka combining email, SMS, WhatsApp & Findit.lk. Reach thousands with one campaign.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -124,10 +119,8 @@ const SpecialPackages = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -135,6 +128,16 @@ const SpecialPackages = () => {
       title="Multi Channel Marketing Sri Lanka – Integrated Email, SMS, WhatsApp & Web Advertising"
       subtitle="Buzz Connect offers the most advanced multi channel marketing solution in Sri Lanka, combining email marketing, SMS marketing, WhatsApp marketing, and web advertising into one powerful campaign strategy."
     >
+      <SEOHead
+        title="Multi Channel Marketing Sri Lanka | SMS, Email, WhatsApp Packages | Buzz Connect"
+        description="Best multi channel marketing Sri Lanka combining email, SMS, WhatsApp & Findit.lk. Reach 1.2 million+ with integrated advertising. Buzz Connect."
+        canonical="/multi-channel-marketing-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Multi Channel Marketing", url: "/multi-channel-marketing-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

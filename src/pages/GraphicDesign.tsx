@@ -1,6 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { PenTool, Film, Palette, FileText, Image, Layout, Smartphone, BookOpen, Award, CreditCard, Edit, Type } from "lucide-react";
+import { useEffect, useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
+import { PenTool, Film, Palette, FileText, Image, Layout, Smartphone, BookOpen, Award, CreditCard, Edit, Type, HelpCircle, CheckCircle } from "lucide-react";
 
 const services = [
   { icon: Image, title: "Artwork/E-flyer designing", desc: "We design professional e-flyers for business organizations and individuals. Increase the effectiveness of your marketing campaigns by sending attractive e-flyers.", price: "Price - LKR 4000" },
@@ -58,13 +60,51 @@ const moreCategories = [
   },
 ];
 
+const faqs = [
+  { q: "What graphic design services does Buzz Connect offer in Sri Lanka?", a: "Buzz Connect offers logo design, e-flyer design, business cards, brochures, animated videos, social media posts, company profiles, menu cards, signage, and more." },
+  { q: "How much does graphic design cost in Sri Lanka?", a: "E-flyer designing starts from LKR 4,000. Contact us for custom pricing based on your specific design needs." },
+  { q: "Can you create animated videos for my business?", a: "Yes, we create short animated explainer videos to help tell your business story and explain products or services." },
+  { q: "Do you design logos for startups in Sri Lanka?", a: "Yes, we create eye-catching, minimalist logo designs for startups and established businesses at competitive rates." },
+];
+
 const GraphicDesign = () => {
+  const jsonLd = useMemo(() => [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map(f => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Graphic Designing Services Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Professional graphic design services in Sri Lanka including logo design, e-flyers, brochures, animated videos, social media posts, and more.",
+    },
+  ], []);
+
   return (
     <ServicePageLayout
-      badge="Graphic Design"
-      title="Graphic Designing"
-      subtitle=""
+      badge="Graphic Design Sri Lanka"
+      title="Graphic Designing in Sri Lanka – Professional Design Services"
+      subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand."
     >
+      <SEOHead
+        title="Graphic Designing Sri Lanka | Logo, Flyer & Video Design | Buzz Connect"
+        description="Best graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & more. Starting from LKR 4,000. Buzz Connect."
+        canonical="/graphic-designing-in-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Graphic Designing", url: "/graphic-designing-in-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
+
       {/* Intro */}
       <div className="mb-12 max-w-4xl">
         <p className="text-muted-foreground mb-4 leading-relaxed">
@@ -91,7 +131,7 @@ const GraphicDesign = () => {
       </div>
 
       {/* Main Services */}
-      <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Graphic designing services</h2>
+      <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Graphic Designing Services in Sri Lanka</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {services.map((s, i) => (
           <motion.div
@@ -119,8 +159,9 @@ const GraphicDesign = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        className="mb-16"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">More services offered by our company</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">More Graphic Design Services We Offer</h2>
         <div className="space-y-6">
           {moreCategories.map((cat) => (
             <div key={cat.title} className="p-6 rounded-2xl bg-muted/50 border border-border">
@@ -133,6 +174,46 @@ const GraphicDesign = () => {
             </div>
           ))}
         </div>
+      </motion.div>
+
+      {/* FAQ */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="flex items-center gap-3 mb-8">
+          <HelpCircle className="w-7 h-7 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Graphic Design Sri Lanka</h2>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <details key={faq.q} className="group p-5 rounded-xl bg-card shadow-card border border-border">
+              <summary className="font-heading font-semibold text-foreground cursor-pointer list-none flex items-center justify-between">
+                {faq.q}
+                <span className="text-muted-foreground group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-3 text-muted-foreground leading-relaxed">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center p-10 rounded-2xl gradient-hero"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Get Professional Graphic Design Services Today</h2>
+        <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
+          Elevate your brand with eye-catching graphic designs. Contact Buzz Connect for affordable, professional design solutions in Sri Lanka.
+        </p>
+        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          Contact Buzz Connect
+        </a>
       </motion.div>
     </ServicePageLayout>
   );

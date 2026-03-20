@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Users, Crown, Target, Briefcase, Smartphone, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const databases = [
   {
@@ -79,14 +80,8 @@ const faqs = [
 ];
 
 const SmsMarketing = () => {
-  useEffect(() => {
-    document.title = "SMS Marketing Sri Lanka | Bulk SMS Advertising | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best SMS marketing Sri Lanka with 600,000+ reach. Run targeted bulk SMS campaigns from LKR 2 per message.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -94,10 +89,16 @@ const SmsMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "SMS Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best bulk SMS marketing services in Sri Lanka with 600,000+ reach.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -105,6 +106,16 @@ const SmsMarketing = () => {
       title="SMS Marketing Sri Lanka – Bulk SMS Advertising with Targeted Databases"
       subtitle="Buzz Connect provides one of the most powerful SMS marketing services in Sri Lanka, enabling businesses to instantly reach thousands of customers with high-impact messaging."
     >
+      <SEOHead
+        title="SMS Marketing Sri Lanka | Bulk SMS Advertising | Buzz Connect"
+        description="Best SMS marketing Sri Lanka with 600,000+ reach. Targeted bulk SMS campaigns from LKR 2 per message. District-wise databases across all Sri Lanka."
+        canonical="/sms-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "SMS Marketing", url: "/sms-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

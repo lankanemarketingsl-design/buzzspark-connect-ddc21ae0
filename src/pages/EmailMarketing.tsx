@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, Globe, HelpCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const packages = [
   { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
@@ -45,15 +46,8 @@ const faqs = [
 ];
 
 const EmailMarketing = () => {
-  useEffect(() => {
-    document.title = "Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns with Buzz Connect.");
-
-    // FAQ Schema
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -61,10 +55,16 @@ const EmailMarketing = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Email Marketing Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Best email marketing services in Sri Lanka with 350,000+ corporate database.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -72,6 +72,16 @@ const EmailMarketing = () => {
       title="Email Marketing Sri Lanka – Bulk Email Campaigns with High ROI"
       subtitle="Buzz Connect provides industry-leading email marketing services in Sri Lanka, helping businesses reach thousands of targeted customers instantly."
     >
+      <SEOHead
+        title="Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect"
+        description="Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns. Affordable packages starting from LKR 6,000. Buzz Connect."
+        canonical="/email-marketing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Email Marketing", url: "/email-marketing" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

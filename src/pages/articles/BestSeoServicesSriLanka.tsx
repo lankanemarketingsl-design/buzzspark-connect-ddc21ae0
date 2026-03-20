@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const BestSeoServicesSriLanka = () => {
-  useEffect(() => {
-    document.title = "Best SEO Services Sri Lanka | Search Engine Optimization | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn about SEO in Sri Lanka and how Findit.lk can help your business rank on Google. Best SEO services by Buzz Connect.");
-  }, []);
 
   return (
     <ServicePageLayout
@@ -17,6 +12,25 @@ const BestSeoServicesSriLanka = () => {
       title="SEO Sri Lanka – Search Engine Optimization"
       subtitle=""
     >
+      <SEOHead
+        title="Best SEO Services Sri Lanka | Search Engine Optimization | Buzz Connect"
+        description="Learn about SEO in Sri Lanka and how to rank your website on Google. Professional SEO services by Buzz Connect."
+        canonical="/best-seo-services-sri-lanka"
+        ogType="article"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "SEO Sri Lanka", url: "/best-seo-services-sri-lanka" },
+        ]}
+        jsonLd={[{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "SEO Sri Lanka (Search Engine Optimization)",
+          datePublished: "2020-08-06",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect", logo: { "@type": "ImageObject", url: "https://buzzconnect.lk/og-image.png" } },
+        }]}
+      />
       <div className="max-w-3xl mx-auto">
         <Link to="/resources" className="inline-flex items-center gap-2 text-sm text-accent hover:underline mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Resources

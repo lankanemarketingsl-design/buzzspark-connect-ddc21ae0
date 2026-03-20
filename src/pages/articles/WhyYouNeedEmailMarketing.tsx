@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const WhyYouNeedEmailMarketing = () => {
-  useEffect(() => {
-    document.title = "Why You Need Email Marketing | Buzz Connect Sri Lanka";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn why email marketing is the most cost-effective digital strategy for converting prospects into customers. Choose Buzz Connect as your email marketing partner in Sri Lanka.");
-  }, []);
 
   return (
     <ServicePageLayout
@@ -17,6 +12,25 @@ const WhyYouNeedEmailMarketing = () => {
       title="Why You Need Email Marketing"
       subtitle=""
     >
+      <SEOHead
+        title="Why You Need Email Marketing | Buzz Connect Sri Lanka"
+        description="Learn why email marketing is the most cost-effective digital strategy for converting prospects into customers. Buzz Connect Sri Lanka."
+        canonical="/why-you-need-email-marketing"
+        ogType="article"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "Why You Need Email Marketing", url: "/why-you-need-email-marketing" },
+        ]}
+        jsonLd={[{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Why You Need Email Marketing",
+          datePublished: "2020-08-05",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect", logo: { "@type": "ImageObject", url: "https://buzzconnect.lk/og-image.png" } },
+        }]}
+      />
       <div className="max-w-3xl mx-auto">
         <Link to="/resources" className="inline-flex items-center gap-2 text-sm text-accent hover:underline mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Resources

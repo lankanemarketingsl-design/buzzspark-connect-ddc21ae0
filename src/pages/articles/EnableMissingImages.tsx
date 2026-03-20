@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const EnableMissingImages = () => {
-  useEffect(() => {
-    document.title = "Enable Missing Images to Display in Email Clients | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn how to enable missing images in Outlook, Yahoo Mail, and other email clients. Fix image display issues in email marketing campaigns.");
-  }, []);
 
   return (
     <ServicePageLayout
@@ -17,6 +12,25 @@ const EnableMissingImages = () => {
       title="Enable Missing Images to Display in Various Email Clients in Sri Lanka"
       subtitle=""
     >
+      <SEOHead
+        title="Enable Missing Images to Display in Email Clients | Buzz Connect"
+        description="Learn how to enable missing images in Outlook, Yahoo Mail, and other email clients. Fix image display issues in email marketing campaigns."
+        canonical="/enable-missing-images-to-display"
+        ogType="article"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "Enable Missing Images", url: "/enable-missing-images-to-display" },
+        ]}
+        jsonLd={[{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Enable Missing Images to Display in Various Email Clients",
+          datePublished: "2020-08-06",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect", logo: { "@type": "ImageObject", url: "https://buzzconnect.lk/og-image.png" } },
+        }]}
+      />
       <div className="max-w-3xl mx-auto">
         <Link to="/resources" className="inline-flex items-center gap-2 text-sm text-accent hover:underline mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Resources

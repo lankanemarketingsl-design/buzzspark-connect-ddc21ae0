@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Globe, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
@@ -90,14 +91,8 @@ const faqs = [
 ];
 
 const OnlineAdvertising = () => {
-  useEffect(() => {
-    document.title = "Online Advertising Sri Lanka | Banner Ads Sri Lanka | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best online advertising Sri Lanka with banner campaigns on Findit.lk. Reach thousands and boost visibility with Buzz Connect.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -105,10 +100,16 @@ const OnlineAdvertising = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Online Advertising Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Online advertising and banner campaigns on Findit.lk in Sri Lanka.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -116,6 +117,16 @@ const OnlineAdvertising = () => {
       title="Online Advertising Sri Lanka – Banner Advertising & Promotions on Findit.lk"
       subtitle="Buzz Connect offers powerful online advertising services in Sri Lanka, specializing in high-visibility banner campaigns and promotions through Findit.lk — one of Sri Lanka's leading online advertising platforms."
     >
+      <SEOHead
+        title="Online Advertising Sri Lanka | Banner Ads & Web Promotions | Buzz Connect"
+        description="Best online advertising Sri Lanka with banner campaigns on Findit.lk. Reach thousands with popup banners, featured ads & combo packages. Buzz Connect."
+        canonical="/online-advertising-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Online Advertising", url: "/online-advertising-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

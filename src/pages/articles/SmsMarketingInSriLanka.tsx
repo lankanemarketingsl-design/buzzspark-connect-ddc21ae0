@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const SmsMarketingInSriLanka = () => {
-  useEffect(() => {
-    document.title = "SMS Marketing in Sri Lanka | Bulk SMS Campaigns | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn about SMS marketing in Sri Lanka. Target campaigns gender-wise or area-wise with Buzz Connect's data-driven approach.");
-  }, []);
 
   return (
     <ServicePageLayout
@@ -17,6 +12,25 @@ const SmsMarketingInSriLanka = () => {
       title="SMS Marketing in Sri Lanka"
       subtitle=""
     >
+      <SEOHead
+        title="SMS Marketing in Sri Lanka | Bulk SMS Campaigns | Buzz Connect"
+        description="Learn about SMS marketing in Sri Lanka. Target campaigns gender-wise or area-wise with Buzz Connect's data-driven approach."
+        canonical="/sms-marketing-in-sri-lanka"
+        ogType="article"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+          { name: "SMS Marketing in Sri Lanka", url: "/sms-marketing-in-sri-lanka" },
+        ]}
+        jsonLd={[{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "SMS Marketing in Sri Lanka",
+          datePublished: "2020-08-06",
+          author: { "@type": "Organization", name: "Buzz Connect" },
+          publisher: { "@type": "Organization", name: "Buzz Connect", logo: { "@type": "ImageObject", url: "https://buzzconnect.lk/og-image.png" } },
+        }]}
+      />
       <div className="max-w-3xl mx-auto">
         <Link to="/resources" className="inline-flex items-center gap-2 text-sm text-accent hover:underline mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Resources

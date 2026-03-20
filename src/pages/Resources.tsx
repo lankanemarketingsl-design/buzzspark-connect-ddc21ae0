@@ -2,6 +2,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 import article1 from "@/assets/blog/article-1.jpg";
 import article2 from "@/assets/blog/article-2.jpg";
 import article3 from "@/assets/blog/article-3.jpg";
@@ -61,6 +62,15 @@ const Resources = () => {
       title="Resources"
       subtitle="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses."
     >
+      <SEOHead
+        title="Digital Marketing Resources Sri Lanka | Articles & Insights | Buzz Connect"
+        description="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses. Free marketing resources by Buzz Connect."
+        canonical="/resources"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Resources", url: "/resources" },
+        ]}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((a, i) => (
           <motion.div

@@ -1,7 +1,8 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Eye, TrendingUp, DollarSign, Search, Settings, FileText, MapPin, Target, Zap, BarChart3, Rocket, GraduationCap, ShoppingCart, Building2, Home, Briefcase, Globe, HelpCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useMemo } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const packages = [
   {
@@ -90,14 +91,8 @@ const faqs = [
 ];
 
 const SeoServices = () => {
-  useEffect(() => {
-    document.title = "SEO Sri Lanka | Best SEO Services Company | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Best SEO Sri Lanka services to rank your website on Google. Increase traffic, leads & sales with Buzz Connect.");
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.text = JSON.stringify({
+  const jsonLd = useMemo(() => [
+    {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map(f => ({
@@ -105,10 +100,16 @@ const SeoServices = () => {
         name: f.q,
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
-    });
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "SEO Services Sri Lanka",
+      provider: { "@type": "Organization", name: "Buzz Connect" },
+      areaServed: { "@type": "Country", name: "Sri Lanka" },
+      description: "Professional SEO services in Sri Lanka to rank your website on Google.",
+    },
+  ], []);
 
   return (
     <ServicePageLayout
@@ -116,6 +117,16 @@ const SeoServices = () => {
       title="SEO Sri Lanka – Professional Search Engine Optimization Services for Business Growth"
       subtitle="Buzz Connect provides results-driven SEO services in Sri Lanka, helping businesses improve their Google rankings, increase website traffic, and generate high-quality leads."
     >
+      <SEOHead
+        title="SEO Sri Lanka | Best SEO Services Company | Buzz Connect"
+        description="Best SEO Sri Lanka services to rank your website on Google. On-page, technical, local SEO. Packages from LKR 30,000. Increase traffic, leads & sales."
+        canonical="/seo-sri-lanka"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "SEO Services", url: "/seo-sri-lanka" },
+        ]}
+        jsonLd={jsonLd}
+      />
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
