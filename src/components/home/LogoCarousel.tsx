@@ -1,16 +1,24 @@
+import dfccLogo from "@/assets/logos/dfcc.jpg";
+import radissonLogo from "@/assets/logos/radisson.jpg";
+import huntersLogo from "@/assets/logos/hunters.jpg";
+import salaLogo from "@/assets/logos/sala.jpg";
+import bestwesternLogo from "@/assets/logos/bestwestern.jpg";
+import chinesedragonLogo from "@/assets/logos/chinesedragon.jpg";
+import swarnamahalLogo from "@/assets/logos/swarnamahal.jpg";
+import burgerkingLogo from "@/assets/logos/burgerking.jpg";
+import mimosaLogo from "@/assets/logos/mimosa.png";
 import { motion } from "framer-motion";
 
 const logos = [
-  { name: "Dialog", text: "Dialog" },
-  { name: "Mobitel", text: "Mobitel" },
-  { name: "SLT", text: "SLT" },
-  { name: "Cargills", text: "Cargills" },
-  { name: "Hemas", text: "Hemas" },
-  { name: "Singer", text: "Singer" },
-  { name: "Arpico", text: "Arpico" },
-  { name: "Damro", text: "Damro" },
-  { name: "Keells", text: "Keells" },
-  { name: "Softlogic", text: "Softlogic" },
+  { name: "DFCC Bank", src: dfccLogo },
+  { name: "Radisson", src: radissonLogo },
+  { name: "Hunters", src: huntersLogo },
+  { name: "Sala Enterprises", src: salaLogo },
+  { name: "Best Western", src: bestwesternLogo },
+  { name: "Chinese Dragon Cafe", src: chinesedragonLogo },
+  { name: "Swarnamahal", src: swarnamahalLogo },
+  { name: "Burger King", src: burgerkingLogo },
+  { name: "Mimosa", src: mimosaLogo },
 ];
 
 const LogoCarousel = () => {
@@ -35,11 +43,14 @@ const LogoCarousel = () => {
           {doubled.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
-              className="flex-shrink-0 mx-8 flex items-center justify-center h-16 w-32 rounded-lg border border-border bg-muted/40 px-4"
+              className="flex-shrink-0 mx-6 flex items-center justify-center h-20 w-40 rounded-lg bg-white p-3"
             >
-              <span className="text-sm font-bold text-muted-foreground whitespace-nowrap">
-                {logo.text}
-              </span>
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="max-h-full max-w-full object-contain"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
