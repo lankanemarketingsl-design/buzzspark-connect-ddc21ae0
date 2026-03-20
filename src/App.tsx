@@ -16,6 +16,7 @@ import OnlineAdvertising from "./pages/OnlineAdvertising.tsx";
 import GraphicDesign from "./pages/GraphicDesign.tsx";
 import SeoServices from "./pages/SeoServices.tsx";
 import WebsiteDesign from "./pages/WebsiteDesign.tsx";
+import LeadGeneration from "./pages/LeadGeneration.tsx";
 import Resources from "./pages/Resources.tsx";
 import WhyEmailMarketingIsImportant from "./pages/articles/WhyEmailMarketingIsImportant.tsx";
 import WhyYouNeedEmailMarketing from "./pages/articles/WhyYouNeedEmailMarketing.tsx";
