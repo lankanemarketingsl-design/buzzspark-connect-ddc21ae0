@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Award, Globe, Share2, LinkIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Award, Globe, Share2, LinkIcon, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const reasons = [
   {
@@ -48,9 +50,9 @@ const WhyUsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center p-8 rounded-xl bg-card shadow-card border border-border hover:border-accent/30 transition-all"
+              className="text-center p-8 rounded-xl bg-card shadow-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all duration-300 group"
             >
-              <div className="w-14 h-14 rounded-full gradient-accent flex items-center justify-center mx-auto mb-5">
+              <div className="w-14 h-14 rounded-full gradient-accent flex items-center justify-center mx-auto mb-5 group-hover:shadow-glow transition-shadow">
                 <r.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-heading font-semibold text-foreground mb-3">{r.title}</h3>
@@ -58,6 +60,21 @@ const WhyUsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA after reasons */}
+        <motion.div
+          className="text-center mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <p className="text-muted-foreground mb-4">Join 1,500+ businesses already growing with Buzz Connect</p>
+          <Link to="/#contactus">
+            <Button variant="hero" size="lg" className="text-base">
+              Request a Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </Link>
+        </motion.div>
 
         {/* FAQ Section */}
         <motion.div
@@ -88,7 +105,7 @@ const WhyUsSection = () => {
                 a: "Buzz Connect offers one of the largest marketing databases and cost-effective solutions in Sri Lanka.",
               },
             ].map((faq) => (
-              <div key={faq.q} className="bg-card rounded-xl p-6 border border-border">
+              <div key={faq.q} className="bg-card rounded-xl p-6 border border-border hover:border-accent/30 transition-colors">
                 <h4 className="font-heading font-semibold text-foreground mb-2">{faq.q}</h4>
                 <p className="text-sm text-muted-foreground">{faq.a}</p>
               </div>

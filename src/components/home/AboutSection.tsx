@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Globe, TrendingUp, Users, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Globe, TrendingUp, Users, Zap, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
   return (
@@ -37,13 +39,19 @@ const AboutSection = () => {
 
             <h3 className="font-heading text-xl font-bold text-foreground mb-3">Results-Driven Approach</h3>
             <p className="text-muted-foreground leading-relaxed mb-3">Our marketing solutions help businesses:</p>
-            <ul className="space-y-2 text-muted-foreground">
+            <ul className="space-y-2 text-muted-foreground mb-8">
               <li>• Reach thousands of customers within minutes</li>
               <li>• Generate high-quality leads</li>
               <li>• Improve brand awareness</li>
               <li>• Increase conversions and ROI</li>
               <li>• Build long-term customer relationships</li>
             </ul>
+
+            <Link to="/#contactus">
+              <Button variant="hero" size="lg" className="text-base">
+                Start Your Campaign <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div
@@ -61,7 +69,7 @@ const AboutSection = () => {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className={`${item.color} rounded-xl p-6 text-center shadow-card`}
+                  className={`${item.color} rounded-xl p-6 text-center shadow-card hover:shadow-card-hover transition-shadow duration-300`}
                 >
                   <div className="text-3xl font-heading font-bold">{item.num}</div>
                   <div className="text-sm mt-1 opacity-80">{item.label}</div>
@@ -87,6 +95,11 @@ const AboutSection = () => {
                   </div>
                 ))}
               </div>
+              <Link to="/#contactus" className="block mt-5">
+                <Button variant="hero" size="sm" className="w-full">
+                  Get Started Now <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
