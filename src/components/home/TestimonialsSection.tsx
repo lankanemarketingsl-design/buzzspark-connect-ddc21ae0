@@ -14,6 +14,12 @@ const testimonials = [
     author: "Valued Client",
     role: "Business Executive",
   },
+  {
+    quote:
+      "The team is very friendly and helpful. They provide a seamless and effective email marketing service which I recommend without any hesitation. Keep up the great work!",
+    author: "Valued Client",
+    role: "Marketing Professional",
+  },
 ];
 
 const TestimonialsSection = () => {
