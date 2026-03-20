@@ -74,11 +74,11 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <Link to="/#contactus">
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services." target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="text-base">
                 Start Your Campaign Today <ArrowRight className="ml-1" />
               </Button>
-            </Link>
+            </a>
             <Link to="/#contactus">
               <Button variant="hero-outline" size="lg" className="text-base">
                 <PhoneCall className="mr-1 w-4 h-4" /> Get Free Consultation
