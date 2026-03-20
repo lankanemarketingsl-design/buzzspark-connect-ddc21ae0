@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Users, Crown, Target, Briefcase, MessageSquare, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Image } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const databases = [
   {
@@ -331,6 +332,7 @@ const WhatsAppMarketing = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <RelatedArticles currentPath="/whatsapp-marketing" />
     </ServicePageLayout>
   );
 };

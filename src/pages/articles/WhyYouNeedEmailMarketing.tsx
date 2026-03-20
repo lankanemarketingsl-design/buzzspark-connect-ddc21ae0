@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const WhyYouNeedEmailMarketing = () => {
 
@@ -68,6 +69,7 @@ const WhyYouNeedEmailMarketing = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/why-you-need-email-marketing" />
       </div>
     </ServicePageLayout>
   );

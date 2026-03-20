@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const SmsMarketingInSriLanka = () => {
 
@@ -83,6 +84,7 @@ const SmsMarketingInSriLanka = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/sms-marketing-in-sri-lanka" />
       </div>
     </ServicePageLayout>
   );

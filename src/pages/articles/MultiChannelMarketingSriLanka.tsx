@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Users, Zap, Globe, Target, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import articleImg from "@/assets/blog/article-7.jpg";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
   { q: "What is multi-channel marketing?", a: "Multi-channel marketing is a strategy that reaches customers through multiple platforms like email, SMS, WhatsApp, and web advertising simultaneously for maximum engagement and conversions." },
@@ -301,6 +302,9 @@ const MultiChannelMarketingSriLanka = () => {
           </a>
         </section>
       </article>
+      <div className="container mx-auto px-4">
+        <RelatedArticles currentPath="/multi-channel-marketing-in-sri-lanka" />
+      </div>
     </ServicePageLayout>
   );
 };

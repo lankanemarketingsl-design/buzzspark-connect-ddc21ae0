@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, Globe, HelpCircle } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const packages = [
   { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
@@ -317,6 +318,7 @@ const EmailMarketing = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <RelatedArticles currentPath="/email-marketing" />
     </ServicePageLayout>
   );
 };

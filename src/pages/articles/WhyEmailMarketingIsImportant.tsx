@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const WhyEmailMarketingIsImportant = () => {
 
@@ -85,6 +86,7 @@ const WhyEmailMarketingIsImportant = () => {
             </div>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/why-email-marketing-is-important" />
       </div>
     </ServicePageLayout>
   );

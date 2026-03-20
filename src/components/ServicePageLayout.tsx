@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import ContactSection from "@/components/home/ContactSection";
 import LogoCarousel from "@/components/home/LogoCarousel";
+import RelatedServices from "@/components/RelatedServices";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 interface ServicePageLayoutProps {
   badge: string;
@@ -14,11 +16,14 @@ interface ServicePageLayoutProps {
 }
 
 const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayoutProps) => {
+  const location = useLocation();
+
   return (
     <div className="pt-14 sm:pt-16">
       {/* Page Hero */}
       <section className="gradient-hero text-primary-foreground py-12 sm:py-20">
         <div className="container mx-auto px-4">
+          <Breadcrumbs />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,6 +56,9 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
           {children}
         </div>
       </div>
+
+      {/* Internal Links to Other Services */}
+      <RelatedServices currentPath={location.pathname} />
 
       <LogoCarousel />
       <ContactSection />

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const EnableMissingImages = () => {
 
@@ -120,6 +121,7 @@ const EnableMissingImages = () => {
             </Link>
           </div>
         </motion.article>
+        <RelatedArticles currentPath="/enable-missing-images-to-display" />
       </div>
     </ServicePageLayout>
   );
