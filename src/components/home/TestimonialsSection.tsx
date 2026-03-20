@@ -8,6 +8,12 @@ const testimonials = [
     author: "Valued Client",
     role: "Corporate Marketing Manager",
   },
+  {
+    quote:
+      "The BUZZ team is very customer friendly and efficient and provide us with a lot of useful and effective email campaigns which are very useful.",
+    author: "Valued Client",
+    role: "Business Executive",
+  },
 ];
 
 const TestimonialsSection = () => {
