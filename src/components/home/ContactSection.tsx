@@ -62,7 +62,7 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               {[
-                { icon: Mail, text: "info@buzzconnect.lk", href: "mailto:info@buzzconnect.lk" },
+                { icon: Mail, text: "infobuzzconnect@gmail.com", href: "mailto:infobuzzconnect@gmail.com" },
                 { icon: Phone, text: "+94 77 143 7707", href: "tel:+94771437707" },
                 { icon: Phone, text: "+94 77 197 6351", href: "tel:+94771976351" },
                 { icon: MapPin, text: "Colombo, Sri Lanka", href: undefined },

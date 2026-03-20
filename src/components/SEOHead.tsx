@@ -81,9 +81,8 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
         name: "Sri Lanka",
       },
       sameAs: [
-        "https://www.facebook.com/buzzconnect.lk",
-        "https://www.instagram.com/buzzconnect.lk",
-        "https://www.linkedin.com/company/buzzconnect",
+        "https://www.facebook.com/buzzconnect/",
+        "https://www.instagram.com/buzzconnect/",
       ],
       priceRange: "LKR",
     };
