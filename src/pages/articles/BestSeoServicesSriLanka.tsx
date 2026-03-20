@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const BestSeoServicesSriLanka = () => {
-  useEffect(() => {
-    document.title = "Best SEO Services Sri Lanka | Search Engine Optimization | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn about SEO in Sri Lanka and how Findit.lk can help your business rank on Google. Best SEO services by Buzz Connect.");
-  }, []);
 
   return (
     <ServicePageLayout
