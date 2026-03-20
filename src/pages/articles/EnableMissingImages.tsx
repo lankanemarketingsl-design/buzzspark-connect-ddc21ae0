@@ -1,15 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const EnableMissingImages = () => {
-  useEffect(() => {
-    document.title = "Enable Missing Images to Display in Email Clients | Buzz Connect";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Learn how to enable missing images in Outlook, Yahoo Mail, and other email clients. Fix image display issues in email marketing campaigns.");
-  }, []);
 
   return (
     <ServicePageLayout
