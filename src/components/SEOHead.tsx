@@ -69,7 +69,7 @@ const SEOHead = ({ title, description, canonical, ogImage, ogType = "website", b
       url: SITE_URL,
       logo: `${SITE_URL}/og-image.png`,
       description: "No.1 email marketing, SMS marketing, WhatsApp marketing and digital advertising company in Sri Lanka.",
-      telephone: "+94771437707",
+      telephone: ["+94771437707", "+94771976351"],
       email: "info@buzzconnect.lk",
       address: {
         "@type": "PostalAddress",
