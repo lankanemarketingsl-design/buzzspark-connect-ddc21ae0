@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mail, MessageSquare, Smartphone, Globe, Search, PenTool, Monitor, Package, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const services = [
   {
@@ -159,21 +158,6 @@ const ServicesSection = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Services CTA */}
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-muted-foreground mb-4">Not sure which service is right for you?</p>
-          <Link to="/#contactus">
-            <Button variant="hero" size="lg" className="text-base">
-              Get a Free Recommendation <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const IntroductionSection = () => {
   return (
@@ -20,14 +17,9 @@ const IntroductionSection = () => {
           <p className="text-muted-foreground leading-relaxed mb-4">
             Buzz Connect is a leading provider of email marketing in Sri Lanka, helping businesses connect with their audience through highly targeted and personalized campaigns. Since 2014, we have supported over 1,500+ businesses with powerful SMS marketing and WhatsApp marketing solutions in Sri Lanka, delivering measurable results and strong return on investment.
           </p>
-          <p className="text-muted-foreground leading-relaxed mb-8">
+          <p className="text-muted-foreground leading-relaxed">
             We combine advanced targeting, large-scale databases, and cost-effective strategies to help businesses reach the right audience at the right time.
           </p>
-          <Link to="/#contactus">
-            <Button variant="hero" size="lg" className="text-base">
-              Talk to Our Experts <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
         </motion.div>
       </div>
     </section>

@@ -54,18 +54,12 @@ const Index = () => {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
-      <CTABanner
-        headline="Launch Your First Campaign Today"
-        subtext="Reach 350,000+ potential customers with email, SMS & WhatsApp marketing — starting from just LKR 6,000."
-        buttonText="Get Started Now"
-        variant="accent"
-      />
       <IntroductionSection />
       <AboutSection />
       <CTABanner
-        headline="Don't Let Your Competitors Get Ahead"
-        subtext="Every day without marketing is a missed opportunity. Let us help you reach thousands of customers instantly."
-        buttonText="Request Free Consultation"
+        headline="Ready to Grow Your Business?"
+        subtext="Chat with us on WhatsApp and get a free consultation for your next marketing campaign."
+        buttonText="Chat on WhatsApp"
         variant="navy"
       />
       <WhyUsSection />

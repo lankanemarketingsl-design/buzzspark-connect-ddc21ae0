@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { Award, Globe, Share2, LinkIcon, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Award, Globe, Share2, LinkIcon } from "lucide-react";
 
 const reasons = [
   {
@@ -60,21 +58,6 @@ const WhyUsSection = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* CTA after reasons */}
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-muted-foreground mb-4">Join 1,500+ businesses already growing with Buzz Connect</p>
-          <Link to="/#contactus">
-            <Button variant="hero" size="lg" className="text-base">
-              Request a Free Consultation <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
-          </Link>
-        </motion.div>
 
         {/* FAQ Section */}
         <motion.div
