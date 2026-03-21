@@ -109,6 +109,19 @@ const HotelMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Industry Stats Banner */}
+      <IndustryStatsBanner
+        icon={Hotel}
+        gradient="gradient-hotel"
+        tagline="High-Impact Travel Promotion Campaigns"
+        stats={[
+          { value: "3,000+", label: "Hotels in Sri Lanka" },
+          { value: "2.5M+", label: "Tourist Arrivals/Year" },
+          { value: "350K+", label: "Email Database" },
+          { value: "24hrs", label: "Campaign Launch" },
+        ]}
+      />
+
       {/* Power Intro */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
