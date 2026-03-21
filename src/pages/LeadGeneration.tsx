@@ -390,7 +390,7 @@ const LeadGeneration = () => {
               Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" />
             </button>
           </Link>
-          <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">
               Chat on WhatsApp
             </button>

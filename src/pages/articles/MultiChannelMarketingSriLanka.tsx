@@ -292,7 +292,7 @@ const MultiChannelMarketingSriLanka = () => {
             Chat with us on WhatsApp and get a free consultation for your next marketing campaign.
           </p>
           <a
-            href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20services."
+            href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20services."
             target="_blank"
             rel="noopener noreferrer"
           >
