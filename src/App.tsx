@@ -31,6 +31,11 @@ import FutureEmailMarketingSriLanka from "./pages/articles/FutureEmailMarketingS
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
+import HotelMarketing from "./pages/HotelMarketing.tsx";
+import EducationMarketing from "./pages/EducationMarketing.tsx";
+import FinanceMarketing from "./pages/FinanceMarketing.tsx";
+import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
+import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +65,12 @@ const App = () => (
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          {/* Industry-specific marketing pages */}
+          <Route path="/hotel-marketing-sri-lanka" element={<HotelMarketing />} />
+          <Route path="/education-marketing-sri-lanka" element={<EducationMarketing />} />
+          <Route path="/finance-marketing-sri-lanka" element={<FinanceMarketing />} />
+          <Route path="/restaurant-marketing-sri-lanka" element={<RestaurantMarketing />} />
+          <Route path="/real-estate-marketing-sri-lanka" element={<RealEstateMarketing />} />
           {/* Resource article pages */}
           <Route path="/why-email-marketing-is-important" element={<WhyEmailMarketingIsImportant />} />
           <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
