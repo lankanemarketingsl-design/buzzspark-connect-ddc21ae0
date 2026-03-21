@@ -108,10 +108,10 @@ const WhatsAppMarketing = () => {
       subtitle="Buzz Connect offers advanced WhatsApp marketing services in Sri Lanka, helping businesses reach thousands of customers instantly through direct and personalized messaging."
     >
       <SEOHead
-        title="WhatsApp Marketing Sri Lanka | Bulk WhatsApp Campaigns | Buzz Connect"
-        description="Best WhatsApp marketing Sri Lanka with targeted databases & video messaging. Start campaigns from LKR 1 per message. Reach 600,000+ users."
+        title="WhatsApp Marketing Sri Lanka | Bulk Campaigns from LKR 1"
+        description="No.1 WhatsApp marketing company in Sri Lanka. Bulk WhatsApp campaigns with text, image & video. Reach 600,000+ users from LKR 1/msg. Corporate & VIP databases. Fast results."
         canonical="/whatsapp-marketing"
-        keywords="whatsapp marketing sri lanka, bulk whatsapp sri lanka, whatsapp advertising colombo, whatsapp campaign sri lanka, whatsapp bulk messaging service"
+        keywords="whatsapp marketing sri lanka, bulk whatsapp sri lanka, whatsapp advertising colombo, whatsapp campaign sri lanka, whatsapp bulk messaging service, whatsapp business marketing sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "WhatsApp Marketing", url: "/whatsapp-marketing" },

@@ -74,10 +74,10 @@ const EmailMarketing = () => {
       subtitle="Buzz Connect provides industry-leading email marketing services in Sri Lanka, helping businesses reach thousands of targeted customers instantly."
     >
       <SEOHead
-        title="Email Marketing Sri Lanka | Bulk Email Campaigns | Buzz Connect"
-        description="Best email marketing Sri Lanka with 350,000+ database. Run high ROI email campaigns. Affordable packages starting from LKR 6,000. Buzz Connect."
+        title="Email Marketing Sri Lanka | 350K+ Database from LKR 6,000"
+        description="No.1 email marketing company in Sri Lanka. Reach 350,000+ corporate subscribers instantly. Bulk email campaigns with Findit.lk integration. Packages from LKR 6,000. 10+ years trusted."
         canonical="/email-marketing"
-        keywords="email marketing sri lanka, bulk email sri lanka, email campaign colombo, email advertising sri lanka, corporate email marketing, email database sri lanka, best email marketing company sri lanka"
+        keywords="email marketing sri lanka, bulk email sri lanka, email campaign colombo, email advertising sri lanka, corporate email marketing, email database sri lanka, best email marketing company sri lanka, email marketing packages sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Email Marketing", url: "/email-marketing" },

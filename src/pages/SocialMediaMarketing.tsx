@@ -113,10 +113,10 @@ const SocialMediaMarketing = () => {
       subtitle="Increase brand awareness, engagement, and conversions through strategic social media campaigns with Buzz Connect."
     >
       <SEOHead
-        title="Social Media Marketing Sri Lanka | SMM Services | Buzz Connect"
-        description="Best social media marketing Sri Lanka services. Grow your brand with Facebook, Instagram & TikTok ads with Buzz Connect."
+        title="Social Media Marketing Sri Lanka | Facebook & Instagram Ads"
+        description="Best social media marketing in Sri Lanka. Facebook, Instagram, TikTok & LinkedIn ad campaigns. Content creation, audience targeting & performance tracking. Grow your brand today."
         canonical="/social-media-marketing-sri-lanka"
-        keywords="social media marketing sri lanka, social media marketing services sri lanka, facebook advertising sri lanka, instagram marketing sri lanka, tiktok ads sri lanka, smm services colombo, social media agency sri lanka"
+        keywords="social media marketing sri lanka, social media marketing services sri lanka, facebook advertising sri lanka, instagram marketing sri lanka, tiktok ads sri lanka, smm services colombo, social media agency sri lanka, facebook ads sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Social Media Marketing", url: "/social-media-marketing-sri-lanka" },

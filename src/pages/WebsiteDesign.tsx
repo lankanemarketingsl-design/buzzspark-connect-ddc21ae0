@@ -55,8 +55,8 @@ const WebsiteDesign = () => {
       subtitle="Get a professional, responsive, and SEO-optimized website designed for your business in Sri Lanka."
     >
       <SEOHead
-        title="Website Design Sri Lanka | Professional Web Design Services | Buzz Connect"
-        description="Best website design services in Sri Lanka. Responsive, SEO-friendly websites for businesses. Custom web development by Buzz Connect. Get a quote today."
+        title="Website Design Sri Lanka | Responsive & SEO-Friendly Sites"
+        description="Professional website design in Sri Lanka. Mobile-responsive, SEO-optimized & fast-loading business websites. Custom development with free consultation. Get a quote today."
         canonical="/website-design-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },

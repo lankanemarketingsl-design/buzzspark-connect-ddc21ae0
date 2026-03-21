@@ -79,8 +79,8 @@ const Resources = () => {
       subtitle="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses."
     >
       <SEOHead
-        title="Digital Marketing Resources Sri Lanka | Articles & Insights | Buzz Connect"
-        description="Expert articles on email marketing, SMS campaigns, SEO, and digital advertising strategies for Sri Lankan businesses. Free marketing resources by Buzz Connect."
+        title="Digital Marketing Blog Sri Lanka | Free Guides & Tips"
+        description="Free digital marketing articles for Sri Lankan businesses. Email marketing tips, SMS campaign strategies, SEO guides & advertising insights by Buzz Connect experts."
         canonical="/resources"
         breadcrumbs={[
           { name: "Home", url: "/" },

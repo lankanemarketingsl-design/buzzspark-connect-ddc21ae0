@@ -95,8 +95,8 @@ const GraphicDesign = () => {
       subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand."
     >
       <SEOHead
-        title="Graphic Designing Sri Lanka | Logo, Flyer & Video Design | Buzz Connect"
-        description="Best graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & more. Starting from LKR 4,000. Buzz Connect."
+        title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 4K"
+        description="Professional graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & business cards. From LKR 4,000. Fast delivery."
         canonical="/graphic-designing-in-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },

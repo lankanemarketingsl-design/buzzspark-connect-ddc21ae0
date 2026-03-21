@@ -55,10 +55,10 @@ const AboutUs = () => {
       subtitle="Sri Lanka's No.1 Email Marketing, WhatsApp Marketing & SMS Marketing company providing cost-effective digital marketing solutions since 2014."
     >
       <SEOHead
-        title="About Buzz Connect | Email, SMS & WhatsApp Marketing Sri Lanka"
-        description="Buzz Connect is Sri Lanka's No.1 email, SMS & WhatsApp marketing company delivering cost-effective digital marketing solutions since 2014."
+        title="About Buzz Connect | No.1 Digital Marketing Company Sri Lanka"
+        description="About Buzz Connect — Sri Lanka's leading email, SMS & WhatsApp marketing company since 2014. 20,000+ campaigns, 1,500+ clients, largest marketing database in Sri Lanka."
         canonical="/about-us"
-        keywords="about Buzz Connect, email marketing Sri Lanka, SMS marketing Sri Lanka, WhatsApp marketing Sri Lanka, digital marketing company Sri Lanka"
+        keywords="about Buzz Connect, email marketing Sri Lanka, SMS marketing Sri Lanka, WhatsApp marketing Sri Lanka, digital marketing company Sri Lanka, best marketing company colombo"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "About Us", url: "/about-us" },
