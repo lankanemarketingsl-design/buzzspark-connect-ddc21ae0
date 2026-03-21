@@ -19,8 +19,24 @@ import commercialCreditLogo from "@/assets/clients/commercial-credit.jpg";
 import pmfFinanceLogo from "@/assets/clients/pmf-finance.jpg";
 import arpicoFinanceLogo from "@/assets/clients/arpico-finance.jpg";
 import asiaAssetLogo from "@/assets/clients/asia-asset.jpg";
+import ndbBankLogo from "@/assets/clients/ndb-bank.jpg";
+import amanaBankLogo from "@/assets/clients/amana-bank.jpg";
+import nsbBankLogo from "@/assets/clients/nsb-bank.png";
+import peoplesBankLogo from "@/assets/clients/peoples-bank.png";
+import cargillsBankLogo from "@/assets/clients/cargills-bank.png";
+import bocLogo from "@/assets/clients/boc.jpg";
+import commercialBankLogo from "@/assets/clients/commercial-bank.png";
+import dfccBankLogo from "@/assets/clients/dfcc-bank.jpg";
 
 const financeClients = [
+  { name: "Bank of Ceylon", logo: bocLogo },
+  { name: "Commercial Bank", logo: commercialBankLogo },
+  { name: "People's Bank", logo: peoplesBankLogo },
+  { name: "NSB", logo: nsbBankLogo },
+  { name: "DFCC Bank", logo: dfccBankLogo },
+  { name: "NDB Bank", logo: ndbBankLogo },
+  { name: "Amana Bank", logo: amanaBankLogo },
+  { name: "Cargills Bank", logo: cargillsBankLogo },
   { name: "Alliance Finance", logo: allianceFinanceLogo },
   { name: "AMW Capital Leasing", logo: amwCapitalLogo },
   { name: "CBC Finance", logo: cbcFinanceLogo },
