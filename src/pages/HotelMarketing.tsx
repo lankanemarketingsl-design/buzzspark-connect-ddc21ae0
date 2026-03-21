@@ -12,6 +12,28 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import radissonLogo from "@/assets/clients/radisson.jpg";
+import colomboCourtLogo from "@/assets/clients/colombo-court.jpg";
+import araliyaLogo from "@/assets/clients/araliya.png";
+import brownsLogo from "@/assets/clients/browns.jpg";
+import kingsburyLogo from "@/assets/clients/kingsbury.png";
+import tangerineLogo from "@/assets/clients/tangerine.jpg";
+import jetwingLogo from "@/assets/clients/jetwing.png";
+import cinnamonLogo from "@/assets/clients/cinnamon.jpg";
+import bestWesternLogo from "@/assets/clients/best-western.jpg";
+
+const hotelClients = [
+  { name: "Radisson", logo: radissonLogo },
+  { name: "Colombo Court Hotel & Spa", logo: colomboCourtLogo },
+  { name: "Araliya Hotels & Resorts", logo: araliyaLogo },
+  { name: "Browns Hotels & Resorts", logo: brownsLogo },
+  { name: "The Kingsbury", logo: kingsburyLogo },
+  { name: "Tangerine Beach Hotel", logo: tangerineLogo },
+  { name: "Jetwing Hotels", logo: jetwingLogo },
+  { name: "Cinnamon Hotels & Resorts", logo: cinnamonLogo },
+  { name: "Best Western", logo: bestWesternLogo },
+];
+
 const services = [
   { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
   { icon: Smartphone, title: "SMS Booking Alerts", desc: "Send last-minute booking alerts and exclusive deals to 600,000+ mobile users." },
@@ -134,6 +156,29 @@ const HotelMarketing = () => {
         <p className="text-lg text-muted-foreground leading-relaxed">
           Whether you run a boutique hotel, luxury resort, or travel agency, our campaigns are designed to fill rooms and generate inquiries faster than traditional advertising.
         </p>
+      </motion.div>
+
+      {/* Trusted by Leading Hotels */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Trusted Partners</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Hotels & Resorts</h2>
+          <p className="text-muted-foreground mt-2">We're proud to work with some of Sri Lanka's most prestigious hospitality brands.</p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-4xl mx-auto">
+          {hotelClients.map((client, i) => (
+            <motion.div
+              key={client.name}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.06 }}
+              className="flex items-center justify-center p-4 sm:p-6 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 hover:shadow-lg transition-all"
+            >
+              <img src={client.logo} alt={client.name} className="max-h-14 sm:max-h-20 w-auto object-contain" loading="lazy" />
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       {/* Industry Challenges */}
