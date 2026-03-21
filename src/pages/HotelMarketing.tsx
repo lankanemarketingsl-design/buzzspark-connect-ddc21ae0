@@ -189,7 +189,7 @@ const HotelMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hotel text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Hotels & Travel Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">
-          Get your hotel listed and promoted in Findit.lk's <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Hotels & Accommodation</a> category for continuous visibility to high-intent travelers.
+          Get your hotel listed and promoted in Findit.lk's <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Hotels & Accommodation</a> and <a href="https://www.findit.lk/promotions/travel-and-tourism" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Travel & Tourism</a> categories for continuous visibility to high-intent travelers.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Access to active travel seekers", "High visibility in Hotels category", "Continuous promotion for weeks", "Better conversion than social ads"].map((item) => (
