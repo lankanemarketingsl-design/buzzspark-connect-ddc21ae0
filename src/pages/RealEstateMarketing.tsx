@@ -228,7 +228,7 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-realestate text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Real Estate Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Sell properties faster with <strong>multi-channel real estate marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
