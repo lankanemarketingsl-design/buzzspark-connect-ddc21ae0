@@ -127,7 +127,7 @@ const BrandAwarenessWidget = () => {
                   <Button
                     variant="hero"
                     className="rounded-full px-7 h-10 text-sm font-bold shadow-lg shadow-accent/30"
-                    onClick={() => window.open("https://wa.me/94773798798?text=Hi%20Buzz%20Connect!%20I%20want%20to%20boost%20my%20brand%20awareness.", "_blank")}
+                    onClick={() => window.open("https://wa.me/94771437707?text=Hi%20Buzz%20Connect!%20I%20want%20to%20boost%20my%20brand%20awareness.", "_blank")}
                   >
                     <Rocket className="w-4 h-4" /> Boost My Brand Awareness
                   </Button>
