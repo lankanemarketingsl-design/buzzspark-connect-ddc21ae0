@@ -35,7 +35,7 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
             <h1 className="font-heading text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 sm:mb-4">{title}</h1>
             <p className="text-primary-foreground/70 text-sm sm:text-lg leading-relaxed mb-6 sm:mb-8">{subtitle}</p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/#contactus">
+              <Link to="/contact-us">
                 <Button variant="hero" size="lg" className="text-base">
                   Get a Free Quote <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>

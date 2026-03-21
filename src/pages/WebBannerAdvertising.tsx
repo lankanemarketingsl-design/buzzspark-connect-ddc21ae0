@@ -398,7 +398,7 @@ const WebBannerAdvertising = () => {
           Promote your business with high-visibility banner ads in Sri Lanka. Contact Buzz Connect today and reach thousands of potential customers.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/#contactus">
+          <Link to="/contact-us">
             <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">
               Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" />
             </button>

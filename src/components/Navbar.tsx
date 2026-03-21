@@ -76,7 +76,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link to="/#contactus" onClick={() => setMobileOpen(false)}>
+            <Link to="/contact-us" onClick={() => setMobileOpen(false)}>
               <Button variant="hero" size="sm" className="mt-2 w-full">Get a Quote</Button>
             </Link>
           </div>

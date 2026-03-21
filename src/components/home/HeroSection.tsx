@@ -79,7 +79,7 @@ const HeroSection = () => {
                 Start Your Campaign Today <ArrowRight className="ml-1" />
               </Button>
             </a>
-            <Link to="/#contactus">
+            <Link to="/contact-us">
               <Button variant="hero-outline" size="lg" className="text-base">
                 <PhoneCall className="mr-1 w-4 h-4" /> Get Free Consultation
               </Button>

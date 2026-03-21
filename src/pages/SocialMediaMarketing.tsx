@@ -417,7 +417,7 @@ const SocialMediaMarketing = () => {
           Grow your brand and reach thousands of customers across Sri Lanka. Contact Buzz Connect today and launch your campaign.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/#contactus">
+          <Link to="/contact-us">
             <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">
               Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" />
             </button>
