@@ -139,4 +139,7 @@
   .gradient-realestate {
     background: linear-gradient(135deg, hsl(150 40% 30%), hsl(170 35% 38%), hsl(140 45% 25%));
   }
+  .gradient-fashion {
+    background: linear-gradient(135deg, hsl(330 65% 38%), hsl(350 70% 50%), hsl(310 55% 35%));
+  }
 }
