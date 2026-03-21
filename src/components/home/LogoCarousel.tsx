@@ -56,15 +56,15 @@ const LogoCarousel = () => {
   const doubledRow2 = [...row2, ...row2];
   const doubledRow3 = [...row3, ...row3];
 
-  const renderRow = (items: typeof logos, animationClass: string) => (
+  const renderRow = (items: typeof logos, isReverse: boolean = false) => (
     <div className="relative mb-4 last:mb-0 overflow-hidden">
       <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-background to-transparent z-10" />
       <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-background to-transparent z-10" />
-      <div className={`flex items-center animate-${animationClass} w-max hover:[animation-play-state:paused]`}>
+      <div className={`flex items-center w-max hover:[animation-play-state:paused] ${isReverse ? 'animate-scroll-reverse' : 'animate-scroll'}`}>
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-16 w-32 sm:h-20 sm:w-40 rounded-lg bg-white p-3 sm:p-4 shadow-sm"
+            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-16 w-32 sm:h-20 sm:w-40 rounded-lg bg-card p-3 sm:p-4 shadow-sm border border-border"
           >
             <img
               src={logo.src}
@@ -90,9 +90,9 @@ const LogoCarousel = () => {
           Trusted by Leading Brands in Sri Lanka
         </motion.h2>
       </div>
-      {renderRow(doubledRow1, "animate-scroll")}
-      {renderRow(doubledRow2, "animate-scroll-reverse")}
-      {renderRow(doubledRow3, "animate-scroll")}
+      {renderRow(doubledRow1)}
+      {renderRow(doubledRow2, true)}
+      {renderRow(doubledRow3)}
     </section>
   );
 };
