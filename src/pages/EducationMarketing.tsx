@@ -109,6 +109,18 @@ const EducationMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={GraduationCap}
+        gradient="gradient-education"
+        tagline="Student Intake Lead Generation Campaigns"
+        stats={[
+          { value: "500+", label: "Education Institutes" },
+          { value: "200K+", label: "Student Contacts" },
+          { value: "98%", label: "SMS Open Rate" },
+          { value: "48hrs", label: "First Inquiries" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
           Buzz Connect delivers <strong>high-impact education marketing campaigns in Sri Lanka</strong>, helping universities, schools, and training institutes fill their intakes through targeted multi-channel promotions.
