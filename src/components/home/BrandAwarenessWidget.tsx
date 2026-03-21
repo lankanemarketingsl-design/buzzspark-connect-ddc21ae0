@@ -3,7 +3,7 @@ import { Mail, FolderOpen, RefreshCw, ArrowRight, CheckCircle2, Rocket, Sparkles
 import { Button } from "@/components/ui/button";
 
 const steps = [
-  { icon: Mail, label: "Inbox Exposure" },
+  { icon: Mail, label: "Email Exposure" },
   { icon: FolderOpen, label: "Findit.lk Category Presence" },
   { icon: RefreshCw, label: "Repeat Visibility" },
 ];
