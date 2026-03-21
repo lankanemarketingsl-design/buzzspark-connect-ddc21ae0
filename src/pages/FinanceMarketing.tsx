@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Smartphone, title: "SMS Loan & Credit Offers", desc: "Send targeted loan, credit card, and insurance offers to 600,000+ mobile users." },
@@ -101,6 +102,18 @@ const FinanceMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={Landmark}
+        gradient="gradient-finance"
+        tagline="High-Value Financial Lead Campaigns"
+        stats={[
+          { value: "50+", label: "Financial Clients" },
+          { value: "500K+", label: "SMS Database" },
+          { value: "VIP", label: "Corporate Access" },
+          { value: "24hrs", label: "Campaign Launch" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-value financial lead generation campaigns in Sri Lanka</strong>, helping banks, credit card companies, and insurance providers reach the right audience with targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Finance & Credit Card category visibility</strong> to generate qualified leads.</p>
@@ -145,7 +158,7 @@ const FinanceMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-finance text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Finance & Credit Card Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your financial products promoted in Findit.lk's <a href="https://www.findit.lk/promotions/finance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Finance</a> and <a href="https://www.findit.lk/promotions/credit-card-offers" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Credit Card</a> categories for continuous visibility to high-intent prospects.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -215,7 +228,7 @@ const FinanceMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-finance text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Finance Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Generate high-value financial leads with <strong>multi-channel finance marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">

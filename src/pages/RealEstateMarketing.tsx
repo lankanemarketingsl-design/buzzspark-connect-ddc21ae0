@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Smartphone, title: "SMS Property Alerts", desc: "Send new property listings and price updates to 600,000+ targeted mobile users." },
@@ -101,6 +102,18 @@ const RealEstateMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={Building2}
+        gradient="gradient-realestate"
+        tagline="Property Lead Generation Campaigns"
+        stats={[
+          { value: "300K+", label: "Targeted Contacts" },
+          { value: "High-Ticket", label: "Lead Quality" },
+          { value: "Weeks", label: "Sustained Visibility" },
+          { value: "48hrs", label: "First Inquiries" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact real estate marketing campaigns in Sri Lanka</strong>, helping property developers, agencies, and landlords reach buyers and investors through targeted multi-channel promotions.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our property lead generation strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <strong>Findit.lk Real Estate category visibility</strong> to generate qualified buyer inquiries.</p>
@@ -145,7 +158,7 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-realestate text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Real Estate Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your properties promoted in Findit.lk's <a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Real Estate</a> category for continuous visibility to active property seekers.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -215,7 +228,7 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-realestate text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Real Estate Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Sell properties faster with <strong>multi-channel real estate marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">

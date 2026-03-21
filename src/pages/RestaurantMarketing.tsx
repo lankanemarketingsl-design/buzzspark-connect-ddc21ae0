@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Smartphone, title: "SMS Daily Offers", desc: "Send daily deals, discounts, and promotions to 600,000+ mobile users instantly." },
@@ -101,6 +102,18 @@ const RestaurantMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      <IndustryStatsBanner
+        icon={UtensilsCrossed}
+        gradient="gradient-restaurant"
+        tagline="Daily Promotion & Foot Traffic Campaigns"
+        stats={[
+          { value: "600K+", label: "Mobile Reach" },
+          { value: "98%", label: "SMS Open Rate" },
+          { value: "Same Day", label: "Campaign Launch" },
+          { value: "5,000+", label: "Monthly Campaigns" },
+        ]}
+      />
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-frequency restaurant and retail marketing campaigns in Sri Lanka</strong>, helping food businesses and retail stores drive daily foot traffic and boost sales.</p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our daily promotion strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Food & Supermarket category visibility</strong> for instant customer response.</p>
@@ -145,7 +158,7 @@ const RestaurantMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-restaurant text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Food & Supermarket Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your business promoted in Findit.lk's <a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Food & Drink</a> category for continuous local discovery by hungry customers.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -215,7 +228,7 @@ const RestaurantMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-restaurant text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Restaurant Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Drive more customers to your door with <strong>multi-channel restaurant marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">

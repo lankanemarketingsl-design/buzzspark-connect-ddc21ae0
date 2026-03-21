@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 
 const services = [
   { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
@@ -108,6 +109,19 @@ const HotelMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Industry Stats Banner */}
+      <IndustryStatsBanner
+        icon={Hotel}
+        gradient="gradient-hotel"
+        tagline="High-Impact Travel Promotion Campaigns"
+        stats={[
+          { value: "3,000+", label: "Hotels in Sri Lanka" },
+          { value: "2.5M+", label: "Tourist Arrivals/Year" },
+          { value: "350K+", label: "Email Database" },
+          { value: "24hrs", label: "Campaign Launch" },
+        ]}
+      />
+
       {/* Power Intro */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
@@ -172,7 +186,7 @@ const HotelMarketing = () => {
       </motion.div>
 
       {/* Findit.lk Advantage */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hotel text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Hotels & Travel Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">
           Get your hotel listed and promoted in Findit.lk's <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Hotels & Accommodation</a> category for continuous visibility to high-intent travelers.
@@ -275,7 +289,7 @@ const HotelMarketing = () => {
       </motion.div>
 
       {/* CTA */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hotel text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Hotel Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
           Fill your rooms faster with <strong>multi-channel hotel marketing in Sri Lanka</strong>. Contact Buzz Connect today and start driving direct bookings.
