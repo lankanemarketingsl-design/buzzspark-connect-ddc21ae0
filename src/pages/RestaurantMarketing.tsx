@@ -158,7 +158,7 @@ const RestaurantMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-restaurant text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Food & Supermarket Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your business promoted in Findit.lk's <a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Food & Drink</a> category for continuous local discovery by hungry customers.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
