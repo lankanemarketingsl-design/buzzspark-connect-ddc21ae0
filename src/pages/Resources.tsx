@@ -10,6 +10,7 @@ import article4 from "@/assets/blog/article-4.jpg";
 import article5 from "@/assets/blog/article-5.jpg";
 import article6 from "@/assets/blog/article-6.jpg";
 import article7 from "@/assets/blog/article-7.jpg";
+import article8 from "@/assets/blog/article-8.jpg";
 
 const articles = [
   {
