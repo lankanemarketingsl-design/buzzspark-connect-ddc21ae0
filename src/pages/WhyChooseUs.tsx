@@ -264,6 +264,71 @@ const WhyChooseUs = () => {
           <p className="text-muted-foreground leading-relaxed mt-4">This creates a powerful marketing engine that delivers faster and better results than traditional methods.</p>
         </motion.section>
 
+        {/* Comparison Table */}
+        <motion.section {...fadeUp} transition={{ delay: 0.47 }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="p-2 rounded-lg bg-accent/10">
+              <GitCompareArrows className="w-6 h-6 text-accent" />
+            </div>
+            <h2 className="font-heading text-2xl font-bold text-foreground">How We Compare</h2>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            See how Buzz Connect stacks up against other digital marketing providers in Sri Lanka.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="text-left py-3 px-4 font-heading font-semibold text-foreground">Feature</th>
+                  <th className="text-center py-3 px-4 font-heading font-semibold text-accent bg-accent/5 rounded-t-lg">Buzz Connect</th>
+                  <th className="text-center py-3 px-4 font-heading font-semibold text-muted-foreground">Other Providers</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {[
+                  { feature: "Email Marketing", buzz: true, other: true },
+                  { feature: "SMS Marketing", buzz: true, other: true },
+                  { feature: "WhatsApp Marketing", buzz: true, other: "Limited" },
+                  { feature: "Social Media Marketing", buzz: true, other: true },
+                  { feature: "Findit.lk Integration", buzz: true, other: false },
+                  { feature: "Multi-Channel Campaigns", buzz: true, other: false },
+                  { feature: "Category-Based Targeting", buzz: true, other: false },
+                  { feature: "Large Segmented Database", buzz: true, other: "Limited" },
+                  { feature: "Campaign Launch Within Days", buzz: true, other: false },
+                  { feature: "Industry-Specific Audiences", buzz: true, other: false },
+                  { feature: "End-to-End Campaign Management", buzz: true, other: "Limited" },
+                  { feature: "Affordable SME Packages", buzz: true, other: "Varies" },
+                  { feature: "Graphic Design Included", buzz: true, other: "Extra Cost" },
+                  { feature: "Performance Tracking", buzz: true, other: "Limited" },
+                ].map((row) => (
+                  <tr key={row.feature} className="hover:bg-muted/30 transition-colors">
+                    <td className="py-3 px-4 text-foreground font-medium">{row.feature}</td>
+                    <td className="py-3 px-4 text-center bg-accent/5">
+                      {row.buzz === true ? (
+                        <Check className="w-5 h-5 text-accent mx-auto" />
+                      ) : (
+                        <span className="text-muted-foreground text-xs">{String(row.buzz)}</span>
+                      )}
+                    </td>
+                    <td className="py-3 px-4 text-center">
+                      {row.other === true ? (
+                        <Check className="w-5 h-5 text-muted-foreground mx-auto" />
+                      ) : row.other === false ? (
+                        <X className="w-5 h-5 text-destructive/60 mx-auto" />
+                      ) : (
+                        <span className="text-xs text-muted-foreground">{row.other}</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-accent font-semibold mt-6 text-sm text-center">
+            ✅ Only Buzz Connect offers Findit.lk integration — an exclusive advantage no other provider can match.
+          </p>
+        </motion.section>
+
         {/* Results You Can Expect */}
         <motion.section {...fadeUp} transition={{ delay: 0.5 }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
           <div className="flex items-center gap-3 mb-4">
