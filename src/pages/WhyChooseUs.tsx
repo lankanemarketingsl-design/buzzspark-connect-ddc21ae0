@@ -48,10 +48,10 @@ const WhyChooseUs = () => {
       subtitle="Sri Lanka's most trusted multi-channel marketing company delivering fast, cost-effective, and results-driven campaigns since 2014."
     >
       <SEOHead
-        title="Why Choose Buzz Connect | Best Digital Marketing Company in Sri Lanka"
-        description="Discover why Buzz Connect is Sri Lanka's leading multi-channel marketing company with email, SMS, WhatsApp & Findit.lk integration."
+        title="Why Choose Buzz Connect | Best Marketing Company Sri Lanka"
+        description="Why 1,500+ businesses choose Buzz Connect for digital marketing in Sri Lanka. Only company with Findit.lk integration. Email, SMS & WhatsApp. 10+ years. Proven ROI."
         canonical="/why-choose-us"
-        keywords="why choose Buzz Connect, best digital marketing company Sri Lanka, multi-channel marketing Sri Lanka, email marketing Sri Lanka"
+        keywords="why choose Buzz Connect, best digital marketing company Sri Lanka, multi-channel marketing Sri Lanka, email marketing Sri Lanka, best marketing agency colombo"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Why Choose Us", url: "/why-choose-us" },

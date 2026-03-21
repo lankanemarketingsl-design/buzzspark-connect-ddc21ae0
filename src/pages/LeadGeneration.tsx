@@ -106,10 +106,10 @@ const LeadGeneration = () => {
       subtitle="Attract, engage, and convert potential customers into real sales opportunities with Buzz Connect's multi-channel lead generation services."
     >
       <SEOHead
-        title="Lead Generation Sri Lanka | Generate Quality Leads | Buzz Connect"
-        description="Best lead generation Sri Lanka services using email, SMS & WhatsApp marketing. Get high-quality leads with Buzz Connect."
+        title="Lead Generation Sri Lanka | Multi-Channel Lead Campaigns"
+        description="No.1 lead generation company in Sri Lanka. Generate high-quality leads via email, SMS, WhatsApp & Findit.lk. Reach 1.2M+ contacts. 20,000+ successful campaigns. Get leads fast."
         canonical="/lead-generation-sri-lanka"
-        keywords="lead generation sri lanka, lead generation services sri lanka, customer acquisition sri lanka, generate leads sri lanka, online lead generation colombo, digital marketing leads sri lanka, best lead generation company sri lanka"
+        keywords="lead generation sri lanka, lead generation services sri lanka, customer acquisition sri lanka, generate leads sri lanka, online lead generation colombo, digital marketing leads sri lanka, best lead generation company sri lanka, b2b leads sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Lead Generation", url: "/lead-generation-sri-lanka" },

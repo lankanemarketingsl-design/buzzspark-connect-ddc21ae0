@@ -129,8 +129,8 @@ const SpecialPackages = () => {
       subtitle="Buzz Connect offers the most advanced multi channel marketing solution in Sri Lanka, combining email marketing, SMS marketing, WhatsApp marketing, and web advertising into one powerful campaign strategy."
     >
       <SEOHead
-        title="Multi Channel Marketing Sri Lanka | SMS, Email, WhatsApp Packages | Buzz Connect"
-        description="Best multi channel marketing Sri Lanka combining email, SMS, WhatsApp & Findit.lk. Reach 1.2 million+ with integrated advertising. Buzz Connect."
+        title="Multi-Channel Marketing Sri Lanka | Reach 1.2 Million+"
+        description="No.1 multi-channel marketing in Sri Lanka. Combined email, SMS, WhatsApp & Findit.lk advertising packages. Reach 1.2 million+ customers. Budget to Platinum plans available."
         canonical="/multi-channel-marketing-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
