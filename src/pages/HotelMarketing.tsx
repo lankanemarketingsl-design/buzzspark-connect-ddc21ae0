@@ -177,7 +177,6 @@ const HotelMarketing = () => {
         <p className="text-primary-foreground/80 mb-6">
           Get your hotel listed and promoted in Findit.lk's <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Hotels & Accommodation</a> category for continuous visibility to high-intent travelers.
         </p>
-        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Access to active travel seekers", "High visibility in Hotels category", "Continuous promotion for weeks", "Better conversion than social ads"].map((item) => (
             <div key={item} className="flex items-center gap-3">
