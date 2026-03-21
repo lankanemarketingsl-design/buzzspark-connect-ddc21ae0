@@ -50,7 +50,7 @@ const Footer = () => {
               <li><Link to="/why-choose-us" className="hover:text-accent transition-colors">Why Choose Us</Link></li>
               <li><Link to="/multi-channel-marketing-sri-lanka" className="hover:text-accent transition-colors">Multi Channel Marketing</Link></li>
               <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
-              <li><Link to="/#contactus" className="hover:text-accent transition-colors">Contact Us</Link></li>
+              <li><Link to="/contact-us" className="hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
