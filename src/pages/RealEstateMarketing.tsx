@@ -12,6 +12,24 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import assetlineLogo from "@/assets/clients/assetline-lands.jpg";
+import homeLandsLogo from "@/assets/clients/home-lands.jpg";
+import promiseLandLogo from "@/assets/clients/promise-land.png";
+import empireLandsLogo from "@/assets/clients/empire-lands.jpg";
+import bhoomiLogo from "@/assets/clients/bhoomi.jpg";
+import capitalTrustLogo from "@/assets/clients/capital-trust.png";
+import primeLandLogo from "@/assets/clients/prime-land.jpg";
+
+const realEstateClients = [
+  { name: "Assetline Lands", logo: assetlineLogo },
+  { name: "Home Lands", logo: homeLandsLogo },
+  { name: "Promise Land", logo: promiseLandLogo },
+  { name: "Empire Lands", logo: empireLandsLogo },
+  { name: "Bhoomi Realty", logo: bhoomiLogo },
+  { name: "Capital Trust Properties", logo: capitalTrustLogo },
+  { name: "Prime Land", logo: primeLandLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Property Alerts", desc: "Send new property listings and price updates to 600,000+ targeted mobile users." },
   { icon: MessageSquare, title: "WhatsApp Buyer Inquiries", desc: "Enable instant property inquiries and virtual tour scheduling via WhatsApp." },
