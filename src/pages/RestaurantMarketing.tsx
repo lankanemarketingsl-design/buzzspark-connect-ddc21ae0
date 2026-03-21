@@ -139,21 +139,11 @@ const RestaurantMarketing = () => {
         ]}
       />
 
-      {/* Trusted Clients */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Social Proof</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Restaurants & Food Brands</h2>
-          <p className="text-muted-foreground mt-2">We help Sri Lanka's top food brands drive more customers through their doors</p>
-        </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 gap-4">
-          {restaurantClients.map((client, i) => (
-            <motion.div key={client.name} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-center justify-center p-4 rounded-xl bg-card border border-border shadow-card hover:border-accent/40 hover:shadow-lg transition-all">
-              <img src={client.logo} alt={`${client.name} logo`} className="max-h-14 sm:max-h-20 object-contain" loading="lazy" />
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      <IndustryLogoCarousel
+        title="Trusted by Leading Restaurants & Food Brands"
+        subtitle="We help Sri Lanka's top food brands drive more customers through their doors"
+        clients={restaurantClients}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-frequency restaurant and retail marketing campaigns in Sri Lanka</strong>, helping food businesses and retail stores drive daily foot traffic and boost sales.</p>
