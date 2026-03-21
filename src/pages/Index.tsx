@@ -5,6 +5,7 @@ import AboutSection from "@/components/home/AboutSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import ContactSection from "@/components/home/ContactSection";
 import CTABanner from "@/components/home/CTABanner";
+import BrandAwarenessWidget from "@/components/home/BrandAwarenessWidget";
 import TrustStrip from "@/components/home/TrustStrip";
 import LogoCarousel from "@/components/home/LogoCarousel";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
@@ -57,6 +58,7 @@ const Index = () => {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
+      <BrandAwarenessWidget />
       <IntroductionSection />
       <AboutSection />
       <CTABanner
