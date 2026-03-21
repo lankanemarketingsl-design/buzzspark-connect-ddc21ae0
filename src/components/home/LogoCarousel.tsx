@@ -55,14 +55,14 @@ const LogoCarousel = () => {
   const doubledRow2 = [...row2, ...row2];
 
   const renderRow = (items: typeof logos, animationClass: string) => (
-    <div className="relative mb-4 last:mb-0">
-      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
+    <div className="relative mb-4 last:mb-0 overflow-hidden">
+      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-background to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-background to-transparent z-10" />
       <div className={`flex ${animationClass} w-max hover:[animation-play-state:paused]`}>
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-14 w-28 sm:h-20 sm:w-40 rounded-lg bg-white p-2 sm:p-3"
+            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-14 w-28 sm:h-20 sm:w-40 rounded-lg bg-white p-2 sm:p-3 shadow-sm"
           >
             <img
               src={logo.src}
