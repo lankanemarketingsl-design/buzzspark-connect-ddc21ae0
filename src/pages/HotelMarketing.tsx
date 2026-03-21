@@ -12,6 +12,28 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import radissonLogo from "@/assets/clients/radisson.jpg";
+import colomboCourtLogo from "@/assets/clients/colombo-court.jpg";
+import araliyaLogo from "@/assets/clients/araliya.png";
+import brownsLogo from "@/assets/clients/browns.jpg";
+import kingsburyLogo from "@/assets/clients/kingsbury.png";
+import tangerineLogo from "@/assets/clients/tangerine.jpg";
+import jetwingLogo from "@/assets/clients/jetwing.png";
+import cinnamonLogo from "@/assets/clients/cinnamon.jpg";
+import bestWesternLogo from "@/assets/clients/best-western.jpg";
+
+const hotelClients = [
+  { name: "Radisson", logo: radissonLogo },
+  { name: "Colombo Court Hotel & Spa", logo: colomboCourtLogo },
+  { name: "Araliya Hotels & Resorts", logo: araliyaLogo },
+  { name: "Browns Hotels & Resorts", logo: brownsLogo },
+  { name: "The Kingsbury", logo: kingsburyLogo },
+  { name: "Tangerine Beach Hotel", logo: tangerineLogo },
+  { name: "Jetwing Hotels", logo: jetwingLogo },
+  { name: "Cinnamon Hotels & Resorts", logo: cinnamonLogo },
+  { name: "Best Western", logo: bestWesternLogo },
+];
+
 const services = [
   { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
   { icon: Smartphone, title: "SMS Booking Alerts", desc: "Send last-minute booking alerts and exclusive deals to 600,000+ mobile users." },
