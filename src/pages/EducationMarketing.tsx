@@ -12,6 +12,28 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import uniColomboLogo from "@/assets/clients/uni-colombo.png";
+import caLogo from "@/assets/clients/ca-sri-lanka.jpg";
+import bmsLogo from "@/assets/clients/bms.jpg";
+import icbtLogo from "@/assets/clients/icbt.jpg";
+import horizonLogo from "@/assets/clients/horizon.png";
+import ancLogo from "@/assets/clients/anc.jpg";
+import oxfordLogo from "@/assets/clients/oxford.jpg";
+import slimLogo from "@/assets/clients/slim.jpg";
+import cipmLogo from "@/assets/clients/cipm.jpg";
+
+const educationClients = [
+  { name: "University of Colombo", logo: uniColomboLogo },
+  { name: "CA Sri Lanka", logo: caLogo },
+  { name: "BMS Campus", logo: bmsLogo },
+  { name: "ICBT Campus", logo: icbtLogo },
+  { name: "Horizon Campus", logo: horizonLogo },
+  { name: "ANC Education", logo: ancLogo },
+  { name: "Oxford College of Business", logo: oxfordLogo },
+  { name: "SLIM", logo: slimLogo },
+  { name: "CIPM Sri Lanka", logo: cipmLogo },
+];
+
 const services = [
   { icon: Mail, title: "Email Course Promotions", desc: "Promote courses, intakes & programs to 350,000+ targeted student & parent contacts." },
   { icon: Smartphone, title: "SMS Deadline Reminders", desc: "Send enrollment deadline alerts and intake reminders to 600,000+ mobile users." },
