@@ -12,6 +12,30 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import flagWhistleLogo from "@/assets/clients/flag-whistle.jpg";
+import cloudCafeLogo from "@/assets/clients/cloud-cafe.jpg";
+import tropicalFreshLogo from "@/assets/clients/tropical-fresh.jpg";
+import saltSugarLogo from "@/assets/clients/salt-sugar.jpg";
+import dominosLogo from "@/assets/clients/dominos.jpg";
+import maqaraLogo from "@/assets/clients/maqara.jpg";
+import popeyesLogo from "@/assets/clients/popeyes.jpg";
+import greatWallLogo from "@/assets/clients/great-wall.jpg";
+import burgerKingLogo from "@/assets/clients/burger-king.jpg";
+import chineseDragonLogo from "@/assets/clients/chinese-dragon.jpg";
+
+const restaurantClients = [
+  { name: "Burger King", logo: burgerKingLogo },
+  { name: "Domino's", logo: dominosLogo },
+  { name: "Popeyes", logo: popeyesLogo },
+  { name: "Chinese Dragon Cafe", logo: chineseDragonLogo },
+  { name: "Great Wall Restaurant", logo: greatWallLogo },
+  { name: "Maqara", logo: maqaraLogo },
+  { name: "Flag & Whistle", logo: flagWhistleLogo },
+  { name: "Cloud Cafe", logo: cloudCafeLogo },
+  { name: "Salt & Sugar", logo: saltSugarLogo },
+  { name: "Tropical Fresh", logo: tropicalFreshLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Daily Offers", desc: "Send daily deals, discounts, and promotions to 600,000+ mobile users instantly." },
   { icon: MessageSquare, title: "WhatsApp Menu & Promotions", desc: "Share menus, daily specials, and promotional offers directly via WhatsApp." },
