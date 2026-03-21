@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Smartphone, title: "SMS Property Alerts", desc: "Send new property listings and price updates to 600,000+ targeted mobile users." },
@@ -158,15 +159,15 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-realestate text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Real Estate Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">Get your properties promoted in Findit.lk's <a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Real Estate</a> category for continuous visibility to active property seekers.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Access to active property seekers", "High visibility in Real Estate category", "Long-term listing promotion", "Better qualified leads than classifieds"].map((item) => (
-            <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-primary-foreground/90">{item}</span></div>
-          ))}
-        </div>
-      </motion.div>
+      <FinditlkAdvantage
+        title="Findit.lk Real Estate Advantage"
+        description="Get your properties promoted in Findit.lk's Real Estate category for continuous visibility to active property seekers and investors in Sri Lanka."
+        gradient="gradient-realestate"
+        links={[
+          { label: "Real Estate", url: "https://www.findit.lk/promotions/real-estate" },
+        ]}
+        benefits={["Access to active property seekers", "High visibility in Real Estate category", "Long-term listing promotion", "Better qualified leads than classifieds"]}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Real Estate Marketing with Buzz Connect</h2>

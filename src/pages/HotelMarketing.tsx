@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
@@ -186,20 +187,16 @@ const HotelMarketing = () => {
       </motion.div>
 
       {/* Findit.lk Advantage */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hotel text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Hotels & Travel Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">
-          Get your hotel listed and promoted in Findit.lk's <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Hotels & Accommodation</a> and <a href="https://www.findit.lk/promotions/travel-and-tourism" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Travel & Tourism</a> categories for continuous visibility to high-intent travelers.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Access to active travel seekers", "High visibility in Hotels category", "Continuous promotion for weeks", "Better conversion than social ads"].map((item) => (
-            <div key={item} className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-              <span className="text-primary-foreground/90">{item}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
+      <FinditlkAdvantage
+        title="Findit.lk Hotels & Travel Advantage"
+        description="Get your hotel listed and promoted in Findit.lk's top travel categories for continuous visibility to high-intent travelers searching for accommodation and travel deals in Sri Lanka."
+        gradient="gradient-hotel"
+        links={[
+          { label: "Hotels & Accommodation", url: "https://www.findit.lk/promotions/hotels-and-accommodation" },
+          { label: "Travel & Tourism", url: "https://www.findit.lk/promotions/travel-and-tourism" },
+        ]}
+        benefits={["Access to active travel seekers", "High visibility in Hotels category", "Continuous promotion for weeks", "Better conversion than social ads"]}
+      />
 
       {/* Benefits */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">

@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Smartphone, title: "SMS Flash Sale Alerts", desc: "Send flash sale alerts, new arrivals, and exclusive discounts to 600,000+ mobile users instantly." },
@@ -158,15 +159,15 @@ const FashionMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-fashion text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Fashion & Clothing Advantage</h2>
-        <p className="text-white/80 mb-6">Get your fashion brand promoted in Findit.lk's <a href="https://www.findit.lk/promotions/fashion-and-clothing" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Fashion & Clothing</a> category for continuous visibility to active fashion shoppers.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Access to fashion-conscious shoppers", "High visibility in Fashion category", "Promote sales & new arrivals", "Better engagement than social ads"].map((item) => (
-            <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-white/90">{item}</span></div>
-          ))}
-        </div>
-      </motion.div>
+      <FinditlkAdvantage
+        title="Findit.lk Fashion & Clothing Advantage"
+        description="Get your fashion brand promoted in Findit.lk's Fashion & Clothing category for continuous visibility to active fashion shoppers looking for the latest styles and deals."
+        gradient="gradient-fashion"
+        links={[
+          { label: "Fashion & Clothing", url: "https://www.findit.lk/promotions/fashion-and-clothing" },
+        ]}
+        benefits={["Access to fashion-conscious shoppers", "High visibility in Fashion category", "Promote sales & new arrivals", "Better engagement than social ads"]}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Fashion Marketing with Buzz Connect</h2>

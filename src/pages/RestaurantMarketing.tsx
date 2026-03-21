@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Smartphone, title: "SMS Daily Offers", desc: "Send daily deals, discounts, and promotions to 600,000+ mobile users instantly." },
@@ -158,15 +159,15 @@ const RestaurantMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-restaurant text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Food & Supermarket Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">Get your business promoted in Findit.lk's <a href="https://www.findit.lk/promotions/food-and-drink" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Food & Drink</a> category for continuous local discovery by hungry customers.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Local customer discovery", "High visibility in Food category", "Continuous daily promotion", "Drive repeat visits"].map((item) => (
-            <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-primary-foreground/90">{item}</span></div>
-          ))}
-        </div>
-      </motion.div>
+      <FinditlkAdvantage
+        title="Findit.lk Food & Drink Advantage"
+        description="Get your business promoted in Findit.lk's Food & Drink category for continuous local discovery by customers actively looking for restaurants, cafes, and food deals."
+        gradient="gradient-restaurant"
+        links={[
+          { label: "Food & Drink", url: "https://www.findit.lk/promotions/food-and-drink" },
+        ]}
+        benefits={["Local customer discovery", "High visibility in Food category", "Continuous daily promotion", "Drive repeat visits"]}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Restaurant Marketing with Buzz Connect</h2>

@@ -10,6 +10,7 @@ import {
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
+import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
 const services = [
   { icon: Smartphone, title: "SMS Loan & Credit Offers", desc: "Send targeted loan, credit card, and insurance offers to 600,000+ mobile users." },
@@ -158,15 +159,16 @@ const FinanceMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-finance text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Finance & Credit Card Advantage</h2>
-        <p className="text-primary-foreground/80 mb-6">Get your financial products promoted in Findit.lk's <a href="https://www.findit.lk/promotions/finance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Finance</a> and <a href="https://www.findit.lk/promotions/credit-card-offers" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Credit Card</a> categories for continuous visibility to high-intent prospects.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Access to financial product seekers", "High visibility in Finance category", "Targeted credit card promotions", "Better qualified leads than ads"].map((item) => (
-            <div key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-primary-foreground/90">{item}</span></div>
-          ))}
-        </div>
-      </motion.div>
+      <FinditlkAdvantage
+        title="Findit.lk Finance & Credit Card Advantage"
+        description="Get your financial products promoted in Findit.lk's Finance and Credit Card categories for continuous visibility to high-intent prospects seeking financial solutions."
+        gradient="gradient-finance"
+        links={[
+          { label: "Finance", url: "https://www.findit.lk/promotions/finance" },
+          { label: "Credit Card Offers", url: "https://www.findit.lk/promotions/credit-card-offers" },
+        ]}
+        benefits={["Access to financial product seekers", "High visibility in Finance category", "Targeted credit card promotions", "Better qualified leads than ads"]}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Finance Marketing with Buzz Connect</h2>
