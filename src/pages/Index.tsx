@@ -58,9 +58,9 @@ const Index = () => {
       <HeroSection />
       <TrustStrip />
       <ServicesSection />
-      <BrandAwarenessWidget />
       <IntroductionSection />
       <AboutSection />
+      <BrandAwarenessWidget />
       <CTABanner
         headline="Ready to Grow Your Business?"
         subtext="Chat with us on WhatsApp and get a free consultation for your next marketing campaign."
