@@ -33,7 +33,7 @@ const IndustryStatsBanner = ({ icon: Icon, gradient, stats, tagline }: IndustryS
           <div className="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
             <Icon className="w-6 h-6 text-white" />
           </div>
-          <p className="text-white/90 font-semibold text-lg sm:text-xl max-w-md">{tagline}</p>
+          <p className="text-white/60 font-medium text-sm sm:text-base max-w-md">{tagline}</p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-6">
