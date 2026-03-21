@@ -12,6 +12,30 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import nolimitLogo from "@/assets/clients/nolimit.jpg";
+import crocodileLogo from "@/assets/clients/crocodile.png";
+import shirtworksLogo from "@/assets/clients/shirtworks.png";
+import emeraldLogo from "@/assets/clients/emerald.jpg";
+import signatureLogo from "@/assets/clients/signature.jpg";
+import odelLogo from "@/assets/clients/odel.jpg";
+import mimosaLogo from "@/assets/clients/mimosa.png";
+import swarnamahalLogo from "@/assets/clients/swarnamahal.jpg";
+import vogueJewellersLogo from "@/assets/clients/vogue-jewellers.jpg";
+import hameedialLogo from "@/assets/clients/hameedia.png";
+
+const fashionClients = [
+  { name: "NOLIMIT", logo: nolimitLogo },
+  { name: "Crocodile", logo: crocodileLogo },
+  { name: "SNX Shirtworks", logo: shirtworksLogo },
+  { name: "Emerald", logo: emeraldLogo },
+  { name: "Signature", logo: signatureLogo },
+  { name: "ODEL", logo: odelLogo },
+  { name: "Mimosa", logo: mimosaLogo },
+  { name: "Swarnamahal Jewellers", logo: swarnamahalLogo },
+  { name: "Vogue Jewellers", logo: vogueJewellersLogo },
+  { name: "Hameedia", logo: hameedialLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Flash Sale Alerts", desc: "Send flash sale alerts, new arrivals, and exclusive discounts to 600,000+ mobile users instantly." },
   { icon: MessageSquare, title: "WhatsApp Lookbook Sharing", desc: "Share new collections, styling tips, and exclusive previews directly via WhatsApp." },
