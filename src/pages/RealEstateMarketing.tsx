@@ -158,7 +158,7 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-realestate text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Real Estate Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your properties promoted in Findit.lk's <a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Real Estate</a> category for continuous visibility to active property seekers.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
