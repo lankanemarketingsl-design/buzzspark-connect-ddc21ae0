@@ -36,6 +36,7 @@ import EducationMarketing from "./pages/EducationMarketing.tsx";
 import FinanceMarketing from "./pages/FinanceMarketing.tsx";
 import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
 import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
+import FashionMarketing from "./pages/FashionMarketing.tsx";
 
 const queryClient = new QueryClient();
 
