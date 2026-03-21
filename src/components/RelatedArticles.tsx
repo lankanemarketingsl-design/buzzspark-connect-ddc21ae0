@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
+  { title: "Future of Email Marketing in Sri Lanka", path: "/future-of-email-marketing-sri-lanka" },
   { title: "Why Email Marketing Is Important", path: "/why-email-marketing-is-important" },
   { title: "Why You Need Email Marketing", path: "/why-you-need-email-marketing" },
   { title: "Best SEO Services in Sri Lanka", path: "/best-seo-services-sri-lanka" },

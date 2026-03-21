@@ -10,8 +10,16 @@ import article4 from "@/assets/blog/article-4.jpg";
 import article5 from "@/assets/blog/article-5.jpg";
 import article6 from "@/assets/blog/article-6.jpg";
 import article7 from "@/assets/blog/article-7.jpg";
+import article8 from "@/assets/blog/article-8.jpg";
 
 const articles = [
+  {
+    title: "The Future of Email Marketing in Sri Lanka: Email Campaigns + Findit.lk Ads",
+    date: "Mar 21, 2025",
+    excerpt: "Discover how Buzz Connect combines precision email campaigns with Findit.lk category-based advertising for maximum marketing impact. A dual-channel strategy for higher conversions in Sri Lanka.",
+    path: "/future-of-email-marketing-sri-lanka",
+    image: article8,
+  },
   {
     title: "The Power of Multi-Channel Marketing in Sri Lanka with Buzz Connect",
     date: "Mar 20, 2025",
