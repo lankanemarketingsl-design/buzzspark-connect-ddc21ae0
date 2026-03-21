@@ -158,7 +158,7 @@ const FinanceMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-finance text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Finance & Credit Card Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your financial products promoted in Findit.lk's <a href="https://www.findit.lk/promotions/finance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Finance</a> and <a href="https://www.findit.lk/promotions/credit-card-offers" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Credit Card</a> categories for continuous visibility to high-intent prospects.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
