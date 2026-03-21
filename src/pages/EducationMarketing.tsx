@@ -175,7 +175,7 @@ const EducationMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 p-8 rounded-2xl gradient-education text-white relative overflow-hidden">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Findit.lk Education Category Advantage</h2>
         <p className="text-primary-foreground/80 mb-6">Get your institution promoted in Findit.lk's <a href="https://www.findit.lk/promotions/education" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Education</a> category for continuous visibility to students actively searching for courses.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
