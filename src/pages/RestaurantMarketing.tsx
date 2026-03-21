@@ -12,6 +12,30 @@ import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 
+import flagWhistleLogo from "@/assets/clients/flag-whistle.jpg";
+import cloudCafeLogo from "@/assets/clients/cloud-cafe.jpg";
+import tropicalFreshLogo from "@/assets/clients/tropical-fresh.jpg";
+import saltSugarLogo from "@/assets/clients/salt-sugar.jpg";
+import dominosLogo from "@/assets/clients/dominos.jpg";
+import maqaraLogo from "@/assets/clients/maqara.jpg";
+import popeyesLogo from "@/assets/clients/popeyes.jpg";
+import greatWallLogo from "@/assets/clients/great-wall.jpg";
+import burgerKingLogo from "@/assets/clients/burger-king.jpg";
+import chineseDragonLogo from "@/assets/clients/chinese-dragon.jpg";
+
+const restaurantClients = [
+  { name: "Burger King", logo: burgerKingLogo },
+  { name: "Domino's", logo: dominosLogo },
+  { name: "Popeyes", logo: popeyesLogo },
+  { name: "Chinese Dragon Cafe", logo: chineseDragonLogo },
+  { name: "Great Wall Restaurant", logo: greatWallLogo },
+  { name: "Maqara", logo: maqaraLogo },
+  { name: "Flag & Whistle", logo: flagWhistleLogo },
+  { name: "Cloud Cafe", logo: cloudCafeLogo },
+  { name: "Salt & Sugar", logo: saltSugarLogo },
+  { name: "Tropical Fresh", logo: tropicalFreshLogo },
+];
+
 const services = [
   { icon: Smartphone, title: "SMS Daily Offers", desc: "Send daily deals, discounts, and promotions to 600,000+ mobile users instantly." },
   { icon: MessageSquare, title: "WhatsApp Menu & Promotions", desc: "Share menus, daily specials, and promotional offers directly via WhatsApp." },
@@ -114,6 +138,22 @@ const RestaurantMarketing = () => {
           { value: "5,000+", label: "Monthly Campaigns" },
         ]}
       />
+
+      {/* Trusted Clients */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Social Proof</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Restaurants & Food Brands</h2>
+          <p className="text-muted-foreground mt-2">We help Sri Lanka's top food brands drive more customers through their doors</p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-5 gap-4">
+          {restaurantClients.map((client, i) => (
+            <motion.div key={client.name} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-center justify-center p-4 rounded-xl bg-card border border-border shadow-card hover:border-accent/40 hover:shadow-lg transition-all">
+              <img src={client.logo} alt={`${client.name} logo`} className="max-h-14 sm:max-h-20 object-contain" loading="lazy" />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-frequency restaurant and retail marketing campaigns in Sri Lanka</strong>, helping food businesses and retail stores drive daily foot traffic and boost sales.</p>
