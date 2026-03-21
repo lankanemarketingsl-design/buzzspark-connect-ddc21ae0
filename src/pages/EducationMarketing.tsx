@@ -11,6 +11,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
+import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
 import uniColomboLogo from "@/assets/clients/uni-colombo.png";
 import caLogo from "@/assets/clients/ca-sri-lanka.jpg";
@@ -156,28 +157,11 @@ const EducationMarketing = () => {
         </p>
       </motion.div>
 
-      {/* Trusted by Leading Education Institutions */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Trusted Partners</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Trusted by Leading Education Institutions</h2>
-          <p className="text-muted-foreground mt-2">We're proud to work with some of Sri Lanka's most prestigious universities, campuses & professional bodies.</p>
-        </div>
-        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-4xl mx-auto">
-          {educationClients.map((client, i) => (
-            <motion.div
-              key={client.name}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.06 }}
-              className="flex items-center justify-center p-4 sm:p-6 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 hover:shadow-lg transition-all"
-            >
-              <img src={client.logo} alt={client.name} className="max-h-14 sm:max-h-20 w-auto object-contain" loading="lazy" />
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      <IndustryLogoCarousel
+        title="Trusted by Leading Education Institutions"
+        subtitle="We're proud to work with some of Sri Lanka's most prestigious universities, campuses & professional bodies."
+        clients={educationClients}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Challenges in Education Marketing in Sri Lanka</h2>

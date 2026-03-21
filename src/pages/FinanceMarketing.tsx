@@ -11,6 +11,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
+import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
 import allianceFinanceLogo from "@/assets/clients/alliance-finance.png";
 import amwCapitalLogo from "@/assets/clients/amw-capital.png";
@@ -149,18 +150,11 @@ const FinanceMarketing = () => {
         ]}
       />
 
-      {/* Trusted Clients */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Trusted by Leading Financial Institutions</h2>
-        <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">We help Sri Lanka's top banks, leasing companies, and financial institutions generate high-value leads.</p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 items-center justify-items-center max-w-5xl mx-auto">
-          {financeClients.map((client, i) => (
-            <motion.div key={client.name} initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="bg-card rounded-xl shadow-card border border-border p-4 flex items-center justify-center w-full aspect-square">
-              <img src={client.logo} alt={client.name} loading="lazy" className="max-h-16 sm:max-h-20 w-auto object-contain" />
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      <IndustryLogoCarousel
+        title="Trusted by Leading Financial Institutions"
+        subtitle="We help Sri Lanka's top banks, leasing companies, and financial institutions generate high-value leads."
+        clients={financeClients}
+      />
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-value financial lead generation campaigns in Sri Lanka</strong>, helping banks, credit card companies, and insurance providers reach the right audience with targeted multi-channel promotions.</p>
