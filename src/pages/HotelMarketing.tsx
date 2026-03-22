@@ -207,7 +207,7 @@ const HotelMarketing = () => {
               <TrendingUp className="w-6 h-6 text-yellow-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Growth Bookings</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 35,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
             <p className="text-xs text-muted-foreground mb-4">Maximum value for growing hotels</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 2–3 Targeted Email Campaigns (segmented)</li>
