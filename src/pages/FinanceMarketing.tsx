@@ -278,9 +278,11 @@ const FinanceMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
             <p className="text-xs text-muted-foreground mb-4">For small finance companies / testing campaigns</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["1 Targeted Email Campaign (loan / finance audience)", "Featured listing in Findit 'Finance & Loans'", "7-day visibility boost", "🔁 Basic Remarketing (repeat exposure)", "Ad creative (loan / offer focused)"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign (loan / finance audience)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/finance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Featured listing in Findit 'Finance & Loans'</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />7-day visibility boost</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Basic Remarketing (repeat exposure)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Ad creative (loan / offer focused)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Generate initial finance inquiries"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20Lead%20Starter%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
