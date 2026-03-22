@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, GraduationCap, BookOpen, School, Users, TrendingUp,
-  ArrowRight, Send, Eye, Award, Clock, Briefcase
+  ArrowRight, Send, Eye, Award, Clock, Briefcase, Rocket, Crown, RefreshCw
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
