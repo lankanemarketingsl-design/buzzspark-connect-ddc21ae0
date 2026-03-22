@@ -6,6 +6,7 @@ import WhyUsSection from "@/components/home/WhyUsSection";
 import ContactSection from "@/components/home/ContactSection";
 import CTABanner from "@/components/home/CTABanner";
 import BrandAwarenessWidget from "@/components/home/BrandAwarenessWidget";
+import IndustriesSection from "@/components/home/IndustriesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import LogoCarousel from "@/components/home/LogoCarousel";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
