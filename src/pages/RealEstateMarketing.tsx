@@ -5,7 +5,8 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Home, Building2, MapPin, Users, TrendingUp,
-  ArrowRight, Send, Eye, Key, Landmark, DollarSign, Rocket, Crown, RefreshCw
+  ArrowRight, Send, Eye, Key, Landmark, DollarSign, Rocket, Crown, RefreshCw,
+  Zap, Clock, Gift
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
@@ -32,62 +33,62 @@ const realEstateClients = [
   { name: "Prime Land", logo: primeLandLogo },
 ];
 
-const services = [
-  { icon: Smartphone, title: "SMS Property Alerts", desc: "Send new property listings and price updates to 600,000+ targeted mobile users." },
-  { icon: MessageSquare, title: "WhatsApp Buyer Inquiries", desc: "Enable instant property inquiries and virtual tour scheduling via WhatsApp." },
-  { icon: Mail, title: "Email Brochures & Details", desc: "Deliver property brochures, floor plans, and detailed listings to 350,000+ contacts." },
-  { icon: Globe, title: "Findit.lk Real Estate Visibility", desc: "Get listed in Real Estate categories on Findit.lk for high-intent buyer discovery." },
-  { icon: Eye, title: "Banner Property Campaigns", desc: "Showcase premium properties with visually stunning banner advertising campaigns." },
-  { icon: Target, title: "Investor & Buyer Database", desc: "Reach property investors, first-time buyers, and corporate clients with precision targeting." },
+const achievements = [
+  { icon: Users, text: "Generate serious property buyer inquiries" },
+  { icon: Home, text: "Sell lands, houses & apartments faster" },
+  { icon: Building2, text: "Promote new property developments & projects" },
+  { icon: TrendingUp, text: "Reach high-intent investors & home buyers" },
+  { icon: MessageSquare, text: "Get direct calls and WhatsApp inquiries" },
 ];
 
-const channels = [
-  { icon: Smartphone, channel: "SMS", action: "Property alerts & updates", color: "bg-green-500/10 text-green-600" },
-  { icon: MessageSquare, channel: "WhatsApp", action: "Buyer inquiries & tours", color: "bg-emerald-500/10 text-emerald-600" },
-  { icon: Mail, channel: "Email", action: "Brochures & detailed listings", color: "bg-blue-500/10 text-blue-600" },
-  { icon: Globe, channel: "Findit.lk", action: "Real Estate category visibility", color: "bg-purple-500/10 text-purple-600" },
+const whoIsFor = [
+  { icon: Building2, text: "Property Developers" },
+  { icon: Key, text: "Real Estate Agents" },
+  { icon: MapPin, text: "Land Sale Companies" },
+  { icon: Home, text: "Apartment & Housing Projects" },
+  { icon: DollarSign, text: "Property Investment Companies" },
 ];
 
-const benefits = [
-  "High-ticket lead generation",
-  "Long-term visibility",
-  "Strong inquiry pipeline",
-  "Reach property investors",
-  "Fast listing promotion",
-  "Measurable ROI tracking",
+const whyChooseUs = [
+  { icon: Users, text: "Access to targeted Sri Lankan property buyers" },
+  { icon: Mail, text: "Multi-channel marketing (Email + SMS + WhatsApp)" },
+  { icon: Zap, text: "Faster results than social media ads" },
+  { icon: DollarSign, text: "Cost-effective compared to traditional advertising" },
+  { icon: Send, text: "Immediate reach to thousands of potential buyers" },
+];
+
+const howItWorks = [
+  { step: 1, icon: Target, title: "Target Audience Selection", desc: "We target users interested in property buying, investing, and relocation" },
+  { step: 2, icon: Mail, title: "Campaign Creation", desc: "We design high-converting property messages" },
+  { step: 3, icon: Send, title: "Multi-Channel Promotion", desc: "Your listings are promoted via Email, SMS & WhatsApp" },
+  { step: 4, icon: BarChart3, title: "Lead Generation", desc: "You receive calls, messages, and buyer inquiries" },
 ];
 
 const useCases = [
-  { icon: Building2, label: "Property Developers" },
-  { icon: Home, label: "Real Estate Agencies" },
-  { icon: Key, label: "Rental Property Managers" },
-  { icon: Landmark, label: "Commercial Property" },
-  { icon: MapPin, label: "Land Sales" },
-  { icon: DollarSign, label: "Property Investment Firms" },
+  { icon: MapPin, title: "Land Sales Campaign", audience: "Promote land projects to investors", result: "Generate high-quality buyer inquiries" },
+  { icon: Building2, title: "Apartment Promotions", audience: "Target urban buyers", result: "Increase site visits & bookings" },
+  { icon: Home, title: "House Sales", audience: "Reach families looking to relocate", result: "Faster property sales" },
+  { icon: TrendingUp, title: "Property Investment Offers", audience: "Target high-income individuals", result: "Attract serious investors" },
 ];
 
-const processSteps = [
-  { icon: Target, title: "Define Buyer Profiles", desc: "Target by budget, location preference, and property type" },
-  { icon: Mail, title: "Launch Property Campaigns", desc: "Coordinate SMS alerts, email brochures & WhatsApp inquiries" },
-  { icon: Globe, title: "Activate Findit.lk Listing", desc: "Get visible in Real Estate category" },
-  { icon: Send, title: "Capture Buyer Inquiries", desc: "Convert interest into property viewings and offers" },
-  { icon: BarChart3, title: "Optimize & Scale", desc: "Track leads and optimize for better conversion" },
+const whyBuzzConnect = [
+  "Direct access to property-interested audiences",
+  "Proven system for lead generation",
+  "Industry-focused campaigns",
+  "Fast campaign launch and results",
 ];
 
-const whyChoose = [
-  "Access to property investor database",
-  "High-ticket lead generation expertise",
-  "Integration with Findit.lk Real Estate category",
-  "Fast campaign execution for new listings",
-  "Multi-channel reach for maximum exposure",
-  "Dedicated real estate campaign team",
+const freeBonusItems = [
+  "Best audience for your property",
+  "Recommended campaign strategy",
+  "Expected lead results",
 ];
 
 const faqs = [
   { q: "What is real estate marketing in Sri Lanka?", a: "Real estate marketing involves promoting properties, developments, and real estate services to potential buyers and investors through targeted digital marketing channels." },
   { q: "How can Buzz Connect help sell properties faster?", a: "We combine SMS property alerts, WhatsApp buyer inquiries, email brochures, and Findit.lk Real Estate category visibility to reach thousands of potential buyers simultaneously." },
   { q: "Can you target property investors specifically?", a: "Yes, our database includes property investors, high-net-worth individuals, and corporate buyers — allowing precise targeting for premium property listings." },
-  { q: "How much does real estate marketing cost in Sri Lanka?", a: "Buzz Connect offers real estate marketing packages starting from LKR 8,000. Contact us for a customized quote based on your property portfolio." },
+  { q: "How much does real estate marketing cost in Sri Lanka?", a: "Buzz Connect offers real estate marketing packages starting from LKR 75,000. Contact us for a customized quote based on your property portfolio." },
   { q: "How quickly can I start getting buyer inquiries?", a: "Most property campaigns start generating inquiries within 24-48 hours of launch, with sustained visibility through Findit.lk for weeks." },
 ];
 
@@ -111,8 +112,8 @@ const RealEstateMarketing = () => {
   return (
     <ServicePageLayout
       badge="Real Estate Marketing"
-      title="Real Estate Marketing Sri Lanka – Generate Property Buyer Leads Fast"
-      subtitle="Reach property buyers, investors, and renters through targeted SMS, WhatsApp, email campaigns and Findit.lk Real Estate category visibility."
+      title="Generate Property Buyers & Sellers in Sri Lanka – Fast"
+      subtitle="Promote your lands, houses, apartments, and real estate projects with targeted Email, SMS & WhatsApp campaigns that bring real inquiries."
     >
       <SEOHead
         title="Real Estate Marketing Sri Lanka | Property Lead Generation"
@@ -122,6 +123,16 @@ const RealEstateMarketing = () => {
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Real Estate Marketing", url: "/real-estate-marketing-sri-lanka" }]}
         jsonLd={jsonLd}
       />
+
+      {/* Hero CTA Buttons */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20get%20property%20leads.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+          <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><Home className="w-5 h-5 mr-2" />Get Property Leads</Button>
+        </a>
+        <Link to="/contact-us">
+          <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 text-base font-bold rounded-full"><Rocket className="w-5 h-5 mr-2" />Start Your Campaign</Button>
+        </Link>
+      </motion.div>
 
       <IndustryStatsBanner
         icon={Building2}
@@ -135,13 +146,52 @@ const RealEstateMarketing = () => {
         ]}
       />
 
+      {/* 💰 What You Can Achieve */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">What You Can Achieve</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Stop Wasting Money on Low-Response Ads.</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">With BuzzConnect, you can reach the right property buyers and generate real results.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {achievements.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card hover:border-accent/40 transition-all">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-accent" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🎯 Who This Is For */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Who This Is For</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">This Service Is Designed For</h2>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          {whoIsFor.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex flex-col items-center gap-3 p-5 rounded-xl bg-card border border-border shadow-card text-center">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                <item.icon className="w-6 h-6 text-accent" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
       <IndustryLogoCarousel
         title="Trusted by Leading Real Estate Brands"
         subtitle="We help Sri Lanka's top property developers and real estate companies generate qualified buyer leads."
         clients={realEstateClients}
       />
 
-      {/* Real Estate Advertising Packages */}
+      {/* Real Estate Advertising Packages - PRESERVED */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
@@ -226,57 +276,64 @@ const RealEstateMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Real Estate Marketing Sri Lanka</h2>
-        <div className="space-y-4">
-          {faqs.map((faq) => (
-            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
-              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-impact real estate marketing campaigns in Sri Lanka</strong>, helping property developers, agencies, and landlords reach buyers and investors through targeted multi-channel promotions.</p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our property lead generation strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <strong>Findit.lk Real Estate category visibility</strong> to generate qualified buyer inquiries.</p>
-        <p className="text-lg text-muted-foreground leading-relaxed">Whether you're selling apartments, houses, commercial properties, or land, our campaigns are designed to build a strong inquiry pipeline and close deals faster.</p>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Challenges in Real Estate Marketing in Sri Lanka</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">Sri Lanka's real estate market is highly competitive with numerous developers and agencies competing for a limited pool of serious buyers. Traditional marketing methods like newspaper ads and property expos are expensive and hard to measure.</p>
-        <p className="text-muted-foreground leading-relaxed"><strong>Buzz Connect's multi-channel approach</strong> provides both instant reach through direct messaging and long-term visibility through Findit.lk — ensuring your properties stay visible to active buyers.</p>
-      </motion.div>
-
+      {/* 📊 Why Real Estate Companies Choose Us */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Solutions</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Real Estate Marketing Solutions in Sri Lanka</h2>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Why Real Estate Companies Choose BuzzConnect</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s, i) => (
-            <motion.div key={s.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-6 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
-              <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center mb-4"><s.icon className="w-6 h-6 text-primary" /></div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-              <p className="text-sm text-muted-foreground">{s.desc}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {whyChooseUs.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card">
+              <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-secondary-foreground" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
             </motion.div>
           ))}
         </div>
       </motion.div>
 
+      {/* 🚀 How It Works */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Campaign Strategy</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Property Lead Generation Strategy</h2>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Process</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">How It Works</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {channels.map((ch, i) => (
-            <motion.div key={ch.channel} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-6 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className={`w-14 h-14 rounded-full ${ch.color} flex items-center justify-center mx-auto mb-4`}><ch.icon className="w-7 h-7" /></div>
-              <h3 className="font-heading font-bold text-foreground mb-1">{ch.channel}</h3>
-              <p className="text-sm text-muted-foreground">{ch.action}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          {howItWorks.map((step, i) => (
+            <motion.div key={step.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="relative flex flex-col items-center text-center p-6 rounded-2xl bg-card shadow-card border border-border">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full gradient-accent flex items-center justify-center text-sm font-bold text-primary">{step.step}</div>
+              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mt-3 mb-4">
+                <step.icon className="w-7 h-7 text-accent" />
+              </div>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🎯 Use Cases */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Use Cases</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Real Estate Marketing Use Cases</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {useCases.map((uc, i) => (
+            <motion.div key={uc.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
+                  <uc.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-heading font-bold text-foreground text-lg">{uc.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-2">{uc.audience}</p>
+              <p className="text-sm text-accent font-semibold flex items-center gap-1"><ArrowRight className="w-4 h-4" />{uc.result}</p>
             </motion.div>
           ))}
         </div>
@@ -292,60 +349,88 @@ const RealEstateMarketing = () => {
         benefits={["Access to active property seekers", "High visibility in Real Estate category", "Long-term listing promotion", "Better qualified leads than classifieds"]}
       />
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Real Estate Marketing with Buzz Connect</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {benefits.map((b) => (<div key={b} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-foreground font-medium">{b}</span></div>))}
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Who Needs Real Estate Marketing?</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center"><uc.icon className="w-6 h-6 text-secondary-foreground" /></div>
-              <span className="text-sm font-medium text-foreground">{uc.label}</span>
-            </div>
+      {/* 🧠 Why BuzzConnect */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why BuzzConnect for Real Estate Marketing?</h2>
+        <ul className="space-y-3">
+          {whyBuzzConnect.map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-accent shrink-0" />
+              <span className="text-muted-foreground font-medium">{item}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">How Our Real Estate Marketing Process Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">{i + 1}</div>
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3"><step.icon className="w-6 h-6 text-secondary-foreground" /></div>
-              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{step.title}</h3>
-              <p className="text-xs text-muted-foreground">{step.desc}</p>
+      {/* 🎁 Free Bonus */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl border-2 border-accent/30 bg-accent/5 relative overflow-hidden">
+          <div className="absolute top-4 right-4 opacity-10">
+            <Gift className="w-24 h-24 text-accent" />
+          </div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+              <Gift className="w-6 h-6 text-accent" />
             </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why Choose Buzz Connect?</h2>
-          <ul className="space-y-3">{whyChoose.map((item) => (<li key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-muted-foreground">{item}</span></li>))}</ul>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Campaign Examples</h2>
-          <ul className="space-y-3">
-            {["New apartment launch SMS to 300K+ contacts", "WhatsApp virtual tour scheduling", "Property brochure email campaigns", "Findit.lk Real Estate featured listing", "Land sale alert campaigns to investors"].map((item) => (
-              <li key={item} className="flex items-center gap-3"><TrendingUp className="w-5 h-5 text-accent shrink-0" /><span className="text-muted-foreground">{item}</span></li>
+            <div>
+              <span className="text-xs font-semibold text-accent uppercase tracking-wider">Free Bonus</span>
+              <h2 className="font-heading text-xl font-bold text-foreground">Get a FREE Real Estate Marketing Plan</h2>
+            </div>
+          </div>
+          <p className="text-muted-foreground mb-4">Tailored to your property business. We will show you:</p>
+          <ul className="space-y-2 mb-6">
+            {freeBonusItems.map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-accent shrink-0" />
+                <span className="text-foreground font-medium">{item}</span>
+              </li>
             ))}
           </ul>
-        </motion.div>
-      </div>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Real%20Estate%20Marketing%20Plan%20for%20my%20business." target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
+          </a>
+        </div>
+      </motion.div>
 
+      {/* FAQ */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Real Estate Marketing Sri Lanka</h2>
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
+              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🔥 Urgency Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-destructive/5 border border-destructive/20 text-center">
+          <div className="w-14 h-14 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
+            <Clock className="w-7 h-7 text-destructive" />
+          </div>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Limited Campaign Slots Available</h2>
+          <p className="text-muted-foreground max-w-xl mx-auto mb-2">Limited campaign slots available for real estate companies each month.</p>
+          <p className="text-foreground font-semibold">Book your campaign now and stay ahead of competitors.</p>
+        </div>
+      </motion.div>
+
+      {/* ⚡ Final CTA */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-realestate text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Real Estate Marketing Campaign Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Sell properties faster with <strong>multi-channel real estate marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Getting Property Buyers This Month</h2>
+        <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Generate property buyer leads with <strong>multi-channel real estate marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/contact-us"><button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" /></button></Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20real%20estate%20marketing%20services." target="_blank" rel="noopener noreferrer"><button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Chat on WhatsApp</button></a>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20talk%20to%20an%20expert%20about%20real%20estate%20marketing." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Talk to an Expert <ArrowRight className="inline w-4 h-4 ml-1" /></button>
+          </a>
+          <Link to="/contact-us">
+            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Get Proposal</button>
+          </Link>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20real%20estate%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent/20 text-accent font-bold hover:bg-accent/30 transition-colors text-base">Launch Campaign</button>
+          </a>
         </div>
       </motion.div>
 
