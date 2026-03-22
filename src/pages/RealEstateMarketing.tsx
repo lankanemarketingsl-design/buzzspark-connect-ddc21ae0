@@ -156,7 +156,7 @@ const RealEstateMarketing = () => {
               <Rocket className="w-6 h-6 text-green-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Property Leads Starter</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 75,000</p>
             <p className="text-xs text-muted-foreground mb-4">Best for small agents & property listings</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign (property buyers / investors)</li>
