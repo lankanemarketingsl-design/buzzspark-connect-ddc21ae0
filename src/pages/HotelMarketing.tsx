@@ -305,6 +305,7 @@ const HotelMarketing = () => {
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Hotel Advertising Packages with Remarketing</h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Every package includes remarketing — so your hotel keeps appearing to interested travelers until they book.</p>
+          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">Hotels typically recover their investment with just 2–3 bookings.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {/* Starter Boost */}
