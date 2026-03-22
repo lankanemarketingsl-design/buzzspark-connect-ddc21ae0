@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Home, Building2, MapPin, Users, TrendingUp,
-  ArrowRight, Send, Eye, Key, Landmark, DollarSign
+  ArrowRight, Send, Eye, Key, Landmark, DollarSign, Rocket, Crown, RefreshCw
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
@@ -241,6 +242,81 @@ const RealEstateMarketing = () => {
           </ul>
         </motion.div>
       </div>
+
+      {/* Real Estate Advertising Packages */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Real Estate Marketing Packages with Remarketing</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Property buyers don't decide instantly — they choose after seeing the right property multiple times.</p>
+          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">1 property sale = hundreds of thousands in value. You only need 1 serious buyer to justify the campaign.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Property Leads Starter */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
+              <Rocket className="w-6 h-6 text-green-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Property Leads Starter</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for small agents & property listings</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign (property buyers / investors)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Featured listing in Findit 'Real Estate'</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />7-day visibility boost</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Basic Remarketing (repeat exposure)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Property ad creative (image + offer)</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Generate initial buyer inquiries"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Property%20Leads%20Starter%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Buyer Flow - Most Popular */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-accent text-white text-xs font-bold">MOST POPULAR</div>
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+              <Crown className="w-6 h-6 text-accent" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Buyer Flow</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Consistent property inquiries</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns (segmented)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Premium Findit real estate placement</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Campaigns for urgent buyers (hot properties)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Advanced Remarketing (multi-touch)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Consistent property inquiries"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Buyer%20Flow%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* High Value Deals */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <RefreshCw className="w-6 h-6 text-red-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">High Value Deals</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Close high-value property deals faster</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel strategy)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/real-estate" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Top ranking in Findit category</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Full Funnel Remarketing</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Custom property landing page</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion for featured properties</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Close high-value property deals faster"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20High%20Value%20Deals%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Real Estate Marketing Sri Lanka</h2>
