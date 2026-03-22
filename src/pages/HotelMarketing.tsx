@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import {
-  CheckCircle, Target, Zap, BarChart3, Mail, Smartphone, MessageSquare, Globe,
+  CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Hotel, Plane, MapPin, Calendar, Star, Users, TrendingUp,
-  ArrowRight, Send, Settings, Eye, Award, Compass, RefreshCw, Crown, Rocket
+  ArrowRight, Send, Eye, Compass, RefreshCw, Crown, Rocket,
+  Zap, Clock, Gift, DollarSign
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
@@ -36,62 +37,62 @@ const hotelClients = [
   { name: "Best Western", logo: bestWesternLogo },
 ];
 
-const services = [
-  { icon: Mail, title: "Email Marketing for Hotels", desc: "Promote hotel deals, seasonal packages & travel offers to 350,000+ targeted contacts." },
-  { icon: Smartphone, title: "SMS Booking Alerts", desc: "Send last-minute booking alerts and exclusive deals to 600,000+ mobile users." },
-  { icon: MessageSquare, title: "WhatsApp Direct Bookings", desc: "Enable instant booking inquiries and guest communication via WhatsApp." },
-  { icon: Globe, title: "Findit.lk Travel Visibility", desc: "Get listed in Hotels & Travel categories on Findit.lk for continuous visibility." },
-  { icon: Eye, title: "Banner Advertising", desc: "Showcase your property with visually stunning banner campaigns across top platforms." },
-  { icon: Target, title: "Tourist & Local Targeting", desc: "Reach both international tourists and local travelers with precision database targeting." },
+const achievements = [
+  { icon: Hotel, text: "Increase direct bookings" },
+  { icon: Calendar, text: "Fill low occupancy periods faster" },
+  { icon: Star, text: "Promote special offers & last-minute deals" },
+  { icon: Plane, text: "Reach local and international travelers instantly" },
+  { icon: MessageSquare, text: "Get direct calls and WhatsApp inquiries" },
 ];
 
-const channels = [
-  { icon: Mail, channel: "Email", action: "Promote hotel deals & packages", color: "bg-blue-500/10 text-blue-600" },
-  { icon: Smartphone, channel: "SMS", action: "Last-minute booking alerts", color: "bg-green-500/10 text-green-600" },
-  { icon: MessageSquare, channel: "WhatsApp", action: "Direct booking inquiries", color: "bg-emerald-500/10 text-emerald-600" },
-  { icon: Globe, channel: "Findit.lk", action: "Hotels & Travel category visibility", color: "bg-purple-500/10 text-purple-600" },
+const whoIsFor = [
+  { icon: Hotel, text: "Hotels & Resorts" },
+  { icon: Star, text: "Boutique Villas" },
+  { icon: MapPin, text: "Guest Houses" },
+  { icon: Compass, text: "Apartment Rentals / Airbnb Hosts" },
+  { icon: Plane, text: "Travel & Tour Operators" },
 ];
 
-const benefits = [
-  "Increase direct bookings",
-  "Reach tourists & local travelers",
-  "Reduce OTA dependency",
-  "Promote seasonal packages fast",
-  "Build guest loyalty",
-  "Maximize occupancy rates",
+const whyChooseUs = [
+  { icon: Users, text: "Access to travel-ready Sri Lankan audience" },
+  { icon: Mail, text: "Multi-channel campaigns (Email + SMS + WhatsApp)" },
+  { icon: Zap, text: "Faster response compared to traditional ads" },
+  { icon: DollarSign, text: "Cost-effective alternative to OTA commissions" },
+  { icon: Send, text: "Immediate reach and quick results" },
+];
+
+const howItWorks = [
+  { step: 1, icon: Target, title: "Target the Right Travelers", desc: "We identify users interested in travel, holidays, and hotel stays" },
+  { step: 2, icon: Mail, title: "Create High-Converting Offers", desc: "We craft compelling promotions (discounts, packages, deals)" },
+  { step: 3, icon: Send, title: "Multi-Channel Promotion", desc: "Your hotel is promoted via Email, SMS & WhatsApp" },
+  { step: 4, icon: BarChart3, title: "Get Booking Inquiries", desc: "Receive direct calls, messages, and booking requests" },
 ];
 
 const useCases = [
-  { icon: Hotel, label: "Hotels & Resorts" },
-  { icon: Plane, label: "Travel Agencies" },
-  { icon: MapPin, label: "Tour Operators" },
-  { icon: Compass, label: "Eco & Adventure Tourism" },
-  { icon: Calendar, label: "Event Venues" },
-  { icon: Star, label: "Boutique Hotels & Villas" },
+  { icon: Hotel, title: "Weekend Getaway Promotions", audience: "Increase occupancy during weekends with targeted offers", result: "Fill rooms on slow days" },
+  { icon: Calendar, title: "Seasonal Campaigns", audience: "Promote Avurudu, December holidays, and long weekends", result: "Maximize seasonal bookings" },
+  { icon: Star, title: "Couple & Honeymoon Packages", audience: "Attract high-value bookings from couples", result: "Premium room bookings" },
+  { icon: Plane, title: "Tourist Campaigns", audience: "Reach travelers planning to visit Sri Lanka", result: "International guest inquiries" },
 ];
 
-const processSteps = [
-  { icon: Target, title: "Identify Target Guests", desc: "Define your ideal guest profile — tourists, corporates, or local travelers" },
-  { icon: Mail, title: "Launch Multi-Channel Campaign", desc: "Coordinate email, SMS & WhatsApp promotions for maximum reach" },
-  { icon: Globe, title: "Activate Findit.lk Listing", desc: "Get high visibility in Hotels & Travel categories" },
-  { icon: Send, title: "Drive Booking Inquiries", desc: "Convert interested travelers into confirmed bookings" },
-  { icon: BarChart3, title: "Optimize & Scale", desc: "Track results and optimize campaigns for better ROI" },
+const whyBuzzConnect = [
+  "Direct access to hotel-seeking audience",
+  "Industry-focused campaign strategies",
+  "Fast campaign launch and execution",
+  "Designed for Sri Lankan hospitality market",
 ];
 
-const whyChoose = [
-  "Proven hotel marketing strategies",
-  "Access to tourist & traveler databases",
-  "Integration with Findit.lk Travel categories",
-  "Fast campaign execution within days",
-  "Cost-effective compared to OTA commissions",
-  "Dedicated campaign management team",
+const freeBonusItems = [
+  "Best audience for your hotel",
+  "Recommended campaign strategy",
+  "Expected booking results",
 ];
 
 const faqs = [
   { q: "What is hotel marketing in Sri Lanka?", a: "Hotel marketing involves promoting your accommodation, packages, and services to potential guests through targeted digital marketing channels like email, SMS, WhatsApp, and directory listings." },
   { q: "How can Buzz Connect help my hotel get more bookings?", a: "We use a multi-channel approach combining email campaigns, SMS alerts, WhatsApp messaging, and Findit.lk category visibility to reach thousands of potential guests and drive direct bookings." },
   { q: "What makes Buzz Connect different from other hotel marketing agencies?", a: "Our unique combination of direct marketing (email, SMS, WhatsApp) with Findit.lk category-based promotions provides both instant reach and continuous visibility — something traditional agencies cannot offer." },
-  { q: "How much does hotel marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective hotel marketing packages starting from LKR 8,000. Contact us for a customized quote based on your property and target audience." },
+  { q: "How much does hotel marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective hotel marketing packages starting from LKR 14,900. Contact us for a customized quote based on your property and target audience." },
   { q: "Can you target international tourists?", a: "Yes, our database includes both local travelers and international tourist segments, allowing you to reach the right audience for your property." },
 ];
 
@@ -119,8 +120,8 @@ const HotelMarketing = () => {
   return (
     <ServicePageLayout
       badge="Hotel & Travel Marketing"
-      title="Hotel Marketing Sri Lanka – Drive Direct Bookings with Multi-Channel Campaigns"
-      subtitle="Reach tourists and local travelers through targeted email, SMS, WhatsApp campaigns and Findit.lk category visibility to maximize your hotel's occupancy."
+      title="Get More Direct Hotel Bookings in Sri Lanka"
+      subtitle="Promote your hotel offers, fill rooms faster, and reach high-intent travelers using targeted Email, SMS & WhatsApp campaigns."
     >
       <SEOHead
         title="Hotel Marketing Sri Lanka | Multi-Channel Travel Campaigns"
@@ -134,7 +135,16 @@ const HotelMarketing = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Industry Stats Banner */}
+      {/* Hero CTA Buttons */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20get%20more%20hotel%20bookings.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+          <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><Hotel className="w-5 h-5 mr-2" />Get More Bookings</Button>
+        </a>
+        <Link to="/contact-us">
+          <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 text-base font-bold rounded-full"><Rocket className="w-5 h-5 mr-2" />Start Campaign</Button>
+        </Link>
+      </motion.div>
+
       <IndustryStatsBanner
         icon={Hotel}
         gradient="gradient-hotel"
@@ -147,17 +157,44 @@ const HotelMarketing = () => {
         ]}
       />
 
-      {/* Power Intro */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Buzz Connect delivers <strong>high-impact hotel marketing campaigns in Sri Lanka</strong>, helping hotels, resorts, and travel companies reach tourists and local travelers through targeted multi-channel promotions.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Our proven strategy combines <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Hotels & Travel category visibility</strong> to drive direct bookings and reduce OTA dependency.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Whether you run a boutique hotel, luxury resort, or travel agency, our campaigns are designed to fill rooms and generate inquiries faster than traditional advertising.
-        </p>
+      {/* 💰 What You Can Achieve */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">What You Can Achieve</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Stop Depending Only on OTAs and Slow Advertising Channels.</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">With BuzzConnect, you can reach travel-ready customers and drive real bookings.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {achievements.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card hover:border-accent/40 transition-all">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-accent" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🎯 Who This Is For */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Who This Is For</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">This Service Is Designed For</h2>
+          <p className="text-muted-foreground mt-2">Used by hotels, villas, and travel businesses across Sri Lanka</p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          {whoIsFor.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex flex-col items-center gap-3 p-5 rounded-xl bg-card border border-border shadow-card text-center">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                <item.icon className="w-6 h-6 text-accent" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       <IndustryLogoCarousel
@@ -166,7 +203,7 @@ const HotelMarketing = () => {
         clients={hotelClients}
       />
 
-      {/* Advertising Packages */}
+      {/* Advertising Packages - PRESERVED EXACTLY */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
@@ -256,57 +293,69 @@ const HotelMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Industry Challenges */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Challenges in Hotel Marketing in Sri Lanka</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">
-          The Sri Lankan hospitality industry faces intense competition with over 3,000 registered accommodations competing for travelers' attention. High OTA commissions (15-25%), seasonal demand fluctuations, and the challenge of reaching international tourists make effective marketing essential.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          Most hotels rely solely on social media or expensive OTA listings, missing the opportunity to build direct relationships with guests. <strong>Buzz Connect's multi-channel approach</strong> solves this by providing both instant reach and continuous visibility.
-        </p>
-      </motion.div>
-
-      {/* Services Grid */}
+      {/* 📊 Why Hotels Choose Us */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Solutions</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Hotel Marketing Solutions in Sri Lanka</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Complete multi-channel marketing solutions designed specifically for the hospitality industry.</p>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Why Hotels Choose BuzzConnect</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s, i) => (
-            <motion.div key={s.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-6 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
-              <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center mb-4">
-                <s.icon className="w-6 h-6 text-primary" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {whyChooseUs.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card">
+              <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-secondary-foreground" />
               </div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-              <p className="text-sm text-muted-foreground">{s.desc}</p>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
             </motion.div>
           ))}
         </div>
       </motion.div>
 
-      {/* Multi-Channel Strategy */}
+      {/* 🚀 How It Works */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Campaign Strategy</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Multi-Channel Hotel Marketing Strategy</h2>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Process</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">How It Works</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {channels.map((ch, i) => (
-            <motion.div key={ch.channel} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-6 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className={`w-14 h-14 rounded-full ${ch.color} flex items-center justify-center mx-auto mb-4`}>
-                <ch.icon className="w-7 h-7" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          {howItWorks.map((step, i) => (
+            <motion.div key={step.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="relative flex flex-col items-center text-center p-6 rounded-2xl bg-card shadow-card border border-border">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full gradient-accent flex items-center justify-center text-sm font-bold text-primary">{step.step}</div>
+              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mt-3 mb-4">
+                <step.icon className="w-7 h-7 text-accent" />
               </div>
-              <h3 className="font-heading font-bold text-foreground mb-1">{ch.channel}</h3>
-              <p className="text-sm text-muted-foreground">{ch.action}</p>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
             </motion.div>
           ))}
         </div>
       </motion.div>
 
-      {/* Findit.lk Advantage */}
+      {/* 🏝 Use Cases */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Use Cases</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Hotel Marketing Use Cases</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {useCases.map((uc, i) => (
+            <motion.div key={uc.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
+                  <uc.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-heading font-bold text-foreground text-lg">{uc.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-2">{uc.audience}</p>
+              <p className="text-sm text-accent font-semibold flex items-center gap-1"><ArrowRight className="w-4 h-4" />{uc.result}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
       <FinditlkAdvantage
         title="Findit.lk Hotels & Travel Advantage"
         description="Get your hotel listed and promoted in Findit.lk's top travel categories for continuous visibility to high-intent travelers searching for accommodation and travel deals in Sri Lanka."
@@ -318,76 +367,48 @@ const HotelMarketing = () => {
         benefits={["Access to active travel seekers", "High visibility in Hotels category", "Continuous promotion for weeks", "Better conversion than social ads"]}
       />
 
-      {/* Benefits */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Hotel Marketing with Buzz Connect</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {benefits.map((b) => (
-            <div key={b} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
+      {/* 🧠 Why BuzzConnect */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why BuzzConnect for Hotel Marketing?</h2>
+        <ul className="space-y-3">
+          {whyBuzzConnect.map((item) => (
+            <li key={item} className="flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-              <span className="text-foreground font-medium">{b}</span>
-            </div>
+              <span className="text-muted-foreground font-medium">{item}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </motion.div>
 
-      {/* Use Cases */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Who Needs Hotel Marketing?</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
-                <uc.icon className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <span className="text-sm font-medium text-foreground">{uc.label}</span>
+      {/* 🎁 Free Bonus */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl border-2 border-accent/30 bg-accent/5 relative overflow-hidden">
+          <div className="absolute top-4 right-4 opacity-10">
+            <Gift className="w-24 h-24 text-accent" />
+          </div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+              <Gift className="w-6 h-6 text-accent" />
             </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Process */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">How Our Hotel Marketing Process Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">{i + 1}</div>
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3">
-                <step.icon className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{step.title}</h3>
-              <p className="text-xs text-muted-foreground">{step.desc}</p>
+            <div>
+              <span className="text-xs font-semibold text-accent uppercase tracking-wider">Free Bonus</span>
+              <h2 className="font-heading text-xl font-bold text-foreground">Get a FREE Hotel Marketing Plan</h2>
             </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Why Choose + Results */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why Choose Buzz Connect for Hotel Marketing?</h2>
-          <ul className="space-y-3">
-            {whyChoose.map((item) => (
+          </div>
+          <p className="text-muted-foreground mb-4">Tailored to your property. We will show you:</p>
+          <ul className="space-y-2 mb-6">
+            {freeBonusItems.map((item) => (
               <li key={item} className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
+                <span className="text-foreground font-medium">{item}</span>
               </li>
             ))}
           </ul>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Campaign Examples</h2>
-          <ul className="space-y-3">
-            {["Seasonal package email blasts to 100K+ contacts", "Last-minute deal SMS to Colombo travelers", "WhatsApp-based villa booking inquiries", "Findit.lk Hotels category feature promotion", "Corporate retreat package campaigns"].map((item) => (
-              <li key={item} className="flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      </div>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Hotel%20Marketing%20Plan%20for%20my%20property." target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
+          </a>
+        </div>
+      </motion.div>
 
       {/* FAQ */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
@@ -405,22 +426,32 @@ const HotelMarketing = () => {
         </div>
       </motion.div>
 
-      {/* CTA */}
+      {/* 🔥 Urgency Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-destructive/5 border border-destructive/20 text-center">
+          <div className="w-14 h-14 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
+            <Clock className="w-7 h-7 text-destructive" />
+          </div>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Limited Campaign Slots Available</h2>
+          <p className="text-muted-foreground max-w-xl mx-auto mb-2">Limited campaign slots available for hotels each month.</p>
+          <p className="text-foreground font-semibold">Book your campaign now and secure your next wave of guests.</p>
+        </div>
+      </motion.div>
+
+      {/* ⚡ Final CTA */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hotel text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Hotel Marketing Campaign Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
-          Fill your rooms faster with <strong>multi-channel hotel marketing in Sri Lanka</strong>. Contact Buzz Connect today and start driving direct bookings.
-        </p>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Getting More Bookings This Month</h2>
+        <p className="text-primary-foreground/80 mb-4 max-w-xl mx-auto">Reach thousands of travel-ready customers in Sri Lanka instantly.</p>
+        <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Fill your rooms faster with <strong>multi-channel hotel marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20talk%20to%20an%20expert%20about%20hotel%20marketing." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Talk to an Expert <ArrowRight className="inline w-4 h-4 ml-1" /></button>
+          </a>
           <Link to="/contact-us">
-            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">
-              Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" />
-            </button>
+            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Get Proposal</button>
           </Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20hotel%20marketing%20services." target="_blank" rel="noopener noreferrer">
-            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">
-              Chat on WhatsApp
-            </button>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20hotel%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent/20 text-accent font-bold hover:bg-accent/30 transition-colors text-base">Launch Campaign</button>
           </a>
         </div>
       </motion.div>
