@@ -318,7 +318,7 @@ const HotelMarketing = () => {
             <p className="text-xs text-muted-foreground mb-4">Entry-level but still powerful</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 1 Targeted Email Campaign</li>
-              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Featured listing in Findit "Hotels & Accommodation"</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> <a href="https://www.findit.lk/promotions/hotels-and-accommodation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Featured listing in Findit "Hotels & Accommodation"</a></li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 7-day visibility boost</li>
               <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> Basic Remarketing Exposure</li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Basic creative (image + copy)</li>
