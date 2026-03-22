@@ -310,9 +310,11 @@ const FashionMarketing = () => {
             <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
             <p className="text-xs text-muted-foreground mb-4">Maximize revenue & dominate fashion category</p>
             <ul className="space-y-2 mb-4 flex-grow">
-              {["4–6 Email Campaigns (full funnel)", "Top ranking in Findit category", "🔁 Full Funnel Remarketing", "Custom promo / collection landing page", "Priority promotion during peak seasons"].map(item => (
-                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
-              ))}
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel)</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /><a href="https://www.findit.lk/promotions/fashion-and-clothing" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Top ranking in Findit category</a></li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />🔁 Full Funnel Remarketing</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Custom promo / collection landing page</li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion during peak seasons</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Maximize revenue & dominate fashion category"</p>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Fashion%20Trend%20Domination%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
