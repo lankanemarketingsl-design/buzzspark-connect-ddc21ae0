@@ -156,7 +156,7 @@ const RealEstateMarketing = () => {
               <Rocket className="w-6 h-6 text-green-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Property Leads Starter</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 14,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 75,000</p>
             <p className="text-xs text-muted-foreground mb-4">Best for small agents & property listings</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />1 Targeted Email Campaign (property buyers / investors)</li>
@@ -167,7 +167,7 @@ const RealEstateMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Property ad creative (image + offer)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Generate initial buyer inquiries"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Property%20Leads%20Starter%20Package%20(LKR%2014%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Property%20Leads%20Starter%20Package%20(LKR%2075%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -179,7 +179,7 @@ const RealEstateMarketing = () => {
               <Crown className="w-6 h-6 text-accent" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Buyer Flow</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 118,000</p>
             <p className="text-xs text-muted-foreground mb-4">Consistent property inquiries</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />2–3 Targeted Email Campaigns (segmented)</li>
@@ -190,7 +190,7 @@ const RealEstateMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Consistent property inquiries"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Buyer%20Flow%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20Buyer%20Flow%20Package%20(LKR%20118%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -201,7 +201,7 @@ const RealEstateMarketing = () => {
               <RefreshCw className="w-6 h-6 text-red-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">High Value Deals</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 298,000</p>
             <p className="text-xs text-muted-foreground mb-4">Close high-value property deals faster</p>
             <ul className="space-y-2 mb-4 flex-grow">
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />4–6 Email Campaigns (full funnel strategy)</li>
@@ -212,7 +212,7 @@ const RealEstateMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority promotion for featured properties</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Close high-value property deals faster"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20High%20Value%20Deals%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Real%20Estate%20High%20Value%20Deals%20Package%20(LKR%20298%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
