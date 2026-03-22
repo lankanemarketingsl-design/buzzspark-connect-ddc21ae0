@@ -5,7 +5,8 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Building2, CreditCard, Landmark, Users, TrendingUp,
-  ArrowRight, Send, Eye, Shield, DollarSign, Briefcase, Rocket, Crown, RefreshCw
+  ArrowRight, Send, Eye, Shield, DollarSign, Briefcase, Rocket, Crown, RefreshCw,
+  Zap, Clock, Award, Gift
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
@@ -48,62 +49,54 @@ const financeClients = [
   { name: "Asia Asset Finance", logo: asiaAssetLogo },
 ];
 
-const services = [
-  { icon: Smartphone, title: "SMS Loan & Credit Offers", desc: "Send targeted loan, credit card, and insurance offers to 600,000+ mobile users." },
-  { icon: Mail, title: "Email Financial Promotions", desc: "Deliver detailed financial product information to 350,000+ targeted contacts." },
-  { icon: MessageSquare, title: "WhatsApp Lead Follow-ups", desc: "Enable instant lead qualification and follow-up through WhatsApp messaging." },
-  { icon: Globe, title: "Findit.lk Finance Visibility", desc: "Get listed in Finance & Credit Card categories on Findit.lk for high-intent visibility." },
-  { icon: Target, title: "VIP & Corporate Database", desc: "Access high-net-worth individuals and corporate decision-makers for premium targeting." },
-  { icon: Eye, title: "Banner Campaigns", desc: "Promote financial products with professional banner advertising across top platforms." },
+const achievements = [
+  { icon: DollarSign, text: "Generate loan applications from qualified prospects" },
+  { icon: CreditCard, text: "Increase credit card sign-ups" },
+  { icon: Shield, text: "Get insurance leads from the right audience" },
+  { icon: TrendingUp, text: "Promote fixed deposits & investment plans" },
+  { icon: Users, text: "Reach high-intent financial customers across Sri Lanka" },
 ];
 
-const channels = [
-  { icon: Smartphone, channel: "SMS", action: "Loan & credit card offers", color: "bg-green-500/10 text-green-600" },
-  { icon: Mail, channel: "Email", action: "Detailed financial promotions", color: "bg-blue-500/10 text-blue-600" },
-  { icon: MessageSquare, channel: "WhatsApp", action: "Lead follow-ups & qualification", color: "bg-emerald-500/10 text-emerald-600" },
-  { icon: Globe, channel: "Findit.lk", action: "Finance + Credit Card categories", color: "bg-purple-500/10 text-purple-600" },
+const whyChooseUs = [
+  { icon: Users, text: "Access to targeted Sri Lankan audience segments" },
+  { icon: Mail, text: "Multi-channel campaigns (Email, SMS, WhatsApp)" },
+  { icon: DollarSign, text: "Cost-effective compared to traditional advertising" },
+  { icon: Zap, text: "Fast campaign execution" },
+  { icon: BarChart3, text: "Measurable results and ROI tracking" },
 ];
 
-const benefits = [
-  "Access VIP & corporate database",
-  "High-value lead generation",
-  "Targeted audience reach",
-  "Compliance-friendly messaging",
-  "Fast campaign turnaround",
-  "Measurable ROI tracking",
+const howItWorks = [
+  { step: 1, icon: Target, title: "Audience Targeting", desc: "We identify the right audience (income level, interest, behavior)" },
+  { step: 2, icon: Mail, title: "Campaign Setup", desc: "We create high-converting messages for your offer" },
+  { step: 3, icon: Send, title: "Multi-Channel Promotion", desc: "Your campaign runs across Email, SMS & WhatsApp" },
+  { step: 4, icon: BarChart3, title: "Lead Generation", desc: "You receive real inquiries and potential customers" },
 ];
 
 const useCases = [
-  { icon: Landmark, label: "Banks & Financial Institutions" },
-  { icon: CreditCard, label: "Credit Card Companies" },
-  { icon: Shield, label: "Insurance Providers" },
-  { icon: DollarSign, label: "Microfinance Companies" },
-  { icon: Building2, label: "Leasing Companies" },
-  { icon: Briefcase, label: "Investment Firms" },
+  { icon: Landmark, title: "Loan Campaigns", audience: "Target salaried professionals and business owners", result: "Generate high-quality loan inquiries" },
+  { icon: CreditCard, title: "Credit Card Promotions", audience: "Reach high-income individuals", result: "Increase card applications" },
+  { icon: Shield, title: "Insurance Marketing", audience: "Target families and professionals", result: "Generate policy leads" },
+  { icon: TrendingUp, title: "Investment & FD Promotions", audience: "Reach financially active users", result: "Drive deposits and sign-ups" },
 ];
 
-const processSteps = [
-  { icon: Target, title: "Define Financial Segments", desc: "Target by income level, profession, and financial needs" },
-  { icon: Mail, title: "Launch Multi-Channel Campaign", desc: "Coordinate SMS, email & WhatsApp for maximum reach" },
-  { icon: Globe, title: "Activate Findit.lk Listing", desc: "Get visible in Finance & Credit Card categories" },
-  { icon: Send, title: "Capture High-Value Leads", desc: "Convert interest into qualified financial leads" },
-  { icon: BarChart3, title: "Optimize & Report", desc: "Track performance and optimize for better results" },
+const whyBuzzConnect = [
+  "Direct access to finance-interested audiences",
+  "Proven strategies for lead generation",
+  "Industry-specific campaign approach",
+  "Faster and more affordable than traditional marketing",
 ];
 
-const whyChoose = [
-  "Access to VIP & corporate database",
-  "Compliance-aware campaign execution",
-  "Integration with Findit.lk Finance categories",
-  "Fast campaign launch within 24 hours",
-  "High-value lead generation expertise",
-  "Dedicated financial campaign team",
+const freeBonusItems = [
+  "Target audience strategy",
+  "Recommended campaign channels",
+  "Expected results",
 ];
 
 const faqs = [
   { q: "What is finance marketing in Sri Lanka?", a: "Finance marketing involves promoting financial products like loans, credit cards, insurance, and investment opportunities to targeted audiences through digital marketing channels." },
   { q: "How can Buzz Connect help generate financial leads?", a: "We combine SMS offers, email promotions, WhatsApp follow-ups, and Findit.lk Finance category visibility to reach high-value prospects and generate qualified leads for financial institutions." },
   { q: "Can you target high-net-worth individuals?", a: "Yes, our VIP and corporate database allows precise targeting of high-net-worth individuals, business owners, and corporate decision-makers." },
-  { q: "How much does financial marketing cost in Sri Lanka?", a: "Buzz Connect offers financial marketing packages starting from LKR 10,000. Contact us for a customized quote based on your requirements." },
+  { q: "How much does financial marketing cost in Sri Lanka?", a: "Buzz Connect offers financial marketing packages starting from LKR 60,000. Contact us for a customized quote based on your requirements." },
   { q: "Is SMS marketing effective for financial products?", a: "Absolutely. SMS has a 98% open rate, making it ideal for time-sensitive offers like loan promotions, credit card deals, and insurance renewals." },
 ];
 
@@ -127,8 +120,8 @@ const FinanceMarketing = () => {
   return (
     <ServicePageLayout
       badge="Finance & Credit Card Marketing"
-      title="Finance Marketing Sri Lanka – Generate High-Value Financial Leads"
-      subtitle="Reach VIP clients, corporate executives, and targeted consumers with multi-channel financial marketing campaigns powered by Findit.lk."
+      title="Get High-Quality Loan, Credit Card & Investment Leads in Sri Lanka"
+      subtitle="Reach the right financial audience with targeted Email, SMS & WhatsApp campaigns designed to drive real applications and conversions."
     >
       <SEOHead
         title="Finance Marketing Sri Lanka | Credit Card & Loan Lead Generation"
@@ -138,6 +131,16 @@ const FinanceMarketing = () => {
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Finance Marketing", url: "/finance-marketing-sri-lanka" }]}
         jsonLd={jsonLd}
       />
+
+      {/* Hero CTA Buttons */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20get%20finance%20leads.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+          <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><DollarSign className="w-5 h-5 mr-2" />Get Finance Leads</Button>
+        </a>
+        <Link to="/contact-us">
+          <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white px-8 py-3 text-base font-bold rounded-full"><Rocket className="w-5 h-5 mr-2" />Start Your Campaign</Button>
+        </Link>
+      </motion.div>
 
       <IndustryStatsBanner
         icon={Landmark}
@@ -150,6 +153,26 @@ const FinanceMarketing = () => {
           { value: "24hrs", label: "Campaign Launch" },
         ]}
       />
+
+      {/* 💰 What You Can Achieve */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">What You Can Achieve</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Stop Generic Advertising. Start Performance-Driven Finance Marketing.</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">With BuzzConnect, you can reach the right financial audience and generate real results.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {achievements.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card hover:border-accent/40 transition-all">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-accent" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
       <IndustryLogoCarousel
         title="Trusted by Leading Financial Institutions"
@@ -242,56 +265,64 @@ const FinanceMarketing = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Finance Marketing Sri Lanka</h2>
-        <div className="space-y-4">
-          {faqs.map((faq) => (
-            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
-              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">Buzz Connect delivers <strong>high-value financial lead generation campaigns in Sri Lanka</strong>, helping banks, credit card companies, and insurance providers reach the right audience with targeted multi-channel promotions.</p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">Our strategy combines <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Finance & Credit Card category visibility</strong> to generate qualified leads.</p>
-        <p className="text-lg text-muted-foreground leading-relaxed">Whether you're promoting credit cards, personal loans, insurance policies, or investment products, our campaigns deliver high-value leads with measurable ROI.</p>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Challenges in Finance Marketing in Sri Lanka</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">Financial institutions face strict competition, regulatory constraints, and difficulty reaching high-value prospects. Traditional advertising is expensive and often reaches unqualified audiences.</p>
-        <p className="text-muted-foreground leading-relaxed"><strong>Buzz Connect's targeted multi-channel approach</strong> solves this by reaching verified, high-income segments through direct channels with precise targeting capabilities.</p>
-      </motion.div>
-
+      {/* 📊 Why Finance Companies Choose Us */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Solutions</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Finance Marketing Solutions in Sri Lanka</h2>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Why Finance Companies Choose BuzzConnect</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s, i) => (
-            <motion.div key={s.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-6 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
-              <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center mb-4"><s.icon className="w-6 h-6 text-primary" /></div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-              <p className="text-sm text-muted-foreground">{s.desc}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {whyChooseUs.map((item, i) => (
+            <motion.div key={item.text} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border shadow-card">
+              <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                <item.icon className="w-5 h-5 text-secondary-foreground" />
+              </div>
+              <span className="text-foreground font-medium text-sm">{item.text}</span>
             </motion.div>
           ))}
         </div>
       </motion.div>
 
+      {/* 🚀 How It Works */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Campaign Strategy</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Multi-Channel Finance Marketing Strategy</h2>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Process</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">How It Works</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {channels.map((ch, i) => (
-            <motion.div key={ch.channel} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-6 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className={`w-14 h-14 rounded-full ${ch.color} flex items-center justify-center mx-auto mb-4`}><ch.icon className="w-7 h-7" /></div>
-              <h3 className="font-heading font-bold text-foreground mb-1">{ch.channel}</h3>
-              <p className="text-sm text-muted-foreground">{ch.action}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          {howItWorks.map((step, i) => (
+            <motion.div key={step.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="relative flex flex-col items-center text-center p-6 rounded-2xl bg-card shadow-card border border-border">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full gradient-accent flex items-center justify-center text-sm font-bold text-primary">{step.step}</div>
+              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mt-3 mb-4">
+                <step.icon className="w-7 h-7 text-accent" />
+              </div>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🎯 Use Cases */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Use Cases</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Finance Marketing Use Cases</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {useCases.map((uc, i) => (
+            <motion.div key={uc.title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+              className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/40 transition-all">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
+                  <uc.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="font-heading font-bold text-foreground text-lg">{uc.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-2">{uc.audience}</p>
+              <p className="text-sm text-accent font-semibold flex items-center gap-1"><ArrowRight className="w-4 h-4" />{uc.result}</p>
             </motion.div>
           ))}
         </div>
@@ -308,61 +339,88 @@ const FinanceMarketing = () => {
         benefits={["Access to financial product seekers", "High visibility in Finance category", "Targeted credit card promotions", "Better qualified leads than ads"]}
       />
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Benefits of Finance Marketing with Buzz Connect</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {benefits.map((b) => (<div key={b} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-foreground font-medium">{b}</span></div>))}
-        </div>
-      </motion.div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Who Needs Finance Marketing?</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center"><uc.icon className="w-6 h-6 text-secondary-foreground" /></div>
-              <span className="text-sm font-medium text-foreground">{uc.label}</span>
-            </div>
+      {/* 🧠 Why BuzzConnect */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why BuzzConnect for Finance Marketing?</h2>
+        <ul className="space-y-3">
+          {whyBuzzConnect.map((item) => (
+            <li key={item} className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-accent shrink-0" />
+              <span className="text-muted-foreground font-medium">{item}</span>
+            </li>
           ))}
-        </div>
+        </ul>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">How Our Finance Marketing Process Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">{i + 1}</div>
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3"><step.icon className="w-6 h-6 text-secondary-foreground" /></div>
-              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{step.title}</h3>
-              <p className="text-xs text-muted-foreground">{step.desc}</p>
+      {/* 🎁 Free Bonus */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl border-2 border-accent/30 bg-accent/5 relative overflow-hidden">
+          <div className="absolute top-4 right-4 opacity-10">
+            <Gift className="w-24 h-24 text-accent" />
+          </div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+              <Gift className="w-6 h-6 text-accent" />
             </div>
-          ))}
-        </div>
-      </motion.div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why Choose Buzz Connect for Finance Marketing?</h2>
-          <ul className="space-y-3">{whyChoose.map((item) => (<li key={item} className="flex items-center gap-3"><CheckCircle className="w-5 h-5 text-accent shrink-0" /><span className="text-muted-foreground">{item}</span></li>))}</ul>
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-8 rounded-2xl bg-card shadow-card border border-border">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Campaign Examples</h2>
-          <ul className="space-y-3">
-            {["Credit card offer SMS to 500K+ users", "Personal loan email campaigns to salaried professionals", "WhatsApp insurance renewal follow-ups", "Findit.lk Finance category promotions", "VIP investment opportunity campaigns"].map((item) => (
-              <li key={item} className="flex items-center gap-3"><TrendingUp className="w-5 h-5 text-accent shrink-0" /><span className="text-muted-foreground">{item}</span></li>
+            <div>
+              <span className="text-xs font-semibold text-accent uppercase tracking-wider">Free Bonus</span>
+              <h2 className="font-heading text-xl font-bold text-foreground">Get a FREE Finance Marketing Plan</h2>
+            </div>
+          </div>
+          <p className="text-muted-foreground mb-4">Tailored to your business. We will show you:</p>
+          <ul className="space-y-2 mb-6">
+            {freeBonusItems.map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-accent shrink-0" />
+                <span className="text-foreground font-medium">{item}</span>
+              </li>
             ))}
           </ul>
-        </motion.div>
-      </div>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Finance%20Marketing%20Plan%20for%20my%20business." target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
+          </a>
+        </div>
       </motion.div>
 
+      {/* FAQ */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Finance Marketing Sri Lanka</h2>
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <div key={faq.q} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <h3 className="flex items-start gap-2 font-heading font-semibold text-foreground mb-2"><HelpCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />{faq.q}</h3>
+              <p className="text-muted-foreground text-sm pl-7">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 🔥 Urgency Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-destructive/5 border border-destructive/20 text-center">
+          <div className="w-14 h-14 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
+            <Clock className="w-7 h-7 text-destructive" />
+          </div>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Limited Campaign Slots Available</h2>
+          <p className="text-muted-foreground max-w-xl mx-auto mb-2">Limited campaign slots available for finance companies each month.</p>
+          <p className="text-foreground font-semibold">Secure your campaign now and stay ahead of competitors.</p>
+        </div>
+      </motion.div>
+
+      {/* ⚡ Final CTA */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-finance text-white relative overflow-hidden">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Your Finance Marketing Campaign Today</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Getting Finance Leads This Month</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Generate high-value financial leads with <strong>multi-channel finance marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/contact-us"><button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" /></button></Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20finance%20marketing%20services." target="_blank" rel="noopener noreferrer"><button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Chat on WhatsApp</button></a>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20talk%20to%20an%20expert%20about%20finance%20marketing." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Talk to an Expert <ArrowRight className="inline w-4 h-4 ml-1" /></button>
+          </a>
+          <Link to="/contact-us">
+            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Get a Custom Proposal</button>
+          </Link>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20finance%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+            <button className="px-8 py-3 rounded-full bg-accent/20 text-accent font-bold hover:bg-accent/30 transition-colors text-base">Launch Your Campaign</button>
+          </a>
         </div>
       </motion.div>
 
