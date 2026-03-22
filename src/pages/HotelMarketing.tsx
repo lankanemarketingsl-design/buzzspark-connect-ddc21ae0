@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, Zap, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, Hotel, Plane, MapPin, Calendar, Star, Users, TrendingUp,
-  ArrowRight, Send, Settings, Eye, Award, Compass
+  ArrowRight, Send, Settings, Eye, Award, Compass, RefreshCw, Crown, Rocket
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
@@ -297,6 +298,80 @@ const HotelMarketing = () => {
           </ul>
         </motion.div>
       </div>
+
+      {/* Advertising Packages */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Hotel Advertising Packages with Remarketing</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Every package includes remarketing — so your hotel keeps appearing to interested travelers until they book.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Starter Boost */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
+              <Rocket className="w-6 h-6 text-green-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Starter Boost</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 15,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Entry-level but still powerful</p>
+            <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 1 Targeted Email Campaign</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Featured listing in Findit "Hotels & Accommodation"</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 7-day visibility boost</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-green-500 shrink-0 mt-0.5" /> Basic Remarketing Exposure</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Basic creative (image + copy)</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Be seen more than once — turn interest into inquiries"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Hotel%20Starter%20Boost%20Package%20(LKR%2015%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Growth Bookings */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full gradient-accent text-primary text-xs font-bold">⭐ MOST POPULAR</div>
+            <div className="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center mb-4">
+              <TrendingUp className="w-6 h-6 text-yellow-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Growth Bookings</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 35,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Maximum value for growing hotels</p>
+            <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 2–3 Targeted Email Campaigns (segmented)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Premium placement in Findit hotel category</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Seasonal promotion push (weekend / holiday)</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-yellow-500 shrink-0 mt-0.5" /> Advanced Remarketing (multi-touch exposure)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Performance report (opens, clicks, trends)</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Stay in front of travelers until they book"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Hotel%20Growth%20Bookings%20Package%20(LKR%2035%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="hero" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Dominate Package */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <Crown className="w-6 h-6 text-red-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Dominate Package</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 80,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Full-funnel dominance for top hotels</p>
+            <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 4–6 Email Campaigns (full funnel strategy)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Top ranking in Findit category</li>
+              <li className="flex items-start gap-2"><RefreshCw className="w-4 h-4 text-red-500 shrink-0 mt-0.5" /> Full Funnel Remarketing (all touchpoints)</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Custom offer / landing page</li>
+              <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Priority placement during peak travel</li>
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Own attention, dominate decisions, maximize bookings"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Hotel%20Dominate%20Package%20(LKR%2080%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
 
       {/* FAQ */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
