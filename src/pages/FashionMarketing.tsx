@@ -5,8 +5,9 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, ShoppingBag, Shirt, Scissors, Sparkles, Users, TrendingUp,
-  ArrowRight, Send, Eye, Tag, Star, Store
+  ArrowRight, Send, Eye, Tag, Star, Store, Rocket, Crown, RefreshCw
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
@@ -247,6 +248,75 @@ const FashionMarketing = () => {
           </ul>
         </motion.div>
       </div>
+
+      {/* Fashion Advertising Packages */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing Packages</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Fashion Marketing Packages with Remarketing</h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Fashion customers don't buy the first time — they buy after seeing your brand multiple times.</p>
+          <p className="text-accent font-semibold mt-3 max-w-2xl mx-auto">See → Interested → See offer → Buy. That's why remarketing is critical.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Brand Awareness */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
+              <Rocket className="w-6 h-6 text-green-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Brand Awareness</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 15,000</p>
+            <p className="text-xs text-muted-foreground mb-4">Best for small boutiques & new brands</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              {["1 Targeted Email Campaign (fashion audience)", "Featured listing in Findit 'Fashion & Clothing'", "7-day visibility boost", "🔁 Basic Remarketing (repeat exposure)", "Ad creative (product-focused visual)"].map(item => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
+              ))}
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Increase brand visibility & first-time buyers"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Fashion%20Brand%20Awareness%20Package%20(LKR%2015%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Sales Boost - Most Popular */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border-2 border-accent flex flex-col ring-2 ring-accent/20">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-accent text-white text-xs font-bold">MOST POPULAR</div>
+            <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+              <Crown className="w-6 h-6 text-accent" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Sales Boost</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 39,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Drive consistent product sales</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              {["2–3 Targeted Email Campaigns (segmented)", "Premium Findit fashion placement", "Promotion campaigns (sales, new arrivals)", "🔁 Advanced Remarketing (multi-touch)", "Performance report"].map(item => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
+              ))}
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Drive consistent product sales"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Fashion%20Sales%20Boost%20Package%20(LKR%2039%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+
+          {/* Trend Domination */}
+          <div className="relative p-6 rounded-2xl bg-card shadow-card border border-border flex flex-col">
+            <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center mb-4">
+              <RefreshCw className="w-6 h-6 text-red-600" />
+            </div>
+            <h3 className="font-heading text-lg font-bold text-foreground mb-1">Trend Domination</h3>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
+            <p className="text-xs text-muted-foreground mb-4">Maximize revenue & dominate fashion category</p>
+            <ul className="space-y-2 mb-4 flex-grow">
+              {["4–6 Email Campaigns (full funnel)", "Top ranking in Findit category", "🔁 Full Funnel Remarketing", "Custom promo / collection landing page", "Priority promotion during peak seasons"].map(item => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{item}</li>
+              ))}
+            </ul>
+            <p className="text-xs text-muted-foreground italic mb-4">"Maximize revenue & dominate fashion category"</p>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Fashion%20Trend%20Domination%20Package%20(LKR%2089%2C900).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Fashion Marketing Sri Lanka</h2>
