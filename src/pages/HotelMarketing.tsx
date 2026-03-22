@@ -232,7 +232,7 @@ const HotelMarketing = () => {
               <Crown className="w-6 h-6 text-red-600" />
             </div>
             <h3 className="font-heading text-lg font-bold text-foreground mb-1">Dominate Package</h3>
-            <p className="text-3xl font-bold text-foreground mb-1">LKR 80,000</p>
+            <p className="text-3xl font-bold text-foreground mb-1">LKR 89,900</p>
             <p className="text-xs text-muted-foreground mb-4">Full-funnel dominance for top hotels</p>
             <ul className="space-y-2.5 text-sm text-muted-foreground mb-6 flex-1">
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 4–6 Email Campaigns (full funnel strategy)</li>
