@@ -32,7 +32,7 @@ const allRoutes = [
   "/why-you-need-email-marketing",
   "/best-seo-services-sri-lanka",
   "/sms-marketing-in-sri-lanka",
-  "/classified-advertising-in-sri-lanka",
+  
   "/enable-missing-images-to-display",
   "/multi-channel-marketing-in-sri-lanka",
   "/future-of-email-marketing-sri-lanka",

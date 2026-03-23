@@ -78,7 +78,7 @@ const App = () => (
           <Route path="/why-you-need-email-marketing" element={<WhyYouNeedEmailMarketing />} />
           <Route path="/best-seo-services-sri-lanka" element={<BestSeoServicesSriLanka />} />
           <Route path="/sms-marketing-in-sri-lanka" element={<SmsMarketingInSriLanka />} />
-          <Route path="/classified-advertising-in-sri-lanka" element={<Resources />} />
+          
           <Route path="/enable-missing-images-to-display" element={<EnableMissingImages />} />
           <Route path="/multi-channel-marketing-in-sri-lanka" element={<MultiChannelMarketingSriLanka />} />
           <Route path="/future-of-email-marketing-sri-lanka" element={<FutureEmailMarketingSriLanka />} />
