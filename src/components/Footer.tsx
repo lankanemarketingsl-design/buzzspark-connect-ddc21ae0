@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="gradient-hero text-primary-foreground">
       <div className="container mx-auto px-4 py-10 sm:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-10">
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img src={footerLogo} alt="Buzz Connect" className="h-24 w-auto" />
@@ -44,18 +44,38 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-accent mb-4">Quick Links</h4>
+            <h4 className="font-heading font-semibold text-accent mb-4">Industries</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/hotel-marketing-sri-lanka" className="hover:text-accent transition-colors">Hotel & Travel</Link></li>
+              <li><Link to="/education-marketing-sri-lanka" className="hover:text-accent transition-colors">Education</Link></li>
+              <li><Link to="/finance-marketing-sri-lanka" className="hover:text-accent transition-colors">Finance & Credit</Link></li>
+              <li><Link to="/restaurant-marketing-sri-lanka" className="hover:text-accent transition-colors">Restaurant & Retail</Link></li>
+              <li><Link to="/real-estate-marketing-sri-lanka" className="hover:text-accent transition-colors">Real Estate</Link></li>
+              <li><Link to="/fashion-marketing-sri-lanka" className="hover:text-accent transition-colors">Fashion & Clothing</Link></li>
+            </ul>
+            <h4 className="font-heading font-semibold text-accent mb-4 mt-6">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link to="/about-us" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/why-choose-us" className="hover:text-accent transition-colors">Why Choose Us</Link></li>
               <li><Link to="/multi-channel-marketing-sri-lanka" className="hover:text-accent transition-colors">Multi Channel Marketing</Link></li>
+              <li><Link to="/special-advertising-packages" className="hover:text-accent transition-colors">Special Packages</Link></li>
               <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
               <li><Link to="/contact-us" className="hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           <div className="col-span-2 md:col-span-1">
-            <h4 className="font-heading font-semibold text-accent mb-4">Contact</h4>
+            <h4 className="font-heading font-semibold text-accent mb-4">Resources</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/why-email-marketing-is-important" className="hover:text-accent transition-colors">Why Email Marketing Is Important</Link></li>
+              <li><Link to="/why-you-need-email-marketing" className="hover:text-accent transition-colors">Why You Need Email Marketing</Link></li>
+              <li><Link to="/best-seo-services-sri-lanka" className="hover:text-accent transition-colors">Best SEO Services Sri Lanka</Link></li>
+              <li><Link to="/sms-marketing-in-sri-lanka" className="hover:text-accent transition-colors">SMS Marketing in Sri Lanka</Link></li>
+              <li><Link to="/multi-channel-marketing-in-sri-lanka" className="hover:text-accent transition-colors">Multi-Channel Marketing</Link></li>
+              <li><Link to="/future-of-email-marketing-sri-lanka" className="hover:text-accent transition-colors">Future of Email Marketing</Link></li>
+              <li><Link to="/enable-missing-images-to-display" className="hover:text-accent transition-colors">Enable Missing Images</Link></li>
+            </ul>
+            <h4 className="font-heading font-semibold text-accent mb-4 mt-6">Contact</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-accent" />
@@ -68,10 +88,6 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 text-accent" />
                 <a href="tel:+94771976351" className="hover:text-accent transition-colors">+94 77 197 6351</a>
-              </li>
-              <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 mt-0.5 text-accent" />
-                <a href="tel:+94112877662" className="hover:text-accent transition-colors">+94 11 287 7662 (Land)</a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 text-accent" />
