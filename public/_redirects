@@ -14,5 +14,5 @@
 /home / 301
 /classified-advertising-in-sri-lanka /resources 301
 
-# SPA fallback — all valid routes are pre-rendered, so unmatched paths are genuine 404s
-/* /index.html 404
+# SPA fallback — serve index.html with 200 for client-side routing
+/* /index.html 200
