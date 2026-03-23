@@ -65,17 +65,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-2 md:col-span-1">
-            <h4 className="font-heading font-semibold text-accent mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/why-email-marketing-is-important" className="hover:text-accent transition-colors">Why Email Marketing Is Important</Link></li>
-              <li><Link to="/why-you-need-email-marketing" className="hover:text-accent transition-colors">Why You Need Email Marketing</Link></li>
-              <li><Link to="/best-seo-services-sri-lanka" className="hover:text-accent transition-colors">Best SEO Services Sri Lanka</Link></li>
-              <li><Link to="/sms-marketing-in-sri-lanka" className="hover:text-accent transition-colors">SMS Marketing in Sri Lanka</Link></li>
-              <li><Link to="/multi-channel-marketing-in-sri-lanka" className="hover:text-accent transition-colors">Multi-Channel Marketing</Link></li>
-              <li><Link to="/future-of-email-marketing-sri-lanka" className="hover:text-accent transition-colors">Future of Email Marketing</Link></li>
-              <li><Link to="/enable-missing-images-to-display" className="hover:text-accent transition-colors">Enable Missing Images</Link></li>
-            </ul>
-            <h4 className="font-heading font-semibold text-accent mb-4 mt-6">Contact</h4>
+            <h4 className="font-heading font-semibold text-accent mb-4">Contact</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-accent" />
