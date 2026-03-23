@@ -44,11 +44,21 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-accent mb-4">Quick Links</h4>
+            <h4 className="font-heading font-semibold text-accent mb-4">Industries</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/hotel-marketing-sri-lanka" className="hover:text-accent transition-colors">Hotel & Travel</Link></li>
+              <li><Link to="/education-marketing-sri-lanka" className="hover:text-accent transition-colors">Education</Link></li>
+              <li><Link to="/finance-marketing-sri-lanka" className="hover:text-accent transition-colors">Finance & Credit</Link></li>
+              <li><Link to="/restaurant-marketing-sri-lanka" className="hover:text-accent transition-colors">Restaurant & Retail</Link></li>
+              <li><Link to="/real-estate-marketing-sri-lanka" className="hover:text-accent transition-colors">Real Estate</Link></li>
+              <li><Link to="/fashion-marketing-sri-lanka" className="hover:text-accent transition-colors">Fashion & Clothing</Link></li>
+            </ul>
+            <h4 className="font-heading font-semibold text-accent mb-4 mt-6">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link to="/about-us" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/why-choose-us" className="hover:text-accent transition-colors">Why Choose Us</Link></li>
               <li><Link to="/multi-channel-marketing-sri-lanka" className="hover:text-accent transition-colors">Multi Channel Marketing</Link></li>
+              <li><Link to="/special-advertising-packages" className="hover:text-accent transition-colors">Special Packages</Link></li>
               <li><Link to="/resources" className="hover:text-accent transition-colors">Resources</Link></li>
               <li><Link to="/contact-us" className="hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
