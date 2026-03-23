@@ -1,1 +1,17 @@
+# 301 redirects: old .html URLs → clean URLs
+/email-marketing.html /email-marketing 301
+/sms-marketing.html /sms-marketing 301
+/whatsapp-marketing.html /whatsapp-marketing 301
+/online-advertising-sri-lanka.html /online-advertising-sri-lanka 301
+/graphic-designing-in-sri-lanka.html /graphic-designing-in-sri-lanka 301
+/seo-sri-lanka.html /seo-sri-lanka 301
+/website-design-sri-lanka.html /website-design-sri-lanka 301
+/resources.html /resources 301
+/enable-missing-images-to-display.html /enable-missing-images-to-display 301
+/why-you-need-email-marketing.html /why-you-need-email-marketing 301
+/sms-marketing-in-sri-lanka.html /sms-marketing-in-sri-lanka 301
+/home.html / 301
+/home / 301
+
+# SPA fallback
 /* /index.html 200
