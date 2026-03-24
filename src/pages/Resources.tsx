@@ -24,7 +24,10 @@ import articleFinanceMarketing from "@/assets/blog/article-finance-marketing.jpg
 import articleRestaurantMarketing from "@/assets/blog/article-restaurant-marketing.jpg";
 import articleRealestateMarketing from "@/assets/blog/article-realestate-marketing.jpg";
 import articleFashionMarketing from "@/assets/blog/article-fashion-marketing.jpg";
-
+import articleBestAdvertising from "@/assets/blog/article-best-advertising.jpg";
+import articleDigitalAdGuide from "@/assets/blog/article-digital-advertising-guide.jpg";
+import articleOnlineVsTraditional from "@/assets/blog/article-online-vs-traditional.jpg";
+import articleGoogleAdsCost from "@/assets/blog/article-google-ads-cost.jpg";
 const articles = [
   {
     title: "Hotel Marketing in Sri Lanka: How to Increase Bookings and Revenue",
