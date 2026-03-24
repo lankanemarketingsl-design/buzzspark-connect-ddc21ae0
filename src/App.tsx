@@ -32,6 +32,7 @@ import EmailMarketingPowerfulTool from "./pages/articles/EmailMarketingPowerfulT
 import SmsMarketingDrivingEngagement from "./pages/articles/SmsMarketingDrivingEngagement.tsx";
 import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.tsx";
 import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
+import SeoWhyItMatters from "./pages/articles/SeoWhyItMatters.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
