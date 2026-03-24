@@ -10,8 +10,8 @@ const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
   { item: "Popup Banner", impressions: "35,000+", price: "LKR 2,500", duration: "1 Week" },
   { item: "Featured Promotion", impressions: "200,000+", price: "LKR 5,000", duration: "4 Weeks" },
-  { item: "Email Campaign", impressions: "250,000+", price: "LKR 4,000", duration: "4 Weeks" },
-  { item: "Push Notification", impressions: "250,000+", price: "—", duration: "4 Weeks" },
+  { item: "Email Campaign", impressions: "350,000+", price: "LKR 4,000", duration: "4 Weeks" },
+  { item: "Push Notification", impressions: "350,000+", price: "—", duration: "4 Weeks" },
 ];
 
 const comboPackages = [
