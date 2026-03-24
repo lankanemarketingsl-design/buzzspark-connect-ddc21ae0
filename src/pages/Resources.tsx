@@ -16,8 +16,16 @@ import articleSmsEngagement from "@/assets/blog/article-sms-engagement.jpg";
 import articleWhatsappFuture from "@/assets/blog/article-whatsapp-future.jpg";
 import articleMultichannelReach from "@/assets/blog/article-multichannel-reach.jpg";
 import articleSeoMatters from "@/assets/blog/article-seo-matters.jpg";
+import articleLeadGen from "@/assets/blog/article-lead-gen.jpg";
 
 const articles = [
+  {
+    title: "Lead Generation in Sri Lanka: How to Get More Customers for Your Business",
+    date: "Mar 24, 2025",
+    excerpt: "Learn how lead generation helps Sri Lankan businesses attract and convert more customers using email, SMS, and WhatsApp marketing campaigns.",
+    path: "/lead-generation-get-more-customers-sri-lanka",
+    image: articleLeadGen,
+  },
   {
     title: "What is SEO and Why It Matters for Businesses in Sri Lanka",
     date: "Mar 24, 2025",

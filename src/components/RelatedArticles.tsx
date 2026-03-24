@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
+  { title: "Lead Generation: Get More Customers", path: "/lead-generation-get-more-customers-sri-lanka" },
   { title: "What is SEO and Why It Matters", path: "/seo-why-it-matters-sri-lanka" },
   { title: "SMS Marketing Driving Instant Engagement", path: "/sms-marketing-driving-engagement-sri-lanka" },
   { title: "WhatsApp Marketing: Future of Communication", path: "/whatsapp-marketing-future-sri-lanka" },
