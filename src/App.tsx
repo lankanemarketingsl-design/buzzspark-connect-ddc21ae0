@@ -33,6 +33,7 @@ import SmsMarketingDrivingEngagement from "./pages/articles/SmsMarketingDrivingE
 import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.tsx";
 import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
 import SeoWhyItMatters from "./pages/articles/SeoWhyItMatters.tsx";
+import LeadGenerationGetMoreCustomers from "./pages/articles/LeadGenerationGetMoreCustomers.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
