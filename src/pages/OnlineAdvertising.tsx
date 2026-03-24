@@ -2,7 +2,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { CheckCircle, Globe, Layout, Megaphone, TrendingUp, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Mail, Smartphone, MessageSquare, Share2 } from "lucide-react";
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 1,000", duration: "4 Weeks" },
@@ -67,11 +69,11 @@ const whyFindit = [
 ];
 
 const expectedResults = [
-  "Increased brand visibility",
-  "More website traffic",
-  "Higher engagement rates",
-  "Increased inquiries and leads",
-  "Better return on investment",
+  "Increased brand visibility across Sri Lanka",
+  "More website traffic and customer inquiries",
+  "Higher engagement rates from targeted campaigns",
+  "Increased leads and conversions",
+  "Better return on advertising investment",
 ];
 
 const useCases = [
@@ -84,10 +86,13 @@ const useCases = [
 ];
 
 const faqs = [
-  { q: "What is online advertising in Sri Lanka?", a: "Online advertising involves promoting your business through digital platforms like websites, banners, and promotional listings." },
-  { q: "What is Findit.lk?", a: "Findit.lk is a leading online promotion platform in Sri Lanka where businesses can advertise their products and services." },
-  { q: "How effective are banner ads?", a: "Banner ads are highly effective for increasing visibility and driving traffic when placed on high-traffic platforms like Findit.lk." },
-  { q: "Who can advertise on Findit.lk?", a: "Any business, from SMEs to large companies, can use Findit.lk for promotions." },
+  { q: "What is online advertising in Sri Lanka?", a: "Online advertising in Sri Lanka involves promoting your business through digital platforms like websites, banners, email campaigns, SMS, and social media to reach targeted audiences effectively." },
+  { q: "How much does advertising in Sri Lanka cost?", a: "Advertising in Sri Lanka varies by channel. Banner ads start from LKR 1,000, email campaigns from LKR 4,000, and multi-channel combo packages from LKR 10,000. BuzzConnect offers flexible pricing for every budget." },
+  { q: "Which is the best advertising company in Sri Lanka?", a: "BuzzConnect is the #1 direct marketing and advertising company in Sri Lanka, offering email, SMS, WhatsApp, and online advertising solutions with proven results for over 2,000 businesses." },
+  { q: "What is Findit.lk?", a: "Findit.lk is a leading online promotion platform in Sri Lanka where businesses can advertise their products and services to thousands of active users searching for deals and offers." },
+  { q: "How effective are banner ads for advertising in Sri Lanka?", a: "Banner ads are highly effective for advertising in Sri Lanka, especially on high-traffic platforms like Findit.lk. They provide continuous brand visibility and drive targeted traffic to your business." },
+  { q: "What is multi-channel advertising?", a: "Multi-channel advertising combines email marketing, SMS campaigns, WhatsApp marketing, and online banner ads to reach your audience across multiple platforms for maximum impact." },
+  { q: "Who can benefit from digital advertising in Sri Lanka?", a: "Any business from SMEs to large enterprises can benefit from digital advertising in Sri Lanka — including hotels, education institutes, real estate companies, restaurants, and retail businesses." },
 ];
 
 const OnlineAdvertising = () => {
@@ -104,29 +109,42 @@ const OnlineAdvertising = () => {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      name: "Online Advertising Sri Lanka",
-      provider: { "@type": "Organization", name: "Buzz Connect" },
+      name: "Advertising in Sri Lanka",
+      provider: {
+        "@type": "Organization",
+        name: "BuzzConnect",
+        url: "https://buzzconnect.lk",
+      },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Online advertising and banner campaigns on Findit.lk in Sri Lanka.",
+      description: "Best online advertising, email, SMS & WhatsApp advertising solutions in Sri Lanka. Multi-channel digital advertising company with proven results.",
+      serviceType: "Online Advertising",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: "1000",
+        highPrice: "50000",
+        priceCurrency: "LKR",
+      },
     },
   ], []);
 
   return (
     <ServicePageLayout
-      badge="Online Advertising Sri Lanka"
-      title="Online Advertising Sri Lanka – Banner Advertising & Promotions on Findit.lk"
-      subtitle="Buzz Connect offers powerful online advertising services in Sri Lanka, specializing in high-visibility banner campaigns and promotions through Findit.lk — one of Sri Lanka's leading online advertising platforms."
+      badge="#1 Advertising Company Sri Lanka"
+      title="Advertising in Sri Lanka"
+      subtitle="BuzzConnect is the #1 direct marketing & advertising company in Sri Lanka. We offer powerful online, email, SMS & WhatsApp advertising solutions to grow your business fast. Reach millions of customers through multi-channel digital advertising campaigns."
     >
       <SEOHead
-        title="Online Advertising Sri Lanka | Findit.lk Banner Ads"
-        description="No.1 online advertising in Sri Lanka via Findit.lk. Popup banners, featured ads & combo packages from LKR 1,000. Reach 200,000+ impressions. Multi-channel ad campaigns."
+        title="Advertising in Sri Lanka | Best Online Advertising Company Sri Lanka"
+        description="Looking for the best advertising in Sri Lanka? BuzzConnect offers powerful online, email, SMS & WhatsApp advertising solutions to grow your business fast."
         canonical="/online-advertising-sri-lanka"
+        keywords="advertising in sri lanka, online advertising sri lanka, digital advertising sri lanka, advertising company sri lanka, best advertising company sri lanka, banner advertising sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Online Advertising", url: "/online-advertising-sri-lanka" },
+          { name: "Advertising in Sri Lanka", url: "/online-advertising-sri-lanka" },
         ]}
         jsonLd={jsonLd}
       />
+
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -135,14 +153,17 @@ const OnlineAdvertising = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Our solutions are designed to help businesses reach a massive audience, increase brand awareness, and generate high-quality leads through cost-effective <strong>digital advertising</strong>.
+          <strong>Advertising in Sri Lanka</strong> has evolved dramatically. Businesses that embrace <strong>digital advertising</strong> are reaching more customers, generating more leads, and growing faster than ever before. Whether you need <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS campaigns</Link>, or <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, BuzzConnect delivers results-driven <strong>online advertising in Sri Lanka</strong>.
         </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          With <strong>Findit.lk integration</strong>, your brand gets maximum exposure to users actively searching for products, services, and offers.
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          As the best <strong>advertising company in Sri Lanka</strong>, we combine Findit.lk integration with multi-channel campaigns to give your brand maximum exposure. Our advertising solutions help businesses of all sizes generate quality leads and increase revenue through targeted <strong>digital advertising in Sri Lanka</strong>.
+        </p>
+        <p className="text-lg text-accent font-bold">
+          🏆 #1 Direct Marketing & Advertising Company in Sri Lanka
         </p>
       </motion.div>
 
-      {/* Advertise on Findit.lk */}
+      {/* Online Advertising in Sri Lanka */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -151,33 +172,104 @@ const OnlineAdvertising = () => {
       >
         <div className="flex items-center gap-3 mb-6">
           <Globe className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Advertise on Findit.lk – Sri Lanka's Leading Promotion Platform</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Online Advertising in Sri Lanka</h2>
         </div>
         <p className="text-muted-foreground mb-4 max-w-4xl">
-          Findit.lk is one of the most popular online promotion directories in Sri Lanka, attracting thousands of users searching for deals, services, and business listings every day.
+          <strong>Online advertising in Sri Lanka</strong> is the most effective way to reach your target audience. Through Findit.lk — one of Sri Lanka's leading online promotion platforms — your business gets premium visibility to thousands of users actively searching for products, services, and offers.
         </p>
         <p className="text-muted-foreground mb-4 max-w-4xl">
           Findit.lk promotions Directory with more than 1000 latest offers and discounts from Travel Agents, Banks, Credit Cards offers, Hotel Offers, Restaurant Promotions, Clothing Offers, Electronics, and Mobile Phones Deals, Food and Drink Promotions, Latest Events, Holiday Deals, and Education opportunities.
         </p>
-        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Why you advertise with Findit?</h3>
+        <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Why Advertise with Findit.lk?</h3>
         <ul className="space-y-2 mb-6 max-w-4xl">
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> No 1 Ranking in google search for, promotions in Sri Lanka, discounts in Sri Lanka, offers in Sri Lanka. So you can reach local and globally customers.
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> No 1 Ranking in Google search for promotions in Sri Lanka, discounts in Sri Lanka, offers in Sri Lanka — reach local and global customers
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 100% Web traffic only from people who are interested in promotions, Discounts and offers.
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 100% web traffic from people interested in promotions, discounts, and offers
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 250,000+ subscribers database who interested our promotions, discount and offers.
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 2000+ registered companies and 250,000+ subscribers database
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> We have more 200,000 hits for the month people who are looking for offers and promotions and discounts.
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> 200,000+ monthly hits from people looking for offers and promotions
           </li>
           <li className="flex items-start gap-2 text-sm text-foreground">
-            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Facebook fan page 22,000+
+            <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> Facebook fan page 22,000+ followers
           </li>
         </ul>
+      </motion.div>
 
+      {/* Email, SMS & WhatsApp Advertising */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="flex items-center gap-3 mb-4">
+          <Mail className="w-7 h-7 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Email, SMS & WhatsApp Advertising</h2>
+        </div>
+        <p className="text-muted-foreground mb-4">
+          Beyond banner <strong>advertising in Sri Lanka</strong>, BuzzConnect supercharges your campaigns with direct marketing channels that deliver instant results:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <Link to="/email-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
+            <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+            <span className="text-foreground text-sm font-medium">Email Marketing — 250,000+ subscriber reach</span>
+          </Link>
+          <Link to="/sms-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
+            <Smartphone className="w-5 h-5 text-primary flex-shrink-0" />
+            <span className="text-foreground text-sm font-medium">SMS Marketing — 90%+ open rates</span>
+          </Link>
+          <Link to="/whatsapp-marketing" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
+            <MessageSquare className="w-5 h-5 text-primary flex-shrink-0" />
+            <span className="text-foreground text-sm font-medium">WhatsApp Marketing — Direct communication</span>
+          </Link>
+          <Link to="/social-media-marketing-sri-lanka" className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border hover:border-accent/30 transition-colors">
+            <Share2 className="w-5 h-5 text-primary flex-shrink-0" />
+            <span className="text-foreground text-sm font-medium">Social Media — Brand awareness</span>
+          </Link>
+        </div>
+        <p className="text-muted-foreground">
+          This multi-channel approach to <strong>digital advertising in Sri Lanka</strong> ensures your campaign reaches both targeted and mass audiences for maximum ROI.
+        </p>
+      </motion.div>
+
+      {/* Why Choose BuzzConnect */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose BuzzConnect for Advertising in Sri Lanka</h2>
+        <ul className="space-y-3">
+          <li className="flex items-center gap-3 text-foreground">
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> #1 direct marketing & <strong>advertising company in Sri Lanka</strong>
+          </li>
+          <li className="flex items-center gap-3 text-foreground">
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> 2,000+ businesses trust our advertising solutions
+          </li>
+          <li className="flex items-center gap-3 text-foreground">
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Multi-channel campaigns (Email + SMS + WhatsApp + Banners)
+          </li>
+          <li className="flex items-center gap-3 text-foreground">
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Affordable packages starting from LKR 1,000
+          </li>
+          <li className="flex items-center gap-3 text-foreground">
+            <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> Proven track record of high ROI for Sri Lankan businesses
+          </li>
+          {whyFindit.map((item) => (
+            <li key={item} className="flex items-center gap-3 text-foreground">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {item}
+            </li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground mt-4">
+          BuzzConnect is the trusted <strong>advertising company in Sri Lanka</strong> for businesses that want real results from their <strong>digital advertising</strong> campaigns.
+        </p>
       </motion.div>
 
       {/* Banner Advertising */}
@@ -191,7 +283,7 @@ const OnlineAdvertising = () => {
           <Layout className="w-7 h-7 text-primary" />
           <h2 className="font-heading text-2xl font-bold text-foreground">Banner Advertising Campaigns in Sri Lanka</h2>
         </div>
-        <p className="text-muted-foreground mb-4">Our banner advertising solutions on Findit.lk are designed to give your brand premium visibility.</p>
+        <p className="text-muted-foreground mb-4">Our banner <strong>advertising in Sri Lanka</strong> solutions on Findit.lk are designed to give your brand premium visibility and drive targeted traffic.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
           <div>
             <h3 className="font-heading text-lg font-semibold text-foreground mb-3">Types of Banner Ads</h3>
@@ -216,6 +308,52 @@ const OnlineAdvertising = () => {
         </div>
       </motion.div>
 
+      {/* Benefits of Advertising in Sri Lanka */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Benefits of Advertising in Sri Lanka</h2>
+        <p className="text-muted-foreground mb-4">
+          Investing in <strong>advertising in Sri Lanka</strong> gives your business a competitive edge. Here's what you gain:
+        </p>
+        <ul className="space-y-3">
+          {expectedResults.map((r) => (
+            <li key={r} className="flex items-center gap-3 text-foreground">
+              <TrendingUp className="w-5 h-5 text-accent flex-shrink-0" /> {r}
+            </li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground mt-4">
+          Businesses using BuzzConnect's <strong>online advertising in Sri Lanka</strong> consistently outperform competitors who rely solely on traditional marketing. Combined with <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation services</Link>, your advertising campaigns convert more prospects into paying customers.
+        </p>
+      </motion.div>
+
+      {/* Multi-Channel Advertising Strategy */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Multi-Channel Advertising Strategy</h2>
+        <p className="text-muted-foreground mb-4">
+          The most effective <strong>advertising in Sri Lanka</strong> combines multiple channels for maximum reach. BuzzConnect's multi-channel strategy integrates:
+        </p>
+        <ul className="space-y-2 mb-4">
+          {["Email campaigns reaching 250,000+ subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (
+            <li key={item} className="flex items-center gap-2 text-foreground text-sm">
+              <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
+            </li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground">
+          This integrated approach to <strong>digital advertising in Sri Lanka</strong> ensures your message reaches customers wherever they are — delivering better results than any single-channel campaign.
+        </p>
+      </motion.div>
+
       {/* Online Promotions */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -235,25 +373,7 @@ const OnlineAdvertising = () => {
             </li>
           ))}
         </ul>
-        <p className="text-muted-foreground">Your promotions will be displayed to users actively looking for deals, increasing the chances of conversion.</p>
-      </motion.div>
-
-      {/* Why Findit.lk */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Findit.lk for Online Advertising?</h2>
-        <ul className="space-y-3">
-          {whyFindit.map((item) => (
-            <li key={item} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {item}
-            </li>
-          ))}
-        </ul>
-        <p className="text-muted-foreground mt-4">This makes Findit.lk one of the most effective platforms for <strong>online advertising in Sri Lanka</strong>.</p>
+        <p className="text-muted-foreground">Your promotions will be displayed to users actively looking for deals, increasing the chances of conversion through effective <strong>advertising in Sri Lanka</strong>.</p>
       </motion.div>
 
       {/* Combo Packages */}
@@ -263,7 +383,7 @@ const OnlineAdvertising = () => {
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Combined Web Ad Packages</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Combined Web Advertising Packages</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {comboPackages.map((pkg, i) => (
             <motion.div
@@ -293,31 +413,6 @@ const OnlineAdvertising = () => {
         </div>
       </motion.div>
 
-      {/* Integrated Advertising */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Integrated Advertising with Buzz Connect</h2>
-        <p className="text-muted-foreground mb-4">In addition to Findit.lk banner advertising, Buzz Connect enhances your campaigns with:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            { icon: Mail, label: "Email marketing" },
-            { icon: Smartphone, label: "SMS marketing" },
-            { icon: MessageSquare, label: "WhatsApp marketing" },
-            { icon: Share2, label: "Social media exposure" },
-          ].map((ch) => (
-            <div key={ch.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <ch.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{ch.label}</span>
-            </div>
-          ))}
-        </div>
-        <p className="text-muted-foreground mt-4">This multi-channel approach ensures your campaign reaches both targeted and mass audiences.</p>
-      </motion.div>
-
       {/* Use Cases */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -325,8 +420,8 @@ const OnlineAdvertising = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Should Use Online Advertising in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our solutions are ideal for:</p>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Should Use Advertising in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our <strong>online advertising in Sri Lanka</strong> solutions are ideal for:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {useCases.map((uc) => (
             <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
@@ -335,23 +430,6 @@ const OnlineAdvertising = () => {
             </div>
           ))}
         </div>
-      </motion.div>
-
-      {/* Results */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Results You Can Expect</h2>
-        <ul className="space-y-3">
-          {expectedResults.map((r) => (
-            <li key={r} className="flex items-center gap-3 text-foreground">
-              <TrendingUp className="w-5 h-5 text-accent flex-shrink-0" /> {r}
-            </li>
-          ))}
-        </ul>
       </motion.div>
 
       {/* FAQ */}
@@ -363,7 +441,7 @@ const OnlineAdvertising = () => {
       >
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Online Advertising Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Advertising in Sri Lanka</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (
@@ -378,6 +456,16 @@ const OnlineAdvertising = () => {
         </div>
       </motion.div>
 
+      {/* Related Articles */}
+      <RelatedArticles
+        articles={[
+          { title: "Best Advertising Company in Sri Lanka", path: "/best-advertising-company-sri-lanka" },
+          { title: "Digital Advertising Sri Lanka: Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
+          { title: "Online Advertising vs Traditional Advertising Sri Lanka", path: "/online-vs-traditional-advertising-sri-lanka" },
+          { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
+        ]}
+      />
+
       {/* Final CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -385,12 +473,12 @@ const OnlineAdvertising = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Online Advertising Campaign Today</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Advertising Campaign in Sri Lanka Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Promote your business with high-visibility banner advertising on Findit.lk. Contact Buzz Connect today and launch your campaign.
+          Join 2,000+ businesses that trust BuzzConnect — the #1 <strong>advertising company in Sri Lanka</strong>. Get high-visibility banner advertising, email campaigns, SMS blasts, and WhatsApp marketing to grow your business fast.
         </p>
         <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
+          Get a Free Quote Today
         </a>
       </motion.div>
     </ServicePageLayout>
