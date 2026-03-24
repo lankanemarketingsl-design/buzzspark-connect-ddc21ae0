@@ -15,8 +15,16 @@ import articleEmailPower from "@/assets/blog/article-email-power.jpg";
 import articleSmsEngagement from "@/assets/blog/article-sms-engagement.jpg";
 import articleWhatsappFuture from "@/assets/blog/article-whatsapp-future.jpg";
 import articleMultichannelReach from "@/assets/blog/article-multichannel-reach.jpg";
+import articleSeoMatters from "@/assets/blog/article-seo-matters.jpg";
 
 const articles = [
+  {
+    title: "What is SEO and Why It Matters for Businesses in Sri Lanka",
+    date: "Mar 24, 2025",
+    excerpt: "Learn what SEO is and why it's essential for Sri Lankan businesses. Discover how search engine optimization drives organic traffic, leads, and long-term growth.",
+    path: "/seo-why-it-matters-sri-lanka",
+    image: articleSeoMatters,
+  },
   {
     title: "Why Email Marketing is Still the Most Powerful Tool for Businesses in Sri Lanka",
     date: "Mar 24, 2025",

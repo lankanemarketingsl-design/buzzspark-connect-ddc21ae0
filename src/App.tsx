@@ -32,6 +32,7 @@ import EmailMarketingPowerfulTool from "./pages/articles/EmailMarketingPowerfulT
 import SmsMarketingDrivingEngagement from "./pages/articles/SmsMarketingDrivingEngagement.tsx";
 import WhatsAppMarketingFuture from "./pages/articles/WhatsAppMarketingFuture.tsx";
 import MultiChannelMarketingMaxReach from "./pages/articles/MultiChannelMarketingMaxReach.tsx";
+import SeoWhyItMatters from "./pages/articles/SeoWhyItMatters.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -90,6 +91,7 @@ const App = () => (
           <Route path="/sms-marketing-driving-engagement-sri-lanka" element={<SmsMarketingDrivingEngagement />} />
           <Route path="/whatsapp-marketing-future-sri-lanka" element={<WhatsAppMarketingFuture />} />
           <Route path="/multi-channel-marketing-maximum-reach-sri-lanka" element={<MultiChannelMarketingMaxReach />} />
+          <Route path="/seo-why-it-matters-sri-lanka" element={<SeoWhyItMatters />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
-  { title: "Why Email Marketing is the Most Powerful Tool", path: "/email-marketing-most-powerful-tool-sri-lanka" },
+  { title: "What is SEO and Why It Matters", path: "/seo-why-it-matters-sri-lanka" },
   { title: "SMS Marketing Driving Instant Engagement", path: "/sms-marketing-driving-engagement-sri-lanka" },
   { title: "WhatsApp Marketing: Future of Communication", path: "/whatsapp-marketing-future-sri-lanka" },
   { title: "Multi-Channel Marketing: Key to Maximum Reach", path: "/multi-channel-marketing-maximum-reach-sri-lanka" },
