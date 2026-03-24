@@ -53,7 +53,7 @@ const DigitalAdvertisingGuide = () => {
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Top Digital Advertising Channels in Sri Lanka</h2>
             <ul className="space-y-2 my-4">
-              <li>📧 <strong>Email Marketing</strong> — Reach 250,000+ subscribers with targeted campaigns</li>
+              <li>📧 <strong>Email Marketing</strong> — <li>📧 <strong>Email Marketing</strong> — Reach 350,000+ subscribers with targeted campaigns</li> with targeted campaigns</li>
               <li>📱 <strong>SMS Marketing</strong> — 90%+ open rates for instant engagement</li>
               <li>💬 <strong>WhatsApp Marketing</strong> — Direct, personal communication with customers</li>
               <li>🖥️ <strong>Banner Advertising</strong> — Premium visibility on Findit.lk</li>
