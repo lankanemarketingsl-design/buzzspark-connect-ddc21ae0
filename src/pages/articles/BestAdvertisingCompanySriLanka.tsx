@@ -54,8 +54,8 @@ const BestAdvertisingCompanySriLanka = () => {
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Why BuzzConnect is #1</h2>
             <ul className="space-y-2 my-4">
               <li>✅ Multi-channel advertising (Email + SMS + WhatsApp + Banner Ads)</li>
-              <li>✅ 250,000+ email subscriber reach</li>
-              <li>✅ Affordable packages starting from LKR 1,000</li>
+              <li>✅ 350,000+ email subscriber reach</li>
+              <li>✅ Affordable packages starting from LKR 5,000</li>
               <li>✅ Integration with Findit.lk for maximum visibility</li>
               <li>✅ 10+ years of experience in Sri Lankan market</li>
             </ul>

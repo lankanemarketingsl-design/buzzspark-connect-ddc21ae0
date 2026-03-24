@@ -58,7 +58,7 @@ const OnlineVsTraditionalAdvertising = () => {
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Online Advertising in Sri Lanka</h2>
             <p>Online advertising offers significant advantages for businesses of all sizes:</p>
             <ul className="space-y-2 my-4">
-              <li>✅ Affordable — start from LKR 1,000</li>
+              <li>✅ <li>✅ Affordable — start from LKR 5,000</li></li>
               <li>✅ Precise audience targeting</li>
               <li>✅ Measurable results and analytics</li>
               <li>✅ Multiple channels (Email, SMS, WhatsApp, Banners)</li>

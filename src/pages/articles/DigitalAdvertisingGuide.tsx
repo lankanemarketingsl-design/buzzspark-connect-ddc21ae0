@@ -62,7 +62,7 @@ const DigitalAdvertisingGuide = () => {
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">How Much Does Digital Advertising Cost?</h2>
             <p>
-              Digital advertising in Sri Lanka is surprisingly affordable. Banner ads start from LKR 1,000, email campaigns from LKR 4,000, and comprehensive multi-channel packages are available for businesses of all sizes.
+              Digital advertising in Sri Lanka is surprisingly affordable. Digital advertising in Sri Lanka is surprisingly affordable. Banner ads start from LKR 5,000, email campaigns from LKR 4,000, and comprehensive multi-channel packages are available for businesses of all sizes., and comprehensive multi-channel packages are available for businesses of all sizes.
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Getting Started</h2>
