@@ -343,7 +343,7 @@ const OnlineAdvertising = () => {
           The most effective <strong>advertising in Sri Lanka</strong> combines multiple channels for maximum reach. BuzzConnect's multi-channel strategy integrates:
         </p>
         <ul className="space-y-2 mb-4">
-          {["Email campaigns reaching 350,000+ subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => ( subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (
+          {["Email campaigns reaching 350,000+ subscribers", "SMS blasts with 90%+ open rates", "WhatsApp marketing for direct engagement", "Findit.lk banner ads for premium visibility", "Social media advertising for brand awareness"].map((item) => (
             <li key={item} className="flex items-center gap-2 text-foreground text-sm">
               <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
             </li>
