@@ -14,5 +14,67 @@
 /home / 301
 /classified-advertising-in-sri-lanka /resources 301
 
-# SPA fallback — serve index.html with 404 for unknown routes
+# Trailing slash → no trailing slash (301)
+/email-marketing/ /email-marketing 301
+/sms-marketing/ /sms-marketing 301
+/whatsapp-marketing/ /whatsapp-marketing 301
+/multi-channel-marketing-sri-lanka/ /multi-channel-marketing-sri-lanka 301
+/special-advertising-packages/ /special-advertising-packages 301
+/online-advertising-sri-lanka/ /online-advertising-sri-lanka 301
+/graphic-designing-in-sri-lanka/ /graphic-designing-in-sri-lanka 301
+/seo-sri-lanka/ /seo-sri-lanka 301
+/website-design-sri-lanka/ /website-design-sri-lanka 301
+/lead-generation-sri-lanka/ /lead-generation-sri-lanka 301
+/social-media-marketing-sri-lanka/ /social-media-marketing-sri-lanka 301
+/web-banner-advertising-sri-lanka/ /web-banner-advertising-sri-lanka 301
+/resources/ /resources 301
+/about-us/ /about-us 301
+/why-choose-us/ /why-choose-us 301
+/contact-us/ /contact-us 301
+/hotel-marketing-sri-lanka/ /hotel-marketing-sri-lanka 301
+/education-marketing-sri-lanka/ /education-marketing-sri-lanka 301
+/finance-marketing-sri-lanka/ /finance-marketing-sri-lanka 301
+/restaurant-marketing-sri-lanka/ /restaurant-marketing-sri-lanka 301
+/real-estate-marketing-sri-lanka/ /real-estate-marketing-sri-lanka 301
+/fashion-marketing-sri-lanka/ /fashion-marketing-sri-lanka 301
+/why-email-marketing-is-important/ /why-email-marketing-is-important 301
+/why-you-need-email-marketing/ /why-you-need-email-marketing 301
+/best-seo-services-sri-lanka/ /best-seo-services-sri-lanka 301
+/sms-marketing-in-sri-lanka/ /sms-marketing-in-sri-lanka 301
+/enable-missing-images-to-display/ /enable-missing-images-to-display 301
+/multi-channel-marketing-in-sri-lanka/ /multi-channel-marketing-in-sri-lanka 301
+/future-of-email-marketing-sri-lanka/ /future-of-email-marketing-sri-lanka 301
+
+# 200 rewrites for all valid SPA routes
+/email-marketing /index.html 200
+/sms-marketing /index.html 200
+/whatsapp-marketing /index.html 200
+/multi-channel-marketing-sri-lanka /index.html 200
+/special-advertising-packages /index.html 200
+/online-advertising-sri-lanka /index.html 200
+/graphic-designing-in-sri-lanka /index.html 200
+/seo-sri-lanka /index.html 200
+/website-design-sri-lanka /index.html 200
+/lead-generation-sri-lanka /index.html 200
+/social-media-marketing-sri-lanka /index.html 200
+/web-banner-advertising-sri-lanka /index.html 200
+/resources /index.html 200
+/about-us /index.html 200
+/why-choose-us /index.html 200
+/contact-us /index.html 200
+/hotel-marketing-sri-lanka /index.html 200
+/education-marketing-sri-lanka /index.html 200
+/finance-marketing-sri-lanka /index.html 200
+/restaurant-marketing-sri-lanka /index.html 200
+/real-estate-marketing-sri-lanka /index.html 200
+/fashion-marketing-sri-lanka /index.html 200
+/why-email-marketing-is-important /index.html 200
+/why-you-need-email-marketing /index.html 200
+/best-seo-services-sri-lanka /index.html 200
+/sms-marketing-in-sri-lanka /index.html 200
+/enable-missing-images-to-display /index.html 200
+/multi-channel-marketing-in-sri-lanka /index.html 200
+/future-of-email-marketing-sri-lanka /index.html 200
+
+# SPA fallback — 404 for genuinely unknown routes
 /* /index.html 404
