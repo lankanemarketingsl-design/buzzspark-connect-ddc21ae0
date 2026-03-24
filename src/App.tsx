@@ -95,6 +95,7 @@ const App = () => (
           <Route path="/multi-channel-marketing-maximum-reach-sri-lanka" element={<MultiChannelMarketingMaxReach />} />
           <Route path="/seo-why-it-matters-sri-lanka" element={<SeoWhyItMatters />} />
           <Route path="/lead-generation-get-more-customers-sri-lanka" element={<LeadGenerationGetMoreCustomers />} />
+          <Route path="/social-media-marketing-why-your-business-needs-it-sri-lanka" element={<SocialMediaMarketingWhyYouNeedIt />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

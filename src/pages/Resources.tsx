@@ -17,8 +17,16 @@ import articleWhatsappFuture from "@/assets/blog/article-whatsapp-future.jpg";
 import articleMultichannelReach from "@/assets/blog/article-multichannel-reach.jpg";
 import articleSeoMatters from "@/assets/blog/article-seo-matters.jpg";
 import articleLeadGen from "@/assets/blog/article-lead-gen.jpg";
+import articleSocialMedia from "@/assets/blog/article-social-media.jpg";
 
 const articles = [
+  {
+    title: "Social Media Marketing in Sri Lanka: Why Your Business Needs It",
+    date: "Mar 24, 2025",
+    excerpt: "Social media marketing is essential for Sri Lankan businesses. Learn how Facebook, Instagram, and TikTok help you engage customers and build brand awareness.",
+    path: "/social-media-marketing-why-your-business-needs-it-sri-lanka",
+    image: articleSocialMedia,
+  },
   {
     title: "Lead Generation in Sri Lanka: How to Get More Customers for Your Business",
     date: "Mar 24, 2025",

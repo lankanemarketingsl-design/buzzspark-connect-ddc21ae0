@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
+  { title: "Social Media Marketing: Why You Need It", path: "/social-media-marketing-why-your-business-needs-it-sri-lanka" },
   { title: "Lead Generation: Get More Customers", path: "/lead-generation-get-more-customers-sri-lanka" },
   { title: "What is SEO and Why It Matters", path: "/seo-why-it-matters-sri-lanka" },
   { title: "SMS Marketing Driving Instant Engagement", path: "/sms-marketing-driving-engagement-sri-lanka" },
