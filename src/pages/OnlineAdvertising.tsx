@@ -26,7 +26,7 @@ const comboPackages = [
     name: "Package 2",
     impressions: "750,000",
     period: "4 Days",
-    desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective email campaigns for 250,000 subscribers.",
+    desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective desc: "For those who are large enterprise, increase brand awareness and brand recognition, with featured Ads and website banners for the most demanded website for offers, discounts, and promotions. Provide effective email campaigns for 350,000 subscribers.",.",
     features: ["Findit Popup", "Findit Featured", "Email Campaign", "Facebook Story / Post", "Instagram Story", "Sharing Social Media Promotions"],
   },
   {
