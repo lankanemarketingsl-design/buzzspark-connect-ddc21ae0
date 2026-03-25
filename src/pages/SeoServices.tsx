@@ -146,7 +146,7 @@ const SeoServices = () => {
     >
       <SEOHead
         title="SEO Sri Lanka | #1 SEO Company for Fast Google Rankings | BuzzConnect"
-        description="Looking for the best SEO company in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Get a free SEO audit today."
+        description="Looking for the best SEO company in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
         canonical="/seo-sri-lanka"
         keywords="seo sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, seo packages sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
         breadcrumbs={[
@@ -173,7 +173,7 @@ const SeoServices = () => {
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">10+ Years Experience</span>
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">500+ Keywords Ranked</span>
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">200+ Clients Served</span>
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">Free SEO Audit</span>
+          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">Proven Results</span>
         </div>
       </motion.div>
 
@@ -471,10 +471,10 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your SEO Campaign in Sri Lanka Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Ready to rank #1 on Google? Get a <strong>free SEO audit</strong> and discover how BuzzConnect can grow your business with proven SEO strategies.
+          Ready to rank #1 on Google? Contact BuzzConnect today and discover how our proven SEO strategies can grow your business.
         </p>
         <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Get Your Free SEO Audit
+          Contact Buzz Connect
         </a>
       </motion.div>
       <RelatedArticles currentPath="/seo-sri-lanka" />
