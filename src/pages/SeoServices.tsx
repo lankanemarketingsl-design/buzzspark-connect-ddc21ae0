@@ -173,7 +173,7 @@ const SeoServices = () => {
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">10+ Years Experience</span>
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">500+ Keywords Ranked</span>
           <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">200+ Clients Served</span>
-          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">Free SEO Audit</span>
+          <span className="px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold">Proven Results</span>
         </div>
       </motion.div>
 
