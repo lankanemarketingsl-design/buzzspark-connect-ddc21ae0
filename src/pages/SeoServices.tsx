@@ -145,7 +145,7 @@ const SeoServices = () => {
       subtitle="BuzzConnect delivers results-driven SEO services in Sri Lanka — helping businesses rank on Google page 1, increase organic traffic by 200–500%, and generate high-quality leads. 10+ years of proven results."
     >
       <SEOHead
-        title="SEO Sri Lanka | #1 SEO Company for Fast Google Rankings | BuzzConnect"
+        title="SEO Sri Lanka & SEO Packages Sri Lanka | #1 SEO Company | BuzzConnect"
         description="Looking for the best SEO company in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
         canonical="/seo-sri-lanka"
         keywords="seo sri lanka, seo packages sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
