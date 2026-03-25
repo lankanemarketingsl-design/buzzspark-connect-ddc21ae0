@@ -148,7 +148,7 @@ const SeoServices = () => {
         title="SEO Sri Lanka | #1 SEO Company for Fast Google Rankings | BuzzConnect"
         description="Looking for the best SEO company in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
         canonical="/seo-sri-lanka"
-        keywords="seo sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, seo packages sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
+        keywords="seo sri lanka, seo packages sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SEO Services", url: "/seo-sri-lanka" },
