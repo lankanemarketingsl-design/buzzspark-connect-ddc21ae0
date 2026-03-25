@@ -422,7 +422,21 @@ const SeoServices = () => {
       </motion.div>
 
       {/* Findit.lk Advantage */}
-      <FinditlkAdvantage />
+      <FinditlkAdvantage
+        title="The Findit.lk SEO Advantage"
+        description="As the team behind Findit.lk — Sri Lanka's top-ranked promotions platform — we apply the same SEO expertise that keeps Findit.lk on Google page 1 to your business."
+        links={[
+          { label: "Offers in Sri Lanka", url: "https://findit.lk" },
+          { label: "Promotions in Sri Lanka", url: "https://findit.lk" },
+        ]}
+        benefits={[
+          "Proven Google page 1 rankings",
+          "SEO strategies tested on high-traffic sites",
+          "Direct access to 350,000+ subscriber network",
+          "Combined SEO + marketing approach for maximum ROI",
+        ]}
+        gradient="bg-gradient-to-br from-accent/60 via-primary/40 to-accent/60"
+      />
 
       {/* FAQ */}
       <motion.div
