@@ -471,10 +471,10 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your SEO Campaign in Sri Lanka Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Ready to rank #1 on Google? Get a <strong>free SEO audit</strong> and discover how BuzzConnect can grow your business with proven SEO strategies.
+          Ready to rank #1 on Google? Contact BuzzConnect today and discover how our proven SEO strategies can grow your business.
         </p>
         <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Get Your Free SEO Audit
+          Contact Buzz Connect
         </a>
       </motion.div>
       <RelatedArticles currentPath="/seo-sri-lanka" />
