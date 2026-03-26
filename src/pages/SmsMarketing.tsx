@@ -49,14 +49,6 @@ const districts = [
   { name: "Ampara", count: "15,000" }, { name: "Wattala", count: "10,000" },
 ];
 
-const benefits = [
-  "Instant message delivery",
-  "High open and response rates",
-  "Cost-effective marketing solution",
-  "Target specific audiences",
-  "Ideal for promotions and alerts",
-  "Works on all mobile devices",
-];
 
 const processSteps = [
   { icon: Target, title: "Select Database", desc: "Select your target database" },
