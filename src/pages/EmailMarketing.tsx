@@ -1,9 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, Globe, HelpCircle } from "lucide-react";
+import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import EmailHeroContent from "@/components/email/EmailHeroContent";
 
 const packages = [
   { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
@@ -21,6 +22,7 @@ const benefits = [
   "Increase brand awareness and engagement",
   "Drive website traffic and conversions",
   "Track campaign performance in real time",
+  "Multi-channel reinforcement through Findit.lk advertising",
 ];
 
 const processSteps = [
@@ -33,17 +35,19 @@ const processSteps = [
 const useCases = [
   { icon: GraduationCap, label: "Education institutes promoting student intakes" },
   { icon: Building2, label: "Hotels and travel companies" },
-  { icon: ShoppingCart, label: "E-commerce businesses" },
+  { icon: ShoppingCart, label: "E-commerce and retail businesses" },
   { icon: Home, label: "Real estate companies" },
   { icon: Calendar, label: "Event organizers" },
   { icon: Rocket, label: "SMEs and startups" },
 ];
 
 const faqs = [
-  { q: "What is email marketing in Sri Lanka?", a: "Email marketing is a digital marketing method that allows businesses to send targeted promotional messages directly to customers via email." },
-  { q: "How effective is email marketing in Sri Lanka?", a: "Email marketing offers one of the highest ROI among digital marketing channels, making it highly effective for businesses." },
-  { q: "How many people can I reach with Buzz Connect?", a: "You can reach over 350,000+ email users, including highly targeted and VIP audiences." },
-  { q: "Why choose Buzz Connect for email marketing?", a: "Buzz Connect offers one of the largest databases, cost-effective packages, and proven campaign success in Sri Lanka." },
+  { q: "What is email marketing in Sri Lanka?", a: "Email marketing is a digital marketing method that allows businesses to send targeted promotional messages directly to customers via email. It is one of the most cost-effective ways to reach large audiences in Sri Lanka." },
+  { q: "How effective is email marketing in Sri Lanka?", a: "Email marketing offers one of the highest ROI among all digital marketing channels. When combined with multi-channel strategies like Findit.lk advertising, conversion rates increase significantly." },
+  { q: "How many people can I reach with Buzz Connect?", a: "You can reach over 350,000+ corporate email users and 50,000+ VIP contacts, including highly targeted audiences across Sri Lanka." },
+  { q: "Why choose Buzz Connect for email marketing?", a: "Buzz Connect is the only email marketing company in Sri Lanka that combines bulk email campaigns with Findit.lk multi-channel advertising, offering the largest databases, cost-effective packages, and proven campaign success." },
+  { q: "What is multi-channel email marketing?", a: "Multi-channel email marketing uses multiple platforms together — email, web ads, app ads, and social media — to reinforce your message and improve engagement and conversion rates." },
+  { q: "How much does email marketing cost in Sri Lanka?", a: "Email marketing packages at Buzz Connect start from LKR 6,000 for the corporate database and LKR 8,000 for the full 500,000 database. All packages include Findit.lk advertising at no extra cost." },
 ];
 
 const EmailMarketing = () => {
@@ -63,27 +67,28 @@ const EmailMarketing = () => {
       name: "Email Marketing Sri Lanka",
       provider: { "@type": "Organization", name: "Buzz Connect" },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Best email marketing services in Sri Lanka with 350,000+ corporate database.",
+      description: "Best email marketing services in Sri Lanka with 350,000+ corporate database and multi-channel Findit.lk advertising integration.",
     },
   ], []);
 
   return (
     <ServicePageLayout
       badge="Email Marketing Sri Lanka"
-      title="Email Marketing Sri Lanka – Bulk Email Campaigns with High ROI"
-      subtitle="Buzz Connect provides industry-leading email marketing services in Sri Lanka, helping businesses reach thousands of targeted customers instantly."
+      title="Email Marketing Sri Lanka That Actually Converts"
+      subtitle="We combine high-performing email campaigns with Findit.lk advertising to reach the same audience across multiple channels — increasing engagement and conversions."
     >
       <SEOHead
-        title="Email Marketing Sri Lanka | 350K+ Database from LKR 6,000"
-        description="No.1 email marketing company in Sri Lanka. Reach 350,000+ corporate subscribers instantly. Bulk email campaigns with Findit.lk integration. Packages from LKR 6,000. 10+ years trusted."
+        title="Email Marketing Sri Lanka | Multi-Channel Campaigns + Findit.lk Advertising"
+        description="Boost your business with email marketing in Sri Lanka. We combine bulk email campaigns with multi-channel marketing strategies to increase conversions and ROI. Start today."
         canonical="/email-marketing"
-        keywords="email marketing sri lanka, bulk email sri lanka, email campaign colombo, email advertising sri lanka, corporate email marketing, email database sri lanka, best email marketing company sri lanka, email marketing packages sri lanka"
+        keywords="email marketing sri lanka, email campaigns sri lanka, email advertising sri lanka, bulk email marketing sri lanka, email marketing services sri lanka, best email marketing company sri lanka, email marketing packages sri lanka, email database sri lanka, corporate email marketing"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Email Marketing", url: "/email-marketing" },
         ]}
         jsonLd={jsonLd}
       />
+
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -92,10 +97,10 @@ const EmailMarketing = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Buzz Connect provides industry-leading <strong>email marketing services in Sri Lanka</strong>, helping businesses reach thousands of targeted customers instantly. With over a decade of experience and one of the largest email databases in the country, we deliver high-performing campaigns that generate leads, increase engagement, and drive measurable ROI.
+          We go beyond basic <strong>bulk email marketing in Sri Lanka</strong>. At Buzz Connect, we combine <strong>email marketing campaigns</strong> with multi-channel advertising strategies through Findit.lk to turn messages into real customers. From campaign planning to conversion tracking, we help Sri Lankan businesses get measurable results — not just delivery reports.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Our platform is designed for businesses of all sizes, from startups to large enterprises, offering cost-effective and scalable <strong>email marketing solutions</strong> tailored to the Sri Lankan market.
+          With over a decade of experience, one of the largest <strong>email databases in Sri Lanka</strong> (350,000+ corporate contacts), and exclusive Findit.lk integration, Buzz Connect delivers <strong>email marketing services</strong> that no other provider can match.
         </p>
       </motion.div>
 
@@ -151,7 +156,7 @@ const EmailMarketing = () => {
         </motion.div>
       </div>
 
-      {/* Packages */}
+      {/* Packages — PRIORITY POSITION */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -198,6 +203,9 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
+      {/* NEW SEO CONTENT SECTIONS */}
+      <EmailHeroContent />
+
       {/* Why Choose Email Marketing */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -207,10 +215,10 @@ const EmailMarketing = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Email Marketing in Sri Lanka?</h2>
         <p className="text-muted-foreground mb-4 leading-relaxed">
-          Email marketing remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional advertising, email campaigns allow businesses to communicate directly with potential customers in a personalized and measurable way.
+          <strong>Email marketing</strong> remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional advertising, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
         </p>
         <p className="text-muted-foreground mb-6 leading-relaxed">
-          With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every campaign reaches the right audience.
+          With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every <strong>email advertising campaign in Sri Lanka</strong> reaches the right audience — and with Findit.lk integration, your message gets reinforced across multiple channels.
         </p>
         <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of Email Marketing for Sri Lankan Businesses</h3>
         <ul className="space-y-3">
@@ -251,8 +259,8 @@ const EmailMarketing = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Benefit from Email Marketing?</h2>
-        <p className="text-muted-foreground mb-6">Our email marketing services in Sri Lanka are ideal for:</p>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Benefit from Email Marketing in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our <strong>email marketing services in Sri Lanka</strong> are ideal for:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {useCases.map((uc) => (
             <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
@@ -261,22 +269,6 @@ const EmailMarketing = () => {
             </div>
           ))}
         </div>
-      </motion.div>
-
-      {/* Findit.lk Advantage */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <Globe className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with Integrated Advertising</h2>
-        </div>
-        <p className="text-muted-foreground leading-relaxed">
-          In addition to email campaigns, Buzz Connect provides extended visibility through <strong>Findit.lk</strong>, one of Sri Lanka's leading online promotion platforms. This ensures your campaign reaches a wider audience beyond email, maximizing engagement and results.
-        </p>
       </motion.div>
 
       {/* FAQ */}
@@ -312,7 +304,7 @@ const EmailMarketing = () => {
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Email Marketing Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach thousands of potential customers across Sri Lanka with one powerful email campaign. Contact Buzz Connect today and grow your business with targeted email marketing.
+          Reach thousands of potential customers across Sri Lanka with one powerful email campaign powered by multi-channel Findit.lk advertising. Contact Buzz Connect today and grow your business with targeted <strong>email marketing in Sri Lanka</strong>.
         </p>
         <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
           Contact Buzz Connect
