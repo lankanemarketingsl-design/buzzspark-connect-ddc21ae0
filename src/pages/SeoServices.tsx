@@ -164,7 +164,7 @@ const SeoServices = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          As the <strong className="text-foreground">#1 SEO company in Sri Lanka</strong>, BuzzConnect specializes in getting your website to Google page 1 — fast. Our proven SEO strategies have helped hotels, education institutes, real estate companies, and SMEs across Sri Lanka achieve top rankings and generate real business leads.
+          As the <strong className="text-foreground">#1 SEO company in Sri Lanka</strong>, BuzzConnect offers the best <strong className="text-foreground">SEO services in Sri Lanka</strong> — specializing in getting your website to Google page 1, fast. Our proven SEO strategies have helped hotels, education institutes, real estate companies, and SMEs across Sri Lanka achieve top rankings and generate real business leads.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
           Whether you need <strong className="text-foreground">affordable SEO in Sri Lanka</strong>, <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link>, or a complete digital marketing strategy — we deliver measurable results that grow your revenue.
