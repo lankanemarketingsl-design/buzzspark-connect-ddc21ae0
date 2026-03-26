@@ -14,6 +14,29 @@
 /home / 301
 /classified-advertising-in-sri-lanka /resources 301
 
+# Strip trailing slashes (prevent /email-marketing/ duplicate URLs)
+/email-marketing/ /email-marketing 301
+/sms-marketing/ /sms-marketing 301
+/whatsapp-marketing/ /whatsapp-marketing 301
+/online-advertising-sri-lanka/ /online-advertising-sri-lanka 301
+/graphic-designing-in-sri-lanka/ /graphic-designing-in-sri-lanka 301
+/seo-sri-lanka/ /seo-sri-lanka 301
+/website-design-sri-lanka/ /website-design-sri-lanka 301
+/social-media-marketing/ /social-media-marketing 301
+/lead-generation/ /lead-generation 301
+/web-banner-advertising/ /web-banner-advertising 301
+/special-packages/ /special-packages 301
+/resources/ /resources 301
+/about-us/ /about-us 301
+/contact-us/ /contact-us 301
+/why-choose-us/ /why-choose-us 301
+/hotel-marketing-sri-lanka/ /hotel-marketing-sri-lanka 301
+/restaurant-marketing-sri-lanka/ /restaurant-marketing-sri-lanka 301
+/education-marketing-sri-lanka/ /education-marketing-sri-lanka 301
+/real-estate-marketing-sri-lanka/ /real-estate-marketing-sri-lanka 301
+/fashion-marketing-sri-lanka/ /fashion-marketing-sri-lanka 301
+/finance-marketing-sri-lanka/ /finance-marketing-sri-lanka 301
+
 # SPA fallback — pre-rendered routes are served automatically from filesystem
 # Unknown routes get 404 status with the SPA shell for client-side NotFound page
 /* /index.html 404
