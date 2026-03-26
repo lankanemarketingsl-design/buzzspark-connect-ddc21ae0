@@ -141,7 +141,7 @@ const SeoServices = () => {
   return (
     <ServicePageLayout
       badge="#1 SEO Company Sri Lanka"
-      title="SEO Sri Lanka – #1 SEO Company for Fast Google Rankings"
+      title="SEO Services in Sri Lanka – #1 SEO Company for Fast Google Rankings"
       subtitle="BuzzConnect delivers results-driven SEO services in Sri Lanka — helping businesses rank on Google page 1, increase organic traffic by 200–500%, and generate high-quality leads. 10+ years of proven results."
     >
       <SEOHead
