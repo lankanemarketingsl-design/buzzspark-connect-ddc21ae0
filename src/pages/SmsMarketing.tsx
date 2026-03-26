@@ -120,20 +120,8 @@ const SmsMarketing = () => {
         ]}
         jsonLd={jsonLd}
       />
-      {/* Power Intro */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          With access to one of the largest and most targeted <strong>SMS databases in Sri Lanka</strong>, we help businesses connect with the right audience, increase engagement, and generate leads at a low cost.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Our <strong>bulk SMS marketing solutions</strong> are ideal for promotions, alerts, campaigns, and business communication, delivering fast and measurable results across all industries.
-        </p>
-      </motion.div>
+      {/* New SEO Content Sections */}
+      <SmsHeroContent />
 
       {/* Databases */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
