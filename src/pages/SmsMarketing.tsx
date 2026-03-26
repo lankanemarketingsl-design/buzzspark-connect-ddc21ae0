@@ -66,12 +66,12 @@ const processSteps = [
 ];
 
 const useCases = [
-  { icon: GraduationCap, label: "Education institutes promoting course intakes" },
-  { icon: ShoppingCart, label: "Retail and e-commerce businesses" },
-  { icon: Building2, label: "Hotels and travel companies" },
-  { icon: Home, label: "Real estate marketing" },
-  { icon: Calendar, label: "Event promotions" },
-  { icon: Rocket, label: "SMEs and corporate businesses" },
+  { icon: Building2, label: "Hotels & Travel" },
+  { icon: GraduationCap, label: "Education Institutes" },
+  { icon: Home, label: "Real Estate Companies" },
+  { icon: Stethoscope, label: "Healthcare Providers" },
+  { icon: ShoppingCart, label: "Retail Businesses" },
+  { icon: Rocket, label: "SMEs and Corporate Businesses" },
 ];
 
 const faqs = [
