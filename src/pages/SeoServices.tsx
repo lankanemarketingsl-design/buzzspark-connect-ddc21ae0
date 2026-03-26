@@ -141,14 +141,14 @@ const SeoServices = () => {
   return (
     <ServicePageLayout
       badge="#1 SEO Company Sri Lanka"
-      title="SEO Sri Lanka – #1 SEO Company for Fast Google Rankings"
+      title="SEO Services in Sri Lanka – #1 SEO Company for Fast Google Rankings"
       subtitle="BuzzConnect delivers results-driven SEO services in Sri Lanka — helping businesses rank on Google page 1, increase organic traffic by 200–500%, and generate high-quality leads. 10+ years of proven results."
     >
       <SEOHead
-        title="SEO Sri Lanka | SEO Packages Sri Lanka | #1 SEO Company | BuzzConnect"
-        description="Looking for the best SEO company in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
+        title="SEO Sri Lanka | SEO Packages Sri Lanka | SEO Services in Sri Lanka | #1 SEO Company"
+        description="Looking for the best SEO Services in Sri Lanka? BuzzConnect delivers fast rankings, real leads, and proven results. Affordable SEO packages from LKR 30,000. Contact us today."
         canonical="/seo-sri-lanka"
-        keywords="seo sri lanka, seo packages sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
+        keywords="seo sri lanka, seo packages sri lanka, seo services in sri lanka, best seo company sri lanka, seo services sri lanka, seo services colombo, affordable seo sri lanka, seo agency sri lanka, google ranking sri lanka, local seo sri lanka, seo for hotels sri lanka, search engine optimization sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "SEO Services", url: "/seo-sri-lanka" },
@@ -164,7 +164,7 @@ const SeoServices = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          As the <strong className="text-foreground">#1 SEO company in Sri Lanka</strong>, BuzzConnect specializes in getting your website to Google page 1 — fast. Our proven SEO strategies have helped hotels, education institutes, real estate companies, and SMEs across Sri Lanka achieve top rankings and generate real business leads.
+          As the <strong className="text-foreground">#1 SEO company in Sri Lanka</strong>, BuzzConnect offers the best <strong className="text-foreground">SEO services in Sri Lanka</strong> — specializing in getting your website to Google page 1, fast. Our proven SEO strategies have helped hotels, education institutes, real estate companies, and SMEs across Sri Lanka achieve top rankings and generate real business leads.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
           Whether you need <strong className="text-foreground">affordable SEO in Sri Lanka</strong>, <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link>, or a complete digital marketing strategy — we deliver measurable results that grow your revenue.
