@@ -188,29 +188,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Why SMS Marketing is Effective */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why SMS Marketing is Effective in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          SMS marketing is one of the most powerful digital marketing channels in Sri Lanka due to its extremely high open rates and instant delivery. Unlike email or social media, SMS messages are typically read within minutes, making them ideal for time-sensitive promotions and direct communication.
-        </p>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          Businesses in Sri Lanka use SMS marketing to reach customers quickly, promote offers, and drive immediate responses.
-        </p>
-        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of SMS Marketing for Businesses</h3>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
+      {/* removed - now in SmsHeroContent */}
 
       {/* How It Works */}
       <motion.div
