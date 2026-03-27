@@ -136,11 +136,14 @@ const staticRouteSeoPlugin = (): Plugin => ({
     const routeSeo = collectRouteSeo(projectRoot);
 
     routeSeo.forEach((entry) => {
-      const outputPath =
-        entry.route === "/" ? path.join(distDir, "index.html") : path.join(distDir, entry.route.replace(/^\//, ""), "index.html");
-
-      fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-      fs.writeFileSync(outputPath, applyRouteSeo(template, entry), "utf8");
+      if (entry.route === "/") {
+        fs.writeFileSync(path.join(distDir, "index.html"), applyRouteSeo(template, entry), "utf8");
+      } else {
+        // Flat file (e.g. dist/sms-marketing.html) — avoids Netlify folder-based trailing-slash issues
+        const flatPath = path.join(distDir, `${entry.route.replace(/^\//, "")}.html`);
+        fs.mkdirSync(path.dirname(flatPath), { recursive: true });
+        fs.writeFileSync(flatPath, applyRouteSeo(template, entry), "utf8");
+      }
     });
 
     console.log(`[static-route-seo] Generated static SEO HTML for ${routeSeo.length} routes.`);
