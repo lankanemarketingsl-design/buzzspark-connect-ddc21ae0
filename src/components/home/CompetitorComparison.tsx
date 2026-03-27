@@ -112,7 +112,7 @@ const CompetitorComparison = () => {
             className="text-center mt-8"
           >
             <a
-              href="https://wa.me/94773798699?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20proposal%20for%20my%20business."
+              href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20proposal%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-primary font-bold text-sm sm:text-base hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
