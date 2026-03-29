@@ -465,7 +465,7 @@ const EventMarketing = () => {
         description="Get your event promoted on Findit.lk, where users actively search for events, shows, courses, and opportunities. Unlike social media where users scroll passively, Findit.lk users are already interested — making them more likely to attend your event."
         gradient="gradient-event"
         links={[
-          { label: "Events & Activities", url: "https://www.findit.lk/promotions/events-and-activities" },
+          { label: "Events & Activities", url: "https://www.findit.lk/events" },
         ]}
         benefits={["Access to active event seekers", "High visibility in Events category", "Continuous promotion for weeks", "Better conversion than social ads"]}
       />
