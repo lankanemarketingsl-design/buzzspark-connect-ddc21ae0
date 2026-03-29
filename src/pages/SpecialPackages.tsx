@@ -28,12 +28,14 @@ const waFeatures = [
   { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
+type FeatureRow = { label: string; budget: string | boolean; silver: string | boolean; gold: string | boolean; platinum: string | boolean };
+
 const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
 const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
 
 const CellValue = ({ value }: { value: string | boolean }) => {
   if (value === true) return <Check className="w-4 h-4 text-emerald-500 mx-auto" />;
-  if (value === false) return <X className="w-4 h-4 text-red-400/60 mx-auto" />;
+  if (value === false) return <X className="w-4 h-4 text-muted-foreground/40 mx-auto" />;
   return <span className="text-xs sm:text-sm font-medium text-foreground">{value}</span>;
 };
 
