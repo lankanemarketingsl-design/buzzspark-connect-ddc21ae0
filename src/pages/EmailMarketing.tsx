@@ -1,9 +1,11 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle } from "lucide-react";
+import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle, Smartphone, MessageSquare, Globe, ArrowRight } from "lucide-react";
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import { Button } from "@/components/ui/button";
 import EmailHeroContent from "@/components/email/EmailHeroContent";
 
 const packages = [
