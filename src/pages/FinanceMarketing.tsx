@@ -273,7 +273,7 @@ const FinanceMarketing = () => {
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">For banks, finance companies, and large financial groups looking to scale beyond standard campaigns — we offer advanced multi-channel marketing campaigns across Sri Lanka.</p>
         </div>
 
-        <div className="p-8 pt-10 rounded-2xl upsell-highlight mb-8 relative overflow-hidden">
+        <Link to="/multi-channel-marketing-sri-lanka" className="block p-8 pt-10 rounded-2xl upsell-highlight mb-8 relative overflow-hidden cursor-pointer hover:scale-[1.01] transition-transform duration-300">
           <div className="absolute top-0 right-0 px-5 py-2 rounded-bl-xl bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider animate-pulse">🔥 Most Popular</div>
           <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade to Multi-Channel Campaigns</h3>
           <p className="text-muted-foreground mb-5">Combine your financial promotions with:</p>
@@ -294,7 +294,7 @@ const FinanceMarketing = () => {
             ))}
           </div>
           <p className="text-accent font-semibold text-center text-lg">👉 Reach hundreds of thousands to 1M+ audiences within days</p>
-        </div>
+        </Link>
 
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
           <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🏦 Ideal for Large-Scale Finance Campaigns</h3>
