@@ -78,7 +78,7 @@ type FeatureRow = {
 };
 
 const smsFeatures: FeatureRow[] = [
-  { label: "Total Reach", starter: "450,000", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
+  { label: "Total Reach", starter: "450,000+ impressions", silver: "550,000+ impressions", gold: "950,000+ impressions", platinum: "1.2 Million+ impressions" },
   { label: "SMS Campaign", starter: "20,000", silver: "50,000", gold: "150,000", platinum: "400,000" },
   { label: "Email Campaign", starter: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
   { label: "Findit.lk Featured Ad", starter: true, silver: true, gold: true, platinum: true },
