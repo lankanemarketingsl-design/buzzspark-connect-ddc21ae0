@@ -76,30 +76,6 @@ const industries = [
   { icon: Shirt, label: "Fashion & Clothing Advertising", link: "/fashion-marketing-sri-lanka" },
 ];
 
-/* ── Packages ── */
-const packages = [
-  {
-    name: "Starter",
-    price: "LKR 5,000",
-    reach: "25,000+",
-    features: ["1 Email Campaign", "Findit.lk Featured Ad", "Campaign Report"],
-    highlight: false,
-  },
-  {
-    name: "Growth",
-    price: "LKR 15,000",
-    reach: "200,000+",
-    features: ["2 Email Campaigns", "SMS Campaign (10,000)", "Findit.lk Popup + Featured", "Social Media Post", "Detailed Analytics"],
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    price: "LKR 35,000",
-    reach: "1,000,000+",
-    features: ["3 Email Campaigns", "SMS Campaign (75,000)", "WhatsApp Campaign", "Findit.lk Full Package", "Social Media Campaign", "Priority Support", "Custom Targeting"],
-    highlight: false,
-  },
-];
 
 /* ── Case Studies ── */
 const caseStudies = [
@@ -300,65 +276,6 @@ const AdvertisingSriLanka = () => {
         </div>
       </motion.div>
 
-      {/* ── 5. Packages ── */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Advertising Packages</h2>
-          <p className="text-muted-foreground">Flexible pricing for every budget. All packages include campaign setup and reporting.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {packages.map((pkg, i) => (
-            <motion.div
-              key={pkg.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className={`relative p-6 rounded-2xl border ${
-                pkg.highlight
-                  ? "bg-primary text-primary-foreground border-primary shadow-xl scale-[1.03]"
-                  : "bg-card border-border shadow-card"
-              }`}
-            >
-              {pkg.highlight && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold bg-accent text-accent-foreground">
-                  MOST POPULAR
-                </span>
-              )}
-              <h3 className="font-heading text-lg font-bold mb-1">{pkg.name}</h3>
-              <div className="text-2xl font-bold mb-1">{pkg.price}</div>
-              <p className={`text-xs mb-4 ${pkg.highlight ? "text-primary-foreground/70" : "text-muted-foreground"}`}>
-                {pkg.reach} impressions
-              </p>
-              <ul className="space-y-2 mb-6">
-                {pkg.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <CheckCircle className={`w-4 h-4 flex-shrink-0 mt-0.5 ${pkg.highlight ? "text-accent" : "text-accent"}`} />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20advertising%20packages."
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block text-center py-2.5 rounded-full font-semibold text-sm transition-opacity hover:opacity-90 ${
-                  pkg.highlight
-                    ? "bg-accent text-accent-foreground"
-                    : "bg-primary text-primary-foreground"
-                }`}
-              >
-                Get Started
-              </a>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
 
       {/* ── 6. Case Studies ── */}
       <motion.div
