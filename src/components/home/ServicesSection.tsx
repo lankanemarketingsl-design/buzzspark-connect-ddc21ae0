@@ -78,7 +78,7 @@ const services = [
     ],
     description: "Grow your brand with targeted social media campaigns across all major platforms.",
     path: "/social-media-marketing-sri-lanka",
-    highlight: true,
+  },
   },
   {
     icon: Globe,
