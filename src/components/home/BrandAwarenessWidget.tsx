@@ -63,7 +63,7 @@ const BrandAwarenessWidget = () => {
             {/* Content row */}
             <div className="flex flex-col md:flex-row items-center gap-5 mb-5">
               {/* Steps flow */}
-              <div className="flex items-center gap-3 sm:gap-5">
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 w-full md:w-auto">
                 {steps.map((step, i) => (
                   <div key={step.label} className="flex items-center gap-2 sm:gap-4">
                     <motion.div
