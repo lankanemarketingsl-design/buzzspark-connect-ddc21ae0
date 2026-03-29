@@ -342,36 +342,39 @@ const Resources = () => {
           { name: "Resources", url: "/resources" },
         ]}
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((a, i) => (
           <motion.div
             key={a.path}
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: Math.min(i * 0.04, 0.3) }}
           >
             <Link
               to={a.path}
-              className="group flex gap-4 p-4 rounded-xl bg-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all h-full"
+              className="group flex flex-col rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-xl transition-all h-full overflow-hidden"
             >
-              <div className="w-24 h-24 rounded-lg overflow-hidden shrink-0">
+              <div className="aspect-[16/9] overflow-hidden">
                 <img
                   src={a.image}
                   alt={a.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-heading text-sm font-semibold text-foreground mb-1.5 group-hover:text-accent transition-colors leading-snug line-clamp-2">
-                  {a.title}
-                </h3>
-                <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-2">
-                  <Calendar className="w-3 h-3" />
+              <div className="p-5 flex flex-col flex-1">
+                <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-2.5">
+                  <Calendar className="w-3.5 h-3.5" />
                   {a.date}
                 </div>
-                <p className="text-xs text-muted-foreground line-clamp-2">{a.excerpt}</p>
+                <h3 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug line-clamp-2">
+                  {a.title}
+                </h3>
+                <p className="text-sm text-muted-foreground line-clamp-2 mb-4 flex-1">{a.excerpt}</p>
+                <span className="inline-flex items-center text-sm font-semibold text-accent mt-auto">
+                  Read Article <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </span>
               </div>
             </Link>
           </motion.div>
