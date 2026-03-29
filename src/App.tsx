@@ -49,6 +49,8 @@ import EmailMarketingGuide from "./pages/articles/EmailMarketingGuide.tsx";
 import EmailMarketingPricing from "./pages/articles/EmailMarketingPricing.tsx";
 import EmailMarketingIndustries from "./pages/articles/EmailMarketingIndustries.tsx";
 import EmailVsSocialMedia from "./pages/articles/EmailVsSocialMedia.tsx";
+import MultiChannelVsFacebook from "./pages/articles/MultiChannelVsFacebook.tsx";
+import FinditlkEmailConversions from "./pages/articles/FinditlkEmailConversions.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
