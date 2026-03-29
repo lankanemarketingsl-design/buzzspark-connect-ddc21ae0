@@ -131,47 +131,91 @@ const WhatsAppButton = ({ text, label = "Get Started on WhatsApp", className = "
   </a>
 );
 
-const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: FeatureRow[]; emoji: string }) => (
-  <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-12">
-    <div className="mb-6">
-      <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2.5">
-        <span className="text-2xl">{emoji}</span> {title}
-      </h3>
-      <p className="text-muted-foreground text-sm mt-1.5">{subtitle}</p>
-    </div>
-    <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
-      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)]">
-        <div className="p-3.5 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider bg-muted/60 border-b border-border">Features</div>
-        {tierLabels.map((tier, i) => (
-          <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 3 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
-            {tier}
-            {i === 3 && <span className="block text-[9px] font-medium mt-0.5 opacity-80">Most Popular</span>}
-          </div>
-        ))}
+const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: FeatureRow[]; emoji: string }) => {
+  const [activeTier, setActiveTier] = useState(3); // Default to Platinum on mobile
+  
+  return (
+    <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="mb-12">
+      <div className="mb-6">
+        <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2.5">
+          <span className="text-2xl">{emoji}</span> {title}
+        </h3>
+        <p className="text-muted-foreground text-sm mt-1.5">{subtitle}</p>
       </div>
-      {features.map((row, i) => {
-        const isReach = row.label === "Total Reach";
-        return (
-          <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
-            <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-2 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
-              {isReach && <span className="text-base">📡</span>}
-              {row.label}
-            </div>
-            {tierKeys.map((key, ti) => (
-              <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/[0.04]" : ""}`}>
-                <CellValue value={row[key]} />
+
+      {/* Mobile: Tier selector tabs + single column */}
+      <div className="block sm:hidden">
+        <div className="flex rounded-xl overflow-hidden border border-border mb-4">
+          {tierLabels.map((tier, i) => (
+            <button
+              key={tier}
+              onClick={() => setActiveTier(i)}
+              className={`flex-1 py-2.5 text-[10px] font-bold uppercase tracking-wider transition-all ${
+                i === activeTier
+                  ? i === 3 ? "bg-accent text-accent-foreground" : "bg-primary text-primary-foreground"
+                  : "bg-muted/60 text-muted-foreground"
+              }`}
+            >
+              {tier}
+              {i === 3 && <span className="block text-[8px] font-medium opacity-80">Popular</span>}
+            </button>
+          ))}
+        </div>
+        <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
+          {features.map((row, i) => {
+            const isReach = row.label === "Total Reach";
+            const value = row[tierKeys[activeTier]];
+            return (
+              <div key={row.label} className={`flex items-center justify-between p-3.5 border-t first:border-t-0 border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"}`}>
+                <span className={`text-xs flex items-center gap-1.5 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
+                  {isReach && <span className="text-sm">📡</span>}
+                  {row.label}
+                </span>
+                <span className={`text-right ${isReach ? "font-extrabold text-primary text-sm" : ""}`}>
+                  <CellValue value={value} />
+                </span>
               </div>
-            ))}
-          </div>
-        );
-      })}
-    </div>
-    <div className="mt-6 text-center">
-      <WhatsAppButton text={`Hi Buzz Connect, I'm interested in your ${title}.`} />
-      <p className="text-muted-foreground text-xs mt-2.5 tracking-wide">Fast response · Campaign launch in 48–72 hrs</p>
-    </div>
-  </motion.div>
-);
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Desktop: Full comparison table */}
+      <div className="hidden sm:block rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
+        <div className="grid grid-cols-[1.4fr_repeat(4,1fr)]">
+          <div className="p-3.5 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider bg-muted/60 border-b border-border">Features</div>
+          {tierLabels.map((tier, i) => (
+            <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 3 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
+              {tier}
+              {i === 3 && <span className="block text-[9px] font-medium mt-0.5 opacity-80">Most Popular</span>}
+            </div>
+          ))}
+        </div>
+        {features.map((row, i) => {
+          const isReach = row.label === "Total Reach";
+          return (
+            <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border/60 ${isReach ? "bg-primary/8 border-t-2 border-b-2 border-primary/25" : i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/30 transition-colors`}>
+              <div className={`p-3 sm:p-4 text-xs sm:text-sm flex items-center gap-2 ${isReach ? "font-bold text-primary" : "font-medium text-foreground"}`}>
+                {isReach && <span className="text-base">📡</span>}
+                {row.label}
+              </div>
+              {tierKeys.map((key, ti) => (
+                <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${isReach ? "font-extrabold text-primary text-sm sm:text-base" : ""} ${ti === 3 ? "bg-accent/[0.04]" : ""}`}>
+                  <CellValue value={row[key]} />
+                </div>
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mt-6 text-center">
+        <WhatsAppButton text={`Hi Buzz Connect, I'm interested in your ${title}.`} />
+        <p className="text-muted-foreground text-xs mt-2.5 tracking-wide">Fast response · Campaign launch in 48–72 hrs</p>
+      </div>
+    </motion.div>
+  );
+};
 
 const SectionDivider = () => (
   <div className="flex items-center justify-center gap-3 my-16">
@@ -417,7 +461,7 @@ const SpecialPackages = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground mb-3 tracking-tight">What You Can Achieve</h2>
           <p className="text-muted-foreground text-sm">Powerful outcomes for every business goal</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           {[
             { icon: Target, title: "Brand Awareness", desc: "Reach thousands within days" },
             { icon: Rocket, title: "Product Launches", desc: "Instant visibility for new products" },
@@ -519,7 +563,7 @@ const SpecialPackages = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground mb-3 tracking-tight">How It Works</h2>
           <p className="text-muted-foreground text-sm">Simple. Fast. Effective.</p>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto relative">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 max-w-4xl mx-auto relative">
           {/* Connecting line (desktop only) */}
           <div className="hidden lg:block absolute top-16 left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-accent/10 via-accent/30 to-accent/10" />
           {[
@@ -554,12 +598,12 @@ const SpecialPackages = () => {
       <Fade className="mb-0 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground text-center mb-8 tracking-tight">Traditional Marketing vs Buzz Connect</h2>
         <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
-          <div className="grid grid-cols-2">
-            <div className="p-5 sm:p-6 text-center text-xs font-bold uppercase tracking-[0.12em] text-destructive flex items-center justify-center gap-2 bg-destructive/8 border-b-2 border-destructive/15">
-              <X className="w-4 h-4" /> Traditional
+      <div className="grid grid-cols-2">
+            <div className="p-3 sm:p-6 text-center text-[10px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-destructive flex items-center justify-center gap-1.5 sm:gap-2 bg-destructive/8 border-b-2 border-destructive/15">
+              <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Traditional
             </div>
-            <div className="p-5 sm:p-6 text-center text-xs font-bold uppercase tracking-[0.12em] text-accent flex items-center justify-center gap-2 bg-accent/8 border-b-2 border-accent/20">
-              <Check className="w-4 h-4" /> Buzz Connect
+            <div className="p-3 sm:p-6 text-center text-[10px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-accent flex items-center justify-center gap-1.5 sm:gap-2 bg-accent/8 border-b-2 border-accent/20">
+              <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Buzz Connect
             </div>
           </div>
           {[
@@ -570,8 +614,8 @@ const SpecialPackages = () => {
             { trad: "Expensive for SMEs", buzz: "Affordable packages for every budget" },
           ].map((row, i) => (
             <div key={i} className={`grid grid-cols-2 border-t border-border/60 ${i % 2 === 0 ? "bg-card" : "bg-muted/10"} hover:bg-muted/20 transition-colors`}>
-              <div className="p-4 sm:p-5 text-sm text-muted-foreground border-r border-border/60 leading-relaxed">{row.trad}</div>
-              <div className="p-4 sm:p-5 text-sm font-medium text-foreground leading-relaxed">{row.buzz}</div>
+              <div className="p-3 sm:p-5 text-xs sm:text-sm text-muted-foreground border-r border-border/60 leading-relaxed">{row.trad}</div>
+              <div className="p-3 sm:p-5 text-xs sm:text-sm font-medium text-foreground leading-relaxed">{row.buzz}</div>
             </div>
           ))}
         </div>
