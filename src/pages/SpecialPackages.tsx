@@ -4,7 +4,8 @@ import {
   CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap,
   BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar,
   Rocket, HelpCircle, Check, X, ArrowRight, Clock, TrendingUp, Shield,
-  Users, AlertTriangle, Shirt, Store, Star
+  Users, AlertTriangle, Shirt, Store, Star, Megaphone, PartyPopper,
+  Phone, BookOpen, Landmark, RefreshCw, Eye
 } from "lucide-react";
 import { useMemo, useState, useEffect, useCallback } from "react";
 import SEOHead from "@/components/SEOHead";
