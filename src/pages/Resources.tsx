@@ -342,39 +342,36 @@ const Resources = () => {
           { name: "Resources", url: "/resources" },
         ]}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {articles.map((a, i) => (
           <motion.div
             key={a.path}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
+            transition={{ delay: Math.min(i * 0.03, 0.3) }}
           >
             <Link
               to={a.path}
-              className="group block rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all h-full overflow-hidden"
+              className="group flex gap-3 p-3 rounded-xl bg-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all h-full"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
                 <img
                   src={a.image}
                   alt={a.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-heading font-semibold text-foreground mb-2 group-hover:text-accent transition-colors leading-snug">
+              <div className="flex-1 min-w-0">
+                <h3 className="font-heading text-sm font-semibold text-foreground mb-1 group-hover:text-accent transition-colors leading-snug line-clamp-2">
                   {a.title}
                 </h3>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
-                  <Calendar className="w-3.5 h-3.5" />
-                  buzzconnect.lk - {a.date}
+                <div className="flex items-center gap-1.5 text-[11px] text-muted-foreground mb-1.5">
+                  <Calendar className="w-3 h-3" />
+                  {a.date}
                 </div>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{a.excerpt}</p>
-                <span className="inline-flex items-center gap-1 text-sm font-semibold text-accent uppercase tracking-wide">
-                  Read More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </span>
+                <p className="text-xs text-muted-foreground line-clamp-2">{a.excerpt}</p>
               </div>
             </Link>
           </motion.div>
