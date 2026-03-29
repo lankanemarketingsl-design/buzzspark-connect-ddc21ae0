@@ -70,6 +70,7 @@ import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
 import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
 import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
+import EventMarketing from "./pages/EventMarketing.tsx";
 
 const queryClient = new QueryClient();
 
