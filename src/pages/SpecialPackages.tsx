@@ -563,7 +563,7 @@ const SpecialPackages = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground mb-3 tracking-tight">How It Works</h2>
           <p className="text-muted-foreground text-sm">Simple. Fast. Effective.</p>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto relative">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 max-w-4xl mx-auto relative">
           {/* Connecting line (desktop only) */}
           <div className="hidden lg:block absolute top-16 left-[12.5%] right-[12.5%] h-[2px] bg-gradient-to-r from-accent/10 via-accent/30 to-accent/10" />
           {[
