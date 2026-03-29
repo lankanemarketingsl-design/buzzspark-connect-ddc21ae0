@@ -76,30 +76,6 @@ const industries = [
   { icon: Shirt, label: "Fashion & Clothing Advertising", link: "/fashion-marketing-sri-lanka" },
 ];
 
-/* ── Packages ── */
-const packages = [
-  {
-    name: "Starter",
-    price: "LKR 5,000",
-    reach: "25,000+",
-    features: ["1 Email Campaign", "Findit.lk Featured Ad", "Campaign Report"],
-    highlight: false,
-  },
-  {
-    name: "Growth",
-    price: "LKR 15,000",
-    reach: "200,000+",
-    features: ["2 Email Campaigns", "SMS Campaign (10,000)", "Findit.lk Popup + Featured", "Social Media Post", "Detailed Analytics"],
-    highlight: true,
-  },
-  {
-    name: "Enterprise",
-    price: "LKR 35,000",
-    reach: "1,000,000+",
-    features: ["3 Email Campaigns", "SMS Campaign (75,000)", "WhatsApp Campaign", "Findit.lk Full Package", "Social Media Campaign", "Priority Support", "Custom Targeting"],
-    highlight: false,
-  },
-];
 
 /* ── Case Studies ── */
 const caseStudies = [
