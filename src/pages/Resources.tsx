@@ -28,7 +28,39 @@ import articleBestAdvertising from "@/assets/blog/article-best-advertising.jpg";
 import articleDigitalAdGuide from "@/assets/blog/article-digital-advertising-guide.jpg";
 import articleOnlineVsTraditional from "@/assets/blog/article-online-vs-traditional.jpg";
 import articleGoogleAdsCost from "@/assets/blog/article-google-ads-cost.jpg";
+import articleEmailGuide from "@/assets/blog/article-email-guide-sri-lanka.jpg";
+import articleEmailPricing from "@/assets/blog/article-email-pricing-roi.jpg";
+import articleEmailIndustries from "@/assets/blog/article-email-industry-use-cases.jpg";
+import articleEmailVsSocial from "@/assets/blog/article-email-vs-social-media.jpg";
 const articles = [
+  {
+    title: "Complete Guide to Email Marketing in Sri Lanka (2026)",
+    date: "Mar 29, 2026",
+    excerpt: "The ultimate guide to email marketing in Sri Lanka. Learn strategies, campaign types, tools, and how to run professional bulk email campaigns for maximum ROI.",
+    path: "/email-marketing-guide-sri-lanka",
+    image: articleEmailGuide,
+  },
+  {
+    title: "Email Marketing Pricing in Sri Lanka: Costs, Packages & ROI",
+    date: "Mar 29, 2026",
+    excerpt: "How much does email marketing cost in Sri Lanka? Compare pricing, packages, and ROI. Learn why email delivers the best return on investment.",
+    path: "/email-marketing-pricing-sri-lanka",
+    image: articleEmailPricing,
+  },
+  {
+    title: "How Email Marketing Helps Education, Real Estate & Hotels in Sri Lanka",
+    date: "Mar 29, 2026",
+    excerpt: "Discover how email marketing drives results for education, real estate, hotels, restaurants, fashion, and finance businesses in Sri Lanka.",
+    path: "/email-marketing-industries-sri-lanka",
+    image: articleEmailIndustries,
+  },
+  {
+    title: "Email Marketing vs Social Media Marketing in Sri Lanka",
+    date: "Mar 29, 2026",
+    excerpt: "Email marketing vs social media — compare reach, cost, conversion rates, and ROI. Learn which strategy works best for your business in Sri Lanka.",
+    path: "/email-marketing-vs-social-media-sri-lanka",
+    image: articleEmailVsSocial,
+  },
   {
     title: "Best Advertising Company in Sri Lanka",
     date: "Mar 24, 2025",
