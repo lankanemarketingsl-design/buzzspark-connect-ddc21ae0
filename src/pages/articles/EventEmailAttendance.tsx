@@ -55,9 +55,9 @@ const EventEmailAttendance = () => {
         </section>
         <section className="text-center bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-10">
           <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-3">Looking for Event Marketing Services in Sri Lanka?</h2>
-          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">Increase attendance with targeted <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link> and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link>.</p>
+          <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">Increase attendance with targeted <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link>, <Link to="/event-marketing-sri-lanka" className="text-accent hover:underline font-bold">event marketing packages</Link> and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link>.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/email-marketing"><Button variant="hero-outline" size="lg" className="text-base">Email Marketing <ArrowRight className="ml-1" /></Button></Link>
+            <Link to="/event-marketing-sri-lanka"><Button variant="hero-outline" size="lg" className="text-base">Event Marketing <ArrowRight className="ml-1" /></Button></Link>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20event%20email%20marketing%20campaigns." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Chat on WhatsApp <ArrowRight className="ml-1" /></Button></a>
           </div>
         </section>
