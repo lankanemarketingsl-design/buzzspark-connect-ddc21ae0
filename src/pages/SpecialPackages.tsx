@@ -398,31 +398,11 @@ const SpecialPackages = () => {
         </div>
       </SectionBlock>
 
-      {/* ─── 11. TESTIMONIALS ─── */}
+      {/* ─── 11. TESTIMONIALS CAROUSEL ─── */}
       <SectionBlock className="max-w-5xl mx-auto">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">⭐ What Our Clients Say</h2>
         <p className="text-muted-foreground text-center mb-8">Real results from real businesses across Sri Lanka</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {[
-            "They started our campaign within just a few hours, and it really helped our outlet opening. One of the best seasonal campaigns we've ever done. Very professional team.",
-            "All our social promotions were handled by them, and the results were amazing. Everything was done on time and very professionally. Highly recommended.",
-            "We needed a quick campaign, and they delivered fast. Within a short time, we reached thousands of people. One of the best marketing decisions we made.",
-            "The campaign setup was super fast and smooth. We saw immediate engagement and inquiries. Their team really knows how to execute short-term campaigns effectively.",
-            "They managed everything from start to finish, including our promotions and creatives. Very professional and easy to work with. The reach we got was impressive.",
-            "One of the best campaign experiences we've had. Fast execution, great communication, and strong results. Perfect for short-term promotions.",
-            "We worked with them for a seasonal campaign, and it performed really well. The exposure we received was beyond our expectations. Definitely one of the best in Sri Lanka.",
-          ].map((quote, i) => (
-            <div key={i} className="p-5 rounded-2xl bg-card border border-border shadow-card flex flex-col">
-              <div className="flex gap-0.5 mb-3">
-                {[...Array(5)].map((_, s) => (
-                  <Star key={s} className="w-4 h-4 fill-accent text-accent" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed italic flex-1">"{quote}"</p>
-              <p className="text-xs font-semibold text-foreground mt-3">— Valued Client</p>
-            </div>
-          ))}
-        </div>
+        <TestimonialsCarousel />
       </SectionBlock>
 
       {/* ─── 12. URGENCY ─── */}
