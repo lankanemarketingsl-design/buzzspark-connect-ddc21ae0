@@ -42,7 +42,15 @@ import articleRecruitmentEmail from "@/assets/blog/article-recruitment-email-hir
 import articleHealthcareEmail from "@/assets/blog/article-healthcare-email-engagement.jpg";
 import articleAutomotiveEmail from "@/assets/blog/article-automotive-email-sales.jpg";
 import articleEventEmail from "@/assets/blog/article-event-email-attendance.jpg";
+import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 const articles = [
+  {
+    title: "Lead Generation Agency Sri Lanka: How to Choose the Right Partner",
+    date: "Mar 29, 2026",
+    excerpt: "How to choose the right lead generation agency in Sri Lanka. Multi-channel strategies combining email, SMS, WhatsApp & Findit.lk for maximum qualified leads.",
+    path: "/lead-generation-agency-sri-lanka",
+    image: articleLeadGenAgency,
+  },
   {
     title: "E-commerce Email Marketing: Increase Sales & Retention",
     date: "Mar 29, 2026",
