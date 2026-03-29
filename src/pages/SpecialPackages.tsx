@@ -406,6 +406,69 @@ const SpecialPackages = () => {
         </div>
       </SectionBlock>
 
+      {/* ─── WHAT YOU CAN ACHIEVE ─── */}
+      <SectionBlock className="max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-2">🚀 What You Can Achieve with Multi-Channel Campaigns</h2>
+          <p className="text-muted-foreground">Powerful outcomes for every business goal</p>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          {[
+            { icon: Target, title: "Brand Awareness", desc: "Reach thousands of potential customers across Sri Lanka within days" },
+            { icon: Rocket, title: "Business & Product Launches", desc: "Create instant visibility for new businesses, services, or products" },
+            { icon: ShoppingCart, title: "Promotions & Offers", desc: "Promote discounts, seasonal deals, and limited-time campaigns fast" },
+            { icon: Phone, title: "Lead Generation", desc: "Generate calls, WhatsApp inquiries, and customer interest quickly" },
+            { icon: GraduationCap, title: "Student Recruitment", desc: "Attract students for courses, degrees, and training programs" },
+            { icon: Landmark, title: "Real Estate Marketing", desc: "Promote properties, lands, and projects to a wide audience" },
+            { icon: PartyPopper, title: "Event Promotion", desc: "Drive registrations and attendance for events and workshops" },
+            { icon: TrendingUp, title: "Sales Boost", desc: "Increase sales and customer engagement in a short period" },
+            { icon: RefreshCw, title: "Customer Re-Engagement", desc: "Reconnect with existing customers and bring them back" },
+            { icon: Globe, title: "Expand Your Reach", desc: "Target new audiences across multiple platforms including Findit.lk" },
+          ].map(({ icon: Icon, title, desc }) => (
+            <motion.div key={title} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="p-4 rounded-xl bg-card border border-border shadow-card text-center hover:shadow-md transition-shadow">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                <Icon className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-sm font-bold text-foreground mb-1">{title}</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </SectionBlock>
+
+      {/* ─── WHAT YOU CAN USE CAMPAIGNS FOR ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">✅ What You Can Use Multi-Channel Campaigns For</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          {[
+            "Brand awareness campaigns",
+            "New business or outlet openings",
+            "Product or service launches",
+            "Promotional offers and discounts",
+            "Seasonal marketing campaigns",
+            "Lead generation (calls, WhatsApp, inquiries)",
+            "Student recruitment for courses",
+            "Real estate and property promotions",
+            "Event marketing and registrations",
+            "Driving website traffic",
+            "Increasing sales in a short time",
+            "Reaching new target audiences",
+            "Re-engaging existing customers",
+            "Building top-of-mind brand recall",
+            "Boosting visibility across multiple platforms",
+            "Supporting short-term marketing goals",
+            "Generating quick market response",
+            "Testing new products or services",
+            "Expanding business reach across Sri Lanka",
+          ].map((item) => (
+            <div key={item} className="flex items-start gap-2 py-1">
+              <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+              <span className="text-sm text-muted-foreground">{item}</span>
+            </div>
+          ))}
+        </div>
+      </SectionBlock>
+
       {/* ─── 9. TRUST SIGNALS ─── */}
       <SectionBlock className="max-w-4xl mx-auto">
         <div className="p-8 rounded-2xl bg-card border border-border shadow-card">
