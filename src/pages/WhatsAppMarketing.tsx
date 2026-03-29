@@ -120,7 +120,8 @@ const WhatsAppMarketing = () => {
         ]}
         jsonLd={jsonLd}
       />
-      {/* Power Intro */}
+
+      {/* 1. Power Intro — Hook */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -135,7 +136,72 @@ const WhatsAppMarketing = () => {
         </p>
       </motion.div>
 
-      {/* Databases */}
+      {/* 2. Why WhatsApp Marketing — Build Desire */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why WhatsApp Marketing is Powerful in Sri Lanka</h2>
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          WhatsApp marketing is one of the fastest-growing digital marketing channels in Sri Lanka. With a high number of active mobile users, WhatsApp allows businesses to communicate directly with customers in a more personal and engaging way.
+        </p>
+        <p className="text-muted-foreground mb-6 leading-relaxed">
+          Unlike traditional marketing methods, WhatsApp messages have high open rates and allow businesses to share rich media content such as images, videos, and promotional flyers.
+        </p>
+        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of WhatsApp Marketing for Businesses</h3>
+        <ul className="space-y-3">
+          {benefits.map((b) => (
+            <li key={b} className="flex items-center gap-3 text-foreground">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+
+      {/* 3. How It Works — Reduce Friction */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our WhatsApp Marketing Works</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {processSteps.map((step, i) => (
+            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <step.icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 4. Use Cases — Relevance */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Use WhatsApp Marketing in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our WhatsApp marketing services are ideal for:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {useCases.map((uc) => (
+            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
+              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{uc.label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 5. Databases — The Product */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-4">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Our WhatsApp Marketing Databases in Sri Lanka</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -177,7 +243,7 @@ const WhatsAppMarketing = () => {
         ** Payment should be settled before the campaign.
       </p>
 
-      {/* Gender-wise Database */}
+      {/* 6. Gender-wise Database */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
         <div className="flex justify-center gap-8">
@@ -194,7 +260,7 @@ const WhatsAppMarketing = () => {
         </div>
       </motion.div>
 
-      {/* District Coverage */}
+      {/* 7. District Coverage */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -207,72 +273,7 @@ const WhatsAppMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Why WhatsApp Marketing is Powerful */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why WhatsApp Marketing is Powerful in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          WhatsApp marketing is one of the fastest-growing digital marketing channels in Sri Lanka. With a high number of active mobile users, WhatsApp allows businesses to communicate directly with customers in a more personal and engaging way.
-        </p>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          Unlike traditional marketing methods, WhatsApp messages have high open rates and allow businesses to share rich media content such as images, videos, and promotional flyers.
-        </p>
-        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of WhatsApp Marketing for Businesses</h3>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* How It Works */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our WhatsApp Marketing Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Use Cases */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Use WhatsApp Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our WhatsApp marketing services are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Findit.lk Advantage */}
+      {/* 8. Findit.lk Advantage */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -295,7 +296,7 @@ const WhatsAppMarketing = () => {
         </ul>
       </motion.div>
 
-      {/* 🚀 Multi-Channel Upsell Section */}
+      {/* 9. Multi-Channel Upsell Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
@@ -425,7 +426,7 @@ const WhatsAppMarketing = () => {
         </div>
       </motion.div>
 
-      {/* FAQ */}
+      {/* 10. FAQ — Handle Objections */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -449,7 +450,7 @@ const WhatsAppMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Final CTA */}
+      {/* 11. Final CTA — Close */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
