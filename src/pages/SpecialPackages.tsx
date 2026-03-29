@@ -71,7 +71,6 @@ const TestimonialsCarousel = () => {
 
 type FeatureRow = {
   label: string;
-  budget: string | boolean;
   silver: string | boolean;
   gold: string | boolean;
   platinum: string | boolean;
