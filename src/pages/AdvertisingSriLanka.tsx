@@ -4,7 +4,7 @@ import {
   CheckCircle, Globe, Mail, Smartphone, MessageSquare, Share2, Layout,
   TrendingUp, HelpCircle, Users, Shield, Zap, Target, BarChart3,
   GraduationCap, Building2, Home, ShoppingCart, Briefcase, Shirt,
-  Star, ArrowRight,
+  Star, ArrowRight, Rocket,
 } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
