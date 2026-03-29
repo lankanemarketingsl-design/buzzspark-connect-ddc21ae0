@@ -90,15 +90,15 @@ const smsFeatures: FeatureRow[] = [
 ];
 
 const waFeatures: FeatureRow[] = [
-  { label: "Total Reach", silver: "550,000", gold: "575,000", platinum: "625,000" },
-  { label: "WhatsApp Campaign", silver: "60,000", gold: "110,000", platinum: "175,000" },
-  { label: "Email Campaign", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
-  { label: "Findit.lk Featured Ad", silver: true, gold: true, platinum: true },
-  { label: "Findit.lk Lifetime Profile", silver: false, gold: true, platinum: true },
-  { label: "Findit.lk Main Banner", silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
-  { label: "Findit.lk Side Banner", silver: false, gold: "1 Week", platinum: "2 Weeks" },
-  { label: "Findit.lk Pop-Up Banner", silver: false, gold: false, platinum: "4 Days" },
-  { label: "Facebook Boosting", silver: true, gold: true, platinum: true },
+  { label: "Total Reach", starter: "450,000", silver: "550,000", gold: "575,000", platinum: "625,000" },
+  { label: "WhatsApp Campaign", starter: "30,000", silver: "60,000", gold: "110,000", platinum: "175,000" },
+  { label: "Email Campaign", starter: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
+  { label: "Findit.lk Featured Ad", starter: true, silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Lifetime Profile", starter: false, silver: false, gold: true, platinum: true },
+  { label: "Findit.lk Main Banner", starter: false, silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
+  { label: "Findit.lk Side Banner", starter: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
+  { label: "Findit.lk Pop-Up Banner", starter: false, silver: false, gold: false, platinum: "4 Days" },
+  { label: "Facebook Boosting", starter: true, silver: true, gold: true, platinum: true },
 ];
 
 const tierLabels = ["Silver", "Gold", "Platinum"];
