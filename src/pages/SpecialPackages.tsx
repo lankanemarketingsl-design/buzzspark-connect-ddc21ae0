@@ -385,8 +385,8 @@ const SpecialPackages = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {[
             { number: "500+", label: "Campaigns Executed", icon: Rocket },
-            { number: "1,200+", label: "Businesses Served", icon: Building2 },
-            { number: "50M+", label: "Messages Delivered", icon: Mail },
+            { number: "100+", label: "Businesses Served", icon: Building2 },
+            { number: "50M+", label: "Impressions", icon: Mail },
             { number: "10+", label: "Years Experience", icon: Shield },
           ].map(({ number, label, icon: Icon }) => (
             <div key={label} className="text-center p-5 rounded-2xl bg-primary/5 border border-primary/15">
