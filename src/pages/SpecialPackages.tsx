@@ -4,6 +4,14 @@ import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarCh
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 
+type FeatureRow = {
+  label: string;
+  budget: string | boolean;
+  silver: string | boolean;
+  gold: string | boolean;
+  platinum: string | boolean;
+};
+
 const smsFeatures = [
   { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
   { label: "SMS Campaign", budget: "20,000", silver: "50,000", gold: "150,000", platinum: "400,000" },
