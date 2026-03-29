@@ -273,6 +273,136 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
+      {/* 🚀 Multi-Channel Upsell Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">📈 Need Larger Reach & Brand Awareness?</h2>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">For businesses looking to go beyond email and reach massive audiences — we offer advanced multi-channel marketing campaigns across Sri Lanka.</p>
+        </div>
+
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade to Multi-Channel Campaigns</h3>
+          <p className="text-muted-foreground mb-5">Combine your email campaigns with:</p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+            {[
+              { icon: Mail, label: "Email Marketing" },
+              { icon: Smartphone, label: "SMS Campaigns" },
+              { icon: MessageSquare, label: "WhatsApp Marketing" },
+              { icon: Globe, label: "Exposure on Findit.lk" },
+            ].map((ch, i) => (
+              <motion.div key={ch.label} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
+                className="flex flex-col items-center gap-2 p-4 rounded-xl bg-accent/5 border border-accent/20 text-center">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <ch.icon className="w-5 h-5 text-accent" />
+                </div>
+                <span className="text-foreground font-medium text-sm">{ch.label}</span>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-accent font-semibold text-center text-lg">👉 Reach hundreds of thousands to 1M+ audiences within days</p>
+        </div>
+
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">📧 Ideal for Large-Scale Campaigns</h3>
+          <p className="text-muted-foreground mb-4">This solution is best suited for:</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Large businesses & corporate brands",
+              "New product or service launches",
+              "Seasonal promotions & flash sales",
+              "Brand awareness campaigns",
+              "Event marketing & registrations",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                <span className="text-muted-foreground text-sm font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground mt-4 italic">Designed for businesses that need mass visibility + fast impact</p>
+        </div>
+
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Campaigns</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {[
+              "Brand awareness campaigns across Sri Lanka",
+              "New business & product launches",
+              "Promotional offers and seasonal deals",
+              "Driving website traffic and inquiries",
+              "Generating leads in a short time",
+              "Reaching new target audiences nationwide",
+              "Re-engaging existing customers",
+              "Building strong top-of-mind brand recall",
+              "Expanding your business reach across Sri Lanka",
+              "Generating quick market response",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <ArrowRight className="w-3.5 h-3.5 text-accent shrink-0" />
+                <span className="text-muted-foreground text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-4">💡 Why Businesses Choose Multi-Channel Over Email Alone</h3>
+          <p className="text-muted-foreground mb-4">Instead of relying on a single platform:</p>
+          <ul className="space-y-2.5">
+            {[
+              "Reach customers through multiple touchpoints",
+              "Increase brand recall and trust",
+              "Drive faster inquiries and conversions",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                <span className="text-foreground font-medium text-sm">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-accent font-semibold mt-4">👉 The result: higher visibility + better conversion rates</p>
+        </div>
+
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8 overflow-x-auto">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Email Only vs Multi-Channel Campaigns</h3>
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Feature</th>
+                <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Email Only</th>
+                <th className="text-left py-3 px-4 text-accent font-semibold">Multi-Channel Campaign</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Reach", "Limited to email subscribers", "Nationwide multi-platform reach"],
+                ["Platforms", "Single platform", "SMS + Email + WhatsApp + Findit.lk"],
+                ["Speed", "Depends on open rates", "Fast results across all channels"],
+                ["Awareness", "Basic awareness", "High visibility + recall"],
+              ].map(([feature, standard, multi]) => (
+                <tr key={feature} className="border-b border-border/50">
+                  <td className="py-3 px-4 text-foreground font-medium">{feature}</td>
+                  <td className="py-3 px-4 text-muted-foreground">{standard}</td>
+                  <td className="py-3 px-4 text-accent font-semibold">{multi}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="p-8 rounded-2xl gradient-hero text-center relative overflow-hidden">
+          <h3 className="font-heading text-xl sm:text-2xl font-bold text-primary-foreground mb-3">🚀 Scale Your Marketing Beyond Email</h3>
+          <p className="text-primary-foreground/80 mb-2 max-w-xl mx-auto">For businesses looking to go beyond email and achieve nationwide visibility, our multi-channel campaigns deliver unmatched reach and impact.</p>
+          <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">If you're looking for maximum reach, faster visibility, and large-scale campaigns — explore our full solution.</p>
+          <Link to="/multi-channel-marketing-sri-lanka">
+            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-3 rounded-full text-base">
+              <Rocket className="w-5 h-5 mr-2" /> View Multi-Channel Campaigns
+            </Button>
+          </Link>
+        </div>
+      </motion.div>
+
       {/* FAQ */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
