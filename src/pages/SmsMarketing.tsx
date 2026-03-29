@@ -114,10 +114,52 @@ const SmsMarketing = () => {
         ]}
         jsonLd={jsonLd}
       />
-      {/* New SEO Content Sections */}
+
+      {/* 1. SEO Content — Hook & Desire */}
       <SmsHeroContent />
 
-      {/* Databases */}
+      {/* 2. How It Works — Reduce Friction */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our SMS Marketing Works</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {processSteps.map((step, i) => (
+            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <step.icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 3. Use Cases — Relevance */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Use SMS Marketing in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our SMS marketing solutions are ideal for:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {useCases.map((uc) => (
+            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
+              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{uc.label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 4. Databases — The Product */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Our SMS Marketing Databases in Sri Lanka</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -152,7 +194,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Gender-wise Database */}
+      {/* 5. Gender-wise Database */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
         <div className="flex justify-center gap-8">
@@ -169,7 +211,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* District Coverage */}
+      {/* 6. District Coverage */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -182,50 +224,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* removed - now in SmsHeroContent */}
-
-      {/* How It Works */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our SMS Marketing Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Use Cases */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Use SMS Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our SMS marketing solutions are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Findit.lk Advantage */}
+      {/* 7. Findit.lk Advantage */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -241,7 +240,7 @@ const SmsMarketing = () => {
         </p>
       </motion.div>
 
-      {/* 🚀 Multi-Channel Upsell Section */}
+      {/* 8. Multi-Channel Upsell Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
@@ -371,7 +370,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* FAQ */}
+      {/* 9. FAQ */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -395,7 +394,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Final CTA */}
+      {/* 10. Final CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
