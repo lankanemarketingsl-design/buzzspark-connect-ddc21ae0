@@ -461,7 +461,7 @@ const SpecialPackages = () => {
           <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-foreground mb-3 tracking-tight">What You Can Achieve</h2>
           <p className="text-muted-foreground text-sm">Powerful outcomes for every business goal</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           {[
             { icon: Target, title: "Brand Awareness", desc: "Reach thousands within days" },
             { icon: Rocket, title: "Product Launches", desc: "Instant visibility for new products" },
