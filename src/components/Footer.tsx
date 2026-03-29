@@ -53,6 +53,7 @@ const Footer = () => {
               <li><Link to="/restaurant-marketing-sri-lanka" className="hover:text-accent transition-colors">Restaurant & Retail</Link></li>
               <li><Link to="/real-estate-marketing-sri-lanka" className="hover:text-accent transition-colors">Real Estate</Link></li>
               <li><Link to="/fashion-marketing-sri-lanka" className="hover:text-accent transition-colors">Fashion & Clothing</Link></li>
+              <li><Link to="/event-marketing-sri-lanka" className="hover:text-accent transition-colors">Events & Conferences</Link></li>
             </ul>
             <h4 className="font-heading font-semibold text-accent mb-4 mt-6">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
