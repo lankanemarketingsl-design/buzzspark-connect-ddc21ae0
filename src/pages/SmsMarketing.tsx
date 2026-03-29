@@ -248,8 +248,9 @@ const SmsMarketing = () => {
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">For businesses looking to go beyond SMS and reach massive audiences — we offer advanced multi-channel marketing campaigns across Sri Lanka.</p>
         </div>
 
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade to Multi-Channel Campaigns</h3>
+        <div className="p-8 rounded-2xl bg-gradient-to-br from-accent/10 via-primary/5 to-accent/10 shadow-lg border-2 border-accent/40 mb-8 relative overflow-hidden">
+          <div className="absolute top-0 right-0 px-4 py-1.5 rounded-bl-xl bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider">Recommended</div>
+          <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade to Multi-Channel Campaigns</h3>
           <p className="text-muted-foreground mb-5">Combine your SMS campaigns with:</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
             {[
