@@ -39,7 +39,7 @@ const EventEmailAttendance = () => {
         </section>
         <section>
           <div className="flex items-center gap-3 mb-4"><Target className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Reach Interested Audiences</h2></div>
-          <p className="text-muted-foreground">Platforms like <strong>Findit.lk</strong> help attract users looking for events and training programs in Sri Lanka.</p>
+          <p className="text-muted-foreground">Platforms like <strong>Findit.lk</strong> help attract users looking for events and training programs in Sri Lanka. 👉 Explore our <Link to="/event-marketing-sri-lanka" className="text-accent hover:underline font-semibold">event marketing Sri Lanka</Link> packages.</p>
         </section>
         <section>
           <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Campaign Ideas</h2>
