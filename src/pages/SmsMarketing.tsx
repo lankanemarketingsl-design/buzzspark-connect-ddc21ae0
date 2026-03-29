@@ -236,7 +236,7 @@ const SmsMarketing = () => {
           <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with Integrated Advertising</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed">
-          Buzz Connect enhances SMS campaigns with additional exposure through <strong>Findit.lk</strong>, one of Sri Lanka's leading promotion platforms. This ensures your campaign reaches both direct mobile users and a wider online audience, increasing visibility and engagement.
+          Buzz Connect enhances SMS campaigns with additional exposure through <strong>Findit.lk</strong>, one of Sri Lanka's leading promotion platforms. Combined with other <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link> channels, this ensures your campaign reaches both direct mobile users and a wider online audience, increasing visibility and engagement.
         </p>
       </motion.div>
 

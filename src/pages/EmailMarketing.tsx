@@ -118,7 +118,7 @@ const EmailMarketing = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Email Marketing in Sri Lanka?</h2>
         <p className="text-muted-foreground mb-4 leading-relaxed">
-          <strong>Email marketing</strong> remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional advertising, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
+          <strong>Email marketing</strong> remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link>, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
         </p>
         <p className="text-muted-foreground mb-6 leading-relaxed">
           With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every <strong>email advertising campaign in Sri Lanka</strong> reaches the right audience — and with Findit.lk integration, your message gets reinforced across multiple channels.
