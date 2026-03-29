@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, BookOpen } from "lucide-react";
 
 const allArticles = [
+  { title: "Complete Guide to Email Marketing Sri Lanka", path: "/email-marketing-guide-sri-lanka" },
+  { title: "Email Marketing Pricing & ROI Sri Lanka", path: "/email-marketing-pricing-sri-lanka" },
+  { title: "Email Marketing for Industries in Sri Lanka", path: "/email-marketing-industries-sri-lanka" },
+  { title: "Email vs Social Media Marketing Sri Lanka", path: "/email-marketing-vs-social-media-sri-lanka" },
   { title: "Hotel Marketing: Increase Bookings", path: "/hotel-marketing-increase-bookings-sri-lanka" },
   { title: "Education Marketing: Attract Students", path: "/education-marketing-attract-students-sri-lanka" },
   { title: "Finance Marketing: Generate Leads", path: "/finance-marketing-generate-leads-sri-lanka" },
