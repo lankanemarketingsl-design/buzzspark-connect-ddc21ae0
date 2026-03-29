@@ -162,7 +162,7 @@ const HotelMarketing = () => {
         <div className="text-center mb-8">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">What You Can Achieve</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Stop Depending Only on OTAs and Slow Advertising Channels.</h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">With BuzzConnect, you can reach travel-ready customers and drive real bookings.</p>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">With BuzzConnect's <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link> solutions, you can reach travel-ready customers and drive real bookings.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {achievements.map((item, i) => (

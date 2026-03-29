@@ -156,7 +156,7 @@ const OnlineAdvertising = () => {
           <strong>Advertising in Sri Lanka</strong> has evolved dramatically. Businesses that embrace <strong>digital advertising</strong> are reaching more customers, generating more leads, and growing faster than ever before. Whether you need <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS campaigns</Link>, or <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, BuzzConnect delivers results-driven <strong>online advertising in Sri Lanka</strong>.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          As the best <strong>advertising company in Sri Lanka</strong>, we combine Findit.lk integration with multi-channel campaigns to give your brand maximum exposure. Our advertising solutions help businesses of all sizes generate quality leads and increase revenue through targeted <strong>digital advertising in Sri Lanka</strong>.
+          As the best <strong>advertising company in Sri Lanka</strong>, we combine Findit.lk integration with multi-channel campaigns to give your brand maximum exposure. Explore our complete <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link> solutions to see how we help businesses of all sizes generate quality leads and increase revenue through targeted <strong>digital advertising in Sri Lanka</strong>.
         </p>
         <p className="text-lg text-accent font-bold">
           🏆 #1 Direct Marketing & Advertising Company in Sri Lanka

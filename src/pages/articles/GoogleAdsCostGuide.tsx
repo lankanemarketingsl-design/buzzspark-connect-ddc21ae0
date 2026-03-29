@@ -77,8 +77,8 @@ const GoogleAdsCostGuide = () => {
 
             <p className="mt-8">
               👉 Get maximum ROI with{" "}
-              <Link to="/online-advertising-sri-lanka" className="text-accent hover:underline font-semibold">
-                BuzzConnect's Complete Advertising Solutions in Sri Lanka
+              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">
+                advertising in Sri Lanka
               </Link>
             </p>
           </div>

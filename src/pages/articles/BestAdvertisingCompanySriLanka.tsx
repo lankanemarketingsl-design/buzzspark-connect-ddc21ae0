@@ -72,8 +72,8 @@ const BestAdvertisingCompanySriLanka = () => {
 
             <p className="mt-8">
               👉 Ready to work with the best? Explore our{" "}
-              <Link to="/online-advertising-sri-lanka" className="text-accent hover:underline font-semibold">
-                Advertising Services in Sri Lanka
+              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">
+                advertising in Sri Lanka
               </Link>
             </p>
           </div>
