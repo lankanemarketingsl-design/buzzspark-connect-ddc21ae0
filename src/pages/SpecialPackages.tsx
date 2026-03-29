@@ -1,54 +1,112 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle } from "lucide-react";
+import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle, Check, X, ArrowRight } from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 
-const smsPackages = [
-  {
-    name: "Budget Package - SMS Marketing",
-    reach: "Reach 450,000",
-    items: ["SMS Campaign for 20,000 contacts", "Email Campaign for 350,000 subscribers", "Findit.lk feature Ad 50,000 hits for month for free", "Promotion landing page creation", "Findit.lk Pop up Banner for one day", "Facebook Boosting"],
-  },
-  {
-    name: "Silver Package - SMS Marketing",
-    reach: "Reach 550,000",
-    items: ["SMS Campaign For 50,000 contacts", "Email campaign for 350,000 subscribers", "Findit.lk feature Ad 50,000 hits for month for free", "Findit.lk Pop - Up Banner for a One Day", "Promotion landing page creation", "Facebook Boosting"],
-  },
-  {
-    name: "Gold Package - SMS Marketing",
-    reach: "Reach 950,000",
-    items: ["SMS Campaign For 150,000 contacts", "Two email campaign for 350,000 subscribers", "Findit.lk feature ad 50,000 hits for month for free", "Findit.lk Pop - Up Banner for a Two Days", "Promotion landing page creation", "Findit.lk Main Banner for two Weeks", "Findit.lk Side Banner for one week", "Facebook Boosting"],
-  },
-  {
-    name: "Platinum Package - SMS Marketing",
-    reach: "Reach 1.2 Million +",
-    items: ["SMS Campaign For 400,000 contacts", "Two email campaign for 350,000 subscribers", "Findit.lk feature ad 50,000 hits for month for free", "Findit.lk Pop - Up Banner for a Four Days", "Findit.lk main banner Advertisement (One month for free)", "Promotion landing page creation", "Findit.lk Side Banner for two weeks", "Facebook boosting"],
-  },
+const smsFeatures = [
+  { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "950,000", platinum: "1.2 Million+" },
+  { label: "SMS Campaign", budget: "20,000", silver: "50,000", gold: "150,000", platinum: "400,000" },
+  { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
+  { label: "Findit.lk Featured Ad", budget: true, silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: "1 Day", gold: "2 Days", platinum: "4 Days" },
+  { label: "Landing Page", budget: true, silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Main Banner", budget: false, silver: false, gold: "2 Weeks", platinum: "1 Month" },
+  { label: "Findit.lk Side Banner", budget: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
+  { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
-const waPackages = [
-  {
-    name: "Budget Package - WhatsApp",
-    reach: "Reach 450,000",
-    items: ["WhatsApp campaign for 30,000 contacts", "Email Campaign for 350,000 corporate database", "Findit.lk feature Ad 50,000 hits for month for free", "Findit.lk Pop up Banner for one day", "Facebook Boosting"],
-  },
-  {
-    name: "Silver Package - WhatsApp",
-    reach: "Reach 550,000",
-    items: ["WhatsApp Campaign for 60,000 contacts", "Email campaign for 350,000 corporate database", "Findit.lk feature Ad 50,000 hits for month for free", "Findit.lk main banner Advertisement (2 weeks for free)", "Facebook Boosting"],
-  },
-  {
-    name: "Gold Package - WhatsApp",
-    reach: "Reach 575,000",
-    items: ["WhatsApp campaign for 110,000 contacts", "Two email campaign for 350,000 corporate database", "Findit.lk life time Feature Profile", "Findit.lk feature ad 50,000 hits for month for free", "Findit.lk main banner Advertisement (3 Weeks for free)", "Findit.lk Main Banner for two Weeks", "Findit.lk Side Banner for one week", "Facebook Boosting"],
-  },
-  {
-    name: "Platinum Package - WhatsApp",
-    reach: "Reach 625,000",
-    items: ["WhatsApp campaign for 175,000 contacts", "Two email campaign for 350,000 corporate database", "Findit.lk life time Feature Profile", "Findit.lk feature ad 50,000 hits for month for free", "Findit.lk main banner Advertisement (One month for free)", "Findit.lk Side Banner for two weeks", "Facebook boosting"],
-  },
+const waFeatures = [
+  { label: "Total Reach", budget: "450,000", silver: "550,000", gold: "575,000", platinum: "625,000" },
+  { label: "WhatsApp Campaign", budget: "30,000", silver: "60,000", gold: "110,000", platinum: "175,000" },
+  { label: "Email Campaign", budget: "350,000", silver: "350,000", gold: "2 Campaigns", platinum: "2 Campaigns" },
+  { label: "Findit.lk Featured Ad", budget: true, silver: true, gold: true, platinum: true },
+  { label: "Findit.lk Lifetime Profile", budget: false, silver: false, gold: true, platinum: true },
+  { label: "Findit.lk Main Banner", budget: false, silver: "2 Weeks", gold: "3 Weeks + 2 Weeks", platinum: "1 Month" },
+  { label: "Findit.lk Side Banner", budget: false, silver: false, gold: "1 Week", platinum: "2 Weeks" },
+  { label: "Findit.lk Pop-Up Banner", budget: "1 Day", silver: false, gold: false, platinum: false },
+  { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
+
+const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
+const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
+
+const CellValue = ({ value }: { value: string | boolean }) => {
+  if (value === true) return <Check className="w-4 h-4 text-emerald-500 mx-auto" />;
+  if (value === false) return <X className="w-4 h-4 text-red-400/60 mx-auto" />;
+  return <span className="text-xs sm:text-sm font-medium text-foreground">{value}</span>;
+};
+
+const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: typeof smsFeatures; emoji: string }) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    className="mb-12"
+  >
+    <div className="mb-6">
+      <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
+        <span>{emoji}</span> {title}
+      </h3>
+      <p className="text-muted-foreground text-sm mt-1">{subtitle}</p>
+    </div>
+
+    <div className="rounded-2xl overflow-hidden border border-border shadow-card">
+      {/* Header */}
+      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)] bg-muted/50">
+        <div className="p-3 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Features</div>
+        {tierLabels.map((tier, i) => (
+          <div
+            key={tier}
+            className={`p-3 sm:p-4 text-center text-xs font-bold uppercase tracking-wider ${
+              i === 3 ? "bg-accent text-primary" : "text-muted-foreground"
+            }`}
+          >
+            {tier}
+          </div>
+        ))}
+      </div>
+
+      {/* Rows */}
+      {features.map((row, i) => (
+        <div
+          key={row.label}
+          className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${
+            i % 2 === 0 ? "bg-card" : "bg-muted/20"
+          } hover:bg-muted/40 transition-colors`}
+        >
+          <div className="p-3 sm:p-4 text-xs sm:text-sm font-medium text-foreground flex items-center">
+            {row.label}
+          </div>
+          {tierKeys.map((key, ti) => (
+            <div
+              key={key}
+              className={`p-3 sm:p-4 flex items-center justify-center text-center ${
+                ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""
+              }`}
+            >
+              <CellValue value={row[key]} />
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+
+    {/* CTA under table */}
+    <div className="mt-6 text-center">
+      <a
+        href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20packages."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
+      >
+        Get Started on WhatsApp
+        <ArrowRight className="w-4 h-4" />
+      </a>
+      <p className="text-muted-foreground text-xs mt-2">Fast response · Quick campaign launch</p>
+    </div>
+  </motion.div>
+);
 
 const benefits = [
   "Reach customers across multiple platforms",
@@ -89,26 +147,6 @@ const faqs = [
   { q: "Which channels are included?", a: "Email marketing, SMS marketing, WhatsApp marketing, and web advertising." },
 ];
 
-const PackageCard = ({ pkg, index }: { pkg: { name: string; reach: string; items: string[] }; index: number }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ delay: index * 0.1 }}
-    className="p-6 rounded-2xl bg-card shadow-card border-2 border-border hover:shadow-card-hover transition-all"
-  >
-    <div className="text-sm font-semibold text-accent uppercase tracking-wider">{pkg.name}</div>
-    <div className="font-heading text-3xl font-bold text-foreground mt-1">{pkg.reach}</div>
-    <ul className="mt-5 space-y-2">
-      {pkg.items.map((item) => (
-        <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-          <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" /> {item}
-        </li>
-      ))}
-    </ul>
-  </motion.div>
-);
-
 const SpecialPackages = () => {
   const jsonLd = useMemo(() => [
     {
@@ -138,6 +176,7 @@ const SpecialPackages = () => {
         ]}
         jsonLd={jsonLd}
       />
+
       {/* Power Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -146,10 +185,10 @@ const SpecialPackages = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Our integrated approach ensures your business reaches customers across multiple platforms simultaneously, increasing visibility, engagement, and conversions.
+          Run high-impact campaigns across SMS, Email, WhatsApp &amp; Findit.lk with fully managed execution by Buzz Connect.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Powered by one of Sri Lanka's largest audience networks and enhanced by <strong>Findit.lk</strong>, our campaigns deliver unmatched reach and cost-effective results for businesses of all sizes.
+          Our packages are designed to deliver <strong>maximum reach, strong visibility, and measurable results</strong> within a short period of time.
         </p>
       </motion.div>
 
@@ -194,28 +233,56 @@ const SpecialPackages = () => {
         </p>
       </motion.div>
 
-      {/* Packages */}
+      {/* Packages - Comparison Tables */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Our Multi Channel Advertising Packages in Sri Lanka</h2>
-
-        <h3 className="font-heading text-xl font-bold text-foreground mb-6">SMS Marketing Packages</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {smsPackages.map((pkg, i) => (
-            <PackageCard key={pkg.name} pkg={pkg} index={i} />
-          ))}
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Compare & Choose</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Our Multi-Channel Advertising Packages in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+            Run high-impact campaigns across SMS, Email, WhatsApp &amp; Findit.lk with fully managed execution by Buzz Connect.
+          </p>
         </div>
 
-        <h3 className="font-heading text-xl font-bold text-foreground mb-6">WhatsApp Marketing Packages</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {waPackages.map((pkg, i) => (
-            <PackageCard key={pkg.name} pkg={pkg} index={i} />
-          ))}
-        </div>
+        <ComparisonTable
+          title="SMS Marketing Packages"
+          subtitle="A cost-effective way to reach large audiences instantly"
+          features={smsFeatures}
+          emoji="📱"
+        />
+
+        <ComparisonTable
+          title="WhatsApp Marketing Packages"
+          subtitle="Engage customers directly with high open and response rates"
+          features={waFeatures}
+          emoji="💬"
+        />
+      </motion.div>
+
+      {/* Need Help Choosing */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 p-8 rounded-2xl bg-accent/10 border border-accent/20 text-center max-w-3xl mx-auto"
+      >
+        <h3 className="font-heading text-xl font-bold text-foreground mb-2">🚀 Need Help Choosing the Right Package?</h3>
+        <p className="text-muted-foreground text-sm mb-4">Chat with our team and get a custom campaign recommendation instantly.</p>
+        <a
+          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20marketing%20package."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all"
+        >
+          Chat on WhatsApp
+          <ArrowRight className="w-4 h-4" />
+        </a>
       </motion.div>
 
       {/* Benefits */}
@@ -330,13 +397,25 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Multi Channel Marketing Campaign Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach thousands of potential customers across Sri Lanka through a powerful multi-channel strategy. Contact Buzz Connect today and launch your campaign.
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Multi-Channel Campaign Today</h2>
+        <p className="text-primary-foreground/80 mb-4 max-w-2xl mx-auto">
+          Promote your business through SMS, WhatsApp, Email &amp; Findit.lk and connect with thousands of potential customers across Sri Lanka.
         </p>
-        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
+        <div className="flex flex-wrap justify-center gap-4 text-primary-foreground/70 text-sm mb-6">
+          <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> Fast execution</span>
+          <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> Multi-channel reach</span>
+          <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> High visibility placements</span>
+        </div>
+        <a
+          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20a%20multi-channel%20campaign."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-primary font-bold hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
+        >
+          Get Started with Buzz Connect
+          <ArrowRight className="w-4 h-4" />
         </a>
+        <p className="text-primary-foreground/50 text-xs mt-3">Start your campaign in 48–72 hours</p>
       </motion.div>
     </ServicePageLayout>
   );
