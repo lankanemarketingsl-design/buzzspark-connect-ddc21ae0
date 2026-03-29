@@ -34,7 +34,31 @@ import articleEmailIndustries from "@/assets/blog/article-email-industry-use-cas
 import articleEmailVsSocial from "@/assets/blog/article-email-vs-social-media.jpg";
 import articleMultichannelVsFb from "@/assets/blog/article-multichannel-vs-facebook.jpg";
 import articleFinditlkEmail from "@/assets/blog/article-finditlk-email-conversions.jpg";
+import articleEducationEmail from "@/assets/blog/article-education-email-enrollments.jpg";
+import articleRealestateEmail from "@/assets/blog/article-realestate-email-leads.jpg";
+import articleHotelEmail from "@/assets/blog/article-hotel-email-bookings.jpg";
 const articles = [
+  {
+    title: "Education Marketing: How Email Campaigns Increase Student Enrollments",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing helps education institutes in Sri Lanka increase student enrollments with targeted campaigns and multi-channel strategies.",
+    path: "/education-email-marketing-enrollments-sri-lanka",
+    image: articleEducationEmail,
+  },
+  {
+    title: "Real Estate Marketing: How Email Campaigns Generate Property Leads",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing helps real estate businesses in Sri Lanka generate high-quality property leads with targeted campaigns and Findit.lk integration.",
+    path: "/real-estate-email-marketing-leads-sri-lanka",
+    image: articleRealestateEmail,
+  },
+  {
+    title: "Hotel Marketing: How Email Campaigns Increase Bookings",
+    date: "Mar 29, 2026",
+    excerpt: "How email marketing increases hotel bookings in Sri Lanka with targeted campaigns, seasonal promotions, and multi-channel strategies.",
+    path: "/hotel-email-marketing-bookings-sri-lanka",
+    image: articleHotelEmail,
+  },
   {
     title: "Why Multi-Channel Marketing Is More Effective Than Facebook Campaigns in Sri Lanka",
     date: "Mar 29, 2026",

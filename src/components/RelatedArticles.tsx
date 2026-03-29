@@ -32,6 +32,9 @@ const allArticles = [
   { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
   { title: "Multi-Channel vs Facebook Campaigns Sri Lanka", path: "/multi-channel-vs-facebook-sri-lanka" },
   { title: "Findit.lk + Email Marketing Conversions", path: "/finditlk-email-marketing-conversions-sri-lanka" },
+  { title: "Education Email Marketing: Enrollments", path: "/education-email-marketing-enrollments-sri-lanka" },
+  { title: "Real Estate Email Marketing: Property Leads", path: "/real-estate-email-marketing-leads-sri-lanka" },
+  { title: "Hotel Email Marketing: Increase Bookings", path: "/hotel-email-marketing-bookings-sri-lanka" },
 ];
 
 interface RelatedArticlesProps {

@@ -51,6 +51,9 @@ import EmailMarketingIndustries from "./pages/articles/EmailMarketingIndustries.
 import EmailVsSocialMedia from "./pages/articles/EmailVsSocialMedia.tsx";
 import MultiChannelVsFacebook from "./pages/articles/MultiChannelVsFacebook.tsx";
 import FinditlkEmailConversions from "./pages/articles/FinditlkEmailConversions.tsx";
+import EducationEmailEnrollments from "./pages/articles/EducationEmailEnrollments.tsx";
+import RealEstateEmailLeads from "./pages/articles/RealEstateEmailLeads.tsx";
+import HotelEmailBookings from "./pages/articles/HotelEmailBookings.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -132,6 +135,9 @@ const App = () => (
               <Route path="/email-marketing-vs-social-media-sri-lanka" element={<EmailVsSocialMedia />} />
               <Route path="/multi-channel-vs-facebook-sri-lanka" element={<MultiChannelVsFacebook />} />
               <Route path="/finditlk-email-marketing-conversions-sri-lanka" element={<FinditlkEmailConversions />} />
+              <Route path="/education-email-marketing-enrollments-sri-lanka" element={<EducationEmailEnrollments />} />
+              <Route path="/real-estate-email-marketing-leads-sri-lanka" element={<RealEstateEmailLeads />} />
+              <Route path="/hotel-email-marketing-bookings-sri-lanka" element={<HotelEmailBookings />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
