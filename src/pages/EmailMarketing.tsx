@@ -91,7 +91,7 @@ const EmailMarketing = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Power Intro */}
+      {/* 1. Power Intro — Hook */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +106,75 @@ const EmailMarketing = () => {
         </p>
       </motion.div>
 
-      {/* Corporate & VIP Reach */}
+      {/* 2. SEO Content — Desire & Problem/Solution */}
+      <EmailHeroContent />
+
+      {/* 3. Why Choose Email Marketing — Benefits */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Email Marketing in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          <strong>Email marketing</strong> remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional advertising, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
+        </p>
+        <p className="text-muted-foreground mb-6 leading-relaxed">
+          With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every <strong>email advertising campaign in Sri Lanka</strong> reaches the right audience — and with Findit.lk integration, your message gets reinforced across multiple channels.
+        </p>
+        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of Email Marketing for Sri Lankan Businesses</h3>
+        <ul className="space-y-3">
+          {benefits.map((b) => (
+            <li key={b} className="flex items-center gap-3 text-foreground">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+
+      {/* 4. How It Works — Reduce Friction */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our Email Marketing Works</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {processSteps.map((step, i) => (
+            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <step.icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 5. Use Cases — Relevance */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Benefit from Email Marketing in Sri Lanka?</h2>
+        <p className="text-muted-foreground mb-6">Our <strong>email marketing services in Sri Lanka</strong> are ideal for:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {useCases.map((uc) => (
+            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
+              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{uc.label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* 6. Corporate & VIP Reach — The Product */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -158,7 +226,7 @@ const EmailMarketing = () => {
         </motion.div>
       </div>
 
-      {/* Packages — PRIORITY POSITION */}
+      {/* 7. Packages */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -205,75 +273,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* NEW SEO CONTENT SECTIONS */}
-      <EmailHeroContent />
-
-      {/* Why Choose Email Marketing */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Email Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          <strong>Email marketing</strong> remains one of the most effective digital marketing strategies in Sri Lanka due to its high return on investment and ability to target specific audiences. Unlike traditional advertising, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
-        </p>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every <strong>email advertising campaign in Sri Lanka</strong> reaches the right audience — and with Findit.lk integration, your message gets reinforced across multiple channels.
-        </p>
-        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of Email Marketing for Sri Lankan Businesses</h3>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* How It Works */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our Email Marketing Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Use Cases */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Benefit from Email Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our <strong>email marketing services in Sri Lanka</strong> are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* 🚀 Multi-Channel Upsell Section */}
+      {/* 8. Multi-Channel Upsell Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
@@ -403,7 +403,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* FAQ */}
+      {/* 9. FAQ */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -427,7 +427,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Final CTA */}
+      {/* 10. Final CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
