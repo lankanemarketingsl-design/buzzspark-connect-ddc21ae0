@@ -51,6 +51,9 @@ import EmailMarketingIndustries from "./pages/articles/EmailMarketingIndustries.
 import EmailVsSocialMedia from "./pages/articles/EmailVsSocialMedia.tsx";
 import MultiChannelVsFacebook from "./pages/articles/MultiChannelVsFacebook.tsx";
 import FinditlkEmailConversions from "./pages/articles/FinditlkEmailConversions.tsx";
+import EducationEmailEnrollments from "./pages/articles/EducationEmailEnrollments.tsx";
+import RealEstateEmailLeads from "./pages/articles/RealEstateEmailLeads.tsx";
+import HotelEmailBookings from "./pages/articles/HotelEmailBookings.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
