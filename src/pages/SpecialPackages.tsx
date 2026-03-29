@@ -139,7 +139,7 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
       <p className="text-muted-foreground text-sm mt-1.5">{subtitle}</p>
     </div>
     <div className="rounded-2xl overflow-hidden border border-border shadow-[0_8px_40px_-12px_hsl(var(--primary)/0.1)]">
-      <div className="grid grid-cols-[1.4fr_repeat(4,1fr)]">
+      <div className="grid grid-cols-[1.4fr_repeat(3,1fr)]">
         <div className="p-3.5 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider bg-muted/60 border-b border-border">Features</div>
         {tierLabels.map((tier, i) => (
           <div key={tier} className={`p-3.5 sm:p-4 text-center text-xs font-bold uppercase tracking-wider border-b border-border ${i === 3 ? "bg-accent text-accent-foreground" : "bg-muted/60 text-muted-foreground"}`}>
