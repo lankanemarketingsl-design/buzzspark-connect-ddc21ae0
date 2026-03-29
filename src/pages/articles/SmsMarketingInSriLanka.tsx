@@ -44,7 +44,7 @@ const SmsMarketingInSriLanka = () => {
         >
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <p className="text-muted-foreground leading-relaxed">
-              SMS Marketing is sending promotional campaigns for marketing purposes using text messages (SMS). These messages are mostly meant to communicate sensitive offers, updates, and promotions to people.
+              <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS Marketing</Link> is sending promotional campaigns for marketing purposes using text messages (SMS). These messages are mostly meant to communicate sensitive offers, updates, and promotions to people.
             </p>
           </div>
 
