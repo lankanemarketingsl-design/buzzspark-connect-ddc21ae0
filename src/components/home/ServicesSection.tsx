@@ -53,6 +53,7 @@ const services = [
     ],
     description: "Ideal for both SMEs and large-scale businesses.",
     path: "/multi-channel-marketing-sri-lanka",
+    highlight: true,
   },
   {
     icon: Target,
