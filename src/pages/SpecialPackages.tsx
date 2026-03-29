@@ -1,8 +1,15 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap, BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle, Check, X, ArrowRight } from "lucide-react";
+import {
+  CheckCircle, Mail, MessageSquare, Smartphone, Globe, Target, Zap,
+  BarChart3, GraduationCap, Building2, ShoppingCart, Home, Calendar,
+  Rocket, HelpCircle, Check, X, ArrowRight, Clock, TrendingUp, Shield,
+  Users, AlertTriangle
+} from "lucide-react";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
+
+/* ── Data ── */
 
 type FeatureRow = {
   label: string;
@@ -36,10 +43,26 @@ const waFeatures: FeatureRow[] = [
   { label: "Facebook Boosting", budget: true, silver: true, gold: true, platinum: true },
 ];
 
-
-
 const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
 const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
+
+const traditionalVsUs = [
+  { trad: "Takes months to show results", buzz: "Launch campaigns in 48–72 hours" },
+  { trad: "Limited to one channel", buzz: "Multi-channel exposure (Email + SMS + WhatsApp + Web)" },
+  { trad: "No audience targeting", buzz: "Category-based & industry-specific targeting" },
+  { trad: "Hard to measure results", buzz: "Detailed performance tracking & reports" },
+  { trad: "Expensive for SMEs", buzz: "Affordable packages for every budget" },
+];
+
+const faqs = [
+  { q: "What is multi channel marketing?", a: "It is a strategy that uses multiple platforms like email, SMS, WhatsApp, and web ads to reach customers simultaneously for maximum engagement." },
+  { q: "Why is multi channel marketing effective in Sri Lanka?", a: "Because customers use multiple platforms daily, combining channels increases reach, brand recall, and conversion rates significantly." },
+  { q: "What makes Buzz Connect different?", a: "Buzz Connect combines targeted direct marketing with mass exposure using Findit.lk, offering maximum reach at lower cost — something no other provider in Sri Lanka offers." },
+  { q: "How fast can I launch a campaign?", a: "Most campaigns are launched within 48–72 hours of confirmation, ensuring you never miss time-sensitive opportunities." },
+  { q: "Which channels are included?", a: "Email marketing, SMS marketing, WhatsApp marketing, Findit.lk platform exposure, and Facebook boosting." },
+];
+
+/* ── Shared Components ── */
 
 const CellValue = ({ value }: { value: string | boolean }) => {
   if (value === true) return <Check className="w-4 h-4 text-emerald-500 mx-auto" />;
@@ -47,138 +70,71 @@ const CellValue = ({ value }: { value: string | boolean }) => {
   return <span className="text-xs sm:text-sm font-medium text-foreground">{value}</span>;
 };
 
-const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: typeof smsFeatures; emoji: string }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    className="mb-12"
-  >
+const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; subtitle: string; features: FeatureRow[]; emoji: string }) => (
+  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
     <div className="mb-6">
       <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground flex items-center gap-2">
         <span>{emoji}</span> {title}
       </h3>
       <p className="text-muted-foreground text-sm mt-1">{subtitle}</p>
     </div>
-
     <div className="rounded-2xl overflow-hidden border border-border shadow-card">
-      {/* Header */}
       <div className="grid grid-cols-[1.4fr_repeat(4,1fr)] bg-muted/50">
         <div className="p-3 sm:p-4 text-xs font-semibold text-muted-foreground uppercase tracking-wider">Features</div>
         {tierLabels.map((tier, i) => (
-          <div
-            key={tier}
-            className={`p-3 sm:p-4 text-center text-xs font-bold uppercase tracking-wider ${
-              i === 3 ? "bg-accent text-primary" : "text-muted-foreground"
-            }`}
-          >
+          <div key={tier} className={`p-3 sm:p-4 text-center text-xs font-bold uppercase tracking-wider ${i === 3 ? "bg-accent text-primary" : "text-muted-foreground"}`}>
             {tier}
           </div>
         ))}
       </div>
-
-      {/* Rows */}
       {features.map((row, i) => (
-        <div
-          key={row.label}
-          className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${
-            i % 2 === 0 ? "bg-card" : "bg-muted/20"
-          } hover:bg-muted/40 transition-colors`}
-        >
-          <div className="p-3 sm:p-4 text-xs sm:text-sm font-medium text-foreground flex items-center">
-            {row.label}
-          </div>
+        <div key={row.label} className={`grid grid-cols-[1.4fr_repeat(4,1fr)] border-t border-border ${i % 2 === 0 ? "bg-card" : "bg-muted/20"} hover:bg-muted/40 transition-colors`}>
+          <div className="p-3 sm:p-4 text-xs sm:text-sm font-medium text-foreground flex items-center">{row.label}</div>
           {tierKeys.map((key, ti) => (
-            <div
-              key={key}
-              className={`p-3 sm:p-4 flex items-center justify-center text-center ${
-                ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""
-              }`}
-            >
+            <div key={key} className={`p-3 sm:p-4 flex items-center justify-center text-center ${ti === 3 ? "bg-accent/5 border-x border-accent/10" : ""}`}>
               <CellValue value={row[key]} />
             </div>
           ))}
         </div>
       ))}
     </div>
-
-    {/* CTA under table */}
     <div className="mt-6 text-center">
-      <a
-        href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20packages."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
-      >
-        Get Started on WhatsApp
-        <ArrowRight className="w-4 h-4" />
+      <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20multi-channel%20marketing%20packages." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105">
+        Get Started on WhatsApp <ArrowRight className="w-4 h-4" />
       </a>
       <p className="text-muted-foreground text-xs mt-2">Fast response · Quick campaign launch</p>
     </div>
   </motion.div>
 );
 
-const benefits = [
-  "Reach customers across multiple platforms",
-  "Increase brand visibility and recall",
-  "Improve engagement and response rates",
-  "Deliver consistent messaging",
-  "Maximize ROI with cost-effective campaigns",
-  "Generate high-quality leads faster",
-];
+const SectionBlock = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className={`mb-16 ${className}`}>
+    {children}
+  </motion.div>
+);
 
-const channels = [
-  { icon: Mail, title: "Email Marketing", desc: "Reach targeted inbox audiences" },
-  { icon: Smartphone, title: "SMS Marketing", desc: "Deliver instant messages with high open rates" },
-  { icon: MessageSquare, title: "WhatsApp Marketing", desc: "Engage customers in real-time" },
-  { icon: Globe, title: "Findit.lk Integration", desc: "Expand reach to Sri Lanka's largest offer-seeking audience" },
-];
-
-const processSteps = [
-  { icon: Target, title: "Audience Selection", desc: "Choose your target audience" },
-  { icon: Zap, title: "Channel Strategy", desc: "Select email, SMS, WhatsApp, and web ads" },
-  { icon: Rocket, title: "Campaign Launch", desc: "Run synchronized campaigns across channels" },
-  { icon: BarChart3, title: "Performance Tracking", desc: "Measure engagement and results" },
-];
-
-const useCases = [
-  { icon: GraduationCap, label: "Education institutes promoting student intakes" },
-  { icon: ShoppingCart, label: "E-commerce and retail businesses" },
-  { icon: Building2, label: "Hotels and travel companies" },
-  { icon: Home, label: "Real estate and property developers" },
-  { icon: Calendar, label: "Event promotions and exhibitions" },
-  { icon: Rocket, label: "SMEs and corporate brands" },
-];
-
-const faqs = [
-  { q: "What is multi channel marketing?", a: "It is a strategy that uses multiple platforms like email, SMS, WhatsApp, and web ads to reach customers." },
-  { q: "Why is multi channel marketing effective in Sri Lanka?", a: "Because customers use multiple platforms daily, combining channels increases reach and engagement." },
-  { q: "What makes Buzz Connect different?", a: "Buzz Connect combines targeted marketing with mass exposure using Findit.lk, offering maximum reach at a lower cost." },
-  { q: "Which channels are included?", a: "Email marketing, SMS marketing, WhatsApp marketing, and web advertising." },
-];
+/* ── Page ── */
 
 const SpecialPackages = () => {
-  const jsonLd = useMemo(() => [
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: faqs.map(f => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-  ], []);
+  const jsonLd = useMemo(() => [{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(f => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  }], []);
 
   return (
     <ServicePageLayout
       badge="Multi Channel Marketing Sri Lanka"
-      title="Multi Channel Marketing Sri Lanka – Integrated Email, SMS, WhatsApp & Web Advertising"
-      subtitle="Buzz Connect offers the most advanced multi channel marketing solution in Sri Lanka, combining email marketing, SMS marketing, WhatsApp marketing, and web advertising into one powerful campaign strategy."
+      title="Boost Your Brand Across Sri Lanka in 72 Hours with Multi-Channel Campaigns + Findit.lk Exposure"
+      subtitle="One campaign. Multiple channels. Maximum awareness, leads & conversions — faster than any traditional marketing method."
     >
       <SEOHead
-        title="Multi-Channel Marketing Sri Lanka | Reach 1.2 Million+"
-        description="No.1 multi-channel marketing in Sri Lanka. Combined email, SMS, WhatsApp & Findit.lk advertising packages. Reach 1.2 million+ customers. Budget to Platinum plans available."
+        title="Multi-Channel Marketing Sri Lanka | Reach 1.2 Million+ in 72 Hours"
+        description="No.1 multi-channel marketing in Sri Lanka. Combined email, SMS, WhatsApp & Findit.lk advertising packages. Reach 1.2 million+ customers. Launch in 48-72 hours."
         canonical="/multi-channel-marketing-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
@@ -187,205 +143,255 @@ const SpecialPackages = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Power Intro */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Run high-impact campaigns across SMS, Email, WhatsApp &amp; Findit.lk with fully managed execution by Buzz Connect.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Our packages are designed to deliver <strong>maximum reach, strong visibility, and measurable results</strong> within a short period of time.
-        </p>
-      </motion.div>
-
-      {/* What is Multi Channel Marketing */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What is Multi Channel Marketing?</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">
-          Multi channel marketing is a strategy that uses multiple communication channels such as email, SMS, WhatsApp, and web platforms to reach customers. In Sri Lanka, this approach is becoming the most effective way to engage audiences because customers interact with brands across different platforms.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          By combining multiple channels into one campaign, businesses can maximize reach, reinforce messaging, and improve overall marketing performance.
-        </p>
-      </motion.div>
-
-      {/* Why Buzz Connect */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">Why Buzz Connect is the Best Multi Channel Marketing Provider in Sri Lanka</h2>
-        <p className="text-muted-foreground text-center mb-8">Buzz Connect stands out by combining direct marketing channels with mass audience platforms.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {channels.map((ch) => (
-            <div key={ch.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <ch.icon className="w-7 h-7 text-primary" />
+      {/* ─── 1. SPEED POSITIONING ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <div className="p-8 sm:p-10 rounded-2xl bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center">
+              <Zap className="w-6 h-6 text-accent" />
+            </div>
+            <h2 className="font-heading text-2xl font-bold text-foreground">The Fastest Way to Boost Awareness in Sri Lanka</h2>
+          </div>
+          <p className="text-muted-foreground text-lg mb-6">
+            Most marketing strategies take months. Our multi-channel campaigns deliver results <strong>within days</strong>.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            {[
+              { icon: Clock, text: "Launch in 48–72 hours" },
+              { icon: Users, text: "Reach hundreds of thousands instantly" },
+              { icon: TrendingUp, text: "Generate awareness, inquiries & traffic fast" },
+            ].map(({ icon: Icon, text }) => (
+              <div key={text} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
+                <Icon className="w-5 h-5 text-accent shrink-0" />
+                <span className="text-sm font-medium text-foreground">{text}</span>
               </div>
-              <h3 className="font-heading font-bold text-foreground mb-2">{ch.title}</h3>
-              <p className="text-sm text-muted-foreground">{ch.desc}</p>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground italic">
+            Perfect for time-sensitive promotions, course intakes, property launches & events.
+          </p>
+        </div>
+      </SectionBlock>
+
+      {/* ─── 2. POWER STATEMENT ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <div className="text-center p-8 sm:p-10 rounded-2xl bg-card border border-border shadow-card">
+          <Rocket className="w-10 h-10 text-primary mx-auto mb-4" />
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">One Campaign. Maximum Exposure.</h2>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Instead of relying on a single platform, your campaign appears across multiple high-impact channels simultaneously.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {[
+              { icon: Mail, label: "Email Inboxes" },
+              { icon: Smartphone, label: "Mobile SMS" },
+              { icon: MessageSquare, label: "WhatsApp Messages" },
+              { icon: Globe, label: "Findit.lk Platform" },
+            ].map(({ icon: Icon, label }) => (
+              <div key={label} className="p-4 rounded-xl bg-primary/5 border border-primary/10 text-center">
+                <Icon className="w-6 h-6 text-primary mx-auto mb-2" />
+                <span className="text-sm font-semibold text-foreground">{label}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-muted-foreground text-sm mt-6">
+            This increases visibility, brand recall, and conversions significantly.
+          </p>
+        </div>
+      </SectionBlock>
+
+      {/* ─── 3. IMPACT NUMBERS ─── */}
+      <SectionBlock>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Campaign Impact at a Glance</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { number: "1.2M+", label: "Maximum Reach", icon: Users },
+            { number: "350,000+", label: "Email Audience", icon: Mail },
+            { number: "400,000+", label: "SMS Reach", icon: Smartphone },
+            { number: "4+", label: "Marketing Channels", icon: Target },
+          ].map(({ number, label, icon: Icon }) => (
+            <div key={label} className="text-center p-6 rounded-2xl bg-card shadow-card border border-border">
+              <Icon className="w-8 h-8 text-accent mx-auto mb-3" />
+              <div className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-1">{number}</div>
+              <span className="text-sm text-muted-foreground">{label}</span>
             </div>
           ))}
         </div>
-        <p className="text-muted-foreground text-center mt-6">
-          This combination ensures your campaign reaches both targeted and mass audiences, giving you <strong>maximum exposure at the lowest cost</strong>.
+        <p className="text-center text-muted-foreground mt-6 text-sm font-medium">
+          One campaign = multiple touchpoints = faster results
         </p>
-      </motion.div>
+      </SectionBlock>
 
-      {/* Packages - Comparison Tables */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
+      {/* ─── 4. FINDIT.LK ADVANTAGE ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <div className="p-8 sm:p-10 rounded-2xl bg-primary/5 border border-primary/20">
+          <div className="flex items-center gap-3 mb-4">
+            <Globe className="w-8 h-8 text-primary" />
+            <h2 className="font-heading text-2xl font-bold text-foreground">Exclusive Awareness Boost with Findit.lk</h2>
+          </div>
+          <p className="text-muted-foreground text-lg mb-2">
+            Unlike traditional campaigns, we combine direct marketing with <strong>platform-based visibility</strong>.
+          </p>
+          <p className="text-muted-foreground mb-6">
+            Your campaign is not only <em>sent</em> to users — it is also <strong>seen by people actively searching</strong> for products and services.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            {[
+              "Featured listings in high-traffic categories",
+              "Banner placements across the platform",
+              "Exposure to high-intent audiences",
+              "Continuous awareness — even after campaigns end",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2 p-3 rounded-lg bg-card border border-border">
+                <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                <span className="text-sm text-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="p-4 rounded-xl bg-accent/10 border border-accent/20">
+            <p className="text-sm font-medium text-foreground text-center">
+              💡 No other marketing provider in Sri Lanka offers this level of integrated platform exposure.
+            </p>
+          </div>
+        </div>
+      </SectionBlock>
+
+      {/* ─── 5. TRADITIONAL VS MULTI-CHANNEL ─── */}
+      <SectionBlock>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">Traditional Marketing vs Multi-Channel Campaigns</h2>
+        <div className="rounded-2xl overflow-hidden border border-border shadow-card max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 bg-muted/50">
+            <div className="p-4 text-center text-xs font-bold uppercase tracking-wider text-muted-foreground flex items-center justify-center gap-2">
+              <X className="w-4 h-4 text-destructive" /> Traditional Marketing
+            </div>
+            <div className="p-4 text-center text-xs font-bold uppercase tracking-wider text-accent flex items-center justify-center gap-2">
+              <Check className="w-4 h-4" /> Buzz Connect Campaigns
+            </div>
+          </div>
+          {traditionalVsUs.map((row, i) => (
+            <div key={i} className={`grid grid-cols-2 border-t border-border ${i % 2 === 0 ? "bg-card" : "bg-muted/20"}`}>
+              <div className="p-4 text-sm text-muted-foreground border-r border-border">{row.trad}</div>
+              <div className="p-4 text-sm font-medium text-foreground">{row.buzz}</div>
+            </div>
+          ))}
+        </div>
+      </SectionBlock>
+
+      {/* ─── 6. PROCESS FLOW ─── */}
+      <SectionBlock>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">How Our Multi-Channel Campaign Works</h2>
+        <p className="text-muted-foreground text-center mb-8">Simple, fast, effective.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { icon: Target, title: "Select Audience", desc: "Choose your target audience by industry & category", step: 1 },
+            { icon: Rocket, title: "Launch Campaign", desc: "We execute across Email, SMS, WhatsApp & Findit.lk", step: 2 },
+            { icon: Mail, title: "Reach Customers", desc: "Your message reaches hundreds of thousands instantly", step: 3 },
+            { icon: BarChart3, title: "Capture Leads", desc: "Track engagement, inquiries & conversions", step: 4 },
+          ].map(({ icon: Icon, title, desc, step }) => (
+            <div key={title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center relative">
+              <span className="absolute top-3 right-3 text-xs font-bold text-accent bg-accent/10 px-2 py-1 rounded-full">Step {step}</span>
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Icon className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="font-heading font-bold text-foreground mb-2">{title}</h3>
+              <p className="text-sm text-muted-foreground">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </SectionBlock>
+
+      {/* ─── 7. WHO THIS IS FOR ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Who Should Use Multi-Channel Campaigns?</h2>
+        <p className="text-muted-foreground mb-6">If you need fast results, this is the ideal solution.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries" },
+            { icon: Home, label: "Real Estate Companies", result: "→ Property leads" },
+            { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales" },
+            { icon: ShoppingCart, label: "E-commerce & Retail", result: "→ Quick sales" },
+            { icon: Building2, label: "Hotels & Travel", result: "→ Bookings" },
+            { icon: Rocket, label: "SMEs & Corporates", result: "→ Brand awareness" },
+          ].map(({ icon: Icon, label, result }) => (
+            <div key={label} className="flex items-center gap-4 p-4 rounded-xl bg-muted/40 border border-border">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <span className="text-sm font-semibold text-foreground">{label}</span>
+                <span className="text-sm text-accent font-medium ml-2">{result}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </SectionBlock>
+
+      {/* ─── 8. PACKAGES ─── */}
+      <SectionBlock>
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Compare & Choose</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Our Multi-Channel Advertising Packages in Sri Lanka
+            Our Multi-Channel Advertising Packages
           </h2>
           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Run high-impact campaigns across SMS, Email, WhatsApp &amp; Findit.lk with fully managed execution by Buzz Connect.
+            Run high-impact campaigns across SMS, Email, WhatsApp &amp; Findit.lk with fully managed execution.
           </p>
         </div>
+        <ComparisonTable title="SMS Marketing Packages" subtitle="A cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
+        <ComparisonTable title="WhatsApp Marketing Packages" subtitle="Engage customers directly with high open and response rates" features={waFeatures} emoji="💬" />
+      </SectionBlock>
 
-        <ComparisonTable
-          title="SMS Marketing Packages"
-          subtitle="A cost-effective way to reach large audiences instantly"
-          features={smsFeatures}
-          emoji="📱"
-        />
-
-        <ComparisonTable
-          title="WhatsApp Marketing Packages"
-          subtitle="Engage customers directly with high open and response rates"
-          features={waFeatures}
-          emoji="💬"
-        />
-      </motion.div>
-
-      {/* Need Help Choosing */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 p-8 rounded-2xl bg-accent/10 border border-accent/20 text-center max-w-3xl mx-auto"
-      >
-        <h3 className="font-heading text-xl font-bold text-foreground mb-2">🚀 Need Help Choosing the Right Package?</h3>
-        <p className="text-muted-foreground text-sm mb-4">Chat with our team and get a custom campaign recommendation instantly.</p>
-        <a
-          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20marketing%20package."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all"
-        >
-          Chat on WhatsApp
-          <ArrowRight className="w-4 h-4" />
-        </a>
-      </motion.div>
-
-      {/* Benefits */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Benefits of Multi Channel Marketing in Sri Lanka</h2>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* Process */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our Multi Channel Campaign Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
+      {/* ─── 9. TRUST SIGNALS ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-card border border-border shadow-card">
+          <div className="flex items-center gap-3 mb-6">
+            <Shield className="w-7 h-7 text-primary" />
+            <h2 className="font-heading text-2xl font-bold text-foreground">Why Businesses Choose Buzz Connect</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "Proven multi-channel marketing strategy",
+              "350,000+ segmented audience database",
+              "Campaign launch within 48–72 hours",
+              "Exclusive Findit.lk platform integration",
+              "End-to-end campaign management",
+              "Affordable packages for every business size",
+              "Industry-specific audience targeting",
+              "Detailed performance tracking & reports",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 p-3 rounded-lg bg-muted/30">
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                <span className="text-sm text-foreground">{item}</span>
               </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground mt-6 text-center italic">
+            "Unlike typical agencies, Buzz Connect combines Email, SMS, WhatsApp &amp; Findit.lk into one powerful campaign system."
+          </p>
         </div>
-      </motion.div>
+      </SectionBlock>
 
-      {/* Use Cases */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Should Use Multi Channel Marketing?</h2>
-        <p className="text-muted-foreground mb-6">Our solutions are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
+      {/* ─── 10. URGENCY ─── */}
+      <SectionBlock className="max-w-3xl mx-auto">
+        <div className="p-6 rounded-2xl bg-destructive/5 border border-destructive/20 text-center">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <AlertTriangle className="w-5 h-5 text-destructive" />
+            <h3 className="font-heading text-lg font-bold text-foreground">Limited Campaign Slots Available</h3>
+          </div>
+          <p className="text-sm text-muted-foreground mb-4">
+            To maintain campaign performance, we only run a limited number of campaigns each week. Secure your slot early to avoid delays.
+          </p>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20secure%20a%20campaign%20slot." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-destructive text-destructive-foreground font-bold text-sm hover:bg-destructive/90 transition-all">
+            Secure Your Slot Now <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
-      </motion.div>
+      </SectionBlock>
 
-      {/* Findit.lk Advantage */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 p-8 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <Globe className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Extended Reach with Findit.lk</h2>
-        </div>
-        <p className="text-muted-foreground leading-relaxed mb-4">
-          Buzz Connect integrates campaigns with <strong>Findit.lk</strong>, one of Sri Lanka's leading online promotion platforms, allowing businesses to reach a massive audience actively searching for deals and services.
-        </p>
-        <ul className="space-y-2">
-          {["Higher visibility", "Longer exposure duration", "Better engagement rates", "Increased lead generation"].map((item) => (
-            <li key={item} className="flex items-center gap-2 text-foreground text-sm">
-              <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* FAQ */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
+      {/* ─── FAQ ─── */}
+      <SectionBlock className="max-w-4xl mx-auto">
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Multi Channel Marketing Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (
@@ -398,34 +404,25 @@ const SpecialPackages = () => {
             </details>
           ))}
         </div>
-      </motion.div>
+      </SectionBlock>
 
-      {/* Final CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-center p-10 rounded-2xl gradient-hero"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Multi-Channel Campaign Today</h2>
+      {/* ─── FINAL CTA ─── */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center p-10 rounded-2xl gradient-hero">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">
+          Launch Your Campaign in 48 Hours
+        </h2>
         <p className="text-primary-foreground/80 mb-4 max-w-2xl mx-auto">
-          Promote your business through SMS, WhatsApp, Email &amp; Findit.lk and connect with thousands of potential customers across Sri Lanka.
+          Get instant awareness across Sri Lanka through SMS, WhatsApp, Email &amp; Findit.lk. Connect with hundreds of thousands of potential customers.
         </p>
         <div className="flex flex-wrap justify-center gap-4 text-primary-foreground/70 text-sm mb-6">
           <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> Fast execution</span>
           <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> Multi-channel reach</span>
-          <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> High visibility placements</span>
+          <span className="flex items-center gap-1"><Check className="w-4 h-4 text-accent" /> 1.2M+ audience</span>
         </div>
-        <a
-          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20a%20multi-channel%20campaign."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-primary font-bold hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
-        >
-          Get Started with Buzz Connect
-          <ArrowRight className="w-4 h-4" />
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20multi-channel%20campaign." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-primary font-bold hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105">
+          Chat on WhatsApp Now <ArrowRight className="w-4 h-4" />
         </a>
-        <p className="text-primary-foreground/50 text-xs mt-3">Start your campaign in 48–72 hours</p>
+        <p className="text-primary-foreground/50 text-xs mt-3">Limited slots available — secure yours today</p>
       </motion.div>
     </ServicePageLayout>
   );
