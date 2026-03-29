@@ -58,13 +58,13 @@ const LogoCarousel = () => {
 
   const renderRow = (items: typeof logos, isReverse: boolean = false) => (
     <div className="relative mb-4 last:mb-0 overflow-hidden">
-      <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-r from-background to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-background to-transparent z-10" />
+      <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-muted/80 to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-muted/80 to-transparent z-10" />
       <div className={`flex items-center w-max hover:[animation-play-state:paused] ${isReverse ? 'animate-scroll-reverse' : 'animate-scroll'}`}>
         {items.map((logo, i) => (
           <div
             key={`${logo.name}-${i}`}
-            className="flex-shrink-0 mx-3 sm:mx-6 flex items-center justify-center h-16 w-32 sm:h-20 sm:w-40 rounded-lg bg-card p-3 sm:p-4 shadow-sm border border-border"
+            className="flex-shrink-0 mx-3 sm:mx-5 flex items-center justify-center h-16 w-32 sm:h-20 sm:w-40 rounded-xl bg-card p-3 sm:p-4 shadow-sm border border-border hover:border-accent/20 hover:shadow-card transition-all duration-300"
           >
             <img
               src={logo.src}
@@ -79,16 +79,19 @@ const LogoCarousel = () => {
   );
 
   return (
-    <section className="py-12 bg-background overflow-hidden">
-      <div className="container mx-auto px-4 mb-8">
-        <motion.h2
-          className="text-center text-lg font-semibold text-muted-foreground uppercase tracking-wider"
+    <section className="py-14 sm:py-20 bg-muted/50 overflow-hidden">
+      <div className="container mx-auto px-4 mb-10">
+        <motion.div
+          className="text-center"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Trusted by Leading Brands in Sri Lanka
-        </motion.h2>
+          <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-bold tracking-wider uppercase mb-4">Our Clients</span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+            Trusted by Leading Brands in Sri Lanka
+          </h2>
+        </motion.div>
       </div>
       {renderRow(doubledRow1)}
       {renderRow(doubledRow2, true)}

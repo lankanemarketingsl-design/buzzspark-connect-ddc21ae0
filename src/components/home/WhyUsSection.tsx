@@ -26,16 +26,18 @@ const reasons = [
 
 const WhyUsSection = () => {
   return (
-    <section id="whyus" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="whyus" className="py-20 sm:py-24 bg-background relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/[0.02] rounded-full blur-3xl" />
+
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          className="text-center mb-14"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why Choose Us</span>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mt-2">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-bold tracking-wider uppercase mb-4">Why Choose Us</span>
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-2">
             Why Buzz Connect?
           </h2>
         </motion.div>
@@ -48,12 +50,12 @@ const WhyUsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center p-8 rounded-xl bg-card shadow-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all duration-300 group"
+              className="text-center p-8 rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 hover:shadow-card-hover transition-all duration-500 group hover:-translate-y-1"
             >
-              <div className="w-14 h-14 rounded-full gradient-accent flex items-center justify-center mx-auto mb-5 group-hover:shadow-glow transition-shadow">
-                <r.icon className="w-7 h-7 text-primary" />
+              <div className="w-16 h-16 rounded-2xl gradient-accent flex items-center justify-center mx-auto mb-6 group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
+                <r.icon className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-heading font-semibold text-foreground mb-3">{r.title}</h3>
+              <h3 className="font-heading font-bold text-foreground mb-3 text-lg">{r.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{r.desc}</p>
             </motion.div>
           ))}
@@ -61,14 +63,17 @@ const WhyUsSection = () => {
 
         {/* FAQ Section */}
         <motion.div
-          className="mt-20 max-w-3xl mx-auto"
+          className="mt-24 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="font-heading text-2xl font-bold text-foreground text-center mb-8">
-            Frequently Asked Questions
-          </h3>
+          <div className="text-center mb-10">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-bold tracking-wider uppercase mb-4">FAQ</span>
+            <h3 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">
+              Frequently Asked Questions
+            </h3>
+          </div>
           <div className="space-y-4">
             {[
               {
@@ -88,9 +93,9 @@ const WhyUsSection = () => {
                 a: "Buzz Connect offers one of the largest marketing databases and cost-effective solutions in Sri Lanka.",
               },
             ].map((faq) => (
-              <div key={faq.q} className="bg-card rounded-xl p-6 border border-border hover:border-accent/30 transition-colors">
-                <h4 className="font-heading font-semibold text-foreground mb-2">{faq.q}</h4>
-                <p className="text-sm text-muted-foreground">{faq.a}</p>
+              <div key={faq.q} className="bg-card rounded-xl p-6 border border-border hover:border-accent/20 transition-all duration-300 hover:shadow-card">
+                <h4 className="font-heading font-bold text-foreground mb-2">{faq.q}</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
