@@ -30,6 +30,8 @@ const allArticles = [
   { title: "Digital Advertising Sri Lanka: Complete Guide", path: "/digital-advertising-sri-lanka-complete-guide" },
   { title: "Online vs Traditional Advertising Sri Lanka", path: "/online-vs-traditional-advertising-sri-lanka" },
   { title: "Google Ads Sri Lanka Cost Guide", path: "/google-ads-sri-lanka-cost-guide" },
+  { title: "Multi-Channel vs Facebook Campaigns Sri Lanka", path: "/multi-channel-vs-facebook-sri-lanka" },
+  { title: "Findit.lk + Email Marketing Conversions", path: "/finditlk-email-marketing-conversions-sri-lanka" },
 ];
 
 interface RelatedArticlesProps {

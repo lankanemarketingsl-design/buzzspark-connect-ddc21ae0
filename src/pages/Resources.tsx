@@ -32,7 +32,23 @@ import articleEmailGuide from "@/assets/blog/article-email-guide-sri-lanka.jpg";
 import articleEmailPricing from "@/assets/blog/article-email-pricing-roi.jpg";
 import articleEmailIndustries from "@/assets/blog/article-email-industry-use-cases.jpg";
 import articleEmailVsSocial from "@/assets/blog/article-email-vs-social-media.jpg";
+import articleMultichannelVsFb from "@/assets/blog/article-multichannel-vs-facebook.jpg";
+import articleFinditlkEmail from "@/assets/blog/article-finditlk-email-conversions.jpg";
 const articles = [
+  {
+    title: "Why Multi-Channel Marketing Is More Effective Than Facebook Campaigns in Sri Lanka",
+    date: "Mar 29, 2026",
+    excerpt: "Stop depending on Facebook alone. Discover how combining Email, SMS, WhatsApp & Findit.lk delivers superior reach, engagement, and ROI for Sri Lankan businesses.",
+    path: "/multi-channel-vs-facebook-sri-lanka",
+    image: articleMultichannelVsFb,
+  },
+  {
+    title: "How Findit.lk + Email Marketing Increases Conversions in Sri Lanka",
+    date: "Mar 29, 2026",
+    excerpt: "Combine high-intent Findit.lk search traffic with targeted email campaigns for maximum lead generation across 10+ industries in Sri Lanka.",
+    path: "/finditlk-email-marketing-conversions-sri-lanka",
+    image: articleFinditlkEmail,
+  },
   {
     title: "Complete Guide to Email Marketing in Sri Lanka (2026)",
     date: "Mar 29, 2026",

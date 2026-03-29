@@ -49,6 +49,8 @@ import EmailMarketingGuide from "./pages/articles/EmailMarketingGuide.tsx";
 import EmailMarketingPricing from "./pages/articles/EmailMarketingPricing.tsx";
 import EmailMarketingIndustries from "./pages/articles/EmailMarketingIndustries.tsx";
 import EmailVsSocialMedia from "./pages/articles/EmailVsSocialMedia.tsx";
+import MultiChannelVsFacebook from "./pages/articles/MultiChannelVsFacebook.tsx";
+import FinditlkEmailConversions from "./pages/articles/FinditlkEmailConversions.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -128,6 +130,8 @@ const App = () => (
               <Route path="/email-marketing-pricing-sri-lanka" element={<EmailMarketingPricing />} />
               <Route path="/email-marketing-industries-sri-lanka" element={<EmailMarketingIndustries />} />
               <Route path="/email-marketing-vs-social-media-sri-lanka" element={<EmailVsSocialMedia />} />
+              <Route path="/multi-channel-vs-facebook-sri-lanka" element={<MultiChannelVsFacebook />} />
+              <Route path="/finditlk-email-marketing-conversions-sri-lanka" element={<FinditlkEmailConversions />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
