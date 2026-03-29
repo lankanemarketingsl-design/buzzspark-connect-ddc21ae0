@@ -77,8 +77,8 @@ const OnlineVsTraditionalAdvertising = () => {
 
             <p className="mt-8">
               👉 Switch to effective online advertising with{" "}
-              <Link to="/online-advertising-sri-lanka" className="text-accent hover:underline font-semibold">
-                BuzzConnect's Advertising Solutions in Sri Lanka
+              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">
+                advertising in Sri Lanka
               </Link>
             </p>
           </div>
