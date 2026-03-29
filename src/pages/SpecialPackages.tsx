@@ -100,8 +100,8 @@ const waFeatures: FeatureRow[] = [
   { label: "Facebook Boosting", silver: true, gold: true, platinum: true },
 ];
 
-const tierLabels = ["Budget", "Silver", "Gold", "Platinum"];
-const tierKeys = ["budget", "silver", "gold", "platinum"] as const;
+const tierLabels = ["Silver", "Gold", "Platinum"];
+const tierKeys = ["silver", "gold", "platinum"] as const;
 
 const faqs = [
   { q: "What is multi channel marketing?", a: "It is a strategy that uses multiple platforms like email, SMS, WhatsApp, and web ads to reach customers simultaneously for maximum engagement." },
