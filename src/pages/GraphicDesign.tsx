@@ -1,27 +1,10 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { PenTool, Film, Palette, FileText, Image, Layout, Smartphone, BookOpen, Award, CreditCard, Edit, Type, HelpCircle, CheckCircle, Tag, Box } from "lucide-react";
-
-const services = [
-  { icon: Image, title: "Artwork/E-flyer designing", desc: "We design professional e-flyers for business organizations and individuals. Increase the effectiveness of your marketing campaigns by sending attractive e-flyers.", price: "Price - LKR 4000" },
-  { icon: Layout, title: "Business card designing", desc: "Get professional business cards designs for your business. We design customized, affordable business card designs." },
-  { icon: Film, title: "Short Animated video creation", desc: "Want to tell your story of your business or services? We can help you with that with animated explainer videos. We make quality animation videos that best explain your company story. Make your story heard." },
-  { icon: Palette, title: "Logo designing", desc: "Excellent custom logo designs to represent your business. We create minimalist, eye catching logo designs that get attention for your business" },
-  { icon: FileText, title: "Letterhead designing", desc: "Professional letterhead designs to represent powerful brand image. Single/Double Sided letterhead designs for an affordable rate." },
-  { icon: PenTool, title: "Hording designing", desc: "Coordinate with us for professional hording designs. We will provide superior, eye catching hording designs as per information given by the clients." },
-  { icon: Award, title: "Name boards/ Sign boards designing", desc: "Get business sign boards and indoor sign boards. We do best name boards for an affordable price." },
-  { icon: CreditCard, title: "Invitation designing", desc: "Offering customized Invitation card designing services to suit any event or occasion." },
-  { icon: BookOpen, title: "Brochure & Leaflet designing", desc: "Get attractive broacher design layouts. We have personalized services to help you make your own brochures. Get it design online today." },
-  { icon: Type, title: "Company profiles creation", desc: "We will help you to create a professional company profiles to represent the face of your company" },
-  { icon: Edit, title: "Creative power point presentation design", desc: "We will create a polished and professional presentation for you" },
-  { icon: Image, title: "Photo Editing", desc: "Professional photo editing services" },
-  { icon: Smartphone, title: "Social media post designing", desc: "We will create advertising friendly beautiful social media post for your business" },
-  { icon: Layout, title: "Menu Card Design", desc: "We will create Attractive menu card for your business" },
-  { icon: Tag, title: "Label Designing", desc: "Professional product label designs for food, beverages, cosmetics, and retail products. Eye-catching labels that stand out on shelves and attract customers." },
-  { icon: Box, title: "Package Designing", desc: "Custom product packaging designs that protect your product and promote your brand. Creative packaging solutions for all industries." },
-];
+import { HelpCircle, CheckCircle } from "lucide-react";
+import { graphicDesignServices } from "@/data/graphicDesignServices";
+import { Link } from "react-router-dom";
 
 const moreCategories = [
   {
@@ -135,24 +118,26 @@ const GraphicDesign = () => {
       {/* Main Services */}
       <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Graphic Designing Services in Sri Lanka</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        {services.map((s, i) => (
-          <motion.div
-            key={s.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
-            className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 transition-all"
-          >
-            <div className="w-11 h-11 rounded-lg gradient-accent flex items-center justify-center mb-4">
-              <s.icon className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-            <p className="text-sm text-muted-foreground">{s.desc}</p>
-            {s.price && (
-              <div className="mt-3 inline-block px-3 py-1 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{s.price}</div>
-            )}
-          </motion.div>
+        {graphicDesignServices.map((s, i) => (
+          <Link to={`/${s.slug}`} key={s.slug}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+              className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 transition-all h-full"
+            >
+              <div className="w-11 h-11 rounded-lg gradient-accent flex items-center justify-center mb-4">
+                <s.icon className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">{s.cardTitle}</h3>
+              <p className="text-sm text-muted-foreground">{s.cardDesc}</p>
+              {s.price && (
+                <div className="mt-3 inline-block px-3 py-1 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{s.price}</div>
+              )}
+              <span className="inline-flex items-center mt-3 text-sm font-bold text-accent">Learn More →</span>
+            </motion.div>
+          </Link>
         ))}
       </div>
 

@@ -71,6 +71,7 @@ import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
 import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
 import EventMarketing from "./pages/EventMarketing.tsx";
+import GraphicDesignService from "./pages/GraphicDesignService.tsx";
 
 const queryClient = new QueryClient();
 
@@ -93,6 +94,23 @@ const App = () => (
               <Route path="/special-advertising-packages" element={<SpecialPackages />} />
               <Route path="/online-advertising-sri-lanka" element={<OnlineAdvertising />} />
               <Route path="/graphic-designing-in-sri-lanka" element={<GraphicDesign />} />
+              {/* Graphic Design sub-service pages */}
+              <Route path="/e-flyer-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/business-card-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/animated-video-creation-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/logo-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/letterhead-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/hoarding-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/signboard-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/invitation-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/brochure-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/company-profile-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/presentation-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/photo-editing-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/social-media-post-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/menu-card-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/label-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/package-design-sri-lanka" element={<GraphicDesignService />} />
               <Route path="/seo-sri-lanka" element={<SeoServices />} />
               <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
               <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />
