@@ -1,4 +1,4 @@
-import { useParams, Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
@@ -8,7 +8,8 @@ import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
 
 const GraphicDesignService = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const slug = location.pathname.replace(/^\//, "");
   const service = graphicDesignServices.find((s) => s.slug === slug);
 
   const jsonLd = useMemo(() => {
