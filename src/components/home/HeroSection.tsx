@@ -57,9 +57,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Email Marketing Sri Lanka |{" "}
-            <span className="text-gradient-hero">SMS &amp; WhatsApp</span>{" "}
-            Marketing Company
+            Sri Lanka's #1{" "}
+            <span className="text-gradient-hero">Multi-Channel</span>{" "}
+            Marketing Platform
           </motion.h1>
 
           <motion.p
