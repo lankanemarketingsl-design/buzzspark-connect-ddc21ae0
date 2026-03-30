@@ -2,7 +2,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useEffect, useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { PenTool, Film, Palette, FileText, Image, Layout, Smartphone, BookOpen, Award, CreditCard, Edit, Type, HelpCircle, CheckCircle } from "lucide-react";
+import { PenTool, Film, Palette, FileText, Image, Layout, Smartphone, BookOpen, Award, CreditCard, Edit, Type, HelpCircle, CheckCircle, Tag, Box } from "lucide-react";
 
 const services = [
   { icon: Image, title: "Artwork/E-flyer designing", desc: "We design professional e-flyers for business organizations and individuals. Increase the effectiveness of your marketing campaigns by sending attractive e-flyers.", price: "Price - LKR 4000" },
