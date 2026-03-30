@@ -14,24 +14,27 @@ const GraphicDesignService = () => {
   const jsonLd = useMemo(() => {
     if (!service) return [];
     return [
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: service.faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: service.title,
-      provider: { "@type": "Organization", name: "Buzz Connect" },
-      areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: service.metaDescription,
-    },
-  ], [service]);
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: service.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: service.title,
+        provider: { "@type": "Organization", name: "Buzz Connect" },
+        areaServed: { "@type": "Country", name: "Sri Lanka" },
+        description: service.metaDescription,
+      },
+    ];
+  }, [service]);
+
+  if (!service) return <Navigate to="/graphic-designing-in-sri-lanka" replace />;
 
   return (
     <ServicePageLayout
