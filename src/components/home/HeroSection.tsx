@@ -20,7 +20,7 @@ const channels = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[65vh] sm:min-h-[85vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[50vh] sm:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background layers */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
@@ -74,7 +74,7 @@ const HeroSection = () => {
         <Zap size={38} strokeWidth={1.5} />
       </motion.div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-12 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 py-8 sm:py-14">
         <div className="max-w-4xl">
           {/* Badge */}
           <motion.div
@@ -82,7 +82,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/10 text-accent border border-accent/20 mb-6 sm:mb-8 backdrop-blur-md">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-accent/10 text-accent border border-accent/20 mb-4 sm:mb-5 backdrop-blur-md">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               No.1 Multi-Channel Marketing in Sri Lanka
             </span>
@@ -90,7 +90,7 @@ const HeroSection = () => {
 
           {/* Headline */}
           <motion.h1
-            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-[1.05] mb-6 sm:mb-8"
+            className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.08] mb-4 sm:mb-5"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -103,7 +103,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <motion.p
-            className="text-sm sm:text-base md:text-lg text-primary-foreground/65 mb-8 sm:mb-10 max-w-2xl leading-relaxed"
+            className="text-sm sm:text-base text-primary-foreground/65 mb-5 sm:mb-6 max-w-2xl leading-relaxed"
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -113,7 +113,7 @@ const HeroSection = () => {
 
           {/* Channel pills */}
           <motion.div
-            className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10"
+            className="flex flex-wrap gap-2 sm:gap-3 mb-5 sm:mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.35 }}
@@ -153,7 +153,7 @@ const HeroSection = () => {
 
           {/* Stats */}
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-10 sm:mt-14 pt-8 sm:pt-10 border-t border-primary-foreground/8"
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-primary-foreground/8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
