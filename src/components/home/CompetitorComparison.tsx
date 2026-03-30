@@ -19,76 +19,59 @@ const features = [
 ];
 
 const OtherIcon = ({ status }: { status: string }) => {
-  if (status === "no") return <X className="w-4 h-4 text-red-500" />;
-  return <AlertTriangle className="w-4 h-4 text-amber-500" />;
+  if (status === "no") return <X className="w-3.5 h-3.5 text-red-500" />;
+  return <AlertTriangle className="w-3.5 h-3.5 text-amber-500" />;
 };
 
 const CompetitorComparison = () => {
   return (
-    <section className="py-20 bg-[hsl(var(--navy))] relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-accent/5 -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 rounded-full bg-accent/5 translate-x-1/3 translate-y-1/3" />
+    <section className="py-16 sm:py-20 bg-[hsl(var(--navy))] relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-72 h-72 rounded-full bg-accent/5 -translate-x-1/2 -translate-y-1/2" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">
-            The Buzz Connect Difference
-          </span>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mt-2">
-            Why Businesses Choose Buzz Connect Over Others
+          <span className="text-xs font-semibold text-accent uppercase tracking-wider">The Buzz Connect Difference</span>
+          <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white mt-2">
+            Why Businesses Choose Us
           </h2>
-          <p className="text-white/60 mt-3 max-w-xl mx-auto">
+          <p className="text-white/50 mt-2 max-w-lg mx-auto text-sm">
             Compare features that actually generate leads &amp; ROI
           </p>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          className="max-w-3xl mx-auto"
         >
-          {/* Table */}
-          <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+          <div className="rounded-xl overflow-hidden border border-white/10 shadow-xl">
             <div className="overflow-x-auto">
-              <div className="min-w-[640px]">
-                {/* Header */}
+              <div className="min-w-[580px]">
                 <div className="grid grid-cols-[2fr_1.5fr_1.5fr]">
-                  <div className="p-4 bg-white/5 text-white/50 text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                    Feature
-                  </div>
-                  <div className="p-4 bg-accent text-primary text-center text-xs sm:text-sm font-bold uppercase tracking-wider">
-                    Buzz Connect
-                  </div>
-                  <div className="p-4 bg-white/5 text-white/50 text-center text-xs sm:text-sm font-semibold uppercase tracking-wider">
-                    Other Providers
-                  </div>
+                  <div className="p-3 bg-white/5 text-white/40 text-[11px] font-semibold uppercase tracking-wider">Feature</div>
+                  <div className="p-3 bg-accent text-primary text-center text-[11px] font-bold uppercase tracking-wider">Buzz Connect</div>
+                  <div className="p-3 bg-white/5 text-white/40 text-center text-[11px] font-semibold uppercase tracking-wider">Others</div>
                 </div>
 
-                {/* Rows */}
                 {features.map((row, i) => (
                   <div
                     key={row.feature}
-                    className={`grid grid-cols-[2fr_1.5fr_1.5fr] border-t border-white/5 ${
-                      i % 2 === 0 ? "bg-white/[0.02]" : "bg-transparent"
-                    } hover:bg-white/[0.05] transition-colors`}
+                    className={`grid grid-cols-[2fr_1.5fr_1.5fr] border-t border-white/5 ${i % 2 === 0 ? "bg-white/[0.02]" : ""} hover:bg-white/[0.04] transition-colors`}
                   >
-                    <div className="p-3 sm:p-4 text-white/90 text-xs sm:text-sm font-medium">
-                      {row.feature}
+                    <div className="p-2.5 sm:p-3 text-white/80 text-xs font-medium">{row.feature}</div>
+                    <div className="p-2.5 sm:p-3 bg-accent/[0.05] flex items-center justify-center gap-1.5 border-x border-accent/10">
+                      <Check className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
+                      <span className="text-white text-xs font-medium">{row.buzz}</span>
                     </div>
-                    <div className="p-3 sm:p-4 bg-accent/[0.06] flex items-center justify-center gap-1.5 border-x border-accent/10">
-                      <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                      <span className="text-white text-xs sm:text-sm font-medium">{row.buzz}</span>
-                    </div>
-                    <div className="p-3 sm:p-4 flex items-center justify-center gap-1.5">
+                    <div className="p-2.5 sm:p-3 flex items-center justify-center gap-1.5">
                       <OtherIcon status={row.otherStatus} />
-                      <span className="text-white/40 text-xs sm:text-sm">{row.other}</span>
+                      <span className="text-white/35 text-xs">{row.other}</span>
                     </div>
                   </div>
                 ))}
@@ -96,35 +79,30 @@ const CompetitorComparison = () => {
             </div>
           </div>
 
-          {/* USP Punchline */}
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="text-center text-white/50 text-sm sm:text-base mt-8 max-w-2xl mx-auto italic"
+            className="text-center text-white/40 text-xs mt-6 max-w-xl mx-auto italic"
           >
-            "Unlike typical agencies, Buzz Connect combines Email, SMS, WhatsApp &amp; Findit.lk into one powerful campaign system."
+            "Unlike typical agencies, Buzz Connect combines Email, SMS, WhatsApp &amp; Findit.lk into one powerful system."
           </motion.p>
 
-          {/* CTA */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="text-center mt-8"
+            className="text-center mt-6"
           >
             <a
               href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20proposal%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-primary font-bold text-sm sm:text-base hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/25 hover:scale-105"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-accent text-primary font-bold text-sm hover:bg-accent/90 transition-all shadow-lg hover:shadow-accent/20 hover:scale-105"
             >
-              Get Free Proposal
-              <ArrowRight className="w-4 h-4" />
+              Get Free Proposal <ArrowRight className="w-4 h-4" />
             </a>
-            <p className="text-white/30 text-xs mt-3">Start your campaign in 48 hours</p>
+            <p className="text-white/25 text-[10px] mt-2">Start your campaign in 48 hours</p>
           </motion.div>
         </motion.div>
       </div>
