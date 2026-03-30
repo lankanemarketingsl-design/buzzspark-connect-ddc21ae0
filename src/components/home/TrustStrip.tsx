@@ -11,28 +11,23 @@ const badges = [
 
 const TrustStrip = () => {
   return (
-    <section className="py-5 bg-primary text-primary-foreground">
+    <section className="py-4 bg-primary text-primary-foreground border-b border-primary-foreground/5">
       <div className="container mx-auto px-4">
-        <motion.div
-          className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 sm:gap-x-12"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 sm:gap-x-12">
           {badges.map((b, i) => (
             <motion.div
               key={b.label}
               className="flex items-center gap-2"
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
+              transition={{ delay: i * 0.05 }}
             >
-              <b.icon className="w-4 h-4 text-accent" />
-              <span className="text-xs sm:text-sm font-medium whitespace-nowrap text-primary-foreground/90">{b.label}</span>
+              <b.icon className="w-3.5 h-3.5 text-accent" />
+              <span className="text-[11px] sm:text-xs font-medium whitespace-nowrap text-primary-foreground/80">{b.label}</span>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
