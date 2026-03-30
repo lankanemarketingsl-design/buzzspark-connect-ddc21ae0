@@ -154,6 +154,109 @@ const GraphicDesign = () => {
         ))}
       </div>
 
+      {/* Design Packages */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2">Graphic Design Packages Sri Lanka</h2>
+        <p className="text-muted-foreground mb-8">Choose the right design package for your business needs</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            {
+              name: "Starter",
+              price: "LKR 15,000",
+              tag: "Best for Small Businesses",
+              color: "from-blue-500/10 to-blue-600/5",
+              border: "border-blue-500/20",
+              items: [
+                "1 Logo Design (3 concepts)",
+                "Business Card Design (single side)",
+                "1 Social Media Post Design",
+                "1 E-Flyer Design",
+                "2 Revisions per design",
+                "High-resolution files (JPG, PNG)",
+              ],
+            },
+            {
+              name: "Professional",
+              price: "LKR 35,000",
+              tag: "Most Popular",
+              popular: true,
+              color: "from-accent/15 to-accent/5",
+              border: "border-accent/30",
+              items: [
+                "1 Logo Design (5 concepts)",
+                "Business Card Design (double side)",
+                "Letterhead Design",
+                "3 Social Media Post Designs",
+                "2 E-Flyer Designs",
+                "1 Brochure Design (bi-fold)",
+                "Company Profile (up to 8 pages)",
+                "Unlimited revisions",
+                "Source files (AI, PSD, PDF)",
+              ],
+            },
+            {
+              name: "Enterprise",
+              price: "LKR 75,000",
+              tag: "Complete Brand Package",
+              color: "from-purple-500/10 to-purple-600/5",
+              border: "border-purple-500/20",
+              items: [
+                "Full Brand Identity Pack",
+                "Logo + Brand Guidelines",
+                "Business Card + Letterhead + Envelope",
+                "5 Social Media Post Designs",
+                "3 E-Flyer Designs",
+                "Brochure Design (tri-fold)",
+                "Company Profile (up to 16 pages)",
+                "1 Short Animated Video (30s)",
+                "Menu Card / Product Catalog",
+                "Unlimited revisions",
+                "All source files included",
+              ],
+            },
+          ].map((pkg) => (
+            <div
+              key={pkg.name}
+              className={`relative p-6 rounded-2xl bg-gradient-to-b ${pkg.color} border ${pkg.border} shadow-card flex flex-col`}
+            >
+              {pkg.popular && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider">
+                  Most Popular
+                </span>
+              )}
+              <h3 className="font-heading text-lg font-bold text-foreground mb-1">{pkg.name}</h3>
+              <p className="text-xs text-muted-foreground mb-3">{pkg.tag}</p>
+              <div className="text-3xl font-bold text-foreground mb-5">{pkg.price}</div>
+              <ul className="space-y-2.5 mb-6 flex-1">
+                {pkg.items.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-foreground">
+                    <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in the ${pkg.name} Graphic Design Package (${pkg.price}).`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block text-center py-3 rounded-xl font-bold text-sm transition-opacity hover:opacity-90 ${pkg.popular ? 'bg-accent text-accent-foreground' : 'bg-primary text-primary-foreground'}`}
+              >
+                Get Started via WhatsApp
+              </a>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-sm text-muted-foreground mt-6">
+          💡 Need a custom package? <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20a%20custom%20graphic%20design%20package." target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Contact us on WhatsApp</a> for a tailored quote.
+        </p>
+      </motion.div>
+
+
       {/* More Services */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
