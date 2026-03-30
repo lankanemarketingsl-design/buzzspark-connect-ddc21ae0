@@ -68,7 +68,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
           >
-            Buzz Connect is the No.1 email marketing, SMS marketing, and WhatsApp marketing company in Sri Lanka, delivering cost-effective digital and direct marketing solutions for businesses of all sizes.
+            Buzz Connect is a leading multi-channel marketing platform in Sri Lanka, offering Email Marketing, SMS Marketing, and WhatsApp Marketing solutions combined with Findit.lk to help businesses expand reach, improve customer engagement, and drive targeted marketing results.
           </motion.p>
 
           <motion.div
