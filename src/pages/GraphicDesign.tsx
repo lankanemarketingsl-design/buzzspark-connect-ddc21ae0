@@ -118,24 +118,26 @@ const GraphicDesign = () => {
       {/* Main Services */}
       <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Graphic Designing Services in Sri Lanka</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        {services.map((s, i) => (
-          <motion.div
-            key={s.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
-            className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 transition-all"
-          >
-            <div className="w-11 h-11 rounded-lg gradient-accent flex items-center justify-center mb-4">
-              <s.icon className="w-5 h-5 text-primary" />
-            </div>
-            <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
-            <p className="text-sm text-muted-foreground">{s.desc}</p>
-            {s.price && (
-              <div className="mt-3 inline-block px-3 py-1 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{s.price}</div>
-            )}
-          </motion.div>
+        {graphicDesignServices.map((s, i) => (
+          <Link to={`/${s.slug}`} key={s.slug}>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+              className="p-6 rounded-2xl bg-card shadow-card border border-border hover:border-accent/30 transition-all h-full"
+            >
+              <div className="w-11 h-11 rounded-lg gradient-accent flex items-center justify-center mb-4">
+                <s.icon className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">{s.cardTitle}</h3>
+              <p className="text-sm text-muted-foreground">{s.cardDesc}</p>
+              {s.price && (
+                <div className="mt-3 inline-block px-3 py-1 rounded-lg bg-accent/10 text-accent font-semibold text-sm">{s.price}</div>
+              )}
+              <span className="inline-flex items-center mt-3 text-sm font-bold text-accent">Learn More →</span>
+            </motion.div>
+          </Link>
         ))}
       </div>
 
