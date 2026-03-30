@@ -20,7 +20,7 @@ const channels = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[65vh] sm:min-h-[85vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[50vh] sm:min-h-[65vh] flex items-center overflow-hidden">
       {/* Background layers */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
