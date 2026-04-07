@@ -402,13 +402,13 @@ const SmsMarketing = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your SMS Marketing Campaign Today</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Launch Your SMS Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach thousands of customers instantly with Buzz Connect's SMS marketing solutions in Sri Lanka. Contact us today and launch your campaign.
+          Reach Customers Instantly. Get Real Results. From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms.
         </p>
-        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
-        </a>
+        <Link to="/contact-us" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          Start Your SMS Campaign <span className="ml-1">→</span>
+        </Link>
       </motion.div>
       <RelatedArticles currentPath="/sms-marketing" />
     </ServicePageLayout>
