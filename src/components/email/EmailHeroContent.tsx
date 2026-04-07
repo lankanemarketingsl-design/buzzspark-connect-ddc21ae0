@@ -52,7 +52,7 @@ const EmailHeroContent = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <AlertTriangle className="w-7 h-7 text-destructive" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Why Email Marketing Alone Is Not Enough</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Why Traditional Email Marketing Alone Is Not Enough</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-4">
           Most <strong>bulk email marketing</strong> providers in Sri Lanka simply send emails and hope for the best. But the reality is:
