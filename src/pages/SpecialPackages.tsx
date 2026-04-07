@@ -276,6 +276,24 @@ const SpecialPackages = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Price Strip */}
+      <Fade className="mb-8">
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+            <Zap className="w-4 h-4 text-accent" />
+            <span className="text-accent font-bold text-sm">Custom price for your requirements</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Rocket className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">Launch in 48–72 Hours</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Shield className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">Findit.lk Integration</span>
+          </div>
+        </div>
+      </Fade>
+
       {/* ═══ SECTION 1 — TRUST BAR ═══ */}
       <Fade className="mb-16">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-4xl mx-auto">
