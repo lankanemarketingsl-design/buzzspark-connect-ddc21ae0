@@ -245,6 +245,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Careers -->
+  <url>
+    <loc>https://buzzconnect.lk/careers</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Resources Hub -->
   <url>
     <loc>https://buzzconnect.lk/resources</loc>
