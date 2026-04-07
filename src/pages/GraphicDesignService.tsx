@@ -3,7 +3,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
-import { CheckCircle, HelpCircle } from "lucide-react";
+import { CheckCircle, HelpCircle, MapPin } from "lucide-react";
 import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
 
