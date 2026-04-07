@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { CheckCircle, Users, Crown, Target, Briefcase, Smartphone, Zap, BarChart3, Globe, HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket, Stethoscope, Mail, MessageSquare, ArrowRight } from "lucide-react";
+import { CheckCircle, Users, Crown, Target, Briefcase, Smartphone, Globe, HelpCircle, Rocket, Mail, MessageSquare, ArrowRight } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
@@ -52,21 +52,6 @@ const districts = [
 ];
 
 
-const processSteps = [
-  { icon: Target, title: "Select Database", desc: "Select your target database" },
-  { icon: Smartphone, title: "Create Message", desc: "Create your message content" },
-  { icon: Zap, title: "Launch Campaign", desc: "Launch your SMS campaign and reach thousands instantly" },
-  { icon: BarChart3, title: "Track Results", desc: "Track campaign performance" },
-];
-
-const useCases = [
-  { icon: Building2, label: "Hotels & Travel" },
-  { icon: GraduationCap, label: "Education Institutes" },
-  { icon: Home, label: "Real Estate Companies" },
-  { icon: Stethoscope, label: "Healthcare Providers" },
-  { icon: ShoppingCart, label: "Retail Businesses" },
-  { icon: Rocket, label: "SMEs and Corporate Businesses" },
-];
 
 const faqs = [
   { q: "What is SMS marketing in Sri Lanka?", a: "SMS marketing is a direct marketing method that allows businesses to send promotional or informational messages to customers via mobile phones. It's one of the most effective channels in Sri Lanka due to high open rates." },
@@ -100,8 +85,8 @@ const SmsMarketing = () => {
   return (
     <ServicePageLayout
       badge="SMS Marketing Sri Lanka"
-      title="SMS Marketing Sri Lanka That Drives Real Business Results"
-      subtitle="We combine bulk SMS campaigns with multi-channel marketing strategies to increase conversions and ROI for businesses across Sri Lanka."
+      title="SMS Marketing That Reaches Instantly — and Converts"
+      subtitle="Targeted SMS + Multi-Channel Promotion to maximize visibility and engagement"
     >
       <SEOHead
         title="SMS Marketing Sri Lanka | Bulk SMS Campaigns with Multi-Channel Strategy"
@@ -118,46 +103,6 @@ const SmsMarketing = () => {
       {/* 1. SEO Content — Hook & Desire */}
       <SmsHeroContent />
 
-      {/* 2. How It Works — Reduce Friction */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our SMS Marketing Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* 3. Use Cases — Relevance */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Use SMS Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our SMS marketing solutions are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
 
       {/* 4. Databases — The Product */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
@@ -211,16 +156,68 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
-      {/* 6. District Coverage */}
+      {/* 6. District Coverage - Sri Lanka Map Layout */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">District-wise Database</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {districts.map((d) => (
-            <div key={d.name} className="p-4 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="font-heading font-bold text-accent text-lg">{d.count}</div>
-              <div className="text-xs text-muted-foreground mt-1">{d.name}</div>
+        <div className="max-w-5xl mx-auto">
+          {/* Sri Lanka Map Shape Container */}
+          <div className="relative bg-primary/5 border border-primary/20 rounded-3xl p-6 sm:p-10">
+            {/* Northern Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Northern & Eastern</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Jaffna", "Kilinochchi", "Mullaitivu", "Vavuniya", "Mannar", "Trincomalee", "Batticaloa", "Ampara"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+            {/* Central Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">North Central & Central</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Anuradhapura", "Polonnaruwa", "Kurunegala", "Puttalam", "Matale", "Kandy", "Nuwara Eliya", "Badulla", "Monaragala", "Kegalle"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Western & Southern Region */}
+            <div className="mb-4">
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Western & Sabaragamuwa</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Colombo", "Gampaha", "Kalutara", "Wattala", "Ratnapura"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-accent/30 text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-base">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Southern Region */}
+            <div>
+              <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 text-center">Southern</p>
+              <div className="flex flex-wrap justify-center gap-2">
+                {districts.filter(d => ["Galle", "Matara", "Hambantota"].includes(d.name)).map((d) => (
+                  <div key={d.name} className="px-3 py-2 rounded-lg bg-card shadow-card border border-border text-center min-w-[100px]">
+                    <div className="font-heading font-bold text-accent text-sm">{d.count}</div>
+                    <div className="text-[10px] text-muted-foreground mt-0.5">{d.name}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Total */}
+            <div className="mt-6 text-center">
+              <div className="inline-block px-6 py-3 rounded-full bg-accent/10 border border-accent/30">
+                <span className="font-heading font-bold text-accent text-lg">2,000,000+</span>
+                <span className="text-muted-foreground text-sm ml-2">Total SMS Reach Across Sri Lanka</span>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
 
@@ -402,13 +399,13 @@ const SmsMarketing = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your SMS Marketing Campaign Today</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Launch Your SMS Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach thousands of customers instantly with Buzz Connect's SMS marketing solutions in Sri Lanka. Contact us today and launch your campaign.
+          Reach Customers Instantly. Get Real Results. From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms.
         </p>
-        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
-        </a>
+        <Link to="/contact-us" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          Start Your SMS Campaign <span className="ml-1">→</span>
+        </Link>
       </motion.div>
       <RelatedArticles currentPath="/sms-marketing" />
     </ServicePageLayout>
