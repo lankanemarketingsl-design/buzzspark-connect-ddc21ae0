@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
-import { Users, Crown, CheckCircle, Mail, Target, BarChart3, Zap, GraduationCap, Building2, ShoppingCart, Home, Calendar, Rocket, HelpCircle, Smartphone, MessageSquare, Globe, ArrowRight } from "lucide-react";
+import { Users, Crown, CheckCircle, Mail, HelpCircle, Smartphone, MessageSquare, Globe, Rocket, ArrowRight } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
@@ -15,32 +15,6 @@ const packages = [
   { name: "Ten Email Campaigns (Two months) + Findit.lk Web Ads", corp: "LKR 54,000", full: "LKR 72,000", fb: "✔", ig: "✔", li: "✔", webAd: "10", appAd: "10", feed: "✔" },
   { name: "Twenty Email Campaigns + Findit.lk Web Ads", corp: "LKR 108,000", full: "LKR 140,000", fb: "✔", ig: "✔", li: "✔", webAd: "40", appAd: "40", feed: "✔" },
   { name: "VIP Email Campaign (For 50,000 VIP database)", corp: "LKR 7,500", full: "", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
-];
-
-const benefits = [
-  "Reach thousands of customers instantly",
-  "Highly cost-effective compared to traditional advertising",
-  "Target specific customer segments",
-  "Increase brand awareness and engagement",
-  "Drive website traffic and conversions",
-  "Track campaign performance in real time",
-  "Multi-channel reinforcement through Findit.lk advertising",
-];
-
-const processSteps = [
-  { icon: Target, title: "Audience Selection", desc: "Choose from our 350,000+ database or a custom target group" },
-  { icon: Mail, title: "Campaign Creation", desc: "Design professional email creatives" },
-  { icon: Zap, title: "Campaign Launch", desc: "Send emails instantly to your audience" },
-  { icon: BarChart3, title: "Performance Tracking", desc: "Monitor open rates, clicks, and conversions" },
-];
-
-const useCases = [
-  { icon: GraduationCap, label: "Education institutes promoting student intakes" },
-  { icon: Building2, label: "Hotels and travel companies" },
-  { icon: ShoppingCart, label: "E-commerce and retail businesses" },
-  { icon: Home, label: "Real estate companies" },
-  { icon: Calendar, label: "Event organizers" },
-  { icon: Rocket, label: "SMEs and startups" },
 ];
 
 const faqs = [
@@ -76,8 +50,8 @@ const EmailMarketing = () => {
   return (
     <ServicePageLayout
       badge="Email Marketing Sri Lanka"
-      title="Email Marketing Sri Lanka That Actually Converts"
-      subtitle="We combine high-performing email campaigns with Findit.lk advertising to reach the same audience across multiple channels — increasing engagement and conversions."
+      title="Multi-Channel Email Campaigns That Drive Real Results"
+      subtitle="Reach your audience, increase visibility, and generate real business opportunities — campaigns starting from LKR 6,000"
     >
       <SEOHead
         title="Email Marketing Sri Lanka | Multi-Channel Campaigns + Findit.lk Advertising"
@@ -91,116 +65,10 @@ const EmailMarketing = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Pricing Hook Banner */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
-        className="mb-12 max-w-4xl mx-auto"
-      >
-        <div className="relative overflow-hidden rounded-2xl gradient-hero p-6 sm:p-8 text-center">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.08),transparent_60%)]" />
-          <div className="relative z-10">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">Starting From</p>
-            <p className="text-primary-foreground font-heading text-3xl sm:text-4xl font-bold mb-2">
-              LKR 6,000 <span className="text-lg font-normal text-primary-foreground/70">per campaign</span>
-            </p>
-            <p className="text-primary-foreground/80 text-sm sm:text-base max-w-xl mx-auto mb-4">
-              Connect with <strong>350,000+ email subscribers</strong> and expand your reach to <strong>200,000+ monthly users</strong> on Findit.lk — all included.
-            </p>
-            <Link to="/contact-us">
-              <Button variant="hero" size="lg" className="text-base">
-                Get Started Today <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* 1. Power Intro — Hook */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          We go beyond basic <strong>bulk email marketing in Sri Lanka</strong>. At Buzz Connect, we combine <strong>email marketing campaigns</strong> with multi-channel advertising strategies through Findit.lk to turn messages into real customers. From campaign planning to conversion tracking, we help Sri Lankan businesses get measurable results — not just delivery reports.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          With over a decade of experience, one of the largest <strong>email databases in Sri Lanka</strong> (350,000+ corporate contacts), and exclusive Findit.lk integration, Buzz Connect delivers <strong>email marketing services</strong> that no other provider can match.
-        </p>
-      </motion.div>
-
-      {/* 2. SEO Content — Desire & Problem/Solution */}
+      {/* All high-converting hero content */}
       <EmailHeroContent />
 
-      {/* 3. Why Choose Email Marketing — Benefits */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Why Choose Email Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          <Link to="/" className="text-muted-foreground">Email marketing Sri Lanka</Link> remains one of the most effective digital marketing strategies due to its high return on investment and ability to target specific audiences. Unlike traditional <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising in Sri Lanka</Link>, <strong>email campaigns</strong> allow businesses to communicate directly with potential customers in a personalized and measurable way.
-        </p>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
-          With Buzz Connect, businesses can leverage advanced targeting, segmentation, and analytics to ensure every <strong>email advertising campaign in Sri Lanka</strong> reaches the right audience — and with Findit.lk integration, your message gets reinforced across multiple channels.
-        </p>
-        <h3 className="font-heading text-xl font-semibold text-foreground mb-4">Benefits of Email Marketing for Sri Lankan Businesses</h3>
-        <ul className="space-y-3">
-          {benefits.map((b) => (
-            <li key={b} className="flex items-center gap-3 text-foreground">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" /> {b}
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-
-      {/* 4. How It Works — Reduce Friction */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">How Our Email Marketing Works</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {i + 1}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* 5. Use Cases — Relevance */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Can Benefit from Email Marketing in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our <strong>email marketing services in Sri Lanka</strong> are ideal for:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {useCases.map((uc) => (
-            <div key={uc.label} className="flex items-center gap-3 p-4 rounded-xl bg-muted/40 border border-border">
-              <uc.icon className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-foreground text-sm font-medium">{uc.label}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* 6. Corporate & VIP Reach — The Product */}
+      {/* Corporate & VIP Reach */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -212,10 +80,13 @@ const EmailMarketing = () => {
             <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
               <Users className="w-6 h-6 text-secondary-foreground" />
             </div>
-            <h3 className="font-heading text-xl font-bold text-foreground">Corporate Reach</h3>
+            <div>
+              <h3 className="font-heading text-xl font-bold text-foreground">📧 Corporate Database</h3>
+              <p className="text-accent font-semibold text-sm">350,000+ active contacts</p>
+            </div>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Buzz Connect is a proven leader in email marketing in Sri Lanka, with 350,000 active contacts and 500,000 active contacts, age between 18 – 55 covering mostly western province.
+          <p className="text-muted-foreground mb-4 text-sm">
+            Professionals, executives, business owners — age 18–55, covering mostly western province.
           </p>
           <ul className="space-y-2">
             {["Managers", "General Managers", "Executive & officers", "Small business owners", "Undergraduate students", "House wives", "Association Members", "Gender - Male 60% & Female 40%"].map((item) => (
@@ -237,10 +108,13 @@ const EmailMarketing = () => {
             <div className="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
               <Crown className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="font-heading text-xl font-bold text-foreground">VIP Reach</h3>
+            <div>
+              <h3 className="font-heading text-xl font-bold text-foreground">👑 VIP Database</h3>
+              <p className="text-accent font-semibold text-sm">50,000+ high-value audience</p>
+            </div>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Our database has more than 50,000+ contacts in Colombo and greater Colombo area, age between 35 and 60 with majority being 80% men and 20% female.
+          <p className="text-muted-foreground mb-4 text-sm">
+            CEOs, directors, entrepreneurs — age 35–60, Colombo & greater Colombo, 80% male.
           </p>
           <ul className="space-y-2">
             {["Premium business leaders", "Multinational companies Directors", "CEO'S", "Celebrities", "Sports personals", "Doctors", "Entrepreneurs", "Private sector high salary earning employees (Over 350,000 per month)", "Heads of Government institutes"].map((item) => (
@@ -252,15 +126,24 @@ const EmailMarketing = () => {
         </motion.div>
       </div>
 
-      {/* 7. Packages */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-16 max-w-4xl mx-auto text-center"
+      >
+        <p className="text-foreground font-semibold text-lg">👉 Reach the right people, not just more people.</p>
+      </motion.div>
+
+      {/* Packages */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-8"
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">Our Email Marketing Packages in Sri Lanka</h2>
-        <p className="text-muted-foreground text-center mb-2">No hidden charges – choose your plan</p>
+        <p className="text-muted-foreground text-center mb-2">💰 Simple & Transparent Pricing — No hidden charges</p>
         <p className="text-muted-foreground text-center mb-8 text-sm">We enjoy adapting our strategies to offer every client the best solutions that are at the forefront of the industry.</p>
 
         <div className="overflow-x-auto">
@@ -299,7 +182,16 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* 8. Multi-Channel Upsell Section */}
+      {/* Package CTA */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
+        <p className="text-foreground font-bold text-lg mb-1">Not sure which package is right for you?</p>
+        <p className="text-muted-foreground text-sm mb-5">Our team will recommend the best plan for your budget and goals</p>
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20email%20marketing%20package." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          <MessageSquare className="w-4 h-4" /> Get Free Consultation
+        </a>
+      </motion.div>
+
+      {/* Multi-Channel Upsell */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
@@ -330,98 +222,9 @@ const EmailMarketing = () => {
           <p className="text-accent font-semibold text-center text-lg">👉 Reach hundreds of thousands to 1M+ audiences within days</p>
         </Link>
 
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">📧 Ideal for Large-Scale Campaigns</h3>
-          <p className="text-muted-foreground mb-4">This solution is best suited for:</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[
-              "Large businesses & corporate brands",
-              "New product or service launches",
-              "Seasonal promotions & flash sales",
-              "Brand awareness campaigns",
-              "Event marketing & registrations",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-muted-foreground text-sm font-medium">{item}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground mt-4 italic">Designed for businesses that need mass visibility + fast impact</p>
-        </div>
-
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">🎯 What You Can Achieve with Multi-Channel Campaigns</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {[
-              "Brand awareness campaigns across Sri Lanka",
-              "New business & product launches",
-              "Promotional offers and seasonal deals",
-              "Driving website traffic and inquiries",
-              "Generating leads in a short time",
-              "Reaching new target audiences nationwide",
-              "Re-engaging existing customers",
-              "Building strong top-of-mind brand recall",
-              "Expanding your business reach across Sri Lanka",
-              "Generating quick market response",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2">
-                <ArrowRight className="w-3.5 h-3.5 text-accent shrink-0" />
-                <span className="text-muted-foreground text-sm">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-4">💡 Why Businesses Choose Multi-Channel Over Email Alone</h3>
-          <p className="text-muted-foreground mb-4">Instead of relying on a single platform:</p>
-          <ul className="space-y-2.5">
-            {[
-              "Reach customers through multiple touchpoints",
-              "Increase brand recall and trust",
-              "Drive faster inquiries and conversions",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-foreground font-medium text-sm">{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-accent font-semibold mt-4">👉 The result: higher visibility + better conversion rates</p>
-        </div>
-
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-border mb-8 overflow-x-auto">
-          <h3 className="font-heading text-lg font-bold text-foreground mb-5">🆚 Email Only vs Multi-Channel Campaigns</h3>
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-border">
-                <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Feature</th>
-                <th className="text-left py-3 px-4 text-muted-foreground font-semibold">Email Only</th>
-                <th className="text-left py-3 px-4 text-accent font-semibold">Multi-Channel Campaign</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Reach", "Limited to email subscribers", "Nationwide multi-platform reach"],
-                ["Platforms", "Single platform", "SMS + Email + WhatsApp + Findit.lk"],
-                ["Speed", "Depends on open rates", "Fast results across all channels"],
-                ["Awareness", "Basic awareness", "High visibility + recall"],
-              ].map(([feature, standard, multi]) => (
-                <tr key={feature} className="border-b border-border/50">
-                  <td className="py-3 px-4 text-foreground font-medium">{feature}</td>
-                  <td className="py-3 px-4 text-muted-foreground">{standard}</td>
-                  <td className="py-3 px-4 text-accent font-semibold">{multi}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
         <div className="p-8 rounded-2xl gradient-hero text-center relative overflow-hidden">
           <h3 className="font-heading text-xl sm:text-2xl font-bold text-primary-foreground mb-3">🚀 Scale Your Marketing Beyond Email</h3>
-          <p className="text-primary-foreground/80 mb-2 max-w-xl mx-auto">For businesses looking to go beyond email and achieve nationwide visibility, our multi-channel campaigns deliver unmatched reach and impact.</p>
-          <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">If you're looking for maximum reach, faster visibility, and large-scale campaigns — explore our full solution.</p>
+          <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">For businesses looking to go beyond email and achieve nationwide visibility, our multi-channel campaigns deliver unmatched reach and impact.</p>
           <Link to="/multi-channel-marketing-sri-lanka">
             <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-3 rounded-full text-base">
               <Rocket className="w-5 h-5 mr-2" /> View Multi-Channel Campaigns
@@ -430,7 +233,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* 9. FAQ */}
+      {/* FAQ */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -454,20 +257,32 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* 10. Final CTA */}
+      {/* Final CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center p-10 rounded-2xl gradient-hero"
+        className="text-center p-10 sm:p-14 rounded-2xl gradient-hero relative overflow-hidden"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Start Your Email Marketing Campaign Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach thousands of potential customers across Sri Lanka with one powerful email campaign powered by multi-channel Findit.lk advertising. Contact Buzz Connect today and grow your business with targeted <strong>email marketing in Sri Lanka</strong>.
-        </p>
-        <a href="#contact" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Contact Buzz Connect
-        </a>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--accent)/0.15),transparent_70%)]" />
+        <div className="relative z-10">
+          <p className="text-accent font-bold text-sm uppercase tracking-wider mb-3">Ready to Reach More Customers?</p>
+          <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Launch a Campaign That Delivers Real Visibility</h2>
+          <p className="text-primary-foreground/80 mb-3 max-w-2xl mx-auto text-lg">
+            Get More Reach. Get More Results.
+          </p>
+          <p className="text-primary-foreground/60 mb-8 max-w-xl mx-auto text-sm">
+            From LKR 6,000 — reach 350,000+ professionals with email + Findit.lk advertising included
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact-us" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base shadow-lg">
+              Start Your Campaign Today <ArrowRight className="w-4 h-4" />
+            </Link>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20an%20email%20campaign." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-primary-foreground/30 text-primary-foreground font-semibold hover:bg-primary-foreground/10 transition-colors text-base">
+              <MessageSquare className="w-4 h-4" /> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
       </motion.div>
       <RelatedArticles currentPath="/email-marketing" />
     </ServicePageLayout>
