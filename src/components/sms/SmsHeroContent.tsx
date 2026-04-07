@@ -66,23 +66,25 @@ const SmsHeroContent = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Standard SMS vs Buzz Connect</h2>
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Standard SMS Campaigns vs Buzz Connect</h2>
         <div className="overflow-x-auto">
           <table className="w-full rounded-xl overflow-hidden border border-border">
             <thead>
               <tr className="bg-primary/10">
                 <th className="text-left p-4 font-heading font-bold text-foreground">Feature</th>
-                <th className="text-center p-4 font-heading font-bold text-foreground">Standard SMS</th>
+                <th className="text-center p-4 font-heading font-bold text-foreground">Standard SMS Campaigns</th>
                 <th className="text-center p-4 font-heading font-bold text-accent">Buzz Connect</th>
               </tr>
             </thead>
             <tbody>
               {[
-                ["SMS Delivery", "✅", "✅"],
-                ["Targeting", "⚠️ Basic", "✅ Advanced"],
-                ["Multi-Channel Support", "❌", "✅ Included"],
-                ["Visibility Duration", "One-time", "Extended"],
-                ["Engagement Opportunity", "Limited", "High"],
+                ["SMS Delivery", "✅ Included", "✅ Included"],
+                ["Audience Targeting", "⚠️ Basic Segmentation", "✅ Advanced Targeting"],
+                ["Multi-Channel Support", "Not Included", "✅ Integrated Multi-Channel Approach"],
+                ["Campaign Visibility", "One-Time Reach", "Extended Visibility Across Platforms"],
+                ["Engagement Potential", "Limited", "High Engagement Opportunities"],
+                ["Customer Touchpoints", "Single Channel", "Multiple Touchpoints"],
+                ["Campaign Impact", "Short-Term", "Sustained & Reinforced"],
               ].map(([feature, standard, bc]) => (
                 <tr key={feature} className="border-t border-border">
                   <td className="p-4 text-foreground font-medium">{feature}</td>
