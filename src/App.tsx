@@ -114,6 +114,7 @@ const App = () => (
               <Route path="/menu-card-design-sri-lanka" element={<GraphicDesignService />} />
               <Route path="/label-design-sri-lanka" element={<GraphicDesignService />} />
               <Route path="/package-design-sri-lanka" element={<GraphicDesignService />} />
+              <Route path="/video-editing-sri-lanka" element={<GraphicDesignService />} />
               <Route path="/seo-sri-lanka" element={<SeoServices />} />
               <Route path="/website-design-sri-lanka" element={<WebsiteDesign />} />
               <Route path="/lead-generation-sri-lanka" element={<LeadGeneration />} />

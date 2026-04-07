@@ -1,4 +1,4 @@
-import { Image, Layout, Film, Palette, FileText, PenTool, Award, CreditCard, BookOpen, Type, Edit, Smartphone, Tag, Box, LucideIcon } from "lucide-react";
+import { Image, Layout, Film, Palette, FileText, PenTool, Award, CreditCard, BookOpen, Type, Edit, Smartphone, Tag, Box, Video, LucideIcon } from "lucide-react";
 
 export interface ExtraSection {
   title: string;
@@ -1114,6 +1114,101 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
           "Creative and modern concepts",
           "Fast turnaround and communication",
           "Custom solutions for each brand",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
+  },
+  // Video Editing
+  {
+    slug: "video-editing-sri-lanka",
+    icon: Video,
+    cardTitle: "Video Editing",
+    cardDesc: "Professional video editing services for businesses, brands, and creators in Sri Lanka. From promotional videos to social media reels, we deliver polished content that engages your audience.",
+    price: "Price - LKR 8000",
+    title: "Video Editing Sri Lanka",
+    metaTitle: "Video Editing Sri Lanka | Professional Video Editing Services",
+    metaDescription: "Professional video editing services in Sri Lanka from LKR 8,000. Corporate videos, social media reels, promotional content & more by Buzz Connect.",
+    h1: "Video Editing Sri Lanka – Professional Video Editing for Brands & Businesses",
+    intro: [
+      "Looking for professional video editing services in Sri Lanka? Buzz Connect delivers high-quality video editing that transforms raw footage into compelling visual stories for your brand.",
+      "Video content dominates digital marketing in 2026. From YouTube and Instagram Reels to TikTok and Facebook, professionally edited videos drive significantly higher engagement and conversions compared to static content.",
+      "Whether you need corporate videos, product demos, event highlights, or social media reels, our expert editors craft polished content that captivates your audience and strengthens your brand presence.",
+    ],
+    benefits: [
+      "Higher engagement rates on social media platforms",
+      "Professional quality that builds brand credibility",
+      "Optimized formats for every platform (YouTube, Instagram, TikTok, Facebook)",
+      "Quick turnaround for time-sensitive campaigns",
+      "Color grading, transitions & motion graphics included",
+      "Background music and sound design",
+      "Cost-effective compared to in-house video teams",
+    ],
+    process: [
+      { step: "Brief & Footage", desc: "Share your raw footage, goals, and brand guidelines with us" },
+      { step: "Storyboard & Edit", desc: "We create a structured edit with transitions, text & effects" },
+      { step: "Review & Refine", desc: "You review the draft and we refine based on your feedback" },
+      { step: "Final Delivery", desc: "Polished video delivered in your required formats and resolutions" },
+    ],
+    faqs: [
+      { q: "How much does video editing cost in Sri Lanka?", a: "Video editing starts from LKR 8,000 at Buzz Connect. Pricing depends on video length, complexity, effects, and turnaround time." },
+      { q: "What types of videos do you edit?", a: "We edit corporate videos, product demos, social media reels, event highlights, testimonial videos, explainer videos, YouTube content, and promotional ads." },
+      { q: "What formats do you deliver videos in?", a: "We deliver in MP4, MOV, and other formats optimized for YouTube, Instagram, TikTok, Facebook, LinkedIn, and websites." },
+      { q: "How long does video editing take?", a: "Standard turnaround is 3-5 business days. Rush delivery is available for urgent projects at an additional cost." },
+      { q: "Do you add subtitles and captions?", a: "Yes, we offer subtitle and caption services including Sinhala, Tamil, and English text overlays for accessibility and engagement." },
+      { q: "Can you create videos from photos and graphics?", a: "Absolutely! We create slideshow videos, animated presentations, and motion graphics from static images and brand assets." },
+    ],
+    extraSections: [
+      {
+        title: "Types of Video Editing We Offer",
+        subsections: [
+          {
+            title: "Corporate & Business Videos",
+            bullets: [
+              "Company profile videos",
+              "Product launch and demo videos",
+              "Training and onboarding videos",
+              "Annual report and presentation videos",
+            ],
+          },
+          {
+            title: "Social Media Video Content",
+            bullets: [
+              "Instagram Reels and Stories",
+              "TikTok videos",
+              "Facebook and LinkedIn video ads",
+              "YouTube intros, outros, and thumbnails",
+            ],
+          },
+          {
+            title: "Event & Promotional Videos",
+            bullets: [
+              "Event highlight reels",
+              "Wedding and celebration videos",
+              "Conference and seminar recaps",
+              "Promotional campaign videos",
+            ],
+          },
+          {
+            title: "Advanced Video Services",
+            bullets: [
+              "Motion graphics and animation",
+              "Color grading and correction",
+              "Sound design and music integration",
+              "Green screen (chroma key) editing",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Video Editing in Sri Lanka",
+        paragraphs: ["We combine creative storytelling with technical expertise to deliver videos that don't just look great – they drive results for your business."],
+        bullets: [
+          "Experienced editors with brand marketing knowledge",
+          "Platform-optimized output for maximum reach",
+          "Affordable pricing starting from LKR 8,000",
+          "Fast communication and turnaround",
+          "End-to-end support from concept to delivery",
         ],
       },
     ],
