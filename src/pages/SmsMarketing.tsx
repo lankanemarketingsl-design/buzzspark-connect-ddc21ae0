@@ -139,19 +139,28 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
 
+      {/* Mid-page CTA after databases */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
+        <p className="text-foreground font-bold text-lg mb-1">Not sure which database is right for you?</p>
+        <p className="text-muted-foreground text-sm mb-5">Our team will recommend the best targeting strategy for your business</p>
+        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20SMS%20database." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+          <MessageSquare className="w-4 h-4" /> Get Free Consultation
+        </a>
+      </motion.div>
+
       {/* 5. Gender-wise Database */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6 text-center">Gender-wise Database</h2>
-        <div className="flex justify-center gap-8">
-          <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20">
-            <div className="text-2xl font-heading font-bold text-secondary">350,000+</div>
-            <div className="text-sm text-muted-foreground">Male Subscribers</div>
-            <div className="text-xs text-muted-foreground">Age - 18 - 65</div>
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+          <div className="text-center p-6 rounded-xl bg-secondary/10 border border-secondary/20 min-w-[160px]">
+            <div className="text-3xl font-heading font-bold text-secondary">350,000+</div>
+            <div className="text-sm text-muted-foreground mt-1">Male Subscribers</div>
+            <div className="text-xs text-muted-foreground">Age 18 - 65</div>
           </div>
-          <div className="text-center p-6 rounded-xl bg-accent/10 border border-accent/20">
-            <div className="text-2xl font-heading font-bold text-accent">250,000+</div>
-            <div className="text-sm text-muted-foreground">Female Subscribers</div>
-            <div className="text-xs text-muted-foreground">Age - 18 - 65</div>
+          <div className="text-center p-6 rounded-xl bg-accent/10 border border-accent/20 min-w-[160px]">
+            <div className="text-3xl font-heading font-bold text-accent">250,000+</div>
+            <div className="text-sm text-muted-foreground mt-1">Female Subscribers</div>
+            <div className="text-xs text-muted-foreground">Age 18 - 65</div>
           </div>
         </div>
       </motion.div>
@@ -397,15 +406,27 @@ const SmsMarketing = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="text-center p-10 rounded-2xl gradient-hero"
+        className="text-center p-10 sm:p-14 rounded-2xl gradient-hero relative overflow-hidden"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Launch Your SMS Campaign Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Reach Customers Instantly. Get Real Results. From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms.
-        </p>
-        <Link to="/contact-us" className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-          Start Your SMS Campaign <span className="ml-1">→</span>
-        </Link>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,hsl(var(--accent)/0.15),transparent_70%)]" />
+        <div className="relative z-10">
+          <p className="text-accent font-bold text-sm uppercase tracking-wider mb-3">Ready to grow your business?</p>
+          <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Launch Your SMS Campaign Today</h2>
+          <p className="text-primary-foreground/80 mb-3 max-w-2xl mx-auto text-lg">
+            Reach Customers Instantly. Get Real Results.
+          </p>
+          <p className="text-primary-foreground/60 mb-8 max-w-xl mx-auto text-sm">
+            From LKR 25,000 — reach thousands instantly and expand visibility across multiple platforms
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact-us" className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base shadow-lg">
+              Start Your SMS Campaign <ArrowRight className="w-4 h-4" />
+            </Link>
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20an%20SMS%20campaign." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-primary-foreground/30 text-primary-foreground font-semibold hover:bg-primary-foreground/10 transition-colors text-base">
+              <MessageSquare className="w-4 h-4" /> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
       </motion.div>
       <RelatedArticles currentPath="/sms-marketing" />
     </ServicePageLayout>
