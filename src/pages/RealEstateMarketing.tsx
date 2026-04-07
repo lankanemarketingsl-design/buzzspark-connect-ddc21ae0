@@ -146,6 +146,18 @@ const RealEstateMarketing = () => {
         ]}
       />
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Real estate is a high-value industry where every lead matters. Buzz Connect's <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> service helps you present property listings, virtual tours, and project launches to thousands of targeted buyers and investors.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Reach potential buyers instantly through <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> with location-based targeting, and use <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> to share brochures, floor plans, and handle property inquiries in real-time.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Strengthen your property brand with ongoing <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns that showcase your developments and attract serious buyers.
+        </p>
+      </motion.div>
+
       {/* 💰 What You Can Achieve */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">

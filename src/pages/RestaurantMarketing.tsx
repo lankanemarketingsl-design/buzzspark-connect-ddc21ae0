@@ -152,6 +152,18 @@ const RestaurantMarketing = () => {
         ]}
       />
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Running a restaurant in Sri Lanka means competing for attention every single day. Our <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> service delivers your daily specials and promotions straight to customers' phones with near-instant open rates.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Pair that with <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> for menu sharing and direct ordering, and <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> campaigns to announce seasonal menus, loyalty rewards, and special events to your customer base.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          We also recommend integrating <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> to build a loyal following and keep your restaurant trending among food lovers.
+        </p>
+      </motion.div>
+
       {/* 💰 What You Can Achieve */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">

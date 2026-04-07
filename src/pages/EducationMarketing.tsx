@@ -148,13 +148,13 @@ const EducationMarketing = () => {
 
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Buzz Connect delivers <strong>high-impact education marketing campaigns in Sri Lanka</strong>, helping universities, schools, and training institutes fill their intakes through targeted multi-channel promotions.
+          Buzz Connect delivers high-impact education marketing campaigns in Sri Lanka, helping universities, schools, and training institutes fill their intakes through targeted multi-channel promotions.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Our student intake lead generation strategy combines <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <strong>Findit.lk Education category visibility</strong> to drive enrollment fast.
+          Our student intake lead generation strategy combines <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> for course promotions, <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> for deadline reminders, and <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> for direct student engagement — all backed by Findit.lk Education category visibility.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Whether you run a university, international school, or professional training center, our campaigns are designed to generate student inquiries and maximize enrollments.
+          Whether you run a university, international school, or professional training center, our campaigns paired with <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> are designed to generate student inquiries and maximize enrollments.
         </p>
       </motion.div>
 

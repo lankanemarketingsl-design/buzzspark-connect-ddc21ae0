@@ -152,6 +152,18 @@ const FashionMarketing = () => {
         ]}
       />
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Fashion brands in Sri Lanka need speed and reach to make sales happen. Our <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> campaigns let you showcase new collections, lookbooks, and exclusive offers to thousands of fashion-conscious buyers instantly.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          For flash sales and limited-time deals, <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> ensures your offer reaches customers within seconds. Add <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> to share product catalogues and take orders directly through chat.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Combined with <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link>, your fashion brand can build a strong online presence and drive consistent traffic to your store or website.
+        </p>
+      </motion.div>
+
       {/* 💰 What You Can Achieve */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">
