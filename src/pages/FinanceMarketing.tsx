@@ -154,6 +154,18 @@ const FinanceMarketing = () => {
         ]}
       />
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          The financial sector requires precise targeting and compliance-friendly communication. Buzz Connect uses <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> to deliver detailed product information for loans, credit cards, and investment plans to pre-qualified audiences.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Time-sensitive promotions like limited-rate offers are best delivered through <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link>, while <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> enables direct conversations with potential applicants for faster lead conversion.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          Our finance clients also benefit from <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> campaigns that build brand trust and educate customers about financial products.
+        </p>
+      </motion.div>
+
       {/* 💰 What You Can Achieve */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">

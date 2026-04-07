@@ -148,11 +148,20 @@ const EventMarketing = () => {
         <div className="p-8 rounded-2xl bg-card shadow-card border border-border">
           <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-4">🎯 What is Event Marketing?</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">Event marketing is the process of promoting an event through strategic campaigns to attract the right audience and boost attendance. We promote all types of events including:</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-4">
             {["🎤 Musical shows & concerts", "🎉 Festivals & public events", "🏢 Corporate conferences", "🎓 Workshops & seminars", "🏬 Exhibitions & trade shows", "🛍 Product launches"].map(item => (
               <div key={item} className="flex items-center gap-2 p-2 rounded-lg bg-muted/50 text-sm text-foreground font-medium">{item}</div>
             ))}
           </div>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            Our event promotion strategy starts with <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> to build early awareness and drive registrations among targeted audiences.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            As event day approaches, we deploy <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> for countdown reminders and last-minute ticket pushes, while <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> handles direct RSVP confirmations and attendee engagement.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            For sustained pre-event buzz and post-event follow-ups, we integrate <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> to amplify reach and create shareable content.
+          </p>
         </div>
       </motion.div>
 

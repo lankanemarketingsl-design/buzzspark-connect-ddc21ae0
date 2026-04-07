@@ -157,6 +157,18 @@ const HotelMarketing = () => {
         ]}
       />
 
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          Buzz Connect helps hotels and resorts across Sri Lanka drive more direct bookings through a proven multi-channel approach. Our campaigns leverage <Link to="/" className="text-muted-foreground underline-offset-2 hover:underline">email marketing Sri Lanka</Link> to showcase room deals, seasonal packages, and exclusive offers directly to travel-ready audiences.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          We also use <Link to="/sms-marketing" className="text-muted-foreground underline-offset-2 hover:underline">SMS marketing Sri Lanka</Link> for instant last-minute deal alerts, combined with <Link to="/whatsapp-marketing" className="text-muted-foreground underline-offset-2 hover:underline">WhatsApp marketing Sri Lanka</Link> to enable direct guest communication and booking confirmations.
+        </p>
+        <p className="text-lg text-muted-foreground leading-relaxed">
+          To build long-term brand visibility, we integrate <Link to="/social-media-marketing-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">social media marketing Sri Lanka</Link> strategies that keep your property top-of-mind among local and international travelers.
+        </p>
+      </motion.div>
+
       {/* 💰 What You Can Achieve */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16">
         <div className="text-center mb-8">
