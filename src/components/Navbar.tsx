@@ -24,6 +24,7 @@ const industryItems = [
   { label: "Real Estate", path: "/real-estate-marketing-sri-lanka" },
   { label: "Fashion & Clothing", path: "/fashion-marketing-sri-lanka" },
   { label: "Events & Conferences", path: "/event-marketing-sri-lanka" },
+  { label: "Staff Recruitment", path: "/staff-recruitment-campaigns-sri-lanka" },
 ];
 
 const Navbar = () => {
