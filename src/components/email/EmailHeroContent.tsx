@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, Layers, Mail, Users, Shield, Globe, MessageSquare } from "lucide-react";
+import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, Layers, Mail, Users, Shield, Globe, MessageSquare, Target, DollarSign } from "lucide-react";
 
 const EmailHeroContent = () => {
   return (
@@ -159,13 +159,14 @@ const EmailHeroContent = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">🚀 How It Works</h2>
-        <p className="text-muted-foreground text-center mb-8 text-sm">Simple. Powerful. Results-driven.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">🔄 How It Works</h2>
+        <p className="text-muted-foreground text-center mb-4 text-sm">Email Campaign → Findit.lk Exposure → Retargeting → Conversion</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Mail, title: "Launch Your Campaign", desc: "We send your message to a targeted audience of 350,000+ professionals", num: "01" },
-            { icon: Eye, title: "Expand Visibility", desc: "Your business appears on Findit.lk — reaching 200,000+ monthly users", num: "02" },
-            { icon: TrendingUp, title: "Boost Engagement", desc: "Social media promotion on FB, IG & LinkedIn increases reach and action", num: "03" },
+            { icon: Mail, title: "Email Campaign", desc: "Reach your target audience directly", num: "01", emoji: "📧" },
+            { icon: Globe, title: "Findit.lk Exposure", desc: "Stay visible beyond the inbox", num: "02", emoji: "🌐" },
+            { icon: Target, title: "Retargeting", desc: "Re-engage interested users across platforms", num: "03", emoji: "🎯" },
+            { icon: DollarSign, title: "Conversion", desc: "Turn visibility into real inquiries and customers", num: "04", emoji: "💰" },
           ].map((step) => (
             <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-accent text-accent-foreground text-xs font-bold flex items-center justify-center">{step.num}</div>
@@ -178,7 +179,7 @@ const EmailHeroContent = () => {
           ))}
         </div>
         <p className="text-center text-foreground font-semibold mt-6">
-          👉 More visibility → More interest → More leads
+          👉 From inbox to inquiry — a complete conversion funnel
         </p>
       </motion.div>
 
