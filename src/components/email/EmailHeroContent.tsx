@@ -168,16 +168,21 @@ const EmailHeroContent = () => {
             { icon: Globe, title: "Findit.lk Exposure", desc: "Your business is featured on Findit.lk — reaching 200,000+ monthly active users", num: "02", emoji: "🌐", link: "https://findit.lk" },
             { icon: Target, title: "Retargeting", desc: "Reconnect with interested users across Facebook, Instagram & LinkedIn to maximize visibility", num: "03", emoji: "🎯" },
             { icon: DollarSign, title: "Conversion", desc: "Turn repeated exposure into real inquiries, leads, and paying customers", num: "04", emoji: "💰" },
-          ].map((step, index) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-accent text-accent-foreground text-xs font-bold flex items-center justify-center">{step.num}</div>
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 mt-2">
-                <step.icon className="w-7 h-7 text-primary" />
+          ].map((step, index) => {
+            const card = (
+              <div key={step.title} className={`p-6 rounded-2xl bg-card shadow-card border border-border text-center relative ${'link' in step ? 'hover:border-accent/40 hover:shadow-md transition-all' : ''}`}>
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-accent text-accent-foreground text-xs font-bold flex items-center justify-center">{step.num}</div>
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 mt-2">
+                  <step.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+                <p className="text-sm text-muted-foreground">{step.desc}</p>
               </div>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
+            );
+            return 'link' in step ? (
+              <a key={step.title} href={(step as any).link} target="_blank" rel="noopener noreferrer">{card}</a>
+            ) : card;
+          })}
         </div>
 
         {/* Why This Works - Conversion Booster */}
