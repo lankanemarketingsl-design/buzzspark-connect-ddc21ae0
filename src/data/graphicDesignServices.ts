@@ -639,10 +639,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Company Profile Design Sri Lanka",
     metaTitle: "Company Profile Design Sri Lanka | Professional Corporate Profiles",
     metaDescription: "Professional company profile design services in Sri Lanka. Create a polished corporate profile that represents your business. Up to 16 pages. Digital & print formats.",
-    h1: "Company Profile Design Sri Lanka – Professional Corporate Profile Design",
+    h1: "Company Profile Design Sri Lanka – Corporate Profiles That Win Clients",
     intro: [
-      "A company profile is the face of your organization – it tells your story, showcases your capabilities, and builds trust with potential clients and partners. A professionally designed company profile can be a powerful business development tool.",
-      "Buzz Connect creates polished, professionally designed company profiles that effectively communicate your brand value, services, team, and achievements.",
+      "Looking for professional company profile design Sri Lanka services that impress clients and win business?",
+      "At Buzz Connect, we create polished, professionally designed company profiles that effectively communicate your brand value, services, team, and achievements.",
+      "A company profile is the face of your organization — it tells your story, showcases your capabilities, and builds trust with potential clients, partners, and investors. Our designs turn your company information into a powerful business development tool.",
     ],
     benefits: [
       "Professional representation of your company",
@@ -653,16 +654,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Consistent branding throughout",
     ],
     process: [
-      { step: "Content", desc: "Gather company information, images, and milestones" },
-      { step: "Design", desc: "Create a professional layout and visual structure" },
-      { step: "Review", desc: "Iterate on content and design refinements" },
-      { step: "Deliver", desc: "Final profile in PDF, PowerPoint, and print formats" },
+      { step: "Content Gathering", desc: "Gather company information, images, and milestones" },
+      { step: "Layout Development", desc: "Create a professional layout and visual structure" },
+      { step: "Design Refinement", desc: "Iterate on content and design refinements" },
+      { step: "Final Delivery", desc: "Final profile in PDF, PowerPoint, and print formats" },
     ],
     faqs: [
       { q: "How many pages can a company profile have?", a: "We design company profiles from 4 pages to 30+ pages depending on your requirements." },
       { q: "Can you write the company profile content?", a: "Yes, our team can help craft professional content based on your inputs and interviews." },
       { q: "What format is the profile delivered in?", a: "We deliver in PDF, editable PowerPoint, and print-ready formats." },
+      { q: "How much does company profile design cost in Sri Lanka?", a: "Pricing depends on page count and complexity. Contact us for a custom quotation." },
+      { q: "Can you update an existing company profile?", a: "Yes, we can redesign or update your existing company profile with new content and modern design." },
     ],
+    extraSections: [
+      {
+        title: "Why a Professional Company Profile Matters in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's business landscape, a company profile is often the first document shared with potential clients, partners, and government bodies during tender processes. A professionally designed profile can differentiate your business and win contracts.",
+          "Whether you're bidding for projects, meeting investors, or onboarding new clients, your company profile represents your brand's credibility and capability.",
+        ],
+      },
+      {
+        title: "Our Company Profile Design Services in Sri Lanka",
+        paragraphs: ["We create comprehensive company profiles for every business need."],
+        subsections: [
+          { title: "Corporate Company Profiles", bullets: ["Full company overview and history", "Vision, mission, and values", "Team and leadership profiles", "Client portfolio and testimonials"] },
+          { title: "Tender & Bid Profiles", bullets: ["Government tender documentation", "Project capability statements", "Financial and compliance sections", "Professional formatting standards"] },
+          { title: "Startup Profiles", bullets: ["Business model presentation", "Investor-ready design", "Growth and milestone highlights", "Product and service showcase"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Company Profile Design in Sri Lanka",
+        paragraphs: ["We create profiles that position your company for success."],
+        bullets: [
+          "Professional design and content structure",
+          "Infographics and data visualization",
+          "Content writing support included",
+          "Print-ready and digital formats",
+          "Fast turnaround for tender deadlines",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "presentation-design-sri-lanka",
