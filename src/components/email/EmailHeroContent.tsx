@@ -163,8 +163,8 @@ const EmailHeroContent = () => {
         <p className="text-muted-foreground text-center mb-4 text-sm">Email Campaign → Findit.lk Exposure → Retargeting → Conversion</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Mail, title: "Email Campaign", desc: "Reach your target audience directly", num: "01", emoji: "📧" },
-            { icon: Globe, title: "Findit.lk Exposure", desc: "Stay visible beyond the inbox", num: "02", emoji: "🌐" },
+            { icon: Mail, title: "Email Campaign", desc: "Reach 350,000+ subscribers directly in their inbox", num: "01", emoji: "📧" },
+            { icon: Globe, title: "Findit.lk Exposure", desc: "Stay visible to 200,000+ monthly users beyond the inbox", num: "02", emoji: "🌐" },
             { icon: Target, title: "Retargeting", desc: "Re-engage interested users across platforms", num: "03", emoji: "🎯" },
             { icon: DollarSign, title: "Conversion", desc: "Turn visibility into real inquiries and customers", num: "04", emoji: "💰" },
           ].map((step) => (
