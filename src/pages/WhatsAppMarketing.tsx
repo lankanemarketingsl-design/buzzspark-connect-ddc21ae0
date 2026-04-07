@@ -119,6 +119,10 @@ const WhatsAppMarketing = () => {
             <Shield className="w-3.5 h-3.5 text-muted-foreground" />
             <span className="text-muted-foreground text-xs font-medium">Text, Image & Video Support</span>
           </div>
+          <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/60 border border-border">
+            <Globe className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-muted-foreground text-xs font-medium">Extended Reach via Findit.lk</span>
+          </div>
         </div>
 
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4 leading-tight">
