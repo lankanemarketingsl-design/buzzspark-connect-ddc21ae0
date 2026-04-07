@@ -34,7 +34,7 @@ const RecruitmentEmailHiring = () => {
       <article className="max-w-4xl mx-auto space-y-12">
         <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Recruitment email marketing to speed up hiring in Sri Lanka" className="w-full h-auto" /></div>
         <section className="prose prose-lg max-w-none">
-          <p className="text-lg text-muted-foreground leading-relaxed">Recruitment in Sri Lanka requires reaching the right candidates quickly. Traditional job postings alone are not enough.</p>
+          <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/staff-recruitment-campaigns-sri-lanka" className="text-muted-foreground">Recruitment Sri Lanka</Link> requires reaching the right candidates quickly. Traditional job postings alone are not enough.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> helps employers connect directly with job seekers and improve hiring efficiency.</p>
         </section>
         <section>
