@@ -219,7 +219,7 @@ const StaffRecruitment = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> WhatsApp / simple apply method</li>
               <li className="flex items-start gap-2">
                 <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <a href="https://www.findit.lk/promotions/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+                <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Starter%20Hiring%20Campaign%20(LKR%2012%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -243,7 +243,7 @@ const StaffRecruitment = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Increased campaign reach</li>
               <li className="flex items-start gap-2">
                 <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <a href="https://www.findit.lk/promotions/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+                <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Growth%20Hiring%20Campaign%20(LKR%2025%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -266,7 +266,7 @@ const StaffRecruitment = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Optimized application flow</li>
               <li className="flex items-start gap-2">
                 <Globe className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                <a href="https://www.findit.lk/promotions/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
+                <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
             <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Pro%20Hiring%20Campaign%20(LKR%2045%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
@@ -396,7 +396,7 @@ const StaffRecruitment = () => {
         description="Get your job vacancies listed and promoted in Findit.lk's Jobs category for continuous visibility to active job seekers searching for opportunities in Sri Lanka."
         gradient="gradient-hotel"
         links={[
-          { label: "Jobs & Careers", url: "https://www.findit.lk/promotions/jobs" },
+          { label: "Jobs & Careers", url: "https://www.findit.lk/jobs" },
         ]}
         benefits={["Access to active job seekers", "High visibility in Jobs category", "Continuous promotion for weeks", "Better applications than traditional job boards"]}
       />
