@@ -167,10 +167,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Animated Video Creation Sri Lanka",
     metaTitle: "Animated Video Creation Sri Lanka | Explainer Videos",
     metaDescription: "Professional animated explainer video creation in Sri Lanka. Short, engaging animation videos to tell your business story and explain products or services effectively.",
-    h1: "Animated Video Creation Sri Lanka – Professional Explainer Videos",
+    h1: "Animated Video Creation Sri Lanka – Explainer Videos That Convert",
     intro: [
-      "Animated explainer videos are a powerful way to communicate your brand message, explain complex products, and engage your audience. Video content drives higher engagement than any other content format.",
-      "At Buzz Connect, we create short, compelling animated videos that bring your business story to life and help convert viewers into customers.",
+      "Looking for professional animated video creation Sri Lanka services that bring your brand story to life?",
+      "At Buzz Connect, we create short, compelling animated explainer videos that simplify complex ideas, engage your audience, and drive conversions.",
+      "Video content is the most engaging format online. Our animations combine storytelling, visual design, and marketing strategy to deliver videos that capture attention and communicate your message effectively.",
     ],
     benefits: [
       "Increase audience engagement by up to 80%",
@@ -181,16 +182,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Custom animations matching your brand",
     ],
     process: [
-      { step: "Script", desc: "We develop a compelling script for your video" },
+      { step: "Script & Brief", desc: "We develop a compelling script for your video" },
       { step: "Storyboard", desc: "Visual storyboard created for your approval" },
-      { step: "Animate", desc: "Full animation production with effects and transitions" },
-      { step: "Deliver", desc: "Final video with voiceover and background music" },
+      { step: "Animation", desc: "Full animation production with effects and transitions" },
+      { step: "Final Delivery", desc: "Final video with voiceover and background music" },
     ],
     faqs: [
       { q: "How long are animated explainer videos?", a: "Typically 30 seconds to 2 minutes, depending on your message and requirements." },
       { q: "Can you add voiceover to the video?", a: "Yes, we offer professional voiceover services in Sinhala, Tamil, and English." },
       { q: "What format is the video delivered in?", a: "Videos are delivered in MP4 format, optimized for web, social media, and presentations." },
+      { q: "How much does animated video creation cost in Sri Lanka?", a: "Pricing depends on video length, complexity, and voiceover requirements. Contact us for a custom quotation." },
+      { q: "Can you create videos for social media ads?", a: "Yes, we create short animated videos optimized for Facebook, Instagram, YouTube, and TikTok ads." },
     ],
+    extraSections: [
+      {
+        title: "Why Animated Videos Matter for Your Business in Sri Lanka",
+        paragraphs: [
+          "Video content generates 1200% more shares than text and image content combined. For Sri Lankan businesses looking to stand out online, animated explainer videos are the most effective way to communicate your value proposition.",
+          "Whether you're explaining a product, onboarding customers, or running social media ads, animated videos help you connect with your audience faster and more memorably.",
+        ],
+      },
+      {
+        title: "Our Animated Video Services in Sri Lanka",
+        paragraphs: ["We create different types of animated videos to meet every marketing need."],
+        subsections: [
+          { title: "Explainer Videos", bullets: ["Product and service explainers", "How-it-works videos", "Onboarding and tutorial videos", "FAQ and support videos"] },
+          { title: "Promotional Videos", bullets: ["Social media ad videos", "Product launch videos", "Event promotion videos", "Brand awareness campaigns"] },
+          { title: "Corporate Videos", bullets: ["Company introduction videos", "Training and education videos", "Investor pitch videos", "Internal communication"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Animated Videos in Sri Lanka",
+        paragraphs: ["We create videos that don't just look good — they deliver results."],
+        bullets: [
+          "Professional scriptwriting and storyboarding",
+          "Voiceover in Sinhala, Tamil, and English",
+          "Optimized for social media and web",
+          "Fast turnaround and responsive communication",
+          "Affordable packages for SMEs and corporates",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "logo-design-sri-lanka",
