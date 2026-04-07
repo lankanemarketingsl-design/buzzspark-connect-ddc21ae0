@@ -41,6 +41,7 @@ const allArticles = [
   { title: "Automotive Email Marketing: Drive Sales", path: "/automotive-email-marketing-sales-sri-lanka" },
   { title: "Event Email Marketing: Increase Attendance", path: "/event-email-marketing-attendance-sri-lanka" },
   { title: "Lead Generation Agency Sri Lanka", path: "/lead-generation-agency-sri-lanka" },
+  { title: "Multi-Channel Email Campaigns", path: "/multi-channel-email-campaigns-sri-lanka" },
 ];
 
 interface RelatedArticlesProps {
