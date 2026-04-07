@@ -134,10 +134,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Logo Design Sri Lanka",
     metaTitle: "Logo Design Sri Lanka | Custom Logo Design Services",
     metaDescription: "Professional custom logo design services in Sri Lanka. Minimalist, eye-catching logos for startups & businesses. Multiple concepts, unlimited revisions. Get a quote.",
-    h1: "Logo Design Sri Lanka – Custom Logo Design Services",
+    h1: "Logo Design Sri Lanka – Professional Custom Logo Design That Builds Brands",
     intro: [
-      "Your logo is the face of your brand. It's the first thing customers notice and the lasting image they remember. A well-designed logo establishes trust, communicates your values, and sets you apart from competitors.",
-      "Buzz Connect creates unique, memorable logo designs that capture the essence of your brand and resonate with your target audience in Sri Lanka and beyond.",
+      "Looking for professional logo design Sri Lanka services that help your business build instant brand recognition?",
+      "At Buzz Connect, we create strategic, memorable logo designs that capture your brand identity and resonate with your target audience across Sri Lanka and beyond.",
+      "Your logo is more than a symbol — it's the foundation of your brand. Our designs combine creativity, market research, and brand psychology to create logos that attract customers and build lasting trust.",
     ],
     benefits: [
       "Unique designs that stand out from competitors",
@@ -148,16 +149,60 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Fast turnaround with expert designers",
     ],
     process: [
-      { step: "Discovery", desc: "Understanding your brand, audience, and competitors" },
-      { step: "Concepts", desc: "We present multiple unique logo concepts" },
-      { step: "Refine", desc: "Iterate on your chosen direction until perfect" },
-      { step: "Deliver", desc: "Final logo in all formats (AI, PNG, SVG, PDF)" },
+      { step: "Discovery & Brief", desc: "Understanding your brand, audience, and competitors" },
+      { step: "Concept Development", desc: "We present multiple unique logo concepts" },
+      { step: "Design Refinement", desc: "Iterate on your chosen direction until perfect" },
+      { step: "Final Delivery", desc: "Final logo in all formats (AI, PNG, SVG, PDF)" },
     ],
     faqs: [
       { q: "How many logo concepts do you provide?", a: "We typically provide 3-5 unique concepts depending on the package you choose." },
       { q: "Do you provide source files?", a: "Yes, you receive editable AI/EPS files along with PNG, SVG, and PDF versions." },
       { q: "Can you redesign an existing logo?", a: "Yes, we offer logo redesign and modernization services while maintaining brand recognition." },
+      { q: "How much does logo design cost in Sri Lanka?", a: "Logo design pricing varies based on complexity and package. Contact us for a custom quotation tailored to your needs." },
+      { q: "How long does logo design take?", a: "Typically 3-7 business days depending on complexity and revision rounds." },
     ],
+    extraSections: [
+      {
+        title: "Why Logo Design Matters for Your Business in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's growing business landscape, your logo is often the first impression customers have of your brand. Whether seen on a signboard, website, social media, or product packaging, your logo communicates your brand's professionalism and values instantly.",
+          "A professionally designed logo can help you build trust, stand out in competitive markets, and create a consistent brand identity across all platforms.",
+        ],
+      },
+      {
+        title: "Our Logo Design Services in Sri Lanka",
+        paragraphs: ["We provide complete logo design Sri Lanka solutions for businesses of all sizes."],
+        subsections: [
+          { title: "Startup & New Business Logos", bullets: ["Brand-new logo creation", "Brand identity development", "Logo + business card combo packages", "Social media profile optimization"] },
+          { title: "Corporate Logo Design", bullets: ["Professional corporate identity", "Multi-division brand systems", "Board-level presentation quality", "Stationery suite design"] },
+          { title: "Logo Redesign & Modernization", bullets: ["Refreshing outdated logos", "Maintaining brand recognition", "Digital-first optimization", "Responsive logo variations"] },
+          { title: "Industry-Specific Logo Design", bullets: ["Restaurant & food brands", "Real estate & property firms", "Education & schools", "Healthcare & wellness"] },
+        ],
+      },
+      {
+        title: "Our Logo Design Approach",
+        paragraphs: ["Every logo we create goes through a strategic design process to ensure it represents your brand perfectly."],
+        bullets: [
+          "Market and competitor research",
+          "Multiple creative concepts",
+          "Color psychology and typography selection",
+          "Scalable vector formats for any size",
+          "Brand guidelines documentation",
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Logo Design in Sri Lanka",
+        paragraphs: ["We don't just design logos — we build brand identities."],
+        bullets: [
+          "10+ years of creative design experience",
+          "Deep understanding of the Sri Lankan market",
+          "Modern, minimalist, and timeless concepts",
+          "Fast communication and turnaround",
+          "Affordable packages for startups and SMEs",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "letterhead-design-sri-lanka",
@@ -497,10 +542,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Label Design Sri Lanka",
     metaTitle: "Label Design Sri Lanka | Product Label & Sticker Design",
     metaDescription: "Professional product label design services in Sri Lanka for food, beverages, cosmetics & retail. Eye-catching label designs that stand out on shelves. Get a quote.",
-    h1: "Label Design Sri Lanka – Professional Product Label Design Services",
+    h1: "Label Design Sri Lanka – Professional Product Labels That Drive Sales",
     intro: [
-      "Product labels are the silent salespeople on store shelves. An eye-catching, well-designed label can make your product stand out, communicate quality, and influence purchase decisions in seconds.",
-      "Buzz Connect creates professional product label designs for food, beverages, cosmetics, pharmaceuticals, and retail products across Sri Lanka, ensuring compliance with industry standards.",
+      "Looking for professional label design Sri Lanka services that make your products stand out on store shelves?",
+      "At Buzz Connect, we design eye-catching, compliant product labels that communicate quality, attract buyers, and boost your brand presence in the Sri Lankan market.",
+      "In today's competitive retail landscape, your label is often the deciding factor between a sale and a missed opportunity. Our designs combine visual appeal, regulatory compliance, and brand strategy to help your products win at the shelf.",
     ],
     benefits: [
       "Designs that stand out on retail shelves",
@@ -511,16 +557,60 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Barcode and nutrition panel integration",
     ],
     process: [
-      { step: "Brief", desc: "Share product details, dimensions, and regulations" },
-      { step: "Design", desc: "We create label concepts with mockups" },
-      { step: "Review", desc: "Refine design, colors, and compliance details" },
-      { step: "Deliver", desc: "Print-ready files with die-cut templates" },
+      { step: "Discovery & Brief", desc: "Share product details, dimensions, and regulations" },
+      { step: "Concept Development", desc: "We create label concepts with realistic mockups" },
+      { step: "Design Refinement", desc: "Refine design, colors, and compliance details" },
+      { step: "Production Delivery", desc: "Print-ready files with die-cut templates" },
     ],
     faqs: [
-      { q: "Can you design labels that meet food regulations?", a: "Yes, we ensure labels include required nutritional information, ingredient lists, and regulatory markings." },
-      { q: "Do you provide mockups?", a: "Yes, we provide realistic product mockups so you can visualize the label on your product." },
-      { q: "What label shapes can you design?", a: "We design rectangular, circular, oval, die-cut, and custom-shaped labels." },
+      { q: "What is label design and why is it important?", a: "Label design is the process of creating product labels that communicate brand identity, ingredients, and regulatory information. A great label attracts customers and builds trust." },
+      { q: "Can you design labels that meet food regulations?", a: "Yes, we ensure labels include required nutritional information, ingredient lists, and regulatory markings as per Sri Lankan standards." },
+      { q: "How much does label design cost in Sri Lanka?", a: "Costs vary based on complexity, label shape, and industry requirements. Contact us for a custom quotation." },
+      { q: "Do you provide mockups?", a: "Yes, we provide realistic product mockups so you can visualize the label on your actual product before printing." },
+      { q: "What label shapes can you design?", a: "We design rectangular, circular, oval, die-cut, and custom-shaped labels for any product type." },
     ],
+    extraSections: [
+      {
+        title: "Why Product Label Design Matters in Sri Lanka",
+        paragraphs: [
+          "In retail environments like supermarkets, pharmacies, and specialty stores, your product label is the first thing customers see. It must communicate quality, build trust, and comply with local regulations — all in a single glance.",
+          "Our label design Sri Lanka services are tailored to help local brands compete effectively against both domestic and international products on store shelves.",
+        ],
+      },
+      {
+        title: "Our Label Design Services in Sri Lanka",
+        paragraphs: ["We provide comprehensive label design Sri Lanka solutions across multiple industries."],
+        subsections: [
+          { title: "Food & Beverage Label Design", bullets: ["Packaged food labels", "Bottled drinks and water", "Spices and condiments", "Bakery and confectionery"] },
+          { title: "Cosmetic & Beauty Label Design", bullets: ["Skincare and haircare products", "Essential oils and serums", "Makeup and beauty products", "Luxury cosmetic branding"] },
+          { title: "Pharmaceutical & Healthcare Labels", bullets: ["Medicine and supplement labels", "Ayurvedic product labels", "Health and wellness products", "Regulatory-compliant designs"] },
+          { title: "Retail & Industrial Labels", bullets: ["Household cleaning products", "Chemical and industrial labels", "Private label brands", "Promotional stickers and decals"] },
+        ],
+      },
+      {
+        title: "Our Label Design Approach",
+        paragraphs: ["Whether you're launching a new product or refreshing an existing one, we ensure every label is production-ready and market-competitive."],
+        bullets: [
+          "Realistic product mockups for visualization",
+          "Custom die-cut and shape design",
+          "Print-ready artwork with bleed and trim marks",
+          "Material and finishing recommendations",
+          "Barcode, QR code, and regulatory panel placement",
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Label Design in Sri Lanka",
+        paragraphs: ["We specialize in labels that sell — not just look good."],
+        bullets: [
+          "Industry-specific design expertise",
+          "Understanding of Sri Lankan retail and regulatory landscape",
+          "Creative, modern, and shelf-ready concepts",
+          "Fast turnaround with responsive communication",
+          "Affordable solutions for startups and established brands",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "package-design-sri-lanka",
