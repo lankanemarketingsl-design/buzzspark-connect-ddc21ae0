@@ -30,12 +30,12 @@ const services = [
 ];
 
 const useCases = [
-  { icon: GraduationCap, label: "Education institutes" },
-  { icon: Home, label: "Real estate companies" },
-  { icon: Building2, label: "Job recruitment campaigns" },
-  { icon: Rocket, label: "SMEs & local businesses" },
-  { icon: ShoppingCart, label: "Product & service promotions" },
-  { icon: Calendar, label: "Event organizers" },
+  { icon: GraduationCap, label: "Education Institutes", link: "/education-marketing-sri-lanka" },
+  { icon: Home, label: "Real Estate Companies", link: "/real-estate-marketing-sri-lanka" },
+  { icon: Building2, label: "Job Recruitment Campaigns", link: "/staff-recruitment-campaigns-sri-lanka" },
+  { icon: Rocket, label: "Hotels & Hospitality", link: "/hotel-marketing-sri-lanka" },
+  { icon: ShoppingCart, label: "Restaurants & Food", link: "/restaurant-marketing-sri-lanka" },
+  { icon: Calendar, label: "Events & Conferences", link: "/event-marketing-sri-lanka" },
 ];
 
 const processSteps = [
