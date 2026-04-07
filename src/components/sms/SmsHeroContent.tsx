@@ -71,7 +71,7 @@ const SmsHeroContent = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <AlertTriangle className="w-7 h-7 text-destructive" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Why Most Bulk SMS Campaigns Fail</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Why Most Traditional Bulk SMS Campaigns Fail</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-4">Many businesses only focus on sending messages. But the reality is:</p>
         <ul className="space-y-2 mb-4">
