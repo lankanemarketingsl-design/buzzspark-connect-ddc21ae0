@@ -1,5 +1,12 @@
 import { Image, Layout, Film, Palette, FileText, PenTool, Award, CreditCard, BookOpen, Type, Edit, Smartphone, Tag, Box, LucideIcon } from "lucide-react";
 
+export interface ExtraSection {
+  title: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  subsections?: { title: string; bullets: string[] }[];
+}
+
 export interface GraphicDesignServiceData {
   slug: string;
   icon: LucideIcon;
@@ -14,6 +21,8 @@ export interface GraphicDesignServiceData {
   benefits: string[];
   process: { step: string; desc: string }[];
   faqs: { q: string; a: string }[];
+  extraSections?: ExtraSection[];
+  locations?: string[];
 }
 
 export const graphicDesignServices: GraphicDesignServiceData[] = [
