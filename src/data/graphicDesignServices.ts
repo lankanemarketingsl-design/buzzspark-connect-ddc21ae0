@@ -134,10 +134,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Logo Design Sri Lanka",
     metaTitle: "Logo Design Sri Lanka | Custom Logo Design Services",
     metaDescription: "Professional custom logo design services in Sri Lanka. Minimalist, eye-catching logos for startups & businesses. Multiple concepts, unlimited revisions. Get a quote.",
-    h1: "Logo Design Sri Lanka – Custom Logo Design Services",
+    h1: "Logo Design Sri Lanka – Professional Custom Logo Design That Builds Brands",
     intro: [
-      "Your logo is the face of your brand. It's the first thing customers notice and the lasting image they remember. A well-designed logo establishes trust, communicates your values, and sets you apart from competitors.",
-      "Buzz Connect creates unique, memorable logo designs that capture the essence of your brand and resonate with your target audience in Sri Lanka and beyond.",
+      "Looking for professional logo design Sri Lanka services that help your business build instant brand recognition?",
+      "At Buzz Connect, we create strategic, memorable logo designs that capture your brand identity and resonate with your target audience across Sri Lanka and beyond.",
+      "Your logo is more than a symbol — it's the foundation of your brand. Our designs combine creativity, market research, and brand psychology to create logos that attract customers and build lasting trust.",
     ],
     benefits: [
       "Unique designs that stand out from competitors",
@@ -148,16 +149,60 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Fast turnaround with expert designers",
     ],
     process: [
-      { step: "Discovery", desc: "Understanding your brand, audience, and competitors" },
-      { step: "Concepts", desc: "We present multiple unique logo concepts" },
-      { step: "Refine", desc: "Iterate on your chosen direction until perfect" },
-      { step: "Deliver", desc: "Final logo in all formats (AI, PNG, SVG, PDF)" },
+      { step: "Discovery & Brief", desc: "Understanding your brand, audience, and competitors" },
+      { step: "Concept Development", desc: "We present multiple unique logo concepts" },
+      { step: "Design Refinement", desc: "Iterate on your chosen direction until perfect" },
+      { step: "Final Delivery", desc: "Final logo in all formats (AI, PNG, SVG, PDF)" },
     ],
     faqs: [
       { q: "How many logo concepts do you provide?", a: "We typically provide 3-5 unique concepts depending on the package you choose." },
       { q: "Do you provide source files?", a: "Yes, you receive editable AI/EPS files along with PNG, SVG, and PDF versions." },
       { q: "Can you redesign an existing logo?", a: "Yes, we offer logo redesign and modernization services while maintaining brand recognition." },
+      { q: "How much does logo design cost in Sri Lanka?", a: "Logo design pricing varies based on complexity and package. Contact us for a custom quotation tailored to your needs." },
+      { q: "How long does logo design take?", a: "Typically 3-7 business days depending on complexity and revision rounds." },
     ],
+    extraSections: [
+      {
+        title: "Why Logo Design Matters for Your Business in Sri Lanka",
+        paragraphs: [
+          "In Sri Lanka's growing business landscape, your logo is often the first impression customers have of your brand. Whether seen on a signboard, website, social media, or product packaging, your logo communicates your brand's professionalism and values instantly.",
+          "A professionally designed logo can help you build trust, stand out in competitive markets, and create a consistent brand identity across all platforms.",
+        ],
+      },
+      {
+        title: "Our Logo Design Services in Sri Lanka",
+        paragraphs: ["We provide complete logo design Sri Lanka solutions for businesses of all sizes."],
+        subsections: [
+          { title: "Startup & New Business Logos", bullets: ["Brand-new logo creation", "Brand identity development", "Logo + business card combo packages", "Social media profile optimization"] },
+          { title: "Corporate Logo Design", bullets: ["Professional corporate identity", "Multi-division brand systems", "Board-level presentation quality", "Stationery suite design"] },
+          { title: "Logo Redesign & Modernization", bullets: ["Refreshing outdated logos", "Maintaining brand recognition", "Digital-first optimization", "Responsive logo variations"] },
+          { title: "Industry-Specific Logo Design", bullets: ["Restaurant & food brands", "Real estate & property firms", "Education & schools", "Healthcare & wellness"] },
+        ],
+      },
+      {
+        title: "Our Logo Design Approach",
+        paragraphs: ["Every logo we create goes through a strategic design process to ensure it represents your brand perfectly."],
+        bullets: [
+          "Market and competitor research",
+          "Multiple creative concepts",
+          "Color psychology and typography selection",
+          "Scalable vector formats for any size",
+          "Brand guidelines documentation",
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Logo Design in Sri Lanka",
+        paragraphs: ["We don't just design logos — we build brand identities."],
+        bullets: [
+          "10+ years of creative design experience",
+          "Deep understanding of the Sri Lankan market",
+          "Modern, minimalist, and timeless concepts",
+          "Fast communication and turnaround",
+          "Affordable packages for startups and SMEs",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "letterhead-design-sri-lanka",
