@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Building2, GraduationCap, Landmark, UtensilsCrossed, Home, Shirt, Calendar, ArrowRight } from "lucide-react";
+import { Building2, GraduationCap, Landmark, UtensilsCrossed, Home, Shirt, Calendar, Briefcase, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const industries = [
@@ -10,6 +10,7 @@ const industries = [
   { name: "Finance & Banking", tagline: "Reach decision makers", icon: Landmark, path: "/finance-marketing-sri-lanka", color: "from-amber-500 to-yellow-400" },
   { name: "Education", tagline: "Drive student enrollments", icon: GraduationCap, path: "/education-marketing-sri-lanka", color: "from-purple-500 to-violet-400" },
   { name: "Events & Conferences", tagline: "Maximize event attendance", icon: Calendar, path: "/event-marketing-sri-lanka", color: "from-violet-500 to-purple-400" },
+  { name: "Staff Recruitment", tagline: "Hire faster & smarter", icon: Briefcase, path: "/staff-recruitment-campaigns-sri-lanka", color: "from-sky-500 to-indigo-400" },
 ];
 
 const IndustriesSection = () => {
