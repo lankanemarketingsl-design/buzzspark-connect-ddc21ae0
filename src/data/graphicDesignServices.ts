@@ -771,10 +771,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Photo Editing Sri Lanka",
     metaTitle: "Photo Editing Sri Lanka | Professional Image Editing Services",
     metaDescription: "Professional photo editing services in Sri Lanka. Retouching, background removal, color correction, product photography editing & more. Fast delivery, affordable rates.",
-    h1: "Photo Editing Sri Lanka – Professional Image Editing Services",
+    h1: "Photo Editing Sri Lanka – Professional Image Editing That Transforms",
     intro: [
-      "High-quality images are essential for marketing, e-commerce, social media, and print materials. Professional photo editing can transform ordinary images into stunning visuals that capture attention and drive engagement.",
-      "Buzz Connect offers comprehensive photo editing services including retouching, background removal, color correction, and product image enhancement for businesses in Sri Lanka.",
+      "Looking for professional photo editing Sri Lanka services that transform your images into stunning visuals?",
+      "At Buzz Connect, we offer comprehensive photo editing services including retouching, background removal, color correction, and product image enhancement for businesses across Sri Lanka.",
+      "High-quality images are essential for marketing, e-commerce, social media, and print materials. Professional editing can turn ordinary photos into powerful visual assets that capture attention, build trust, and drive sales.",
     ],
     benefits: [
       "Professional retouching and enhancement",
@@ -785,16 +786,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Fast turnaround times",
     ],
     process: [
-      { step: "Upload", desc: "Send us your images and editing requirements" },
-      { step: "Edit", desc: "Our team applies professional edits" },
-      { step: "Review", desc: "Review edited images and request adjustments" },
-      { step: "Deliver", desc: "Final images delivered in your preferred format" },
+      { step: "Upload & Brief", desc: "Send us your images and editing requirements" },
+      { step: "Professional Editing", desc: "Our team applies professional edits" },
+      { step: "Review & Refine", desc: "Review edited images and request adjustments" },
+      { step: "Final Delivery", desc: "Final images delivered in your preferred format" },
     ],
     faqs: [
       { q: "What types of photo editing do you offer?", a: "We offer retouching, background removal, color correction, image compositing, and product photo enhancement." },
       { q: "Can you handle bulk photo editing?", a: "Yes, we handle batch editing for e-commerce catalogs and marketing campaigns at competitive rates." },
       { q: "What file formats do you accept?", a: "We work with JPG, PNG, RAW, TIFF, and PSD files." },
+      { q: "How much does photo editing cost in Sri Lanka?", a: "Pricing depends on editing complexity and volume. Contact us for competitive bulk rates." },
+      { q: "How fast can you deliver edited photos?", a: "Standard turnaround is 24-48 hours. Rush delivery is available for urgent projects." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Photo Editing Matters in Sri Lanka",
+        paragraphs: [
+          "In the age of visual marketing, the quality of your images directly impacts customer perception and buying decisions. For e-commerce, social media, and advertising in Sri Lanka, professional photo editing is no longer optional — it's essential.",
+          "Whether you're running an online store, creating marketing materials, or building a brand presence, our photo editing services ensure every image represents your business at its best.",
+        ],
+      },
+      {
+        title: "Our Photo Editing Services in Sri Lanka",
+        paragraphs: ["We provide complete photo editing solutions for every need."],
+        subsections: [
+          { title: "E-Commerce Photo Editing", bullets: ["Product photo enhancement", "Background removal and replacement", "Ghost mannequin editing", "Amazon and eBay optimization"] },
+          { title: "Portrait & Event Editing", bullets: ["Skin retouching and enhancement", "Event photo editing", "Wedding photo editing", "Corporate headshots"] },
+          { title: "Commercial Photo Editing", bullets: ["Real estate photo editing", "Food photography enhancement", "Fashion and lifestyle editing", "Advertising image compositing"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Photo Editing in Sri Lanka",
+        paragraphs: ["We deliver quality edits that enhance your visual presence."],
+        bullets: [
+          "Professional editing by experienced designers",
+          "Fast 24-48 hour turnaround",
+          "Competitive bulk editing rates",
+          "Consistent quality across all images",
+          "All major file formats supported",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "social-media-post-design-sri-lanka",
