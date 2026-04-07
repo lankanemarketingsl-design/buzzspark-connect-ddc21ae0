@@ -6,76 +6,58 @@ import {
   CheckCircle, Target, Zap, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket,
   Users, TrendingUp, DollarSign, ArrowRight, Search, Layers, Send, Settings,
-  Eye, Award
+  Eye, Award, Shield, Brain, Repeat, Star
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
+
+const comparisonData = [
+  { feature: "Channels Used", standard: "Single Platform", bc: "✅ Multi-Channel Strategy" },
+  { feature: "Audience Reach", standard: "Limited", bc: "✅ Expanded Targeted Reach" },
+  { feature: "Visibility", standard: "One-Time Exposure", bc: "✅ Repeated Multi-Platform Visibility" },
+  { feature: "Engagement", standard: "Moderate", bc: "✅ High Engagement Potential" },
+  { feature: "Lead Quality", standard: "General", bc: "✅ Targeted & Relevant Leads" },
+  { feature: "Marketplace Integration", standard: "Not Available", bc: "✅ Findit.lk Integration" },
+  { feature: "Campaign Impact", standard: "Short-Term", bc: "✅ Sustained & Reinforced" },
+];
 
 const services = [
   { icon: Mail, title: "Email Marketing Campaigns", desc: "Reach 350,000+ targeted contacts with professional email promotions and offers." },
   { icon: Smartphone, title: "SMS Marketing Campaigns", desc: "Instant alerts and engagement to 600,000+ mobile users across Sri Lanka." },
   { icon: MessageSquare, title: "WhatsApp Marketing Campaigns", desc: "Direct and personalized communication with high open and response rates." },
-  { icon: Globe, title: "Landing Page Creation", desc: "High-converting landing pages designed to capture leads effectively." },
-  { icon: Eye, title: "Banner Advertising Campaigns", desc: "Mass visibility and brand awareness through strategic online ad placements." },
+  { icon: Globe, title: "Findit.lk Category Promotion", desc: "High-intent visibility on Sri Lanka's leading promotion platform with 200,000+ monthly users." },
+  { icon: Eye, title: "Social Media Advertising", desc: "Expand your reach and generate leads through strategic social media campaigns." },
   { icon: Target, title: "Database Targeting & Segmentation", desc: "Precision audience targeting to reach the right customers with the right message." },
 ];
 
-const channels = [
-  { icon: Mail, channel: "Email", action: "Detailed promotions & offers", color: "bg-blue-500/10 text-blue-600" },
-  { icon: Smartphone, channel: "SMS", action: "Instant alerts and engagement", color: "bg-green-500/10 text-green-600" },
-  { icon: MessageSquare, channel: "WhatsApp", action: "Direct & personalized communication", color: "bg-emerald-500/10 text-emerald-600" },
-  { icon: Globe, channel: "Online Ads", action: "Mass visibility and awareness", color: "bg-purple-500/10 text-purple-600" },
-];
-
-const benefits = [
-  "Generate high-quality leads",
-  "Reach targeted audiences",
-  "Increase sales and revenue",
-  "Improve marketing efficiency",
-  "Reduce customer acquisition cost",
-  "Achieve faster results",
-];
-
 const useCases = [
-  { icon: GraduationCap, label: "Education institutes promoting intakes" },
+  { icon: GraduationCap, label: "Education institutes" },
   { icon: Home, label: "Real estate companies" },
-  { icon: ShoppingCart, label: "E-commerce businesses" },
-  { icon: Building2, label: "Hotels and travel companies" },
+  { icon: Building2, label: "Job recruitment campaigns" },
+  { icon: Rocket, label: "SMEs & local businesses" },
+  { icon: ShoppingCart, label: "Product & service promotions" },
   { icon: Calendar, label: "Event organizers" },
-  { icon: Rocket, label: "SMEs and corporate businesses" },
 ];
 
 const processSteps = [
-  { icon: Target, title: "Identify Target Audience", desc: "Define your ideal customer profile and target segments" },
-  { icon: Layers, title: "Choose Marketing Channels", desc: "Select the best channels: email, SMS, WhatsApp, or ads" },
-  { icon: Send, title: "Launch Multi-Channel Campaigns", desc: "Execute coordinated campaigns across all selected channels" },
-  { icon: Settings, title: "Capture & Manage Leads", desc: "Collect and organize leads for your sales team" },
-  { icon: BarChart3, title: "Optimize for Better Results", desc: "Continuously improve campaigns based on performance data" },
+  { icon: Search, title: "Understand Your Business & Audience", desc: "We analyze your target market, goals, and ideal customer profile to build the right strategy." },
+  { icon: Send, title: "Launch Multi-Channel Campaigns", desc: "Coordinated campaigns across Email, SMS, WhatsApp, Findit.lk, and Social Media." },
+  { icon: BarChart3, title: "Drive Traffic & Generate Inquiries", desc: "Capture leads, track performance, and optimize for better conversion rates." },
 ];
 
-const results = [
-  "Increased inquiries and conversions",
-  "Higher engagement rates",
-  "Strong brand visibility",
-  "Consistent lead flow",
-  "Improved ROI",
-];
-
-const whyChoose = [
-  "Proven multi-channel strategy",
-  "Large and targeted databases",
-  "Cost-effective solutions",
-  "Fast campaign execution",
-  "Experienced marketing team",
-  "Integration with Findit.lk",
+const whyItWorks = [
+  { icon: Repeat, title: "Repeated Exposure", desc: "People respond to brands they see multiple times across platforms." },
+  { icon: Shield, title: "Multi-Platform Trust", desc: "Appearing on multiple channels builds credibility and brand authority." },
+  { icon: Brain, title: "Visibility Drives Action", desc: "The more visible your brand, the higher the chance of conversion." },
 ];
 
 const faqs = [
-  { q: "What is lead generation?", a: "Lead generation is the process of attracting potential customers and converting them into business opportunities through targeted marketing campaigns." },
-  { q: "How does lead generation work?", a: "It uses marketing channels like email, SMS, WhatsApp, and online ads to reach and engage potential customers, capturing their interest and contact details." },
-  { q: "Why is lead generation important?", a: "It helps businesses grow by generating new customers, increasing sales, and building a consistent pipeline of business opportunities." },
-  { q: "What makes Buzz Connect different for lead generation?", a: "Our multi-channel approach combining email, SMS, WhatsApp marketing and Findit.lk integration delivers faster and more effective results than single-channel strategies." },
-  { q: "How much does lead generation cost in Sri Lanka?", a: "Buzz Connect offers cost-effective lead generation packages starting from LKR 6,000. Contact us for a customized quote based on your business requirements." },
+  { q: "What is lead generation?", a: "Lead generation is the process of attracting potential customers who are interested in your products or services and converting them into real business opportunities." },
+  { q: "How does Buzz Connect generate leads?", a: "We use a multi-channel strategy combining email marketing, SMS, WhatsApp, Findit.lk promotion, and social media advertising to reach targeted audiences and generate meaningful inquiries." },
+  { q: "Why is multi-channel lead generation more effective?", a: "Today's customers interact with brands across multiple platforms before making a decision. Our approach ensures your business is visible on every platform they use, increasing trust and conversion." },
+  { q: "What makes Buzz Connect different from other agencies?", a: "Our integration with Findit.lk gives your campaign access to 200,000+ high-intent monthly users — a competitive advantage no other agency in Sri Lanka offers." },
+  { q: "How much does lead generation cost in Sri Lanka?", a: "Buzz Connect offers professional lead generation campaigns starting from LKR 100,000. Packages are flexible and customized based on your business goals and campaign scale." },
 ];
 
 const LeadGeneration = () => {
@@ -95,19 +77,19 @@ const LeadGeneration = () => {
       name: "Lead Generation Sri Lanka",
       provider: { "@type": "Organization", name: "Buzz Connect" },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Result-driven lead generation services in Sri Lanka using multi-channel marketing strategies including email, SMS, WhatsApp, and online advertising.",
+      description: "Professional lead generation services in Sri Lanka using multi-channel marketing strategies including email, SMS, WhatsApp, Findit.lk, and social media advertising. Campaigns starting from LKR 100,000.",
     },
   ], []);
 
   return (
     <ServicePageLayout
       badge="Lead Generation Sri Lanka"
-      title="Lead Generation Sri Lanka – High-Quality Leads for Your Business Growth"
-      subtitle="Attract, engage, and convert potential customers into real sales opportunities with Buzz Connect's multi-channel lead generation services."
+      title="Generate High-Quality Leads for Your Business"
+      subtitle="Looking for reliable lead generation services in Sri Lanka? Buzz Connect helps businesses generate real customer inquiries through a powerful multi-channel strategy designed for visibility, reach, and conversions."
     >
       <SEOHead
-        title="Lead Generation Sri Lanka | Multi-Channel Lead Campaigns"
-        description="No.1 lead generation company in Sri Lanka. Generate high-quality leads via email, SMS, WhatsApp & Findit.lk. Reach 1.2M+ contacts. 20,000+ successful campaigns. Get leads fast."
+        title="Lead Generation Sri Lanka | Multi-Channel Lead Campaigns | Buzz Connect"
+        description="No.1 lead generation company in Sri Lanka. Generate high-quality leads via Email, SMS, WhatsApp & Findit.lk. Multi-channel campaigns from LKR 100,000. Start today."
         canonical="/lead-generation-sri-lanka"
         keywords="lead generation sri lanka, lead generation services sri lanka, customer acquisition sri lanka, generate leads sri lanka, online lead generation colombo, digital marketing leads sri lanka, best lead generation company sri lanka, b2b leads sri lanka"
         breadcrumbs={[
@@ -117,22 +99,27 @@ const LeadGeneration = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Power Intro */}
+      {/* Trust Strip */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
+        className="mb-12"
       >
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Buzz Connect provides result-driven <strong>lead generation services in Sri Lanka</strong>, helping businesses attract, engage, and convert potential customers into real sales opportunities.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Our advanced multi-channel approach combines <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS marketing</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <Link to="/online-advertising-sri-lanka" className="text-accent hover:underline font-semibold">online advertising</Link> to deliver high-quality leads at scale.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Whether you are a startup, SME, or corporate organization, our solutions are designed to generate consistent leads and maximize your return on investment.
-        </p>
+        <div className="flex flex-wrap items-center gap-4 mb-6">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+            <Zap className="w-4 h-4 text-accent" />
+            <span className="text-accent font-bold text-sm">Campaigns from LKR 100,000</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+            <Users className="w-4 h-4 text-accent" />
+            <span className="text-accent font-bold text-sm">Multi-Channel Reach</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+            <Globe className="w-4 h-4 text-accent" />
+            <span className="text-accent font-bold text-sm">Findit.lk Integrated</span>
+          </div>
+        </div>
       </motion.div>
 
       {/* What is Lead Generation */}
@@ -140,15 +127,20 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
+        className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">What is Lead Generation?</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+          What is Lead Generation?
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Lead generation is the process of attracting and converting potential customers who are interested in your products or services.
+        </p>
         <p className="text-muted-foreground leading-relaxed">
-          Lead generation is the process of attracting potential customers and capturing their interest in your products or services. In today's digital world, businesses in Sri Lanka rely on effective <strong>lead generation strategies</strong> to grow their customer base and increase revenue. A well-executed lead generation campaign connects your business with decision-makers who are actively looking for solutions you offer.
+          At Buzz Connect, we go beyond basic campaigns by combining multiple platforms to ensure your business reaches the right audience and generates meaningful results. Our <Link to="/" className="text-accent hover:underline font-semibold">lead generation services in Sri Lanka</Link> are designed to deliver consistent, high-quality business opportunities.
         </p>
       </motion.div>
 
-      {/* Our Services */}
+      {/* Our Strategy */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -156,11 +148,11 @@ const LeadGeneration = () => {
         className="mb-16"
       >
         <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Solutions</span>
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Approach</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Lead Generation Solutions in Sri Lanka
+            Our Lead Generation Strategy
           </h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We offer a complete range of lead generation services to drive real business results.</p>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We use a multi-channel approach to maximize your campaign performance:</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
@@ -180,101 +172,166 @@ const LeadGeneration = () => {
             </motion.div>
           ))}
         </div>
+        <p className="text-center text-accent font-semibold mt-6">
+          👉 This ensures your business is visible across multiple touchpoints — increasing engagement and lead potential.
+        </p>
       </motion.div>
 
-      {/* Multi-Channel Strategy */}
+      {/* Comparison Table */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16"
       >
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Our Approach</span>
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">See The Difference</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Multi-Channel Lead Generation Strategy
+            Why Choose Buzz Connect?
           </h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">We maximize lead generation results by reaching customers across multiple touchpoints simultaneously.</p>
+          <p className="text-muted-foreground mt-2">Buzz Connect helps you generate better leads through better visibility and targeting.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {channels.map((ch, i) => (
+        <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border shadow-card">
+          <Table>
+            <TableHeader>
+              <TableRow className="bg-muted/50">
+                <TableHead className="font-bold text-foreground">Feature</TableHead>
+                <TableHead className="font-bold text-foreground">Standard Approach</TableHead>
+                <TableHead className="font-bold text-accent">Buzz Connect</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {comparisonData.map((row) => (
+                <TableRow key={row.feature}>
+                  <TableCell className="font-medium text-foreground">{row.feature}</TableCell>
+                  <TableCell className="text-muted-foreground">{row.standard}</TableCell>
+                  <TableCell className="text-accent font-semibold">{row.bc}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </div>
+      </motion.div>
+
+      {/* Why Multi-Channel Works */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Marketing Psychology</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Why Multi-Channel Lead Generation Works
+          </h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Today's customers interact with brands across multiple platforms before making a decision.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          {whyItWorks.map((item, i) => (
             <motion.div
-              key={ch.channel}
+              key={item.title}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-6 rounded-xl bg-card shadow-card border border-border text-center"
+              className="text-center p-6 rounded-xl bg-card shadow-card border border-border"
             >
-              <div className={`w-14 h-14 rounded-full ${ch.color} flex items-center justify-center mx-auto mb-4`}>
-                <ch.icon className="w-7 h-7" />
+              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+                <item.icon className="w-7 h-7 text-accent" />
               </div>
-              <h3 className="font-heading font-bold text-foreground mb-1">{ch.channel}</h3>
-              <p className="text-sm text-muted-foreground">{ch.action}</p>
+              <h3 className="font-heading font-bold text-foreground mb-2">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">{item.desc}</p>
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-muted-foreground mt-6 max-w-xl mx-auto text-sm">
-          This ensures your campaign reaches customers across multiple touchpoints, increasing conversion rates and reducing <strong>customer acquisition costs in Sri Lanka</strong>.
+        <p className="text-center text-accent font-semibold mt-6">
+          👉 More visibility = More leads = More business growth
         </p>
       </motion.div>
 
-      {/* Findit.lk Advantage */}
+      {/* How It Works - 3 Steps */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Simple Process</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            How Our Lead Generation Campaign Works
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          {processSteps.map((step, i) => (
+            <div key={step.title} className="flex flex-col items-center text-center p-6 rounded-xl bg-card shadow-card border border-border relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full gradient-accent flex items-center justify-center text-sm font-bold text-primary">
+                {i + 1}
+              </div>
+              <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mt-4 mb-4">
+                <step.icon className="w-7 h-7 text-secondary-foreground" />
+              </div>
+              <h3 className="font-heading font-semibold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-accent font-semibold mt-6">
+          👉 Result: Consistent lead flow and measurable business impact
+        </p>
+      </motion.div>
+
+      {/* Findit.lk Power */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-4">Amplify Leads with Findit.lk</h2>
+        <div className="flex items-center gap-3 mb-4">
+          <Award className="w-8 h-8 text-accent" />
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold">Powered by Findit.lk</h2>
+        </div>
         <p className="text-primary-foreground/80 mb-6">
-          Our lead generation campaigns are enhanced through integration with <strong>Findit.lk</strong>, one of Sri Lanka's leading promotion platforms.
+          Buzz Connect campaigns are powered by <strong>Findit.lk</strong>, giving your business a competitive advantage no other agency offers.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {["Access to a large active audience", "High visibility for your offers", "Increased engagement and inquiries", "Better conversion opportunities"].map((item) => (
-            <div key={item} className="flex items-center gap-3">
-              <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-              <span className="text-primary-foreground/90">{item}</span>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {[
+            { icon: Users, text: "200,000+ monthly active users" },
+            { icon: Search, text: "High-intent audience searching for services" },
+            { icon: Eye, text: "Category-based visibility and discovery" },
+          ].map((item) => (
+            <div key={item.text} className="flex items-center gap-3 p-4 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10">
+              <item.icon className="w-5 h-5 text-accent shrink-0" />
+              <span className="text-primary-foreground/90 text-sm">{item.text}</span>
             </div>
           ))}
         </div>
+        <p className="text-accent font-semibold mt-6">
+          👉 This is your competitive advantage in Sri Lanka
+        </p>
       </motion.div>
 
-      {/* Benefits */}
+      {/* Industries */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">
-          Benefits of Lead Generation Services in Sri Lanka
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {benefits.map((b) => (
-            <div key={b} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
-              <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-              <span className="text-foreground font-medium">{b}</span>
-            </div>
-          ))}
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Who We Serve</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Industries We Serve
+          </h2>
+          <p className="text-muted-foreground mt-2">Our lead generation services in Sri Lanka are ideal for:</p>
         </div>
-      </motion.div>
-
-      {/* Use Cases */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">
-          Who Needs Lead Generation?
-        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
-                <uc.icon className="w-6 h-6 text-secondary-foreground" />
+            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center hover:border-accent/40 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                <uc.icon className="w-6 h-6 text-accent" />
               </div>
               <span className="text-sm font-medium text-foreground">{uc.label}</span>
             </div>
@@ -282,73 +339,77 @@ const LeadGeneration = () => {
         </div>
       </motion.div>
 
-      {/* Process */}
+      {/* Pricing */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-16 max-w-3xl mx-auto"
+      >
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Transparent Pricing</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Lead Generation Campaign Pricing
+          </h2>
+        </div>
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-accent/30">
+          <div className="flex items-center gap-3 mb-6">
+            <DollarSign className="w-8 h-8 text-accent" />
+            <div>
+              <p className="text-2xl font-bold text-foreground">Starting from <span className="text-accent">LKR 100,000</span></p>
+              <p className="text-muted-foreground text-sm">Professional multi-channel lead generation</p>
+            </div>
+          </div>
+          <div className="space-y-3 mb-6">
+            {[
+              "Multi-channel campaign setup",
+              "Audience targeting and segmentation",
+              "Promotion across Email, SMS, Findit.lk & Social Media",
+              "Campaign optimization for better performance",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <CheckCircle className="w-5 h-5 text-accent shrink-0" />
+                <span className="text-muted-foreground">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground italic">
+            👉 Flexible packages available based on your business goals and campaign scale.
+          </p>
+          <div className="mt-6">
+            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
+              <button className="px-8 py-3 rounded-full gradient-accent text-primary font-bold hover:opacity-90 transition-opacity text-base">
+                Get a Custom Quote <ArrowRight className="inline w-4 h-4 ml-1" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* What You Can Expect */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-3xl mx-auto"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">
-          How Our Lead Generation Process Works
+          What You Can Expect
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">
-                {i + 1}
-              </div>
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3">
-                <step.icon className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{step.title}</h3>
-              <p className="text-xs text-muted-foreground">{step.desc}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            "Increased inquiries and customer interest",
+            "Higher visibility across platforms",
+            "Better engagement with your target audience",
+            "Measurable campaign performance",
+          ].map((item) => (
+            <div key={item} className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border">
+              <TrendingUp className="w-5 h-5 text-accent shrink-0" />
+              <span className="text-foreground font-medium">{item}</span>
             </div>
           ))}
         </div>
       </motion.div>
-
-      {/* Why Choose + Results */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="p-8 rounded-2xl bg-card shadow-card border border-border"
-        >
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">
-            Why Choose Buzz Connect for Lead Generation?
-          </h2>
-          <ul className="space-y-3">
-            {whyChoose.map((item) => (
-              <li key={item} className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 text-sm text-muted-foreground italic">We focus on delivering real results, not just traffic.</p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="p-8 rounded-2xl bg-card shadow-card border border-border"
-        >
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">
-            Results You Can Expect
-          </h2>
-          <ul className="space-y-3">
-            {results.map((item) => (
-              <li key={item} className="flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      </div>
 
       {/* FAQ */}
       <motion.div
@@ -373,21 +434,24 @@ const LeadGeneration = () => {
         </div>
       </motion.div>
 
-      {/* CTA */}
+      {/* Final CTA */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Generating Leads Today</h2>
-        <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
-          Grow your business with powerful <strong>lead generation services in Sri Lanka</strong>. Contact Buzz Connect today and start getting high-quality leads.
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Ready to Generate More Leads?</h2>
+        <p className="text-primary-foreground/80 mb-4 max-w-xl mx-auto">
+          Grow your business with professional <strong>lead generation services in Sri Lanka</strong>.
+        </p>
+        <p className="text-accent font-semibold mb-6">
+          👉 Reach more people. Generate more leads. Drive real results.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link to="/contact-us">
-            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">
-              Get a Free Quote <ArrowRight className="inline w-4 h-4 ml-1" />
+            <button className="px-8 py-3 rounded-full gradient-accent text-primary font-bold hover:opacity-90 transition-opacity text-base">
+              Start Your Campaign Today <ArrowRight className="inline w-4 h-4 ml-1" />
             </button>
           </Link>
           <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
