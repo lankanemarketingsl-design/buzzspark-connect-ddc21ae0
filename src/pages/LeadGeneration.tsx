@@ -332,12 +332,12 @@ const LeadGeneration = () => {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
+            <Link key={uc.label} to={uc.link} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center hover:border-accent/40 hover:shadow-md transition-all">
               <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
                 <uc.icon className="w-6 h-6 text-secondary-foreground" />
               </div>
               <span className="text-sm font-medium text-foreground">{uc.label}</span>
-            </div>
+            </Link>
           ))}
         </div>
       </motion.div>
