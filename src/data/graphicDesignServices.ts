@@ -542,10 +542,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Label Design Sri Lanka",
     metaTitle: "Label Design Sri Lanka | Product Label & Sticker Design",
     metaDescription: "Professional product label design services in Sri Lanka for food, beverages, cosmetics & retail. Eye-catching label designs that stand out on shelves. Get a quote.",
-    h1: "Label Design Sri Lanka – Professional Product Label Design Services",
+    h1: "Label Design Sri Lanka – Professional Product Labels That Drive Sales",
     intro: [
-      "Product labels are the silent salespeople on store shelves. An eye-catching, well-designed label can make your product stand out, communicate quality, and influence purchase decisions in seconds.",
-      "Buzz Connect creates professional product label designs for food, beverages, cosmetics, pharmaceuticals, and retail products across Sri Lanka, ensuring compliance with industry standards.",
+      "Looking for professional label design Sri Lanka services that make your products stand out on store shelves?",
+      "At Buzz Connect, we design eye-catching, compliant product labels that communicate quality, attract buyers, and boost your brand presence in the Sri Lankan market.",
+      "In today's competitive retail landscape, your label is often the deciding factor between a sale and a missed opportunity. Our designs combine visual appeal, regulatory compliance, and brand strategy to help your products win at the shelf.",
     ],
     benefits: [
       "Designs that stand out on retail shelves",
@@ -556,16 +557,60 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Barcode and nutrition panel integration",
     ],
     process: [
-      { step: "Brief", desc: "Share product details, dimensions, and regulations" },
-      { step: "Design", desc: "We create label concepts with mockups" },
-      { step: "Review", desc: "Refine design, colors, and compliance details" },
-      { step: "Deliver", desc: "Print-ready files with die-cut templates" },
+      { step: "Discovery & Brief", desc: "Share product details, dimensions, and regulations" },
+      { step: "Concept Development", desc: "We create label concepts with realistic mockups" },
+      { step: "Design Refinement", desc: "Refine design, colors, and compliance details" },
+      { step: "Production Delivery", desc: "Print-ready files with die-cut templates" },
     ],
     faqs: [
-      { q: "Can you design labels that meet food regulations?", a: "Yes, we ensure labels include required nutritional information, ingredient lists, and regulatory markings." },
-      { q: "Do you provide mockups?", a: "Yes, we provide realistic product mockups so you can visualize the label on your product." },
-      { q: "What label shapes can you design?", a: "We design rectangular, circular, oval, die-cut, and custom-shaped labels." },
+      { q: "What is label design and why is it important?", a: "Label design is the process of creating product labels that communicate brand identity, ingredients, and regulatory information. A great label attracts customers and builds trust." },
+      { q: "Can you design labels that meet food regulations?", a: "Yes, we ensure labels include required nutritional information, ingredient lists, and regulatory markings as per Sri Lankan standards." },
+      { q: "How much does label design cost in Sri Lanka?", a: "Costs vary based on complexity, label shape, and industry requirements. Contact us for a custom quotation." },
+      { q: "Do you provide mockups?", a: "Yes, we provide realistic product mockups so you can visualize the label on your actual product before printing." },
+      { q: "What label shapes can you design?", a: "We design rectangular, circular, oval, die-cut, and custom-shaped labels for any product type." },
     ],
+    extraSections: [
+      {
+        title: "Why Product Label Design Matters in Sri Lanka",
+        paragraphs: [
+          "In retail environments like supermarkets, pharmacies, and specialty stores, your product label is the first thing customers see. It must communicate quality, build trust, and comply with local regulations — all in a single glance.",
+          "Our label design Sri Lanka services are tailored to help local brands compete effectively against both domestic and international products on store shelves.",
+        ],
+      },
+      {
+        title: "Our Label Design Services in Sri Lanka",
+        paragraphs: ["We provide comprehensive label design Sri Lanka solutions across multiple industries."],
+        subsections: [
+          { title: "Food & Beverage Label Design", bullets: ["Packaged food labels", "Bottled drinks and water", "Spices and condiments", "Bakery and confectionery"] },
+          { title: "Cosmetic & Beauty Label Design", bullets: ["Skincare and haircare products", "Essential oils and serums", "Makeup and beauty products", "Luxury cosmetic branding"] },
+          { title: "Pharmaceutical & Healthcare Labels", bullets: ["Medicine and supplement labels", "Ayurvedic product labels", "Health and wellness products", "Regulatory-compliant designs"] },
+          { title: "Retail & Industrial Labels", bullets: ["Household cleaning products", "Chemical and industrial labels", "Private label brands", "Promotional stickers and decals"] },
+        ],
+      },
+      {
+        title: "Our Label Design Approach",
+        paragraphs: ["Whether you're launching a new product or refreshing an existing one, we ensure every label is production-ready and market-competitive."],
+        bullets: [
+          "Realistic product mockups for visualization",
+          "Custom die-cut and shape design",
+          "Print-ready artwork with bleed and trim marks",
+          "Material and finishing recommendations",
+          "Barcode, QR code, and regulatory panel placement",
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Label Design in Sri Lanka",
+        paragraphs: ["We specialize in labels that sell — not just look good."],
+        bullets: [
+          "Industry-specific design expertise",
+          "Understanding of Sri Lankan retail and regulatory landscape",
+          "Creative, modern, and shelf-ready concepts",
+          "Fast turnaround with responsive communication",
+          "Affordable solutions for startups and established brands",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "package-design-sri-lanka",
