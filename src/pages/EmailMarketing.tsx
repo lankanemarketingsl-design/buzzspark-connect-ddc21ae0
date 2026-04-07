@@ -91,6 +91,32 @@ const EmailMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Pricing Hook Banner */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="mb-12 max-w-4xl mx-auto"
+      >
+        <div className="relative overflow-hidden rounded-2xl gradient-hero p-6 sm:p-8 text-center">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.08),transparent_60%)]" />
+          <div className="relative z-10">
+            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">Starting From</p>
+            <p className="text-primary-foreground font-heading text-3xl sm:text-4xl font-bold mb-2">
+              LKR 6,000 <span className="text-lg font-normal text-primary-foreground/70">per campaign</span>
+            </p>
+            <p className="text-primary-foreground/80 text-sm sm:text-base max-w-xl mx-auto mb-4">
+              Connect with <strong>350,000+ email subscribers</strong> and expand your reach to <strong>200,000+ monthly users</strong> on Findit.lk — all included.
+            </p>
+            <Link to="/contact-us">
+              <Button variant="hero" size="lg" className="text-base">
+                Get Started Today <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+
       {/* 1. Power Intro — Hook */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
