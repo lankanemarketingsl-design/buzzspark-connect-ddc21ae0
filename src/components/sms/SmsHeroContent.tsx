@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, MessageSquare, Users, Shield } from "lucide-react";
+import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, MessageSquare, Users, Globe } from "lucide-react";
 
 const SmsHeroContent = () => {
   return (
