@@ -61,6 +61,9 @@ const GraphicDesignService = () => {
           {service.intro.map((p, i) => (
             <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
           ))}
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            As part of our comprehensive <Link to="/graphic-designing-in-sri-lanka" className="text-muted-foreground underline-offset-2 hover:underline">graphic design Sri Lanka</Link> services, we deliver professional {service.title.toLowerCase()} solutions tailored to your brand identity.
+          </p>
         </motion.div>
 
         {/* Benefits */}
