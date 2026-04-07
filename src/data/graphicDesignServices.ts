@@ -705,10 +705,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Presentation Design Sri Lanka",
     metaTitle: "Presentation Design Sri Lanka | Professional PowerPoint Design",
     metaDescription: "Professional PowerPoint presentation design in Sri Lanka. Polished, creative slides for corporate meetings, pitches & conferences. Engaging visual storytelling.",
-    h1: "Presentation Design Sri Lanka – Professional PowerPoint Design Services",
+    h1: "Presentation Design Sri Lanka – PowerPoint Slides That Win Pitches",
     intro: [
-      "A well-designed presentation can make the difference between winning and losing a client pitch, impressing stakeholders, or engaging a conference audience. Generic templates won't cut it.",
-      "Buzz Connect creates custom, visually stunning PowerPoint presentations that communicate your ideas clearly and leave a lasting impression on your audience.",
+      "Looking for professional presentation design Sri Lanka services that help you win pitches and impress audiences?",
+      "At Buzz Connect, we create custom, visually stunning PowerPoint presentations that communicate your ideas clearly and leave a lasting impression.",
+      "A well-designed presentation can make the difference between winning and losing a client pitch, impressing stakeholders, or engaging a conference audience. Generic templates won't cut it — you need designs that match the quality of your ideas.",
     ],
     benefits: [
       "Custom slide designs – no generic templates",
@@ -719,16 +720,48 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Corporate, pitch deck, and conference styles",
     ],
     process: [
-      { step: "Brief", desc: "Share your content, data, and presentation goals" },
-      { step: "Design", desc: "We create custom slides with professional layouts" },
-      { step: "Review", desc: "Refine slides, animations, and flow" },
-      { step: "Deliver", desc: "Editable PPTX and PDF versions delivered" },
+      { step: "Discovery & Brief", desc: "Share your content, data, and presentation goals" },
+      { step: "Slide Design", desc: "We create custom slides with professional layouts" },
+      { step: "Design Refinement", desc: "Refine slides, animations, and flow" },
+      { step: "Final Delivery", desc: "Editable PPTX and PDF versions delivered" },
     ],
     faqs: [
       { q: "How many slides can you design?", a: "We design presentations of any length, from 10-slide pitch decks to 50+ slide corporate presentations." },
       { q: "Can you add animations?", a: "Yes, we add professional animations and transitions to enhance your presentation flow." },
       { q: "Do you provide editable files?", a: "Yes, all presentations are delivered as editable PowerPoint (.pptx) files." },
+      { q: "How much does presentation design cost in Sri Lanka?", a: "Pricing depends on slide count and complexity. Contact us for a competitive quote." },
+      { q: "Can you design Google Slides presentations?", a: "Yes, we create presentations in both PowerPoint and Google Slides formats." },
     ],
+    extraSections: [
+      {
+        title: "Why Professional Presentation Design Matters in Sri Lanka",
+        paragraphs: [
+          "In boardrooms, conferences, and client meetings across Sri Lanka, your presentation slides directly impact how your ideas are perceived. Poor slides undermine even the best content, while stunning visuals amplify your message.",
+          "Professional presentation design helps you communicate complex data clearly, maintain audience attention, and close deals with confidence.",
+        ],
+      },
+      {
+        title: "Our Presentation Design Services in Sri Lanka",
+        paragraphs: ["We design presentations for every business scenario."],
+        subsections: [
+          { title: "Corporate Presentations", bullets: ["Board meeting decks", "Quarterly review slides", "Training and onboarding", "Internal communications"] },
+          { title: "Sales & Pitch Decks", bullets: ["Investor pitch decks", "Client proposal presentations", "Product demo slides", "Partnership proposals"] },
+          { title: "Event Presentations", bullets: ["Conference keynotes", "Seminar and workshop slides", "Award ceremony visuals", "Webinar presentations"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Presentation Design in Sri Lanka",
+        paragraphs: ["We design slides that tell your story and win your audience."],
+        bullets: [
+          "Custom designs — never generic templates",
+          "Data-driven infographics and charts",
+          "Consistent brand theming",
+          "Editable files for future use",
+          "Fast turnaround for urgent deadlines",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "photo-editing-sri-lanka",
