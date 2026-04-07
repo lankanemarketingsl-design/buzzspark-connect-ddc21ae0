@@ -156,6 +156,29 @@ const SeoServices = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Trust Strip */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-10 max-w-4xl mx-auto"
+      >
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
+            <Zap className="w-4 h-4 text-accent" />
+            <span className="text-accent font-bold text-sm">SEO Packages from LKR 30,000/-</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Star className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">10+ Years Experience</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Users className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">200+ Clients Served</span>
+          </div>
+        </div>
+      </motion.div>
+
       {/* Power Intro with USP */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
