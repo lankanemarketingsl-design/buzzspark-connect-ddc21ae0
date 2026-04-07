@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, MessageSquare, Users, Shield } from "lucide-react";
+import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, MessageSquare, Users, Globe } from "lucide-react";
 
 const SmsHeroContent = () => {
   return (
@@ -23,8 +23,8 @@ const SmsHeroContent = () => {
             <span className="text-muted-foreground text-xs font-medium">600,000+ Targeted Contacts</span>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/60 border border-border">
-            <Shield className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-muted-foreground text-xs font-medium">95%+ Open Rate</span>
+            <Globe className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-muted-foreground text-xs font-medium">Extended Reach via Findit.lk</span>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ const SmsHeroContent = () => {
           {[
             { value: "600K+", label: "Targeted Contacts" },
             { value: "26", label: "Districts Covered" },
-            { value: "95%+", label: "SMS Open Rate" },
+            { value: "Findit.lk", label: "Extended Reach" },
             { value: "2 LKR", label: "Per Message From" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
