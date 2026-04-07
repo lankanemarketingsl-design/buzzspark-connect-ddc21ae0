@@ -311,10 +311,11 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
     title: "Letterhead Design Sri Lanka",
     metaTitle: "Letterhead Design Sri Lanka | Professional Letterhead Designs",
     metaDescription: "Professional letterhead design services in Sri Lanka. Single & double-sided designs that represent a powerful brand image. Affordable rates. Contact us today.",
-    h1: "Letterhead Design Sri Lanka – Professional Letterhead Design Services",
+    h1: "Letterhead Design Sri Lanka – Professional Letterhead Designs That Build Trust",
     intro: [
-      "A professionally designed letterhead reinforces your brand identity on every piece of correspondence. It communicates professionalism and attention to detail to clients and partners.",
-      "Buzz Connect creates custom letterhead designs that align with your brand identity, ensuring consistency across all your business communications.",
+      "Looking for professional letterhead design Sri Lanka services that reinforce your brand identity?",
+      "At Buzz Connect, we create custom letterhead designs that communicate professionalism, attention to detail, and brand consistency on every piece of correspondence.",
+      "A well-designed letterhead is a critical element of your corporate identity. It ensures every letter, invoice, and proposal you send reinforces your brand image and builds trust with clients and partners.",
     ],
     benefits: [
       "Strengthens brand identity and professionalism",
@@ -325,16 +326,47 @@ export const graphicDesignServices: GraphicDesignServiceData[] = [
       "Affordable rates for all business sizes",
     ],
     process: [
-      { step: "Brief", desc: "Share your brand assets and requirements" },
-      { step: "Design", desc: "We create letterhead concepts matching your brand" },
-      { step: "Review", desc: "Refine the design based on your feedback" },
-      { step: "Deliver", desc: "Print-ready and digital files delivered" },
+      { step: "Discovery & Brief", desc: "Share your brand assets and requirements" },
+      { step: "Concept Development", desc: "We create letterhead concepts matching your brand" },
+      { step: "Design Refinement", desc: "Refine the design based on your feedback" },
+      { step: "Final Delivery", desc: "Print-ready and digital files delivered" },
     ],
     faqs: [
       { q: "Do you design matching stationery sets?", a: "Yes, we can design matching letterheads, envelopes, compliment slips, and business cards." },
       { q: "What format are letterhead designs delivered in?", a: "Designs are delivered in AI, PDF, and Word template formats for easy use." },
       { q: "Can I edit the letterhead myself later?", a: "Yes, we provide editable Word templates so you can update content as needed." },
+      { q: "How much does letterhead design cost in Sri Lanka?", a: "Pricing depends on design complexity and stationery package. Contact us for a custom quote." },
+      { q: "Do you design digital letterheads for email?", a: "Yes, we create digital letterhead templates optimized for email and document use." },
     ],
+    extraSections: [
+      {
+        title: "Why Letterhead Design Matters for Your Business in Sri Lanka",
+        paragraphs: [
+          "Every official document your business sends — from quotations and invoices to contracts and proposals — carries your letterhead. A professionally designed letterhead ensures these communications reinforce your brand identity and professionalism.",
+          "In Sri Lanka's competitive business environment, consistent branding across all touchpoints, including letterheads, helps build trust and credibility with clients and partners.",
+        ],
+      },
+      {
+        title: "Our Letterhead Design Services in Sri Lanka",
+        paragraphs: ["We provide complete corporate stationery design solutions."],
+        subsections: [
+          { title: "Corporate Stationery Suite", bullets: ["Letterheads (single & double-sided)", "Envelopes (DL, C5, C4)", "Compliment slips", "Invoice and quotation templates"] },
+          { title: "Digital Stationery", bullets: ["Email letterhead templates", "Digital document headers", "Word and Google Docs templates", "PDF letterhead overlays"] },
+        ],
+      },
+      {
+        title: "Why Choose Buzz Connect for Letterhead Design in Sri Lanka",
+        paragraphs: ["We create stationery that represents your brand at its best."],
+        bullets: [
+          "Consistent brand identity across all documents",
+          "Print-ready CMYK and digital RGB formats",
+          "Editable templates for easy updates",
+          "Matching stationery suite design",
+          "Affordable packages for all business sizes",
+        ],
+      },
+    ],
+    locations: ["Colombo", "Negombo", "Kandy", "Galle", "Kurunegala", "Island-wide"],
   },
   {
     slug: "hoarding-design-sri-lanka",
