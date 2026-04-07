@@ -60,6 +60,7 @@ import HealthcareEmailEngagement from "./pages/articles/HealthcareEmailEngagemen
 import AutomotiveEmailSales from "./pages/articles/AutomotiveEmailSales.tsx";
 import EventEmailAttendance from "./pages/articles/EventEmailAttendance.tsx";
 import LeadGenAgency from "./pages/articles/LeadGenAgency.tsx";
+import MultiChannelCampaignLandingPage from "./pages/articles/MultiChannelCampaignLandingPage.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -170,6 +171,7 @@ const App = () => (
               <Route path="/automotive-email-marketing-sales-sri-lanka" element={<AutomotiveEmailSales />} />
               <Route path="/event-email-marketing-attendance-sri-lanka" element={<EventEmailAttendance />} />
               <Route path="/lead-generation-agency-sri-lanka" element={<LeadGenAgency />} />
+              <Route path="/multi-channel-email-campaigns-sri-lanka" element={<MultiChannelCampaignLandingPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

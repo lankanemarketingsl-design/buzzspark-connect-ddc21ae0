@@ -43,7 +43,15 @@ import articleHealthcareEmail from "@/assets/blog/article-healthcare-email-engag
 import articleAutomotiveEmail from "@/assets/blog/article-automotive-email-sales.jpg";
 import articleEventEmail from "@/assets/blog/article-event-email-attendance.jpg";
 import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
+import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
+  {
+    title: "Multi-Channel Email Campaigns That Deliver Real Visibility",
+    date: "Apr 7, 2026",
+    excerpt: "Go beyond email with Buzz Connect's multi-channel campaigns combining Email, Findit.lk & Facebook Story promotion for maximum visibility and lead generation.",
+    path: "/multi-channel-email-campaigns-sri-lanka",
+    image: articleMultichannelCampaigns,
+  },
   {
     title: "Lead Generation Agency Sri Lanka: How to Choose the Right Partner",
     date: "Mar 29, 2026",
