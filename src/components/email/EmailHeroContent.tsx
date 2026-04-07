@@ -163,10 +163,10 @@ const EmailHeroContent = () => {
         <p className="text-muted-foreground text-center mb-4 text-sm">Email Campaign → Findit.lk Exposure → Retargeting → Conversion</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Mail, title: "Email Campaign", desc: "Reach 350,000+ subscribers directly in their inbox", num: "01", emoji: "📧" },
-            { icon: Globe, title: "Findit.lk Exposure", desc: "Stay visible to 200,000+ monthly users beyond the inbox", num: "02", emoji: "🌐" },
-            { icon: Target, title: "Retargeting", desc: "Re-engage interested users across platforms", num: "03", emoji: "🎯" },
-            { icon: DollarSign, title: "Conversion", desc: "Turn visibility into real inquiries and customers", num: "04", emoji: "💰" },
+            { icon: Mail, title: "Email Campaign", desc: "We send your message to a targeted audience of 350,000+ professionals", num: "01", emoji: "📧" },
+            { icon: Globe, title: "Findit.lk Exposure", desc: "Your business appears on Findit.lk — reaching 200,000+ monthly users", num: "02", emoji: "🌐" },
+            { icon: Target, title: "Retargeting", desc: "Re-engage interested users across FB, IG & LinkedIn for maximum reach", num: "03", emoji: "🎯" },
+            { icon: DollarSign, title: "Conversion", desc: "Turn visibility into real inquiries and paying customers", num: "04", emoji: "💰" },
           ].map((step) => (
             <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-accent text-accent-foreground text-xs font-bold flex items-center justify-center">{step.num}</div>
