@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, Layers, Mail, Users, Shield, Globe, MessageSquare } from "lucide-react";
+import { CheckCircle, ArrowRight, Zap, Eye, RefreshCw, TrendingUp, Layers, Mail, Users, Shield, Globe, MessageSquare, Target, DollarSign } from "lucide-react";
 
 const EmailHeroContent = () => {
   return (
