@@ -253,6 +253,14 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Staff Recruitment -->
+  <url>
+    <loc>https://buzzconnect.lk/staff-recruitment-campaigns-sri-lanka</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Resources Hub -->
   <url>
     <loc>https://buzzconnect.lk/resources</loc>
