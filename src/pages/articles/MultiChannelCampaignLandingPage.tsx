@@ -207,7 +207,7 @@ const MultiChannelCampaignLandingPage = () => {
                       ) : row.traditional === false ? (
                         <span className="text-destructive">❌ Not Available</span>
                       ) : (
-                        <span className="text-yellow-600">⚠️ {row.traditional}</span>
+                        <span className="text-muted-foreground">⚠️ {row.traditional}</span>
                       )}
                     </TableCell>
                     <TableCell className="text-center">
