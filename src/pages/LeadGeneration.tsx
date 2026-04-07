@@ -5,12 +5,10 @@ import { useMemo } from "react";
 import {
   CheckCircle, Target, Zap, BarChart3, Mail, Smartphone, MessageSquare, Globe,
   HelpCircle, GraduationCap, ShoppingCart, Building2, Home, Calendar, Rocket,
-  Users, TrendingUp, DollarSign, ArrowRight, Search, Layers, Send, Settings,
-  Eye, Award, Shield, Brain, Repeat, Star
+  Users, TrendingUp, DollarSign, ArrowRight, Search, Send, Eye, Award, Shield, Brain, Repeat
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
-import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
 
 const comparisonData = [
   { feature: "Channels Used", standard: "Single Platform", bc: "✅ Multi-Channel Strategy" },
@@ -104,21 +102,36 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-12"
+        className="mb-10 max-w-4xl mx-auto"
       >
-        <div className="flex flex-wrap items-center gap-4 mb-6">
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
             <Zap className="w-4 h-4 text-accent" />
             <span className="text-accent font-bold text-sm">Campaigns from LKR 100,000</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
-            <Users className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">Multi-Channel Reach</span>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Users className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">Multi-Channel Reach</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
-            <Globe className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">Findit.lk Integrated</span>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
+            <Globe className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">Findit.lk Integration</span>
           </div>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+          {[
+            { value: "350K", suffix: "+", label: "Email Database" },
+            { value: "600K", suffix: "+", label: "SMS Contacts" },
+            { value: "200K", suffix: "+", label: "Findit.lk Users" },
+            { value: "10", suffix: "+", label: "Years Experience" },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center p-4 rounded-xl bg-card border border-border">
+              <p className="text-2xl font-bold text-accent">{stat.value}<span className="text-accent">{stat.suffix}</span></p>
+              <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </motion.div>
 
@@ -127,7 +140,7 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
+        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
           What is Lead Generation?
@@ -137,6 +150,46 @@ const LeadGeneration = () => {
         </p>
         <p className="text-muted-foreground leading-relaxed">
           At Buzz Connect, we go beyond basic campaigns by combining multiple platforms to ensure your business reaches the right audience and generates meaningful results. Our <Link to="/" className="text-accent hover:underline font-semibold">lead generation services in Sri Lanka</Link> are designed to deliver consistent, high-quality business opportunities.
+        </p>
+      </motion.div>
+
+      {/* Comparison Table */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Why We're Different</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Buzz Connect vs Standard Approach
+          </h2>
+        </div>
+        <div className="rounded-2xl overflow-hidden border border-border shadow-card">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-secondary">
+                  <th className="text-left p-4 font-heading font-bold text-foreground">Feature</th>
+                  <th className="text-left p-4 font-heading font-bold text-muted-foreground">Standard Approach</th>
+                  <th className="text-left p-4 font-heading font-bold text-accent">Buzz Connect</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((row, i) => (
+                  <tr key={row.feature} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-4 font-medium text-foreground">{row.feature}</td>
+                    <td className="p-4 text-muted-foreground">{row.standard}</td>
+                    <td className="p-4 text-foreground font-semibold">{row.bc}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p className="text-center text-muted-foreground text-sm mt-4">
+          👉 Buzz Connect helps you generate better leads through better visibility and targeting.
         </p>
       </motion.div>
 
@@ -172,45 +225,9 @@ const LeadGeneration = () => {
             </motion.div>
           ))}
         </div>
-        <p className="text-center text-accent font-semibold mt-6">
+        <p className="text-center text-muted-foreground text-sm mt-6 italic">
           👉 This ensures your business is visible across multiple touchpoints — increasing engagement and lead potential.
         </p>
-      </motion.div>
-
-      {/* Comparison Table */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">See The Difference</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Why Choose Buzz Connect?
-          </h2>
-          <p className="text-muted-foreground mt-2">Buzz Connect helps you generate better leads through better visibility and targeting.</p>
-        </div>
-        <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border shadow-card">
-          <Table>
-            <TableHeader>
-              <TableRow className="bg-muted/50">
-                <TableHead className="font-bold text-foreground">Feature</TableHead>
-                <TableHead className="font-bold text-foreground">Standard Approach</TableHead>
-                <TableHead className="font-bold text-accent">Buzz Connect</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {comparisonData.map((row) => (
-                <TableRow key={row.feature}>
-                  <TableCell className="font-medium text-foreground">{row.feature}</TableCell>
-                  <TableCell className="text-muted-foreground">{row.standard}</TableCell>
-                  <TableCell className="text-accent font-semibold">{row.bc}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
       </motion.div>
 
       {/* Why Multi-Channel Works */}
@@ -218,66 +235,53 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
       >
-        <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Marketing Psychology</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Why Multi-Channel Lead Generation Works
-          </h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Today's customers interact with brands across multiple platforms before making a decision.</p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {whyItWorks.map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="text-center p-6 rounded-xl bg-card shadow-card border border-border"
-            >
-              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                <item.icon className="w-7 h-7 text-accent" />
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Why Multi-Channel Lead Generation Works</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          Today's customers interact with brands across multiple platforms before making a decision. Our approach ensures your business stays visible wherever your audience is.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {whyItWorks.map((item) => (
+            <div key={item.title} className="text-center p-5 rounded-xl bg-muted/30 border border-border">
+              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mx-auto mb-3">
+                <item.icon className="w-6 h-6 text-secondary-foreground" />
               </div>
               <h3 className="font-heading font-bold text-foreground mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground">{item.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
-        <p className="text-center text-accent font-semibold mt-6">
+        <p className="text-muted-foreground text-sm mt-4 italic text-center">
           👉 More visibility = More leads = More business growth
         </p>
       </motion.div>
 
-      {/* How It Works - 3 Steps */}
+      {/* How It Works */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16"
       >
-        <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Simple Process</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            How Our Lead Generation Campaign Works
-          </h2>
-        </div>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">
+          How Our Lead Generation Campaign Works
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {processSteps.map((step, i) => (
-            <div key={step.title} className="flex flex-col items-center text-center p-6 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full gradient-accent flex items-center justify-center text-sm font-bold text-primary">
+            <div key={step.title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">
                 {i + 1}
               </div>
-              <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mt-4 mb-4">
-                <step.icon className="w-7 h-7 text-secondary-foreground" />
+              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3">
+                <step.icon className="w-6 h-6 text-secondary-foreground" />
               </div>
-              <h3 className="font-heading font-semibold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
+              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{step.title}</h3>
+              <p className="text-xs text-muted-foreground">{step.desc}</p>
             </div>
           ))}
         </div>
-        <p className="text-center text-accent font-semibold mt-6">
+        <p className="text-center text-muted-foreground text-sm mt-6">
           👉 Result: Consistent lead flow and measurable business impact
         </p>
       </motion.div>
@@ -287,29 +291,32 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 p-8 rounded-2xl gradient-hero text-primary-foreground"
+        className="mb-16 p-8 rounded-2xl bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20"
       >
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold">Powered by Findit.lk</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Powered by Findit.lk</h2>
         </div>
-        <p className="text-primary-foreground/80 mb-6">
-          Buzz Connect campaigns are powered by <strong>Findit.lk</strong>, giving your business a competitive advantage no other agency offers.
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          Buzz Connect campaigns are powered by <strong className="text-foreground">Findit.lk</strong>, giving your business a competitive advantage no other agency offers.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
-            { icon: Users, text: "200,000+ monthly active users" },
-            { icon: Search, text: "High-intent audience searching for services" },
-            { icon: Eye, text: "Category-based visibility and discovery" },
+            { icon: Users, value: "200,000+", label: "Monthly Active Users" },
+            { icon: Search, value: "High-Intent", label: "Audience Searching Services" },
+            { icon: Eye, value: "Category-Based", label: "Visibility & Discovery" },
           ].map((item) => (
-            <div key={item.text} className="flex items-center gap-3 p-4 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10">
-              <item.icon className="w-5 h-5 text-accent shrink-0" />
-              <span className="text-primary-foreground/90 text-sm">{item.text}</span>
+            <div key={item.label} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
+              <item.icon className="w-8 h-8 text-accent shrink-0" />
+              <div>
+                <p className="font-bold text-foreground">{item.value}</p>
+                <p className="text-xs text-muted-foreground">{item.label}</p>
+              </div>
             </div>
           ))}
         </div>
-        <p className="text-accent font-semibold mt-6">
-          👉 This is your competitive advantage in Sri Lanka
+        <p className="text-muted-foreground text-sm mt-4 italic">
+          👉 This is your competitive advantage in Sri Lanka.
         </p>
       </motion.div>
 
@@ -320,18 +327,14 @@ const LeadGeneration = () => {
         viewport={{ once: true }}
         className="mb-16"
       >
-        <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Who We Serve</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Industries We Serve
-          </h2>
-          <p className="text-muted-foreground mt-2">Our lead generation services in Sri Lanka are ideal for:</p>
-        </div>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">
+          Industries We Serve
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {useCases.map((uc) => (
-            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center hover:border-accent/40 transition-colors">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                <uc.icon className="w-6 h-6 text-accent" />
+            <div key={uc.label} className="flex flex-col items-center gap-2 p-5 rounded-xl bg-card shadow-card border border-border text-center">
+              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                <uc.icon className="w-6 h-6 text-secondary-foreground" />
               </div>
               <span className="text-sm font-medium text-foreground">{uc.label}</span>
             </div>
@@ -344,45 +347,44 @@ const LeadGeneration = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-3xl mx-auto"
+        className="mb-16 max-w-2xl mx-auto"
       >
         <div className="text-center mb-8">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Transparent Pricing</span>
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Pricing</span>
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
             Lead Generation Campaign Pricing
           </h2>
         </div>
-        <div className="p-8 rounded-2xl bg-card shadow-card border border-accent/30">
-          <div className="flex items-center gap-3 mb-6">
-            <DollarSign className="w-8 h-8 text-accent" />
-            <div>
-              <p className="text-2xl font-bold text-foreground">Starting from <span className="text-accent">LKR 100,000</span></p>
-              <p className="text-muted-foreground text-sm">Professional multi-channel lead generation</p>
-            </div>
-          </div>
-          <div className="space-y-3 mb-6">
+        <div className="p-8 rounded-2xl bg-card shadow-card border-2 border-accent/30 text-center">
+          <p className="text-muted-foreground mb-3">Professional Multi-Channel Lead Generation</p>
+          <p className="text-3xl font-bold text-foreground mb-1">
+            Starting from <span className="text-accent">LKR 100,000</span>
+          </p>
+          <p className="text-sm text-muted-foreground mb-6">Campaigns tailored to your business goals</p>
+          <div className="text-left space-y-2 mb-6 max-w-sm mx-auto">
             {[
               "Multi-channel campaign setup",
               "Audience targeting and segmentation",
               "Promotion across Email, SMS, Findit.lk & Social Media",
               "Campaign optimization for better performance",
             ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <CheckCircle className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
+              <div key={item} className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                <span className="text-sm text-muted-foreground">{item}</span>
               </div>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground italic">
+          <p className="text-xs text-muted-foreground mb-4">
             👉 Flexible packages available based on your business goals and campaign scale.
           </p>
-          <div className="mt-6">
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-3 rounded-full gradient-accent text-primary font-bold hover:opacity-90 transition-opacity text-base">
-                Get a Custom Quote <ArrowRight className="inline w-4 h-4 ml-1" />
-              </button>
-            </a>
-          </div>
+          <a
+            href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
+          >
+            Get a Custom Quote <ArrowRight className="inline w-4 h-4 ml-1" />
+          </a>
         </div>
       </motion.div>
 
@@ -442,23 +444,27 @@ const LeadGeneration = () => {
         className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Ready to Generate More Leads?</h2>
-        <p className="text-primary-foreground/80 mb-4 max-w-xl mx-auto">
+        <p className="text-primary-foreground/80 mb-2 max-w-xl mx-auto">
           Grow your business with professional <strong>lead generation services in Sri Lanka</strong>.
         </p>
-        <p className="text-accent font-semibold mb-6">
-          👉 Reach more people. Generate more leads. Drive real results.
+        <p className="text-primary-foreground/70 text-sm mb-6">
+          👉 Campaigns starting from LKR 100,000 | Multi-channel strategy included
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/contact-us">
-            <button className="px-8 py-3 rounded-full gradient-accent text-primary font-bold hover:opacity-90 transition-opacity text-base">
+          <a
+            href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">
               Start Your Campaign Today <ArrowRight className="inline w-4 h-4 ml-1" />
             </button>
-          </Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services." target="_blank" rel="noopener noreferrer">
-            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">
-              Chat on WhatsApp
-            </button>
           </a>
+          <Link to="/contact-us">
+            <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </motion.div>
 
