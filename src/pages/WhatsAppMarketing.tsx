@@ -132,7 +132,7 @@ const WhatsAppMarketing = () => {
           With one of the largest <strong>WhatsApp marketing databases in Sri Lanka</strong>, we enable businesses to engage with their audience using text, images, and video messages, driving higher engagement and conversions.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          Our <strong>WhatsApp marketing solutions</strong> are ideal for promotions, lead generation, customer communication, and brand awareness campaigns.
+          Our <strong>WhatsApp marketing solutions</strong> are ideal for promotions, lead generation, customer communication, and brand awareness campaigns. Discover how <Link to="/" className="text-muted-foreground underline hover:text-primary transition-colors">WhatsApp marketing Sri Lanka</Link> fits into a complete multi-channel strategy.
         </p>
       </motion.div>
 
