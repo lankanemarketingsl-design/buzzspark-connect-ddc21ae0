@@ -176,7 +176,7 @@ const GraphicDesignService = () => {
             Your packaging can make or break your product success. Work with a professional {service.title.toLowerCase()} team that understands branding, design, and customer psychology.
           </p>
           <a
-            href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in ${service.title} services.`)}`}
+            href={`https://wa.me/94771976351?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in ${service.title} services.`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
