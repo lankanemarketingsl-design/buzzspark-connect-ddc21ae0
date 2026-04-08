@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const bannerServices = [
   { icon: Layout, title: "Homepage Banner Advertising", desc: "Premium placements on high-traffic homepages for maximum brand exposure across Sri Lanka." },
@@ -412,6 +413,7 @@ const WebBannerAdvertising = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/web-banner-advertising-sri-lanka" />
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };

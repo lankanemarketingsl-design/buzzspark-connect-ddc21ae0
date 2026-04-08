@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const finditPackages = [
   { item: "Image of Promotion Ad", impressions: "25,000+", price: "LKR 5,000", duration: "4 Weeks" },
@@ -474,6 +475,7 @@ const OnlineAdvertising = () => {
           Get a Free Quote Today
         </a>
       </motion.div>
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

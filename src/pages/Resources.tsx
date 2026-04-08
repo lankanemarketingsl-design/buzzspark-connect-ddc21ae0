@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 import article1 from "@/assets/blog/article-1.jpg";
 import article2 from "@/assets/blog/article-2.jpg";
 import article3 from "@/assets/blog/article-3.jpg";
@@ -388,6 +389,7 @@ const Resources = () => {
           </motion.div>
         ))}
       </div>
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

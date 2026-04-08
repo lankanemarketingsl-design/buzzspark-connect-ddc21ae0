@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
@@ -568,6 +569,7 @@ const FinanceMarketing = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/finance-marketing-sri-lanka" />
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };

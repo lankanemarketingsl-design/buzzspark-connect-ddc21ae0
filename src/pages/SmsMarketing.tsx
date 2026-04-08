@@ -7,6 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import SmsHeroContent from "@/components/sms/SmsHeroContent";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const databases = [
   {
@@ -429,6 +430,7 @@ const SmsMarketing = () => {
         </div>
       </motion.div>
       <RelatedArticles currentPath="/sms-marketing" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

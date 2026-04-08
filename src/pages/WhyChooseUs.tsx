@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Zap, Globe, Timer, Coins, Target, BarChart3, Handshake, Lightbulb, TrendingUp, Mail, Phone, MessageSquare, Share2, Megaphone, Check, X, GitCompareArrows } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const channels = [
   { name: "Email Marketing", path: "/email-marketing", icon: Mail },
@@ -362,6 +363,7 @@ const WhyChooseUs = () => {
             </Link>
           </div>
         </motion.section>
+        <DigitalMarketingCTA />
       </div>
     </ServicePageLayout>
   );

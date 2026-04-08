@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const comparisonData = [
   { feature: "Channels Used", standard: "Single Platform", bc: "✅ Multi-Channel Strategy" },
@@ -469,6 +470,7 @@ const LeadGeneration = () => {
       </motion.div>
 
       <RelatedArticles currentPath="/lead-generation-sri-lanka" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

@@ -7,6 +7,7 @@ import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import EmailHeroContent from "@/components/email/EmailHeroContent";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const packages = [
   { name: "One Email Campaign + Findit.lk Web Ad", corp: "LKR 6,000", full: "LKR 8,000", fb: "✔", ig: "✔", li: "✔", webAd: "01", appAd: "01", feed: "✔" },
@@ -285,6 +286,7 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
       <RelatedArticles currentPath="/email-marketing" />
+      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };

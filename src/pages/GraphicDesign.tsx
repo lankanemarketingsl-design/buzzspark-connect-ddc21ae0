@@ -5,6 +5,7 @@ import SEOHead from "@/components/SEOHead";
 import { HelpCircle, CheckCircle, Zap, Award } from "lucide-react";
 import { graphicDesignServices } from "@/data/graphicDesignServices";
 import { Link } from "react-router-dom";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const moreCategories = [
   {
@@ -321,6 +322,7 @@ const GraphicDesign = () => {
           Contact Buzz Connect
         </a>
       </motion.div>
+      <DigitalMarketingCTA />
     </ServicePageLayout>
   );
 };

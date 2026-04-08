@@ -91,6 +91,13 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/50">
+          <p className="mb-3">
+            <Link to="/" className="hover:text-accent transition-colors">Email Marketing Sri Lanka</Link>
+            {" · "}
+            <Link to="/" className="hover:text-accent transition-colors">SMS Marketing Sri Lanka</Link>
+            {" · "}
+            <Link to="/" className="hover:text-accent transition-colors">WhatsApp Marketing Sri Lanka</Link>
+          </p>
           <p>&copy; 2022 Buzz Connect. All rights reserved.</p>
         </div>
       </div>
