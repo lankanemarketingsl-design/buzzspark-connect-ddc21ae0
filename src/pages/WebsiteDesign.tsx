@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useMemo } from "react";
 import SEOHead from "@/components/SEOHead";
 import { CheckCircle, Globe, Smartphone, Code, Search, Zap, HelpCircle } from "lucide-react";
+import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const benefits = [
   "Establish online presence and credibility",
