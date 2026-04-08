@@ -81,8 +81,8 @@ const GraphicDesign = () => {
       subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. subtitle="Professional graphic design services for businesses in Sri Lanka. From logos to animated videos, we create eye-catching designs that elevate your brand. Starting from LKR 2,500.""
     >
       <SEOHead
-        title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 4K"
-        description="Professional graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & business cards. From LKR 4,000. Fast delivery."
+        title="Graphic Design Sri Lanka | Logo & Flyer Design from LKR 2.5K"
+        description="Professional graphic design services in Sri Lanka. Logo design, e-flyers, brochures, animated videos, social media posts & business cards. From LKR 2,500. Fast delivery."
         canonical="/graphic-designing-in-sri-lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
