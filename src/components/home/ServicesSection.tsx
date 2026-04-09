@@ -96,7 +96,7 @@ const ServicesSection = () => {
             Complete Digital Marketing Solutions
           </h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Everything you need to grow your business in Sri Lanka
+            From email marketing Sri Lanka to SMS marketing Sri Lanka and WhatsApp marketing Sri Lanka — everything you need to grow your business
           </p>
         </motion.div>
 

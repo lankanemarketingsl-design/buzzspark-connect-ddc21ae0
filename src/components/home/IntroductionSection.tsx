@@ -17,10 +17,10 @@ const IntroductionSection = () => {
             Sri Lanka's Leading Digital Marketing Partner
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4 text-sm sm:text-base">
-            Buzz Connect is a leading provider of email marketing in Sri Lanka, helping businesses connect with their audience through highly targeted and personalized campaigns. Since 2014, we have supported over 1,500+ businesses with powerful SMS marketing and WhatsApp marketing solutions, delivering measurable results and strong ROI.
+            Buzz Connect is Sri Lanka's No.1 provider of <strong>email marketing Sri Lanka</strong>, helping businesses connect with over 350,000+ professionals through highly targeted campaigns. Since 2014, we have empowered 1,500+ businesses with powerful <strong>SMS marketing Sri Lanka</strong> and <strong>WhatsApp marketing Sri Lanka</strong> solutions — delivering measurable results, strong ROI, and real business growth.
           </p>
           <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-            We combine advanced targeting, large-scale databases, and cost-effective strategies to help businesses reach the right audience at the right time.
+            Whether you need bulk email campaigns, targeted SMS blasts, or personalized WhatsApp outreach, Buzz Connect combines advanced targeting, large-scale databases, and cost-effective strategies to help you reach the right audience at the right time.
           </p>
         </motion.div>
       </div>
