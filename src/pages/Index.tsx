@@ -51,7 +51,7 @@ const Index = () => {
     <div className="pt-14 sm:pt-16">
       <SEOHead
         title="Email Marketing Sri Lanka, SMS Marketing, WhatsApp Marketing"
-        description="Buzz Connect is the No.1 provider of email marketing, SMS marketing, WhatsApp marketing, SEO Services Sri Lanka and Multi channel marketing Sri Lanka"
+        description="Buzz Connect is the No.1 provider of email marketing Sri Lanka, SMS marketing Sri Lanka, WhatsApp marketing Sri Lanka & SEO packages Sri Lanka."
         canonical="/"
         keywords="email marketing sri lanka, sms marketing sri lanka, whatsapp marketing sri lanka, seo services sri lanka, multi channel marketing sri lanka, digital marketing colombo, bulk email sri lanka, bulk sms sri lanka, online advertising sri lanka, website design sri lanka"
         breadcrumbs={[{ name: "Home", url: "/" }]}
