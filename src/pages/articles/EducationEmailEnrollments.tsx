@@ -144,7 +144,7 @@ const EducationEmailEnrollments = () => {
         </section>
 
         <section>
-          <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Frequently Asked Questions – Education Email Enrollments</h2>
           <div className="space-y-4">
             {faqs.map(faq => (
               <div key={faq.q} className="p-5 rounded-xl bg-muted/30 border border-border">

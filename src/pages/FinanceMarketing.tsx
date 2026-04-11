@@ -282,13 +282,13 @@ const FinanceMarketing = () => {
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-sm font-semibold text-accent uppercase tracking-wider">Scale Your Marketing</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">📈 Need Larger Reach & Brand Awareness?</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">📈 Need Larger Reach for Finance Marketing?</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">For banks, finance companies, and large financial groups looking to scale beyond standard campaigns — we offer advanced multi-channel marketing campaigns across Sri Lanka.</p>
         </div>
 
         <Link to="/multi-channel-marketing-sri-lanka" className="block p-8 pt-10 rounded-2xl upsell-highlight mb-8 relative overflow-hidden cursor-pointer hover:scale-[1.01] transition-transform duration-300">
           <div className="absolute top-0 right-0 px-5 py-2 rounded-bl-xl bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider animate-pulse">🔥 Most Popular</div>
-          <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade to Multi-Channel Campaigns</h3>
+          <h3 className="font-heading text-xl font-bold text-foreground mb-4 flex items-center gap-2">🌐 Upgrade Finance Campaigns to Multi-Channel</h3>
           <p className="text-muted-foreground mb-5">Combine your financial promotions with:</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
             {[

@@ -442,7 +442,7 @@ const OnlineAdvertising = () => {
       >
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Advertising in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Online Advertising Sri Lanka</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (

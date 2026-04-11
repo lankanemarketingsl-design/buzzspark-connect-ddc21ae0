@@ -145,7 +145,7 @@ const GraphicDesignService = () => {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <div className="flex items-center gap-3 mb-6">
             <HelpCircle className="w-7 h-7 text-primary" />
-            <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Graphic Design Services</h2>
           </div>
           <div className="space-y-4">
             {service.faqs.map((faq) => (

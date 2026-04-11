@@ -339,7 +339,7 @@ const MultiChannelCampaignLandingPage = () => {
 
         {/* FAQs */}
         <section className="space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">Frequently Asked Questions</h2>
+          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground">Frequently Asked Questions – Multi-Channel Campaigns</h2>
           <div className="space-y-4">
             {faqs.map((faq) => (
               <div key={faq.q} className="p-5 rounded-xl border border-border bg-card/50">
