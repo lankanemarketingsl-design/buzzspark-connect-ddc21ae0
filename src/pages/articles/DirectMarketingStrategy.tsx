@@ -187,13 +187,7 @@ const DirectMarketingStrategy = () => {
           </div>
         </div>
 
-        <RelatedArticles
-          articles={[
-            { title: "How Digital Marketing Drives Brand Awareness & More Customer Calls", path: "/digital-marketing-brand-awareness-sri-lanka" },
-            { title: "Multi-Channel Marketing: Maximum Reach for Your Business in Sri Lanka", path: "/multi-channel-marketing-maximum-reach-sri-lanka" },
-            { title: "Email Marketing Guide Sri Lanka (2026)", path: "/email-marketing-guide-sri-lanka" },
-          ]}
-        />
+        <RelatedArticles currentPath="/direct-marketing-strategy-sri-lanka" />
       </motion.div>
     </ServicePageLayout>
   );
