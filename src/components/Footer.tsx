@@ -94,11 +94,11 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/50">
           <p className="mb-3">
-            <Link to="/" className="hover:text-accent transition-colors">Email Marketing Sri Lanka</Link>
+            <a href="https://buzzconnect.lk/" className="hover:text-accent transition-colors">Email Marketing Sri Lanka</a>
             {" · "}
-            <Link to="/" className="hover:text-accent transition-colors">SMS Marketing Sri Lanka</Link>
+            <a href="https://buzzconnect.lk/sms-marketing" className="hover:text-accent transition-colors">SMS Marketing Sri Lanka</a>
             {" · "}
-            <Link to="/" className="hover:text-accent transition-colors">WhatsApp Marketing Sri Lanka</Link>
+            <a href="https://buzzconnect.lk/whatsapp-marketing" className="hover:text-accent transition-colors">WhatsApp Marketing Sri Lanka</a>
           </p>
           <p>&copy; 2022 Buzz Connect. All rights reserved.</p>
         </div>
