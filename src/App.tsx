@@ -70,6 +70,7 @@ import SocialMediaMarketingCostSriLanka from "./pages/articles/SocialMediaMarket
 import HowSocialMediaMarketingWorksSriLanka from "./pages/articles/HowSocialMediaMarketingWorksSriLanka.tsx";
 import HowGraphicDesignHelpsBusinessSriLanka from "./pages/articles/HowGraphicDesignHelpsBusinessSriLanka.tsx";
 import HowLeadGenerationWorksSriLanka from "./pages/articles/HowLeadGenerationWorksSriLanka.tsx";
+import EmailSubjectLinesGuide from "./pages/articles/EmailSubjectLinesGuide.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
