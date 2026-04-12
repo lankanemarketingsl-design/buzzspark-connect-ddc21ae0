@@ -65,6 +65,9 @@ import BestSmsMarketingCompanySriLanka from "./pages/articles/BestSmsMarketingCo
 import BestSeoCompanySriLanka from "./pages/articles/BestSeoCompanySriLanka.tsx";
 import SeoCostSriLanka from "./pages/articles/SeoCostSriLanka.tsx";
 import HowSeoWorksSriLanka from "./pages/articles/HowSeoWorksSriLanka.tsx";
+import BestSocialMediaMarketingCompanySriLanka from "./pages/articles/BestSocialMediaMarketingCompanySriLanka.tsx";
+import SocialMediaMarketingCostSriLanka from "./pages/articles/SocialMediaMarketingCostSriLanka.tsx";
+import HowSocialMediaMarketingWorksSriLanka from "./pages/articles/HowSocialMediaMarketingWorksSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
