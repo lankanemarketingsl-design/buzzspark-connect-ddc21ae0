@@ -76,6 +76,7 @@ import HowHotelMarketingWorks from "./pages/articles/HowHotelMarketingWorks.tsx"
 import HotelMarketingCost from "./pages/articles/HotelMarketingCost.tsx";
 import BestHotelMarketingAgency from "./pages/articles/BestHotelMarketingAgency.tsx";
 import DigitalMarketingBrandAwareness from "./pages/articles/DigitalMarketingBrandAwareness.tsx";
+import DirectMarketingStrategy from "./pages/articles/DirectMarketingStrategy.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -209,6 +210,7 @@ const App = () => (
               <Route path="/hotel-marketing-cost-sri-lanka" element={<HotelMarketingCost />} />
               <Route path="/best-hotel-marketing-agency-sri-lanka" element={<BestHotelMarketingAgency />} />
               <Route path="/digital-marketing-brand-awareness-sri-lanka" element={<DigitalMarketingBrandAwareness />} />
+              <Route path="/direct-marketing-strategy-sri-lanka" element={<DirectMarketingStrategy />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

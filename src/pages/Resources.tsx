@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Why Direct Marketing Should Be in Your Digital Marketing Budget (2026)",
+    date: "Apr 12, 2026",
+    excerpt: "Why direct marketing (email, SMS, WhatsApp) should be a core part of your digital marketing budget in Sri Lanka. Instant reach, brand awareness & more.",
+    path: "/direct-marketing-strategy-sri-lanka",
+    image: articleMultichannelReach,
+  },
+  {
     title: "How Digital Marketing Drives Brand Awareness & More Customer Calls",
     date: "Apr 12, 2026",
     excerpt: "Learn how digital marketing drives instant brand awareness, top-of-mind recall, and more customer calls & inquiries for businesses in Sri Lanka.",
