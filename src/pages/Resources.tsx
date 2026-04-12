@@ -47,6 +47,27 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Best SEO Company in Sri Lanka (2026 Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Find the best SEO company in Sri Lanka. Learn what to look for, key services, and how professional SEO can help your business rank on Google.",
+    path: "/best-seo-company-sri-lanka",
+    image: articleSeoMatters,
+  },
+  {
+    title: "SEO Cost in Sri Lanka (2026 Pricing Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "How much does SEO cost in Sri Lanka? Learn about SEO pricing models, factors that affect cost, and how to get the best value.",
+    path: "/seo-cost-sri-lanka",
+    image: articleSeoMatters,
+  },
+  {
+    title: "How SEO Works in Sri Lanka (Beginner to Advanced Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how SEO works — from on-page optimization to link building. A complete guide for beginners and advanced marketers in Sri Lanka.",
+    path: "/how-seo-works-sri-lanka",
+    image: articleSeoMatters,
+  },
+  {
     title: "Multi-Channel Email Campaigns That Deliver Real Visibility",
     date: "Apr 7, 2026",
     excerpt: "Go beyond email with Buzz Connect's multi-channel campaigns combining Email, Findit.lk & Facebook Story promotion for maximum visibility and lead generation.",

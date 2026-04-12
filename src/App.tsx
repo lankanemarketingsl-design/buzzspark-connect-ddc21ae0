@@ -62,6 +62,9 @@ import EventEmailAttendance from "./pages/articles/EventEmailAttendance.tsx";
 import LeadGenAgency from "./pages/articles/LeadGenAgency.tsx";
 import MultiChannelCampaignLandingPage from "./pages/articles/MultiChannelCampaignLandingPage.tsx";
 import BestSmsMarketingCompanySriLanka from "./pages/articles/BestSmsMarketingCompanySriLanka.tsx";
+import BestSeoCompanySriLanka from "./pages/articles/BestSeoCompanySriLanka.tsx";
+import SeoCostSriLanka from "./pages/articles/SeoCostSriLanka.tsx";
+import HowSeoWorksSriLanka from "./pages/articles/HowSeoWorksSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -179,6 +182,9 @@ const App = () => (
               <Route path="/lead-generation-agency-sri-lanka" element={<LeadGenAgency />} />
               <Route path="/multi-channel-email-campaigns-sri-lanka" element={<MultiChannelCampaignLandingPage />} />
               <Route path="/best-sms-marketing-company-sri-lanka" element={<BestSmsMarketingCompanySriLanka />} />
+              <Route path="/best-seo-company-sri-lanka" element={<BestSeoCompanySriLanka />} />
+              <Route path="/seo-cost-sri-lanka" element={<SeoCostSriLanka />} />
+              <Route path="/how-seo-works-sri-lanka" element={<HowSeoWorksSriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
