@@ -65,6 +65,7 @@ import BestSmsMarketingCompanySriLanka from "./pages/articles/BestSmsMarketingCo
 import BestSeoCompanySriLanka from "./pages/articles/BestSeoCompanySriLanka.tsx";
 import SeoCostSriLanka from "./pages/articles/SeoCostSriLanka.tsx";
 import HowSeoWorksSriLanka from "./pages/articles/HowSeoWorksSriLanka.tsx";
+import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
@@ -164,6 +165,7 @@ const App = () => (
               <Route path="/best-advertising-company-sri-lanka" element={<BestAdvertisingCompanySriLanka />} />
               <Route path="/digital-advertising-sri-lanka-complete-guide" element={<DigitalAdvertisingGuide />} />
               <Route path="/online-vs-traditional-advertising-sri-lanka" element={<OnlineVsTraditionalAdvertising />} />
+              <Route path="/google-ads-sri-lanka" element={<GoogleAdsSriLanka />} />
               <Route path="/google-ads-sri-lanka-cost-guide" element={<GoogleAdsCostGuide />} />
               <Route path="/email-marketing-guide-sri-lanka" element={<EmailMarketingGuide />} />
               <Route path="/email-marketing-pricing-sri-lanka" element={<EmailMarketingPricing />} />

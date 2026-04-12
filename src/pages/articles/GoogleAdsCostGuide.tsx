@@ -64,10 +64,10 @@ const GoogleAdsCostGuide = () => {
               While Google Ads is effective, many Sri Lankan businesses find better ROI with direct marketing channels. Consider:
             </p>
             <ul className="space-y-2 my-4">
-              <li>📧 <li>📧 Email campaigns — LKR 4,000 for 350,000+ impressions</li></li>
+              <li>📧 Email campaigns — LKR 4,000 for 350,000+ impressions</li>
               <li>📱 SMS campaigns — Instant delivery, 90%+ open rate</li>
               <li>💬 WhatsApp marketing — Direct personal engagement</li>
-              <li>🖥️ <li>🖥️ Findit.lk banner ads — From LKR 5,000</li></li>
+              <li>🖥️ Findit.lk banner ads — From LKR 5,000</li>
             </ul>
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Maximizing Your Advertising Budget</h2>
@@ -75,7 +75,14 @@ const GoogleAdsCostGuide = () => {
               The smartest approach is to combine Google Ads with direct marketing channels. This ensures you capture both search intent and reach your audience directly through email, SMS, and WhatsApp.
             </p>
 
-            <p className="mt-8">
+            <div className="mt-8 p-6 rounded-2xl bg-accent/10 border border-accent/20">
+              <p className="font-medium text-foreground mb-3">🚀 Looking for professional Google Ads management?</p>
+              <Link to="/google-ads-sri-lanka" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+                Explore our Google Ads services in Sri Lanka →
+              </Link>
+            </div>
+
+            <p className="mt-6">
               👉 Get maximum ROI with{" "}
               <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">
                 advertising in Sri Lanka
