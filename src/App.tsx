@@ -178,6 +178,7 @@ const App = () => (
               <Route path="/event-email-marketing-attendance-sri-lanka" element={<EventEmailAttendance />} />
               <Route path="/lead-generation-agency-sri-lanka" element={<LeadGenAgency />} />
               <Route path="/multi-channel-email-campaigns-sri-lanka" element={<MultiChannelCampaignLandingPage />} />
+              <Route path="/best-sms-marketing-company-sri-lanka" element={<BestSmsMarketingCompanySriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
