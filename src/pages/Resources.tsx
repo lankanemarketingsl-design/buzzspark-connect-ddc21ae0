@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "How Digital Marketing Drives Brand Awareness & More Customer Calls",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how digital marketing drives instant brand awareness, top-of-mind recall, and more customer calls & inquiries for businesses in Sri Lanka.",
+    path: "/digital-marketing-brand-awareness-sri-lanka",
+    image: articleMultichannelReach,
+  },
+  {
     title: "Best Hotel Marketing Agency in Sri Lanka (2026 Guide)",
     date: "Apr 12, 2026",
     excerpt: "Find the best hotel marketing agency in Sri Lanka. Expert strategies to increase bookings, improve visibility, and grow your hotel brand.",
