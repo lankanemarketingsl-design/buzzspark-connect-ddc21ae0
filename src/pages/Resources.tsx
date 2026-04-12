@@ -333,6 +333,13 @@ const articles = [
     path: "/enable-missing-images-to-display",
     image: article6,
   },
+  {
+    title: "Best SMS Marketing Company in Sri Lanka (2026 Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Looking for the best SMS marketing company in Sri Lanka? Learn what to look for, key benefits, and how to choose the right SMS marketing partner for your business.",
+    path: "/best-sms-marketing-company-sri-lanka",
+    image: article5,
+  },
 ];
 
 const Resources = () => {
