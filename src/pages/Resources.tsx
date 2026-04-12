@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "How Hotel Marketing Works in Sri Lanka (Complete Guide 2026)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn how hotel marketing works step-by-step — from attracting guests to increasing bookings. A complete guide for hotels in Sri Lanka.",
+    path: "/how-hotel-marketing-works-sri-lanka",
+    image: articleHotelMarketing,
+  },
+  {
     title: "How Email Marketing Works in Sri Lanka (Complete Guide 2026)",
     date: "Apr 12, 2026",
     excerpt: "Learn how email marketing works step-by-step — from building lists to tracking results. A complete guide for businesses in Sri Lanka.",
