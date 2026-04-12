@@ -205,6 +205,8 @@ const App = () => (
               <Route path="/email-subject-lines-guide-sri-lanka" element={<EmailSubjectLinesGuide />} />
               <Route path="/how-email-marketing-works-sri-lanka" element={<HowEmailMarketingWorks />} />
               <Route path="/how-hotel-marketing-works-sri-lanka" element={<HowHotelMarketingWorks />} />
+              <Route path="/hotel-marketing-cost-sri-lanka" element={<HotelMarketingCost />} />
+              <Route path="/best-hotel-marketing-agency-sri-lanka" element={<BestHotelMarketingAgency />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

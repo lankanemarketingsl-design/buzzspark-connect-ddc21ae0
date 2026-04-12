@@ -47,6 +47,20 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Best Hotel Marketing Agency in Sri Lanka (2026 Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "Find the best hotel marketing agency in Sri Lanka. Expert strategies to increase bookings, improve visibility, and grow your hotel brand.",
+    path: "/best-hotel-marketing-agency-sri-lanka",
+    image: articleHotelMarketing,
+  },
+  {
+    title: "Hotel Marketing Cost in Sri Lanka (2026 Pricing Guide)",
+    date: "Apr 12, 2026",
+    excerpt: "How much does hotel marketing cost in Sri Lanka? Learn about pricing for SEO, Google Ads, social media, and email marketing for hotels.",
+    path: "/hotel-marketing-cost-sri-lanka",
+    image: articleHotelMarketing,
+  },
+  {
     title: "How Hotel Marketing Works in Sri Lanka (Complete Guide 2026)",
     date: "Apr 12, 2026",
     excerpt: "Learn how hotel marketing works step-by-step — from attracting guests to increasing bookings. A complete guide for hotels in Sri Lanka.",
