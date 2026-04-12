@@ -73,6 +73,8 @@ import HowLeadGenerationWorksSriLanka from "./pages/articles/HowLeadGenerationWo
 import EmailSubjectLinesGuide from "./pages/articles/EmailSubjectLinesGuide.tsx";
 import HowEmailMarketingWorks from "./pages/articles/HowEmailMarketingWorks.tsx";
 import HowHotelMarketingWorks from "./pages/articles/HowHotelMarketingWorks.tsx";
+import HotelMarketingCost from "./pages/articles/HotelMarketingCost.tsx";
+import BestHotelMarketingAgency from "./pages/articles/BestHotelMarketingAgency.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
