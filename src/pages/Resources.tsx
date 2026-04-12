@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Email Subject Lines That Increase Open Rates (Sri Lanka Guide 2026)",
+    date: "Apr 12, 2026",
+    excerpt: "Learn the best email subject line strategies to boost open rates, improve engagement, and drive conversions for your business in Sri Lanka.",
+    path: "/email-subject-lines-guide-sri-lanka",
+    image: articleEmailGuide,
+  },
+  {
     title: "How Lead Generation Works in Sri Lanka (Complete 2026 Guide)",
     date: "Apr 12, 2026",
     excerpt: "Learn how lead generation works step-by-step — from attracting audiences to converting them into paying customers in Sri Lanka.",
