@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Google Ads Services in Sri Lanka (2026 Guide + Pricing)",
+    date: "Apr 12, 2026",
+    excerpt: "Run high-converting Google Ads campaigns in Sri Lanka. Learn about search, display, YouTube & shopping ads with expert PPC management.",
+    path: "/google-ads-sri-lanka",
+    image: articleGoogleAdsCost,
+  },
+  {
     title: "Best SEO Company in Sri Lanka (2026 Guide)",
     date: "Apr 12, 2026",
     excerpt: "Find the best SEO company in Sri Lanka. Learn what to look for, key services, and how professional SEO can help your business rank on Google.",
