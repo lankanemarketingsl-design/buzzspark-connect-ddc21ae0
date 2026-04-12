@@ -4,31 +4,19 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const EmailSubjectLinesGuide = () => {
-  const breadcrumbItems = [
-    { label: "Home", path: "/" },
-    { label: "Resources", path: "/resources" },
-    { label: "Email Subject Lines Guide", path: "/email-subject-lines-guide-sri-lanka" },
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: "Email Subject Lines That Increase Open Rates (Sri Lanka Guide 2026)",
+      description: "Learn the best email subject line strategies to increase open rates for your business in Sri Lanka. Practical examples and expert tips for 2026.",
+      author: { "@type": "Organization", name: "Buzz Connect" },
+      publisher: { "@type": "Organization", name: "Buzz Connect", url: "https://buzzconnect.lk" },
+      datePublished: "2026-04-12",
+      dateModified: "2026-04-12",
+      mainEntityOfPage: "https://buzzconnect.lk/email-subject-lines-guide-sri-lanka",
+    },
   ];
-
-  const relatedArticles = [
-    { title: "Email Marketing Guide Sri Lanka", path: "/email-marketing-guide-sri-lanka" },
-    { title: "Why Email Marketing Is Important", path: "/why-email-marketing-is-important" },
-    { title: "Email Marketing Pricing Sri Lanka", path: "/email-marketing-pricing-sri-lanka" },
-    { title: "Email vs Social Media Marketing", path: "/email-marketing-vs-social-media-sri-lanka" },
-    { title: "Future of Email Marketing in Sri Lanka", path: "/future-of-email-marketing-sri-lanka" },
-  ];
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Email Subject Lines That Increase Open Rates (Sri Lanka Guide 2026)",
-    description: "Learn the best email subject line strategies to increase open rates for your business in Sri Lanka. Practical examples and expert tips for 2026.",
-    author: { "@type": "Organization", name: "Buzz Connect" },
-    publisher: { "@type": "Organization", name: "Buzz Connect", url: "https://buzzconnect.lk" },
-    datePublished: "2026-04-12",
-    dateModified: "2026-04-12",
-    mainEntityOfPage: "https://buzzconnect.lk/email-subject-lines-guide-sri-lanka",
-  };
 
   return (
     <>
@@ -42,14 +30,13 @@ const EmailSubjectLinesGuide = () => {
 
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-8 max-w-4xl">
-          <Breadcrumbs items={breadcrumbItems} />
+          <Breadcrumbs />
 
           <article className="prose prose-lg max-w-none">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               📧 Email Subject Lines That Increase Open Rates (Sri Lanka Guide 2026)
             </h1>
 
-            {/* Why Subject Lines Matter */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">Why Email Subject Lines Matter</h2>
               <p className="text-muted-foreground mb-4">
@@ -66,7 +53,6 @@ const EmailSubjectLinesGuide = () => {
               </p>
             </section>
 
-            {/* Impact on Open Rates */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">🚀 How Subject Lines Impact Open Rates</h2>
               <p className="text-muted-foreground mb-4">A strong subject line can:</p>
@@ -81,7 +67,6 @@ const EmailSubjectLinesGuide = () => {
               </p>
             </section>
 
-            {/* Best Strategies */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">🎯 Best Email Subject Line Strategies</h2>
 
@@ -145,7 +130,6 @@ const EmailSubjectLinesGuide = () => {
               </div>
             </section>
 
-            {/* Sri Lankan Examples */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">📈 Subject Line Examples for Sri Lankan Businesses</h2>
               <p className="text-muted-foreground mb-4">Here are some practical examples:</p>
@@ -162,7 +146,6 @@ const EmailSubjectLinesGuide = () => {
               </p>
             </section>
 
-            {/* Common Mistakes */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">⚠️ Common Subject Line Mistakes to Avoid</h2>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2">
@@ -173,7 +156,6 @@ const EmailSubjectLinesGuide = () => {
               </ul>
             </section>
 
-            {/* A/B Testing */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">🧪 A/B Testing Your Subject Lines</h2>
               <p className="text-muted-foreground mb-4">Always test different subject lines to find what works best.</p>
@@ -186,7 +168,6 @@ const EmailSubjectLinesGuide = () => {
               </ul>
             </section>
 
-            {/* Mobile Optimization */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">📱 Optimize Subject Lines for Mobile Users</h2>
               <p className="text-muted-foreground mb-4">
@@ -197,7 +178,6 @@ const EmailSubjectLinesGuide = () => {
               </p>
             </section>
 
-            {/* Combine with Strategy */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">🔗 Combine with a Strong Email Strategy</h2>
               <p className="text-muted-foreground mb-4">
@@ -217,7 +197,6 @@ const EmailSubjectLinesGuide = () => {
               </p>
             </section>
 
-            {/* Work With Experts */}
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">🏆 Work With Email Marketing Experts</h2>
               <p className="text-muted-foreground mb-4">
@@ -230,7 +209,6 @@ const EmailSubjectLinesGuide = () => {
               </ul>
             </section>
 
-            {/* CTA */}
             <section className="bg-primary/10 border border-primary/20 rounded-2xl p-8 text-center mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">📞 Get Better Results from Your Emails</h2>
               <p className="text-muted-foreground mb-6">
@@ -253,7 +231,7 @@ const EmailSubjectLinesGuide = () => {
               </div>
             </section>
 
-            <RelatedArticles articles={relatedArticles} />
+            <RelatedArticles currentPath="/email-subject-lines-guide-sri-lanka" />
           </article>
         </div>
       </div>
