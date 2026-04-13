@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, ShoppingCart, Mail, Zap, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-ecommerce-email-sales.jpg";
+import articleImg from "@/assets/blog/article-ecommerce-email-sales.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -22,7 +22,7 @@ const EcommerceEmailSales = () => {
     <ServicePageLayout badge="Article" title="E-commerce Email Marketing in Sri Lanka: Increase Sales & Customer Retention" subtitle="Boost revenue and build customer loyalty with targeted email campaigns for your online store.">
       <SEOHead title="E-commerce Email Marketing Sri Lanka | Increase Sales" description="How email marketing increases sales and customer retention for e-commerce businesses in Sri Lanka. Cart recovery, flash sales & multi-channel strategies." canonical="/ecommerce-email-marketing-sales-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "E-commerce Email Marketing", url: "/ecommerce-email-marketing-sales-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="E-commerce email marketing to increase sales in Sri Lanka" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="E-commerce email marketing to increase sales in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">The e-commerce and retail industry in Sri Lanka is growing rapidly, but competition is also increasing. Businesses need effective ways to attract customers and drive repeat purchases.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> is one of the most powerful tools to boost sales and build customer loyalty.</p>

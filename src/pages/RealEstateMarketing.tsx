@@ -15,13 +15,13 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import assetlineLogo from "@/assets/clients/assetline-lands.jpg";
-import homeLandsLogo from "@/assets/clients/home-lands.jpg";
-import promiseLandLogo from "@/assets/clients/promise-land.png";
-import empireLandsLogo from "@/assets/clients/empire-lands.jpg";
-import bhoomiLogo from "@/assets/clients/bhoomi.jpg";
-import capitalTrustLogo from "@/assets/clients/capital-trust.png";
-import primeLandLogo from "@/assets/clients/prime-land.jpg";
+import assetlineLogo from "@/assets/clients/assetline-lands.webp";
+import homeLandsLogo from "@/assets/clients/home-lands.webp";
+import promiseLandLogo from "@/assets/clients/promise-land.webp";
+import empireLandsLogo from "@/assets/clients/empire-lands.webp";
+import bhoomiLogo from "@/assets/clients/bhoomi.webp";
+import capitalTrustLogo from "@/assets/clients/capital-trust.webp";
+import primeLandLogo from "@/assets/clients/prime-land.webp";
 
 const realEstateClients = [
   { name: "Assetline Lands", logo: assetlineLogo },

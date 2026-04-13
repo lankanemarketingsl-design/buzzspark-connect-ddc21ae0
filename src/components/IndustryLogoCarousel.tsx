@@ -34,7 +34,7 @@ const IndustryLogoCarousel = ({ title, subtitle, clients }: IndustryLogoCarousel
               alt={client.name}
               className="h-full w-full object-contain"
               loading="lazy"
-            />
+            width={144} height={64} />
           </div>
         ))}
       </div>

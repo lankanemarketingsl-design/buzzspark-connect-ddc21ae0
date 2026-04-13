@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Globe, Mail, GraduationCap, Building2, Hotel, ShoppingCart, Car, Briefcase, HeartPulse, HardHat, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-finditlk-email-conversions.jpg";
+import articleImg from "@/assets/blog/article-finditlk-email-conversions.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -68,7 +68,7 @@ const FinditlkEmailConversions = () => {
       <article className="max-w-4xl mx-auto space-y-12">
         {/* Hero Image */}
         <div className="rounded-2xl overflow-hidden shadow-card">
-          <img src={articleImg} alt="Findit.lk combined with email marketing for higher conversions in Sri Lanka" className="w-full h-auto" />
+          <img src={articleImg} alt="Findit.lk combined with email marketing for higher conversions in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} />
         </div>
 
         {/* Introduction */}

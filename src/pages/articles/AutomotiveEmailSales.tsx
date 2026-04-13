@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Car, Mail, Zap, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-automotive-email-sales.jpg";
+import articleImg from "@/assets/blog/article-automotive-email-sales.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -22,7 +22,7 @@ const AutomotiveEmailSales = () => {
     <ServicePageLayout badge="Article" title="Automotive Marketing in Sri Lanka: How Email Campaigns Drive Sales & Service Bookings" subtitle="Promote vehicles, services, and offers directly to interested customers with targeted email campaigns.">
       <SEOHead title="Automotive Email Marketing Sri Lanka | Drive Sales" description="How email marketing drives vehicle sales and service bookings for automotive businesses in Sri Lanka. Targeted campaigns & multi-channel strategies." canonical="/automotive-email-marketing-sales-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "Automotive Email Marketing", url: "/automotive-email-marketing-sales-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Automotive email marketing to drive sales in Sri Lanka" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Automotive email marketing to drive sales in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">The automotive industry in Sri Lanka requires targeted marketing to reach buyers and vehicle owners.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> helps businesses promote vehicles, services, and offers directly to interested customers.</p>

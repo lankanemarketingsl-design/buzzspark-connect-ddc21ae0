@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Users, Zap, Globe, Target, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-7.jpg";
+import articleImg from "@/assets/blog/article-7.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -56,7 +56,7 @@ const MultiChannelMarketingSriLanka = () => {
       <article className="max-w-4xl mx-auto space-y-12">
         {/* Hero Image */}
         <div className="rounded-2xl overflow-hidden shadow-card">
-          <img src={articleImg} alt="Multi-channel marketing in Sri Lanka - Email, SMS, WhatsApp and Findit.lk" className="w-full h-auto" />
+          <img src={articleImg} alt="Multi-channel marketing in Sri Lanka - Email, SMS, WhatsApp and Findit.lk" className="w-full h-auto" loading="lazy" width={800} height={500} />
         </div>
 
         {/* Introduction */}

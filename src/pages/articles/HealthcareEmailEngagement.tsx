@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, HeartPulse, Mail, Zap, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-healthcare-email-engagement.jpg";
+import articleImg from "@/assets/blog/article-healthcare-email-engagement.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -22,7 +22,7 @@ const HealthcareEmailEngagement = () => {
     <ServicePageLayout badge="Article" title="Healthcare Marketing in Sri Lanka: How Email Campaigns Improve Patient Engagement" subtitle="Connect directly with patients through targeted email campaigns for clinics, hospitals, and wellness centers.">
       <SEOHead title="Healthcare Email Marketing Sri Lanka | Patient Engagement" description="How email marketing improves patient engagement for healthcare providers in Sri Lanka. Appointment reminders, health promotions & multi-channel strategies." canonical="/healthcare-email-marketing-engagement-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "Healthcare Email Marketing", url: "/healthcare-email-marketing-engagement-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Healthcare email marketing to improve patient engagement in Sri Lanka" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Healthcare email marketing to improve patient engagement in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">Healthcare providers in Sri Lanka need effective ways to communicate with patients and promote services.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> enables clinics, hospitals, and wellness centers to connect directly with their audience.</p>

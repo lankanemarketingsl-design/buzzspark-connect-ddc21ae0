@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from "@/assets/buzz-logo.png";
+import logo from "@/assets/buzz-logo.webp";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -56,7 +56,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 gradient-hero border-b border-navy-light/30 backdrop-blur-sm">
       <div className="container mx-auto flex items-center justify-between h-14 sm:h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Buzz Connect" className="h-10 sm:h-16 w-auto" />
+          <img src={logo} alt="Buzz Connect" className="h-10 sm:h-16 w-auto" loading="lazy" />
         </Link>
 
         {/* Desktop Nav */}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
-import articleImage from "@/assets/blog/article-online-vs-traditional.jpg";
+import articleImage from "@/assets/blog/article-online-vs-traditional.webp";
 
 const OnlineVsTraditionalAdvertising = () => {
   const jsonLd = [

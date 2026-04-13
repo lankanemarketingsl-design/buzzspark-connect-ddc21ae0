@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, PartyPopper, Mail, Zap, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-event-email-attendance.jpg";
+import articleImg from "@/assets/blog/article-event-email-attendance.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -22,7 +22,7 @@ const EventEmailAttendance = () => {
     <ServicePageLayout badge="Article" title="Event Marketing in Sri Lanka: How Email Campaigns Increase Attendance" subtitle="Maximize event registrations and attendance with targeted email campaigns and multi-channel promotion.">
       <SEOHead title="Event Email Marketing Sri Lanka | Increase Attendance" description="How email marketing increases attendance for events, workshops & training programs in Sri Lanka. Targeted campaigns & multi-channel promotion strategies." canonical="/event-email-marketing-attendance-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "Event Email Marketing", url: "/event-email-marketing-attendance-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Event email marketing to increase attendance in Sri Lanka" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Event email marketing to increase attendance in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">Events, workshops, and training programs require effective promotion to maximize attendance.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> helps event organizers reach the right audience and ensure high participation.</p>

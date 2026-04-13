@@ -1,25 +1,25 @@
-import dfccLogo from "@/assets/logos/dfcc.jpg";
-import radissonLogo from "@/assets/logos/radisson.jpg";
-import huntersLogo from "@/assets/logos/hunters.jpg";
-import salaLogo from "@/assets/logos/sala.jpg";
-import bestwesternLogo from "@/assets/logos/bestwestern.jpg";
-import chinesedragonLogo from "@/assets/logos/chinesedragon.jpg";
-import swarnamahalLogo from "@/assets/logos/swarnamahal.jpg";
-import burgerkingLogo from "@/assets/logos/burgerking.jpg";
-import mimosaLogo from "@/assets/logos/mimosa.png";
-import abansLogo from "@/assets/logos/abans.jpg";
-import odelLogo from "@/assets/logos/odel.jpg";
-import glomarkLogo from "@/assets/logos/glomark.jpg";
-import combankLogo from "@/assets/logos/combank.png";
-import allianceLogo from "@/assets/logos/alliance.png";
-import nolimitLogo from "@/assets/logos/nolimit.jpg";
-import bhoomiLogo from "@/assets/logos/bhoomi.jpg";
-import visioncareLogo from "@/assets/logos/visioncare.jpg";
-import lassanaLogo from "@/assets/logos/lassana.png";
-import cipmLogo from "@/assets/logos/cipm.jpg";
-import cinnamonLogo from "@/assets/logos/cinnamon.jpg";
-import slimLogo from "@/assets/logos/slim.jpg";
-import ninewellsLogo from "@/assets/logos/ninewells.png";
+import dfccLogo from "@/assets/logos/dfcc.webp";
+import radissonLogo from "@/assets/logos/radisson.webp";
+import huntersLogo from "@/assets/logos/hunters.webp";
+import salaLogo from "@/assets/logos/sala.webp";
+import bestwesternLogo from "@/assets/logos/bestwestern.webp";
+import chinesedragonLogo from "@/assets/logos/chinesedragon.webp";
+import swarnamahalLogo from "@/assets/logos/swarnamahal.webp";
+import burgerkingLogo from "@/assets/logos/burgerking.webp";
+import mimosaLogo from "@/assets/logos/mimosa.webp";
+import abansLogo from "@/assets/logos/abans.webp";
+import odelLogo from "@/assets/logos/odel.webp";
+import glomarkLogo from "@/assets/logos/glomark.webp";
+import combankLogo from "@/assets/logos/combank.webp";
+import allianceLogo from "@/assets/logos/alliance.webp";
+import nolimitLogo from "@/assets/logos/nolimit.webp";
+import bhoomiLogo from "@/assets/logos/bhoomi.webp";
+import visioncareLogo from "@/assets/logos/visioncare.webp";
+import lassanaLogo from "@/assets/logos/lassana.webp";
+import cipmLogo from "@/assets/logos/cipm.webp";
+import cinnamonLogo from "@/assets/logos/cinnamon.webp";
+import slimLogo from "@/assets/logos/slim.webp";
+import ninewellsLogo from "@/assets/logos/ninewells.webp";
 import { motion } from "framer-motion";
 
 const logos = [
@@ -66,7 +66,7 @@ const LogoCarousel = () => {
             key={`${logo.name}-${i}`}
             className="flex-shrink-0 mx-2 sm:mx-4 flex items-center justify-center h-14 w-28 sm:h-16 sm:w-36 rounded-lg bg-card p-2.5 sm:p-3 shadow-sm border border-border hover:border-accent/15 transition-all duration-300"
           >
-            <img src={logo.src} alt={logo.name} className="h-full w-full object-contain" loading="lazy" />
+            <img src={logo.src} alt={logo.name} className="h-full w-full object-contain" loading="lazy" width={144} height={64} />
           </div>
         ))}
       </div>

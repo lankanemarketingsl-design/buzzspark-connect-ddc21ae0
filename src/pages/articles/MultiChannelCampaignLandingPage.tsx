@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Mail, Globe, Smartphone, Target, BarChart3, S
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import articleImg from "@/assets/blog/article-multichannel-campaigns.jpg";
+import articleImg from "@/assets/blog/article-multichannel-campaigns.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const WHATSAPP_LAUNCH = "https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20multi-channel%20campaign.";
@@ -87,7 +87,7 @@ const MultiChannelCampaignLandingPage = () => {
       <article className="max-w-4xl mx-auto space-y-16">
         {/* HERO IMAGE */}
         <div className="rounded-2xl overflow-hidden shadow-card">
-          <img src={articleImg} alt="Multi-channel email campaigns that deliver real visibility - Buzz Connect Sri Lanka" className="w-full h-auto" width={1200} height={675} />
+          <img src={articleImg} alt="Multi-channel email campaigns that deliver real visibility - Buzz Connect Sri Lanka" className="w-full h-auto" width={1200} height={675} loading="lazy" />
         </div>
 
         {/* 1. HERO HOOK */}

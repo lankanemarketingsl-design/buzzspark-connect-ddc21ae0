@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Target, Mail, Zap, Users, BarChart3, Globe, GraduationCap, Building2, Hotel, ShoppingCart, HeartPulse } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import articleImg from "@/assets/blog/article-lead-gen-agency.jpg";
+import articleImg from "@/assets/blog/article-lead-gen-agency.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -23,7 +23,7 @@ const LeadGenAgency = () => {
       <SEOHead title="Lead Generation Agency Sri Lanka | BuzzConnect" description="How to choose the right lead generation agency in Sri Lanka. Multi-channel strategies combining email, SMS, WhatsApp & Findit.lk for maximum qualified leads." canonical="/lead-generation-agency-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "Lead Generation Agency", url: "/lead-generation-agency-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
 
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Lead generation agency in Sri Lanka - choosing the right partner" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Lead generation agency in Sri Lanka - choosing the right partner" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
 
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">In today's competitive market, businesses in Sri Lanka need more than just visibility—they need qualified leads that convert into customers. This is where a professional <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation agency</Link> becomes essential.</p>

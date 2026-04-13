@@ -14,15 +14,15 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import uniColomboLogo from "@/assets/clients/uni-colombo.png";
-import caLogo from "@/assets/clients/ca-sri-lanka.jpg";
-import bmsLogo from "@/assets/clients/bms.jpg";
-import icbtLogo from "@/assets/clients/icbt.jpg";
-import horizonLogo from "@/assets/clients/horizon.png";
-import ancLogo from "@/assets/clients/anc.jpg";
-import oxfordLogo from "@/assets/clients/oxford.jpg";
-import slimLogo from "@/assets/clients/slim.jpg";
-import cipmLogo from "@/assets/clients/cipm.jpg";
+import uniColomboLogo from "@/assets/clients/uni-colombo.webp";
+import caLogo from "@/assets/clients/ca-sri-lanka.webp";
+import bmsLogo from "@/assets/clients/bms.webp";
+import icbtLogo from "@/assets/clients/icbt.webp";
+import horizonLogo from "@/assets/clients/horizon.webp";
+import ancLogo from "@/assets/clients/anc.webp";
+import oxfordLogo from "@/assets/clients/oxford.webp";
+import slimLogo from "@/assets/clients/slim.webp";
+import cipmLogo from "@/assets/clients/cipm.webp";
 
 const educationClients = [
   { name: "University of Colombo", logo: uniColomboLogo },

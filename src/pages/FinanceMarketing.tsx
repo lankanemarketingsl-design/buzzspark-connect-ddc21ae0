@@ -16,21 +16,21 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import allianceFinanceLogo from "@/assets/clients/alliance-finance.png";
-import amwCapitalLogo from "@/assets/clients/amw-capital.png";
-import cbcFinanceLogo from "@/assets/clients/cbc-finance.jpg";
-import commercialCreditLogo from "@/assets/clients/commercial-credit.jpg";
-import pmfFinanceLogo from "@/assets/clients/pmf-finance.jpg";
-import arpicoFinanceLogo from "@/assets/clients/arpico-finance.jpg";
-import asiaAssetLogo from "@/assets/clients/asia-asset.jpg";
-import ndbBankLogo from "@/assets/clients/ndb-bank.jpg";
-import amanaBankLogo from "@/assets/clients/amana-bank.jpg";
-import nsbBankLogo from "@/assets/clients/nsb-bank.png";
-import peoplesBankLogo from "@/assets/clients/peoples-bank.png";
-import cargillsBankLogo from "@/assets/clients/cargills-bank.png";
-import bocLogo from "@/assets/clients/boc.jpg";
-import commercialBankLogo from "@/assets/clients/commercial-bank.png";
-import dfccBankLogo from "@/assets/clients/dfcc-bank.jpg";
+import allianceFinanceLogo from "@/assets/clients/alliance-finance.webp";
+import amwCapitalLogo from "@/assets/clients/amw-capital.webp";
+import cbcFinanceLogo from "@/assets/clients/cbc-finance.webp";
+import commercialCreditLogo from "@/assets/clients/commercial-credit.webp";
+import pmfFinanceLogo from "@/assets/clients/pmf-finance.webp";
+import arpicoFinanceLogo from "@/assets/clients/arpico-finance.webp";
+import asiaAssetLogo from "@/assets/clients/asia-asset.webp";
+import ndbBankLogo from "@/assets/clients/ndb-bank.webp";
+import amanaBankLogo from "@/assets/clients/amana-bank.webp";
+import nsbBankLogo from "@/assets/clients/nsb-bank.webp";
+import peoplesBankLogo from "@/assets/clients/peoples-bank.webp";
+import cargillsBankLogo from "@/assets/clients/cargills-bank.webp";
+import bocLogo from "@/assets/clients/boc.webp";
+import commercialBankLogo from "@/assets/clients/commercial-bank.webp";
+import dfccBankLogo from "@/assets/clients/dfcc-bank.webp";
 
 const financeClients = [
   { name: "Bank of Ceylon", logo: bocLogo },

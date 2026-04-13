@@ -5,7 +5,7 @@ import { useMemo } from "react";
 import { ArrowRight, CheckCircle2, Briefcase, Mail, Zap, Target, Star, TrendingUp, Users, Rocket, Phone, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import articleImg from "@/assets/blog/article-recruitment-email-hiring.jpg";
+import articleImg from "@/assets/blog/article-recruitment-email-hiring.webp";
 import RelatedArticles from "@/components/RelatedArticles";
 
 const faqs = [
@@ -32,7 +32,7 @@ const RecruitmentEmailHiring = () => {
     <ServicePageLayout badge="Article" title="Recruitment Marketing in Sri Lanka: How Email Campaigns Speed Up Hiring" subtitle="Reach the right candidates faster with targeted email campaigns and multi-channel recruitment strategies.">
       <SEOHead title="Recruitment Email Marketing Sri Lanka | Speed Up Hiring" description="How email marketing speeds up hiring for companies in Sri Lanka. Targeted job campaigns, candidate sourcing & multi-channel recruitment strategies." canonical="/recruitment-email-marketing-hiring-sri-lanka" breadcrumbs={[{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }, { name: "Recruitment Email Marketing", url: "/recruitment-email-marketing-hiring-sri-lanka" }]} jsonLd={[jsonLd, articleJsonLd]} />
       <article className="max-w-4xl mx-auto space-y-12">
-        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Recruitment email marketing to speed up hiring in Sri Lanka" className="w-full h-auto" /></div>
+        <div className="rounded-2xl overflow-hidden shadow-card"><img src={articleImg} alt="Recruitment email marketing to speed up hiring in Sri Lanka" className="w-full h-auto" loading="lazy" width={800} height={500} /></div>
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/staff-recruitment-campaigns-sri-lanka" className="text-muted-foreground">Recruitment Sri Lanka</Link> requires reaching the right candidates quickly. Traditional job postings alone are not enough.</p>
           <p className="text-lg text-muted-foreground leading-relaxed"><Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> helps employers connect directly with job seekers and improve hiring efficiency.</p>

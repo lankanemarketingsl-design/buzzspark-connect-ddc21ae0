@@ -16,16 +16,16 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import nolimitLogo from "@/assets/clients/nolimit.jpg";
-import crocodileLogo from "@/assets/clients/crocodile.png";
-import shirtworksLogo from "@/assets/clients/shirtworks.png";
-import emeraldLogo from "@/assets/clients/emerald.jpg";
-import signatureLogo from "@/assets/clients/signature.jpg";
-import odelLogo from "@/assets/clients/odel.jpg";
-import mimosaLogo from "@/assets/clients/mimosa.png";
-import swarnamahalLogo from "@/assets/clients/swarnamahal.jpg";
-import vogueJewellersLogo from "@/assets/clients/vogue-jewellers.jpg";
-import hameedialLogo from "@/assets/clients/hameedia.png";
+import nolimitLogo from "@/assets/clients/nolimit.webp";
+import crocodileLogo from "@/assets/clients/crocodile.webp";
+import shirtworksLogo from "@/assets/clients/shirtworks.webp";
+import emeraldLogo from "@/assets/clients/emerald.webp";
+import signatureLogo from "@/assets/clients/signature.webp";
+import odelLogo from "@/assets/clients/odel.webp";
+import mimosaLogo from "@/assets/clients/mimosa.webp";
+import swarnamahalLogo from "@/assets/clients/swarnamahal.webp";
+import vogueJewellersLogo from "@/assets/clients/vogue-jewellers.webp";
+import hameedialLogo from "@/assets/clients/hameedia.webp";
 
 const fashionClients = [
   { name: "NOLIMIT", logo: nolimitLogo },

@@ -15,16 +15,16 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import flagWhistleLogo from "@/assets/clients/flag-whistle.jpg";
-import cloudCafeLogo from "@/assets/clients/cloud-cafe.jpg";
-import tropicalFreshLogo from "@/assets/clients/tropical-fresh.jpg";
-import saltSugarLogo from "@/assets/clients/salt-sugar.jpg";
-import dominosLogo from "@/assets/clients/dominos.jpg";
-import maqaraLogo from "@/assets/clients/maqara.jpg";
-import popeyesLogo from "@/assets/clients/popeyes.jpg";
-import greatWallLogo from "@/assets/clients/great-wall.jpg";
-import burgerKingLogo from "@/assets/clients/burger-king.jpg";
-import chineseDragonLogo from "@/assets/clients/chinese-dragon.jpg";
+import flagWhistleLogo from "@/assets/clients/flag-whistle.webp";
+import cloudCafeLogo from "@/assets/clients/cloud-cafe.webp";
+import tropicalFreshLogo from "@/assets/clients/tropical-fresh.webp";
+import saltSugarLogo from "@/assets/clients/salt-sugar.webp";
+import dominosLogo from "@/assets/clients/dominos.webp";
+import maqaraLogo from "@/assets/clients/maqara.webp";
+import popeyesLogo from "@/assets/clients/popeyes.webp";
+import greatWallLogo from "@/assets/clients/great-wall.webp";
+import burgerKingLogo from "@/assets/clients/burger-king.webp";
+import chineseDragonLogo from "@/assets/clients/chinese-dragon.webp";
 
 const restaurantClients = [
   { name: "Burger King", logo: burgerKingLogo },

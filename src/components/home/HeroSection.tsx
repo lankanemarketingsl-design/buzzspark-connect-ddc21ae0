@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, MessageSquare, Smartphone, PhoneCall, Send, Globe, TrendingUp, Zap, Target, Rocket, Building2, Clock } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+const heroBg = "/hero-bg.webp";
 
 const stats = [
   { num: "350K+", label: "Email Database" },

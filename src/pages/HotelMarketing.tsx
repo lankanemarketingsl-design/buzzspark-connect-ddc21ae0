@@ -15,15 +15,15 @@ import IndustryStatsBanner from "@/components/IndustryStatsBanner";
 import FinditlkAdvantage from "@/components/FinditlkAdvantage";
 import IndustryLogoCarousel from "@/components/IndustryLogoCarousel";
 
-import radissonLogo from "@/assets/clients/radisson.jpg";
-import colomboCourtLogo from "@/assets/clients/colombo-court.jpg";
-import araliyaLogo from "@/assets/clients/araliya.png";
-import brownsLogo from "@/assets/clients/browns.jpg";
-import kingsburyLogo from "@/assets/clients/kingsbury.png";
-import tangerineLogo from "@/assets/clients/tangerine.jpg";
-import jetwingLogo from "@/assets/clients/jetwing.png";
-import cinnamonLogo from "@/assets/clients/cinnamon.jpg";
-import bestWesternLogo from "@/assets/clients/best-western.jpg";
+import radissonLogo from "@/assets/clients/radisson.webp";
+import colomboCourtLogo from "@/assets/clients/colombo-court.webp";
+import araliyaLogo from "@/assets/clients/araliya.webp";
+import brownsLogo from "@/assets/clients/browns.webp";
+import kingsburyLogo from "@/assets/clients/kingsbury.webp";
+import tangerineLogo from "@/assets/clients/tangerine.webp";
+import jetwingLogo from "@/assets/clients/jetwing.webp";
+import cinnamonLogo from "@/assets/clients/cinnamon.webp";
+import bestWesternLogo from "@/assets/clients/best-western.webp";
 
 const hotelClients = [
   { name: "Radisson", logo: radissonLogo },
