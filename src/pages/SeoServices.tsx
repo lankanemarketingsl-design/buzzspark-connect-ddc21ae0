@@ -67,8 +67,8 @@ const SeoServices = () => {
       subtitle="Rank higher on Google and turn search traffic into real customer inquiries with a proven, data-driven SEO strategy."
     >
       <SEOHead
-        title="Best SEO Company Sri Lanka | SEO Services & SEO Consultant | Buzz Connect"
-        description="Best SEO company in Sri Lanka. Rank higher on Google with proven SEO strategies. 1,500+ businesses served, 100,000+ inquiries generated. SEO packages from LKR 30,000."
+        title="Best SEO Company in Sri Lanka | SEO Consultant & Specialist"
+        description="Looking for the best SEO company in Sri Lanka? Work with an expert SEO consultant to boost rankings, traffic & leads. 1,500+ clients served."
         canonical="/seo-sri-lanka"
         keywords="best seo company sri lanka, seo company sri lanka, seo consultant sri lanka, seo specialist sri lanka, seo sri lanka, seo services sri lanka, seo packages sri lanka, search engine optimization sri lanka, google ranking sri lanka, local seo sri lanka"
         breadcrumbs={[
@@ -97,10 +97,6 @@ const SeoServices = () => {
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
             <BarChart3 className="w-4 h-4 text-secondary-foreground" />
             <span className="text-secondary-foreground font-bold text-sm">20,000+ Campaigns Executed</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-muted/60 border border-border">
-            <Rocket className="w-4 h-4 text-muted-foreground" />
-            <span className="text-muted-foreground font-bold text-sm">Strategy & Optimization from Day One</span>
           </div>
         </div>
       </motion.div>
