@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, MessageSquare, Smartphone, PhoneCall, Send, Globe, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, Mail, MessageSquare, Smartphone, PhoneCall, Send, Globe, TrendingUp, Zap, Target, Rocket, Building2, Clock } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
@@ -16,6 +16,13 @@ const channels = [
   { icon: MessageSquare, label: "WhatsApp", delay: 0.7 },
   { icon: Smartphone, label: "SMS", delay: 0.8 },
   { icon: Globe, label: "Findit.lk", delay: 0.9 },
+];
+
+const trustStats = [
+  { icon: Target, num: "100,000+", label: "Inquiries Generated" },
+  { icon: Rocket, num: "20,000+", label: "Campaigns Executed" },
+  { icon: Building2, num: "1,500+", label: "Businesses Served" },
+  { icon: Clock, num: "24–72 hrs", label: "Campaign Execution" },
 ];
 
 const HeroSection = () => {
@@ -75,7 +82,8 @@ const HeroSection = () => {
       </motion.div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 py-8 sm:py-14">
-        <div className="max-w-4xl">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+        <div className="max-w-4xl lg:flex-1">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -168,6 +176,33 @@ const HeroSection = () => {
               >
                 <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-accent">{stat.num}</div>
                 <div className="text-[10px] sm:text-xs text-primary-foreground/45 mt-1.5 uppercase tracking-widest font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+          {/* Right side trust stats */}
+          <motion.div
+            className="hidden lg:flex flex-col gap-3 lg:w-[280px] xl:w-[320px] mt-8 lg:mt-0"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            {trustStats.map((item, i) => (
+              <motion.div
+                key={item.label}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.6 + i * 0.12 }}
+              >
+                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent/10">
+                  <item.icon className="w-4 h-4 text-accent" />
+                </div>
+                <div>
+                  <div className="text-lg font-heading font-bold text-accent leading-tight">{item.num}</div>
+                  <div className="text-[10px] text-primary-foreground/50 uppercase tracking-wider font-medium">{item.label}</div>
+                </div>
               </motion.div>
             ))}
           </motion.div>
