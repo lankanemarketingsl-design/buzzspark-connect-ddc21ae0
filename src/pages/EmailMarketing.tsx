@@ -55,8 +55,8 @@ const EmailMarketing = () => {
       subtitle="Reach your audience, increase visibility, and generate real business opportunities — campaigns starting from LKR 6,000"
     >
       <SEOHead
-        title="Email Marketing Sri Lanka | Multi-Channel Campaigns + Findit.lk Advertising"
-        description="Boost your business with email marketing in Sri Lanka. We combine bulk email campaigns with multi-channel marketing strategies to increase conversions and ROI. Start today."
+        title="Email Marketing Sri Lanka | Email Marketing Companies in Sri Lanka"
+        description="Email marketing Sri Lanka by best email marketing companies in Sri Lanka. Run email marketing campaign Sri Lanka with affordable packages."
         canonical="/email-marketing"
         keywords="email marketing sri lanka, email campaigns sri lanka, email advertising sri lanka, bulk email marketing sri lanka, email marketing services sri lanka, best email marketing company sri lanka, email marketing packages sri lanka, email database sri lanka, corporate email marketing"
         breadcrumbs={[
