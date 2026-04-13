@@ -44,8 +44,11 @@ const HowSeoWorksSriLanka = () => {
           {/* What is SEO */}
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <h2 className="font-heading text-xl font-bold text-foreground mb-3">What is SEO?</h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              SEO (Search Engine Optimization) is the process of improving your website to rank higher on search engines like Google. When done right, SEO brings consistent organic traffic to your website without paying for ads.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              SEO (Search Engine Optimization) is the process of improving your website to rank higher on search engines like Google. When done right, SEO brings consistent organic traffic to your website without paying for ads. Learn more about <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">professional SEO services in Sri Lanka</Link>.
+              Working with an experienced <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO expert Sri Lanka</Link> ensures your website is optimized correctly from the start. Learn more about our <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO Sri Lanka</Link> services.
             </p>
           </div>
 
