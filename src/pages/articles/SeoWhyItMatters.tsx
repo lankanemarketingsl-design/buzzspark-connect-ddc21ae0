@@ -43,10 +43,10 @@ const SeoWhyItMatters = () => {
         >
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Search Engine Optimization (SEO) is the process of improving your website to rank higher on Google and attract more customers organically.
+              Search Engine Optimization (SEO) is the process of improving your website to rank higher on Google and attract more customers organically. Partnering with the <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">best SEO company in Sri Lanka</Link> can accelerate this process significantly.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              In Sri Lanka, businesses are increasingly moving online, making SEO one of the most important digital marketing strategies for sustainable growth.
+              In Sri Lanka, businesses are increasingly moving online, making <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO Sri Lanka</Link> one of the most important digital marketing strategies for sustainable growth. A qualified <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO specialist Sri Lanka</Link> can help you outrank competitors and drive consistent leads.
             </p>
           </div>
 
@@ -69,9 +69,9 @@ const SeoWhyItMatters = () => {
               SEO improves your visibility when customers search for your services. Whether it's "email marketing Sri Lanka" or "best hotels in Colombo," ranking on Google means more traffic and more sales.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              If you want to rank your business on Google, explore our{" "}
+              If you want to rank your business on Google, work with an experienced{" "}
               <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">
-                SEO Services in Sri Lanka
+                SEO consultant Sri Lanka
               </Link>. SEO is not optional anymore — it's essential for growth.
             </p>
           </div>

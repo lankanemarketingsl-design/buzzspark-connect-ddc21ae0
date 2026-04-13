@@ -45,7 +45,7 @@ const SeoCostSriLanka = () => {
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <h2 className="font-heading text-xl font-bold text-foreground mb-3">How Much Does SEO Cost in Sri Lanka?</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              SEO pricing in Sri Lanka varies depending on the scope, competition, and goals of your business. This guide explains what you should expect when investing in <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO services in Sri Lanka</Link>.
+              SEO pricing in Sri Lanka varies depending on the scope, competition, and goals of your business. This guide explains what you should expect when investing in <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO Sri Lanka</Link> services. Choosing the <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">best SEO company Sri Lanka</Link> ensures you get the best value for your investment.
             </p>
           </div>
 
@@ -127,6 +127,9 @@ const SeoCostSriLanka = () => {
                 </li>
               ))}
             </ul>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              An experienced <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO specialist in Sri Lanka</Link> will create a custom strategy that delivers real ROI for your business.
+            </p>
           </div>
 
           {/* CTA */}

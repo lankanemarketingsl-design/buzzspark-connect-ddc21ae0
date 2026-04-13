@@ -45,7 +45,7 @@ const BestSeoCompanySriLanka = () => {
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <h2 className="font-heading text-xl font-bold text-foreground mb-3">Looking for the Best SEO Company in Sri Lanka?</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Choosing the right SEO company can determine whether your business appears on the first page of Google or gets lost among competitors. If you're searching for a reliable <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO company in Sri Lanka</Link>, this guide will help you make the right decision.
+              Choosing the right <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO company Sri Lanka</Link> can determine whether your business appears on the first page of Google or gets lost among competitors. If you're searching for a reliable <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO consultant Sri Lanka</Link>, this guide will help you make the right decision.
             </p>
           </div>
 
@@ -66,7 +66,7 @@ const BestSeoCompanySriLanka = () => {
               ))}
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              👉 Learn more about <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">professional SEO services in Sri Lanka</Link>
+              👉 Learn more about our <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO services Sri Lanka</Link> and discover why we're considered the <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">best SEO company Sri Lanka</Link>
             </p>
           </div>
 

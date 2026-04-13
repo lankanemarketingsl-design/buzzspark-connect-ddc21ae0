@@ -49,8 +49,11 @@ const BestSeoServicesSriLanka = () => {
             <p className="text-muted-foreground leading-relaxed mb-3">
               If you like to get the benefit of SEO for your promotion or offer, working with <a href="https://findit.lk" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">Findit.lk</a> is your best solution. That is because Findit.lk is ranked on the 1st page of Google search for "offers in Sri Lanka", "promotions in Sri Lanka", "discounts in Sri Lanka" and similar keywords — which will help you find online leads easily.
             </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              SEO is the most important function when it comes to attracting visitors to your website. Investing in <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO Sri Lanka</Link> services will be one of the best business decisions you can take.
+            </p>
             <p className="text-muted-foreground leading-relaxed">
-              SEO is the most important function when it comes to attracting visitors to your website. Investing in <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO</Link> will be one of the best business decisions you can take.
+              Whether you're looking for an <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO specialist in Sri Lanka</Link> or a full-service team, working with the <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">best SEO company in Sri Lanka</Link> ensures your website ranks where it matters most.
             </p>
           </div>
 
