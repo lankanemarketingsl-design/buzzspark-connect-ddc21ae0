@@ -18,6 +18,13 @@ const channels = [
   { icon: Globe, label: "Findit.lk", delay: 0.9 },
 ];
 
+const trustStats = [
+  { icon: Target, num: "100,000+", label: "Inquiries Generated" },
+  { icon: Rocket, num: "20,000+", label: "Campaigns Executed" },
+  { icon: Building2, num: "1,500+", label: "Businesses Served" },
+  { icon: Clock, num: "24–72 hrs", label: "Campaign Execution" },
+];
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-[50vh] sm:min-h-[65vh] flex items-center overflow-hidden">
