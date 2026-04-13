@@ -84,7 +84,7 @@ const RealEstateEmailLeads = () => {
             ))}
           </ul>
           <p className="text-muted-foreground">
-            👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> services help real estate businesses generate quality leads.
+            👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing companies in Sri Lanka</Link> help real estate businesses generate quality leads.
           </p>
         </section>
 

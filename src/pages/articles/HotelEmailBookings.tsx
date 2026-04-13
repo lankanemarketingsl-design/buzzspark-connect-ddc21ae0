@@ -84,7 +84,7 @@ const HotelEmailBookings = () => {
             ))}
           </ul>
           <p className="text-muted-foreground">
-            👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> services help hotels increase bookings and engagement.
+            👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing campaign Sri Lanka</Link> services help hotels increase bookings and engagement.
           </p>
         </section>
 

@@ -30,7 +30,7 @@ const EventEmailAttendance = () => {
         <section>
           <div className="flex items-center gap-3 mb-4"><Mail className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Why Email Marketing Works for Events</h2></div>
           <ul className="space-y-2 mb-6">{["Send invitations", "Promote event details", "Share reminders", "Increase attendance"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
-          <p className="text-muted-foreground">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> services help event organizers drive registrations.</p>
+          <p className="text-muted-foreground">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing companies in Sri Lanka</Link> help event organizers drive registrations.</p>
         </section>
         <section className="bg-muted/30 rounded-2xl p-8 border border-border">
           <div className="flex items-center gap-3 mb-4"><Zap className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Multi-Channel Campaigns</h2></div>

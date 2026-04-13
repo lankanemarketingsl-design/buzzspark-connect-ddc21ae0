@@ -90,7 +90,7 @@ const LeadGenAgency = () => {
               </div>
             ))}
           </div>
-          <p className="text-muted-foreground mt-4">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> services help nurture and convert leads effectively.</p>
+          <p className="text-muted-foreground mt-4">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing packages in Sri Lanka</Link> help nurture and convert leads effectively.</p>
         </section>
 
         <section>

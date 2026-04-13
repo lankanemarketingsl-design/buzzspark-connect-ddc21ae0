@@ -30,7 +30,7 @@ const AutomotiveEmailSales = () => {
         <section>
           <div className="flex items-center gap-3 mb-4"><Mail className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Why Email Marketing Works for Automotive</h2></div>
           <ul className="space-y-2 mb-6">{["Promote vehicle listings", "Share special offers", "Send service reminders", "Build long-term relationships"].map(item => (<li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-1" />{item}</li>))}</ul>
-          <p className="text-muted-foreground">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> services help automotive businesses increase leads.</p>
+          <p className="text-muted-foreground">👉 Our <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing campaign Sri Lanka</Link> services help automotive businesses increase leads.</p>
         </section>
         <section className="bg-muted/30 rounded-2xl p-8 border border-border">
           <div className="flex items-center gap-3 mb-4"><Zap className="w-7 h-7 text-accent" /><h2 className="font-heading text-2xl font-bold text-foreground">Multi-Channel Strategy</h2></div>
