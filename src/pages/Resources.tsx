@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Fashion Marketing Case Studies – Sri Lanka (2026)",
+    date: "Apr 13, 2026",
+    excerpt: "Fashion marketing case studies from Sri Lanka. See how clothing brands built awareness & drove sales using targeted email campaigns, Findit.lk exposure & remarketing.",
+    path: "/fashion-marketing-case-studies-sri-lanka",
+    image: articleFashionMarketing,
+  },
+  {
     title: "Finance Marketing Case Studies – Sri Lanka (2026)",
     date: "Apr 13, 2026",
     excerpt: "Finance marketing case studies from Sri Lanka. See how finance companies generated high-quality leads for loans, credit cards & leasing using email and remarketing.",

@@ -81,6 +81,7 @@ import FastDirectMarketing from "./pages/articles/FastDirectMarketing.tsx";
 import HotelDigitalMarketingCaseStudies from "./pages/articles/HotelDigitalMarketingCaseStudies.tsx";
 import RealEstateMarketingCaseStudies from "./pages/articles/RealEstateMarketingCaseStudies.tsx";
 import FinanceMarketingCaseStudies from "./pages/articles/FinanceMarketingCaseStudies.tsx";
+import FashionMarketingCaseStudies from "./pages/articles/FashionMarketingCaseStudies.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -219,6 +220,7 @@ const App = () => (
               <Route path="/hotel-digital-marketing-case-studies-sri-lanka" element={<HotelDigitalMarketingCaseStudies />} />
               <Route path="/real-estate-marketing-case-studies-sri-lanka" element={<RealEstateMarketingCaseStudies />} />
               <Route path="/finance-marketing-case-studies-sri-lanka" element={<FinanceMarketingCaseStudies />} />
+              <Route path="/fashion-marketing-case-studies-sri-lanka" element={<FashionMarketingCaseStudies />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
