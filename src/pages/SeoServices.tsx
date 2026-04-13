@@ -134,7 +134,7 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* SEO Services Intro — Keyword-Rich */}
+      {/* SEO Services Intro */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -143,10 +143,10 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Looking for the Best SEO Company in Sri Lanka?</h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          At Buzz Connect, we are more than just an <strong className="text-accent font-bold">SEO company Sri Lanka</strong> — we are your growth partner. As the <strong className="text-accent font-bold">best SEO company in Sri Lanka</strong>, our focus is simple: <strong className="text-foreground">get your business found by the right people at the right time on Google</strong>.
+          At Buzz Connect, we are more than just an SEO company Sri Lanka — we are your growth partner. Our focus is simple: get your business found by the right people at the right time on Google.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Whether you're a startup looking for an affordable <strong className="text-accent font-bold">SEO specialist in Sri Lanka</strong>, a hotel seeking more direct bookings, or a corporate brand wanting to dominate search results — our team of experienced <strong className="text-foreground">SEO experts in Sri Lanka</strong> will craft a custom strategy that delivers real results.
+          Whether you're a startup looking for an affordable SEO specialist in Sri Lanka, a hotel seeking more direct bookings, or a corporate brand wanting to dominate search results — our team of experienced SEO experts will craft a custom strategy that delivers real results.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-6">
           We help businesses across Sri Lanka achieve:
@@ -165,156 +165,11 @@ const SeoServices = () => {
           ))}
         </ul>
         <p className="text-muted-foreground leading-relaxed">
-          Whether you need an <strong className="text-accent font-bold">SEO consultant in Sri Lanka</strong> for a one-time audit or a full-service <strong className="text-accent font-bold">SEO specialist Sri Lanka</strong> team for ongoing optimization, we deliver measurable results. Combine <strong className="text-foreground">SEO Sri Lanka</strong> with our <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link>, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, and <Link to="/social-media-marketing-sri-lanka" className="text-accent hover:underline font-semibold">social media marketing</Link> services for maximum impact.
+          Whether you need an SEO consultant in Sri Lanka for a one-time audit or a full-service SEO specialist team for ongoing optimization, we deliver measurable results.
         </p>
       </motion.div>
 
-      {/* What is SEO — Educational Content for Depth */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What is SEO and Why Do You Need It?</h2>
-        <p className="text-muted-foreground leading-relaxed mb-4">
-          <strong className="text-foreground">SEO (Search Engine Optimization)</strong> is the process of optimizing your website to rank higher on Google and other search engines for relevant keywords. When someone in Sri Lanka searches for "best SEO company Sri Lanka" or "SEO services near me," proper SEO ensures your business appears at the top of the results.
-        </p>
-        <p className="text-muted-foreground leading-relaxed mb-4">
-          In today's digital landscape, over <strong className="text-foreground">80% of consumers search Google before making a purchase decision</strong>. If your business is not ranking on the first page, you are losing potential customers to your competitors every single day. That's why hiring a professional <strong className="text-foreground">SEO expert in Sri Lanka</strong> is no longer optional — it's essential for survival and growth.
-        </p>
-        <p className="text-muted-foreground leading-relaxed">
-          As a leading <strong className="text-accent font-bold">SEO company in Sri Lanka</strong>, Buzz Connect uses white-hat, Google-compliant strategies that build sustainable rankings. We don't use shortcuts or black-hat techniques that risk Google penalties — we build your online presence the right way.
-        </p>
-      </motion.div>
-
-      {/* Why We Are the Best — Expanded */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-3">Why Buzz Connect is the Best SEO Company in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">Most <strong className="text-foreground">SEO companies in Sri Lanka</strong> focus only on rankings. <strong className="text-foreground">We focus on business results.</strong> Here's what sets us apart as the <strong className="text-accent font-bold">best SEO company Sri Lanka</strong> businesses choose:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-          {[
-            { icon: BarChart3, title: "Data-Driven SEO Strategies", desc: "Every decision our SEO specialist Sri Lanka team makes is backed by real data — keyword analysis, competitor research, and performance metrics. No guesswork." },
-            { icon: Target, title: "Conversion-Focused Approach", desc: "We optimize not just for traffic — but for inquiries, leads, and sales. As an SEO consultant Sri Lanka, we ensure every visitor has a clear path to conversion." },
-            { icon: MapPin, title: "Local Market Expertise", desc: "Deep understanding of Sri Lankan search behavior, local keywords, and market dynamics. Our SEO expert Sri Lanka team knows what works in this market." },
-            { icon: Award, title: "Proven Track Record", desc: "1,500+ clients served and thousands of successful campaigns across hotels, education, real estate, finance, and more." },
-            { icon: Shield, title: "White-Hat SEO Only", desc: "We follow Google's guidelines strictly. No black-hat shortcuts, no PBNs, no link schemes — just sustainable strategies that last." },
-            { icon: Eye, title: "Transparent Reporting", desc: "Monthly reports showing keyword rankings, traffic growth, and ROI. You see exactly what we do and the results we deliver." },
-          ].map((item) => (
-            <div key={item.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-card border border-border">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <item.icon className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-heading font-bold text-foreground mb-1">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="text-center text-accent font-semibold">We don't just improve rankings — we grow your business</p>
-      </motion.div>
-
-      {/* SEO Services We Offer — New Section for Depth */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Comprehensive SEO Services in Sri Lanka</h2>
-        <p className="text-muted-foreground leading-relaxed mb-6">
-          As a full-service <strong className="text-foreground">SEO company Sri Lanka</strong>, we offer every service you need to dominate Google search results:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[
-            { icon: Search, title: "Keyword Research & Analysis", desc: "We identify high-value, high-intent keywords specific to your industry and the Sri Lankan market. Our SEO specialist Sri Lanka team targets keywords that drive real business — not just vanity traffic." },
-            { icon: FileText, title: "On-Page SEO Optimization", desc: "We optimize your page titles, meta descriptions, headings (H1-H6), content structure, URLs, images, and internal linking. Every element is optimized for both Google and user experience." },
-            { icon: Settings, title: "Technical SEO Audits & Fixes", desc: "Our SEO expert Sri Lanka team analyzes site speed, mobile responsiveness, crawlability, indexing issues, schema markup, Core Web Vitals, and security (HTTPS) to ensure your website meets Google's technical standards." },
-            { icon: Link2, title: "Link Building & Authority Growth", desc: "We build high-quality, reputed backlinks from relevant sources to increase your domain authority. Our white-hat link building strategies are safe and sustainable." },
-            { icon: MapPin, title: "Local SEO Sri Lanka", desc: "We optimize your Google Business Profile, local citations, and location-based keywords to help you rank for searches like 'best [service] in Colombo' and 'near me' queries." },
-            { icon: Globe, title: "Content Strategy & Creation", desc: "Our team creates SEO-optimized content that answers user queries, builds topical authority, and targets long-tail keywords for higher conversions." },
-            { icon: BarChart3, title: "Monthly Reporting & Analytics", desc: "Detailed monthly reports covering keyword rankings, organic traffic growth, conversion rates, and actionable recommendations for continuous improvement." },
-            { icon: TrendingUp, title: "Competitor Analysis", desc: "We analyze your top competitors' SEO strategies, backlink profiles, and content gaps to create a strategy that outperforms them on Google." },
-          ].map((item) => (
-            <div key={item.title} className="p-5 rounded-2xl bg-card shadow-card border border-border">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <item.icon className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-heading font-bold text-foreground">{item.title}</h3>
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Our SEO Process */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">How Our SEO Process Works</h2>
-        <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">Our proven 6-step SEO process delivers consistent results for businesses across Sri Lanka</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { icon: Search, step: 1, title: "Keyword Research", desc: "We identify high-value keywords like 'best SEO company Sri Lanka', 'SEO consultant Sri Lanka', 'SEO specialist Sri Lanka' — focused on buyer intent and conversions." },
-            { icon: Settings, step: 2, title: "Website Audit", desc: "Complete technical SEO audit covering site speed, mobile-friendliness, crawl errors, indexing issues, and on-page SEO gaps." },
-            { icon: FileText, step: 3, title: "On-Page Optimization", desc: "We optimize titles, meta descriptions, H1-H6 tags, content structure, URLs, images, and internal linking for maximum search visibility." },
-            { icon: TrendingUp, step: 4, title: "Strategy & Growth Planning", desc: "Custom SEO roadmap to improve rankings, increase traffic, and maximize conversions based on your business goals." },
-            { icon: Link2, step: 5, title: "Backlink Development", desc: "We build reputed, relevant backlinks from authoritative sources to boost your domain authority and Google rankings." },
-            { icon: BarChart3, step: 6, title: "Monthly Monitoring", desc: "We track keyword rankings, traffic growth, and conversion metrics. Continuous optimization ensures better results every month." },
-          ].map((step) => (
-            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <step.icon className="w-7 h-7 text-primary" />
-              </div>
-              <span className="text-xs font-bold text-accent mb-1 block">Step {step.step}</span>
-              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* What Results Can You Expect */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What SEO Results Can You Expect?</h2>
-        <p className="text-muted-foreground leading-relaxed mb-6">
-          <strong className="text-foreground">SEO Sri Lanka</strong> is a long-term growth strategy that compounds over time. Here's the typical timeline when working with an experienced <strong className="text-foreground">SEO specialist in Sri Lanka</strong>:
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-          {[
-            { period: "Month 1", label: "Optimization & Foundation", detail: "Audit, fixes, keyword targeting", color: "bg-primary/10 border-primary/30" },
-            { period: "Month 2–3", label: "Ranking Improvements", detail: "Keywords start climbing Google", color: "bg-accent/10 border-accent/30" },
-            { period: "Month 3–6", label: "Traffic & Lead Growth", detail: "Consistent organic visitors & inquiries", color: "bg-accent/20 border-accent/40" },
-          ].map((t) => (
-            <div key={t.period} className={`p-5 rounded-xl border ${t.color} text-center`}>
-              <div className="font-heading font-bold text-foreground mb-1">{t.period}</div>
-              <p className="text-sm text-foreground font-medium">{t.label}</p>
-              <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
-            </div>
-          ))}
-        </div>
-        <p className="text-accent font-semibold flex items-center gap-2">
-          <Clock className="w-5 h-5" /> We start improving your website from day one
-        </p>
-      </motion.div>
-
-      {/* Packages */}
+      {/* Packages — MOVED UP */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -322,7 +177,7 @@ const SeoServices = () => {
         className="mb-16"
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">SEO Packages in Sri Lanka — Affordable Pricing</h2>
-        <p className="text-muted-foreground mb-8 text-center">Professional <strong className="text-foreground">SEO packages</strong> from the <strong className="text-foreground">best SEO company Sri Lanka</strong> — designed for businesses of all sizes</p>
+        <p className="text-muted-foreground mb-8 text-center">Professional SEO packages from the best SEO company Sri Lanka — designed for businesses of all sizes</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {packages.map((pkg, i) => (
             <motion.div
@@ -354,7 +209,151 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* Who Needs SEO — Expanded */}
+      {/* What is SEO */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What is SEO and Why Do You Need It?</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          SEO (Search Engine Optimization) is the process of optimizing your website to rank higher on Google and other search engines for relevant keywords. When someone in Sri Lanka searches for "best SEO company Sri Lanka" or "SEO services near me," proper SEO ensures your business appears at the top of the results.
+        </p>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          In today's digital landscape, over 80% of consumers search Google before making a purchase decision. If your business is not ranking on the first page, you are losing potential customers to your competitors every single day. That's why hiring a professional SEO expert in Sri Lanka is no longer optional — it's essential for survival and growth.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          As a leading SEO company in Sri Lanka, Buzz Connect uses white-hat, Google-compliant strategies that build sustainable rankings. We don't use shortcuts or black-hat techniques that risk Google penalties — we build your online presence the right way.
+        </p>
+      </motion.div>
+
+      {/* Why We Are the Best */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-3">Why Buzz Connect is the Best SEO Company in Sri Lanka</h2>
+        <p className="text-muted-foreground mb-4 leading-relaxed">Most SEO companies in Sri Lanka focus only on rankings. We focus on business results. Here's what sets us apart:</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+          {[
+            { icon: BarChart3, title: "Data-Driven SEO Strategies", desc: "Every decision our SEO specialist team makes is backed by real data — keyword analysis, competitor research, and performance metrics." },
+            { icon: Target, title: "Conversion-Focused Approach", desc: "We optimize not just for traffic — but for inquiries, leads, and sales. Every visitor has a clear path to conversion." },
+            { icon: MapPin, title: "Local Market Expertise", desc: "Deep understanding of Sri Lankan search behavior, local keywords, and market dynamics." },
+            { icon: Award, title: "Proven Track Record", desc: "1,500+ clients served and thousands of successful campaigns across hotels, education, real estate, finance, and more." },
+            { icon: Shield, title: "White-Hat SEO Only", desc: "We follow Google's guidelines strictly. No black-hat shortcuts, no PBNs, no link schemes — just sustainable strategies that last." },
+            { icon: Eye, title: "Transparent Reporting", desc: "Monthly reports showing keyword rankings, traffic growth, and ROI. You see exactly what we do and the results we deliver." },
+          ].map((item) => (
+            <div key={item.title} className="flex items-start gap-4 p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <item.icon className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-foreground mb-1">{item.title}</h3>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* SEO Services We Offer */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Comprehensive SEO Services in Sri Lanka</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          As a full-service SEO company Sri Lanka, we offer every service you need to dominate Google search results:
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            { icon: Search, title: "Keyword Research & Analysis", desc: "We identify high-value, high-intent keywords specific to your industry and the Sri Lankan market — targeting keywords that drive real business." },
+            { icon: FileText, title: "On-Page SEO Optimization", desc: "We optimize your page titles, meta descriptions, headings, content structure, URLs, images, and internal linking for both Google and user experience." },
+            { icon: Settings, title: "Technical SEO Audits & Fixes", desc: "We analyze site speed, mobile responsiveness, crawlability, indexing issues, schema markup, Core Web Vitals, and security (HTTPS)." },
+            { icon: Link2, title: "Link Building & Authority Growth", desc: "We build high-quality, reputed backlinks from relevant sources to increase your domain authority with safe, sustainable strategies." },
+            { icon: MapPin, title: "Local SEO Sri Lanka", desc: "We optimize your Google Business Profile, local citations, and location-based keywords for 'near me' and city-specific searches." },
+            { icon: Globe, title: "Content Strategy & Creation", desc: "SEO-optimized content that answers user queries, builds topical authority, and targets long-tail keywords for higher conversions." },
+            { icon: BarChart3, title: "Monthly Reporting & Analytics", desc: "Detailed monthly reports covering keyword rankings, organic traffic growth, conversion rates, and actionable recommendations." },
+            { icon: TrendingUp, title: "Competitor Analysis", desc: "We analyze your top competitors' SEO strategies, backlink profiles, and content gaps to create a strategy that outperforms them." },
+          ].map((item) => (
+            <div key={item.title} className="p-5 rounded-2xl bg-card shadow-card border border-border">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <h3 className="font-heading font-bold text-foreground">{item.title}</h3>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Our SEO Process */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-2 text-center">How Our SEO Process Works</h2>
+        <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">Our proven 6-step SEO process delivers consistent results for businesses across Sri Lanka</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { icon: Search, step: 1, title: "Keyword Research", desc: "We identify high-value keywords focused on buyer intent and conversions for your industry." },
+            { icon: Settings, step: 2, title: "Website Audit", desc: "Complete technical SEO audit covering site speed, mobile-friendliness, crawl errors, and on-page gaps." },
+            { icon: FileText, step: 3, title: "On-Page Optimization", desc: "We optimize titles, meta descriptions, content structure, URLs, images, and internal linking." },
+            { icon: TrendingUp, step: 4, title: "Strategy & Growth Planning", desc: "Custom SEO roadmap to improve rankings, increase traffic, and maximize conversions." },
+            { icon: Link2, step: 5, title: "Backlink Development", desc: "We build reputed, relevant backlinks from authoritative sources to boost your domain authority." },
+            { icon: BarChart3, step: 6, title: "Monthly Monitoring", desc: "We track keyword rankings, traffic growth, and conversion metrics with continuous optimization." },
+          ].map((step) => (
+            <div key={step.title} className="p-6 rounded-2xl bg-card shadow-card border border-border text-center">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <step.icon className="w-7 h-7 text-primary" />
+              </div>
+              <span className="text-xs font-bold text-accent mb-1 block">Step {step.step}</span>
+              <h3 className="font-heading font-bold text-foreground mb-2">{step.title}</h3>
+              <p className="text-sm text-muted-foreground">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* What Results Can You Expect */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">What SEO Results Can You Expect?</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          SEO Sri Lanka is a long-term growth strategy that compounds over time. Here's the typical timeline when working with an experienced SEO specialist in Sri Lanka:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          {[
+            { period: "Month 1", label: "Optimization & Foundation", detail: "Audit, fixes, keyword targeting", color: "bg-primary/10 border-primary/30" },
+            { period: "Month 2–3", label: "Ranking Improvements", detail: "Keywords start climbing Google", color: "bg-accent/10 border-accent/30" },
+            { period: "Month 3–6", label: "Traffic & Lead Growth", detail: "Consistent organic visitors & inquiries", color: "bg-accent/20 border-accent/40" },
+          ].map((t) => (
+            <div key={t.period} className={`p-5 rounded-xl border ${t.color} text-center`}>
+              <div className="font-heading font-bold text-foreground mb-1">{t.period}</div>
+              <p className="text-sm text-foreground font-medium">{t.label}</p>
+              <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-accent font-semibold flex items-center gap-2">
+          <Clock className="w-5 h-5" /> We start improving your website from day one
+        </p>
+      </motion.div>
+
+      {/* Who Needs SEO */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -362,7 +361,7 @@ const SeoServices = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Who Needs an SEO Company in Sri Lanka?</h2>
-        <p className="text-muted-foreground mb-6">Our <strong className="text-foreground">SEO services in Sri Lanka</strong> are ideal for any business that wants to be found on Google. As the <strong className="text-foreground">best SEO company Sri Lanka</strong>, we serve:</p>
+        <p className="text-muted-foreground mb-6">Our SEO services in Sri Lanka are ideal for any business that wants to be found on Google:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             { icon: Building2, label: "Hotels & tourism companies seeking direct bookings" },
@@ -382,7 +381,7 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* SEO Consultant vs SEO Company — Keyword-Rich Educational */}
+      {/* SEO Consultant vs SEO Company */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -391,24 +390,24 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">SEO Consultant vs SEO Company in Sri Lanka — What's the Difference?</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          When searching for SEO help, you'll encounter terms like <strong className="text-foreground">SEO consultant Sri Lanka</strong>, <strong className="text-foreground">SEO specialist Sri Lanka</strong>, and <strong className="text-foreground">SEO company Sri Lanka</strong>. Here's what each means:
+          When searching for SEO help, you'll encounter terms like SEO consultant Sri Lanka, SEO specialist Sri Lanka, and SEO company Sri Lanka. Here's what each means:
         </p>
         <div className="space-y-4">
           <div className="p-5 rounded-xl bg-card shadow-card border border-border">
             <h3 className="font-heading font-bold text-foreground mb-2">SEO Consultant Sri Lanka</h3>
-            <p className="text-sm text-muted-foreground">An <strong className="text-foreground">SEO consultant in Sri Lanka</strong> provides strategic guidance, audits, and recommendations. They analyze your website, identify opportunities, and create an optimization roadmap. Buzz Connect's SEO consultants have 10+ years of experience in the Sri Lankan market.</p>
+            <p className="text-sm text-muted-foreground">An SEO consultant in Sri Lanka provides strategic guidance, audits, and recommendations. They analyze your website, identify opportunities, and create an optimization roadmap. Buzz Connect's SEO consultants have 10+ years of experience in the Sri Lankan market.</p>
           </div>
           <div className="p-5 rounded-xl bg-card shadow-card border border-border">
             <h3 className="font-heading font-bold text-foreground mb-2">SEO Specialist Sri Lanka</h3>
-            <p className="text-sm text-muted-foreground">An <strong className="text-foreground">SEO specialist in Sri Lanka</strong> handles hands-on implementation — keyword optimization, content creation, technical fixes, and link building. Our SEO specialists execute every aspect of your SEO strategy.</p>
+            <p className="text-sm text-muted-foreground">An SEO specialist in Sri Lanka handles hands-on implementation — keyword optimization, content creation, technical fixes, and link building. Our SEO specialists execute every aspect of your SEO strategy.</p>
           </div>
           <div className="p-5 rounded-xl bg-card shadow-card border border-border">
             <h3 className="font-heading font-bold text-foreground mb-2">Full-Service SEO Company Sri Lanka</h3>
-            <p className="text-sm text-muted-foreground">A full-service <strong className="text-foreground">SEO company in Sri Lanka</strong> like Buzz Connect provides everything — consultation, strategy, implementation, monitoring, and reporting. You get an entire team of SEO experts working on your project.</p>
+            <p className="text-sm text-muted-foreground">A full-service SEO company in Sri Lanka like Buzz Connect provides everything — consultation, strategy, implementation, monitoring, and reporting. You get an entire team of SEO experts working on your project.</p>
           </div>
         </div>
         <p className="text-muted-foreground leading-relaxed mt-4">
-          At Buzz Connect, you get all three: <strong className="text-accent font-bold">SEO consultant</strong>, <strong className="text-accent font-bold">SEO specialist</strong>, and <strong className="text-accent font-bold">SEO expert</strong> — in one team. That's why we're considered the <strong className="text-foreground">best SEO company in Sri Lanka</strong>.
+          At Buzz Connect, you get all three: SEO consultant, SEO specialist, and SEO expert — in one team. That's why we're considered the best SEO company in Sri Lanka.
         </p>
       </motion.div>
 
@@ -420,7 +419,7 @@ const SeoServices = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-6">Our Unique SEO Advantage in Sri Lanka</h2>
-        <p className="text-muted-foreground mb-6 leading-relaxed">Unlike other <strong className="text-foreground">SEO companies in Sri Lanka</strong>, we combine immediate marketing impact with long-term SEO growth:</p>
+        <p className="text-muted-foreground mb-6 leading-relaxed">Unlike other SEO companies in Sri Lanka, we combine immediate marketing impact with long-term SEO growth:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-accent/5 border border-accent/20">
             <div className="flex items-center gap-2 mb-3">
@@ -429,13 +428,13 @@ const SeoServices = () => {
             </div>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> Direct marketing campaigns via <Link to="/email-marketing" className="text-accent hover:underline">email</Link> & <Link to="/sms-marketing" className="text-accent hover:underline">SMS</Link>
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> Direct marketing campaigns via email & SMS
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> High-intent traffic from <a href="https://findit.lk" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Findit.lk</a>
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> High-intent traffic from Findit.lk
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> <Link to="/google-ads-sri-lanka" className="text-accent hover:underline">Google Ads</Link> for instant visibility
+                <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" /> Google Ads for instant visibility
               </li>
             </ul>
           </div>
@@ -457,10 +456,9 @@ const SeoServices = () => {
             </ul>
           </div>
         </div>
-        <p className="text-center text-accent font-semibold mt-6">You get results now AND growth for the future</p>
       </motion.div>
 
-      {/* Multi-Channel Links */}
+      {/* Multi-Channel Links — Reduced */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -469,18 +467,14 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Combine SEO with Multi-Channel Marketing</h2>
         <p className="text-muted-foreground mb-6 leading-relaxed">
-          <strong className="text-foreground">SEO Sri Lanka</strong> works best when combined with other digital marketing channels. As the <strong className="text-foreground">best SEO company in Sri Lanka</strong>, we offer a complete suite of services:
+          SEO works best when combined with other digital marketing channels:
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
-            { label: "Email Marketing Sri Lanka", href: "/email-marketing" },
-            { label: "SMS Marketing Sri Lanka", href: "/sms-marketing" },
-            { label: "WhatsApp Marketing Sri Lanka", href: "/whatsapp-marketing" },
-            { label: "Social Media Marketing Sri Lanka", href: "/social-media-marketing-sri-lanka" },
-            { label: "Lead Generation Sri Lanka", href: "/lead-generation-sri-lanka" },
-            { label: "Online Advertising Sri Lanka", href: "/online-advertising-sri-lanka" },
-            { label: "Google Ads Sri Lanka", href: "/google-ads-sri-lanka" },
-            { label: "Website Design Sri Lanka", href: "/website-design-sri-lanka" },
+            { label: "Email Marketing", href: "/email-marketing" },
+            { label: "SMS Marketing", href: "/sms-marketing" },
+            { label: "Social Media Marketing", href: "/social-media-marketing-sri-lanka" },
+            { label: "Lead Generation", href: "/lead-generation-sri-lanka" },
           ].map((link) => (
             <Link
               key={link.href}
@@ -497,7 +491,7 @@ const SeoServices = () => {
       {/* Findit.lk Advantage */}
       <FinditlkAdvantage
         title="The Findit.lk SEO Advantage"
-        description="As the team behind Findit.lk — Sri Lanka's top-ranked promotions platform — we apply the same SEO expertise that keeps Findit.lk on Google page 1 to your business. This is proof that our SEO specialist Sri Lanka team delivers real rankings."
+        description="As the team behind Findit.lk — Sri Lanka's top-ranked promotions platform — we apply the same SEO expertise that keeps Findit.lk on Google page 1 to your business."
         links={[
           { label: "Offers in Sri Lanka", url: "https://findit.lk" },
           { label: "Promotions in Sri Lanka", url: "https://findit.lk" },
@@ -511,7 +505,7 @@ const SeoServices = () => {
         gradient="bg-gradient-to-br from-accent/60 via-primary/40 to-accent/60"
       />
 
-      {/* FAQ — Expanded for more keywords */}
+      {/* FAQ */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -544,7 +538,7 @@ const SeoServices = () => {
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">Ready to Grow with the Best SEO Company in Sri Lanka?</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Work with a trusted <strong>SEO specialist in Sri Lanka</strong> and start building long-term visibility and consistent customer inquiries. Contact our <strong>SEO consultant Sri Lanka</strong> team today.
+          Work with a trusted SEO specialist in Sri Lanka and start building long-term visibility and consistent customer inquiries.
         </p>
         <a
           href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20SEO%20services.%20Can%20you%20share%20more%20details%3F"
