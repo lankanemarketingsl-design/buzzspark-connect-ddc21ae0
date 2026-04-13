@@ -15,7 +15,11 @@ const EmailHeroContent = () => {
         <div className="flex flex-wrap items-center gap-4 mb-6">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
             <Zap className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">Campaigns from LKR 6,000</span>
+            <span className="text-accent font-bold text-sm">Launch in 12–24 Hours</span>
+          </div>
+          <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/60 border border-border">
+            <Zap className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-muted-foreground text-xs font-medium">Campaigns from LKR 6,000</span>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-muted/60 border border-border">
             <Users className="w-3.5 h-3.5 text-muted-foreground" />
