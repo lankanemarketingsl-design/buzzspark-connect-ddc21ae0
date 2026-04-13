@@ -154,10 +154,7 @@ const applyRouteSeo = (templateHtml: string, entry: RouteSeoEntry) => {
     `<meta name="twitter:description" content="${escapeHtml(entry.description)}" />`,
   );
 
-  if (!html.includes('id="seo-route-h1"')) {
-    const fallbackH1 = `<div id="seo-route-h1" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;"><h1>${escapeHtml(entry.h1)}</h1></div>`;
-    html = html.replace(/<div id="root"><\/div>/i, `${fallbackH1}\n    <div id="root"></div>`);
-  }
+  // Hidden H1 removed — React components render the actual H1 to avoid duplicate H1 tags
 
   return html;
 };
