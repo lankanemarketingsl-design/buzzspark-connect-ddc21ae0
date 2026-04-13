@@ -27,7 +27,7 @@ const HotelMarketingCost = () => {
         canonical="https://buzzconnect.lk/hotel-marketing-cost-sri-lanka"
         jsonLd={jsonLd}
       />
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background pt-14 sm:pt-16">
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           <Breadcrumbs />
           <article className="prose prose-lg max-w-none">
