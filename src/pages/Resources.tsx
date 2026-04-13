@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Real Estate Marketing Case Studies – Sri Lanka (2026)",
+    date: "Apr 13, 2026",
+    excerpt: "Real estate marketing case studies from Sri Lanka. See how properties sold faster using targeted email campaigns, Findit.lk exposure, and remarketing.",
+    path: "/real-estate-marketing-case-studies-sri-lanka",
+    image: articleRealestateMarketing,
+  },
+  {
     title: "Hotel Digital Marketing Case Studies – Sri Lanka (2026)",
     date: "Apr 13, 2026",
     excerpt: "Real hotel marketing case studies from Sri Lanka. See how hotels increased bookings and achieved 90%+ occupancy using email, Findit.lk, and remarketing.",
