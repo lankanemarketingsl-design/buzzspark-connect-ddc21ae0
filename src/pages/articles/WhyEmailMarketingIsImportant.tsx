@@ -46,7 +46,7 @@ const WhyEmailMarketingIsImportant = () => {
             <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
               <h2 className="font-heading text-xl font-bold text-foreground mb-3">1. More Effective Than Social Media (For Customer Conversions)</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get us wrong, social media is an extremely important component in any business' marketing strategy. Social media is a great channel for interacting with your audience and strengthening your personal relationships with them. But when it comes to converting people into members, customers or supporters, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link> is the way to go.
+                Don't get us wrong, social media is an extremely important component in any business' marketing strategy. Social media is a great channel for interacting with your audience and strengthening your personal relationships with them. But when it comes to converting people into members, customers or supporters, Don't get us wrong, social media is an extremely important component in any business' marketing strategy. Social media is a great channel for interacting with your audience and strengthening your personal relationships with them. But when it comes to converting people into members, customers or supporters, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> is the way to go.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ const WhyEmailMarketingIsImportant = () => {
               <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Ready to Start Your Email Marketing Campaign?</h3>
               <p className="text-primary-foreground/80 mb-4">Reach 350,000+ targeted customers with Buzz Connect.</p>
               <Link to="/email-marketing" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-                View Email Marketing Packages
+                View Email Marketing Packages in Sri Lanka
               </Link>
             </div>
           </div>

@@ -59,7 +59,7 @@ const EmailMarketingPowerfulTool = () => {
               <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">✓</span> Increased customer retention and loyalty</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Businesses in Sri Lanka are increasingly adopting email marketing to reach targeted audiences effectively. Whether you are a small business or a large enterprise, email campaigns can significantly boost your marketing performance.
+              Businesses in Sri Lanka are increasingly adopting email marketing to reach targeted audiences effectively. Whether you are a small business or a large enterprise, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing campaigns in Sri Lanka</Link> can significantly boost your marketing performance.
             </p>
           </div>
 
@@ -70,9 +70,9 @@ const EmailMarketingPowerfulTool = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               If you're looking for expert solutions, check out our{" "}
-              <Link to="/email-marketing" className="text-accent hover:underline font-semibold">
-                Email Marketing Services in Sri Lanka
-              </Link>. With the right strategy, email marketing can transform your business growth in Sri Lanka.
+               <Link to="/email-marketing" className="text-accent hover:underline font-semibold">
+                 best email marketing companies in Sri Lanka
+               </Link>. With the right strategy, email marketing can transform your business growth in Sri Lanka.
             </p>
           </div>
 

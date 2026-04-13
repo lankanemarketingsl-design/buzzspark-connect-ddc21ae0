@@ -59,7 +59,7 @@ const EmailMarketingGuide = () => {
               Email marketing is the process of sending targeted emails to potential or existing customers to promote products, services, or updates. Unlike social media, email gives you direct access to your audience — bypassing algorithms and delivering messages straight to their inbox.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              It is one of the highest ROI channels in digital marketing, returning an average of $42 for every $1 spent. For companies in Sri Lanka, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link> builds a long-term asset: your subscriber list.
+              It is one of the highest ROI channels in digital marketing, returning an average of $42 for every $1 spent. It is one of the highest ROI channels in digital marketing, returning an average of $42 for every $1 spent. For companies in Sri Lanka, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> builds a long-term asset: your subscriber list.
             </p>
             <div className="mt-4 p-3 rounded-lg bg-muted/30 border border-border">
               <p className="text-sm text-muted-foreground">👉 Learn more: <Link to="/why-email-marketing-is-important" className="text-accent hover:underline font-semibold">Why Email Marketing is Important</Link> | <Link to="/why-you-need-email-marketing" className="text-accent hover:underline font-semibold">Why You Need Email Marketing</Link></p>

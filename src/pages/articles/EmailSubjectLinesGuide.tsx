@@ -48,7 +48,7 @@ const EmailSubjectLinesGuide = () => {
               <p className="text-muted-foreground">
                 👉 Learn more about building effective campaigns with{" "}
                 <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
-                  email marketing in Sri Lanka
+                  email marketing Sri Lanka
                 </Link>.
               </p>
             </section>
@@ -141,7 +141,7 @@ const EmailSubjectLinesGuide = () => {
               <p className="text-muted-foreground">
                 👉 Want to implement these strategies? Explore professional{" "}
                 <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
-                  email marketing services in Sri Lanka
+                  email marketing packages in Sri Lanka
                 </Link>.
               </p>
             </section>
@@ -192,7 +192,7 @@ const EmailSubjectLinesGuide = () => {
               <p className="text-muted-foreground">
                 👉 Learn the full strategy with{" "}
                 <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
-                  professional email marketing in Sri Lanka
+                  best email marketing companies in Sri Lanka
                 </Link>.
               </p>
             </section>
