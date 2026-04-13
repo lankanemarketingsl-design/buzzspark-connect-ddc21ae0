@@ -44,7 +44,7 @@ const EmailMarketingPricing = () => {
           {/* Intro */}
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <p className="text-muted-foreground leading-relaxed mb-3">
-              If you're a business owner in Sri Lanka looking to invest in digital marketing, one of the first questions you'll ask is: <em>"How much does email marketing cost?"</em> The good news is that <Link to="/email-marketing" className="text-accent hover:underline font-semibold">If you're a business owner in Sri Lanka looking to invest in digital marketing, one of the first questions you'll ask is: <em>"How much does email marketing cost?"</em> The good news is that <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> is one of the most affordable and high-return marketing channels available. and high-return marketing channels available.
+              If you're a business owner in Sri Lanka looking to invest in digital marketing, one of the first questions you'll ask is: <em>"How much does email marketing cost?"</em> The good news is that <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> is one of the most affordable and high-return marketing channels available.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This guide breaks down the average pricing, what affects costs, and how email marketing ROI compares to other digital channels — helping you make an informed decision for your marketing budget.
@@ -137,7 +137,7 @@ const EmailMarketingPricing = () => {
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <h2 className="font-heading text-xl font-bold text-foreground mb-4">Why Buzz Connect Offers the Best Value</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              Buzz Connect's <Link to="/email-marketing" className="text-accent hover:underline font-semibold">Buzz Connect's <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing packages in Sri Lanka</Link> are designed for Sri Lankan businesses that want maximum results at competitive prices. What sets us apart: for Sri Lankan businesses that want maximum results at competitive prices. What sets us apart:
+              Buzz Connect's <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing packages in Sri Lanka</Link> are designed for Sri Lankan businesses that want maximum results at competitive prices. What sets us apart:
             </p>
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-start gap-2"><span className="text-accent font-bold">✓</span> Access to 350,000+ verified Sri Lankan email contacts</li>
