@@ -80,6 +80,7 @@ import DirectMarketingStrategy from "./pages/articles/DirectMarketingStrategy.ts
 import FastDirectMarketing from "./pages/articles/FastDirectMarketing.tsx";
 import HotelDigitalMarketingCaseStudies from "./pages/articles/HotelDigitalMarketingCaseStudies.tsx";
 import RealEstateMarketingCaseStudies from "./pages/articles/RealEstateMarketingCaseStudies.tsx";
+import FinanceMarketingCaseStudies from "./pages/articles/FinanceMarketingCaseStudies.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -217,6 +218,7 @@ const App = () => (
               <Route path="/fast-direct-marketing-sri-lanka" element={<FastDirectMarketing />} />
               <Route path="/hotel-digital-marketing-case-studies-sri-lanka" element={<HotelDigitalMarketingCaseStudies />} />
               <Route path="/real-estate-marketing-case-studies-sri-lanka" element={<RealEstateMarketingCaseStudies />} />
+              <Route path="/finance-marketing-case-studies-sri-lanka" element={<FinanceMarketingCaseStudies />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

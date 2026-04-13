@@ -483,6 +483,20 @@ const FinanceMarketing = () => {
         benefits={["Access to financial product seekers", "High visibility in Finance category", "Targeted credit card promotions", "Better qualified leads than ads"]}
       />
 
+      {/* 📊 Real Campaign Results */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-accent/5 border border-accent/20 text-center">
+          <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
+            <BarChart3 className="w-7 h-7 text-accent" />
+          </div>
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">Real Campaign Results</h2>
+          <p className="text-muted-foreground mb-4">See how finance companies in Sri Lanka generated high-quality leads using our targeted marketing campaigns.</p>
+          <Link to="/finance-marketing-case-studies-sri-lanka">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><BarChart3 className="w-5 h-5 mr-2" /> View Finance Marketing Case Studies</Button>
+          </Link>
+        </div>
+      </motion.div>
+
       {/* 🧠 Why BuzzConnect */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
         <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why BuzzConnect for Finance Marketing?</h2>
