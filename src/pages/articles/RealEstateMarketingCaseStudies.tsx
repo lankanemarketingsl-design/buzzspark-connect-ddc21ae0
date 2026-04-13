@@ -164,6 +164,7 @@ const RealEstateMarketingCaseStudies = () => {
                 <li>📧 Multiple email campaigns targeting buyers & investors</li>
                 <li>🌐 Top visibility on Findit.lk</li>
                 <li>🎬 Property video promotions</li>
+                <li>💬 <Link to="/whatsapp-marketing" className="text-muted-foreground">WhatsApp bulk marketing</Link> campaign</li>
                 <li>🌍 Dedicated landing page for offers</li>
                 <li>🔁 Full funnel remarketing</li>
               </ul>

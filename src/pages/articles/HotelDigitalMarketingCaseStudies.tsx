@@ -158,6 +158,7 @@ const HotelDigitalMarketingCaseStudies = () => {
                 <li>📧 4–6 email campaigns (full funnel strategy)</li>
                 <li>🌐 Top ranking placement on Findit.lk</li>
                 <li>🔁 Full funnel remarketing across platforms</li>
+                <li>💬 <Link to="/whatsapp-marketing" className="text-muted-foreground">WhatsApp bulk marketing</Link> campaign</li>
                 <li>🎬 TikTok video promotion</li>
                 <li>🌍 Custom landing page for offers</li>
               </ul>

@@ -170,6 +170,7 @@ const FashionMarketingCaseStudies = () => {
                 <li>🌐 High visibility via Findit.lk</li>
                 <li>📢 Campaigns tailored by region & customer segments</li>
                 <li>🎬 Promotional creatives highlighting Christmas collections & limited-time offers</li>
+                <li>💬 <Link to="/whatsapp-marketing" className="text-muted-foreground">WhatsApp bulk marketing</Link> campaign</li>
                 <li>🔁 Full funnel remarketing across multiple touchpoints</li>
               </ul>
               <p className="text-muted-foreground mb-4">
