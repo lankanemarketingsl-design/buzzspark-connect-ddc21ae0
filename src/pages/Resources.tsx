@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Education Marketing Case Studies – Sri Lanka (2026)",
+    date: "Apr 13, 2026",
+    excerpt: "Education marketing case studies from Sri Lanka. See how institutes filled course intakes faster using email campaigns, Findit.lk, StudyWay.lk & remarketing.",
+    path: "/education-marketing-case-studies-sri-lanka",
+    image: articleEducationMarketing,
+  },
+  {
     title: "Restaurant Marketing Case Studies – Sri Lanka (2026)",
     date: "Apr 13, 2026",
     excerpt: "Restaurant marketing case studies from Sri Lanka. See how restaurants increased foot traffic & sales using email campaigns, Findit.lk exposure & remarketing.",
