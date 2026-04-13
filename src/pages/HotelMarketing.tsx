@@ -125,7 +125,7 @@ const HotelMarketing = () => {
     >
       <SEOHead
         title="Hotel Marketing Sri Lanka | Multi-Channel Travel Campaigns"
-        description="No.1 hotel marketing company in Sri Lanka. Drive direct bookings via email, SMS, WhatsApp & Findit.lk. Reach tourists & travelers. Multi-channel campaigns that deliver results."
+        description="Hotel marketing Sri Lanka with hotel digital marketing Sri Lanka solutions to boost occupancy, attract guests, and grow bookings online."
         canonical="/hotel-marketing-sri-lanka"
         keywords="hotel marketing sri lanka, travel marketing sri lanka, hotel promotion sri lanka, hotel digital marketing colombo, tourism marketing sri lanka, hotel booking campaigns, resort marketing sri lanka, hospitality marketing"
         breadcrumbs={[
