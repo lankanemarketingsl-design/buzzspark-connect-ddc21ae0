@@ -76,6 +76,8 @@ const BestSeoServicesSriLanka = () => {
               Discover <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why investing in SEO is the smartest long-term strategy</Link> for your business.
             </p>
           </div>
+
+          <div className="p-6 rounded-2xl gradient-hero text-center">
             <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Improve Your Google Rankings Today</h3>
             <p className="text-primary-foreground/80 mb-4">Professional SEO services tailored for Sri Lankan businesses.</p>
             <Link to="/seo-sri-lanka" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">

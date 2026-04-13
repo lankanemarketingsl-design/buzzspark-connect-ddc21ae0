@@ -144,6 +144,7 @@ const BestSeoCompanySriLanka = () => {
             <p className="text-muted-foreground leading-relaxed mt-4">
               Learn more about <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the smartest long-term strategy</Link> for Sri Lankan businesses.
             </p>
+          </div>
 
           {/* CTA */}
           <div className="p-6 rounded-2xl gradient-hero text-center">
