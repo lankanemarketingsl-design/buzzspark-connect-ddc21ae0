@@ -104,8 +104,8 @@ const SocialMediaMarketing = () => {
       subtitle="Targeted campaigns across Facebook, Instagram & TikTok to grow your brand, engage customers, and generate real business results."
     >
       <SEOHead
-        title="Social Media Marketing Sri Lanka | Facebook & Instagram Ads | Buzz Connect"
-        description="Best social media marketing in Sri Lanka from LKR 50,000. Facebook, Instagram, TikTok & LinkedIn ad campaigns. Content creation, audience targeting & multi-channel integration."
+        title="Social Media Marketing Sri Lanka | Social Media Marketing Agency in Sri Lanka"
+        description="Social media marketing Sri Lanka services by a top social media marketing agency in Sri Lanka. Grow your brand with targeted campaigns and engagement."
         canonical="/social-media-marketing-sri-lanka"
         keywords="social media marketing sri lanka, social media marketing services sri lanka, facebook advertising sri lanka, instagram marketing sri lanka, tiktok ads sri lanka, smm services colombo, social media agency sri lanka, facebook ads sri lanka"
         breadcrumbs={[
