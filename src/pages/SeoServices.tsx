@@ -353,6 +353,299 @@ const SeoServices = () => {
         </p>
       </motion.div>
 
+      {/* Industry-Specific SEO Strategies */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Industry-Specific SEO Strategies in Sri Lanka</h2>
+        <p className="text-muted-foreground leading-relaxed mb-3">
+          To rank #1 on Google, your SEO strategy must align with how customers search in your industry. Different industries have different search intent — and ranking successfully depends on targeting the right keywords, content, and user expectations.
+        </p>
+        <p className="text-muted-foreground leading-relaxed mb-8">Here's how we help businesses across Sri Lanka dominate search results:</p>
+
+        {/* Core Industries */}
+        <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+          <Rocket className="w-5 h-5 text-accent" /> Core Industries
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          {[
+            {
+              icon: Building2,
+              title: "Hotels & Hospitality",
+              keywords: ['"best hotels in Colombo"', '"hotel deals Sri Lanka"'],
+              intent: "High booking intent",
+              link: { text: "Hotel Digital Marketing in Sri Lanka", href: "/hotel-marketing-sri-lanka" },
+            },
+            {
+              icon: GraduationCap,
+              title: "Education & Courses",
+              keywords: ['"IT courses Sri Lanka"', '"English classes Colombo"'],
+              intent: "High lead generation potential",
+              link: { text: "Student Lead Generation in Sri Lanka", href: "/education-marketing-sri-lanka" },
+            },
+            {
+              icon: Shield,
+              title: "Healthcare",
+              keywords: ['"best dentist in Colombo"', '"skin clinic Sri Lanka"'],
+              intent: "High trust + urgency",
+              details: ["Credibility", "Patient trust", "Service-specific pages"],
+            },
+            {
+              icon: Home,
+              title: "Real Estate & Property",
+              keywords: ['"land for sale Sri Lanka"', '"apartments in Colombo"'],
+              intent: "High-value transactions",
+              link: { text: "Real Estate Marketing Sri Lanka", href: "/real-estate-marketing-sri-lanka" },
+            },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="flex items-center gap-2 mb-2">
+                <ind.icon className="w-5 h-5 text-primary" />
+                <h4 className="font-heading font-bold text-foreground text-sm">{ind.title}</h4>
+              </div>
+              <div className="space-y-1 mb-2">
+                {ind.keywords.map((kw) => (
+                  <span key={kw} className="block text-xs text-muted-foreground italic">{kw}</span>
+                ))}
+              </div>
+              <p className="text-xs font-semibold text-accent mb-2">👉 {ind.intent}</p>
+              {ind.link && (
+                <Link to={ind.link.href} className="text-xs text-accent hover:underline font-semibold">{ind.link.text} →</Link>
+              )}
+              {ind.details && (
+                <ul className="space-y-1">
+                  {ind.details.map((d) => (
+                    <li key={d} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <CheckCircle className="w-3 h-3 text-accent flex-shrink-0" /> {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Professional & Business Services */}
+        <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+          <Briefcase className="w-5 h-5 text-accent" /> Professional & Business Services
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          {[
+            {
+              icon: DollarSign,
+              title: "Finance & Banking",
+              keywords: ['"loans Sri Lanka"', '"insurance Colombo"'],
+              intent: "Trust-driven conversions",
+              details: ["Authority content", "Financial guides", "Credibility signals"],
+              link: { text: "Finance Marketing Sri Lanka", href: "/finance-marketing-sri-lanka" },
+            },
+            {
+              icon: Shield,
+              title: "Legal Services",
+              keywords: ['"lawyers in Colombo"', '"legal services Sri Lanka"'],
+              intent: "Authority-driven SEO",
+              details: ["Expert content", "Trust signals", "Strong visibility"],
+            },
+            {
+              icon: BarChart3,
+              title: "Accounting & Business Services",
+              keywords: ['"accountants in Colombo"', '"audit firms Sri Lanka"'],
+              intent: "Professional service leads",
+              details: ["Service pages", "Local SEO", "Industry-focused content"],
+            },
+            {
+              icon: Settings,
+              title: "IT & Software Companies",
+              keywords: ['"software companies in Sri Lanka"', '"IT services Colombo"'],
+              intent: "High-value B2B leads",
+              details: ["Service pages", "Case studies", "Technical content"],
+            },
+            {
+              icon: Users,
+              title: "Recruitment & HR Services",
+              keywords: ['"jobs in Sri Lanka"', '"recruitment agencies Colombo"'],
+              intent: "High-volume + fast conversions",
+              link: { text: "Staff Recruitment Campaigns Sri Lanka", href: "/staff-recruitment-sri-lanka" },
+            },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="flex items-center gap-2 mb-2">
+                <ind.icon className="w-5 h-5 text-primary" />
+                <h4 className="font-heading font-bold text-foreground text-sm">{ind.title}</h4>
+              </div>
+              <div className="space-y-1 mb-2">
+                {ind.keywords.map((kw) => (
+                  <span key={kw} className="block text-xs text-muted-foreground italic">{kw}</span>
+                ))}
+              </div>
+              <p className="text-xs font-semibold text-accent mb-2">👉 {ind.intent}</p>
+              {ind.details && (
+                <ul className="space-y-1 mb-2">
+                  {ind.details.map((d) => (
+                    <li key={d} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <CheckCircle className="w-3 h-3 text-accent flex-shrink-0" /> {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {ind.link && (
+                <Link to={ind.link.href} className="text-xs text-accent hover:underline font-semibold">{ind.link.text} →</Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Local & Consumer Services */}
+        <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+          <ShoppingCart className="w-5 h-5 text-accent" /> Local & Consumer Services
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          {[
+            {
+              icon: Target,
+              title: "Restaurants & Cafes",
+              keywords: ['"restaurants in Colombo"', '"cafes near me"'],
+              intent: "Local SEO + reviews are critical",
+              details: ["Google Maps optimization", "Reviews & ratings", "Local visibility"],
+              link: { text: "Restaurant Marketing Sri Lanka", href: "/restaurant-marketing-sri-lanka" },
+            },
+            {
+              icon: Star,
+              title: "Fashion & Retail",
+              keywords: ['"buy online Sri Lanka"', '"fashion brands Colombo"'],
+              intent: "Highly competitive market",
+              details: ["Product pages", "Category optimization", "Conversion-focused content"],
+              link: { text: "Fashion Marketing Sri Lanka", href: "/fashion-marketing-sri-lanka" },
+            },
+            {
+              icon: Eye,
+              title: "Beauty, Salon & Wellness",
+              keywords: ['"beauty salons in Colombo"', '"spa Sri Lanka"'],
+              intent: "High local competition",
+              details: ["Local SEO", "Customer reviews", "Service pages"],
+            },
+            {
+              icon: Home,
+              title: "Home Services",
+              keywords: ['"home cleaning services Colombo"', '"plumbing services Sri Lanka"'],
+              intent: "Urgent + local demand",
+              details: ["Location-based pages", "Google Maps ranking", "Fast conversion landing pages"],
+            },
+            {
+              icon: Settings,
+              title: "Automotive Industry",
+              keywords: ['"car for sale Sri Lanka"', '"car service Colombo"'],
+              intent: "Listing + service SEO",
+              details: ["Vehicle listings", "Service pages", "Local targeting"],
+            },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="flex items-center gap-2 mb-2">
+                <ind.icon className="w-5 h-5 text-primary" />
+                <h4 className="font-heading font-bold text-foreground text-sm">{ind.title}</h4>
+              </div>
+              <div className="space-y-1 mb-2">
+                {ind.keywords.map((kw) => (
+                  <span key={kw} className="block text-xs text-muted-foreground italic">{kw}</span>
+                ))}
+              </div>
+              <p className="text-xs font-semibold text-accent mb-2">👉 {ind.intent}</p>
+              {ind.details && (
+                <ul className="space-y-1 mb-2">
+                  {ind.details.map((d) => (
+                    <li key={d} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <CheckCircle className="w-3 h-3 text-accent flex-shrink-0" /> {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {ind.link && (
+                <Link to={ind.link.href} className="text-xs text-accent hover:underline font-semibold">{ind.link.text} →</Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Growth & Niche Industries */}
+        <h3 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+          <Globe className="w-5 h-5 text-accent" /> Growth & Niche Industries
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          {[
+            {
+              icon: Globe,
+              title: "Travel & Tourism",
+              keywords: ['"Sri Lanka tour packages"', '"things to do in Sri Lanka"'],
+              intent: "Content-driven SEO",
+              details: ["Blog content", "Destination pages", "Travel guides"],
+            },
+            {
+              icon: Building2,
+              title: "Construction & Engineering",
+              keywords: ['"construction companies Sri Lanka"', '"house builders Colombo"'],
+              intent: "High-value projects",
+              details: ["Portfolio content", "Trust signals", "Location keywords"],
+            },
+            {
+              icon: Star,
+              title: "Event Management & Weddings",
+              keywords: ['"wedding planners Sri Lanka"', '"event management Colombo"'],
+              intent: "High emotional + high-value decisions",
+              details: ["Visual content", "Portfolio pages", "Location targeting"],
+              link: { text: "Event Marketing Sri Lanka", href: "/event-marketing-sri-lanka" },
+            },
+            {
+              icon: Rocket,
+              title: "Logistics & Delivery",
+              keywords: ['"courier services Sri Lanka"', '"delivery services Colombo"'],
+              intent: "B2B + B2C demand",
+              details: ["Service pages", "Local targeting", "Fast conversion content"],
+            },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <div className="flex items-center gap-2 mb-2">
+                <ind.icon className="w-5 h-5 text-primary" />
+                <h4 className="font-heading font-bold text-foreground text-sm">{ind.title}</h4>
+              </div>
+              <div className="space-y-1 mb-2">
+                {ind.keywords.map((kw) => (
+                  <span key={kw} className="block text-xs text-muted-foreground italic">{kw}</span>
+                ))}
+              </div>
+              <p className="text-xs font-semibold text-accent mb-2">👉 {ind.intent}</p>
+              {ind.details && (
+                <ul className="space-y-1 mb-2">
+                  {ind.details.map((d) => (
+                    <li key={d} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <CheckCircle className="w-3 h-3 text-accent flex-shrink-0" /> {d}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {ind.link && (
+                <Link to={ind.link.href} className="text-xs text-accent hover:underline font-semibold">{ind.link.text} →</Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Why It Matters */}
+        <div className="p-6 rounded-2xl bg-primary/5 border border-primary/20">
+          <h3 className="font-heading text-lg font-bold text-foreground mb-3">Why Industry-Specific SEO Matters</h3>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-3">Generic SEO strategies don't work anymore. Businesses that rank #1:</p>
+          <ul className="space-y-2">
+            {["Target industry-specific keywords", "Match customer intent precisely", "Build relevant content and authority"].map((item) => (
+              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
+                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </motion.div>
+
       {/* Who Needs SEO */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
