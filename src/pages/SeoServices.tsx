@@ -88,15 +88,15 @@ const SeoServices = () => {
         <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
             <Zap className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">1,500+ Businesses Served</span>
+            <span className="text-accent font-bold text-sm">SEO Packages from LKR 30,000/-</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <Target className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">100,000+ Inquiries Generated</span>
+            <Star className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">10+ Years Experience</span>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <BarChart3 className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">20,000+ Campaigns Executed</span>
+            <Users className="w-4 h-4 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm">200+ Clients Served</span>
           </div>
         </div>
       </motion.div>
