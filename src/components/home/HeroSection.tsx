@@ -181,30 +181,34 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-          {/* Right side trust stats */}
+          {/* Right side trust stats - positioned at far right */}
           <motion.div
-            className="hidden lg:flex flex-col gap-3 lg:w-[280px] xl:w-[320px] mt-8 lg:mt-0"
-            initial={{ opacity: 0, x: 30 }}
+            className="hidden lg:flex flex-col gap-2.5 lg:w-[260px] xl:w-[290px] shrink-0"
+            initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
           >
-            {trustStats.map((item, i) => (
-              <motion.div
-                key={item.label}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: 0.6 + i * 0.12 }}
-              >
-                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent/10">
-                  <item.icon className="w-4 h-4 text-accent" />
-                </div>
-                <div>
-                  <div className="text-lg font-heading font-bold text-accent leading-tight">{item.num}</div>
-                  <div className="text-[10px] text-primary-foreground/50 uppercase tracking-wider font-medium">{item.label}</div>
-                </div>
-              </motion.div>
-            ))}
+            <div className="rounded-2xl border border-primary-foreground/10 bg-primary-foreground/[0.03] backdrop-blur-xl p-4 space-y-2.5">
+              <div className="text-[10px] uppercase tracking-[0.2em] text-primary-foreground/40 font-semibold mb-3 text-center">Proven Results</div>
+              {trustStats.map((item, i) => (
+                <motion.div
+                  key={item.label}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-accent/[0.06] border border-accent/10 hover:border-accent/25 transition-colors duration-300"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.6 + i * 0.12 }}
+                  whileHover={{ x: -3 }}
+                >
+                  <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent/10 shrink-0">
+                    <item.icon className="w-4 h-4 text-accent" />
+                  </div>
+                  <div>
+                    <div className="text-base font-heading font-bold text-accent leading-tight">{item.num}</div>
+                    <div className="text-[9px] text-primary-foreground/45 uppercase tracking-wider font-medium">{item.label}</div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
