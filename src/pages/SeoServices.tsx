@@ -141,7 +141,7 @@ const SeoServices = () => {
     >
       <SEOHead
         title="Best SEO Company in Sri Lanka | SEO Consultant & Specialist"
-        description="Looking for the best SEO company in Sri Lanka? Work with an expert SEO consultant to boost rankings, traffic & leads. 1,500+ clients served."
+        description="SEO Sri Lanka services from the best SEO company Sri Lanka. SEO consultant Sri Lanka and SEO specialist in Sri Lanka for growth."
         canonical="/seo-sri-lanka"
         keywords="best seo company in sri lanka, best seo company sri lanka, seo consultant sri lanka, seo company sri lanka, seo sri lanka, seo specialist sri lanka, seo specialist in sri lanka, seo expert sri lanka, seo services sri lanka, seo packages sri lanka, search engine optimization sri lanka, google ranking sri lanka, local seo sri lanka, best seo agency sri lanka"
         breadcrumbs={[
