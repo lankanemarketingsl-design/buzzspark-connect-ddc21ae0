@@ -458,7 +458,41 @@ const SeoServices = () => {
         </div>
       </motion.div>
 
-      {/* Multi-Channel Links — Reduced */}
+      {/* SEO Knowledge Hub */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl font-bold text-foreground mb-4">SEO Knowledge Hub</h2>
+        <p className="text-muted-foreground mb-6 leading-relaxed">
+          Learn more about SEO and how it can grow your business:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            { label: "How SEO Works in Sri Lanka", href: "/how-seo-works-sri-lanka" },
+            { label: "SEO Consultant Sri Lanka", href: "/seo-consultant-sri-lanka" },
+            { label: "SEO Specialist Sri Lanka", href: "/seo-specialist-sri-lanka" },
+            { label: "SEO Services Sri Lanka", href: "/seo-services-sri-lanka" },
+            { label: "SEO vs Paid Ads", href: "/seo-vs-paid-ads-sri-lanka" },
+            { label: "Why SEO is the Best Investment", href: "/seo-investment-long-term-strategy-sri-lanka" },
+            { label: "SEO Cost in Sri Lanka", href: "/seo-cost-sri-lanka" },
+            { label: "Why SEO Matters", href: "/seo-why-it-matters-sri-lanka" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card shadow-card border border-border hover:border-accent/50 transition-colors"
+            >
+              <ArrowUpRight className="w-5 h-5 text-accent flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{link.label}</span>
+            </Link>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Multi-Channel Links */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
