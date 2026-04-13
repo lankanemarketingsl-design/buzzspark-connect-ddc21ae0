@@ -91,6 +91,7 @@ import SeoConsultantSriLanka from "./pages/articles/SeoConsultantSriLanka.tsx";
 import SeoSpecialistSriLanka from "./pages/articles/SeoSpecialistSriLanka.tsx";
 import SeoServicesSriLanka from "./pages/articles/SeoServicesSriLanka.tsx";
 import SeoVsPaidAdsSriLanka from "./pages/articles/SeoVsPaidAdsSriLanka.tsx";
+import RankNumberOneSriLanka from "./pages/articles/RankNumberOneSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -235,6 +236,7 @@ const App = () => (
               <Route path="/seo-specialist-sri-lanka" element={<SeoSpecialistSriLanka />} />
               <Route path="/seo-services-sri-lanka" element={<SeoServicesSriLanka />} />
               <Route path="/seo-vs-paid-ads-sri-lanka" element={<SeoVsPaidAdsSriLanka />} />
+              <Route path="/rank-number-one-google-sri-lanka" element={<RankNumberOneSriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -257,6 +257,13 @@ const articles = [
     image: articleSeoMatters,
   },
   {
+    title: "How to Rank #1 in Google Sri Lanka: Industry-Focused Guide",
+    date: "Apr 13, 2026",
+    excerpt: "A complete industry-focused guide to ranking #1 on Google in Sri Lanka — covering hotels, education, healthcare, real estate, and more.",
+    path: "/rank-number-one-google-sri-lanka",
+    image: articleSeoMatters,
+  },
+  {
     title: "Multi-Channel Email Campaigns That Deliver Real Visibility",
     date: "Apr 7, 2026",
     excerpt: "Go beyond email with Buzz Connect's multi-channel campaigns combining Email, Findit.lk & Facebook Story promotion for maximum visibility and lead generation.",
