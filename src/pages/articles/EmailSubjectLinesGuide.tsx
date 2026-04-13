@@ -47,7 +47,7 @@ const EmailSubjectLinesGuide = () => {
               </p>
               <p className="text-muted-foreground">
                 👉 Learn more about building effective campaigns with{" "}
-                <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
+                <Link to="/email-marketing" className="text-accent hover:underline font-semibold">
                   email marketing Sri Lanka
                 </Link>.
               </p>

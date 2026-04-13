@@ -47,7 +47,7 @@ const HowEmailMarketingWorks = () => {
               </p>
               <p className="text-muted-foreground">
                 👉 Learn more about{" "}
-                <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
+                <Link to="/email-marketing" className="text-accent hover:underline font-semibold">
                   email marketing companies in Sri Lanka
                 </Link>.
               </p>
