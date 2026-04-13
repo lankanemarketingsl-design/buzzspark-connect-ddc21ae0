@@ -82,7 +82,8 @@ const HeroSection = () => {
       </motion.div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 py-8 sm:py-14">
-        <div className="max-w-4xl">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+        <div className="max-w-4xl lg:flex-1">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
