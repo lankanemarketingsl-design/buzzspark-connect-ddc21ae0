@@ -180,6 +180,33 @@ const HeroSection = () => {
             ))}
           </motion.div>
         </div>
+
+          {/* Right side trust stats */}
+          <motion.div
+            className="hidden lg:flex flex-col gap-3 lg:w-[280px] xl:w-[320px] mt-8 lg:mt-0"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+          >
+            {trustStats.map((item, i) => (
+              <motion.div
+                key={item.label}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-md"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, delay: 0.6 + i * 0.12 }}
+              >
+                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-accent/10">
+                  <item.icon className="w-4 h-4 text-accent" />
+                </div>
+                <div>
+                  <div className="text-lg font-heading font-bold text-accent leading-tight">{item.num}</div>
+                  <div className="text-[10px] text-primary-foreground/50 uppercase tracking-wider font-medium">{item.label}</div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
 
     </section>
