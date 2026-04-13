@@ -191,7 +191,7 @@ const EmailSubjectLinesGuide = () => {
               </ul>
               <p className="text-muted-foreground">
                 👉 Learn the full strategy with{" "}
-                <Link to="/email-marketing" className="text-primary hover:underline font-semibold">
+                <Link to="/email-marketing" className="text-accent hover:underline font-semibold">
                   best email marketing companies in Sri Lanka
                 </Link>.
               </p>
