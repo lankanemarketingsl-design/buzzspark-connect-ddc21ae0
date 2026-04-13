@@ -87,6 +87,10 @@ import StaffRecruitmentCaseStudies from "./pages/articles/StaffRecruitmentCaseSt
 import RestaurantMarketingCaseStudies from "./pages/articles/RestaurantMarketingCaseStudies.tsx";
 import EducationMarketingCaseStudies from "./pages/articles/EducationMarketingCaseStudies.tsx";
 import SeoInvestmentSriLanka from "./pages/articles/SeoInvestmentSriLanka.tsx";
+import SeoConsultantSriLanka from "./pages/articles/SeoConsultantSriLanka.tsx";
+import SeoSpecialistSriLanka from "./pages/articles/SeoSpecialistSriLanka.tsx";
+import SeoServicesSriLanka from "./pages/articles/SeoServicesSriLanka.tsx";
+import SeoVsPaidAdsSriLanka from "./pages/articles/SeoVsPaidAdsSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -227,6 +231,10 @@ const App = () => (
               <Route path="/restaurant-marketing-case-studies-sri-lanka" element={<RestaurantMarketingCaseStudies />} />
               <Route path="/education-marketing-case-studies-sri-lanka" element={<EducationMarketingCaseStudies />} />
               <Route path="/seo-investment-long-term-strategy-sri-lanka" element={<SeoInvestmentSriLanka />} />
+              <Route path="/seo-consultant-sri-lanka" element={<SeoConsultantSriLanka />} />
+              <Route path="/seo-specialist-sri-lanka" element={<SeoSpecialistSriLanka />} />
+              <Route path="/seo-services-sri-lanka" element={<SeoServicesSriLanka />} />
+              <Route path="/seo-vs-paid-ads-sri-lanka" element={<SeoVsPaidAdsSriLanka />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
