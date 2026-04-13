@@ -170,6 +170,7 @@ const EventMarketingCaseStudies = () => {
                 <li>🌐 Top placement via Findit.lk</li>
                 <li>🎬 Video-based promotions</li>
                 <li>🌍 Dedicated landing page for ticket sales</li>
+                <li>💬 <Link to="/whatsapp-marketing" className="text-muted-foreground">WhatsApp bulk marketing</Link> campaign</li>
                 <li>🔁 Full funnel remarketing across platforms</li>
               </ul>
               <p className="text-muted-foreground mb-4">
