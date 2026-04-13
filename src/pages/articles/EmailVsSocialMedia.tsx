@@ -44,7 +44,7 @@ const EmailVsSocialMedia = () => {
           {/* Intro */}
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <p className="text-muted-foreground leading-relaxed mb-3">
-              One of the most common questions Sri Lankan business owners ask is: <em>"Should I invest in email marketing or social media marketing?"</em> Both channels have unique strengths, but when it comes to conversions, ROI, and direct customer communication, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing in Sri Lanka</Link> consistently outperforms.
+              One of the most common questions Sri Lankan business owners ask is: <em>"Should I invest in email marketing or social media marketing?"</em> Both channels have unique strengths, but when it comes to conversions, ROI, and direct customer communication, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">One of the most common questions Sri Lankan business owners ask is: <em>"Should I invest in email marketing or social media marketing?"</em> Both channels have unique strengths, but when it comes to conversions, ROI, and direct customer communication, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link> consistently outperforms..
             </p>
             <p className="text-muted-foreground leading-relaxed">
               This article provides a detailed comparison to help you decide where to invest your marketing budget — or why you should use both through a <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">multi-channel marketing strategy</Link>.
@@ -106,7 +106,7 @@ const EmailVsSocialMedia = () => {
               </table>
             </div>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              For Sri Lankan SMEs with limited budgets, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email campaigns in Sri Lanka</Link> deliver far more value per rupee spent than social media advertising.
+              For Sri Lankan SMEs with limited budgets, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">For Sri Lankan SMEs with limited budgets, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing packages in Sri Lanka</Link> deliver far more value per rupee spent than social media advertising. far more value per rupee spent than social media advertising.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ const EmailVsSocialMedia = () => {
           <div className="p-6 rounded-2xl bg-card shadow-card border border-border">
             <h2 className="font-heading text-xl font-bold text-foreground mb-4">The Verdict: Email vs Social Media</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              If you had to choose one channel, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing in Sri Lanka</Link> wins on every metric that matters: ROI, conversion rates, cost-effectiveness, and audience ownership.
+              If you had to choose one channel, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">If you had to choose one channel, <Link to="/email-marketing" className="text-accent hover:underline font-semibold">best email marketing companies in Sri Lanka</Link> wins on every metric that matters: ROI, conversion rates, cost-effectiveness, and audience ownership. that matters: ROI, conversion rates, cost-effectiveness, and audience ownership.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               But for maximum results, combine email with <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp</Link>, and social media through Buzz Connect's <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">multi-channel marketing campaigns</Link>.

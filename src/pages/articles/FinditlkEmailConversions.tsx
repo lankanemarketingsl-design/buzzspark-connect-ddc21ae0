@@ -74,7 +74,7 @@ const FinditlkEmailConversions = () => {
         {/* Introduction */}
         <section className="prose prose-lg max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            In Sri Lanka's competitive digital landscape, businesses are constantly looking for ways to generate more leads and improve conversions. While many rely on social media, the most effective strategy today is combining high-intent platforms like <strong>Findit.lk</strong> with direct communication channels such as <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>.
+            In Sri Lanka's competitive digital landscape, businesses are constantly looking for ways to generate more leads and improve conversions. While many rely on social media, the most effective strategy today is combining high-intent platforms like <strong>Findit.lk</strong> with direct communication channels In Sri Lanka's competitive digital landscape, businesses are constantly looking for ways to generate more leads and improve conversions. While many rely on social media, the most effective strategy today is combining high-intent platforms like <strong>Findit.lk</strong> with direct communication channels such as <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing Sri Lanka</Link>.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             This powerful combination helps businesses reach the right audience at the right time—resulting in higher engagement and better ROI.
@@ -216,7 +216,7 @@ const FinditlkEmailConversions = () => {
             Ready to Increase Conversions with Findit.lk + Email Marketing?
           </h2>
           <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">
-            BuzzConnect combines <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link> with Findit.lk exposure and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> for maximum results.
+            BuzzConnect combines <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing companies in Sri Lanka</Link> with Findit.lk exposure and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> for maximum results. exposure and <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> for maximum results.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/email-marketing">
