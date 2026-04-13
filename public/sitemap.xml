@@ -44,19 +44,25 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://buzzconnect.lk/multi-channel-marketing-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://buzzconnect.lk/advertising-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://buzzconnect.lk/multi-channel-marketing-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://buzzconnect.lk/online-advertising-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/google-ads-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -80,25 +86,37 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://buzzconnect.lk/animated-video-creation-sri-lanka</loc>
+    <loc>https://buzzconnect.lk/staff-recruitment-campaigns-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://buzzconnect.lk/logo-design-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://buzzconnect.lk/video-editing-sri-lanka</loc>
+    <loc>https://buzzconnect.lk/special-advertising-packages</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- 2. GRAPHIC DESIGN SUB-SERVICES -->
+  <url>
+    <loc>https://buzzconnect.lk/animated-video-creation-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/logo-design-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/video-editing-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://buzzconnect.lk/e-flyer-design-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
@@ -261,6 +279,7 @@
   </url>
 
   <!-- 5. BLOG / RESOURCE ARTICLES -->
+
   <!-- Email Cluster -->
   <url>
     <loc>https://buzzconnect.lk/email-marketing-guide-sri-lanka</loc>
@@ -292,6 +311,98 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://buzzconnect.lk/how-email-marketing-works-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/email-marketing-most-powerful-tool-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/email-subject-lines-guide-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/why-email-marketing-is-important</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/why-you-need-email-marketing</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/finditlk-email-marketing-conversions-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Email Industry Articles -->
+  <url>
+    <loc>https://buzzconnect.lk/hotel-email-marketing-bookings-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/real-estate-email-marketing-leads-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/education-email-marketing-enrollments-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/ecommerce-email-marketing-sales-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/automotive-email-marketing-sales-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/healthcare-email-marketing-engagement-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/event-email-marketing-attendance-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/recruitment-email-marketing-hiring-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/multi-channel-email-campaigns-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
   <!-- SMS -->
   <url>
@@ -302,6 +413,12 @@
   </url>
   <url>
     <loc>https://buzzconnect.lk/sms-marketing-driving-engagement-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/best-sms-marketing-company-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -334,16 +451,114 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- SEO / Leads -->
   <url>
-    <loc>https://buzzconnect.lk/seo-why-it-matters-sri-lanka</loc>
+    <loc>https://buzzconnect.lk/best-advertising-company-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://buzzconnect.lk/digital-marketing-brand-awareness-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/direct-marketing-strategy-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/fast-direct-marketing-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- SEO Cluster -->
+  <url>
+    <loc>https://buzzconnect.lk/seo-why-it-matters-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/best-seo-company-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/best-seo-services-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-consultant-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-specialist-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-services-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/how-seo-works-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-cost-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-vs-paid-ads-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/seo-investment-long-term-strategy-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/rank-number-one-google-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Lead Generation -->
+  <url>
     <loc>https://buzzconnect.lk/lead-generation-get-more-customers-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/lead-generation-agency-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/how-lead-generation-works-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -356,8 +571,54 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://buzzconnect.lk/best-social-media-marketing-company-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/how-social-media-marketing-works-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/social-media-marketing-cost-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-  <!-- Industry Blogs -->
+  <!-- Multi-Channel -->
+  <url>
+    <loc>https://buzzconnect.lk/multi-channel-marketing-in-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/multi-channel-marketing-maximum-reach-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/multi-channel-vs-facebook-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Graphic Design -->
+  <url>
+    <loc>https://buzzconnect.lk/how-graphic-design-helps-business-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Hotel Cluster -->
   <url>
     <loc>https://buzzconnect.lk/hotel-marketing-increase-bookings-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
@@ -365,7 +626,39 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://buzzconnect.lk/hotel-marketing-cost-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/how-hotel-marketing-works-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/best-hotel-marketing-agency-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/hotel-digital-marketing-case-studies-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Industry Blog Articles -->
+  <url>
     <loc>https://buzzconnect.lk/education-marketing-attract-students-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/education-marketing-case-studies-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -377,7 +670,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://buzzconnect.lk/finance-marketing-case-studies-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://buzzconnect.lk/restaurant-marketing-attract-customers-sri-lanka</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://buzzconnect.lk/restaurant-marketing-case-studies-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -389,25 +694,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://buzzconnect.lk/fashion-marketing-grow-brand-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://buzzconnect.lk/hotel-digital-marketing-case-studies-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://buzzconnect.lk/real-estate-marketing-case-studies-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://buzzconnect.lk/finance-marketing-case-studies-sri-lanka</loc>
+    <loc>https://buzzconnect.lk/fashion-marketing-grow-brand-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -426,18 +719,6 @@
   </url>
   <url>
     <loc>https://buzzconnect.lk/staff-recruitment-case-studies-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://buzzconnect.lk/restaurant-marketing-case-studies-sri-lanka</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://buzzconnect.lk/education-marketing-case-studies-sri-lanka</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
