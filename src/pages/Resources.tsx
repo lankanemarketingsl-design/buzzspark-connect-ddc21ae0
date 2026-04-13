@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.jpg";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.jpg";
 const articles = [
   {
+    title: "Restaurant Marketing Case Studies – Sri Lanka (2026)",
+    date: "Apr 13, 2026",
+    excerpt: "Restaurant marketing case studies from Sri Lanka. See how restaurants increased foot traffic & sales using email campaigns, Findit.lk exposure & remarketing.",
+    path: "/restaurant-marketing-case-studies-sri-lanka",
+    image: articleRestaurantMarketing,
+  },
+  {
     title: "Staff Recruitment Case Studies – Sri Lanka (2026)",
     date: "Apr 13, 2026",
     excerpt: "Staff recruitment case studies from Sri Lanka. See how companies hired faster using Findit.lk, social media campaigns & multi-channel recruitment strategies.",
