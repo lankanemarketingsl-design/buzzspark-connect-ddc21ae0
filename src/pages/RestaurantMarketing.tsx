@@ -496,6 +496,20 @@ const RestaurantMarketing = () => {
         benefits={["Access to food lovers & deal seekers", "High visibility in Food category", "Promote daily deals & offers", "Better reach than food delivery apps"]}
       />
 
+      {/* 📊 Real Campaign Results */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto">
+        <div className="p-8 rounded-2xl bg-card shadow-card border border-border text-center">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Proven Results</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2 mb-4">Real Restaurant Campaign Results</h2>
+          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">See how restaurants in Sri Lanka filled tables, boosted orders, and increased daily revenue with BuzzConnect.</p>
+          <Link to="/restaurant-marketing-case-studies-sri-lanka">
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold">
+              <BarChart3 className="w-5 h-5 mr-2" /> View Restaurant Marketing Case Studies
+            </Button>
+          </Link>
+        </div>
+      </motion.div>
+
       {/* 🧠 Why BuzzConnect */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border">
         <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why BuzzConnect for Restaurant Marketing?</h2>
