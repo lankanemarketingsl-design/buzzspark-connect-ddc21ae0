@@ -10,6 +10,223 @@ import {
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import IndustryMarketingSection from "@/components/IndustryMarketingSection";
+
+const multiChannelIndustries = [
+  {
+    emoji: "🏨",
+    title: "Hotel Multi-Channel Marketing Sri Lanka – Drive Direct Bookings",
+    campaigns: [
+      "Banner Ads (Findit) → Build awareness among travelers",
+      "Email Campaign → Promote packages with full details",
+      "WhatsApp Bulk Messaging → Highlight limited-time offers",
+      "SMS → Last-minute booking reminders",
+    ],
+    results: [
+      "Increased direct bookings",
+      "Higher occupancy rates",
+      "Reduced reliance on third-party platforms",
+    ],
+    link: "/hotel-marketing-sri-lanka",
+    linkText: "hotel marketing",
+  },
+  {
+    emoji: "🎓",
+    title: "Education Multi-Channel Marketing Sri Lanka – Generate & Convert Student Leads",
+    campaigns: [
+      "Facebook / Google Ads → Capture student inquiries",
+      "Email Campaign → Share course details & benefits",
+      "WhatsApp Bulk Messaging → Promote deadlines",
+      "SMS → Final enrollment reminders",
+    ],
+    results: [
+      "More qualified student leads",
+      "Faster enrollment cycles",
+      "Lower cost per acquisition",
+    ],
+    link: "/education-marketing-sri-lanka",
+    linkText: "education marketing",
+  },
+  {
+    emoji: "🏠",
+    title: "Real Estate Multi-Channel Marketing Sri Lanka – Convert High-Value Buyers",
+    campaigns: [
+      "Google Ads → Target active property searches",
+      "Banner Ads (Findit) → Continuous brand visibility",
+      "Email Campaign → Property details & investment value",
+      "WhatsApp Bulk Messaging → Launch announcements",
+      "SMS → Site visit reminders",
+    ],
+    results: [
+      "Higher-quality buyer inquiries",
+      "Shorter sales cycles",
+      "Increased project conversions",
+    ],
+    link: "/real-estate-marketing-sri-lanka",
+    linkText: "real estate marketing",
+  },
+  {
+    emoji: "🛍️",
+    title: "E-commerce & Retail Multi-Channel Marketing Sri Lanka – Turn Traffic into Sales",
+    campaigns: [
+      "Social Media Ads → Drive traffic",
+      "Banner Ads → Reinforce brand visibility",
+      "Email Campaign → Promote offers & products",
+      "WhatsApp Bulk Messaging → Flash sale announcements",
+      "SMS → Urgency-driven reminders",
+    ],
+    results: [
+      "Higher conversion rates",
+      "Increased sales volume",
+      "Stronger repeat purchase behavior",
+    ],
+    link: "/restaurant-marketing-sri-lanka",
+    linkText: "retail marketing",
+  },
+  {
+    emoji: "🍽️",
+    title: "Restaurant Multi-Channel Marketing Sri Lanka – Increase Daily Customer Flow",
+    campaigns: [
+      "Banner Ads → Continuous brand presence",
+      "Social Media Ads → Engagement & discovery",
+      "WhatsApp Bulk Messaging → Daily promotions",
+      "SMS → Time-sensitive offers",
+    ],
+    results: [
+      "Increased foot traffic",
+      "More repeat customers",
+      "Higher daily revenue",
+    ],
+    link: "/restaurant-marketing-sri-lanka",
+    linkText: "restaurant marketing",
+  },
+  {
+    emoji: "💼",
+    title: "Recruitment Multi-Channel Marketing Sri Lanka – Hire Faster",
+    campaigns: [
+      "Job Ads → Generate applications",
+      "Email Campaign → Detailed job communication",
+      "WhatsApp Bulk Messaging → Vacancy alerts",
+      "SMS → Interview reminders",
+      "Banner Ads → Employer branding",
+    ],
+    results: [
+      "Faster hiring cycles",
+      "Better candidate quality",
+      "Reduced recruitment costs",
+    ],
+    link: "/staff-recruitment-campaigns-sri-lanka",
+    linkText: "staff recruitment",
+  },
+  {
+    emoji: "🏥",
+    title: "Healthcare Multi-Channel Marketing Sri Lanka – Increase Bookings",
+    campaigns: [
+      "Google Ads → Capture high-intent searches",
+      "Email Campaign → Awareness & service education",
+      "WhatsApp Bulk Messaging → Promotions",
+      "SMS → Appointment reminders",
+      "Banner Ads → Build trust & visibility",
+    ],
+    results: [
+      "Increased patient bookings",
+      "Reduced no-show rates",
+      "Stronger patient engagement",
+    ],
+    link: null,
+    linkText: "",
+  },
+  {
+    emoji: "🚗",
+    title: "Automotive Multi-Channel Marketing Sri Lanka – Boost Showroom Visits",
+    campaigns: [
+      "Paid Ads → Vehicle promotions",
+      "Banner Ads → Brand reinforcement",
+      "Email Campaign → Offers & specifications",
+      "WhatsApp Bulk Messaging → Launch alerts",
+      "SMS → Test drive reminders",
+    ],
+    results: [
+      "Increased inquiries",
+      "More showroom visits",
+      "Higher conversion rates",
+    ],
+    link: null,
+    linkText: "",
+  },
+  {
+    emoji: "🏦",
+    title: "Finance & Insurance Multi-Channel Marketing Sri Lanka – Generate High-Value Leads",
+    campaigns: [
+      "Targeted Ads → Lead generation",
+      "Email Campaign → Detailed financial offers",
+      "WhatsApp Bulk Messaging → Awareness campaigns",
+      "SMS → Urgency messaging",
+      "Banner Ads → Trust-building visibility",
+    ],
+    results: [
+      "Higher-quality leads",
+      "Increased approval rates",
+      "Strong ROI",
+    ],
+    link: "/finance-marketing-sri-lanka",
+    linkText: "finance marketing",
+  },
+  {
+    emoji: "👗",
+    title: "Fashion & Clothing Multi-Channel Marketing Sri Lanka – Build Brand & Drive Sales",
+    campaigns: [
+      "Social Media Ads → Brand awareness",
+      "Banner Ads → Continuous exposure",
+      "Email Campaign → Promotions & collections",
+      "WhatsApp Bulk Messaging → New arrivals",
+      "SMS → Flash sale alerts",
+    ],
+    results: [
+      "Increased brand recognition",
+      "Higher sales volume",
+      "Stronger customer loyalty",
+    ],
+    link: "/fashion-marketing-sri-lanka",
+    linkText: "fashion marketing",
+  },
+  {
+    emoji: "🎉",
+    title: "Event Multi-Channel Marketing Sri Lanka – Maximize Attendance",
+    campaigns: [
+      "Social Ads → Awareness",
+      "Email Invitations → Event details",
+      "WhatsApp Bulk Messaging → Promotion blasts",
+      "SMS → Reminder notifications",
+      "Banner Ads → Continuous visibility",
+    ],
+    results: [
+      "Higher registrations",
+      "Faster ticket sales",
+      "Improved event turnout",
+    ],
+    link: "/event-marketing-sri-lanka",
+    linkText: "event marketing",
+  },
+  {
+    emoji: "🏢",
+    title: "Corporate / B2B Multi-Channel Marketing Sri Lanka – Reach Decision Makers",
+    campaigns: [
+      "Email Campaign → Direct corporate outreach",
+      "LinkedIn / Ads → Lead generation",
+      "WhatsApp Bulk Messaging → Awareness",
+      "SMS → Follow-ups",
+      "Banner Ads → Brand authority",
+    ],
+    results: [
+      "More qualified business leads",
+      "Faster deal closures",
+      "Improved conversion rates",
+    ],
+    link: null,
+    linkText: "",
+  },
+];
 
 /* ── Testimonials ── */
 const testimonials = [
