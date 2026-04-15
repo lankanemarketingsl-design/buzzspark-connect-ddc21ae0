@@ -702,6 +702,17 @@ const SpecialPackages = () => {
         </div>
       </motion.div>
 
+      {/* Social Proof CTA */}
+      <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
+        <a
+          href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20discuss%20a%20multi-channel%20campaign%20for%20my%20business."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
+        >
+          Join 100+ Businesses — Start Your Campaign <ArrowRight className="w-4 h-4" />
+        </a>
+      </motion.div>
       {/* Who Should Use */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
