@@ -773,7 +773,8 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
       >
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-6">Why Businesses Choose Buzz Connect</h2>
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-2">Why 100+ Sri Lankan Businesses Trust Buzz Connect</h2>
+        <p className="text-muted-foreground text-sm mb-6">The only multi-channel marketing provider with Findit.lk integration</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
             "Proven multi-channel marketing strategy",
