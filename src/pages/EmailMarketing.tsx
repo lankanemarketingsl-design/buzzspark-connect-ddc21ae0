@@ -1,6 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
-import { motion } from "framer-motion";
 import { Users, Crown, CheckCircle, Mail, HelpCircle, Smartphone, MessageSquare, Globe, Rocket, ArrowRight } from "lucide-react";
+import IndustryMarketingSection from "@/components/IndustryMarketingSection";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
@@ -237,152 +237,35 @@ const EmailMarketing = () => {
         </div>
       </motion.div>
 
-      {/* Industry Section */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">✉️ Email Marketing Services for Every Industry in Sri Lanka</h2>
-          <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">Looking for email marketing in Sri Lanka that actually delivers results? Our data-driven campaigns help businesses reach the right audience, generate qualified leads, and drive real revenue — across every major industry in Sri Lanka.</p>
-          <p className="text-foreground font-semibold mt-3">Whether you want instant inquiries, more sales, or brand awareness, our email marketing campaigns are built to perform.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              emoji: "🏨", title: "Hotel Industry – Increase Direct Bookings & Revenue",
-              campaigns: ["Weekend getaway & staycation promotions", "Seasonal offers (Avurudu, December, long weekends)", "Luxury packages targeting high-income travelers"],
-              results: ["More direct bookings (reduce OTA commissions)", "Higher room occupancy rates", "Increased revenue per campaign"],
-              link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing"
-            },
-            {
-              emoji: "🎓", title: "Education Industry – Generate High-Quality Student Leads",
-              campaigns: ["Course intake promotions (degree, diploma, short courses)", "Scholarship & limited-seat announcements", "Deadline-driven enrollment campaigns"],
-              results: ["Consistent student inquiries", "Faster intake filling", "Lower cost per lead"],
-              link: "/education-marketing", linkText: "education marketing"
-            },
-            {
-              emoji: "🏠", title: "Real Estate – Reach Serious Property Buyers",
-              campaigns: ["Apartment launches & land sales", "Investment opportunities for high-income audiences", "Location-targeted property promotions"],
-              results: ["Direct buyer inquiries", "Faster sales cycles", "High-value, serious leads"],
-              link: "/real-estate-marketing", linkText: "real estate marketing"
-            },
-            {
-              emoji: "🛍️", title: "E-commerce / Retail – Drive Instant Sales",
-              campaigns: ["Flash sales & limited-time discounts", "Product launches & exclusive offers", "Seasonal campaigns (New Year, festive promotions)"],
-              results: ["Immediate website traffic", "Increased online sales", "Higher customer retention"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🍽️", title: "Restaurant Industry – Increase Daily Customers",
-              campaigns: ["Lunch & dinner deals", "Event promotions (live music, special nights)", "Discount coupons & loyalty campaigns"],
-              results: ["Increased foot traffic", "More repeat customers", "Stronger brand recall"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "💼", title: "Recruitment & Hiring – Find the Right Talent Faster",
-              campaigns: ["Job vacancy promotions", "Industry-specific hiring campaigns", "Bulk recruitment drives"],
-              results: ["Faster hiring cycles", "More qualified applicants", "Reduced recruitment costs"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏥", title: "Healthcare & Clinics – Boost Patient Engagement",
-              campaigns: ["Health checkup promotions", "Clinic awareness campaigns", "Appointment reminders & follow-ups"],
-              results: ["Increased patient bookings", "Better engagement & trust", "Improved retention rates"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🚗", title: "Automotive Industry – Increase Inquiries & Sales",
-              campaigns: ["Vehicle promotions & limited-time offers", "Service reminders & maintenance campaigns", "New model launches"],
-              results: ["More showroom visits", "Increased inquiries", "Higher conversion rates"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏦", title: "Finance & Insurance – Generate High-Value Leads",
-              campaigns: ["Loan, leasing & credit card offers", "Investment & savings promotions", "Financial awareness campaigns"],
-              results: ["Qualified financial leads", "Higher approval conversions", "Strong ROI campaigns"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "👗", title: "Fashion & Clothing – Grow Your Brand & Sales",
-              campaigns: ["New collection launches", "Seasonal fashion campaigns", "Exclusive offers & influencer collaborations"],
-              results: ["Increased brand awareness", "Higher sales (online & in-store)", "Repeat customers"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🎉", title: "Event Promotions – Maximize Attendance & Ticket Sales",
-              campaigns: ["Concerts, exhibitions & corporate events", "Early-bird ticket promotions", "Reminder & urgency campaigns"],
-              results: ["Higher event turnout", "Faster ticket sales", "Strong audience engagement"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏢", title: "Corporate & B2B – Reach Decision Makers Directly",
-              campaigns: ["Service promotions targeting businesses", "Partnership & collaboration offers", "Corporate announcements"],
-              results: ["Direct access to decision-makers", "High-quality B2B leads", "Increased conversions"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🧳", title: "Travel & Tourism – Promote Packages & Experiences",
-              campaigns: ["Local & international tour packages", "Holiday & seasonal travel deals", "Group & corporate travel promotions"],
-              results: ["Increased bookings", "More inquiries", "Higher campaign ROI"],
-              link: null, linkText: ""
-            },
-          ].map((ind) => (
-            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{ind.emoji} {ind.title}</h3>
-              <div className="mb-3">
-                <p className="text-foreground font-semibold text-sm mb-1.5">Campaign Ideas:</p>
-                <ul className="space-y-1">
-                  {ind.campaigns.map((c) => (
-                    <li key={c} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="w-3.5 h-3.5 text-accent flex-shrink-0" /> {c}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-3">
-                <p className="text-foreground font-semibold text-sm mb-1.5">Results You Can Expect:</p>
-                <ul className="space-y-1">
-                  {ind.results.map((r) => (
-                    <li key={r} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Rocket className="w-3.5 h-3.5 text-secondary-foreground flex-shrink-0" /> {r}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {ind.link && (
-                <Link to={ind.link} className="text-accent hover:underline text-sm font-semibold">
-                  Learn about {ind.linkText} →
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-10 p-6 rounded-2xl bg-card shadow-card border border-border">
-          <h3 className="font-heading text-xl font-bold text-foreground mb-4">🔥 Why Our Email Marketing Works in Sri Lanka</h3>
-          <ul className="space-y-2">
-            {[
-              "Access to 350,000+ targeted email users",
-              "Reach corporate professionals & high-income audiences",
-              "Fast campaign launch (within hours)",
-              "Proven performance across multiple industries",
-              "Integrated campaigns (Email + SMS + Web Advertising)",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
-                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-foreground font-semibold mt-4 text-sm">👉 Compared to other channels, email marketing in Sri Lanka delivers faster reach, better targeting, and higher ROI</p>
-        </div>
-
-        <div className="mt-8 p-6 rounded-2xl gradient-hero text-center">
-          <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">🚀 Start Your Email Marketing Campaign in Sri Lanka Today</h3>
-          <p className="text-primary-foreground/80 mb-4">Ready to reach thousands of potential customers and generate real results?</p>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20an%20email%20marketing%20campaign%20for%20my%20industry." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-            <MessageSquare className="w-4 h-4" /> Get a Free Consultation & Campaign Strategy
-          </a>
-        </div>
-      </motion.div>
+      <IndustryMarketingSection
+        sectionEmoji="✉️"
+        sectionTitle="Email Marketing Services for Every Industry in Sri Lanka"
+        intro="Looking for email marketing in Sri Lanka that actually delivers results? Our data-driven campaigns help businesses reach the right audience, generate qualified leads, and drive real revenue — across every major industry in Sri Lanka."
+        subtitle="Whether you want instant inquiries, more sales, or brand awareness, our email marketing campaigns are built to perform."
+        industries={[
+          { emoji: "🏨", title: "Hotel Industry – Increase Direct Bookings & Revenue", campaigns: ["Weekend getaway & staycation promotions", "Seasonal offers (Avurudu, December, long weekends)", "Luxury packages targeting high-income travelers"], results: ["More direct bookings (reduce OTA commissions)", "Higher room occupancy rates", "Increased revenue per campaign"], link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing" },
+          { emoji: "🎓", title: "Education Industry – Generate High-Quality Student Leads", campaigns: ["Course intake promotions (degree, diploma, short courses)", "Scholarship & limited-seat announcements", "Deadline-driven enrollment campaigns"], results: ["Consistent student inquiries", "Faster intake filling", "Lower cost per lead"], link: "/education-marketing", linkText: "education marketing" },
+          { emoji: "🏠", title: "Real Estate – Reach Serious Property Buyers", campaigns: ["Apartment launches & land sales", "Investment opportunities for high-income audiences", "Location-targeted property promotions"], results: ["Direct buyer inquiries", "Faster sales cycles", "High-value, serious leads"], link: "/real-estate-marketing", linkText: "real estate marketing" },
+          { emoji: "🛍️", title: "E-commerce / Retail – Drive Instant Sales", campaigns: ["Flash sales & limited-time discounts", "Product launches & exclusive offers", "Seasonal campaigns (New Year, festive promotions)"], results: ["Immediate website traffic", "Increased online sales", "Higher customer retention"], link: null, linkText: "" },
+          { emoji: "🍽️", title: "Restaurant Industry – Increase Daily Customers", campaigns: ["Lunch & dinner deals", "Event promotions (live music, special nights)", "Discount coupons & loyalty campaigns"], results: ["Increased foot traffic", "More repeat customers", "Stronger brand recall"], link: null, linkText: "" },
+          { emoji: "💼", title: "Recruitment & Hiring – Find the Right Talent Faster", campaigns: ["Job vacancy promotions", "Industry-specific hiring campaigns", "Bulk recruitment drives"], results: ["Faster hiring cycles", "More qualified applicants", "Reduced recruitment costs"], link: null, linkText: "" },
+          { emoji: "🏥", title: "Healthcare & Clinics – Boost Patient Engagement", campaigns: ["Health checkup promotions", "Clinic awareness campaigns", "Appointment reminders & follow-ups"], results: ["Increased patient bookings", "Better engagement & trust", "Improved retention rates"], link: null, linkText: "" },
+          { emoji: "🚗", title: "Automotive Industry – Increase Inquiries & Sales", campaigns: ["Vehicle promotions & limited-time offers", "Service reminders & maintenance campaigns", "New model launches"], results: ["More showroom visits", "Increased inquiries", "Higher conversion rates"], link: null, linkText: "" },
+          { emoji: "🏦", title: "Finance & Insurance – Generate High-Value Leads", campaigns: ["Loan, leasing & credit card offers", "Investment & savings promotions", "Financial awareness campaigns"], results: ["Qualified financial leads", "Higher approval conversions", "Strong ROI campaigns"], link: null, linkText: "" },
+          { emoji: "👗", title: "Fashion & Clothing – Grow Your Brand & Sales", campaigns: ["New collection launches", "Seasonal fashion campaigns", "Exclusive offers & influencer collaborations"], results: ["Increased brand awareness", "Higher sales (online & in-store)", "Repeat customers"], link: null, linkText: "" },
+          { emoji: "🎉", title: "Event Promotions – Maximize Attendance & Ticket Sales", campaigns: ["Concerts, exhibitions & corporate events", "Early-bird ticket promotions", "Reminder & urgency campaigns"], results: ["Higher event turnout", "Faster ticket sales", "Strong audience engagement"], link: null, linkText: "" },
+          { emoji: "🏢", title: "Corporate & B2B – Reach Decision Makers Directly", campaigns: ["Service promotions targeting businesses", "Partnership & collaboration offers", "Corporate announcements"], results: ["Direct access to decision-makers", "High-quality B2B leads", "Increased conversions"], link: null, linkText: "" },
+          { emoji: "🧳", title: "Travel & Tourism – Promote Packages & Experiences", campaigns: ["Local & international tour packages", "Holiday & seasonal travel deals", "Group & corporate travel promotions"], results: ["Increased bookings", "More inquiries", "Higher campaign ROI"], link: null, linkText: "" },
+        ]}
+        whyTitle="🔥 Why Our Email Marketing Works in Sri Lanka"
+        whyPoints={["Access to 350,000+ targeted email users", "Reach corporate professionals & high-income audiences", "Fast campaign launch (within hours)", "Proven performance across multiple industries", "Integrated campaigns (Email + SMS + Web Advertising)"]}
+        whyFooter="👉 Compared to other channels, email marketing in Sri Lanka delivers faster reach, better targeting, and higher ROI"
+        crossLinks={[]}
+        ctaTitle="🚀 Start Your Email Marketing Campaign in Sri Lanka Today"
+        ctaSubtitle="Ready to reach thousands of potential customers and generate real results?"
+        ctaWhatsAppMessage="Hi Buzz Connect, I want to start an email marketing campaign for my industry."
+        ctaButtonText="Get a Free Consultation & Campaign Strategy"
+      />
 
       {/* FAQ */}
       <motion.div
