@@ -532,8 +532,8 @@ const SpecialPackages = () => {
             Fully managed campaigns across SMS, Email, WhatsApp & Findit.lk — choose the reach that fits your goals.
           </p>
         </motion.div>
-        <ComparisonTable title="WhatsApp Marketing Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
-        <ComparisonTable title="SMS Marketing Packages" subtitle="Cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
+        <ComparisonTable title="WhatsApp Multi-Channel Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
+        <ComparisonTable title="SMS Multi-Channel Packages" subtitle="Cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
 
         {/* Mid-page CTA */}
         <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-8 p-6 rounded-2xl bg-accent/5 border border-accent/20 text-center">
