@@ -471,66 +471,6 @@ const SpecialPackages = () => {
         </p>
       </motion.div>
 
-      {/* Industry Campaign Examples */}
-      <IndustryMarketingSection
-        sectionEmoji="📱"
-        sectionTitle="Multi Channel Marketing Sri Lanka – Real Campaign Examples by Industry"
-        intro="See how multi-channel marketing campaigns work for different industries in Sri Lanka. Each campaign flow combines multiple channels for maximum impact."
-        subtitle="👇 Explore campaign flows for your industry"
-        industries={multiChannelIndustries}
-        whyTitle="🔥 Why Multi Channel Campaigns Deliver Better Results"
-        whyPoints={[
-          "Customers interact with your brand across multiple platforms",
-          "Each channel supports the next (awareness → trust → action)",
-          "Reach → Ads + Banner Advertising (Findit)",
-          "Engagement → Email + WhatsApp",
-          "Urgency → SMS reminders",
-          "Higher conversions, stronger brand recall, and better ROI",
-        ]}
-        whyFooter="👉 Result: Higher conversions, stronger brand recall, and better ROI with multi-channel marketing in Sri Lanka."
-        crossLinks={[
-          { to: "/email-marketing", label: "Email Marketing" },
-          { to: "/sms-marketing", label: "SMS Marketing" },
-          { to: "/whatsapp-marketing", label: "WhatsApp Marketing" },
-          { to: "/lead-generation-sri-lanka", label: "Lead Generation" },
-          { to: "/google-ads-sri-lanka", label: "Google Ads" },
-        ]}
-        ctaTitle="🚀 Start Your Multi Channel Campaign Today"
-        ctaSubtitle="Ready to scale your business with a powerful multi-channel strategy? Get a free campaign plan and consultation."
-        ctaWhatsAppMessage="Hi Buzz Connect, I'm interested in multi-channel marketing campaigns for my business in Sri Lanka. Can I get a free campaign plan?"
-        ctaButtonText="Get Free Campaign Plan"
-      />
-
-      {/* Speed + Scale */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Massive Reach in a Short Time</h2>
-        <p className="text-muted-foreground leading-relaxed mb-6">
-          Your campaign appears across <strong>4 powerful channels</strong> simultaneously — maximizing visibility and engagement in the shortest time.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          {[
-            { icon: Clock, text: "Launch in 48–72 hours", sub: "Fast execution" },
-            { icon: Users, text: "1.2M+ total reach", sub: "Multi-channel exposure" },
-            { icon: TrendingUp, text: "Results within days", sub: "Not months" },
-          ].map(({ icon: Icon, text, sub }) => (
-            <div key={text} className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 border border-border">
-              <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
-                <Icon className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <span className="text-sm font-bold text-foreground block">{text}</span>
-                <span className="text-xs text-muted-foreground">{sub}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
       {/* Channels Overview */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -568,7 +508,87 @@ const SpecialPackages = () => {
         </div>
       </motion.div>
 
-      {/* Comparison Table - Traditional vs Buzz Connect */}
+      {/* Packages — PRIMARY CONVERSION SECTION */}
+      <div className="mb-16" id="packages">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">✨ Choose Your Package</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
+            Our Multi-Channel Advertising Packages
+          </h2>
+          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+            Fully managed campaigns across SMS, Email, WhatsApp & Findit.lk — choose the reach that fits your goals.
+          </p>
+        </motion.div>
+        <ComparisonTable title="WhatsApp Marketing Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
+        <ComparisonTable title="SMS Marketing Packages" subtitle="Cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
+      </div>
+
+      {/* How It Works */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">How Our Special Packages Work</h2>
+        <p className="text-center text-muted-foreground mb-8">Simple. Fast. Effective.</p>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          {[
+            { icon: Target, title: "Choose Audience", desc: "Select your industry & target", step: 1 },
+            { icon: Rocket, title: "Launch Campaign", desc: "We execute in 48–72 hours", step: 2 },
+            { icon: Mail, title: "Reach Customers", desc: "Multi-channel delivery", step: 3 },
+            { icon: BarChart3, title: "Track Results", desc: "Monitor engagement & ROI", step: 4 },
+          ].map(({ icon: Icon, title, desc, step }, i) => (
+            <div key={title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">
+                {step}
+              </div>
+              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3">
+                <Icon className="w-6 h-6 text-secondary-foreground" />
+              </div>
+              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{title}</h3>
+              <p className="text-xs text-muted-foreground">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Speed + Scale */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Massive Reach in a Short Time</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          Your campaign appears across <strong>4 powerful channels</strong> simultaneously — maximizing visibility and engagement in the shortest time.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {[
+            { icon: Clock, text: "Launch in 48–72 hours", sub: "Fast execution" },
+            { icon: Users, text: "1.2M+ total reach", sub: "Multi-channel exposure" },
+            { icon: TrendingUp, text: "Results within days", sub: "Not months" },
+          ].map(({ icon: Icon, text, sub }) => (
+            <div key={text} className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 border border-border">
+              <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5 text-primary" />
+              </div>
+              <div>
+                <span className="text-sm font-bold text-foreground block">{text}</span>
+                <span className="text-xs text-muted-foreground">{sub}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Traditional vs Buzz Connect */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -607,26 +627,6 @@ const SpecialPackages = () => {
         </div>
       </motion.div>
 
-      {/* Packages */}
-      <div className="mb-16" id="packages">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">✨ Choose Your Package</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">
-            Our Multi-Channel Advertising Packages
-          </h2>
-          <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Fully managed campaigns across SMS, Email, WhatsApp & Findit.lk — choose the reach that fits your goals.
-          </p>
-        </motion.div>
-        <ComparisonTable title="WhatsApp Marketing Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
-        <ComparisonTable title="SMS Marketing Packages" subtitle="Cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
-      </div>
-
       {/* Findit.lk Advantage */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -658,6 +658,90 @@ const SpecialPackages = () => {
           💡 You don't just reach people — you <strong className="text-accent">capture demand</strong>. No other provider in Sri Lanka offers this.
         </p>
       </motion.div>
+
+      {/* Testimonials */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">What Our Clients Say</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {testimonials.map((quote, i) => (
+            <div key={i} className="p-6 rounded-xl bg-card shadow-card border border-border">
+              <div className="flex gap-1 mb-3">
+                {[...Array(5)].map((_, s) => <Star key={s} className="w-4 h-4 fill-accent text-accent" />)}
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed italic">"{quote}"</p>
+              <p className="text-xs font-semibold text-foreground mt-3">— Valued Client</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Who Should Use */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Who Should Use Multi-Channel Campaigns?</h2>
+        <p className="text-muted-foreground text-sm mb-8">If you need <strong className="text-foreground">quick results</strong>, this is the best solution.</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries", link: "/education-marketing-sri-lanka" },
+            { icon: Home, label: "Real Estate Companies", result: "→ Property leads", link: "/real-estate-marketing-sri-lanka" },
+            { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales", link: "/event-marketing-sri-lanka" },
+            { icon: ShoppingCart, label: "Restaurants & Food", result: "→ Customer traffic", link: "/restaurant-marketing-sri-lanka" },
+            { icon: Building2, label: "Hotels & Travel", result: "→ Bookings", link: "/hotel-marketing-sri-lanka" },
+            { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth", link: "/fashion-marketing-sri-lanka" },
+            { icon: Store, label: "Staff Recruitment", result: "→ Quality applicants", link: "/staff-recruitment-campaigns-sri-lanka" },
+            { icon: Rocket, label: "Finance & Insurance", result: "→ Lead generation", link: "/finance-marketing-sri-lanka" },
+          ].map(({ icon: Icon, label, result, link }) => (
+            <Link key={label} to={link} className="flex items-center gap-4 p-5 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 hover:shadow-md transition-all">
+              <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
+                <Icon className="w-5 h-5 text-secondary-foreground" />
+              </div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-sm font-bold text-foreground">{label}</span>
+                <span className="text-xs font-bold text-accent bg-accent/10 px-3 py-1 rounded-full">{result}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Industry Campaign Examples */}
+      <IndustryMarketingSection
+        sectionEmoji="📱"
+        sectionTitle="Multi Channel Marketing Sri Lanka – Real Campaign Examples by Industry"
+        intro="See how multi-channel marketing campaigns work for different industries in Sri Lanka. Each campaign flow combines multiple channels for maximum impact."
+        subtitle="👇 Explore campaign flows for your industry"
+        industries={multiChannelIndustries}
+        whyTitle="🔥 Why Multi Channel Campaigns Deliver Better Results"
+        whyPoints={[
+          "Customers interact with your brand across multiple platforms",
+          "Each channel supports the next (awareness → trust → action)",
+          "Reach → Ads + Banner Advertising (Findit)",
+          "Engagement → Email + WhatsApp",
+          "Urgency → SMS reminders",
+          "Higher conversions, stronger brand recall, and better ROI",
+        ]}
+        whyFooter="👉 Result: Higher conversions, stronger brand recall, and better ROI with multi-channel marketing in Sri Lanka."
+        crossLinks={[
+          { to: "/email-marketing", label: "Email Marketing" },
+          { to: "/sms-marketing", label: "SMS Marketing" },
+          { to: "/whatsapp-marketing", label: "WhatsApp Marketing" },
+          { to: "/lead-generation-sri-lanka", label: "Lead Generation" },
+          { to: "/google-ads-sri-lanka", label: "Google Ads" },
+        ]}
+        ctaTitle="🚀 Start Your Multi Channel Campaign Today"
+        ctaSubtitle="Ready to scale your business with a powerful multi-channel strategy? Get a free campaign plan and consultation."
+        ctaWhatsAppMessage="Hi Buzz Connect, I'm interested in multi-channel marketing campaigns for my business in Sri Lanka. Can I get a free campaign plan?"
+        ctaButtonText="Get Free Campaign Plan"
+      />
 
       {/* What You Can Achieve */}
       <motion.div
@@ -698,39 +782,6 @@ const SpecialPackages = () => {
         </div>
       </motion.div>
 
-      {/* Who Should Use */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Who Should Use Multi-Channel Campaigns?</h2>
-        <p className="text-muted-foreground text-sm mb-8">If you need <strong className="text-foreground">quick results</strong>, this is the best solution.</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            { icon: GraduationCap, label: "Education Institutes", result: "→ Student inquiries", link: "/education-marketing-sri-lanka" },
-            { icon: Home, label: "Real Estate Companies", result: "→ Property leads", link: "/real-estate-marketing-sri-lanka" },
-            { icon: Calendar, label: "Event Organizers", result: "→ Ticket sales", link: "/event-marketing-sri-lanka" },
-            { icon: ShoppingCart, label: "Restaurants & Food", result: "→ Customer traffic", link: "/restaurant-marketing-sri-lanka" },
-            { icon: Building2, label: "Hotels & Travel", result: "→ Bookings", link: "/hotel-marketing-sri-lanka" },
-            { icon: Shirt, label: "Fashion & Clothing", result: "→ Brand growth", link: "/fashion-marketing-sri-lanka" },
-            { icon: Store, label: "Staff Recruitment", result: "→ Quality applicants", link: "/staff-recruitment-campaigns-sri-lanka" },
-            { icon: Rocket, label: "Finance & Insurance", result: "→ Lead generation", link: "/finance-marketing-sri-lanka" },
-          ].map(({ icon: Icon, label, result, link }) => (
-            <Link key={label} to={link} className="flex items-center gap-4 p-5 rounded-xl bg-card shadow-card border border-border hover:border-accent/40 hover:shadow-md transition-all">
-              <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shrink-0">
-                <Icon className="w-5 h-5 text-secondary-foreground" />
-              </div>
-              <div className="flex items-center gap-3 flex-wrap">
-                <span className="text-sm font-bold text-foreground">{label}</span>
-                <span className="text-xs font-bold text-accent bg-accent/10 px-3 py-1 rounded-full">{result}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </motion.div>
-
       {/* Use Cases Checklist */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -764,57 +815,6 @@ const SpecialPackages = () => {
             <div key={item} className="flex items-center gap-3 py-2">
               <CheckCircle className="w-4 h-4 text-accent shrink-0" />
               <span className="text-sm text-muted-foreground">{item}</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* How It Works */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">How Our Special Packages Work</h2>
-        <p className="text-center text-muted-foreground mb-8">Simple. Fast. Effective.</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          {[
-            { icon: Target, title: "Choose Audience", desc: "Select your industry & target", step: 1 },
-            { icon: Rocket, title: "Launch Campaign", desc: "We execute in 48–72 hours", step: 2 },
-            { icon: Mail, title: "Reach Customers", desc: "Multi-channel delivery", step: 3 },
-            { icon: BarChart3, title: "Track Results", desc: "Monitor engagement & ROI", step: 4 },
-          ].map(({ icon: Icon, title, desc, step }, i) => (
-            <div key={title} className="flex flex-col items-center text-center p-5 rounded-xl bg-card shadow-card border border-border relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-7 h-7 rounded-full gradient-accent flex items-center justify-center text-xs font-bold text-primary">
-                {step}
-              </div>
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mt-3 mb-3">
-                <Icon className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <h3 className="font-heading font-semibold text-foreground text-sm mb-1">{title}</h3>
-              <p className="text-xs text-muted-foreground">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Testimonials */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">What Our Clients Say</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {testimonials.map((quote, i) => (
-            <div key={i} className="p-6 rounded-xl bg-card shadow-card border border-border">
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, s) => <Star key={s} className="w-4 h-4 fill-accent text-accent" />)}
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed italic">"{quote}"</p>
-              <p className="text-xs font-semibold text-foreground mt-3">— Valued Client</p>
             </div>
           ))}
         </div>
