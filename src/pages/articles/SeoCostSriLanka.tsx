@@ -128,7 +128,7 @@ const SeoCostSriLanka = () => {
               ))}
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              An experienced <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO specialist in Sri Lanka</Link> will create a custom strategy that delivers real ROI for your business.
+              An experienced <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO specialist in Sri Lanka</Link> will create a custom strategy that delivers real ROI for your business. View our <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO packages Sri Lanka</Link> to find the right plan for your budget.
             </p>
           </div>
 

@@ -257,7 +257,7 @@ const SeoInvestmentSriLanka = () => {
               SEO is one of the most powerful and sustainable marketing strategies available today. It's not just about rankings — it's about building a strong digital foundation for long-term success.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              If you're serious about growth, working with a reliable SEO company in Sri Lanka can make all the difference. The businesses that invest in SEO today will be the ones dominating Google search results tomorrow.
+              If you're serious about growth, working with a reliable SEO company in Sri Lanka can make all the difference. The businesses that invest in SEO today will be the ones dominating Google search results tomorrow. Explore our <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO packages Sri Lanka</Link> to get started.
             </p>
           </div>
 

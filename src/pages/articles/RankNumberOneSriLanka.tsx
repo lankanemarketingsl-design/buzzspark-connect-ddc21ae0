@@ -370,7 +370,7 @@ const RankNumberOneSriLanka = () => {
               Ranking #1 on Google in Sri Lanka is not about doing everything — it's about doing the right strategy for your industry. Businesses that understand their audience, create valuable content, and build authority consistently are the ones that win.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Explore our complete <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO services in Sri Lanka</Link> and learn <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the best long-term investment</Link>.
+              Explore our complete <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO services in Sri Lanka</Link>, browse our <Link to="/seo-sri-lanka" className="text-accent hover:underline font-semibold">SEO packages Sri Lanka</Link>, and learn <Link to="/seo-investment-long-term-strategy-sri-lanka" className="text-accent hover:underline font-semibold">why SEO is the best long-term investment</Link>.
             </p>
           </div>
 
