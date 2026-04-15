@@ -60,6 +60,9 @@ const faqs = [
   { q: "What is multi-channel marketing?", a: "Multi-channel marketing uses multiple platforms together — SMS, email, WhatsApp, landing pages, and retargeting ads — to improve engagement and conversion rates." },
   { q: "How much does SMS marketing cost in Sri Lanka?", a: "Costs depend on volume, database selection, and campaign strategy. Pricing starts from LKR 2 per message. Contact us for a customized quote." },
   { q: "How many people can I reach?", a: "You can reach 600,000+ targeted contacts across Sri Lanka using our corporate, VIP, marketing, and district-wise databases." },
+  { q: "Which industries benefit most from SMS marketing in Sri Lanka?", a: "SMS marketing in Sri Lanka works across all major industries including hotels, education, real estate, e-commerce, restaurants, healthcare, automotive, finance, fashion, events, recruitment, and travel. Each industry can leverage targeted SMS campaigns for instant leads, bookings, and sales." },
+  { q: "How fast are SMS campaigns delivered?", a: "SMS campaigns are delivered instantly to mobile users across Sri Lanka. Messages reach recipients within seconds, making SMS marketing ideal for time-sensitive offers, flash sales, and urgent promotions." },
+  { q: "Can I combine SMS marketing with email and WhatsApp campaigns?", a: "Yes! Buzz Connect offers integrated multi-channel campaigns combining SMS marketing with email marketing, WhatsApp marketing, and Findit.lk web advertising for maximum reach and ROI across Sri Lanka." },
 ];
 
 const SmsMarketing = () => {
@@ -375,6 +378,157 @@ const SmsMarketing = () => {
               <Rocket className="w-5 h-5 mr-2" /> View Multi-Channel Campaigns
             </Button>
           </Link>
+        </div>
+      </motion.div>
+
+      {/* SMS Industry Section */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">📱 SMS Marketing Services for Every Industry in Sri Lanka</h2>
+          <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">Looking for SMS marketing in Sri Lanka that delivers instant results? With open rates as high as 98%, SMS is one of the fastest and most effective ways to reach customers and drive immediate action.</p>
+          <p className="text-foreground font-semibold mt-3">Our targeted SMS campaigns help businesses across Sri Lanka generate leads, increase sales, and engage customers in real time.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              emoji: "🏨", title: "Hotel SMS Marketing Sri Lanka – Fill Rooms Fast",
+              campaigns: ["Last-minute room deals & weekend offers", "Seasonal promotions (Avurudu, holidays)", "Booking confirmations & reminders"],
+              results: ["Instant bookings", "Higher occupancy rates", "Reduced unsold inventory"],
+              link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing"
+            },
+            {
+              emoji: "🎓", title: "Education SMS Marketing Sri Lanka – Drive Student Inquiries",
+              campaigns: ["Course intake alerts", "Deadline reminders for registration", "Open day / seminar invitations"],
+              results: ["Immediate student inquiries", "Faster enrollment decisions", "Higher response rates than email"],
+              link: "/education-marketing", linkText: "education marketing"
+            },
+            {
+              emoji: "🏠", title: "Real Estate SMS Marketing Sri Lanka – Generate Property Leads",
+              campaigns: ["Property launch alerts", "Price drop & limited-unit promotions", "Site visit invitations"],
+              results: ["Direct buyer inquiries", "Faster conversions", "High-intent leads"],
+              link: "/real-estate-marketing", linkText: "real estate marketing"
+            },
+            {
+              emoji: "🛍️", title: "Retail & E-commerce SMS Marketing – Boost Sales Instantly",
+              campaigns: ["Flash sales & limited-time discounts", "Promo codes & exclusive offers", "Abandoned cart reminders"],
+              results: ["Immediate purchases", "Higher conversion rates", "Increased repeat customers"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🍽️", title: "Restaurant SMS Marketing Sri Lanka – Increase Daily Orders",
+              campaigns: ["Lunch / dinner deals", "Daily specials & promotions", "Reservation confirmations"],
+              results: ["Increased foot traffic", "More repeat customers", "Higher daily revenue"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "💼", title: "Recruitment SMS Marketing Sri Lanka – Hire Faster",
+              campaigns: ["Job vacancy alerts", "Interview reminders", "Bulk hiring campaigns"],
+              results: ["Faster applicant response", "More qualified candidates", "Reduced hiring time"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏥", title: "Healthcare SMS Marketing Sri Lanka – Improve Patient Engagement",
+              campaigns: ["Appointment reminders", "Health check promotions", "Follow-up messages"],
+              results: ["Reduced no-shows", "Increased bookings", "Better patient retention"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🚗", title: "Automotive SMS Marketing Sri Lanka – Increase Inquiries",
+              campaigns: ["Vehicle offers & promotions", "Service reminders", "New model launches"],
+              results: ["More showroom visits", "Increased inquiries", "Better customer retention"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏦", title: "Finance & Insurance SMS Marketing – Generate Leads",
+              campaigns: ["Loan & leasing offers", "Payment reminders", "Investment promotions"],
+              results: ["High-quality leads", "Faster decision-making", "Strong ROI"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "👗", title: "Fashion & Clothing SMS Marketing – Drive Sales",
+              campaigns: ["New arrivals & collections", "Seasonal discounts", "Exclusive VIP offers"],
+              results: ["Increased store visits", "Higher sales", "Strong brand recall"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🎉", title: "Event SMS Marketing Sri Lanka – Maximize Attendance",
+              campaigns: ["Event announcements", "Ticket promotions", "Reminder alerts"],
+              results: ["Higher attendance rates", "Faster ticket sales", "Better engagement"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🏢", title: "Corporate & B2B SMS Marketing – Reach Decision Makers",
+              campaigns: ["Business offers & promotions", "Service announcements", "Partnership campaigns"],
+              results: ["Direct reach to professionals", "Higher B2B conversions", "Faster responses"],
+              link: null, linkText: ""
+            },
+            {
+              emoji: "🧳", title: "Travel & Tourism SMS Marketing – Promote Packages",
+              campaigns: ["Tour deals & holiday packages", "Last-minute travel offers", "Booking confirmations"],
+              results: ["Increased bookings", "Faster inquiries", "Higher campaign ROI"],
+              link: null, linkText: ""
+            },
+          ].map((ind) => (
+            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{ind.emoji} {ind.title}</h3>
+              <div className="mb-3">
+                <p className="text-foreground font-semibold text-sm mb-1.5">Campaign Ideas:</p>
+                <ul className="space-y-1">
+                  {ind.campaigns.map((c) => (
+                    <li key={c} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle className="w-3.5 h-3.5 text-accent flex-shrink-0" /> {c}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mb-3">
+                <p className="text-foreground font-semibold text-sm mb-1.5">Results You Can Expect:</p>
+                <ul className="space-y-1">
+                  {ind.results.map((r) => (
+                    <li key={r} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Rocket className="w-3.5 h-3.5 text-secondary-foreground flex-shrink-0" /> {r}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {ind.link && (
+                <Link to={ind.link} className="text-accent hover:underline text-sm font-semibold">
+                  Learn about {ind.linkText} →
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 p-6 rounded-2xl bg-card shadow-card border border-border">
+          <h3 className="font-heading text-xl font-bold text-foreground mb-4">🔥 Why SMS Marketing Works So Well in Sri Lanka</h3>
+          <ul className="space-y-2">
+            {[
+              "Messages are delivered instantly to mobile users",
+              "Extremely high open rates (near 98%)",
+              "Perfect for urgent promotions & reminders",
+              "Cost-effective compared to traditional advertising",
+              "Works across all industries",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
+                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-foreground font-semibold mt-4 text-sm">👉 With high mobile usage in Sri Lanka, SMS marketing is one of the most direct ways to reach customers</p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link to="/email-marketing" className="text-accent hover:underline text-sm font-semibold">Email marketing →</Link>
+            <Link to="/whatsapp-marketing" className="text-accent hover:underline text-sm font-semibold">WhatsApp marketing →</Link>
+          </div>
+        </div>
+
+        <div className="mt-8 p-6 rounded-2xl gradient-hero text-center">
+          <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">🚀 Start Your SMS Marketing Campaign in Sri Lanka Today</h3>
+          <p className="text-primary-foreground/80 mb-4">Ready to reach thousands of customers instantly?</p>
+          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20an%20SMS%20marketing%20campaign%20for%20my%20industry." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
+            <MessageSquare className="w-4 h-4" /> Get a Free Consultation & Targeting Plan
+          </a>
         </div>
       </motion.div>
 
