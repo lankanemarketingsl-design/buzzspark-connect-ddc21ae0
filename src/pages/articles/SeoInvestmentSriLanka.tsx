@@ -266,7 +266,7 @@ const SeoInvestmentSriLanka = () => {
             <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Ready to Grow Your Business with SEO?</h3>
             <p className="text-primary-foreground/80 mb-4">Work with a trusted SEO specialist in Sri Lanka and start building long-term visibility and consistent customer inquiries.</p>
             <Link to="/seo-sri-lanka" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-              Explore SEO Packages
+              Start Your SEO Journey
             </Link>
           </div>
         </motion.article>

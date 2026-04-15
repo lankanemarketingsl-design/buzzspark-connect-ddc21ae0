@@ -137,7 +137,7 @@ const SeoCostSriLanka = () => {
             <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">Get a Custom SEO Quote</h3>
             <p className="text-primary-foreground/80 mb-4">Contact us today for a tailored SEO plan that fits your budget and goals.</p>
             <Link to="/seo-sri-lanka" className="inline-block px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-              View SEO Packages
+              Talk to an SEO Expert
             </Link>
           </div>
         </motion.article>
