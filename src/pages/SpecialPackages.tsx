@@ -440,7 +440,10 @@ const SpecialPackages = () => {
           </div>
         </div>
 
-        {/* Stats */}
+        {/* Stats — Proven Performance */}
+        <div className="text-center mb-3">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">📊 Proven Performance</span>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
           {[
             { value: "500+", label: "Campaigns Executed" },
@@ -454,6 +457,7 @@ const SpecialPackages = () => {
             </div>
           ))}
         </div>
+        <p className="text-center text-muted-foreground text-sm">👉 Trusted by businesses that want real results, not just impressions</p>
       </motion.div>
 
       {/* Intro */}
@@ -463,8 +467,11 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto text-center"
       >
+        <p className="text-lg sm:text-xl font-bold text-accent mb-3">
+          👉 Launch fast. Scale instantly. Get results within days — not months.
+        </p>
         <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-4">
-          Stop wasting money on single-channel campaigns. Our <strong className="text-foreground">integrated multi-channel system</strong> puts your brand in front of customers across <strong className="text-foreground">Email, SMS, WhatsApp & Findit.lk — all at once</strong>. Results start within days, not months.
+          Stop wasting budget on single-channel campaigns that limit your reach. Our <strong className="text-foreground">multi-channel marketing system</strong> puts your brand in front of your audience <strong className="text-foreground">everywhere</strong>.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-6">
           Powered by <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp</Link> & <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link> expertise.
@@ -487,16 +494,16 @@ const SpecialPackages = () => {
         className="mb-16"
       >
         <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">4 Channels, 1 Campaign</span>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Your Campaign Appears Across</h2>
-          <p className="text-muted-foreground mt-2">One campaign = 4 powerful channels working together for maximum visibility</p>
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">⚡ Why This Works</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">Multiple Touchpoints = Higher Trust, Faster Conversions</h2>
+          <p className="text-muted-foreground mt-2">One campaign across 4 powerful channels — maximum visibility, better ROI</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           {[
-            { icon: Mail, label: "Email Marketing", reach: "350,000+" },
-            { icon: Smartphone, label: "SMS Marketing", reach: "400,000+" },
-            { icon: MessageSquare, label: "WhatsApp Marketing", reach: "175,000+" },
-            { icon: Globe, label: "Findit.lk Exposure", reach: "Active Users" },
+            { icon: Mail, label: "Email Marketing", reach: "Detailed Engagement" },
+            { icon: Smartphone, label: "SMS Marketing", reach: "Instant Attention" },
+            { icon: MessageSquare, label: "WhatsApp Bulk Messaging", reach: "Mass Awareness" },
+            { icon: Globe, label: "Findit.lk Exposure", reach: "Continuous Visibility" },
           ].map(({ icon: Icon, label, reach }, i) => (
             <motion.div
               key={label}
@@ -587,15 +594,16 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-card shadow-card border border-border"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Massive Reach in a Short Time</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-2">🔥 Built for Speed, Scale & Immediate Impact</h2>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          Your campaign appears across <strong>4 powerful channels</strong> simultaneously — maximizing visibility and engagement in the shortest time.
+          While others build reach slowly, <strong className="text-foreground">you dominate instantly</strong>. Your campaign appears across 4 powerful channels simultaneously.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { icon: Clock, text: "Launch in 48–72 hours", sub: "Fast execution" },
-            { icon: Users, text: "1.2M+ total reach", sub: "Multi-channel exposure" },
-            { icon: TrendingUp, text: "Results within days", sub: "Not months" },
+            { icon: Rocket, text: "Launch within 48–72 hours", sub: "Fast execution" },
+            { icon: Target, text: "1M+ targeted users", sub: "Across Sri Lanka" },
+            { icon: Zap, text: "Immediate exposure", sub: "Multiple platforms" },
+            { icon: RefreshCw, text: "Consistent visibility", sub: "Until conversion" },
           ].map(({ icon: Icon, text, sub }) => (
             <div key={text} className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 border border-border">
               <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
@@ -658,17 +666,17 @@ const SpecialPackages = () => {
       >
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-8 h-8 text-accent" />
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">Special Packages Powered by Findit.lk</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">💥 One Campaign. Multiple Channels. Maximum Results.</h2>
         </div>
         <p className="text-muted-foreground leading-relaxed mb-6">
-          Most agencies only <em>send</em> messages. We place your brand on a <strong className="text-foreground">high-traffic platform</strong> where users are actively searching for products and services like yours.
+          Instead of relying on one platform, we create <strong className="text-foreground">integrated campaigns</strong> that reach customers faster, reinforce your message across channels, and increase conversion rates significantly. This is how modern marketing wins in Sri Lanka.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           {[
-            "Category-based visibility across industries",
-            "Banner placements on high-traffic pages",
-            "Exposure to actively searching audiences",
-            "Continuous awareness even after campaigns end",
+            "Reach customers faster across multiple platforms",
+            "Reinforce your message with consistent multi-channel presence",
+            "Increase conversion rates significantly",
+            "Findit.lk integration for continuous visibility & demand capture",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
               <CheckCircle className="w-5 h-5 text-accent shrink-0" />
@@ -677,7 +685,7 @@ const SpecialPackages = () => {
           ))}
         </div>
         <p className="text-muted-foreground text-sm italic">
-          💡 You don't just reach people — you <strong className="text-accent">capture demand</strong>. No other provider in Sri Lanka offers this.
+          💡 No other provider in Sri Lanka offers Findit.lk integration — you don't just reach people, you <strong className="text-accent">capture demand</strong>.
         </p>
       </motion.div>
 
@@ -688,7 +696,8 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">What Our Clients Say</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-2">What Our Clients Say</h2>
+        <p className="text-center text-muted-foreground text-sm mb-8">👉 Trusted by businesses that want real results</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {testimonials.map((quote, i) => (
             <div key={i} className="p-6 rounded-xl bg-card shadow-card border border-border">
@@ -859,12 +868,12 @@ const SpecialPackages = () => {
         viewport={{ once: true }}
         className="text-center p-10 rounded-2xl gradient-hero text-primary-foreground"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Launch Your Campaign in 48 Hours</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">🚀 Start Your Campaign Today</h2>
         <p className="text-primary-foreground/80 mb-2 max-w-xl mx-auto">
-          Reach thousands of customers this week through SMS, WhatsApp, Email & Findit.lk — the fastest way to boost awareness in Sri Lanka.
+          Ready to reach thousands (or millions) of customers fast? Get a custom plan based on your goals.
         </p>
-        <p className="text-primary-foreground/70 text-sm mb-6">
-          👉 Custom pricing for your requirements | Multi-channel strategy included
+        <p className="text-primary-foreground/60 text-sm font-medium mb-6">
+          👉 "From zero to massive reach in just days — powered by multi-channel marketing."
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
