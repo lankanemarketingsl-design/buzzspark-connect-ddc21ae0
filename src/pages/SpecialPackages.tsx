@@ -534,6 +534,20 @@ const SpecialPackages = () => {
         </motion.div>
         <ComparisonTable title="WhatsApp Marketing Packages" subtitle="High open rates, direct engagement, personal touch" features={waFeatures} emoji="💬" />
         <ComparisonTable title="SMS Marketing Packages" subtitle="Cost-effective way to reach large audiences instantly" features={smsFeatures} emoji="📱" />
+
+        {/* Mid-page CTA */}
+        <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-8 p-6 rounded-2xl bg-accent/5 border border-accent/20 text-center">
+          <p className="text-foreground font-bold mb-1">Not sure which package fits?</p>
+          <p className="text-muted-foreground text-sm mb-4">Tell us your goal — we'll recommend the best option & customize pricing.</p>
+          <a
+            href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20multi-channel%20package."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
+          >
+            Get Expert Advice on WhatsApp <ArrowRight className="w-4 h-4" />
+          </a>
+        </motion.div>
       </div>
 
       {/* How It Works */}
