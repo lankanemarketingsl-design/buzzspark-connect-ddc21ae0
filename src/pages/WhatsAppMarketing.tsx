@@ -1,5 +1,6 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
+import IndustryMarketingSection from "@/components/IndustryMarketingSection";
 import { CheckCircle, Users, Crown, Target, Briefcase, MessageSquare, Zap, Eye, RefreshCw, TrendingUp, Globe, HelpCircle, Rocket, Image, Mail, Smartphone, ArrowRight, Shield } from "lucide-react";
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
@@ -582,156 +583,35 @@ const WhatsAppMarketing = () => {
         </div>
       </motion.div>
 
-      {/* WhatsApp Industry Section */}
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">💬 WhatsApp Marketing Services for Every Industry in Sri Lanka</h2>
-          <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">Looking for WhatsApp marketing in Sri Lanka that drives real conversations and conversions? With extremely high engagement rates (up to ~98% message opens) and real-time communication, WhatsApp is one of the most powerful marketing tools available today.</p>
-          <p className="text-foreground font-semibold mt-3">Our WhatsApp marketing campaigns help businesses connect directly with customers, generate leads, and close sales — all in one chat.</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              emoji: "🏨", title: "Hotel WhatsApp Marketing Sri Lanka – Increase Direct Bookings",
-              campaigns: ["Room availability & last-minute deals", "Package promotions (weekend, holiday offers)", "Instant booking via chat"],
-              results: ["Faster booking decisions", "More direct reservations", "Higher customer engagement"],
-              link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing"
-            },
-            {
-              emoji: "🎓", title: "Education WhatsApp Marketing Sri Lanka – Convert Student Leads",
-              campaigns: ["Course inquiries via chat", "Instant responses to student questions", "Enrollment guidance through WhatsApp"],
-              results: ["Higher conversion from inquiry to enrollment", "Real-time communication with students", "Better engagement than email"],
-              link: "/education-marketing", linkText: "education marketing"
-            },
-            {
-              emoji: "🏠", title: "Real Estate WhatsApp Marketing Sri Lanka – Close Deals Faster",
-              campaigns: ["Property details shared instantly (images, videos)", "Site visit bookings via chat", "Investor targeting campaigns"],
-              results: ["Faster buyer decisions", "High-quality property leads", "Shorter sales cycles"],
-              link: "/real-estate-marketing", linkText: "real estate marketing"
-            },
-            {
-              emoji: "🛍️", title: "E-commerce WhatsApp Marketing Sri Lanka – Turn Chats into Sales",
-              campaigns: ["Product catalog sharing", "Order placement via WhatsApp", "Abandoned cart recovery messages"],
-              results: ["Higher conversion rates", "Faster purchase decisions", "Increased repeat customers"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🍽️", title: "Restaurant WhatsApp Marketing Sri Lanka – Increase Orders",
-              campaigns: ["Menu sharing & promotions", "Table reservations via chat", "Daily offers & deals"],
-              results: ["More direct orders", "Increased customer engagement", "Higher repeat visits"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "💼", title: "Recruitment WhatsApp Marketing Sri Lanka – Hire Faster",
-              campaigns: ["Job alerts via WhatsApp", "Candidate screening chats", "Interview scheduling"],
-              results: ["Faster hiring process", "Higher response rates", "Better candidate engagement"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏥", title: "Healthcare WhatsApp Marketing Sri Lanka – Improve Patient Experience",
-              campaigns: ["Appointment booking & reminders", "Doctor consultations (initial queries)", "Health campaign promotions"],
-              results: ["Reduced no-shows", "Increased bookings", "Better patient communication"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🚗", title: "Automotive WhatsApp Marketing Sri Lanka – Increase Inquiries",
-              campaigns: ["Vehicle details & offers via chat", "Test drive bookings", "Service reminders"],
-              results: ["More showroom visits", "Faster inquiries", "Better customer retention"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏦", title: "Finance & Insurance WhatsApp Marketing – Generate Leads",
-              campaigns: ["Loan & leasing inquiries", "Instant eligibility checks", "Financial consultation chats"],
-              results: ["High-quality leads", "Faster decision-making", "Increased conversions"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "👗", title: "Fashion & Clothing WhatsApp Marketing – Sell Directly",
-              campaigns: ["Product catalogs & collections", "Order via WhatsApp chat", "VIP customer offers"],
-              results: ["Direct sales through chat", "Higher engagement", "Repeat purchases"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🎉", title: "Event WhatsApp Marketing Sri Lanka – Maximize Attendance",
-              campaigns: ["Event promotions & updates", "Ticket booking links", "Reminder notifications"],
-              results: ["Higher attendance rates", "Better engagement", "Faster ticket sales"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🏢", title: "Corporate & B2B WhatsApp Marketing – Close Deals Faster",
-              campaigns: ["Business proposals via WhatsApp", "Lead nurturing conversations", "Client follow-ups"],
-              results: ["Faster decision-making", "Higher B2B conversions", "Strong client relationships"],
-              link: null, linkText: ""
-            },
-            {
-              emoji: "🧳", title: "Travel & Tourism WhatsApp Marketing – Increase Bookings",
-              campaigns: ["Tour package promotions", "Travel inquiries handled instantly", "Booking confirmations"],
-              results: ["Increased travel bookings", "Faster responses", "Higher customer satisfaction"],
-              link: null, linkText: ""
-            },
-          ].map((ind) => (
-            <div key={ind.title} className="p-5 rounded-xl bg-card shadow-card border border-border">
-              <h3 className="font-heading text-lg font-bold text-foreground mb-3">{ind.emoji} {ind.title}</h3>
-              <div className="mb-3">
-                <p className="text-foreground font-semibold text-sm mb-1.5">Campaign Ideas:</p>
-                <ul className="space-y-1">
-                  {ind.campaigns.map((c) => (
-                    <li key={c} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="w-3.5 h-3.5 text-accent flex-shrink-0" /> {c}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mb-3">
-                <p className="text-foreground font-semibold text-sm mb-1.5">Results You Can Expect:</p>
-                <ul className="space-y-1">
-                  {ind.results.map((r) => (
-                    <li key={r} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Rocket className="w-3.5 h-3.5 text-secondary-foreground flex-shrink-0" /> {r}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {ind.link && (
-                <Link to={ind.link} className="text-accent hover:underline text-sm font-semibold">
-                  Learn about {ind.linkText} →
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-10 p-6 rounded-2xl bg-card shadow-card border border-border">
-          <h3 className="font-heading text-xl font-bold text-foreground mb-4">🔥 Why WhatsApp Marketing Works So Well in Sri Lanka</h3>
-          <ul className="space-y-2">
-            {[
-              "~98% message open rates (far higher than email)",
-              "Real-time, two-way communication with customers",
-              "Personalized conversations that build trust",
-              "Ability to send images, videos, and offers instantly",
-              "High conversion rates compared to traditional channels",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm text-foreground">
-                <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" /> {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-foreground font-semibold mt-4 text-sm">👉 WhatsApp allows businesses to create 1-to-1 connections at scale, improving engagement and sales</p>
-          <div className="mt-4 flex flex-wrap gap-3">
-            <Link to="/email-marketing" className="text-accent hover:underline text-sm font-semibold">Email marketing →</Link>
-            <Link to="/sms-marketing" className="text-accent hover:underline text-sm font-semibold">SMS marketing →</Link>
-          </div>
-        </div>
-
-        <div className="mt-8 p-6 rounded-2xl gradient-hero text-center">
-          <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">🚀 Start Your WhatsApp Marketing Campaign in Sri Lanka Today</h3>
-          <p className="text-primary-foreground/80 mb-4">Ready to turn conversations into customers?</p>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20start%20a%20WhatsApp%20marketing%20campaign%20for%20my%20industry." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity">
-            <MessageSquare className="w-4 h-4" /> Get a Free Consultation & Strategy Plan
-          </a>
-        </div>
-      </motion.div>
+      <IndustryMarketingSection
+        sectionEmoji="💬"
+        sectionTitle="WhatsApp Marketing Services for Every Industry in Sri Lanka"
+        intro="Looking for WhatsApp marketing in Sri Lanka that drives real conversations and conversions? With extremely high engagement rates (up to ~98% message opens) and real-time communication, WhatsApp is one of the most powerful marketing tools available today."
+        subtitle="Our WhatsApp marketing campaigns help businesses connect directly with customers, generate leads, and close sales — all in one chat."
+        industries={[
+          { emoji: "🏨", title: "Hotel WhatsApp Marketing Sri Lanka – Increase Direct Bookings", campaigns: ["Room availability & last-minute deals", "Package promotions (weekend, holiday offers)", "Instant booking via chat"], results: ["Faster booking decisions", "More direct reservations", "Higher customer engagement"], link: "/hotel-marketing-sri-lanka", linkText: "hotel marketing" },
+          { emoji: "🎓", title: "Education WhatsApp Marketing Sri Lanka – Convert Student Leads", campaigns: ["Course inquiries via chat", "Instant responses to student questions", "Enrollment guidance through WhatsApp"], results: ["Higher conversion from inquiry to enrollment", "Real-time communication with students", "Better engagement than email"], link: "/education-marketing", linkText: "education marketing" },
+          { emoji: "🏠", title: "Real Estate WhatsApp Marketing Sri Lanka – Close Deals Faster", campaigns: ["Property details shared instantly (images, videos)", "Site visit bookings via chat", "Investor targeting campaigns"], results: ["Faster buyer decisions", "High-quality property leads", "Shorter sales cycles"], link: "/real-estate-marketing", linkText: "real estate marketing" },
+          { emoji: "🛍️", title: "E-commerce WhatsApp Marketing Sri Lanka – Turn Chats into Sales", campaigns: ["Product catalog sharing", "Order placement via WhatsApp", "Abandoned cart recovery messages"], results: ["Higher conversion rates", "Faster purchase decisions", "Increased repeat customers"], link: null, linkText: "" },
+          { emoji: "🍽️", title: "Restaurant WhatsApp Marketing Sri Lanka – Increase Orders", campaigns: ["Menu sharing & promotions", "Table reservations via chat", "Daily offers & deals"], results: ["More direct orders", "Increased customer engagement", "Higher repeat visits"], link: null, linkText: "" },
+          { emoji: "💼", title: "Recruitment WhatsApp Marketing Sri Lanka – Hire Faster", campaigns: ["Job alerts via WhatsApp", "Candidate screening chats", "Interview scheduling"], results: ["Faster hiring process", "Higher response rates", "Better candidate engagement"], link: null, linkText: "" },
+          { emoji: "🏥", title: "Healthcare WhatsApp Marketing Sri Lanka – Improve Patient Experience", campaigns: ["Appointment booking & reminders", "Doctor consultations (initial queries)", "Health campaign promotions"], results: ["Reduced no-shows", "Increased bookings", "Better patient communication"], link: null, linkText: "" },
+          { emoji: "🚗", title: "Automotive WhatsApp Marketing Sri Lanka – Increase Inquiries", campaigns: ["Vehicle details & offers via chat", "Test drive bookings", "Service reminders"], results: ["More showroom visits", "Faster inquiries", "Better customer retention"], link: null, linkText: "" },
+          { emoji: "🏦", title: "Finance & Insurance WhatsApp Marketing – Generate Leads", campaigns: ["Loan & leasing inquiries", "Instant eligibility checks", "Financial consultation chats"], results: ["High-quality leads", "Faster decision-making", "Increased conversions"], link: null, linkText: "" },
+          { emoji: "👗", title: "Fashion & Clothing WhatsApp Marketing – Sell Directly", campaigns: ["Product catalogs & collections", "Order via WhatsApp chat", "VIP customer offers"], results: ["Direct sales through chat", "Higher engagement", "Repeat purchases"], link: null, linkText: "" },
+          { emoji: "🎉", title: "Event WhatsApp Marketing Sri Lanka – Maximize Attendance", campaigns: ["Event promotions & updates", "Ticket booking links", "Reminder notifications"], results: ["Higher attendance rates", "Better engagement", "Faster ticket sales"], link: null, linkText: "" },
+          { emoji: "🏢", title: "Corporate & B2B WhatsApp Marketing – Close Deals Faster", campaigns: ["Business proposals via WhatsApp", "Lead nurturing conversations", "Client follow-ups"], results: ["Faster decision-making", "Higher B2B conversions", "Strong client relationships"], link: null, linkText: "" },
+          { emoji: "🧳", title: "Travel & Tourism WhatsApp Marketing – Increase Bookings", campaigns: ["Tour package promotions", "Travel inquiries handled instantly", "Booking confirmations"], results: ["Increased travel bookings", "Faster responses", "Higher customer satisfaction"], link: null, linkText: "" },
+        ]}
+        whyTitle="🔥 Why WhatsApp Marketing Works So Well in Sri Lanka"
+        whyPoints={["~98% message open rates (far higher than email)", "Real-time, two-way communication with customers", "Personalized conversations that build trust", "Ability to send images, videos, and offers instantly", "High conversion rates compared to traditional channels"]}
+        whyFooter="👉 WhatsApp allows businesses to create 1-to-1 connections at scale, improving engagement and sales"
+        crossLinks={[{ to: "/email-marketing", label: "Email marketing" }, { to: "/sms-marketing", label: "SMS marketing" }]}
+        ctaTitle="🚀 Start Your WhatsApp Marketing Campaign in Sri Lanka Today"
+        ctaSubtitle="Ready to turn conversations into customers?"
+        ctaWhatsAppMessage="Hi Buzz Connect, I want to start a WhatsApp marketing campaign for my industry."
+        ctaButtonText="Get a Free Consultation & Strategy Plan"
+      />
 
       {/* FAQ */}
       <motion.div
