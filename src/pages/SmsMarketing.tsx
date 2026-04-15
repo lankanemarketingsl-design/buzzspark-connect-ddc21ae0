@@ -60,6 +60,9 @@ const faqs = [
   { q: "What is multi-channel marketing?", a: "Multi-channel marketing uses multiple platforms together — SMS, email, WhatsApp, landing pages, and retargeting ads — to improve engagement and conversion rates." },
   { q: "How much does SMS marketing cost in Sri Lanka?", a: "Costs depend on volume, database selection, and campaign strategy. Pricing starts from LKR 2 per message. Contact us for a customized quote." },
   { q: "How many people can I reach?", a: "You can reach 600,000+ targeted contacts across Sri Lanka using our corporate, VIP, marketing, and district-wise databases." },
+  { q: "Which industries benefit most from SMS marketing in Sri Lanka?", a: "SMS marketing in Sri Lanka works across all major industries including hotels, education, real estate, e-commerce, restaurants, healthcare, automotive, finance, fashion, events, recruitment, and travel. Each industry can leverage targeted SMS campaigns for instant leads, bookings, and sales." },
+  { q: "How fast are SMS campaigns delivered?", a: "SMS campaigns are delivered instantly to mobile users across Sri Lanka. Messages reach recipients within seconds, making SMS marketing ideal for time-sensitive offers, flash sales, and urgent promotions." },
+  { q: "Can I combine SMS marketing with email and WhatsApp campaigns?", a: "Yes! Buzz Connect offers integrated multi-channel campaigns combining SMS marketing with email marketing, WhatsApp marketing, and Findit.lk web advertising for maximum reach and ROI across Sri Lanka." },
 ];
 
 const SmsMarketing = () => {
