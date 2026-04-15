@@ -57,6 +57,9 @@ const faqs = [
   { q: "What is the minimum campaign size?", a: "The minimum send count is 30,000 contacts." },
   { q: "How much does WhatsApp marketing cost?", a: "Text messages start from just LKR 1 per message and video messages from LKR 2. Campaign packages start from LKR 30,000." },
   { q: "Can I target specific audiences?", a: "Yes, we offer corporate, VIP, marketing, HR, gender-wise, and district-wise databases for precise targeting." },
+  { q: "Which industries benefit most from WhatsApp marketing in Sri Lanka?", a: "WhatsApp marketing in Sri Lanka works across all major industries including hotels, education, real estate, e-commerce, restaurants, healthcare, automotive, finance, fashion, events, recruitment, and travel. Each industry can leverage WhatsApp for instant conversations, lead generation, and direct sales." },
+  { q: "Can I combine WhatsApp marketing with email and SMS campaigns?", a: "Yes! Buzz Connect offers integrated multi-channel campaigns combining WhatsApp marketing with email marketing, SMS marketing, and Findit.lk web advertising for maximum reach and ROI across Sri Lanka." },
+  { q: "What makes WhatsApp marketing better than traditional advertising?", a: "WhatsApp marketing in Sri Lanka offers ~98% message open rates, real-time two-way communication, rich media support (images, videos), and personalized conversations — all at a fraction of the cost of traditional advertising." },
 ];
 
 const WhatsAppMarketing = () => {
