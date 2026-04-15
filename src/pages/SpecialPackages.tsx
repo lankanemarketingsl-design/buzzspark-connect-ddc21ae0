@@ -405,7 +405,7 @@ const SpecialPackages = () => {
     <ServicePageLayout
       badge="Multi Channel Marketing Sri Lanka"
       title="Reach 1 Million+ Customers in Days with Multi-Channel Campaigns"
-      subtitle="The fastest way to reach massive audiences in Sri Lanka — SMS, Email, WhatsApp & Findit.lk combined into one powerful campaign system."
+      subtitle="The fastest way to achieve massive reach in Sri Lanka. Combine Email, SMS, WhatsApp (Bulk Messaging) & Findit.lk banner advertising into one powerful, results-driven campaign system."
     >
       <SEOHead
         title="Multi-Channel Marketing Sri Lanka | Reach 1.2 Million+ in 72 Hours"
