@@ -9,91 +9,75 @@ import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
-import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
-/* ── Ad Types ── */
+/* ── Ad Channels ── */
 const adTypes = [
   {
     icon: MessageSquare,
     title: "WhatsApp Advertising",
-    desc: "WhatsApp marketing allows businesses to send direct messages to potential customers. With extremely high open rates, it is one of the fastest ways to generate engagement and responses.",
+    desc: "Direct communication with customers for instant engagement.",
     link: "/whatsapp-marketing",
   },
   {
     icon: Mail,
     title: "Email Advertising",
-    desc: "Email campaigns help businesses promote products, services, and offers to a large audience. It is ideal for building long-term customer relationships and repeat engagement.",
+    desc: "Send promotional campaigns to a large audience efficiently.",
     link: "/email-marketing",
   },
   {
     icon: Smartphone,
     title: "SMS Advertising",
-    desc: "SMS marketing delivers instant messages directly to users' phones. With near 100% open rates, it is perfect for time-sensitive promotions and announcements.",
+    desc: "Deliver time-sensitive messages with high open rates.",
     link: "/sms-marketing",
   },
   {
     icon: Layout,
     title: "Display Advertising",
-    desc: "Banner ads and featured placements increase visibility and brand awareness across websites and platforms.",
+    desc: "Increase brand visibility through banners and placements.",
     link: "/web-banner-advertising-sri-lanka",
-  },
-  {
-    icon: Share2,
-    title: "Social Media Advertising",
-    desc: "Platforms like Facebook and Instagram help businesses target users based on interests, behavior, and demographics.",
-    link: "/social-media-marketing-sri-lanka",
   },
 ];
 
-/* ── Process Steps ── */
-const processSteps = [
-  { title: "Audience Targeting", desc: "We identify and segment your ideal audience based on your business goals." },
-  { title: "Campaign Planning", desc: "We create a strategy tailored to your industry and target market." },
-  { title: "Creative Development", desc: "We design engaging messages and visuals that attract attention." },
-  { title: "Multi-Channel Execution", desc: "Your campaign is launched across WhatsApp, SMS, email, and other platforms." },
-  { title: "Performance Tracking", desc: "We monitor results and optimize campaigns for better performance." },
+/* ── Strategy Steps ── */
+const strategy = [
+  { title: "Audience Targeting", desc: "Identify and segment your ideal audience." },
+  { title: "Campaign Planning", desc: "Create a strategy tailored to your industry." },
+  { title: "Creative Execution", desc: "Design engaging messages and visuals." },
+  { title: "Multi-Channel Distribution", desc: "Launch across WhatsApp, SMS, email, and display." },
+  { title: "Performance Optimization", desc: "Monitor results and optimize for better ROI." },
 ];
 
 /* ── Benefits ── */
 const benefits = [
-  "Reach thousands of customers instantly",
-  "Highly targeted audience segmentation",
-  "Cost-effective compared to traditional advertising",
-  "Real-time performance tracking",
-  "Scalable for businesses of all sizes",
+  "Immediate reach",
+  "Highly targeted campaigns",
+  "Lower costs compared to traditional advertising",
+  "Real-time analytics",
+  "Scalable marketing solutions",
 ];
 
 /* ── Results ── */
 const results = [
-  "Reach over 500,000+ users per campaign",
-  "Millions of impressions generated",
-  "Increased inquiries and conversions",
-  "Fast engagement within 24–72 hours",
+  "Reach 500,000+ users",
+  "Increase brand awareness",
+  "Generate leads and inquiries",
+  "Improve conversions",
 ];
 
 /* ── Industries ── */
 const industries = [
-  { icon: GraduationCap, label: "Education & courses", link: "/education-marketing-sri-lanka" },
-  { icon: ShoppingCart, label: "Restaurants & food businesses", link: "/restaurant-marketing-sri-lanka" },
-  { icon: Building2, label: "E-commerce & retail", link: "/fashion-marketing-sri-lanka" },
+  { icon: GraduationCap, label: "Education", link: "/education-marketing-sri-lanka" },
+  { icon: ShoppingCart, label: "Retail & e-commerce", link: "/fashion-marketing-sri-lanka" },
+  { icon: Building2, label: "Restaurants", link: "/restaurant-marketing-sri-lanka" },
   { icon: Home, label: "Real estate", link: "/real-estate-marketing-sri-lanka" },
-  { icon: Heart, label: "Healthcare services", link: "/" },
-];
-
-/* ── Why BuzzConnect ── */
-const whyBuzz = [
-  "Proven multi-channel advertising system",
-  "Fast campaign launch (48–72 hours)",
-  "50M+ impressions delivered",
-  "500+ campaigns executed",
-  "Affordable and scalable solutions",
+  { icon: Heart, label: "Service-based businesses", link: "/" },
 ];
 
 /* ── FAQs ── */
 const faqs = [
-  { q: "What is the best online advertising method in Sri Lanka?", a: "WhatsApp, SMS, and email marketing are among the most effective due to high open rates and fast delivery." },
-  { q: "How quickly can online advertising campaigns start?", a: "Most campaigns can be launched within 48 hours." },
-  { q: "Is online advertising expensive?", a: "No, it is one of the most cost-effective ways to reach a large audience." },
+  { q: "What is online advertising?", a: "It is promoting businesses through digital platforms like WhatsApp, email, and SMS." },
+  { q: "Is online advertising effective in Sri Lanka?", a: "Yes, it is one of the most effective and fastest-growing marketing methods." },
+  { q: "How quickly can campaigns be launched?", a: "Most campaigns can be launched within 48 hours." },
   { q: "Can I target specific customers?", a: "Yes, campaigns can be targeted based on demographics, interests, and behavior." },
 ];
 
@@ -118,7 +102,7 @@ const OnlineAdvertising = () => {
         url: "https://buzzconnect.lk",
       },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Online advertising in Sri Lanka with WhatsApp, SMS & email campaigns. Reach targeted customers instantly and grow your business fast.",
+      description: "Online advertising in Sri Lanka with WhatsApp, SMS & email campaigns. Reach targeted customers instantly and grow your business.",
       serviceType: "Online Advertising",
       offers: {
         "@type": "AggregateOffer",
@@ -133,11 +117,11 @@ const OnlineAdvertising = () => {
     <ServicePageLayout
       badge="Online Advertising Sri Lanka"
       title="Online Advertising in Sri Lanka"
-      subtitle="Online advertising in Sri Lanka with WhatsApp, SMS & email campaigns. Reach targeted customers instantly and grow your business fast."
+      subtitle="The fastest way for businesses to connect with their target audience through digital platforms."
     >
       <SEOHead
-        title="Online Advertising Sri Lanka | Reach 500,000+ Customers Fast"
-        description="Online advertising in Sri Lanka with WhatsApp, SMS & email campaigns. Reach targeted customers instantly and grow your business fast."
+        title="Online Advertising Sri Lanka | Digital Advertising Solutions"
+        description="Online advertising in Sri Lanka with WhatsApp, SMS & email campaigns. Reach targeted customers instantly and grow your business."
         canonical="/online-advertising-sri-lanka"
         keywords="online advertising sri lanka, digital advertising sri lanka, online marketing sri lanka, digital marketing sri lanka"
         breadcrumbs={[
@@ -155,10 +139,10 @@ const OnlineAdvertising = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          <strong>Online advertising in Sri Lanka</strong> has become the most powerful way for businesses to reach customers quickly and efficiently. With the rapid growth of mobile users and internet access, digital platforms now dominate how brands connect with their audience.
+          <strong>Online advertising in Sri Lanka</strong> is the fastest way for businesses to connect with their target audience. With the rise of smartphones and internet usage, digital platforms have become the most effective channel for advertising.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          At BuzzConnect, we specialize in online advertising campaigns that deliver fast, measurable results. Using a combination of WhatsApp, SMS, email, and display advertising, we help businesses reach over <strong>500,000+ targeted users</strong> within just a few days.
+          BuzzConnect provides advanced online advertising solutions that help businesses reach large audiences quickly and efficiently using data-driven strategies.
         </p>
       </motion.div>
 
@@ -171,14 +155,11 @@ const OnlineAdvertising = () => {
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">What is Online Advertising?</h2>
         <p className="text-muted-foreground mb-4">
-          Online advertising refers to promoting your business through digital channels such as mobile messaging, email, websites, and online platforms. Unlike traditional advertising, online campaigns allow precise targeting, real-time tracking, and faster engagement.
-        </p>
-        <p className="text-muted-foreground">
-          This makes <strong>online advertising in Sri Lanka</strong> one of the most cost-effective and scalable marketing solutions available today.
+          Online advertising refers to promoting products and services through digital platforms such as messaging apps, email, and websites. It enables businesses to target specific audiences and track performance in real time.
         </p>
       </motion.div>
 
-      {/* ── Types of Online Advertising ── */}
+      {/* ── Key Online Advertising Channels ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -186,9 +167,9 @@ const OnlineAdvertising = () => {
         className="mb-16"
       >
         <div className="text-center mb-10">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Types of Online Advertising in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Key Online Advertising Channels</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {adTypes.map((ad, i) => (
             <motion.div
               key={ad.title}
@@ -213,30 +194,6 @@ const OnlineAdvertising = () => {
         </div>
       </motion.div>
 
-      {/* ── How It Works ── */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">How Online Advertising Works</h2>
-        <p className="text-muted-foreground mb-6">Our online advertising process is designed to maximize reach and results:</p>
-        <div className="space-y-4">
-          {processSteps.map((step, i) => (
-            <div key={step.title} className="flex items-start gap-4">
-              <div className="w-9 h-9 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span className="text-accent font-bold text-sm">{i + 1}</span>
-              </div>
-              <div>
-                <h3 className="font-heading font-bold text-foreground mb-1">{step.title}</h3>
-                <p className="text-sm text-muted-foreground">{step.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-
       {/* ── Benefits ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -253,21 +210,41 @@ const OnlineAdvertising = () => {
             </div>
           ))}
         </div>
-        <p className="text-muted-foreground">
-          Online advertising allows businesses to grow faster by reaching the right people at the right time.
-        </p>
       </motion.div>
 
-      {/* ── Real Campaign Results ── */}
+      {/* ── Our Strategy ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="mb-16 max-w-4xl mx-auto"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Real Campaign Results</h2>
-        <p className="text-muted-foreground mb-6">Our campaigns consistently deliver strong results:</p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Our Online Advertising Strategy</h2>
+        <p className="text-muted-foreground mb-6">We follow a structured approach:</p>
+        <div className="space-y-4">
+          {strategy.map((step, i) => (
+            <div key={step.title} className="flex items-start gap-4">
+              <div className="w-9 h-9 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-accent font-bold text-sm">{i + 1}</span>
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-foreground mb-1">{step.title}</h3>
+                <p className="text-sm text-muted-foreground">{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* ── Results You Can Expect ── */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Results You Can Expect</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {results.map((item) => (
             <div key={item} className="flex items-start gap-3">
               <TrendingUp className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -275,9 +252,6 @@ const OnlineAdvertising = () => {
             </div>
           ))}
         </div>
-        <p className="text-muted-foreground font-medium">
-          We focus on delivering <strong>real business outcomes</strong>, not just visibility.
-        </p>
       </motion.div>
 
       {/* ── Industries ── */}
@@ -288,7 +262,6 @@ const OnlineAdvertising = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Industries We Serve</h2>
-        <p className="text-muted-foreground mb-6">Our online advertising solutions are effective across multiple industries:</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {industries.map((ind) => (
             <Link
@@ -301,31 +274,9 @@ const OnlineAdvertising = () => {
             </Link>
           ))}
         </div>
-        <p className="text-muted-foreground mt-4">Each campaign is customized to suit the specific needs of the industry.</p>
       </motion.div>
 
-      {/* ── Why Choose BuzzConnect ── */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto p-8 sm:p-10 rounded-2xl bg-primary/5 border border-primary/20"
-      >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-6">Why Choose BuzzConnect for Online Advertising in Sri Lanka</h2>
-        <div className="space-y-3 mb-6">
-          {whyBuzz.map((item) => (
-            <div key={item} className="flex items-start gap-3">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <span className="text-foreground text-sm">{item}</span>
-            </div>
-          ))}
-        </div>
-        <p className="text-muted-foreground">
-          We combine strategy, technology, and data to deliver high-impact advertising campaigns.
-        </p>
-      </motion.div>
-
-      {/* ── Internal Link ── */}
+      {/* ── Internal Link to Main Page ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -377,7 +328,7 @@ const OnlineAdvertising = () => {
         className="text-center p-10 rounded-2xl gradient-hero"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">
-          Start Your Online Advertising Campaign in Sri Lanka Today
+          Launch Your Online Advertising Campaign Today
         </h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
           Reach thousands of potential customers and grow your business faster with BuzzConnect.
@@ -390,7 +341,7 @@ const OnlineAdvertising = () => {
             Get a Free Quote
           </Link>
           <a
-            href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20online%20advertising%20in%20Sri%20Lanka."
+            href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27m%20interested%20in%20online%20advertising%20in%20Sri%20Lanka."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 rounded-full bg-primary-foreground/10 text-primary-foreground font-bold border border-primary-foreground/20 hover:bg-primary-foreground/20 transition-colors"
@@ -399,7 +350,6 @@ const OnlineAdvertising = () => {
           </a>
         </div>
       </motion.div>
-      <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
   );
 };
