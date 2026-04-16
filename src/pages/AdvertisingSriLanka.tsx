@@ -15,6 +15,7 @@ import RelatedArticles from "@/components/RelatedArticles";
 const tocItems = [
   { id: "what-is", label: "What is Advertising in Sri Lanka?" },
   { id: "evolution", label: "The Evolution of Advertising" },
+  { id: "digital-audience", label: "Digital Audience in Sri Lanka" },
   { id: "types", label: "Types of Advertising" },
   { id: "why-important", label: "Why Advertising is Important" },
   { id: "challenges", label: "Challenges Without Advertising" },
@@ -24,10 +25,61 @@ const tocItems = [
   { id: "case-studies", label: "Case Studies" },
   { id: "industries", label: "Industries We Serve" },
   { id: "why-buzzconnect", label: "Why Choose BuzzConnect" },
-  
   { id: "comparison", label: "Digital vs Traditional" },
   { id: "future", label: "Future of Advertising" },
   { id: "faq", label: "FAQs" },
+];
+
+/* ── Digital Audience Stats ── */
+const digitalAudienceStats = [
+  {
+    icon: Globe,
+    title: "Massive & Growing Online Audience",
+    stat: "13.9 Million",
+    statLabel: "Internet Users (2025)",
+    details: [
+      "59.7% internet penetration rate",
+      "+1.5 million new users added in just one year",
+      "+7% annual growth rate",
+    ],
+    insight: "Sri Lanka is rapidly moving towards full digital adoption, with millions of new users coming online each year. This means your advertising reaches a larger audience every month.",
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile-First Country",
+    stat: "29.3 Million",
+    statLabel: "Mobile Connections",
+    details: [
+      "127% of the population (multi-device usage)",
+      "Mobile is the primary internet access method",
+      "High smartphone penetration across all demographics",
+    ],
+    insight: "Most Sri Lankans access the internet via mobile devices, making mobile-first advertising through WhatsApp, SMS, and responsive email campaigns essential for maximum reach.",
+  },
+  {
+    icon: Users,
+    title: "High Engagement Levels",
+    stat: "9 Million",
+    statLabel: "Social Media Users",
+    details: [
+      "38.7% of the total population active on social media",
+      "Average 17.7 GB data consumption per user/month",
+      "Rapid increase in video & content consumption",
+    ],
+    insight: "Sri Lankan users are consuming more digital content than ever — making it the perfect environment for video ads, email campaigns, WhatsApp marketing, and display advertising.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Untapped Market Opportunity",
+    stat: "40%",
+    statLabel: "Population Still Offline",
+    details: [
+      "Millions of consumers are still transitioning online",
+      "Early advertisers gain a strong first-mover advantage",
+      "Multi-channel marketing bridges the digital divide",
+    ],
+    insight: "While digital adoption is growing rapidly, a significant portion of the population is still transitioning online — making multi-channel marketing (SMS + WhatsApp + Email) highly effective for reaching both digital and offline audiences.",
+  },
 ];
 
 /* ── Types of Advertising ── */
@@ -375,6 +427,62 @@ const AdvertisingSriLanka = () => {
           <p className="text-muted-foreground mt-6">
             These factors have fundamentally changed how <strong>advertising in Sri Lanka</strong> works. Businesses that embrace digital and mobile-first advertising strategies are seeing significantly better results compared to those still relying solely on traditional methods.
           </p>
+        </motion.div>
+
+        {/* ── Digital Audience in Sri Lanka ── */}
+        <motion.div id="digital-audience" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 scroll-mt-24">
+          <div className="text-center mb-10">
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Digital Audience in Sri Lanka — Why Online Advertising Works</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Sri Lanka's digital landscape is booming. Here's the real data that proves why online advertising delivers the best results for businesses today.</p>
+          </div>
+
+          {/* Key headline stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+            {[
+              { value: "13.9M", label: "Internet Users" },
+              { value: "29.3M", label: "Mobile Connections" },
+              { value: "9M", label: "Social Media Users" },
+              { value: "+7%", label: "Annual Growth" },
+            ].map(s => (
+              <div key={s.label} className="text-center p-4 rounded-2xl bg-accent/10 border border-accent/20">
+                <div className="text-2xl sm:text-3xl font-bold text-accent">{s.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Detailed cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {digitalAudienceStats.map((item, i) => (
+              <motion.div key={item.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-6 rounded-2xl bg-card border border-border shadow-card">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-bold text-foreground">{item.title}</h3>
+                    <div className="text-accent font-bold text-lg">{item.stat} <span className="text-xs font-normal text-muted-foreground">{item.statLabel}</span></div>
+                  </div>
+                </div>
+                <ul className="space-y-2 mb-4">
+                  {item.details.map(d => (
+                    <li key={d} className="flex items-start gap-2 text-sm">
+                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground">{d}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="text-sm text-muted-foreground leading-relaxed italic border-l-2 border-accent/30 pl-3">{item.insight}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-8 p-6 rounded-2xl bg-accent/5 border border-accent/20">
+            <p className="text-muted-foreground leading-relaxed">
+              <strong className="text-foreground">The data is clear:</strong> Sri Lanka's digital audience is massive, mobile-first, and growing rapidly. Businesses that invest in <strong>online advertising in Sri Lanka</strong> now are positioned to capture this expanding market before their competitors. With <strong>BuzzConnect's multi-channel approach</strong>, you can reach these audiences across WhatsApp, SMS, email, and display platforms — maximizing your advertising ROI.
+            </p>
+            <p className="text-xs text-muted-foreground/60 mt-3">Sources: DataReportal Digital 2025, Daily Mirror Sri Lanka, LinkedIn Industry Reports</p>
+          </div>
         </motion.div>
 
         {/* ── Types of Advertising ── */}
