@@ -24,7 +24,7 @@ const tocItems = [
   { id: "case-studies", label: "Case Studies" },
   { id: "industries", label: "Industries We Serve" },
   { id: "why-buzzconnect", label: "Why Choose BuzzConnect" },
-  { id: "packages", label: "Advertising Packages" },
+  
   { id: "comparison", label: "Digital vs Traditional" },
   { id: "future", label: "Future of Advertising" },
   { id: "faq", label: "FAQs" },
@@ -178,7 +178,7 @@ const whyUs = [
   { text: "50M+ impressions delivered across Sri Lanka", icon: TrendingUp },
   { text: "500+ successful campaigns executed", icon: BarChart3 },
   { text: "Fast campaign launch within 48–72 hours", icon: Clock },
-  { text: "Affordable packages starting from LKR 5,000", icon: Star },
+  { text: "Affordable and scalable advertising solutions", icon: Star },
   { text: "Results-driven approach with real-time tracking", icon: Target },
   { text: "Dedicated account managers for every client", icon: Users },
   { text: "10+ years of advertising experience in Sri Lanka", icon: Shield },
@@ -195,12 +195,6 @@ const comparisonRows = [
   { feature: "Scalability", digital: "Instantly scalable", traditional: "Limited by budget & logistics" },
 ];
 
-/* ── Packages ── */
-const packagesList = [
-  { name: "Starter Campaign", price: "From LKR 5,000", features: ["Single channel (Email OR SMS OR WhatsApp)", "Up to 10,000 reach", "Basic targeting", "Campaign report"], recommended: false },
-  { name: "Multi-Channel Campaign", price: "From LKR 15,000", features: ["2-3 channels combined", "Up to 100,000 reach", "Advanced targeting", "A/B testing", "Detailed analytics"], recommended: true },
-  { name: "High-Reach Campaign", price: "From LKR 35,000", features: ["All channels included", "500,000+ reach", "Premium targeting", "Dedicated account manager", "Real-time optimization", "Priority support"], recommended: false },
-];
 
 /* ── Future Trends ── */
 const futureTrends = [
@@ -593,32 +587,6 @@ const AdvertisingSriLanka = () => {
               ))}
             </div>
           </div>
-        </motion.div>
-
-        {/* ── Advertising Packages ── */}
-        <motion.div id="packages" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 scroll-mt-24">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4 text-center">Advertising Packages for Sri Lankan Businesses</h2>
-          <p className="text-muted-foreground mb-8 text-center max-w-2xl mx-auto">We offer flexible advertising packages designed to meet the needs and budgets of businesses of all sizes in Sri Lanka.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {packagesList.map(pkg => (
-              <div key={pkg.name} className={`p-6 rounded-2xl border shadow-card ${pkg.recommended ? "bg-accent/5 border-accent/40 ring-2 ring-accent/20" : "bg-card border-border"}`}>
-                {pkg.recommended && <span className="inline-block px-3 py-1 rounded-full text-xs font-bold bg-accent text-accent-foreground mb-3">Most Popular</span>}
-                <h3 className="font-heading text-lg font-bold text-foreground mb-1">{pkg.name}</h3>
-                <p className="text-accent font-bold text-xl mb-4">{pkg.price}</p>
-                <div className="space-y-2">
-                  {pkg.features.map(f => (
-                    <div key={f} className="flex items-start gap-2 text-sm">
-                      <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground">{f}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <p className="text-muted-foreground text-center mt-6">
-            Need a custom package? <Link to="/contact-us" className="text-accent hover:underline font-semibold">Contact us</Link> for a tailored advertising plan.
-          </p>
         </motion.div>
 
         {/* ── Digital vs Traditional Comparison ── */}
