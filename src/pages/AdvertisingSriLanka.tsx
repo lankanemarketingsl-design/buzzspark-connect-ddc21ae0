@@ -195,8 +195,6 @@ const comparisonRows = [
   { feature: "Scalability", digital: "Instantly scalable", traditional: "Limited by budget & logistics" },
 ];
 
-  { name: "High-Reach Campaign", price: "From LKR 35,000", features: ["All channels included", "500,000+ reach", "Premium targeting", "Dedicated account manager", "Real-time optimization", "Priority support"], recommended: false },
-];
 
 /* ── Future Trends ── */
 const futureTrends = [
