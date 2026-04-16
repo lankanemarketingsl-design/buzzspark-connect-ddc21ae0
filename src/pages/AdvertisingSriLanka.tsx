@@ -1,7 +1,7 @@
 import ServicePageLayout from "@/components/ServicePageLayout";
 import { motion } from "framer-motion";
 import {
-  CheckCircle, Globe, Mail, Smartphone, MessageSquare, Share2, Layout,
+  CheckCircle, Mail, Smartphone, MessageSquare, Globe, Layout,
   TrendingUp, HelpCircle, Users, Shield, Zap, Target, BarChart3,
   GraduationCap, Building2, Home, ShoppingCart, Briefcase, Shirt,
   Star, ArrowRight, Rocket,
@@ -11,110 +11,95 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
 
-/* ── Trust badges ── */
-const trustBadges = [
-  { icon: Users, label: "2,000+ Clients" },
-  { icon: Shield, label: "100% Data Safe" },
-  { icon: Zap, label: "24hr Campaign Launch" },
-  { icon: TrendingUp, label: "Proven ROI" },
-  { icon: Star, label: "10+ Years Trusted" },
-];
-
 /* ── Types of Advertising ── */
 const adTypes = [
   {
+    icon: Globe,
+    title: "Digital Advertising",
+    desc: "Digital advertising is now the most effective method for reaching targeted audiences. It includes social media, email campaigns, and mobile-based promotions.",
+  },
+  {
+    icon: MessageSquare,
+    title: "WhatsApp Advertising",
+    desc: "Reach customers instantly through direct messaging. High open rates and fast engagement make WhatsApp one of the most powerful tools.",
+    link: "/whatsapp-marketing",
+  },
+  {
     icon: Mail,
-    title: "Email Advertising Sri Lanka",
-    desc: "Reach 350,000+ corporate subscribers with targeted email campaigns. BuzzConnect's email advertising delivers the highest ROI in digital marketing — perfect for product launches, promotions, and brand awareness across Sri Lanka.",
+    title: "Email Advertising",
+    desc: "Email campaigns allow businesses to promote offers, products, and services directly to a targeted audience at scale.",
     link: "/email-marketing",
   },
   {
     icon: Smartphone,
-    title: "SMS Advertising Sri Lanka",
-    desc: "With 90%+ open rates, SMS advertising in Sri Lanka is the fastest way to reach customers. Send bulk SMS campaigns to 600,000+ contacts for flash sales, appointment reminders, and time-sensitive offers.",
+    title: "SMS Advertising",
+    desc: "SMS marketing delivers instant messages with near 100% open rates, ideal for urgent promotions and announcements.",
     link: "/sms-marketing",
   },
   {
-    icon: MessageSquare,
-    title: "WhatsApp Advertising Sri Lanka",
-    desc: "WhatsApp is Sri Lanka's most-used messaging app. BuzzConnect's WhatsApp advertising lets you send rich media campaigns — images, videos, and documents — directly to thousands of potential customers.",
-    link: "/whatsapp-marketing",
-  },
-  {
-    icon: Share2,
-    title: "Social Media Advertising Sri Lanka",
-    desc: "Amplify your brand across Facebook, Instagram, and LinkedIn. Our social media advertising campaigns in Sri Lanka build awareness, drive engagement, and generate quality leads for your business.",
-    link: "/social-media-marketing-sri-lanka",
-  },
-  {
     icon: Layout,
-    title: "Display & Banner Advertising Sri Lanka",
-    desc: "Premium banner placements on Findit.lk — one of Sri Lanka's highest-traffic promotion platforms. Get 200,000+ monthly impressions with homepage banners, popup ads, and featured promotion listings.",
+    title: "Display & Banner Advertising",
+    desc: "Online banners and featured placements increase brand visibility and awareness across platforms like Findit.lk.",
     link: "/web-banner-advertising-sri-lanka",
   },
-  {
-    icon: Rocket,
-    title: "Multi-Channel Advertising Sri Lanka",
-    desc: "Maximize your reach with BuzzConnect's multi-channel campaigns — combining Email, SMS, WhatsApp, Social Media & Banner Ads into one powerful strategy. Launch in 48–72 hours and reach 1.2M+ potential customers across Sri Lanka.",
-    link: "/multi-channel-marketing-sri-lanka",
-  },
 ];
 
-/* ── Why Choose Us ── */
-const whyUs = [
-  "Largest corporate email database in Sri Lanka (350,000+ subscribers)",
-  "Multi-channel reach: Email + SMS + WhatsApp + Social + Banners",
-  "Industry-specific audience targeting for maximum conversion",
-  "Exclusive Findit.lk integration for premium ad placements",
-  "Fast 24-hour campaign launch — no long setup times",
-  "Affordable packages starting from just LKR 5,000",
-  "10+ years of proven results for Sri Lankan businesses",
-  "Dedicated campaign manager for every client",
+/* ── Why Advertising is Important ── */
+const whyImportant = [
+  "Growing digital audience",
+  "High mobile usage",
+  "Increasing competition across industries",
+  "Need for fast brand awareness",
 ];
 
-/* ── Industries ── */
-const industries = [
-  { icon: Building2, label: "Hotel & Travel Advertising", link: "/hotel-marketing-sri-lanka" },
-  { icon: GraduationCap, label: "Education Advertising", link: "/education-marketing-sri-lanka" },
-  { icon: Briefcase, label: "Finance & Banking Advertising", link: "/finance-marketing-sri-lanka" },
-  { icon: ShoppingCart, label: "Restaurant & Retail Advertising", link: "/restaurant-marketing-sri-lanka" },
-  { icon: Home, label: "Real Estate Advertising", link: "/real-estate-marketing-sri-lanka" },
-  { icon: Shirt, label: "Fashion & Clothing Advertising", link: "/fashion-marketing-sri-lanka" },
+/* ── Multi-Channel Approach ── */
+const channels = [
+  { label: "WhatsApp Campaigns", link: "/whatsapp-marketing" },
+  { label: "Bulk Email Marketing", link: "/email-marketing" },
+  { label: "SMS Campaigns", link: "/sms-marketing" },
+  { label: "Display Advertising", link: "/web-banner-advertising-sri-lanka" },
+  { label: "Findit.lk Promotions", link: "/online-advertising-sri-lanka" },
 ];
-
 
 /* ── Case Studies ── */
 const caseStudies = [
-  { stat: "50,000+", label: "Students Reached in 3 Days", desc: "Education institute filled intake within one week using email + SMS combo campaign." },
-  { stat: "200+", label: "Leads for Real Estate Project", desc: "Property developer generated 200+ qualified leads through targeted WhatsApp and email campaigns." },
-  { stat: "3x", label: "ROI for Hotel Chain", desc: "Leading hotel chain tripled their direct bookings using our multi-channel advertising strategy." },
-  { stat: "15,000+", label: "Restaurant Orders Generated", desc: "Fast food chain saw 15,000+ orders from a single SMS + social media advertising campaign." },
+  {
+    title: "Education Sector",
+    desc: "A course provider reached over 500,000 students within 3 days, generating hundreds of inquiries for new intakes.",
+    icon: GraduationCap,
+  },
+  {
+    title: "Restaurant Campaign",
+    desc: "A food business increased daily orders through targeted WhatsApp promotions and SMS reminders.",
+    icon: ShoppingCart,
+  },
+  {
+    title: "Clothing Brand",
+    desc: "An online clothing store boosted sales using email campaigns and remarketing strategies.",
+    icon: Shirt,
+  },
 ];
 
-/* ── Comparison ── */
-const comparisonRows = [
-  { feature: "Multi-channel reach (Email + SMS + WhatsApp)", buzz: true, trad: false, gads: false },
-  { feature: "Largest Sri Lankan email database", buzz: true, trad: false, gads: false },
-  { feature: "Findit.lk integration", buzz: true, trad: false, gads: false },
-  { feature: "Industry-specific targeting", buzz: true, trad: false, gads: true },
-  { feature: "Campaign launch within 24 hours", buzz: true, trad: false, gads: true },
-  { feature: "Packages from LKR 5,000", buzz: true, trad: false, gads: false },
-  { feature: "Direct WhatsApp support", buzz: true, trad: false, gads: false },
-  { feature: "Dedicated campaign manager", buzz: true, trad: true, gads: false },
-  { feature: "Geo-targeted for Sri Lanka", buzz: true, trad: true, gads: true },
-  { feature: "No minimum spend requirement", buzz: true, trad: false, gads: false },
+/* ── Why Choose BuzzConnect ── */
+const whyUs = [
+  { stat: "50M+", label: "Impressions Delivered" },
+  { stat: "500+", label: "Campaigns Executed" },
+  { stat: "100+", label: "Businesses Served" },
+  { stat: "10+", label: "Years of Experience" },
+];
+
+/* ── Packages ── */
+const packages = [
+  "Starter campaigns",
+  "Multi-channel campaigns",
+  "High-reach campaigns",
 ];
 
 /* ── FAQs ── */
 const faqs = [
-  { q: "What is the best advertising method in Sri Lanka?", a: "The best advertising method in Sri Lanka is multi-channel digital advertising combining email, SMS, WhatsApp, and online ads. BuzzConnect offers all these channels in one platform, giving businesses maximum reach and ROI." },
-  { q: "How much does advertising cost in Sri Lanka?", a: "Advertising in Sri Lanka starts from as low as LKR 5,000 with BuzzConnect. Costs vary by channel — email campaigns from LKR 4,000, SMS campaigns from LKR 5,000, and multi-channel packages from LKR 15,000." },
-  { q: "Which is the best advertising company in Sri Lanka?", a: "BuzzConnect is the #1 advertising company in Sri Lanka with 10+ years of experience, the largest corporate email database, and exclusive Findit.lk integration — trusted by over 2,000 businesses." },
-  { q: "Is digital advertising better than traditional advertising in Sri Lanka?", a: "Yes, digital advertising in Sri Lanka offers better targeting, measurable results, and significantly lower costs compared to traditional advertising like newspapers and TV. BuzzConnect helps businesses reach their exact target audience." },
-  { q: "Can I advertise to specific industries in Sri Lanka?", a: "Yes, BuzzConnect offers industry-specific targeting for hotels, education, finance, real estate, restaurants, and fashion businesses in Sri Lanka. Our database is segmented by industry for precise campaign delivery." },
-  { q: "How fast can I launch an advertising campaign?", a: "BuzzConnect launches advertising campaigns within 24 hours. Simply share your creative material and target audience, and we'll have your campaign live across email, SMS, WhatsApp, or social media the next day." },
-  { q: "What results can I expect from advertising in Sri Lanka?", a: "Businesses using BuzzConnect's advertising services typically see 3-5x ROI. Email campaigns reach 350,000+ subscribers, SMS campaigns achieve 90%+ open rates, and multi-channel campaigns generate hundreds of quality leads." },
-  { q: "Does BuzzConnect offer social media advertising?", a: "Yes, BuzzConnect provides complete social media advertising services in Sri Lanka including Facebook, Instagram, and LinkedIn campaigns for brand awareness, engagement, and lead generation." },
+  { q: "What is the best advertising method in Sri Lanka?", a: "Digital and multi-channel advertising provides the fastest and most cost-effective results. Combining WhatsApp, SMS, email, and banner ads ensures maximum reach and ROI." },
+  { q: "How much does advertising cost in Sri Lanka?", a: "Costs vary depending on reach, channels, and campaign size. BuzzConnect offers flexible packages starting from affordable rates to suit every business." },
+  { q: "How fast can I see results?", a: "Most campaigns generate reach and engagement within 24–72 hours. BuzzConnect launches campaigns within 48–72 hours of receiving your materials." },
 ];
 
 const AdvertisingSriLanka = () => {
@@ -138,7 +123,7 @@ const AdvertisingSriLanka = () => {
         url: "https://buzzconnect.lk",
       },
       areaServed: { "@type": "Country", name: "Sri Lanka" },
-      description: "Sri Lanka's #1 multi-channel advertising platform. Email, SMS, WhatsApp & social media advertising solutions with proven results.",
+      description: "Reach 500,000+ customers fast with WhatsApp, SMS & email campaigns. Launch in 48 hours.",
       serviceType: "Digital Advertising",
       offers: {
         "@type": "AggregateOffer",
@@ -152,14 +137,14 @@ const AdvertisingSriLanka = () => {
   return (
     <ServicePageLayout
       badge="#1 Advertising Platform in Sri Lanka"
-      title="Advertising in Sri Lanka – #1 Multi-Channel Advertising Platform"
-      subtitle="Reach millions of Sri Lankan customers through targeted email, SMS, WhatsApp, social media & display advertising. BuzzConnect is trusted by 2,000+ businesses to deliver results-driven advertising campaigns with proven ROI."
+      title="Advertising in Sri Lanka"
+      subtitle="Reach 500,000+ customers fast with WhatsApp, SMS & email campaigns. Launch in 48 hours."
     >
       <SEOHead
-        title="Advertising Sri Lanka | Digital Advertising Solutions | BuzzConnect"
-        description="Reach thousands of customers with targeted advertising in Sri Lanka. Email, SMS, WhatsApp & social media campaigns. Fast results with BuzzConnect."
+        title="Advertising in Sri Lanka | Best Advertising Company for Fast Results"
+        description="Looking for advertising in Sri Lanka? Reach 500,000+ customers fast with WhatsApp, SMS & email campaigns. Launch in 48 hours."
         canonical="/advertising-sri-lanka"
-        keywords="advertising sri lanka, digital advertising sri lanka, online advertising sri lanka, advertising company sri lanka, best advertising company sri lanka, email advertising sri lanka, sms advertising sri lanka"
+        keywords="advertising sri lanka, advertising in sri lanka, best advertising company sri lanka, digital advertising sri lanka, online advertising sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Advertising Sri Lanka", url: "/advertising-sri-lanka" },
@@ -167,22 +152,7 @@ const AdvertisingSriLanka = () => {
         jsonLd={jsonLd}
       />
 
-      {/* ── Trust Badges ── */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-12 py-4 px-6 rounded-2xl bg-primary/5 border border-primary/10"
-      >
-        {trustBadges.map((b) => (
-          <div key={b.label} className="flex items-center gap-2">
-            <b.icon className="w-4 h-4 text-accent" />
-            <span className="text-xs sm:text-sm font-semibold text-foreground">{b.label}</span>
-          </div>
-        ))}
-      </motion.div>
-
-      {/* ── 1. Keyword-Rich Intro ── */}
+      {/* ── Introduction ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -190,17 +160,14 @@ const AdvertisingSriLanka = () => {
         className="mb-16 max-w-4xl mx-auto"
       >
         <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          Looking for the best <strong>advertising solutions in Sri Lanka</strong>? BuzzConnect offers targeted <strong>digital advertising</strong> including <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email marketing</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS campaigns</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp marketing</Link>, and <Link to="/social-media-marketing-sri-lanka" className="text-accent hover:underline font-semibold">social media campaigns</Link> to reach the right audience fast.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-          As the #1 <strong>advertising company in Sri Lanka</strong>, we combine the power of <Link to="/online-advertising-sri-lanka" className="text-accent hover:underline font-semibold">online advertising in Sri Lanka</Link> with Sri Lanka's largest corporate database to deliver campaigns that generate real leads, real customers, and real revenue. Whether you're a startup or an enterprise, our <strong>advertising in Sri Lanka</strong> solutions are designed to maximize your ROI.
+          <strong>Advertising in Sri Lanka</strong> has rapidly evolved from traditional media to powerful digital and multi-channel marketing solutions. Businesses today need fast, scalable, and cost-effective ways to reach their target audience — and that's where modern advertising strategies make the difference.
         </p>
         <p className="text-lg text-muted-foreground leading-relaxed">
-          With 10+ years of experience and 2,000+ satisfied clients, BuzzConnect is the trusted partner for businesses that want results from <strong>digital advertising in Sri Lanka</strong>. Our multi-channel approach ensures your message reaches customers through email, SMS, WhatsApp, social media, and premium banner placements on Findit.lk.
+          At BuzzConnect, we help businesses reach over <strong>500,000+ potential customers</strong> within days using WhatsApp, SMS, Email, and multi-platform advertising campaigns designed for real results.
         </p>
       </motion.div>
 
-      {/* ── 2. Types of Advertising ── */}
+      {/* ── Types of Advertising ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -209,55 +176,95 @@ const AdvertisingSriLanka = () => {
       >
         <div className="text-center mb-10">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Types of Advertising in Sri Lanka</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">BuzzConnect offers every major <strong>digital advertising</strong> channel to ensure your brand reaches the right audience at the right time.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {adTypes.map((ad, i) => (
-            <motion.div
-              key={ad.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-            >
-              <Link
-                to={ad.link}
-                className="block h-full p-6 rounded-2xl bg-card border border-border shadow-card hover:border-accent/40 hover:shadow-lg transition-all group"
-              >
+          {adTypes.map((ad, i) => {
+            const content = (
+              <>
                 <ad.icon className="w-8 h-8 text-accent mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="font-heading text-lg font-bold text-foreground mb-2">{ad.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{ad.desc}</p>
-                <span className="inline-flex items-center gap-1 mt-4 text-sm text-accent font-semibold">
-                  Learn More <ArrowRight className="w-3.5 h-3.5" />
-                </span>
-              </Link>
-            </motion.div>
-          ))}
+                {ad.link && (
+                  <span className="inline-flex items-center gap-1 mt-4 text-sm text-accent font-semibold">
+                    Learn More <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                )}
+              </>
+            );
+            return (
+              <motion.div
+                key={ad.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+              >
+                {ad.link ? (
+                  <Link to={ad.link} className="block h-full p-6 rounded-2xl bg-card border border-border shadow-card hover:border-accent/40 hover:shadow-lg transition-all group">
+                    {content}
+                  </Link>
+                ) : (
+                  <div className="block h-full p-6 rounded-2xl bg-card border border-border shadow-card group">
+                    {content}
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </div>
       </motion.div>
 
-      {/* ── 3. Why Choose Us ── */}
+      {/* ── Why Advertising is Important ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 p-8 sm:p-10 rounded-2xl bg-primary/5 border border-primary/20 max-w-4xl mx-auto"
+        className="mb-16 max-w-4xl mx-auto p-8 sm:p-10 rounded-2xl bg-primary/5 border border-primary/20"
       >
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-6">Why Choose BuzzConnect for Advertising in Sri Lanka</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {whyUs.map((item) => (
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-6">Why Advertising is Important in Sri Lanka</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          {whyImportant.map((item) => (
             <div key={item} className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
               <span className="text-foreground text-sm">{item}</span>
             </div>
           ))}
         </div>
-        <p className="text-muted-foreground mt-6">
-          No other <strong>advertising company in Sri Lanka</strong> offers this combination of reach, targeting, speed, and affordability. BuzzConnect is the smart choice for businesses that demand results.
+        <p className="text-muted-foreground">
+          Businesses that invest in advertising gain a strong competitive advantage and faster growth.
         </p>
       </motion.div>
 
-      {/* ── 4. Industries We Serve ── */}
+      {/* ── Multi-Channel Approach ── */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16 max-w-4xl mx-auto"
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Our Multi-Channel Advertising Approach</h2>
+        <p className="text-muted-foreground mb-6">
+          Unlike traditional agencies, BuzzConnect combines multiple advertising channels into one powerful system:
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {channels.map((ch) => (
+            <Link
+              key={ch.label}
+              to={ch.link}
+              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all group"
+            >
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+              <span className="text-foreground text-sm font-medium">{ch.label}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-accent ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ))}
+        </div>
+        <p className="text-muted-foreground mt-6">
+          This ensures <strong>maximum reach</strong>, repeated exposure, and better conversion rates.
+        </p>
+      </motion.div>
+
+      {/* ── Case Studies ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -265,25 +272,28 @@ const AdvertisingSriLanka = () => {
         className="mb-16"
       >
         <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Industries We Serve</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Specialized <strong>advertising in Sri Lanka</strong> for every major industry — with category-based targeting for maximum conversions.</p>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Case Studies</h2>
+          <p className="text-muted-foreground">Real results from real advertising campaigns in Sri Lanka.</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {industries.map((ind) => (
-            <Link
-              key={ind.label}
-              to={ind.link}
-              className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-accent/40 hover:shadow-md transition-all group"
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {caseStudies.map((cs, i) => (
+            <motion.div
+              key={cs.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="p-6 rounded-2xl bg-card border border-border shadow-card"
             >
-              <ind.icon className="w-5 h-5 text-accent flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span className="text-foreground text-sm font-medium">{ind.label}</span>
-            </Link>
+              <cs.icon className="w-8 h-8 text-accent mb-4" />
+              <h3 className="font-heading text-lg font-bold text-foreground mb-2">{cs.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{cs.desc}</p>
+            </motion.div>
           ))}
         </div>
       </motion.div>
 
-
-      {/* ── 6. Case Studies ── */}
+      {/* ── Why Choose BuzzConnect ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -291,68 +301,56 @@ const AdvertisingSriLanka = () => {
         className="mb-16"
       >
         <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Proven Results</h2>
-          <p className="text-muted-foreground">Real results from real <strong>advertising campaigns in Sri Lanka</strong> powered by BuzzConnect.</p>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Why Choose BuzzConnect</h2>
+          <p className="text-muted-foreground">We focus on delivering results, not just impressions.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {caseStudies.map((cs, i) => (
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {whyUs.map((item, i) => (
             <motion.div
-              key={cs.label}
+              key={item.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
               className="p-6 rounded-2xl bg-card border border-border shadow-card text-center"
             >
-              <div className="font-heading text-3xl font-bold text-accent mb-1">{cs.stat}</div>
-              <div className="font-semibold text-foreground text-sm mb-2">{cs.label}</div>
-              <p className="text-xs text-muted-foreground">{cs.desc}</p>
+              <div className="font-heading text-3xl font-bold text-accent mb-1">{item.stat}</div>
+              <div className="text-sm text-muted-foreground">{item.label}</div>
             </motion.div>
           ))}
         </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10">
+            <Zap className="w-4 h-4 text-accent" />
+            <span className="text-sm font-semibold text-foreground">Fast campaign launch (48–72 hours)</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10">
+            <Target className="w-4 h-4 text-accent" />
+            <span className="text-sm font-semibold text-foreground">Affordable advertising packages</span>
+          </div>
+        </div>
       </motion.div>
 
-      {/* ── 7. Comparison Table ── */}
+      {/* ── Advertising Packages ── */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-16 max-w-4xl mx-auto p-8 sm:p-10 rounded-2xl bg-primary/5 border border-primary/20"
       >
-        <div className="text-center mb-8">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">
-            Why BuzzConnect is the Best Advertising Platform in Sri Lanka
-          </h2>
-          <p className="text-muted-foreground">See how we compare to traditional agencies, Facebook Ads, and Google Ads.</p>
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Advertising Packages</h2>
+        <p className="text-muted-foreground mb-6">We offer flexible packages based on your business needs:</p>
+        <div className="space-y-3 mb-6">
+          {packages.map((pkg) => (
+            <div key={pkg} className="flex items-center gap-3">
+              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
+              <span className="text-foreground font-medium capitalize">{pkg}</span>
+            </div>
+          ))}
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[640px] text-sm border-collapse">
-            <thead>
-              <tr className="border-b border-border">
-                <th className="text-left py-3 px-4 text-foreground font-semibold">Feature</th>
-                <th className="py-3 px-4 text-center font-bold text-accent">BuzzConnect</th>
-                <th className="py-3 px-4 text-center text-muted-foreground">Traditional Agencies</th>
-                <th className="py-3 px-4 text-center text-muted-foreground">Google / Facebook Ads</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonRows.map((row) => (
-                <tr key={row.feature} className="border-b border-border/50">
-                  <td className="py-3 px-4 text-foreground">{row.feature}</td>
-                  <td className="py-3 px-4 text-center">
-                    {row.buzz ? <CheckCircle className="w-5 h-5 text-accent mx-auto" /> : <span className="text-muted-foreground">✕</span>}
-                  </td>
-                  <td className="py-3 px-4 text-center">
-                    {row.trad ? <CheckCircle className="w-5 h-5 text-accent mx-auto" /> : <span className="text-muted-foreground">✕</span>}
-                  </td>
-                  <td className="py-3 px-4 text-center">
-                    {row.gads ? <CheckCircle className="w-5 h-5 text-accent mx-auto" /> : <span className="text-muted-foreground">✕</span>}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <p className="text-muted-foreground">
+          <Link to="/contact-us" className="text-accent hover:underline font-semibold">Contact us</Link> for a customized plan.
+        </p>
       </motion.div>
 
       {/* ── FAQ ── */}
@@ -364,7 +362,7 @@ const AdvertisingSriLanka = () => {
       >
         <div className="flex items-center gap-3 mb-8">
           <HelpCircle className="w-7 h-7 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Frequently Asked Questions – Advertising in Sri Lanka</h2>
+          <h2 className="font-heading text-2xl font-bold text-foreground">FAQs</h2>
         </div>
         <div className="space-y-4">
           {faqs.map((faq) => (
@@ -390,17 +388,17 @@ const AdvertisingSriLanka = () => {
         className="text-center p-10 rounded-2xl gradient-hero"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-primary-foreground mb-4">
-          Start Your Advertising Campaign in Sri Lanka Today
+          Ready to grow your business with advertising in Sri Lanka?
         </h2>
         <p className="text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Join 2,000+ businesses that trust BuzzConnect — the #1 <strong>advertising company in Sri Lanka</strong>. Get multi-channel advertising that delivers real results.
+          Contact BuzzConnect today and launch your campaign within days.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link
             to="/contact-us"
             className="inline-block px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity"
           >
-            Get a Free Quote Today
+            Get a Free Quote
           </Link>
           <a
             href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20advertising%20in%20Sri%20Lanka."
