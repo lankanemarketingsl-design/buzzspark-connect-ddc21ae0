@@ -332,8 +332,8 @@ const AdvertisingSriLanka = () => {
       subtitle="Multi-channel advertising that combines email, WhatsApp, SMS, and high-traffic web placements to deliver measurable results within days — not months."
     >
       <SEOHead
-        title="Advertising in Sri Lanka | Best Advertising Company for Fast Results"
-        description="Sri Lanka's most trusted multi-channel advertising company. Reach 13M+ internet users via WhatsApp, SMS, email & web. Campaigns launch in 48 hours."
+        title="Advertising in Sri Lanka | #1 Multi-Channel Ad Company"
+        description="The smarter way to do advertising in Sri Lanka. Reach 13M+ internet users via WhatsApp, SMS & email. Campaigns go live in just 48 hours. Get started today."
         canonical="/advertising-sri-lanka"
         keywords="advertising sri lanka, advertising in sri lanka, best advertising company sri lanka, multi-channel advertising sri lanka, digital advertising sri lanka, online advertising sri lanka, advertising agency sri lanka, whatsapp marketing sri lanka, sms marketing sri lanka"
         breadcrumbs={[
