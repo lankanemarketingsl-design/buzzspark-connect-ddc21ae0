@@ -50,7 +50,7 @@ const articles = [
     title: "Digital Marketing Company in Sri Lanka | BuzzConnect",
     date: "Apr 20, 2026",
     excerpt: "Looking for a trusted digital marketing company in Sri Lanka? Discover how BuzzConnect uses WhatsApp bulk messaging & email marketing to deliver real results — fast.",
-    path: "/digital-marketing-company-sri-lanka",
+    path: "/digital-marketing-company-in-sri-lanka",
     image: articleMultichannelCampaigns,
   },
   {

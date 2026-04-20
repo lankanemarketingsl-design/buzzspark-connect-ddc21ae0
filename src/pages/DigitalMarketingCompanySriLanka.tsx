@@ -186,7 +186,7 @@ const DigitalMarketingCompanySriLanka = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Digital Marketing Company in Sri Lanka | BuzzConnect",
-      url: "https://buzzconnect.lk/digital-marketing-company-sri-lanka",
+      url: "https://buzzconnect.lk/digital-marketing-company-in-sri-lanka",
       isPartOf: { "@type": "WebSite", name: "BuzzConnect", url: "https://buzzconnect.lk" },
     },
   ], []);
@@ -202,11 +202,11 @@ const DigitalMarketingCompanySriLanka = () => {
       <SEOHead
         title="Digital Marketing Company in Sri Lanka | BuzzConnect"
         description="Looking for a trusted digital marketing company in Sri Lanka? BuzzConnect delivers WhatsApp bulk messaging & email marketing campaigns with 500+ campaigns and 98% client retention."
-        canonical="/digital-marketing-company-sri-lanka"
+        canonical="/digital-marketing-company-in-sri-lanka"
         keywords="digital marketing company sri lanka, digital marketing sri lanka, whatsapp bulk messaging sri lanka, whatsapp marketing sri lanka, email marketing sri lanka, online marketing company colombo, best digital marketing company sri lanka, buzzconnect"
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Digital Marketing Company Sri Lanka", url: "/digital-marketing-company-sri-lanka" },
+          { name: "Digital Marketing Company Sri Lanka", url: "/digital-marketing-company-in-sri-lanka" },
         ]}
         jsonLd={jsonLd}
       />
