@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "Digital Marketing Company in Sri Lanka | BuzzConnect",
+    date: "Apr 20, 2026",
+    excerpt: "Looking for a trusted digital marketing company in Sri Lanka? Discover how BuzzConnect uses WhatsApp bulk messaging & email marketing to deliver real results — fast.",
+    path: "/digital-marketing-company-sri-lanka",
+    image: articleMultichannelCampaigns,
+  },
+  {
     title: "Education Marketing Case Studies – Sri Lanka (2026)",
     date: "Apr 13, 2026",
     excerpt: "Education marketing case studies from Sri Lanka. See how institutes filled course intakes faster using email campaigns, Findit.lk, StudyWay.lk & remarketing.",
