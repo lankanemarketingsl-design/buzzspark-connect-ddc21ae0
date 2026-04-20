@@ -104,6 +104,7 @@ import RestaurantMarketing from "./pages/RestaurantMarketing.tsx";
 import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
 import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
+import DigitalMarketingCompanySriLanka from "./pages/DigitalMarketingCompanySriLanka.tsx";
 import EventMarketing from "./pages/EventMarketing.tsx";
 import StaffRecruitment from "./pages/StaffRecruitment.tsx";
 import GraphicDesignService from "./pages/GraphicDesignService.tsx";
@@ -163,6 +164,7 @@ const App = () => (
               <Route path="/real-estate-marketing-sri-lanka" element={<RealEstateMarketing />} />
               <Route path="/fashion-marketing-sri-lanka" element={<FashionMarketing />} />
               <Route path="/advertising-sri-lanka" element={<AdvertisingSriLanka />} />
+              <Route path="/digital-marketing-company-sri-lanka" element={<DigitalMarketingCompanySriLanka />} />
               <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               <Route path="/staff-recruitment-campaigns-sri-lanka" element={<StaffRecruitment />} />
               <Route path="/careers" element={<Careers />} />
