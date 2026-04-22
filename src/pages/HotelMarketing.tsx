@@ -382,6 +382,32 @@ const HotelMarketing = () => {
             </ul>
           </div>
 
+          {/* ⚡ Launch in 24-48 Hours - Demand Driver */}
+          <div className="p-5 rounded-xl bg-gradient-to-r from-accent/15 to-accent/5 border border-accent/40 mb-6">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
+                <Zap className="w-5 h-5 text-accent" />
+              </div>
+              <div className="flex-1">
+                <h4 className="font-heading text-base font-bold text-foreground mb-1">⚡ Launch in 24–48 Hours</h4>
+                <p className="text-sm text-muted-foreground mb-3">Start generating booking inquiries within days — not weeks.</p>
+                <p className="text-sm font-semibold text-foreground mb-2">👉 Perfect for:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                  {[
+                    { icon: Calendar, label: "Low occupancy periods" },
+                    { icon: Clock, label: "Last-minute promotions" },
+                    { icon: TrendingUp, label: "Seasonal demand spikes" },
+                  ].map((p) => (
+                    <div key={p.label} className="flex items-center gap-2 p-2.5 rounded-lg bg-card border border-border">
+                      <p.icon className="w-4 h-4 text-accent shrink-0" />
+                      <span className="text-xs text-foreground font-medium">{p.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Closing Line */}
           <p className="text-center text-foreground italic font-medium mb-6 px-4">
             "If you have empty rooms this month, this campaign is one of the fastest ways to generate direct booking inquiries."
