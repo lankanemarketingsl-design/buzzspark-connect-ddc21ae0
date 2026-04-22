@@ -123,8 +123,8 @@ const EducationMarketing = () => {
       subtitle="Reach students, parents, and professionals through targeted email, SMS, WhatsApp campaigns and Findit.lk Education category visibility."
     >
       <SEOHead
-        title="Education Marketing Sri Lanka | Student Intake Lead Generation"
-        description="No.1 education marketing company in Sri Lanka. Drive student enrollment via email, SMS, WhatsApp & Findit.lk. Reach students & parents. Multi-channel campaigns for intakes."
+        title="Education Marketing Sri Lanka | Education Marketing Agency"
+        description="No.1 education marketing Sri Lanka agency. Education marketing agency for higher education. Drive enrollments via email, SMS, WhatsApp https://buzzconnect.lk/education-marketing-sri-lanka"
         canonical="/education-marketing-sri-lanka"
         keywords="education marketing sri lanka, student enrollment campaigns, university marketing colombo, school marketing sri lanka, course promotion sri lanka, student lead generation, education advertising sri lanka, intake marketing"
         breadcrumbs={[
