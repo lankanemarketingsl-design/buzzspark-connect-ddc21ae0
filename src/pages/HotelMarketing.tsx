@@ -340,7 +340,6 @@ const HotelMarketing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {[
               { icon: Mail, title: "2 Targeted Email Campaigns", points: ["Sent to active Sri Lankan travel audience", "Promote weekend / couple / seasonal offers", "Designed to generate booking inquiries"] },
-              { icon: MessageSquare, title: "WhatsApp Broadcast Campaign", points: ["Direct promotion to high-intent travelers", "Fast responses & strong engagement"] },
               { icon: Globe, title: "Featured Listing on Findit.lk", points: ["Increased visibility in hotel category", "Direct traffic from travel seekers"] },
               { icon: Target, title: "Facebook & Instagram Ads", points: ["Basic remarketing to interested users", "Retarget people who engage with your campaign"] },
               { icon: Gift, title: "Offer Creation Support", points: ["Attractive deals (e.g., couple getaway)", "Limited-time promotions to drive urgency"] },
