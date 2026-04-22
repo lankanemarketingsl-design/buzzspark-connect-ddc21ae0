@@ -307,6 +307,102 @@ const HotelMarketing = () => {
         </div>
       </motion.div>
 
+      {/* 🏨 30-Day Occupancy Boost Campaign */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="text-center mb-8">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">Limited-Time Campaign</span>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2">🏨 30-Day Occupancy Boost Campaign</h2>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Ideal for hotels with empty rooms this month looking for quick results.</p>
+        </div>
+
+        <div className="relative p-8 rounded-2xl bg-card shadow-card border-2 border-accent overflow-hidden">
+          <div className="absolute top-0 right-0 px-5 py-2 rounded-bl-xl bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider">⚡ Fast Results</div>
+
+          {/* Package Header */}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6 pb-6 border-b border-border">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                  <Clock className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-foreground">Starter Package</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Generate direct booking inquiries within 30 days</p>
+            </div>
+            <div className="text-left sm:text-right">
+              <p className="text-3xl sm:text-4xl font-bold text-accent">LKR 45,000</p>
+              <p className="text-xs text-muted-foreground">30-day campaign</p>
+            </div>
+          </div>
+
+          {/* What's Included */}
+          <h4 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">✅ What's Included</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            {[
+              { icon: Mail, title: "2 Targeted Email Campaigns", points: ["Sent to active Sri Lankan travel audience", "Promote weekend / couple / seasonal offers", "Designed to generate booking inquiries"] },
+              { icon: MessageSquare, title: "WhatsApp Broadcast Campaign", points: ["Direct promotion to high-intent travelers", "Fast responses & strong engagement"] },
+              { icon: Globe, title: "Featured Listing on Findit.lk", points: ["Increased visibility in hotel category", "Direct traffic from travel seekers"] },
+              { icon: Target, title: "Facebook & Instagram Ads", points: ["Basic remarketing to interested users", "Retarget people who engage with your campaign"] },
+              { icon: Gift, title: "Offer Creation Support", points: ["Attractive deals (e.g., couple getaway)", "Limited-time promotions to drive urgency"] },
+              { icon: BarChart3, title: "Campaign Performance Summary", points: ["Reach & engagement reporting"] },
+            ].map((item) => (
+              <div key={item.title} className="p-4 rounded-xl bg-accent/5 border border-accent/20">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-4 h-4 text-accent" />
+                  </div>
+                  <h5 className="font-bold text-foreground text-sm">{item.title}</h5>
+                </div>
+                <ul className="space-y-1 ml-1">
+                  {item.points.map((p) => (
+                    <li key={p} className="flex items-start gap-1.5 text-xs text-muted-foreground">
+                      <CheckCircle className="w-3 h-3 text-accent shrink-0 mt-0.5" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Campaign Goal */}
+          <div className="p-5 rounded-xl bg-accent/10 border border-accent/30 mb-6">
+            <h4 className="font-heading text-base font-bold text-foreground mb-3 flex items-center gap-2">🎯 Campaign Goal</h4>
+            <ul className="space-y-2">
+              {[
+                "Generate direct booking inquiries within 30 days",
+                "Help fill unsold rooms quickly",
+                "Reduce reliance on OTAs like Booking.com & Agoda",
+              ].map((g) => (
+                <li key={g} className="flex items-start gap-2 text-sm text-foreground font-medium">
+                  <ArrowRight className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                  <span>{g}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Closing Line */}
+          <p className="text-center text-foreground italic font-medium mb-6 px-4">
+            "If you have empty rooms this month, this campaign is one of the fastest ways to generate direct booking inquiries."
+          </p>
+
+          {/* CTA */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%2030-Day%20Occupancy%20Boost%20Campaign%20(LKR%2045%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer">
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-3 rounded-full text-base w-full sm:w-auto">
+                <MessageSquare className="w-5 h-5 mr-2" /> Start 30-Day Campaign
+              </Button>
+            </a>
+            <Link to="/contact-us">
+              <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-bold px-8 py-3 rounded-full text-base w-full sm:w-auto">
+                <Rocket className="w-5 h-5 mr-2" /> Get Free Consultation
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+
       {/* 🚀 Multi-Channel Upsell Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
         {/* Header */}
