@@ -90,6 +90,7 @@ const freeBonusItems = [
 
 const faqs = [
   { q: "What is hotel marketing in Sri Lanka?", a: "Hotel marketing involves promoting your accommodation, packages, and services to potential guests through targeted digital marketing channels like email, SMS, WhatsApp, and directory listings." },
+  { q: "Why is Buzz Connect the best hotel marketing agency?", a: "Buzz Connect is the best hotel marketing agency because it offers fast campaign launch, instant exposure on Findit.lk, and easy, cost-effective solutions to boost bookings quickly." },
   { q: "How can Buzz Connect help my hotel get more bookings?", a: "We use a multi-channel approach combining email campaigns, SMS alerts, WhatsApp messaging, and Findit.lk category visibility to reach thousands of potential guests and drive direct bookings." },
   { q: "What makes Buzz Connect different from other hotel marketing agencies?", a: "Our unique combination of direct marketing (email, SMS, WhatsApp) with Findit.lk category-based promotions provides both instant reach and continuous visibility — something traditional agencies cannot offer." },
   { q: "How much does hotel marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective hotel marketing packages starting from LKR 14,900. Contact us for a customized quote based on your property and target audience." },
@@ -124,8 +125,8 @@ const HotelMarketing = () => {
       subtitle="Promote your hotel offers, fill rooms faster, and reach high-intent travelers using targeted Email, SMS & WhatsApp campaigns."
     >
       <SEOHead
-        title="Hotel Marketing Sri Lanka | Multi-Channel Travel Campaigns"
-        description="Hotel marketing Sri Lanka with hotel digital marketing Sri Lanka solutions to boost occupancy, attract guests, and grow bookings online."
+        title="Hotel Marketing Sri Lanka | Hotel Marketing Agency"
+        description="Hotel marketing Sri Lanka with expert hotel digital marketing Sri Lanka solutions. Hotel Marketing Agency to boost occupancy, attract guests & grow bookings https://buzzconnect.lk/hotel-marketing-sri-lanka/"
         canonical="/hotel-marketing-sri-lanka"
         keywords="hotel marketing sri lanka, travel marketing sri lanka, hotel promotion sri lanka, hotel digital marketing colombo, tourism marketing sri lanka, hotel booking campaigns, resort marketing sri lanka, hospitality marketing"
         breadcrumbs={[
