@@ -126,8 +126,8 @@ const FinanceMarketing = () => {
       subtitle="Reach the right financial audience with targeted Email, SMS & WhatsApp campaigns designed to drive real applications and conversions."
     >
       <SEOHead
-        title="Finance Marketing Sri Lanka | Credit Card & Loan Lead Generation"
-        description="No.1 finance marketing company in Sri Lanka. Generate high-value leads for banks, credit cards & insurance via SMS, email, WhatsApp & Findit.lk. VIP database access."
+        title="Finance Marketing Sri Lanka | Finance Marketing Agency"
+        description="Finance marketing Sri Lanka solutions from a top Finance Marketing Agency. Drive quality leads via email, ads & digital campaigns."
         canonical="/finance-marketing-sri-lanka"
         keywords="finance marketing sri lanka, credit card marketing colombo, bank marketing sri lanka, insurance marketing sri lanka, financial lead generation, loan promotion sri lanka, financial advertising sri lanka"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Finance Marketing", url: "/finance-marketing-sri-lanka" }]}
