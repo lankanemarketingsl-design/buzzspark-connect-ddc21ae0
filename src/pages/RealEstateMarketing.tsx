@@ -90,6 +90,7 @@ const faqs = [
   { q: "Can you target property investors specifically?", a: "Yes, our database includes property investors, high-net-worth individuals, and corporate buyers — allowing precise targeting for premium property listings." },
   { q: "How much does real estate marketing cost in Sri Lanka?", a: "Buzz Connect offers real estate marketing packages starting from LKR 75,000. Contact us for a customized quote based on your property portfolio." },
   { q: "How quickly can I start getting buyer inquiries?", a: "Most property campaigns start generating inquiries within 24-48 hours of launch, with sustained visibility through Findit.lk for weeks." },
+  { q: "Why is Buzz Connect the best real estate marketing agency in Sri Lanka?", a: "Buzz Connect is the best real estate marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Real Estate category, and easy, cost-effective multi-channel solutions to generate high-quality property buyer leads quickly." },
 ];
 
 const RealEstateMarketing = () => {
@@ -116,8 +117,8 @@ const RealEstateMarketing = () => {
       subtitle="Promote your lands, houses, apartments, and real estate projects with targeted Email, SMS & WhatsApp campaigns that bring real inquiries."
     >
       <SEOHead
-        title="Real Estate Marketing Sri Lanka | Property Lead Generation"
-        description="No.1 real estate marketing company in Sri Lanka. Generate property buyer leads via SMS, WhatsApp, email & Findit.lk. Reach investors & buyers. Multi-channel property campaigns."
+        title="Real Estate Marketing Sri Lanka | Real Estate Marketing agency"
+        description="No.1 real estate marketing company in Sri Lanka. Real Estate Marketing Agency for high-quality leads, better visibility & faster sales."
         canonical="/real-estate-marketing-sri-lanka"
         keywords="real estate marketing sri lanka, property marketing colombo, real estate advertising sri lanka, property lead generation, land sales marketing, property promotion sri lanka, real estate digital marketing, property buyer leads"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Real Estate Marketing", url: "/real-estate-marketing-sri-lanka" }]}
