@@ -123,8 +123,8 @@ const RestaurantMarketing = () => {
       subtitle="Fill your tables, boost orders, and promote your offers instantly with targeted Email, SMS & WhatsApp campaigns."
     >
       <SEOHead
-        title="Restaurant Marketing Sri Lanka | Drive Daily Customers & Orders"
-        description="No.1 restaurant marketing company in Sri Lanka. Drive foot traffic via SMS, WhatsApp & Findit.lk daily promotions. Get more customers, orders & bookings instantly."
+        title="Restaurant Marketing Sri Lanka | Restaurant Marketing agency"
+        description="Restaurant marketing Sri Lanka by a leading Restaurant Marketing Agency. Boost reservations, visibility & sales with targeted campaigns."
         canonical="/restaurant-marketing-sri-lanka"
         keywords="restaurant marketing sri lanka, food promotion colombo, restaurant advertising sri lanka, cafe marketing, daily deals campaigns, food delivery marketing, restaurant sms marketing"
         breadcrumbs={[{ name: "Home", url: "/" }, { name: "Restaurant Marketing", url: "/restaurant-marketing-sri-lanka" }]}
