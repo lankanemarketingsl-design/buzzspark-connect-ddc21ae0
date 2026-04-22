@@ -96,6 +96,7 @@ const faqs = [
   { q: "Can you target customers near my restaurant?", a: "Yes, our database allows targeting by location, dining preferences, and behavior — ensuring your campaigns reach the most relevant food-loving audience nearby." },
   { q: "How much does restaurant marketing cost?", a: "Buzz Connect offers restaurant marketing packages starting from LKR 14,900. Contact us for a customized quote based on your restaurant's needs." },
   { q: "How quickly can campaigns go live?", a: "We can launch your campaign within hours of confirmation, making it perfect for same-day promotions and flash deals." },
+  { q: "Why is Buzz Connect the best restaurant marketing agency in Sri Lanka?", a: "Buzz Connect is the best restaurant marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Restaurants category, and easy, cost-effective multi-channel solutions to drive daily foot traffic and online orders quickly." },
 ];
 
 const RestaurantMarketing = () => {

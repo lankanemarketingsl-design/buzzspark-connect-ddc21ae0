@@ -99,6 +99,7 @@ const faqs = [
   { q: "Can you target high-net-worth individuals?", a: "Yes, our VIP and corporate database allows precise targeting of high-net-worth individuals, business owners, and corporate decision-makers." },
   { q: "How much does financial marketing cost in Sri Lanka?", a: "Buzz Connect offers financial marketing packages starting from LKR 60,000. Contact us for a customized quote based on your requirements." },
   { q: "Is SMS marketing effective for financial products?", a: "Absolutely. SMS has a 98% open rate, making it ideal for time-sensitive offers like loan promotions, credit card deals, and insurance renewals." },
+  { q: "Why is Buzz Connect the best finance marketing agency in Sri Lanka?", a: "Buzz Connect is the best finance marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Finance category, and easy, cost-effective multi-channel solutions to generate high-value loan, credit card, and insurance leads quickly." },
 ];
 
 const FinanceMarketing = () => {

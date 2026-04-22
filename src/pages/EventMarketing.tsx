@@ -80,6 +80,7 @@ const faqs = [
   { q: "What makes Buzz Connect different from other event marketing agencies?", a: "Our unique combination of direct marketing (email, SMS, WhatsApp) with Findit.lk event listings provides both instant reach and continuous visibility — something traditional agencies cannot offer." },
   { q: "How much does event marketing cost in Sri Lanka?", a: "Buzz Connect offers cost-effective event marketing packages starting from LKR 75,000. Contact us for a customized quote based on your event type and target audience." },
   { q: "What types of events can you promote?", a: "We promote all types of events including concerts, corporate events, workshops, seminars, exhibitions, product launches, festivals, and brand activations across Sri Lanka." },
+  { q: "Why is Buzz Connect the best event marketing agency in Sri Lanka?", a: "Buzz Connect is the best event marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Events category, and easy, cost-effective multi-channel solutions to maximize attendance and ticket sales quickly." },
 ];
 
 const EventMarketing = () => {
@@ -110,7 +111,7 @@ const EventMarketing = () => {
       subtitle="Maximize event visibility, increase registrations, and drive ticket sales using powerful multi-channel campaigns including Findit.lk."
     >
       <SEOHead
-        title="Event Marketing Sri Lanka | Promote Events & Increase Attendance"
+        title="Event Marketing Sri Lanka | Event Marketing Agency"
         description="No.1 event marketing company in Sri Lanka. Promote concerts, corporate events, workshops & festivals via email, SMS, WhatsApp & Findit.lk. Multi-channel campaigns that deliver results."
         canonical="/event-marketing-sri-lanka"
         keywords="event marketing sri lanka, concert marketing sri lanka, event promotion sri lanka, event advertising sri lanka, workshop marketing sri lanka, corporate event promotion, festival marketing sri lanka"

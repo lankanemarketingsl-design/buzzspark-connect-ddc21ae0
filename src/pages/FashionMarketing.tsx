@@ -97,6 +97,7 @@ const faqs = [
   { q: "Can you target specific fashion demographics?", a: "Yes, our database allows targeting by age group, gender, location, and shopping preferences — ensuring your campaigns reach the most relevant fashion-conscious audience." },
   { q: "How much does fashion marketing cost in Sri Lanka?", a: "Buzz Connect offers fashion marketing packages starting from LKR 38,000. Contact us for a customized quote based on your brand and target audience." },
   { q: "How quickly can I promote a flash sale?", a: "We can launch flash sale SMS and WhatsApp campaigns within hours of confirmation, making it perfect for time-sensitive promotions and seasonal sales." },
+  { q: "Why is Buzz Connect the best fashion marketing agency in Sri Lanka?", a: "Buzz Connect is the best fashion marketing agency because it offers fast campaign launch, instant exposure on Findit.lk's Fashion category, and easy, cost-effective multi-channel solutions to drive store traffic and online sales quickly." },
 ];
 
 const FashionMarketing = () => {
@@ -123,7 +124,7 @@ const FashionMarketing = () => {
       subtitle="Promote your clothing brand, offers, and new arrivals directly to fashion buyers using targeted Email, SMS & WhatsApp campaigns."
     >
       <SEOHead
-        title="Fashion Marketing Sri Lanka | Clothing Brand Promotion Campaigns"
+        title="Fashion Marketing Sri Lanka | Fashion Marketing Agency"
         description="No.1 fashion marketing company in Sri Lanka. Drive clothing sales via SMS, WhatsApp, email & Findit.lk. Reach fashion shoppers. Flash sale campaigns that deliver instant results."
         canonical="/fashion-marketing-sri-lanka"
         keywords="fashion marketing sri lanka, clothing promotion colombo, fashion advertising sri lanka, clothing brand marketing, fashion digital marketing, clothing sales campaigns, retail fashion marketing sri lanka, fashion sms marketing"
