@@ -245,7 +245,7 @@ const App = () => (
               <Route path="/seo-vs-paid-ads-sri-lanka" element={<SeoVsPaidAdsSriLanka />} />
               <Route path="/rank-number-one-google-sri-lanka" element={<RankNumberOneSriLanka />} />
               <Route path="/seo-case-studies-sri-lanka" element={<SeoCaseStudiesSriLanka />} />
-              <Route path="/test" element={<Test />} />
+              
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
