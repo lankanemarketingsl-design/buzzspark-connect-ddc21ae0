@@ -72,6 +72,7 @@ import HowGraphicDesignHelpsBusinessSriLanka from "./pages/articles/HowGraphicDe
 import HowLeadGenerationWorksSriLanka from "./pages/articles/HowLeadGenerationWorksSriLanka.tsx";
 import EmailSubjectLinesGuide from "./pages/articles/EmailSubjectLinesGuide.tsx";
 import HowEmailMarketingWorks from "./pages/articles/HowEmailMarketingWorks.tsx";
+import EmailMarketingRoiCalculation from "./pages/articles/EmailMarketingRoiCalculation.tsx";
 import HowHotelMarketingWorks from "./pages/articles/HowHotelMarketingWorks.tsx";
 import HotelMarketingCost from "./pages/articles/HotelMarketingCost.tsx";
 import BestHotelMarketingAgency from "./pages/articles/BestHotelMarketingAgency.tsx";
@@ -221,6 +222,7 @@ const App = () => (
               <Route path="/how-lead-generation-works-sri-lanka" element={<HowLeadGenerationWorksSriLanka />} />
               <Route path="/email-subject-lines-guide-sri-lanka" element={<EmailSubjectLinesGuide />} />
               <Route path="/how-email-marketing-works-sri-lanka" element={<HowEmailMarketingWorks />} />
+              <Route path="/email-marketing-roi-calculation-sri-lanka" element={<EmailMarketingRoiCalculation />} />
               <Route path="/how-hotel-marketing-works-sri-lanka" element={<HowHotelMarketingWorks />} />
               <Route path="/hotel-marketing-cost-sri-lanka" element={<HotelMarketingCost />} />
               <Route path="/best-hotel-marketing-agency-sri-lanka" element={<BestHotelMarketingAgency />} />

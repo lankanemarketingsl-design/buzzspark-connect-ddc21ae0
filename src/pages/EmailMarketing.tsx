@@ -319,6 +319,37 @@ const EmailMarketing = () => {
           </div>
         </div>
       </motion.div>
+      {/* ROI Calculation Article Highlight */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-16 mb-8 max-w-4xl mx-auto"
+      >
+        <Link
+          to="/email-marketing-roi-calculation-sri-lanka"
+          className="block p-6 sm:p-8 rounded-2xl bg-card border border-accent/30 hover:border-accent hover:shadow-xl transition-all group"
+        >
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl">📊</span>
+            </div>
+            <div className="flex-1">
+              <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">New Guide</p>
+              <h3 className="font-heading text-lg sm:text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
+                How to Calculate Your Email Marketing ROI in Sri Lanka
+              </h3>
+              <p className="text-muted-foreground text-sm mb-3">
+                Learn exactly how to read your BuzzConnect campaign report, calculate your true return on investment, and use the data to make every next campaign stronger.
+              </p>
+              <span className="inline-flex items-center text-sm font-semibold text-accent">
+                Read the ROI Guide <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </div>
+          </div>
+        </Link>
+      </motion.div>
+
       <RelatedArticles currentPath="/email-marketing" />
       <DigitalMarketingCTA variant="alt" />
     </ServicePageLayout>
