@@ -47,6 +47,48 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "What is Direct Marketing in Sri Lanka? Complete Guide (2026)",
+    date: "Apr 23, 2026",
+    excerpt: "Reach exact target customers by email, SMS, WhatsApp & web ads. Learn how direct marketing works in Sri Lanka, what it costs, and why businesses choose Buzz Connect.",
+    path: "/what-is-direct-marketing-sri-lanka",
+    image: articleMultichannelReach,
+  },
+  {
+    title: "Best Digital Marketing Agency in Sri Lanka (2026 Checklist)",
+    date: "Apr 23, 2026",
+    excerpt: "An 8-point checklist to evaluate any digital marketing agency in Sri Lanka — what to look for in services, case studies, pricing, reporting & multi-channel capability.",
+    path: "/best-digital-marketing-agency-sri-lanka",
+    image: articleBestAdvertising,
+  },
+  {
+    title: "Best Direct Marketing Company in Sri Lanka (2026 Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "What separates the best direct marketing companies from the rest in Sri Lanka — verified database, multi-channel capability, industry experience & speed of execution.",
+    path: "/best-direct-marketing-company-sri-lanka",
+    image: articleMultichannelCampaigns,
+  },
+  {
+    title: "Website Design in Sri Lanka: Complete Guide for Businesses (2026)",
+    date: "Apr 23, 2026",
+    excerpt: "Everything Sri Lankan businesses need to know about website design in 2026 — what's included, mobile-first design, SEO integration, costs & ROI.",
+    path: "/website-design-guide-sri-lanka",
+    image: articleDigitalAdGuide,
+  },
+  {
+    title: "Best Website Design Company in Sri Lanka (2026 Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "How to choose the right website design partner in 2026 — and why Buzz Connect builds custom, mobile-first, SEO-ready sites that convert visitors into customers.",
+    path: "/best-website-design-company-sri-lanka",
+    image: articleDigitalAdGuide,
+  },
+  {
+    title: "Best Google Ads Agency in Sri Lanka (2026 Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "What to look for in a Google Ads agency in Sri Lanka — proven results, landing page design, transparent budgets, multi-channel integration & monthly reporting.",
+    path: "/best-google-ads-agency-sri-lanka",
+    image: articleGoogleAdsCost,
+  },
+  {
     title: "How to Calculate Your Email Marketing ROI in Sri Lanka (2026 Guide)",
     date: "Apr 23, 2026",
     excerpt: "Learn how to read your BuzzConnect campaign report and calculate your real email marketing ROI step-by-step — with real Sri Lankan examples & formulas.",

@@ -95,6 +95,12 @@ import SeoServicesSriLanka from "./pages/articles/SeoServicesSriLanka.tsx";
 import SeoVsPaidAdsSriLanka from "./pages/articles/SeoVsPaidAdsSriLanka.tsx";
 import RankNumberOneSriLanka from "./pages/articles/RankNumberOneSriLanka.tsx";
 import SeoCaseStudiesSriLanka from "./pages/articles/SeoCaseStudiesSriLanka.tsx";
+import WhatIsDirectMarketing from "./pages/articles/WhatIsDirectMarketing.tsx";
+import BestDigitalMarketingAgency from "./pages/articles/BestDigitalMarketingAgency.tsx";
+import BestDirectMarketingCompany from "./pages/articles/BestDirectMarketingCompany.tsx";
+import WebsiteDesignGuide from "./pages/articles/WebsiteDesignGuide.tsx";
+import BestWebsiteDesignCompany from "./pages/articles/BestWebsiteDesignCompany.tsx";
+import BestGoogleAdsAgency from "./pages/articles/BestGoogleAdsAgency.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -245,6 +251,12 @@ const App = () => (
               <Route path="/seo-vs-paid-ads-sri-lanka" element={<SeoVsPaidAdsSriLanka />} />
               <Route path="/rank-number-one-google-sri-lanka" element={<RankNumberOneSriLanka />} />
               <Route path="/seo-case-studies-sri-lanka" element={<SeoCaseStudiesSriLanka />} />
+              <Route path="/what-is-direct-marketing-sri-lanka" element={<WhatIsDirectMarketing />} />
+              <Route path="/best-digital-marketing-agency-sri-lanka" element={<BestDigitalMarketingAgency />} />
+              <Route path="/best-direct-marketing-company-sri-lanka" element={<BestDirectMarketingCompany />} />
+              <Route path="/website-design-guide-sri-lanka" element={<WebsiteDesignGuide />} />
+              <Route path="/best-website-design-company-sri-lanka" element={<BestWebsiteDesignCompany />} />
+              <Route path="/best-google-ads-agency-sri-lanka" element={<BestGoogleAdsAgency />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
