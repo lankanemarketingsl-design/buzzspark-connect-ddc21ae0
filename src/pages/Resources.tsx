@@ -47,6 +47,13 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "How to Calculate Your Email Marketing ROI in Sri Lanka (2026 Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "Learn how to read your BuzzConnect campaign report and calculate your real email marketing ROI step-by-step — with real Sri Lankan examples & formulas.",
+    path: "/email-marketing-roi-calculation-sri-lanka",
+    image: articleEmailPricing,
+  },
+  {
     title: "Digital Marketing Company in Sri Lanka | BuzzConnect",
     date: "Apr 20, 2026",
     excerpt: "Looking for a trusted digital marketing company in Sri Lanka? Discover how BuzzConnect uses WhatsApp bulk messaging & email marketing to deliver real results — fast.",
